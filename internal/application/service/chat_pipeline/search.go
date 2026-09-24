@@ -468,6 +468,7 @@ func (p *PluginSearch) searchByTargets(
 
 					params := types.SearchParams{
 						QueryText:             queryText,
+						OriginalQuery:         chatManage.Query,
 						QueryEmbedding:        queryEmbedding,
 						KnowledgeBaseIDs:      fullKBIDs,
 						VectorThreshold:       chatManage.VectorThreshold,
@@ -546,6 +547,7 @@ func (p *PluginSearch) searchSingleTarget(
 	}
 	params := types.SearchParams{
 		QueryText:             queryText,
+		OriginalQuery:         chatManage.Query,
 		QueryEmbedding:        queryEmbedding,
 		VectorThreshold:       vectorThreshold,
 		KeywordThreshold:      keywordThreshold,
