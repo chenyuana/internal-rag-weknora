@@ -201,6 +201,9 @@ type ProcessChunksOptions struct {
 	// child's ParentIndex references an entry in this slice.
 	ParentChunks []types.ParsedParentChunk
 	Metadata     map[string]string
+	// SkipPostProcess marks the indexed knowledge complete without scheduling
+	// summary, question generation, graph extraction, or other enrichment.
+	SkipPostProcess bool
 }
 
 // finalizeIndexedKnowledgeState makes a document retrievable as soon as chunks
@@ -688,13 +691,22 @@ func (s *knowledgeService) processChunks(ctx context.Context,
 		pendingMultimodal || pendingPDFMultimodal,
 		now,
 	)
+	if options.SkipPostProcess {
+		knowledge.ParseStatus = types.ParseStatusCompleted
+		knowledge.PendingSubtasksCount = 0
+		knowledge.SummaryStatus = types.SummaryStatusNone
+		knowledge.ErrorMessage = ""
+	}
 
 	if err := s.repo.UpdateKnowledge(ctx, knowledge); err != nil {
 		logger.GetLogger(ctx).WithField("error", err).Errorf("processChunks update knowledge failed")
 	}
 
 	// Enqueue multimodal tasks for images (async, non-blocking)
-	if options.EnableMultimodel && len(options.StoredImages) > 0 {
+	if options.SkipPostProcess {
+		s.skipStage(ctx, knowledge.ID, types.StageMultimodal, "precomputed import")
+		s.skipStage(ctx, knowledge.ID, types.StagePostProcess, "precomputed import")
+	} else if options.EnableMultimodel && len(options.StoredImages) > 0 {
 		s.beginStage(ctx, knowledge.ID, types.StageMultimodal, types.JSONMap{
 			"image_count":    len(options.StoredImages),
 			"enable_ocr":     true,

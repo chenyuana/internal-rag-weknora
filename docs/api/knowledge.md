@@ -9,6 +9,7 @@
 | POST   | `/knowledge-bases/:id/knowledge/file`      | 上传文件创建知识（multipart）             |
 | POST   | `/knowledge-bases/:id/knowledge/url`       | 从 URL 创建知识（网页抓取或文件下载）       |
 | POST   | `/knowledge-bases/:id/knowledge/manual`    | 创建手工 Markdown 知识                     |
+| POST   | `/knowledge-bases/:id/knowledge/internal-rag` | 导入 internal-rag 预处理分块             |
 | GET    | `/knowledge-bases/:id/knowledge`           | 列出知识库下的知识（支持分页/筛选）         |
 | GET    | `/knowledge-bases/:id/knowledge/folders`   | 获取知识库文件夹目录树                       |
 | PUT    | `/knowledge-bases/:id/knowledge/folders`   | 重命名或移动文件夹（含子目录）               |
@@ -37,6 +38,16 @@
 > - 关键状态字段：`parse_status` 取值 `pending` / `processing` / `finalizing` / `completed` / `failed` / `cancelled`；`enable_status` 取值 `enabled` / `disabled`。
 > - `processing` 指 DocReader / 分块 / 向量化阶段；`finalizing` 指主解析已完成、仍在执行摘要 / 问题生成 / 图谱抽取等索引优化任务；只有当全部子任务到达终态后才进入 `completed`。
 > - `cancelled` 表示解析被用户主动取消，可通过 `reparse` 重新触发。`pending` / `processing` / `finalizing` 这三种状态都可通过 `cancel-parse` 终止。
+
+## POST `/knowledge-bases/:id/knowledge/internal-rag` - 导入预处理分块
+
+接收 internal-rag 的 `document_ir.json` 与 `chunks.jsonl` 映射结果。接口跳过
+DocReader、OCR、正文清洗和再次切块，仅执行 WeKnora 的配额检查、Embedding
+和向量/关键词索引写入。导入完成后直接进入 `completed`，不会触发摘要、问题生成、
+多模态或图谱后处理。
+
+使用 `source_document_id` 进行 upsert；当 `normalized_text_sha256` 与已导入版本
+一致时返回 `action: "skipped"`。设置 `dry_run: true` 只校验请求，不写入数据。
 
 ## POST `/knowledge-bases/:id/knowledge/file` - 上传文件创建知识
 
