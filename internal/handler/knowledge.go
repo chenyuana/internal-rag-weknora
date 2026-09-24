@@ -72,6 +72,10 @@ func (h *KnowledgeHandler) stallVerdicts(ctx context.Context, ids []string) map[
 	return out
 }
 
+type internalRAGImporter interface {
+	ImportInternalRAG(context.Context, string, *types.InternalRAGImportRequest) (*types.InternalRAGImportResult, error)
+}
+
 // NewKnowledgeHandler creates a new knowledge handler instance
 func NewKnowledgeHandler(
 	cfg *config.Config,
@@ -97,6 +101,37 @@ func NewKnowledgeHandler(
 		asynqClient:       asynqClient,
 		spanRepo:          spanRepo,
 	}
+}
+
+// ImportInternalRAG accepts already-cleaned and already-split chunks and only
+// invokes WeKnora's retrieval indexing pipeline.
+func (h *KnowledgeHandler) ImportInternalRAG(c *gin.Context) {
+	_, kbID, effectiveTenantID, permission, err := h.validateKnowledgeBaseAccess(c)
+	if err != nil {
+		c.Error(err)
+		return
+	}
+	if permission != types.OrgRoleAdmin && permission != types.OrgRoleEditor {
+		c.Error(errors.NewForbiddenError("No permission to import knowledge"))
+		return
+	}
+	var req types.InternalRAGImportRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.Error(errors.NewBadRequestError(err.Error()))
+		return
+	}
+	importer, ok := h.kgService.(internalRAGImporter)
+	if !ok {
+		c.Error(errors.NewInternalServerError("internal-rag importer is unavailable"))
+		return
+	}
+	ctx := types.WithExecutionTenant(c.Request.Context(), effectiveTenantID)
+	result, err := importer.ImportInternalRAG(ctx, kbID, &req)
+	if err != nil {
+		c.Error(errors.NewBadRequestError(err.Error()))
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"success": true, "data": result})
 }
 
 // requireKBOwnershipOrAdmin enforces the same "KB creator OR Admin+" matrix
