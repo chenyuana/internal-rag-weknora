@@ -230,7 +230,12 @@ type SearchResult struct {
 type SearchParams struct {
 	// QueryText is required unless query_embedding is provided, keyword matching is disabled,
 	// and vector matching remains enabled.
-	QueryText            string    `json:"query_text"`
+	QueryText string `json:"query_text"`
+	// OriginalQuery is the caller's verbatim question when it differs from
+	// QueryText. Retrieval ranks on QueryText, which may be a rewrite, but exact
+	// identifier lookup reads the wording the user actually typed: a rewrite may
+	// normalise or drop a document number. Empty means QueryText is verbatim.
+	OriginalQuery        string    `json:"original_query,omitempty"`
 	QueryEmbedding       []float32 `json:"query_embedding,omitempty"`
 	VectorThreshold      float64   `json:"vector_threshold"`
 	KeywordThreshold     float64   `json:"keyword_threshold"`
