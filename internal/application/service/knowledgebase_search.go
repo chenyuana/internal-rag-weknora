@@ -126,6 +126,17 @@ func (s *knowledgeBaseService) HybridSearch(ctx context.Context,
 	id string,
 	params types.SearchParams,
 ) ([]*types.SearchResult, error) {
+	return s.hybridSearch(ctx, id, params, true)
+}
+
+// hybridSearch is HybridSearch with the named-document pass made switchable.
+// That pass runs a second retrieval scoped to one resolved document, and it
+// must not re-enter itself while doing so.
+func (s *knowledgeBaseService) hybridSearch(ctx context.Context,
+	id string,
+	params types.SearchParams,
+	recallNamedDocuments bool,
+) ([]*types.SearchResult, error) {
 	// Normalize once, before anything reads MatchCount. params is a value
 	// copy, so this stays local to the call.
 	params.MatchCount = normalizedMatchCount(params.MatchCount)
@@ -288,6 +299,15 @@ func (s *knowledgeBaseService) HybridSearch(ctx context.Context,
 		ctx, kb, deduplicatedChunks, vectorResults, groups, params, matchCount)
 	if err != nil {
 		return nil, err
+	}
+
+	// A question that names a document by its number is an identifier lookup,
+	// and neither retrieval channel carries that identifier. Keep the named
+	// documents in the candidate list here, before the truncation below — that
+	// bound is the last point at which a document that lost the ranking can
+	// still be kept.
+	if recallNamedDocuments {
+		deduplicatedChunks = s.pinNamedDocuments(ctx, deduplicatedChunks, kbs, params)
 	}
 
 	// Truncate to the primary-match cap. MatchCount is guaranteed positive by
