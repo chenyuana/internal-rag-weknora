@@ -52,6 +52,10 @@
                 <div class="ai-markdown-template markdown-content" v-stable-html="renderedHTML">
                 </div>
             </div>
+            <RelatedReferenceImages
+                :answer="content || session.content || ''"
+                :references="session.knowledge_references"
+            />
             <!-- 复制和添加到知识库按钮 - 非 Agent 模式下显示 -->
             <div v-if="answerFullyRendered && (content || session.content)" class="answer-toolbar">
                 <t-tooltip v-if="canFork" :content="forkTooltip">
@@ -149,6 +153,7 @@ import ChatRequestInfoButton from '@/components/ChatRequestInfoButton.vue';
 import ChatCitationFloat from '@/components/ChatCitationFloat.vue';
 import picturePreview from '@/components/picture-preview.vue';
 import ChatArtifactsDrawer from './ChatArtifactsDrawer.vue';
+import RelatedReferenceImages from '@/components/RelatedReferenceImages.vue';
 import { isCollectingSkillArtifacts } from '@/utils/skillArtifacts';
 import { useArtifactArriveMotion } from '@/composables/useArtifactArriveMotion';
 import { useChatSandboxPanel } from '@/composables/useChatSandboxPanel';

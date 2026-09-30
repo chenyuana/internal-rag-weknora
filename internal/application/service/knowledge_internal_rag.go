@@ -137,7 +137,9 @@ func (s *knowledgeService) ImportInternalRAG(ctx context.Context, kbID string, p
 		}
 		parsed = append(parsed, types.ParsedChunk{Content: c.Text, ContextHeader: internalRAGContextHeader(c), Seq: i, Start: 0, End: len([]rune(c.Text)), ParentIndex: pi})
 	}
-	s.processChunks(ctx, kb, knowledge, parsed, ProcessChunksOptions{ParentChunks: parents, SkipPostProcess: true})
+	if err := s.processChunks(ctx, kb, knowledge, parsed, ProcessChunksOptions{ParentChunks: parents, SkipPostProcess: true}); err != nil {
+		return nil, err
+	}
 	refreshed, err := s.repo.GetKnowledgeByID(ctx, tenantID, knowledge.ID)
 	if err != nil {
 		return nil, err

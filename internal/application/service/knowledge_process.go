@@ -788,21 +788,28 @@ func (s *knowledgeService) processChunks(ctx context.Context,
 		pendingMultimodal || pendingPDFMultimodal,
 		now,
 	)
-	if options.SkipPostProcess {
-		knowledge.ParseStatus = types.ParseStatusCompleted
-		knowledge.PendingSubtasksCount = 0
-		knowledge.SummaryStatus = types.SummaryStatusNone
-		knowledge.ErrorMessage = ""
-	}
-
 	if err := s.updateKnowledgeUnlessSourceReplaced(ctx, knowledge); err != nil {
 		logger.GetLogger(ctx).WithField("error", err).Errorf("processChunks update knowledge failed")
+		if options.SkipPostProcess {
+			return err
+		}
 	}
 
 	// Enqueue multimodal tasks for images (async, non-blocking)
 	if options.SkipPostProcess {
-		s.skipStage(ctx, knowledge.ID, types.StageMultimodal, "precomputed import")
-		s.skipStage(ctx, knowledge.ID, types.StagePostProcess, "precomputed import")
+		completed := knowledge.ParseStatus == types.ParseStatusCompleted
+		if !completed {
+			var err error
+			completed, err = s.repo.CompleteProcessingWithoutSubtasks(ctx, knowledge.ID)
+			if err != nil {
+				return fmt.Errorf("complete precomputed import: %w", err)
+			}
+		}
+		if completed {
+			knowledge.ParseStatus = types.ParseStatusCompleted
+			s.skipStage(ctx, knowledge.ID, types.StageMultimodal, "precomputed import")
+			s.skipStage(ctx, knowledge.ID, types.StagePostProcess, "precomputed import")
+		}
 	} else if options.EnableMultimodel && len(options.StoredImages) > 0 {
 		s.beginStage(ctx, knowledge.ID, types.StageMultimodal, types.JSONMap{
 			"image_count":    len(options.StoredImages),
