@@ -30,6 +30,6 @@ const images = computed(() =>
 <style scoped>
 .related-reference-images { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
 .related-reference-images__title { flex-basis: 100%; font-weight: 600; }
-.related-reference-images__item { display: flex; flex-direction: column; width: 180px; gap: 4px; font-size: 12px; }
-.related-reference-images__item img { width: 180px; height: 130px; object-fit: contain; border-radius: 4px; background: var(--td-bg-color-secondarycontainer); }
+.related-reference-images__item { display: flex; flex-direction: column; width: 180px; gap: 4px; font-size: var(--app-text-sm); }
+.related-reference-images__item img { width: 180px; height: 130px; object-fit: contain; border-radius: var(--app-radius-xs); background: var(--td-bg-color-secondarycontainer); }
 </style>
