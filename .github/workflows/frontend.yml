@@ -54,6 +54,9 @@ jobs:
         run: npm run type-check
 
       - name: Build
+        env:
+          # Match frontend/Dockerfile: this SPA exceeds Node's default heap.
+          NODE_OPTIONS: --max-old-space-size=4096
         run: npm run build
 
   docker-image:
