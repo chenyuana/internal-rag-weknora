@@ -744,8 +744,10 @@ func (s *sessionService) KnowledgeQAByEvent(ctx context.Context,
 		// them while the connection is still open. Previously references were
 		// emitted after the pipeline returned — by then the `complete` event had
 		// already closed the stream, so the frontend only saw citations on refresh.
-		if eventType == types.CHAT_COMPLETION_STREAM {
+		if eventType == types.INTO_CHAT_MESSAGE {
 			s.attachRelatedImages(ctx, chatManage.MergeResult)
+		}
+		if eventType == types.CHAT_COMPLETION_STREAM {
 			emitKnowledgeReferencesEvent(ctx, chatManage)
 		}
 		err := s.eventManager.Trigger(stageCtx, eventType, chatManage)

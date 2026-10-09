@@ -52,6 +52,7 @@ func (p *PluginChatCompletion) OnEvent(
 	})
 	chatMessages, modelContext := prepareMessagesWithModelContext(ctx, chatManage)
 	chatMessages = modelContext.EncodeMessages(chatMessages)
+	chatMessages = appendRetrievedImageMessage(ctx, chatMessages, chatManage, modelContext)
 	reportModelContextLeaks(ctx, "Completion", modelContext, chatMessages)
 	ctx = withPromptCacheMetadata(ctx, chatModel, chatMessages, opt, "knowledge_qa")
 

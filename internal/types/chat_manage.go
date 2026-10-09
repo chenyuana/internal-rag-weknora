@@ -108,12 +108,26 @@ func (i QueryIntent) NeedsKBRetrieval() bool {
 	}
 }
 
+// RetrievedImage is request-local visual evidence from an authorized retrieval.
+// Base64 data is never exposed in references or persisted in message history.
+type RetrievedImage struct {
+	URL            string `json:"-"`
+	Caption        string `json:"-"`
+	KnowledgeID    string `json:"-"`
+	KnowledgeTitle string `json:"-"`
+	SourceChunkID  string `json:"-"`
+	ChunkID        string `json:"-"`
+	DataURL        string `json:"-"`
+	ReadError      string `json:"-"`
+}
+
 // PipelineState holds mutable intermediate data that plugins read and write
 // as the pipeline progresses.
 type PipelineState struct {
-	RewriteQuery string      `json:"rewrite_query,omitempty"`
-	Intent       QueryIntent `json:"intent,omitempty"`
-	History      []*History  `json:"history,omitempty"`
+	RetrievedImages []RetrievedImage `json:"-"`
+	RewriteQuery    string           `json:"rewrite_query,omitempty"`
+	Intent          QueryIntent      `json:"intent,omitempty"`
+	History         []*History       `json:"history,omitempty"`
 
 	SearchResult         []*SearchResult   `json:"-"`
 	RerankResult         []*SearchResult   `json:"-"`
@@ -249,6 +263,7 @@ func (c *ChatManage) Clone() *ChatManage {
 			IntentPromptOverrides:    maps.Clone(c.IntentPromptOverrides),
 		},
 		PipelineState: PipelineState{
+			RetrievedImages:      append([]RetrievedImage(nil), c.RetrievedImages...),
 			RewriteQuery:         c.RewriteQuery,
 			Intent:               c.Intent,
 			ImageDescription:     c.ImageDescription,

@@ -74,7 +74,7 @@ func (c *Client) Chat(ctx context.Context, messages []api.Message, opts *api.Opt
 
 	resp, _, err := c.send(ctx, messages, opts, false)
 	if err != nil {
-		if api.IsMultimodalNotSupportedError(err) {
+		if api.IsMultimodalNotSupportedError(err) && (opts == nil || !opts.RequireImageInput) {
 			logger.Warnf(ctx, "[LLM Request] Model %s does not support multimodal, retrying without images",
 				c.cfg.Endpoint.Model)
 			resp, _, err = c.send(ctx, api.StripImagesFromMessages(messages), opts, false)
@@ -104,7 +104,7 @@ func (c *Client) ChatStream(
 
 	resp, data, err := c.send(ctx, messages, opts, true)
 	if err != nil {
-		if api.IsMultimodalNotSupportedError(err) {
+		if api.IsMultimodalNotSupportedError(err) && (opts == nil || !opts.RequireImageInput) {
 			logger.Warnf(ctx, "[LLM Stream] Model %s does not support multimodal, retrying without images",
 				c.cfg.Endpoint.Model)
 			resp, data, err = c.send(ctx, api.StripImagesFromMessages(messages), opts, true)

@@ -56,6 +56,12 @@ func prepareChatModel(ctx context.Context, modelService interfaces.ModelService,
 		ReasoningEffort:     effort,
 		PromptCacheKey:      chatManage.SessionID,
 	}
+	for _, image := range chatManage.RetrievedImages {
+		if chatManage.ChatModelSupportsVision && image.DataURL != "" {
+			opt.RequireImageInput = true
+			break
+		}
+	}
 	if level, requested := opt.Reasoning(); requested {
 		pipelineInfo(ctx, "Stream", "thinking_option", map[string]interface{}{
 			"enabled": level.Enabled(),
