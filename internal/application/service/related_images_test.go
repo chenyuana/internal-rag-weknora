@@ -21,7 +21,7 @@ func TestFigureCaptionImageIsDiscoverable(t *testing.T) {
 }
 
 func TestReferencedSingleFigureNumber(t *testing.T) {
- require.Equal(t, []string{"1", "2"}, referencedFigureNumbers("Compass (See Figure 1); Attitude (See Figure 2)."))
- require.Empty(t, referencedFigureNumbers("Section 1 and table 2."))
- require.Equal(t, "1", figureNumber.FindStringSubmatch("Figure 1 Compass Area")[1])
+	require.Equal(t, []string{"1", "2"}, referencedFigureNumbers("Compass (See Figure 1); Attitude (See Figure 2)."))
+	require.Empty(t, referencedFigureNumbers("Section 1 and table 2."))
+	require.Equal(t, "1", figureNumber.FindStringSubmatch("Figure 1 Compass Area")[1])
 }
