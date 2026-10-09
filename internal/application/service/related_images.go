@@ -8,9 +8,9 @@ import (
 	"github.com/Tencent/WeKnora/internal/types"
 )
 
-var figureNumber = regexp.MustCompile(`(?i)\b(?:fig(?:ure)?\.?)\s*(\d+(?:[.-]\d+)+)\b`)
-var figureSequence = regexp.MustCompile(`(?i)\bfig(?:ure)?s?\.?\s*\d+(?:[.-]\d+)+(?:\s*(?:,|and|&|和|与)\s*\d+(?:[.-]\d+)+)*`)
-var numberInSequence = regexp.MustCompile(`\d+(?:[.-]\d+)+`)
+var figureNumber = regexp.MustCompile(`(?i)\b(?:fig(?:ure)?\.?)\s*(\d+(?:[.-]\d+)*)\b`)
+var figureSequence = regexp.MustCompile(`(?i)\bfig(?:ure)?s?\.?\s*\d+(?:[.-]\d+)*(?:\s*(?:,|and|&|和|与)\s*\d+(?:[.-]\d+)*)*`)
+var numberInSequence = regexp.MustCompile(`\d+(?:[.-]\d+)*`)
 var markdownImage = regexp.MustCompile(`(?s)!\[([^]]*)\]\((https?://[^)\s]+)\)`)
 
 func referencedFigureNumbers(content string) []string {

@@ -39,9 +39,11 @@ const (
 // caller asks for, and the protocol package decides how (or whether) the
 // vendor can honour it.
 type Options struct {
-	Temperature float64 `json:"temperature"` // 温度参数
-	TopP        float64 `json:"top_p"`       // Top P 参数
-	Seed        int     `json:"seed"`        // 随机种子
+	// RequireImageInput forbids silently retrying a visual-evidence answer without images.
+	RequireImageInput bool    `json:"-"`
+	Temperature       float64 `json:"temperature"` // 温度参数
+	TopP              float64 `json:"top_p"`       // Top P 参数
+	Seed              int     `json:"seed"`        // 随机种子
 	// MaxTokens and MaxCompletionTokens are aliases for one completion budget.
 	// Callers may set either; CompletionBudget() prefers MaxCompletionTokens.
 	// The outbound JSON carries exactly one field, named per vendor.
