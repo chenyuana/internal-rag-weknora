@@ -5,6 +5,7 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/Tencent/WeKnora/internal/searchutil"
 	"github.com/Tencent/WeKnora/internal/types"
 )
 
@@ -28,7 +29,7 @@ func referencedFigureNumbers(content string) []string {
 	return numbers
 }
 
-// attachRelatedImages adds only figures named in a retrieved passage. Merely
+// attachRelatedImages adds figures explicitly identified by number or caption. Merely
 // sharing a document or page is insufficient evidence that a picture belongs
 // to the passage, and would show unrelated figures for broad text answers.
 func (s *sessionService) attachRelatedImages(ctx context.Context, refs []*types.SearchResult) {
@@ -46,9 +47,7 @@ func (s *sessionService) attachRelatedImages(ctx context.Context, refs []*types.
 			continue
 		}
 		wanted := referencedFigureNumbers(ref.Content)
-		if len(wanted) == 0 {
-			continue
-		}
+
 		if _, ok := byKnowledge[ref.KnowledgeID]; !ok && !failed[ref.KnowledgeID] {
 			if len(byKnowledge)+len(failed) >= 4 {
 				continue
@@ -63,38 +62,68 @@ func (s *sessionService) attachRelatedImages(ctx context.Context, refs []*types.
 			}
 			byKnowledge[ref.KnowledgeID] = chunks
 		}
-		seen := make(map[string]bool)
-		for _, figure := range wanted {
+		for _, image := range relatedCaptionImages(ref.Content, wanted, byKnowledge[ref.KnowledgeID]) {
 			if len(ref.RelatedImages) >= 12 {
 				break
 			}
-			for _, chunk := range byKnowledge[ref.KnowledgeID] {
-				if len(ref.RelatedImages) >= 12 {
+			exists := false
+			for _, old := range ref.RelatedImages {
+				if old.URL == image.URL {
+					exists = true
 					break
 				}
-				if chunk == nil || !chunk.IsEnabled {
-					continue
-				}
-				for _, image := range markdownImage.FindAllStringSubmatch(chunk.Content, -1) {
-					caption := strings.ReplaceAll(image[1], `\]`, "]")
-					matched := false
-					for _, number := range figureNumber.FindAllStringSubmatch(caption, -1) {
-						if strings.ToLower(strings.ReplaceAll(number[1], "-", ".")) == figure {
-							matched = true
-							break
-						}
-					}
-					if matched && !seen[image[2]] {
-						seen[image[2]] = true
-						ref.RelatedImages = append(ref.RelatedImages, types.RelatedImage{
-							URL: image[2], Caption: strings.TrimSpace(caption), ChunkID: chunk.ID,
-						})
-						if len(ref.RelatedImages) >= 12 {
-							break
-						}
-					}
-				}
+			}
+			if !exists {
+				ref.RelatedImages = append(ref.RelatedImages, image)
 			}
 		}
 	}
+}
+
+// Captions must occur verbatim in the retrieved context of the same document.
+// A shared document/page alone does not establish relevance.
+func relatedCaptionImages(content string, wanted []string, chunks []*types.Chunk) []types.RelatedImage {
+	seen := make(map[string]bool)
+	var images []types.RelatedImage
+	type siblingKey struct {
+		parent string
+		index  int
+	}
+	siblings := make(map[siblingKey]*types.Chunk)
+	for _, chunk := range chunks {
+		if chunk != nil && chunk.IsEnabled && chunk.ChunkType == types.ChunkTypeText {
+			siblings[siblingKey{chunk.ParentChunkID, chunk.ChunkIndex}] = chunk
+		}
+	}
+	normalize := func(s string) string { return strings.ToLower(strings.Join(strings.Fields(s), " ")) }
+	contextText := normalize(content)
+	for _, chunk := range chunks {
+		if chunk == nil || !chunk.IsEnabled || chunk.ChunkType == types.ChunkTypeParentText {
+			continue
+		}
+		for _, loc := range markdownImage.FindAllStringSubmatchIndex(chunk.Content, -1) {
+			url := chunk.Content[loc[4]:loc[5]]
+			caption := searchutil.CaptionForMarkdownImage(chunk.Content, loc)
+			// A parser may split the immediately following caption into its
+			// own child. Use current enabled siblings, never a stale parent copy.
+			if !searchutil.DescriptiveImageCaption(caption) && loc[1] == len(strings.TrimRight(chunk.Content, "\n \t")) && chunk.ParentChunkID != "" {
+				if next := siblings[siblingKey{chunk.ParentChunkID, chunk.ChunkIndex + 1}]; next != nil && len(next.Content) <= 300 {
+					caption = searchutil.CaptionForMarkdownImage(chunk.Content+"\n\n"+next.Content, loc)
+				}
+			}
+			matched := searchutil.DescriptiveImageCaption(caption) && strings.Contains(contextText, normalize(caption))
+			for _, number := range figureNumber.FindAllStringSubmatch(caption, -1) {
+				for _, wantedNumber := range wanted {
+					if strings.ReplaceAll(number[1], "-", ".") == wantedNumber {
+						matched = true
+					}
+				}
+			}
+			if matched && !seen[url] {
+				seen[url] = true
+				images = append(images, types.RelatedImage{URL: url, Caption: caption, ChunkID: chunk.ID})
+			}
+		}
+	}
+	return images
 }
