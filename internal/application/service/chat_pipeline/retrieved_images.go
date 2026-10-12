@@ -17,6 +17,9 @@ import (
 )
 
 const maxRetrievedImages = 4
+const maxRetrievedTableImages = 12
+
+var retrievedTableRE = regexp.MustCompile(`(?i)^Table\s+(?:[IVXLCDM]+|[0-9]+)\b`)
 
 var retrievedFigureRE = regexp.MustCompile(`(?i)\bfig(?:ure)?\.?\s*(\d+(?:[.-]\d+)*)\b`)
 
@@ -95,6 +98,14 @@ func selectRetrievedImages(query string, results []*types.SearchResult) []types.
 			if strings.TrimSpace(rawURL) == "" {
 				return
 			}
+			// Preserve recovered table/page identity when the same asset also
+			// appears inline with a generic parser caption.
+			for _, related := range ref.RelatedImages {
+				if html.UnescapeString(related.URL) == html.UnescapeString(rawURL) && retrievedTableRE.MatchString(related.Caption) {
+					caption, chunkID = related.Caption, related.ChunkID
+					break
+				}
+			}
 			score := 1000 - rank*100
 			if searchutil.DescriptiveImageCaption(caption) {
 				score += 120
@@ -133,13 +144,20 @@ func selectRetrievedImages(query string, results []*types.SearchResult) []types.
 	sort.SliceStable(candidates, func(i, j int) bool { return candidates[i].score > candidates[j].score })
 	seen := make(map[string]bool)
 	var selected []types.RetrievedImage
+	limit := maxRetrievedImages
+	for _, c := range candidates {
+		if retrievedTableRE.MatchString(c.image.Caption) {
+			limit = maxRetrievedTableImages
+			break
+		}
+	}
 	for _, c := range candidates {
 		if seen[c.image.URL] {
 			continue
 		}
 		seen[c.image.URL] = true
 		selected = append(selected, c.image)
-		if len(selected) == maxRetrievedImages {
+		if len(selected) == limit {
 			break
 		}
 	}
@@ -165,7 +183,7 @@ func appendRetrievedImageMessage(ctx context.Context, messages []chat.Message, c
 	if len(cm.RetrievedImages) == 0 {
 		return messages
 	}
-	parts := []chat.MessageContentPart{{Type: "text", Text: retrievedImagePrompt}}
+	parts := []chat.MessageContentPart{{Type: "text", Text: retrievedImagePrompt + " 同一表号的不同页图片属于该表的各段，回答完整表格时应按页展示全部提供的片段。未提供或未读取图片只说明本次上下文不足，不得断言知识库或原文没有对应图片。"}}
 	loaded := 0
 	for i, img := range cm.RetrievedImages {
 		handle := registry.ChunkHandle(img.SourceChunkID)

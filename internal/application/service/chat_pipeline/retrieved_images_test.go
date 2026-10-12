@@ -12,8 +12,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Tencent/WeKnora/internal/models/api"
-	"github.com/Tencent/WeKnora/internal/models/api/openaicompletions"
 	"github.com/Tencent/WeKnora/internal/models/chat"
 	"github.com/Tencent/WeKnora/internal/types"
 	"github.com/stretchr/testify/require"
@@ -52,6 +50,23 @@ func TestSelectRetrievedImagesRespectsLimitAndHTML(t *testing.T) {
 	images = selectRetrievedImages("", []*types.SearchResult{{Content: `<img src="https://example.com/image.png">`}})
 	require.Len(t, images, 1)
 	require.Equal(t, "https://example.com/image.png", images[0].URL)
+}
+
+func TestSelectRetrievedImagesKeepsAllTablePages(t *testing.T) {
+	ref := &types.SearchResult{ID: "source", Content: "Table I Table II Table III Table IV"}
+	for _, name := range []string{"I", "II", "III", "IV — page 8", "IV — page 9", "IV — page 10", "IV — page 11"} {
+		ref.RelatedImages = append(ref.RelatedImages, types.RelatedImage{URL: "https://example.com/" + name, Caption: "Table " + name})
+	}
+	require.Len(t, selectRetrievedImages("所有表格", []*types.SearchResult{ref}), 7)
+}
+
+func TestSelectRetrievedImagesPreservesRecoveredTableCaption(t *testing.T) {
+	ref := &types.SearchResult{ID: "source", Content: "![Altitude-Pressure](https://example.com/p8.png)",
+		RelatedImages: []types.RelatedImage{{URL: "https://example.com/p8.png", Caption: "Table IV — page 8", ChunkID: "table-page"}}}
+	images := selectRetrievedImages("表格", []*types.SearchResult{ref})
+	require.Len(t, images, 1)
+	require.Equal(t, "Table IV — page 8", images[0].Caption)
+	require.Equal(t, "table-page", images[0].ChunkID)
 }
 
 func TestRetrievedImageResolverTrustedIngestionAndLimits(t *testing.T) {
@@ -116,9 +131,8 @@ func TestRetrievedImagesReachWireWithSourceAndPreserveUploads(t *testing.T) {
 	require.Contains(t, parts[1].Text, "Figure 1 Compass Area")
 	require.Contains(t, parts[1].Text, registry.ChunkHandle("chunk-1"))
 	require.Equal(t, "high", parts[2].ImageURL.Detail)
-	client := openaicompletions.New(openaicompletions.Config{Settings: api.DefaultOpenAICompletions()})
-	body, err := client.BuildRequestBody(messages, &api.Options{RequireImageInput: true}, true)
-	require.NoError(t, err)
+	client := &chat.RemoteAPIChat{}
+	body := client.ConvertMessages(messages)
 	wire, err := json.Marshal(body)
 	require.NoError(t, err)
 	require.Equal(t, 2, strings.Count(string(wire), `"type":"image_url"`))

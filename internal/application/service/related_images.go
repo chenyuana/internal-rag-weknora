@@ -2,7 +2,11 @@ package service
 
 import (
 	"context"
+	"encoding/json"
+	"fmt"
 	"regexp"
+	"sort"
+	"strconv"
 	"strings"
 
 	"github.com/Tencent/WeKnora/internal/searchutil"
@@ -62,7 +66,9 @@ func (s *sessionService) attachRelatedImages(ctx context.Context, refs []*types.
 			}
 			byKnowledge[ref.KnowledgeID] = chunks
 		}
-		for _, image := range relatedCaptionImages(ref.Content, wanted, byKnowledge[ref.KnowledgeID]) {
+		images := relatedTableImages(ref.Content, byKnowledge[ref.KnowledgeID])
+		images = append(images, relatedCaptionImages(ref.Content, wanted, byKnowledge[ref.KnowledgeID])...)
+		for _, image := range images {
 			if len(ref.RelatedImages) >= 12 {
 				break
 			}
@@ -78,6 +84,82 @@ func (s *sessionService) attachRelatedImages(ctx context.Context, refs []*types.
 			}
 		}
 	}
+}
+
+var tableHeading = regexp.MustCompile(`(?im)^\s*Table\s+([IVXLCDM]+|[0-9]+)\b`)
+var tableMention = regexp.MustCompile(`(?i)\bTable\s+([IVXLCDM]+|[0-9]+)\b`)
+
+// Recover table assets independently of parser alt labels. For legacy data,
+// accept an unlabelled continuation only across adjacent chunks/pages with
+// the same parent and column count and an increasing numeric first column.
+func relatedTableImages(content string, chunks []*types.Chunk) []types.RelatedImage {
+	wanted := map[string]bool{}
+	for _, m := range tableMention.FindAllStringSubmatch(content, -1) {
+		wanted[strings.ToUpper(m[1])] = true
+	}
+	ordered := make([]*types.Chunk, 0, len(chunks))
+	for _, c := range chunks {
+		if c != nil && c.IsEnabled && c.ChunkType == types.ChunkTypeText {
+			ordered = append(ordered, c)
+		}
+	}
+	sort.Slice(ordered, func(i, j int) bool { return ordered[i].ChunkIndex < ordered[j].ChunkIndex })
+	type tableMetadata struct {
+		Assets []string   `json:"asset_ids"`
+		Rows   [][]string `json:"table_rows"`
+		Page   int        `json:"page_start"`
+	}
+	number := func(s string) (float64, error) {
+		return strconv.ParseFloat(strings.ReplaceAll(strings.TrimSpace(s), ",", ""), 64)
+	}
+	var images []types.RelatedImage
+	seen := map[string]bool{}
+	label := ""
+	var previous *types.Chunk
+	var prevMeta tableMetadata
+	for _, c := range ordered {
+		var meta tableMetadata
+		_ = json.Unmarshal(c.Metadata, &meta)
+		heading := tableHeading.FindStringSubmatch(c.Content)
+		adjacent := previous != nil && c.ChunkIndex == previous.ChunkIndex+1 &&
+			c.ParentChunkID != "" && c.ParentChunkID == previous.ParentChunkID
+		if len(heading) > 1 {
+			label = strings.ToUpper(heading[1])
+		} else if !(adjacent && len(meta.Rows) > 0 && len(prevMeta.Rows) == 0 && len(previous.Content) <= 300 && tableHeading.MatchString(previous.Content) && label != "") {
+			continuation := adjacent && label != "" && len(meta.Rows) > 0 && len(prevMeta.Rows) > 0 &&
+				meta.Page == prevMeta.Page+1 && len(meta.Rows[0]) == len(prevMeta.Rows[0]) && len(meta.Rows[0]) > 0
+			if continuation {
+				first, err1 := number(meta.Rows[0][0])
+				lastRow := prevMeta.Rows[len(prevMeta.Rows)-1]
+				if len(lastRow) == 0 {
+					continuation = false
+				} else {
+					last, err2 := number(lastRow[0])
+					continuation = err1 == nil && err2 == nil && first > last
+				}
+			}
+			if !continuation {
+				label = ""
+			}
+		}
+		if label != "" && wanted[label] && len(meta.Rows) > 0 {
+			for _, match := range markdownImage.FindAllStringSubmatch(c.Content, -1) {
+				url := match[2]
+				assetMatched := false
+				for _, asset := range meta.Assets {
+					if asset != "" && strings.HasSuffix(url, "/assets/"+asset) {
+						assetMatched = true
+					}
+				}
+				if assetMatched && !seen[url] {
+					seen[url] = true
+					images = append(images, types.RelatedImage{URL: url, Caption: fmt.Sprintf("Table %s — page %d", label, meta.Page), ChunkID: c.ID})
+				}
+			}
+		}
+		previous, prevMeta = c, meta
+	}
+	return images
 }
 
 // Captions must occur verbatim in the retrieved context of the same document.

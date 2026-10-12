@@ -25,3 +25,15 @@ test('does not show pictures for a text-only answer without figure numbers', () 
   const refs = [{ id: 'text-1', related_images: [{ url: 'https://assets/3.1', caption: 'Figure 3.1', chunk_id: 'a' }] }]
   assert.deepEqual(selectRelatedReferenceImages(answer, refs), [])
 })
+
+test('shows every page of a cited table and keeps other tables excluded', () => {
+  const answer = 'Table III 和 Table IV。<kb chunk_id="source" />'
+  const related_images = ['I', 'III', 'IV — page 8', 'IV — page 9', 'IV — page 10', 'IV — page 11'].map((name) => ({ url: `https://assets/${name}`, caption: `Table ${name}`, chunk_id: name }))
+  assert.equal(selectRelatedReferenceImages(answer, [{ id: 'source', related_images }]).length, 5)
+  assert.deepEqual(selectRelatedReferenceImages(answer, [{ id: 'uncited', related_images }]), [])
+})
+
+test('matches Chinese table numbers to Roman source captions', () => {
+  const refs = [{ id: 'source', related_images: [{ url: 'https://assets/iii', caption: 'Table III — page 8', chunk_id: 'iii' }] }]
+  assert.equal(selectRelatedReferenceImages('表3的内容。<kb chunk_id="source" />', refs).length, 1)
+})
