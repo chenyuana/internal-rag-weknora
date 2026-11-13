@@ -1,0 +1,32 @@
+What two types of tests comprise military helicopter design qualification, and what ground-test results are required to demonstrate readiness for safe flight testing?
+What systems does Helicopter Flight Control Law Design design first after mathematical modeling, and what specific mission tasks does the book cover?
+What were the annual growth rates of real world GNP and scheduled airline passenger traffic from 1960 to 1990, and how was traffic measured?
+Why are the principal aircraft parameters treated as variables during preliminary design, and what is done around the baseline configuration?
+Why does locating the flight deck in one nose of a twin-hull aircraft raise handling concerns, and how does the triple-hull version address them?
+What three methods are used to demonstrate compliance with airworthiness and environmental standards before civil aircraft entry into service?
+Why is the fuselage layout often examined first in the design process, and how is its shape treated in later design studies?
+What generally dictates wing area in early design, and what are the candidate vertical wing positions relative to the fuselage?
+How is the initial aircraft take-off weight estimate refined as the design progresses?
+Why are wing parameters the principal variables when estimating lift and drag for a civil aircraft?
+What engine characteristics are important in initial selection, and for which flight segments is maximum available thrust assessed?
+Which two minimum design requirements are determined by aircraft performance analysis?
+Once passenger comfort standards are specified, which component is sized directly, and what three principal unknowns remain?
+Why consider costs during preliminary aircraft design, and which costs are affected by design decisions?
+Why study the effect of specification parameter values when an initial civil aircraft layout already satisfies fixed constraints?
+What report records the baseline design at the end of the aircraft project design phase, and what does it describe?
+Why is aircraft design labor intensive, motivating spreadsheet methods?
+What passenger capacity range and baseline family capacity were specified in the advanced regional airliner case study?
+In Table 17.1 what are the loaded masses of Challenger 1 and Leopard 2, and what is the difference?
+How many seats abreast and what seating arrangements were selected for the main and upper decks of the unconventional single-fuselage double-deck aircraft?
+How does the purchase cost comparison of one 600-seat aircraft versus two 300-seat aircraft depend on 600-seat aircraft production volume?
+Who wrote Civil Jet Aircraft Design, and when and by whom was it first published in Great Britain?
+In the Civil Jet Aircraft Design index, what page numbers are given for aileron sizing and baulked landing climb?
+In the contents of Civil Jet Aircraft Design, which chapter and section covers Landing Gear Layout, and what is its starting page?
+Which subsections and starting pages in Aircraft Design Manual volume 19 cover longitudinal, lateral, collective and directional helicopter control range?
+In Wang Shicun's comparison table of helicopter generations, what are the rotor blade lifetimes of the second and third generations?
+How are parametric studies organized around the baseline in preliminary civil aircraft design, and where are the baseline details recorded at the end of project design?
+What are the interdependent main unknowns in initial civil aircraft sizing, and which minimum values are determined by performance analysis?
+What methods demonstrate civil aircraft compliance before entry into service, and what two test types make up military helicopter design qualification?
+How does passenger capacity influence fuselage geometry, and what principal parameters vary in lift and drag estimation when the fuselage is constrained?
+A helicopter completed its first flight yesterday. What are its exact first-flight date, prototype serial number and measured peak vibration according to Zongti 2?
+What was the actual unit price of an unspecified regional airliner contract this year, using the Civil Jet Aircraft Design 70 to 100 seat case?

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "name": "测试 有wiki",
+    "description": "",
+    "tenant_id": 10000,
+    "chunking_config": {
+      "strategy": "auto",
+      "chunk_size": 512,
+      "separators": [
+        "\n\n",
+        "\n",
+        "。",
+        "！",
+        "？",
+        ";",
+        "；"
+      ],
+      "chunk_overlap": 80,
+      "child_chunk_size": 384,
+      "parent_chunk_size": 4096,
+      "enable_parent_child": true
+    },
+    "image_processing_config": {
+      "model_id": "",
+      "image_actions": {
+        "ocr": {
+          "on": [
+            {
+              "is": "block",
+              "prop": "contain.text"
+            },
+            {
+              "is": "true",
+              "prop": "contain.data_visual"
+            }
+          ],
+          "on_unobserved": true
+        }
+      }
+    },
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "summary_model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "cos_config": {
+      "app_id": "",
+      "region": "",
+      "provider": "local",
+      "secret_id": "",
+      "secret_key": "",
+      "bucket_name": "",
+      "path_prefix": ""
+    },
+    "vlm_config": {
+      "api_key": "",
+      "enabled": false,
+      "base_url": "",
+      "model_id": "",
+      "model_name": "",
+      "interface_type": ""
+    },
+    "extract_config": {
+      "enabled": false
+    },
+    "created_at": "2026-10-21T01:01:19.405847+00:00",
+    "updated_at": "2026-10-21T01:01:19.405848+00:00",
+    "deleted_at": null,
+    "is_temporary": false,
+    "type": "document",
+    "faq_config": null,
+    "question_generation_config": {
+      "enabled": true,
+      "question_count": 3
+    },
+    "storage_provider_config": {
+      "provider": "local"
+    },
+    "is_pinned": false,
+    "pinned_at": null,
+    "asr_config": {
+      "enabled": false,
+      "language": "",
+      "model_id": ""
+    },
+    "vector_store_id": null,
+    "wiki_config": {
+      "synthesis_model_id": "",
+      "content_instructions": "使用中文撰写专业主题页，保留原文件号、版本日期及页码。每项技术结论必须有来源支持；区分建议、可接受符合性方法和强制要求。不把历史资料称为现行规则，不合并不同版本的数值条件。表格应保留单位、脚注、适用条件，解析疑点应明示，无法验证的图表数值不猜测。图像链接保留供读者对照。",
+      "max_pages_per_ingest": 0,
+      "extraction_granularity": "standard",
+      "extraction_instructions": "每卷只提取4至6个对工程工作有价值的核心主题，合并同义主题。围绕文件本身的技术要求、方法、适用条件和验证流程组织。不要单独生成泛泛的FAA、FAR、历史废止文件或仅被提及的外部标准页面。跨资料关联必须基于实际内容，不牵强建立关系。"
+    },
+    "indexing_strategy": {
+      "wiki_enabled": true,
+      "graph_enabled": false,
+      "vector_enabled": true,
+      "keyword_enabled": true
+    },
+    "creator_id": "d000e56d-ea1c-437e-8c17-c09146313f2f",
+    "storage_backend_id": "c6b6ade4-68ad-45ff-8dd4-5b6897f4a978",
+    "auto_tag_config": {
+      "enabled": false,
+      "max_tags": 3,
+      "skip_if_tagged": true
+    },
+    "profile_config": {
+      "enabled": false
+    },
+    "generated_profile": null
+  },
+  {
+    "id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "name": "测试 原生解析 有wiki",
+    "description": "",
+    "tenant_id": 10000,
+    "chunking_config": {
+      "strategy": "auto",
+      "chunk_size": 512,
+      "separators": [
+        "\n\n",
+        "\n",
+        "。",
+        "！",
+        "？",
+        ";",
+        "；"
+      ],
+      "chunk_overlap": 80,
+      "child_chunk_size": 384,
+      "parent_chunk_size": 4096,
+      "enable_parent_child": true
+    },
+    "image_processing_config": {
+      "model_id": "",
+      "image_actions": {
+        "ocr": {
+          "on": [
+            {
+              "is": "block",
+              "prop": "contain.text"
+            },
+            {
+              "is": "true",
+              "prop": "contain.data_visual"
+            }
+          ],
+          "on_unobserved": true
+        }
+      }
+    },
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "summary_model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "cos_config": {
+      "app_id": "",
+      "region": "",
+      "provider": "local",
+      "secret_id": "",
+      "secret_key": "",
+      "bucket_name": "",
+      "path_prefix": ""
+    },
+    "vlm_config": {
+      "api_key": "",
+      "enabled": false,
+      "base_url": "",
+      "model_id": "",
+      "model_name": "",
+      "interface_type": ""
+    },
+    "extract_config": {
+      "enabled": false
+    },
+    "created_at": "2026-10-21T01:39:54.929515+00:00",
+    "updated_at": "2026-10-21T01:39:56.491542+00:00",
+    "deleted_at": null,
+    "is_temporary": false,
+    "type": "document",
+    "faq_config": null,
+    "question_generation_config": {
+      "enabled": true,
+      "question_count": 3
+    },
+    "storage_provider_config": {
+      "provider": "local"
+    },
+    "is_pinned": false,
+    "pinned_at": null,
+    "asr_config": {
+      "enabled": false,
+      "language": "",
+      "model_id": ""
+    },
+    "vector_store_id": null,
+    "wiki_config": {
+      "synthesis_model_id": "",
+      "content_instructions": "使用中文撰写专业主题页，保留原文件号、版本日期及页码。每项技术结论必须有来源支持；区分建议、可接受符合性方法和强制要求。不把历史资料称为现行规则，不合并不同版本的数值条件。表格应保留单位、脚注、适用条件，解析疑点应明示，无法验证的图表数值不猜测。图像链接保留供读者对照。",
+      "max_pages_per_ingest": 0,
+      "extraction_granularity": "standard",
+      "extraction_instructions": "每卷只提取4至6个对工程工作有价值的核心主题，合并同义主题。围绕文件本身的技术要求、方法、适用条件和验证流程组织。不要单独生成泛泛的FAA、FAR、历史废止文件或仅被提及的外部标准页面。跨资料关联必须基于实际内容，不牵强建立关系。"
+    },
+    "indexing_strategy": {
+      "wiki_enabled": true,
+      "graph_enabled": false,
+      "vector_enabled": true,
+      "keyword_enabled": true
+    },
+    "creator_id": "d000e56d-ea1c-437e-8c17-c09146313f2f",
+    "storage_backend_id": "c6b6ade4-68ad-45ff-8dd4-5b6897f4a978",
+    "auto_tag_config": {
+      "enabled": false,
+      "max_tags": 3,
+      "skip_if_tagged": true
+    },
+    "profile_config": {
+      "enabled": false
+    },
+    "generated_profile": null
+  }
+]

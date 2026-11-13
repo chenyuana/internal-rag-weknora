@@ -1,0 +1,1 @@
+AC 25.853-1 的签发日期是 **1986年9月17日**，即文档中的“Date: 9/17/86”。<kb doc="AC_25.853-1.pdf" chunk_id="bccda8cd-5b87-4352-b4f1-10f783ebf7da" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />

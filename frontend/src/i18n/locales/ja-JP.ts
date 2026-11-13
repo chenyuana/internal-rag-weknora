@@ -2551,6 +2551,8 @@ export default {
     placeholderAgent: '{name}に質問',
     agentMode: 'スマート推論',
     normalMode: 'クイック回答',
+    crossLanguageSearch: '言語横断検索',
+    crossLanguageSearchHint: 'この質問を別の言語でも検索します',
     normalModeDesc: 'ナレッジベースに基づくRAG Q&A',
     agentModeDesc: '多段階の思考による深い分析',
     agentMissingAllowedTools: '許可するツール',

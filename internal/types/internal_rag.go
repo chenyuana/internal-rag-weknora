@@ -43,4 +43,19 @@ type InternalRAGImportResult struct {
 	KnowledgeID string `json:"knowledge_id,omitempty"`
 	Action      string `json:"action"`
 	ChunkCount  int    `json:"chunk_count"`
+	WikiStatus  string `json:"wiki_status,omitempty"`
+}
+
+// ExistingChunksEnrichRequest explicitly selects a bounded set of documents.
+type ExistingChunksEnrichRequest struct {
+	KnowledgeIDs []string `json:"knowledge_ids" binding:"required,min=1,max=20"`
+	Wiki         bool     `json:"wiki"`
+	Graph        bool     `json:"graph"`
+	DryRun       bool     `json:"dry_run"`
+}
+
+type ExistingChunksEnrichResult struct {
+	KnowledgeID string `json:"knowledge_id"`
+	Action      string `json:"action"`
+	ChunkCount  int    `json:"chunk_count"`
 }

@@ -531,6 +531,10 @@ type KnowledgePostProcessPayload struct {
 	KnowledgeBaseID string `json:"knowledge_base_id"`
 	Language        string `json:"language,omitempty"` // Request locale for {{language}} in prompt templates
 	Attempt         int    `json:"attempt,omitempty"`
+	// EnrichmentOnly reuses persisted chunks without parsing or indexing them.
+	EnrichmentOnly bool `json:"enrichment_only,omitempty"`
+	EnrichWiki     bool `json:"enrich_wiki,omitempty"`
+	EnrichGraph    bool `json:"enrich_graph,omitempty"`
 }
 
 // KnowledgeAutoTagPayload identifies a document whose parsed content should be

@@ -540,6 +540,7 @@ const props = defineProps({
 });
 
 const isAgentEnabled = computed(() => settingsStore.isAgentEnabled);
+const crossLanguageSearch = ref(false);
 const isWebSearchEnabled = computed(() => settingsStore.isWebSearchEnabled);
 const selectedKbIds = computed(() => settingsStore.settings.selectedKnowledgeBases || []);
 const selectedFileIds = computed(() => settingsStore.settings.selectedFiles || []);
@@ -1948,7 +1949,7 @@ watch([selectedKbIds, selectedFileIds], ([kbIds, fileIds]) => {
 }, { deep: true });
 
 const emit = defineEmits<{
-  (e: 'send-msg', query: string, modelId: string, mentionedItems: MentionRequestItem[], imageFiles: File[], attachmentFiles: AttachmentFile[]): void;
+  (e: 'send-msg', query: string, modelId: string, mentionedItems: MentionRequestItem[], imageFiles: File[], attachmentFiles: AttachmentFile[], crossLanguageSearch?: boolean): void;
   (e: 'stop-generation'): void;
   (e: 'stop-confirmed'): void;
   (e: 'stop-failed'): void;
@@ -2080,7 +2081,9 @@ const createSession = async (val: string, delivery: 'inject' | 'after' = 'after'
   const imageFiles = uploadedImages.value.map(img => img.file);
   const attachmentFiles = uploadedAttachments.value;
 
-  emit('send-msg', val, selectedModelId.value, mentionedItems, imageFiles, attachmentFiles);
+  emit('send-msg', val, selectedModelId.value, mentionedItems, imageFiles, attachmentFiles,
+    !settingsStore.isAgentStreamMode && crossLanguageSearch.value);
+  crossLanguageSearch.value = false;
 
   // Clean up image previews
   uploadedImages.value.forEach(img => URL.revokeObjectURL(img.preview));
@@ -2739,6 +2742,15 @@ defineExpose({
             </button>
           </t-tooltip>
 
+          <button v-if="!settingsStore.isAgentStreamMode && !isKnowledgeBaseDisabledByAgent"
+            type="button" class="control-btn cross-language-btn"
+            :class="{ active: crossLanguageSearch, disabled: isReplying }"
+            :disabled="isReplying" :aria-pressed="crossLanguageSearch"
+            :title="$t('input.crossLanguageSearchHint')"
+            @click="crossLanguageSearch = !crossLanguageSearch">
+            {{ $t('input.crossLanguageSearch') }}
+          </button>
+
           <!-- WebSearch 开关按钮（智能体未启用时不显示） -->
           <t-tooltip v-if="showWebSearchButton" placement="top" theme="light"
             :popupProps="{ overlayClassName: 'input-field-tooltip' }">
@@ -3289,6 +3301,17 @@ const getImgSrc = (url: string) => {
     &:hover {
       background: var(--td-bg-color-secondarycontainer, #f5f5f5);
     }
+  }
+}
+
+.cross-language-btn {
+  height: 28px;
+  background: transparent;
+  border: .5px solid var(--td-component-border, #e7e7e7);
+
+  &.active {
+    color: var(--td-brand-color);
+    border-color: currentColor;
   }
 }
 

@@ -1,0 +1,184 @@
+[
+  {
+    "case": "Q06-clean-agent",
+    "session": "08525b28-7886-46f7-a19f-9a9fc4a896f2",
+    "complete": true,
+    "seconds": 103.95720171928406,
+    "tools": {
+      "wiki_search": 4,
+      "wiki_read_page": 2,
+      "read_document": 11
+    },
+    "zero_match_reads": 2,
+    "answer_characters": 8865
+  },
+  {
+    "case": "Q06-native-agent",
+    "session": "542e34f5-f4f1-4d43-9955-f3942b68d27b",
+    "complete": true,
+    "seconds": 74.7684166431427,
+    "tools": {
+      "wiki_search": 1,
+      "wiki_read_page": 4,
+      "read_document": 10
+    },
+    "zero_match_reads": 2,
+    "answer_characters": 8497
+  },
+  {
+    "case": "Q07-clean-agent",
+    "session": "58c7226b-7556-42fa-8f43-7a0f7a6a8695",
+    "complete": true,
+    "seconds": 86.55009388923645,
+    "tools": {
+      "wiki_search": 2,
+      "wiki_read_page": 1,
+      "read_document": 6
+    },
+    "zero_match_reads": 2,
+    "answer_characters": 5210
+  },
+  {
+    "case": "Q07-native-agent",
+    "session": "b64664db-fa31-41fb-b3d5-3b3aefe36552",
+    "complete": true,
+    "seconds": 66.36197638511658,
+    "tools": {
+      "wiki_search": 4,
+      "wiki_read_page": 3,
+      "read_document": 7
+    },
+    "zero_match_reads": 3,
+    "answer_characters": 5501
+  },
+  {
+    "case": "Q09-clean-agent",
+    "session": "6c4c02a6-afa2-4b09-acbd-778fa36ec21f",
+    "complete": true,
+    "seconds": 57.097721576690674,
+    "tools": {
+      "wiki_search": 8,
+      "wiki_read_page": 3,
+      "read_document": 4
+    },
+    "zero_match_reads": 0,
+    "answer_characters": 2815
+  },
+  {
+    "case": "Q09-native-agent",
+    "session": "8fbce849-4884-4771-92a2-89ca83fb7bfc",
+    "complete": true,
+    "seconds": 51.4546639919281,
+    "tools": {
+      "wiki_search": 2,
+      "wiki_read_page": 1,
+      "read_document": 6
+    },
+    "zero_match_reads": 1,
+    "answer_characters": 2149
+  },
+  {
+    "case": "Q14-clean-agent",
+    "session": "fe9be12f-1904-4088-97de-b54e8709a696",
+    "complete": true,
+    "seconds": 55.205949783325195,
+    "tools": {
+      "wiki_search": 2,
+      "wiki_read_page": 1,
+      "read_document": 4
+    },
+    "zero_match_reads": 1,
+    "answer_characters": 7965
+  },
+  {
+    "case": "Q14-native-agent",
+    "session": "b5df4c65-bcd9-4735-8861-1fd6578818aa",
+    "complete": true,
+    "seconds": 108.83969402313232,
+    "tools": {
+      "wiki_search": 5,
+      "wiki_read_page": 2,
+      "read_document": 4
+    },
+    "zero_match_reads": 2,
+    "answer_characters": 4145
+  },
+  {
+    "case": "Q17-clean-agent",
+    "session": "a44f75da-d540-47be-9dc7-85ab04294b2e",
+    "complete": true,
+    "seconds": 37.01416206359863,
+    "tools": {
+      "wiki_search": 4,
+      "wiki_read_page": 1,
+      "read_document": 2
+    },
+    "zero_match_reads": 0,
+    "answer_characters": 3164
+  },
+  {
+    "case": "Q17-native-agent",
+    "session": "056faed4-3971-4a5e-ab01-d9119864e8e6",
+    "complete": true,
+    "seconds": 52.74037194252014,
+    "tools": {
+      "wiki_search": 1,
+      "wiki_read_page": 2,
+      "read_document": 6
+    },
+    "zero_match_reads": 1,
+    "answer_characters": 6034
+  },
+  {
+    "case": "Q21-clean-agent",
+    "session": "43eca597-f89c-4ca0-9082-8d8992cbfa73",
+    "complete": true,
+    "seconds": 76.15480327606201,
+    "tools": {
+      "wiki_search": 3,
+      "wiki_read_page": 2,
+      "read_document": 4
+    },
+    "zero_match_reads": 1,
+    "answer_characters": 6060
+  },
+  {
+    "case": "Q21-native-agent",
+    "session": "baf61dbf-afd4-4b50-b384-9cfda689691c",
+    "complete": true,
+    "seconds": 83.02841901779175,
+    "tools": {
+      "wiki_search": 2,
+      "wiki_read_page": 4,
+      "read_document": 6
+    },
+    "zero_match_reads": 3,
+    "answer_characters": 5119
+  },
+  {
+    "case": "Q24-clean-agent",
+    "session": "1af322aa-3421-4af1-ac0b-680c12c2aa85",
+    "complete": true,
+    "seconds": 82.69662928581238,
+    "tools": {
+      "wiki_search": 1,
+      "wiki_read_page": 2,
+      "read_document": 19
+    },
+    "zero_match_reads": 7,
+    "answer_characters": 7009
+  },
+  {
+    "case": "Q24-native-agent",
+    "session": "3c16e1d0-775c-4b54-84c8-e8535510f720",
+    "complete": true,
+    "seconds": 169.3729591369629,
+    "tools": {
+      "wiki_search": 3,
+      "wiki_read_page": 3,
+      "read_document": 24
+    },
+    "zero_match_reads": 7,
+    "answer_characters": 9461
+  }
+]

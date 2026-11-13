@@ -1,0 +1,747 @@
+[
+  {
+    "id": "62ea7187-944c-4357-aaf1-f203a97d54e7",
+    "response_type": "references",
+    "content": "",
+    "done": false,
+    "knowledge_references": [
+      {
+        "id": "6f9b1ddb-d5dc-4fe1-a44c-1cc967702a2a",
+        "content": "Source image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/4929f017e736473aad84c75954221b0e/assets/5c85b9a46d28dc4d92b4)",
+        "knowledge_id": "85b9eb86-6e4a-464d-b837-9ba2d6b0d2c7",
+        "chunk_index": 0,
+        "knowledge_title": "AC_25-8.pdf",
+        "start_at": 0,
+        "end_at": 175,
+        "seq": 0,
+        "score": 0.7,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "23eec67327ecd0c38262da9c01cb87e7e4cb882cfdf7eed5dd1501bbf374e131",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "32ae489e6e8347266c5e",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\6b\\6b4ea322f84ef5ac096c2a468349af446cde21b6c6963f25cf7ba843959875f2\\source.pdf",
+          "internal_rag_source_sha256": "6b4ea322f84ef5ac096c2a468349af446cde21b6c6963f25cf7ba843959875f2",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "5a009958-b79b-42ab-a351-6dae3abfb42e",
+        "image_info": "",
+        "knowledge_filename": "AC_25-8.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25-8.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/4929f017e736473aad84c75954221b0e/assets/5c85b9a46d28dc4d92b4)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "d2918ab1-7c94-4de6-8966-9ea09b7b80e4",
+        "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Built-in Fire Extinguishing/Suppression Systems in Class C and Class F Cargo Compartments\n\nDate: 02/03/16\n\nInitiated By: ANM-112\n\nAC No: 25.851-1\n\nThis advisory circular (AC) provides guidance concerning compliance with the airworthiness standards for transport category airplanes pertaining to Class C and Class F cargo compartments that incorporate built-in fire extinguishing/suppression systems. This guidance is applicable to transport category airplanes for which a new, amended, or supplemental type certificate is requested.\n\nIf you have any suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nSource image on page 1; no OCR transcription available.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page\n1 Purpose....1\n2 Applicability ....1\n3 Cancellation ....1\n4 Related Documents ....2\n5 Background....3\n6 Compartment Classification Regulations ....5\n7 Testing Volumetric Concentration Levels ....6\n8 Airplane Test Conditions ....9\n9 Evaluation of Alternative Gaseous Extinguishing/Suppression Systems and Alternative Agents ....12\n10 Evaluation of Alternative Liquid Agent and Fire Extinguishing/Suppression Systems....15\n11 Use of Simulants for Certification Testing ....15\n12 Establishing Duration for the Suppression System....17\n13 Airplane Manual Considerations ....19\n14 Placards and Markings in Cargo Compartments ....19\nAppendix A. Analytical Methods for Determining Halon 1301 Concentration Levels ....A-1\n\nFigures\n\nFigure 1. Effect of Cargo Load on Halon 1301 Concentration Levels.... 10\nFigure 2. Halon Concentration Time History.... 11\nFigure A-1. Example – Halon 1301 Model.... A-3\n\nTables\n\nTable A-1. Terms and Symbols ...... A-1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/b2b0cbb9aa8611d620e7)",
+        "knowledge_id": "3f645faa-5019-4d5b-aa28-cd7a1c1d2bc1",
+        "chunk_index": 1,
+        "knowledge_title": "AC_25.851-1.pdf",
+        "start_at": 0,
+        "end_at": 175,
+        "seq": 1,
+        "score": 0.6887096774193547,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "7496ed554b75dcbe91a09daa3224ee8919192f5cb112da1ec772b54ef69dd0a4",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "dbd20f7c0803d7802a35",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\9e\\9e6e10f825ee9d0586d535fcca12867d18c5ec2403e2fc538921fcc766eea85e\\source.pdf",
+          "internal_rag_source_sha256": "9e6e10f825ee9d0586d535fcca12867d18c5ec2403e2fc538921fcc766eea85e",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "8c00ee0c-a723-42e5-83fb-1474fc0b4a42",
+        "image_info": "",
+        "knowledge_filename": "AC_25.851-1.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25.851-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/b2b0cbb9aa8611d620e7)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "39b18907-cb7c-48f9-a773-aefc88b816db",
+        "content": "757-200 CERTIFICATION DEMONSTRATION DATA\n\nColumn 1=Exit Prep. Time (sec.); Door 1L=8.1; Door 2L=11.8; Door 4L=10.0\nColumn 1=Flow rate (epm ); Door 1L=70.8; Door 2L=68.7; Door 4L=52.0\nColumn 1=Time per evacuee (sec.); Door 1L=.847; Door 2L=.873; Door 4L=1.154\n\n完整表格：\n<table><tr><td></td><td>Door 1L</td><td>Door 2L</td><td>Door 4L</td></tr><tr><td>Exit Prep. Time (sec.)</td><td>8.1</td><td>11.8</td><td>10.0</td></tr><tr><td>Flow rate (epm )</td><td>70.8</td><td>68.7</td><td>52.0</td></tr><tr><td>Time per evacuee (sec.)</td><td>.847</td><td>.873</td><td>1.154</td></tr></table>\n\no. Time for Exit Preparation.\n\n(1) The time for exit preparation needs to be determined. If part of an exit system has been upgraded or otherwise changed since the full-scale evacuation demonstration(s), it may be necessary to revise the exit preparation time from that observed in previous demonstrations before using it in the analysis. T_ExitPrep can be determined by timed tests of the new system or by summing the separate elements ofT_ExitPrep. Any adjustments should be fully documented.\n\n(2) Exit preparation includes opening the exit and deploying any installed assist means. If the external assist means is an inflatable slide or slide/raft, the device is considered deployed when it exhibits the rigidity necessary to safely sustain a load (stable and fully extended)\n\nalthough it may not necessarily be touching the ground. When the subject configuration includes the same basic exit system as formerly demonstrated, a straightforward tabulation of values applicable to that exit system should be presented. The average(s) should be shown and identified accordingly.\n\n(3) \"Hesitation time\" may be defined as the interval of time between when the assist means (if required, usually a slide) is ready for use and the egress of the first evacuee. It may simply be the time necessary for the first evacuee to respond to the flight attendant's command, or it may include a reluctance to jump. The analysis should account for hesitation by measuring the time that elapses when the slide is perceived as inflated and fully extended (though not necessarily on the ground) until the first evacuee starts to descend on the slide. A suitable hesitation time may be derived by averaging all hesitation data values.\n\n(4) Some off-wing escape systems may prompt a modification to the analysis technique to properly account for first evacuee hesitation. Overwing door opening or hatch removal may trigger a slightly delayed deployment and inflation of the off-wing inflatable. The first evacuee could emerge through the exit to the wing or wing ramp surface in advance of the off-wing slide being ready for use. Depending on available data, the evacuation capability analysis for some such systems should be based on first evacuee on the ground.\n\n(5) After accounting for hesitation and doorway egress, the time for the first evacuee to travel from the point of contact with the slide or overwing ramp to the ground must be added to the time line. Average values, if used, should be noted. The assist means traverse time should include the on slide and on ground event times from which the traverse time interval is derived.\n\np. Time for Exit Flow.\n\n(1) The period of evacuee flow through an exit system, T_ExitFlow, depends on flow rate and number of evacuees. Flow rates used in the analysis are those established by earlier demonstrations and tests and converted to intervals as described in paragraph 8.m.(4). T_ExitFlow is then derived by multiplying the number of evacuees allocated to the exit minus one (n-1) by the average interval established for each evacuee.\n\n(2) A dependable and accurate technique to determine flow rate from film or video tape is to:\n\n(a) select a stable point or plane of reference in the flow path field of view,\n\n(b) record the event times for passage of first and last evacuees, thus determining the time of flow, and\n\n(c) calculate the flow rate (in evacuees per unit of time) by dividing the count of evacuees minus one by the flow time.\n\n(3) The flow time starts with the first evacuee at the reference point. The remaining evacuees pass the reference point during the flow period. One evacuee, therefore, is subtracted from the total evacuee count to determine flow rate when a fixed-point or plane of reference technique is used.\n\nq. Evacuee Allocation to Exits. The allocation of evacuees to exits should be established and illustrated on a configuration drawing. The allocation should be consistent with the demonstrated capability of the same or similar exit systems and with the distribution of exits and passenger seating relative to the exits. The illustration should convey the substance of an emergency evacuation plan that flight attendants, and flight deck personnel (for certain part 25 applications only) work to achieve with the subject configuration. The goal of the plan is to get everyone out as soon as possible. Passenger management techniques employed in the analysis need to be substantiated by records of earlier demonstrations and/or tests.\n\nr. Flightcrew and Flight Attendant Duties. The crew members' positions during takeoff and landing and their primary and secondary duty stations during an emergency should be indicated on a suitable configuration diagram. Their duties should be described in the analysis. Demonstration or test data should be cited that substantiates the ability of crew members to travel to their duty stations. Procedures which would require a flight attendant to bypass an exit (other than one in the immediate vicinity of the flight attendant's seat) to get to his/her primary or secondary duty station should not be proposed.\n\nNOTE: For applicants also seeking compliance with § 121.291, the flightcrew should have no assigned evacuation duties. Flightcrew participation is limited to part 25-only applications, where the type certification bases precede Amendment 25-79.\n\ns. Passenger Management.\n\n(1) The definition of \"passenger management\" for purposes of this advisory circular is the directing of passengers to active exits by flight attendants after initiation of the evacuation. The goal of passenger management is to minimize the total time for evacuation while ensuring passenger safety.\n\n(2) To address passenger management, the applicant must show that similar flight attendant duties (see paragraph 9.r), allocation of evacuees to exits (see paragraph 9.q), and cabin configuration (see paragraph 9.c) have resulted in a successful full-scale evacuation demonstration(s) or equivalent test(s).\n\nNOTE 1: Bypass of an active exit, when included in the analysis, must be based on bypass accomplished at an identical exit type during a full-scale demonstration on an airplane with the same number of aisles. “Bypass,” for purposes of this advisory circular, is defined as the movement of a passenger past an active exit to get to another active exit. On a twin aisle airplane, movement past an exit along the aisle that is not adjacent to the active exit is still regarded as bypass. The passenger management and associated crew training should also be consistent between the airplane being analyzed and the airplane that was actually demonstrated.\n\nNOTE 2: When exit systems are not symmetrically located or different performance characteristics have been identified for cross cabin exits, the analysis should address the more critical exit of each exit pair.\n\nt. Total Evacuation Time Calculations.\n\n(1) Utilizing the data, formula, and analytical techniques described above, the total evacuation time per exit as described in paragraph 9.l can be determined for the configuration.\n\n(2) A configuration diagram, annotated with the calculated evacuation times and evacuee counts near the exits used can be used to provide a graphic summary of results. A single configuration diagram could satisfy the multiple purposes of depicting exits used, passenger and crew allocation to exits (cabin division lines) and the resulting evacuation times per exit.\n\nu. Success Criteria.\n\n(1) If the results of the total evacuation time calculations are less than 90 seconds, the analysis indicates that the airplane can be evacuated under the demonstration conditions established by appendix J of part 25 or section (a) of appendix D of part 121, within the time criterion contained in §§ 25.803(c) and 121.291(a), respectively. The conservatism of the analysis should be demonstrated as noted below.\n\n(2) The applicant should then prepare an evaluation of the additional evacuation capability (time margin) of each exit that was used in the analysis.\n\n(a) The following formula may be used to determine the available time margin for the airplane configuration being reviewed:\n\nTimemargin=Σ_i=1^''(90-T_TotalExiti)\n\nwhere:\n\nT = Total evacuation time for the exit (in seconds)\n\nn = Total number of exits used\n\n[原始公式]\n$$\n\\text { Time   margin } = \\Sigma_ {\\mathrm{i} = 1} ^ {\\prime \\prime} (9 0 - \\mathrm{T} _ {\\text { Total   Exit   i }})\n$$\n\nThe available time margin calculated using the above formula should be 9 or more seconds. The time interval of 9 seconds (10 percent of the current standard of 90 seconds) is based on the demonstrated capability of today's transport category airplanes. Note that this method of establishing conservatism depends on the passenger management techniques being appropriate to balance the evacuees among the exits.\n\n(b) An alternative to the margin calculations shown above, as a means of showing conservatism in the analysis, would be to use exit flow rates less than the calculated average and exit preparation times greater than the calculated average. The amount of performance degradation can be a calculated number such as the value of a standard deviation. The average evacuee flow rate would be reduced (thereby increasing the time of exit flow) and the average exit preparation time would be increased by the respective calculated values. If, however, the data used to derive the standard deviations is widely scattered resulting in a large value for the standard deviation, the applicant may choose to use the slowest rate or longest exit preparation time instead.\n\nv. Initial Coordination of Analysis. As a general guideline, evacuation analyses should be informally coordinated as early as possible with the FAA certification office prior to formal submittal to ensure that all significant factors have been addressed.\n\n10. Computer Modeling. Work is being done in the field of computer modeling to develop programs which could be used to demonstrate compliance with the evacuation demonstration requirements. Although progress has been made, to date, no program has been presented to the FAA and found acceptable as a substitute for an actual demonstration. Any applications for the use of computer modeling to demonstrate compliance with § 25.803(c) should be coordinated with the Standards Staff of the Transport Airplane Directorate.\n\nSource image on page 25; no OCR transcription available.\n\nfea li Barami\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nSource image on page 25; no OCR transcription available.\n\n![figure p25](http://localhost:8080/api/v1/ingestion/jobs/369d66cfd6924960afdbcc285781f938/assets/f0d475e5d789b2d41e88)",
+        "knowledge_id": "0eb9f13c-ebf3-4e78-abe9-c000c56bf06b",
+        "chunk_index": 50,
+        "knowledge_title": "AC_25.803-1A.pdf",
+        "start_at": 0,
+        "end_at": 177,
+        "seq": 50,
+        "score": 0.6777777777777777,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "f3a94efafbaa5501b6cc37b953a5783cea9b60ff9ce97264eabc778aadeace6e",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "062fffe4f1a3baf62998",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\55\\5550c3b008fba3b65ec7fd5b320fc801196f5ed3b9b266601a8fa0c88f481fce\\source.pdf",
+          "internal_rag_source_sha256": "5550c3b008fba3b65ec7fd5b320fc801196f5ed3b9b266601a8fa0c88f481fce",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "b534f47d-f9c4-441e-8114-abad0b148a57",
+        "image_info": "",
+        "knowledge_filename": "AC_25.803-1A.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25.803-1A.pdf\n757-200 CERTIFICATION DEMONSTRATION DATA > Source image on page 25\n\nSource image on page 25; no OCR transcription available.\n\n![figure p25](http://localhost:8080/api/v1/ingestion/jobs/369d66cfd6924960afdbcc285781f938/assets/f0d475e5d789b2d41e88)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "2da92071-de93-46e3-84a1-8f0629989070",
+        "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INSTALLATION OF THERMAL/ACOUSTIC INSULATION FOR BURNTHROUGH PROTECTION\n\nDate: 7/29/08\n\nInitiated by: ANM-115\n\nAC No: 25.856-2A\n\nChange:\n\n1. PURPOSE. This AC provides guidance for the test method to determine burnthrough resistance of thermal/acoustic insulation materials installed in transport category airplanes. This guidance applies to airplanes required to comply with § 25.856 and part VII of Appendix F to 14 CFR part 25.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/95bb87c0010c42788dd4595b7c1b052d/assets/366300ebbf80eb1bb12d)",
+        "knowledge_id": "c1edd302-5626-4cd7-8dab-a44546ce1ae2",
+        "chunk_index": 1,
+        "knowledge_title": "AC_25.856-2A.pdf",
+        "start_at": 0,
+        "end_at": 175,
+        "seq": 1,
+        "score": 0.6569230769230768,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "3c902f1b75235f3993fd28f52ad7814a111039d4bddcfb3895497cb75beb189d",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "b729aa2557e9597916d7",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\c2\\c268ae08a623ec213fb8e1d5a723cec8aade3b693ef29f011124cf07a02e77a4\\source.pdf",
+          "internal_rag_source_sha256": "c268ae08a623ec213fb8e1d5a723cec8aade3b693ef29f011124cf07a02e77a4",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "204423b8-ef2d-4bc8-9eef-a6ac8f81b210",
+        "image_info": "",
+        "knowledge_filename": "AC_25.856-2A.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25.856-2A.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/95bb87c0010c42788dd4595b7c1b052d/assets/366300ebbf80eb1bb12d)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "5b47bd52-93e6-4478-b3a6-1fc3a0193b3b",
+        "content": "Advisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Certification Maintenance Requirements\n\nDate: 10/03/11 Initiated by: ANM-117\n\nAC No: 25-19A\n\n1. Purpose. This advisory circular (AC) provides guidance on the selection, documentation, and control of Certification Maintenance Requirements (CMR). This AC also provides a rational basis for coordinating the Maintenance Review Board (MRB), if the MRB process is used, and CMR selection processes to ensure premises made in the system safety analyses supporting the compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.1309, and other system safety rules (such as §§ 25.671, 25.783, 25.901, and 25.933) are protected in service. This AC describes an acceptable means, but not the only means, for selecting, documenting, and managing CMRs. Terms such as \"shall\" and \"must\" are used only in the sense of ensuring applicability of this particular means of compliance when the acceptable means of compliance described herein is used.\n\n2. Applicability.\n\na. The guidance provided in this document is directed to airplane manufacturers, modifiers, civil aviation authorities, and Federal Aviation Administration (FAA) transport airplane type certification engineers and their designees.\n\nb. Like all advisory material, this AC is not, in itself, mandatory, and does not constitute a regulation. It describes an acceptable means, but not the only means, for showing compliance with the requirements for transport category airplanes. The FAA will consider other means of demonstrating compliance that an applicant may elect to present. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the relevant regulations. On the other hand, if we become aware of circumstances that convince us that following this AC would not result in compliance with the applicable regulations, we will not be bound by the terms of this AC, and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This material does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Cancellation. Advisory Circular 25-19, Certification Maintenance Requirements, dated 11/28/94, is canceled.\n\n4. Related Documents.\n\na. Title 14, Code of Federal Regulations (14 CFR), part 25.\n\nSection=25.1309; Title=Equipment, systems, and installations\nSection=25.1529; Title=Instructions for continued airworthiness\n\n完整表格：\n<table><tr><td>Section</td><td>Title</td></tr><tr><td>25.1309</td><td>Equipment, systems, and installations</td></tr><tr><td>25.1529</td><td>Instructions for continued airworthiness</td></tr></table>\n\nb. FAA ACs.\n\nAC No.=25.1309-1A; Title=System Design and Analysis; Date=6/21/88\nAC No.=120-17A; Title=Maintenance Control By Reliability Methods; Date=3/27/78\nAC No.=121-22A; Title=Maintenance Review Board Procedures; Date=3/7/97\n\n完整表格：\n<table><tr><td>AC No.</td><td>Title</td><td>Date</td></tr><tr><td>25.1309-1A</td><td>System Design and Analysis</td><td>6/21/88</td></tr><tr><td>120-17A</td><td>Maintenance Control By Reliability Methods</td><td>3/27/78</td></tr><tr><td>121-22A</td><td>Maintenance Review Board Procedures</td><td>3/7/97</td></tr></table>\n\nc. Other Documents.\n\nAir Transport Association (ATA) Maintenance Steering Group (MSG-3), Airline/Manufacturer Maintenance Program Development Document. Available from the ATA, 1301 Pennsylvania Avenue, N.W. Suite 1100, Washington, DC 20004-1707.\n\nEuropean Aviation Safety Agency (EASA) Acceptable Means of Compliance (AMC) 25.1309, System Design and Analysis. Available on the internet at: http://easa.europa.eu/agency-measures/certificationspecifications.php.\n\nAviation Rulemaking Advisory Committee recommended draft Advisory Circular 25.1309-Arsenal, System Design and Analysis, dated 6/10/ 2002. Available on the internet at:\n\nhttp://www.faa.gov/regulations\\_policies/rulemaking/committees/arac/media /tae/TAE\\_SDA\\_T2.pdf.\n\n5. Certification Maintenance Requirements (CMR) Definition. A CMR is a required scheduled maintenance task established during the design certification of the airplane systems as an operating limitation of the type certificate (TC) or supplemental type certificate (STC). The CMRs are a subset of the instructions for continued airworthiness identified during the certification process. A CMR usually results from a formal, numerical analysis conducted to show compliance with the requirements applicable to catastrophic and hazardous failure conditions, as defined in paragraph 6d below. Compliance may also result from a qualitative, engineering judgment-based analysis.\n\na. The CMRs are required tasks, and associated intervals, developed to achieve compliance with § 25.1309 and other regulations requiring safety analyses (such as §§ 25.671, 25.783, 25.901, and 25.933). A CMR is intended to detect safety-significant latent failures that would, in combination with one or more other specific failures or events, result in a hazardous or catastrophic failure condition. A CMR can also be used to establish a required task to detect an impending wear-out of an item whose failure is associated with a hazardous or catastrophic failure condition.\n\nb. It is important to note that CMRs are derived from a fundamentally different analysis process than the maintenance tasks and intervals that result from the MSG-3 analysis associated with MRB activities (if the MRB process is used). Although both types of analysis may produce equivalent maintenance tasks and intervals, it is not always appropriate to substitute a CMR with an MSG-3 task.\n\nc. The CMRs verify that a certain failure has or has not occurred, indicate that repairs are necessary if the item has failed, or identify the need to inspect for impending failures (e.g., heavy wear or leakage). Because the exposure time to a latent failure is a key element in the calculations used in a safety analysis, limiting the exposure time will have a significant effect on the resultant overall failure probability of the system. The intervals for CMR tasks should be designated in terms of flight hours, cycles, or calendar time, as appropriate.\n\nd. The type certification process assumes the airplane will be maintained in a condition of airworthiness equal to its certified or properly altered condition. The process described in this AC is not intended to establish normal maintenance tasks (e.g., greasing, fluid-level checks, etc.) that should be defined through the MSG-3 analysis process. Also, this process is not intended to establish CMRs for the purpose of providing supplemental margins of safety for concerns arising late in the type design approval process. Such concerns should be resolved by appropriate means, which are unlikely to include CMRs not established via normal safety analyses.\n\ne. CMRs should not be confused with required structural inspection programs that are developed by the TC applicant to meet the inspection requirements for damage tolerance, as required by §§ 25.571, 25.1529, and Appendix H25.4 (Airworthiness Limitations section). The CMRs are to be developed and managed separately from any structural inspections programs.\n\n6. Other Definitions. The following terms apply to the system design and analysis requirements of § 25.1309(b), and (c), and to the guidance material provided in this AC. For a complete definition of these terms, refer to the applicable regulations and guidance material (e.g., AC 25.1309-1A). The applicable regulations and guidance material are the controlling documents for defining the following terms:\n\na. Crew. The cabin, flight, or maintenance crew, as applicable.\n\nb. Error. An omission or incorrect action by a crewmember or maintenance personnel, or a mistake in requirements, design, or implementation.\n\nc. Failure. An occurrence which affects the operation of a component, part, or element such that it can no longer function as intended (this includes both loss of function or a malfunction).\n\nd. Failure Condition. A condition caused or contributed to by one or more failures or errors, that has either a direct or consequential effect on the airplane, its occupants, and/or other persons. In identifying failure conditions, the flight phase, relevant adverse operational or environmental conditions, and external events should be considered. Failure conditions may be classified according to their severities as follows:\n\n(1) Minor Failure Conditions. Failure conditions that would not significantly reduce airplane safety, and which involve crew actions that are well within their capabilities. Minor Failure Conditions may include, for example:\n\n(a) A slight reduction in the safety margin or functional capabilities, or\n\n(b) A slight increase in crew workload, such as routine flight plan changes, or some physical discomfort to passengers or cabin crew.\n\n(2) Major Failure Conditions. Failure conditions that would reduce the capability of the airplane or the ability of the crew to cope with adverse operating conditions to the extent that there would be, for example:\n\n(a) A significant reduction in safety margins or functional capabilities,\n\n(b) A significant increase in crew workload or in conditions impairing crew efficiency, or\n\n(c) Discomfort to occupants, possibly including injures.\n\n(3) Hazardous Failure Conditions. Failure conditions that would reduce the capability of the airplane or the ability of the crew to cope with adverse operating conditions to the extent that there would be:\n\n(a) A large reduction in safety margins or functional capabilities,\n\n(b) Physical distress or higher workload such that the flightcrew cannot be relied upon to perform their tasks accurately or completely, or\n\n(c) Serious or fatal injury to a relatively small number of the occupants.\n\n(4) Catastrophic Failure Conditions. Failure conditions that would result in multiple fatalities, usually with the loss of the airplane. (Note: Catastrophic failure conditions are also defined as a failure condition that would prevent the continued safe flight and landing of the airplane.)\n\ne. Governing Aircraft Certification Office (ACO). The ACO responsible for making compliance findings and certificating a particular type design.\n\nf. Probability Terms. When using qualitative or quantitative assessments to determine compliance with § 25.1309(b), the following descriptions of the probability terms used in the requirement and in the advisory materials listed above have become commonly accepted aids to engineering judgment:\n\n(1) Probable Failure Conditions. Failure conditions anticipated to occur one or more times during the entire operational life of each airplane. Minor failure conditions may be probable. For quantitative analysis purposes, probable failure conditions are those having a probability greater than on the order of 1x10^5\n\n(2) Improbable Failure Conditions. Improbable failure conditions are divided into two categories, as follows:\n\n(a) Remote. Unlikely to occur to each airplane during its total life but may occur several times when considering the total operational life of a number of airplanes of that type. Major failure conditions must be no more frequent than remote. For quantitative analysis purposes, remote failure conditions are those having a probability on the order of 1xi0^-5 or less, but greater than on the order of 1x10^-7\n\n(b) Extremely Remote. Not anticipated to occur to each airplane during its total life, but may occur a few times when considering the total operational life of all of the airplanes of that type. Hazardous failure conditions must be no more frequent than extremely remote. For quantitative analysis purposes, extremely remote failure conditions are those having a probability on the order of 1x10^-7 or less, but greater than on the order of 1 ·x10^-9\n\n(3) Extremely Improbable Failure Conditions. Failure conditions so unlikely that they are not anticipated to occur during the entire operational life of all airplanes of one type. For quantitative analysis purposes, extremely improbable failure conditions are those having a probability on the order of 1x10^-9 or less. Catastrophic failure conditions must be shown to be extremely improbable.\n\ng. Qualitative. Analytical processes that assess system and airplane safety in an objective, non-numerical manner.\n\nh. Quantitative. Analytical processes that apply mathematical methods to assess system and airplane safety.\n\ni. Significant Latent Failures. A failure is latent until it is made known to the flightcrew or maintenance personnel. Significant latent failures are latent failures that would, in combination with one or more other specific failures or events, result in a hazardous or catastrophic failure condition.\n\nk. Wear out. A condition where a component is worn beyond a pre-determined limit.\n\n7. System Safety Assessments (SSA). Section 25.1309(b) provides general requirements for an inverse relationship between the probability and severity of each failure condition.\n\na. Section 25.1309(b) specifies required safety levels in qualitative terms, and a safety assessment must be made to show compliance. Various assessment techniques have been developed to help applicants and the FAA in determining that a logical and acceptable inverse relationship exists between the probability and the severity of each failure condition. These techniques include the use of service experience data of similar, previously approved systems, and thorough qualitative and quantitative analyses.\n\nb. In addition, difficulties have been experienced in assessing the acceptability of some designs, especially those of systems, or parts of systems, that are complex, that have a high degree of integration, that use new technology, or that perform safety-critical functions. These difficulties led to the selective use of rational analyses to estimate quantitative probabilities, and the development of related criteria based on historical data of accidents and incidents caused or contributed to by failures. These criteria, expressed as numerical probability ranges associated with the terms used in § 25.1309(b), became commonly accepted for evaluating the quantitative analyses that are often used in such cases to support experienced engineering and operational judgment and to supplement qualitative analyses and tests.\n\nNOTE: See AC 25.1309-1A, System Design and Analysis, or ARAC recommended draft AC 25.1309-Arsenal, for a complete description of the inverse relationship between the probability and severity of failure conditions, and the various methods of showing compliance with § 25.1309.\n\n8. Design Considerations Related to Candidate CMRs (CCMRs). A decision to create a CCMR should follow the guidelines given in the current AC 25.1309-1 and appendix 1 of this AC. Practical and reliable failure monitoring and indication systems to detect significant latent failures should be implemented in lieu of CMRs. A practical failure monitoring and indication system is one that is considered to be within the state of the art. Reliable failure monitoring and indication should utilize current state of the art technology to minimize the probability of falsely detecting and indicating non-existent failures. Experienced judgment should be applied when determining whether or not a failure monitoring and warning system would be practical and reliable. Comparison with similar, previously approved systems is sometimes helpful. Appendix 1 of this AC outlines design considerations that should be followed in any decision to create a CCMR.\n\n9. Overview of the Scheduled Maintenance Task Development Process. Figure 1, below, shows the relationship between the certification and MRB processes in establishing scheduled maintenance tasks. Those tasks related to the certification process, as well as those derived through MSG-3 analysis, are identified and documented as illustrated. The details of the process to be followed in defining, documenting, and handling CMRs are given in paragraphs 11 through 14, below.\n\nSource image on page 8; no OCR transcription available.\n\n10. Identification of Candidate CMRs (CCMRs).\n\na. Tasks that are candidates for selection as CMRs usually come from safety analyses (e.g., SSA, which establishes whether there is a need for tasks to be carried out periodically to comply with § 25.1309, and other requirements requiring this type of analysis (such as §§ 25.671, 25.783, 25.901, and 25.933). The SSA should identify as CCMRs the maintenance tasks intended to detect latent failures that would, in combination with one or more specified failures or events, lead to a hazardous or catastrophic failure condition. Tasks may also be selected from those intended to inspect for impending failures due to wear out. The CCMR should identify the failure mode to be detected, the failure condition of concern, the check interval, and the maintenance task.\n\nb. All Significant latent failures should be addressed in the SAA. In some situations, a failure condition might meet the quantitative probability objective, yet contain a component that, per the analysis, does not require inspections to meet that objective (i.e., could be left latently failed for the life of the airplane). In that situation, we believe that some inspections in the life of the airplane are necessary to avoid undue exposure to catastrophic or hazardous “single failure” situations, therefore a qualitative assessment to determine the required maintenance before end of airplane life is still necessary.\n\nc. As the safety analysis may be qualitative or quantitative, some task intervals may be derived in a qualitative manner (e.g., engineering judgment and service experience). Per the advisory material on § 25.1309, numerical analysis supplements, but does not replace, qualitative engineering and operational judgments. Therefore, other tasks that are not derived from numerical analysis of significant latent failures, but are based on properly justified engineering judgment, can also be candidates for CMRs. The justification should include the logic leading to identification as a candidate CMR, and the data and experience base supporting the logic. As § 25.1309(b) regulates catastrophic, hazardous, and major failure conditions, CMRs may also be identified for latent failures that would, in combination with one or more specified failures or events, lead to a major failure condition that is not identified and assigned a task via the MSG-3 process (however experience has shown these cases are rare).\n\n11. Certification Maintenance Coordination Committee (CMCC).\n\na. The CMCC should discuss and disposition all CCMRs. In order to grant airplane operators an opportunity to participate in the selection of CMRs, and to assess the candidate CMRs and the proposed MRB tasks and intervals in an integrated process, the TC applicant should convene a CMCC (see Figure 1 of this AC). This committee should be made up of manufacturer representatives (typically maintenance, design, and safety engineering personnel), operator representatives designated by the Industry Steering Committee (ISC) Chairperson, ACO specialists, and the MRB Chairperson. The governing ACO participation in the CMCC process is necessary to provide regulatory guidance to the selection of CMRs.\n\nb. As early as possible in the design phase of the airplane program, and at intervals as necessary, the CMCC should meet to review candidate CMRs and their purpose, the failure conditions and their criticality, the intended tasks, and other relevant factors. In addition, where multiple tasks result from a quantitative analysis, it may be possible to extend a given interval at the expense of one or more other intervals, in order to optimize the required maintenance activity. However, once a decision is made to create a CMR, then the CMR task interval should be based solely on the results of the safety analysis.\n\nc. The CMCC functions as an advisory committee for the TC applicant and proposes the necessary CMRs. The governing ACO is the authority that ultimately approves CMRs as a limitation of the type certificate per 14 CFR 21.41. The results of the CMCC (proposed CMRs to be included in the type design limitations, and proposed MRB tasks and/or intervals that meet the intent of the CCMRs) are forwarded by the TC applicant to the ISC for consideration. CMCC proposed MRB tasks and/or intervals accepted by the ISC are reflected in the MRB report proposal. Proposed MRB tasks and/or intervals rejected by the ISC will result in CMR tasks. Following the ISC's consideration, the TC applicant submits the CMR document to the governing ACO for final review and approval.\n\n12. Selection of CMRs. Each CCMR should be reviewed by the CMCC and a determination made as to whether it should be a CMR. The applicant should provide sufficient information to the CMCC to enable an understanding of the failure conditions and the failure or event combinations that result in the CCMR. CCMRs are evaluated in the context of the failure conditions in which they are involved, e.g., whether the latent failure is part of a dual failure, or a more complex failure condition.\n\na. The CMR designation should be applied in the case of catastrophic dual failures where one failure is latent. The CMR designation should also be applied to tasks that address wear out of a component involved in a catastrophic failure condition that results from two failures. The interval for the CMR task should be chosen such that the system safety analysis assumptions are protected in service, while allowing flexibility for the airplane operators to manage their maintenance programs. In the case where the system safety analysis does not specify an interval, the CMCC may establish an interval that is less than the life of the airplane considering factors that influence the outcome of the failure condition, such as the nature of the fault, field experience, or the task characteristics.\n\nb. The CMR designation may not be necessary if there is an equivalent MSG-3 task, or an approved AFM procedure, to accommodate the CCMR. The following criteria are used in making this determination:\n\n(1) The SSA allows the failure to be latent for the life of the airplane, or\n\n(2) Latent failures leaving the airplane one failure away from hazardous failure conditions, or\n\n(3) A wear out failure mode that directly or in combination with another failure, leads to a hazardous failure condition.\n\n(4) In all the above cases, the CCMR is satisfied by:\n\n(a) A MSG-3 task provided it meets all of the following criteria:\n\n1 It is a Failure Effect Category 8 task (FEC8) for latent failure, or FEC5 task for evident failure due to wear out. See the ATA document referenced in paragraph 4c above for definitions of FEC5 and FEC8. Note that because the MSG-3 logic may not consider a failure condition containing three or more failures, it is possible that there is no MSG-3 task identified for a CCMR.\n\n2 The FEC8 or FEC5 task interval is shorter than the interval that would be required for the CMR. For example, some applicants have applied, and the Authorities have accepted, a factor of one half of the CMR interval as a margin to guard against potential escalation of FEC8 task intervals beyond the intervals specified by the CMR.\n\n3 The applicant has procedures in place (e.g. tagging of MSG-3 tasks to identify those derived from the safety analysis) so that the FEC8 or FEC5 task would not be susceptible to escalation beyond the interval that would otherwise be required by a CMR. For example, due to difficulty in accessing the item, a task may not be conducted at the required interval. Engineering judgment indicates a CMR is appropriate for compliance rather than a MSG-3 task.\n\n(b) Tasks covered by the approved airplane flight manual (AFM) procedures.\n\nc. In complex failure conditions (e.g., a combination of three or more failures) the SSA may identify more than one CCMR. Equivalent and compatible MSG-3 tasks (if they exist) may be used to satisfy some of those CCMRs. The rationale for the disposition of each CCMR should be presented to the governing ACO for approval.\n\n13. Documentation and Handling of CMRs.\n\na. The CMR data location should be referenced in the type certificate data sheet (TCDS). The latest version of the CMR document should be controlled by a log of pages approved by the governing ACO. In this way, changes to CMRs following certification will not require an amendment to the TCDS. As stated in FAA Order 8110.54A, Instructions for Continued Airworthiness Responsibilities, Requirements, and Contents, dated 10/23/2010, CMRs are functionally equal to airworthiness limitations. An acceptable means is to include CMRs in the Airworthiness Limitations section of the airplane maintenance manual.\n\nb. Since CMRs are based on statistical averages and reliability rates, an “exceptional short term extension” for CMR intervals may be made on one airplane for a specific period of time without risking safety. Any exceptional short term extensions to CMR intervals must be defined and fully explained in the CMR document. The local regulatory authority (e.g., a Principal Maintenance Inspector) must concur with any exceptional short term extensions allowed by the CMR document before they take place using procedures established with the local regulatory\n\nauthority in the operators’ manuals. The exceptional short term extension process is applicable to CMR intervals. It should not be confused with the operator’s “short term escalation” program for normal maintenance tasks described in the operators’ manuals and in the Flight Standards Information Management System, Order 8900.1.\n\n(1) The term \"exceptional short term extension\" is defined as an increase in a CMR interval that may be needed to cover an uncontrollable or unexpected situation. Any allowable increase must be defined either as a percent of the normal interval, or a stated number of flight hours, flight cycles, or calendar days. If no exceptional short term extension is to be allowed for a given CMR, this restriction should be stated in the CMR document.\n\n(2) Repeated use of exceptional short term extensions, either on the same airplane or on similar airplanes in an operator's fleet, should not be used as a substitute for good management practices. Exceptional short term extensions must not be used for fleet CMR interval escalation.\n\n(3) The CMR document should state that the governing ACO must approve, prior to its use, any desired exceptional short term extension not explicitly listed in the CMR document.\n\n14. Post-Certification Changes to CMRs. Any post-certification changes to CMRs should be reviewed by the same entities that participated in the CMCC and must be approved by the ACO that approved the type design.\n\na. Since the purpose of a CMR is to limit the exposure time to a given Significant Latent Failure, or a given wear out, as part of an engineering analysis of overall system safety, instances of a CMR task repeatedly finding that no failure has occurred may not be sufficient justification for deleting the task or increasing the time between repetitive performances of the CMR task. In general, a CMR task change or interval escalation could only be made if world fleet service experience indicates that certain assumptions regarding component failure rates made early during the engineering analysis were too conservative, and a re-calculation of system reliability with revised failure rates of certain components reveals that the task or interval may be changed.\n\nb. The introduction of a new CMR or any change to an existing CMR should be reviewed by the same entities that were involved in the CMCC at time of initial certification. To allow the operators to manage their own maintenance programs, it is important that they be afforded the same opportunity for participation that they received during the original certification of the airplane.\n\nc. If later data provides a sufficient basis for the relaxation of a CMR (less restrictive actions to be required), the change may be documented by a revision to the CMR document and approved by the governing ACO.\n\nd. If the FAA determines that the requirements of an existing CMR must be increased (more restrictive actions to be performed), the new requirements will be mandated by an\n\nairworthiness directive (AD) and the CMR document will be revised to include the change.\n\ne. New CMRs that are unrelated to in-service events may be created and they should be documented and approved by the governing ACO. New CMRs can arise in situations such as:\n\n(1) Certification of design changes, or\n\n(2) Updates to the applicant’s certification compliance documentation. These may result from regulation changes, AD actions on similar systems or airplanes, awareness of additional hazardous or catastrophic failure conditions, revised failure rates, consideration of extended service goals, etc.\n\nOriginal signed by Ali Bahrami\n\nAli Bahrami Manager, Transport Airplane Directorate Aircraft Certification Service\n\nSource image on page 8; no OCR transcription available.\n\n![figure p8](http://localhost:8080/api/v1/ingestion/jobs/cf0e1af9b6414ccb813518fb53553501/assets/d17149699db92f6a0035)",
+        "knowledge_id": "fe1824bf-3dee-4086-a3d4-567638f15f4d",
+        "chunk_index": 15,
+        "knowledge_title": "AC_25-19A.pdf",
+        "start_at": 0,
+        "end_at": 175,
+        "seq": 15,
+        "score": 0.6373134328358208,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "941a31740b269b6c00aa9bab53a622062acad7aae9efe288c474ce87057c58c1",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "9606a3118526aa74771b",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\9c\\9cea29f25c03ce36f9ed887752c69503ee2e26a8bc1d294ec0f9838b72507239\\source.pdf",
+          "internal_rag_source_sha256": "9cea29f25c03ce36f9ed887752c69503ee2e26a8bc1d294ec0f9838b72507239",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "7f205537-6706-45e3-b798-417a73f41717",
+        "image_info": "",
+        "knowledge_filename": "AC_25-19A.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25-19A.pdf\nSource image on page 8\n\nSource image on page 8; no OCR transcription available.\n\n![figure p8](http://localhost:8080/api/v1/ingestion/jobs/cf0e1af9b6414ccb813518fb53553501/assets/d17149699db92f6a0035)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "be1798cf-f1a7-4047-b1c0-be25f21b4191",
+        "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INTERIOR DESIGN TO FACILITATE SEARCHES\n\nDate: 10/24/08\n\nInitiated By: ANM-100\n\nAC No: 25.795-8\n\n1. PURPOSE. This advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR), part 25, § 25.795(c)(3), “Interior design to facilitate searches.” This section requires that the interior design of an airplane incorporate features that will make it more difficult to hide dangerous objects in the airplane or make it easier to find them if they have been brought onboard. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to whether the interior design deters concealment of dangerous objects (e.g., weapons or explosives) and facilitates a search for them in certain areas of the airplane. The requirements for searching an airplane are not affected by the requirements of § 25.795(c)(3). The design of the airplane will make it easier to search for hidden objects but will not affect the need for, or the diligence of, the search.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+        "knowledge_id": "ed0ae44a-a86c-4604-87bc-f446a864bc9e",
+        "chunk_index": 1,
+        "knowledge_title": "AC_25.795-8.pdf",
+        "start_at": 0,
+        "end_at": 175,
+        "seq": 1,
+        "score": 0.6279411764705882,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "1c3cff6b3a66db4a5e2484cbcde1ec64f01fea8ba0c13b9727c6b552347156a8",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "9fe2d7defeb3b52af42f",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83\\source.pdf",
+          "internal_rag_source_sha256": "38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "1e34a590-7e6f-49a6-b591-58baa9652d03",
+        "image_info": "",
+        "knowledge_filename": "AC_25.795-8.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25.795-8.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "5acef0f8-7965-4edf-8b20-1b43f80083e4",
+        "content": "8 WHERE TO FIND THIS AC.\n\n8.1 You may find this AC at http://www.faa.gov/regulations\\_policies/advisory\\_circulars.\n\n8.2 If you have any suggestions for improvements or changes, you may use the template provided at the end of this AC.\n\nSource image on page 5; no OCR transcription available.\n\nRichard E. Jennings\n\nActing Manager, Design, Manufacturing, &\n\nAirworthiness Division\n\nAircraft Certification Service\n\nAppendix A. Definitions\n\nAll definitions are provided solely for the context of this advisory circular.\n\nInstaller. An installer is anyone who replaces or adds articles, parts, or materials used in the alteration of any aircraft that has a United States airworthiness certificate or is responsible to ensure airworthiness prior to returning an altered aircraft to service.\n\nModification. A modification is a change to type design installed on the aircraft.\n\nType Club. A type club is an organized group of people with a common interest in a particular aircraft type or brand of aircraft. Information is a type club’s primary resource to members and a type club often provides technical expertise for aircraft models that no longer have an active design approval holder supporting continued operational safety. In some cases, a type club may even be the design approval holder of the aircraft itself.\n\nAppendix B. Advisory Circular Feedback Form\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) complete the form online at https://ksn2.faa.gov/avs/dfs/Pages/Home.aspx or (2) emailing this form to 9-AWA-AVS-AIR-DMO@faa.gov\n\nSubject: AC 20-188\n\nDate:\n\nPlease check all appropriate line items:\n\nAn error (procedural or typographical) has been noted in paragraph \\_\\_\\_\\_\\_\\_\\_ on page\n\nRecommend paragraph \\_\\_\\_\\_\\_\\_\\_ on page be changed as follows:\n\nIn a future change to this AC, please cover the following subject: (Briefly describe what you want added.)\n\nOther comments:\n\nI would like to discuss the above. Please contact me.\n\nSubmitted by:\n\nDate:\n\nSource image on page 5; no OCR transcription available.\n\n![figure p5](http://localhost:8080/api/v1/ingestion/jobs/1646f80ded064d2fb532822f87557972/assets/8167a6082fa7d0302eda)",
+        "knowledge_id": "2fb78c8d-bbc3-46c4-b6de-0309e2d2403f",
+        "chunk_index": 11,
+        "knowledge_title": "AC_20-188.pdf",
+        "start_at": 0,
+        "end_at": 175,
+        "seq": 11,
+        "score": 0.6188405797101448,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "ee7937f138051451c62d15ee870734ca564e1a2f027a24ab3e251c1a6609665e",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "44b95eae400200cd9f63",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\03\\03534247de86f8fe4469fb32410edded90ab9e70b79d710211e65db70c1d911c\\source.pdf",
+          "internal_rag_source_sha256": "03534247de86f8fe4469fb32410edded90ab9e70b79d710211e65db70c1d911c",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "f9b88380-3a20-4347-ae69-d62ef3bb0cf0",
+        "image_info": "",
+        "knowledge_filename": "AC_20-188.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_20-188.pdf\n8 WHERE TO FIND THIS AC. > Source image on page 5\n\nSource image on page 5; no OCR transcription available.\n\n![figure p5](http://localhost:8080/api/v1/ingestion/jobs/1646f80ded064d2fb532822f87557972/assets/8167a6082fa7d0302eda)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      },
+      {
+        "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+        "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+        "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+        "chunk_index": 3,
+        "knowledge_title": "AC_25-25A.pdf",
+        "start_at": 0,
+        "end_at": 20,
+        "seq": 3,
+        "score": 0.61,
+        "match_type": 0,
+        "sub_chunk_id": null,
+        "metadata": {
+          "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+          "internal_rag_parser_name": "mineru-cloud-pdf",
+          "internal_rag_parser_version": "1",
+          "internal_rag_schema_version": "document-ir/0.2",
+          "internal_rag_source_document_id": "04a389a1de97dc79f380",
+          "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+          "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+          "source_system": "internal-rag"
+        },
+        "chunk_type": "text",
+        "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+        "image_info": "",
+        "knowledge_filename": "AC_25-25A.pdf",
+        "knowledge_source": "internal-rag",
+        "knowledge_channel": "api",
+        "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+        "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+      }
+    ],
+    "data": {
+      "references": [
+        {
+          "chunk_index": 0,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "5c85b9a46d28dc4d92b4"
+            ],
+            "block_ids": [
+              "aa24cc7336265696daa3"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "16acc0b2589a885e7563",
+            "external_parent_chunk_id": "5729df6684653d38f1c4",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 1,
+            "page_start": 1,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "Source image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/4929f017e736473aad84c75954221b0e/assets/5c85b9a46d28dc4d92b4)",
+          "end_at": 175,
+          "id": "6f9b1ddb-d5dc-4fe1-a44c-1cc967702a2a",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25-8.pdf",
+          "knowledge_id": "85b9eb86-6e4a-464d-b837-9ba2d6b0d2c7",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25-8.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25-8.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/4929f017e736473aad84c75954221b0e/assets/5c85b9a46d28dc4d92b4)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "23eec67327ecd0c38262da9c01cb87e7e4cb882cfdf7eed5dd1501bbf374e131",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "32ae489e6e8347266c5e",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\6b\\6b4ea322f84ef5ac096c2a468349af446cde21b6c6963f25cf7ba843959875f2\\source.pdf",
+            "internal_rag_source_sha256": "6b4ea322f84ef5ac096c2a468349af446cde21b6c6963f25cf7ba843959875f2",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "5a009958-b79b-42ab-a351-6dae3abfb42e",
+          "score": 0.7,
+          "seq": 0,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "6f9b1ddb-d5dc-4fe1-a44c-1cc967702a2a",
+            "bf283712-f0ee-429a-84b3-cf2cc6690571"
+          ]
+        },
+        {
+          "chunk_index": 1,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "b2b0cbb9aa8611d620e7"
+            ],
+            "block_ids": [
+              "f42aca6b792dbbfd350d"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "a0f349d9ddf6fa4a3c92",
+            "external_parent_chunk_id": "0b1141838d1cb415d270",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 1,
+            "page_start": 1,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Built-in Fire Extinguishing/Suppression Systems in Class C and Class F Cargo Compartments\n\nDate: 02/03/16\n\nInitiated By: ANM-112\n\nAC No: 25.851-1\n\nThis advisory circular (AC) provides guidance concerning compliance with the airworthiness standards for transport category airplanes pertaining to Class C and Class F cargo compartments that incorporate built-in fire extinguishing/suppression systems. This guidance is applicable to transport category airplanes for which a new, amended, or supplemental type certificate is requested.\n\nIf you have any suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nSource image on page 1; no OCR transcription available.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page\n1 Purpose....1\n2 Applicability ....1\n3 Cancellation ....1\n4 Related Documents ....2\n5 Background....3\n6 Compartment Classification Regulations ....5\n7 Testing Volumetric Concentration Levels ....6\n8 Airplane Test Conditions ....9\n9 Evaluation of Alternative Gaseous Extinguishing/Suppression Systems and Alternative Agents ....12\n10 Evaluation of Alternative Liquid Agent and Fire Extinguishing/Suppression Systems....15\n11 Use of Simulants for Certification Testing ....15\n12 Establishing Duration for the Suppression System....17\n13 Airplane Manual Considerations ....19\n14 Placards and Markings in Cargo Compartments ....19\nAppendix A. Analytical Methods for Determining Halon 1301 Concentration Levels ....A-1\n\nFigures\n\nFigure 1. Effect of Cargo Load on Halon 1301 Concentration Levels.... 10\nFigure 2. Halon Concentration Time History.... 11\nFigure A-1. Example – Halon 1301 Model.... A-3\n\nTables\n\nTable A-1. Terms and Symbols ...... A-1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/b2b0cbb9aa8611d620e7)",
+          "end_at": 175,
+          "id": "d2918ab1-7c94-4de6-8966-9ea09b7b80e4",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25.851-1.pdf",
+          "knowledge_id": "3f645faa-5019-4d5b-aa28-cd7a1c1d2bc1",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25.851-1.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25.851-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/b2b0cbb9aa8611d620e7)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "7496ed554b75dcbe91a09daa3224ee8919192f5cb112da1ec772b54ef69dd0a4",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "dbd20f7c0803d7802a35",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\9e\\9e6e10f825ee9d0586d535fcca12867d18c5ec2403e2fc538921fcc766eea85e\\source.pdf",
+            "internal_rag_source_sha256": "9e6e10f825ee9d0586d535fcca12867d18c5ec2403e2fc538921fcc766eea85e",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "8c00ee0c-a723-42e5-83fb-1474fc0b4a42",
+          "related_images": [
+            {
+              "caption": "Figure 1. Effect of Cargo Load on Halon 1301 Concentration Levels",
+              "chunk_id": "54d9be3d-88f8-43d1-987e-f6322ba99fe1",
+              "url": "http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/d740878e0ace061fa182"
+            },
+            {
+              "caption": "Table A-1. Terms and Symbols",
+              "chunk_id": "acf5de7e-4bd3-4384-8d59-1e3ee76f9b29",
+              "url": "http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/1e63f110bb37d5ebeecb"
+            },
+            {
+              "caption": "Figure A-1. Example – Halon 1301 Model",
+              "chunk_id": "a3bfc2c1-bc48-4606-ad40-e158e03dc6b9",
+              "url": "http://localhost:8080/api/v1/ingestion/jobs/760d1f6e59b541b9951c32d3a23e96ec/assets/c5914b2342da33862aa1"
+            }
+          ],
+          "score": 0.6887096774193547,
+          "seq": 1,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "d2918ab1-7c94-4de6-8966-9ea09b7b80e4"
+          ]
+        },
+        {
+          "chunk_index": 50,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "f0d475e5d789b2d41e88"
+            ],
+            "block_ids": [
+              "6a980e88b5ef6fc1a93a"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "52befad6b8cfd2f5c058",
+            "external_parent_chunk_id": "e9b14ae2a0ac3a4e011b",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 25,
+            "page_start": 25,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [
+              "757-200 CERTIFICATION DEMONSTRATION DATA"
+            ],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "757-200 CERTIFICATION DEMONSTRATION DATA\n\nColumn 1=Exit Prep. Time (sec.); Door 1L=8.1; Door 2L=11.8; Door 4L=10.0\nColumn 1=Flow rate (epm ); Door 1L=70.8; Door 2L=68.7; Door 4L=52.0\nColumn 1=Time per evacuee (sec.); Door 1L=.847; Door 2L=.873; Door 4L=1.154\n\n完整表格：\n<table><tr><td></td><td>Door 1L</td><td>Door 2L</td><td>Door 4L</td></tr><tr><td>Exit Prep. Time (sec.)</td><td>8.1</td><td>11.8</td><td>10.0</td></tr><tr><td>Flow rate (epm )</td><td>70.8</td><td>68.7</td><td>52.0</td></tr><tr><td>Time per evacuee (sec.)</td><td>.847</td><td>.873</td><td>1.154</td></tr></table>\n\no. Time for Exit Preparation.\n\n(1) The time for exit preparation needs to be determined. If part of an exit system has been upgraded or otherwise changed since the full-scale evacuation demonstration(s), it may be necessary to revise the exit preparation time from that observed in previous demonstrations before using it in the analysis. T_ExitPrep can be determined by timed tests of the new system or by summing the separate elements ofT_ExitPrep. Any adjustments should be fully documented.\n\n(2) Exit preparation includes opening the exit and deploying any installed assist means. If the external assist means is an inflatable slide or slide/raft, the device is considered deployed when it exhibits the rigidity necessary to safely sustain a load (stable and fully extended)\n\nalthough it may not necessarily be touching the ground. When the subject configuration includes the same basic exit system as formerly demonstrated, a straightforward tabulation of values applicable to that exit system should be presented. The average(s) should be shown and identified accordingly.\n\n(3) \"Hesitation time\" may be defined as the interval of time between when the assist means (if required, usually a slide) is ready for use and the egress of the first evacuee. It may simply be the time necessary for the first evacuee to respond to the flight attendant's command, or it may include a reluctance to jump. The analysis should account for hesitation by measuring the time that elapses when the slide is perceived as inflated and fully extended (though not necessarily on the ground) until the first evacuee starts to descend on the slide. A suitable hesitation time may be derived by averaging all hesitation data values.\n\n(4) Some off-wing escape systems may prompt a modification to the analysis technique to properly account for first evacuee hesitation. Overwing door opening or hatch removal may trigger a slightly delayed deployment and inflation of the off-wing inflatable. The first evacuee could emerge through the exit to the wing or wing ramp surface in advance of the off-wing slide being ready for use. Depending on available data, the evacuation capability analysis for some such systems should be based on first evacuee on the ground.\n\n(5) After accounting for hesitation and doorway egress, the time for the first evacuee to travel from the point of contact with the slide or overwing ramp to the ground must be added to the time line. Average values, if used, should be noted. The assist means traverse time should include the on slide and on ground event times from which the traverse time interval is derived.\n\np. Time for Exit Flow.\n\n(1) The period of evacuee flow through an exit system, T_ExitFlow, depends on flow rate and number of evacuees. Flow rates used in the analysis are those established by earlier demonstrations and tests and converted to intervals as described in paragraph 8.m.(4). T_ExitFlow is then derived by multiplying the number of evacuees allocated to the exit minus one (n-1) by the average interval established for each evacuee.\n\n(2) A dependable and accurate technique to determine flow rate from film or video tape is to:\n\n(a) select a stable point or plane of reference in the flow path field of view,\n\n(b) record the event times for passage of first and last evacuees, thus determining the time of flow, and\n\n(c) calculate the flow rate (in evacuees per unit of time) by dividing the count of evacuees minus one by the flow time.\n\n(3) The flow time starts with the first evacuee at the reference point. The remaining evacuees pass the reference point during the flow period. One evacuee, therefore, is subtracted from the total evacuee count to determine flow rate when a fixed-point or plane of reference technique is used.\n\nq. Evacuee Allocation to Exits. The allocation of evacuees to exits should be established and illustrated on a configuration drawing. The allocation should be consistent with the demonstrated capability of the same or similar exit systems and with the distribution of exits and passenger seating relative to the exits. The illustration should convey the substance of an emergency evacuation plan that flight attendants, and flight deck personnel (for certain part 25 applications only) work to achieve with the subject configuration. The goal of the plan is to get everyone out as soon as possible. Passenger management techniques employed in the analysis need to be substantiated by records of earlier demonstrations and/or tests.\n\nr. Flightcrew and Flight Attendant Duties. The crew members' positions during takeoff and landing and their primary and secondary duty stations during an emergency should be indicated on a suitable configuration diagram. Their duties should be described in the analysis. Demonstration or test data should be cited that substantiates the ability of crew members to travel to their duty stations. Procedures which would require a flight attendant to bypass an exit (other than one in the immediate vicinity of the flight attendant's seat) to get to his/her primary or secondary duty station should not be proposed.\n\nNOTE: For applicants also seeking compliance with § 121.291, the flightcrew should have no assigned evacuation duties. Flightcrew participation is limited to part 25-only applications, where the type certification bases precede Amendment 25-79.\n\ns. Passenger Management.\n\n(1) The definition of \"passenger management\" for purposes of this advisory circular is the directing of passengers to active exits by flight attendants after initiation of the evacuation. The goal of passenger management is to minimize the total time for evacuation while ensuring passenger safety.\n\n(2) To address passenger management, the applicant must show that similar flight attendant duties (see paragraph 9.r), allocation of evacuees to exits (see paragraph 9.q), and cabin configuration (see paragraph 9.c) have resulted in a successful full-scale evacuation demonstration(s) or equivalent test(s).\n\nNOTE 1: Bypass of an active exit, when included in the analysis, must be based on bypass accomplished at an identical exit type during a full-scale demonstration on an airplane with the same number of aisles. “Bypass,” for purposes of this advisory circular, is defined as the movement of a passenger past an active exit to get to another active exit. On a twin aisle airplane, movement past an exit along the aisle that is not adjacent to the active exit is still regarded as bypass. The passenger management and associated crew training should also be consistent between the airplane being analyzed and the airplane that was actually demonstrated.\n\nNOTE 2: When exit systems are not symmetrically located or different performance characteristics have been identified for cross cabin exits, the analysis should address the more critical exit of each exit pair.\n\nt. Total Evacuation Time Calculations.\n\n(1) Utilizing the data, formula, and analytical techniques described above, the total evacuation time per exit as described in paragraph 9.l can be determined for the configuration.\n\n(2) A configuration diagram, annotated with the calculated evacuation times and evacuee counts near the exits used can be used to provide a graphic summary of results. A single configuration diagram could satisfy the multiple purposes of depicting exits used, passenger and crew allocation to exits (cabin division lines) and the resulting evacuation times per exit.\n\nu. Success Criteria.\n\n(1) If the results of the total evacuation time calculations are less than 90 seconds, the analysis indicates that the airplane can be evacuated under the demonstration conditions established by appendix J of part 25 or section (a) of appendix D of part 121, within the time criterion contained in §§ 25.803(c) and 121.291(a), respectively. The conservatism of the analysis should be demonstrated as noted below.\n\n(2) The applicant should then prepare an evaluation of the additional evacuation capability (time margin) of each exit that was used in the analysis.\n\n(a) The following formula may be used to determine the available time margin for the airplane configuration being reviewed:\n\nTimemargin=Σ_i=1^''(90-T_TotalExiti)\n\nwhere:\n\nT = Total evacuation time for the exit (in seconds)\n\nn = Total number of exits used\n\n[原始公式]\n$$\n\\text { Time   margin } = \\Sigma_ {\\mathrm{i} = 1} ^ {\\prime \\prime} (9 0 - \\mathrm{T} _ {\\text { Total   Exit   i }})\n$$\n\nThe available time margin calculated using the above formula should be 9 or more seconds. The time interval of 9 seconds (10 percent of the current standard of 90 seconds) is based on the demonstrated capability of today's transport category airplanes. Note that this method of establishing conservatism depends on the passenger management techniques being appropriate to balance the evacuees among the exits.\n\n(b) An alternative to the margin calculations shown above, as a means of showing conservatism in the analysis, would be to use exit flow rates less than the calculated average and exit preparation times greater than the calculated average. The amount of performance degradation can be a calculated number such as the value of a standard deviation. The average evacuee flow rate would be reduced (thereby increasing the time of exit flow) and the average exit preparation time would be increased by the respective calculated values. If, however, the data used to derive the standard deviations is widely scattered resulting in a large value for the standard deviation, the applicant may choose to use the slowest rate or longest exit preparation time instead.\n\nv. Initial Coordination of Analysis. As a general guideline, evacuation analyses should be informally coordinated as early as possible with the FAA certification office prior to formal submittal to ensure that all significant factors have been addressed.\n\n10. Computer Modeling. Work is being done in the field of computer modeling to develop programs which could be used to demonstrate compliance with the evacuation demonstration requirements. Although progress has been made, to date, no program has been presented to the FAA and found acceptable as a substitute for an actual demonstration. Any applications for the use of computer modeling to demonstrate compliance with § 25.803(c) should be coordinated with the Standards Staff of the Transport Airplane Directorate.\n\nSource image on page 25; no OCR transcription available.\n\nfea li Barami\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nSource image on page 25; no OCR transcription available.\n\n![figure p25](http://localhost:8080/api/v1/ingestion/jobs/369d66cfd6924960afdbcc285781f938/assets/f0d475e5d789b2d41e88)",
+          "end_at": 177,
+          "id": "39b18907-cb7c-48f9-a773-aefc88b816db",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25.803-1A.pdf",
+          "knowledge_id": "0eb9f13c-ebf3-4e78-abe9-c000c56bf06b",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25.803-1A.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25.803-1A.pdf\n757-200 CERTIFICATION DEMONSTRATION DATA > Source image on page 25\n\nSource image on page 25; no OCR transcription available.\n\n![figure p25](http://localhost:8080/api/v1/ingestion/jobs/369d66cfd6924960afdbcc285781f938/assets/f0d475e5d789b2d41e88)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "f3a94efafbaa5501b6cc37b953a5783cea9b60ff9ce97264eabc778aadeace6e",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "062fffe4f1a3baf62998",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\55\\5550c3b008fba3b65ec7fd5b320fc801196f5ed3b9b266601a8fa0c88f481fce\\source.pdf",
+            "internal_rag_source_sha256": "5550c3b008fba3b65ec7fd5b320fc801196f5ed3b9b266601a8fa0c88f481fce",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "b534f47d-f9c4-441e-8114-abad0b148a57",
+          "related_images": [
+            {
+              "caption": "fea li Barami",
+              "chunk_id": "39b18907-cb7c-48f9-a773-aefc88b816db",
+              "url": "http://localhost:8080/api/v1/ingestion/jobs/369d66cfd6924960afdbcc285781f938/assets/f0d475e5d789b2d41e88"
+            }
+          ],
+          "score": 0.6777777777777777,
+          "seq": 50,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "39b18907-cb7c-48f9-a773-aefc88b816db"
+          ]
+        },
+        {
+          "chunk_index": 1,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "366300ebbf80eb1bb12d"
+            ],
+            "block_ids": [
+              "0a13ffe81d00d126f5d6"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "86bc4e742ea4cf8ddfc5",
+            "external_parent_chunk_id": "ce494bd50f76424fbc8b",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 1,
+            "page_start": 1,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INSTALLATION OF THERMAL/ACOUSTIC INSULATION FOR BURNTHROUGH PROTECTION\n\nDate: 7/29/08\n\nInitiated by: ANM-115\n\nAC No: 25.856-2A\n\nChange:\n\n1. PURPOSE. This AC provides guidance for the test method to determine burnthrough resistance of thermal/acoustic insulation materials installed in transport category airplanes. This guidance applies to airplanes required to comply with § 25.856 and part VII of Appendix F to 14 CFR part 25.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/95bb87c0010c42788dd4595b7c1b052d/assets/366300ebbf80eb1bb12d)",
+          "end_at": 175,
+          "id": "2da92071-de93-46e3-84a1-8f0629989070",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25.856-2A.pdf",
+          "knowledge_id": "c1edd302-5626-4cd7-8dab-a44546ce1ae2",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25.856-2A.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25.856-2A.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/95bb87c0010c42788dd4595b7c1b052d/assets/366300ebbf80eb1bb12d)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "3c902f1b75235f3993fd28f52ad7814a111039d4bddcfb3895497cb75beb189d",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "b729aa2557e9597916d7",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\c2\\c268ae08a623ec213fb8e1d5a723cec8aade3b693ef29f011124cf07a02e77a4\\source.pdf",
+            "internal_rag_source_sha256": "c268ae08a623ec213fb8e1d5a723cec8aade3b693ef29f011124cf07a02e77a4",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "204423b8-ef2d-4bc8-9eef-a6ac8f81b210",
+          "score": 0.6569230769230768,
+          "seq": 1,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "2da92071-de93-46e3-84a1-8f0629989070"
+          ]
+        },
+        {
+          "chunk_index": 15,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "d17149699db92f6a0035"
+            ],
+            "block_ids": [
+              "a2860dfbf81be0b79fdc"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "bc292ea02f699fb911d9",
+            "external_parent_chunk_id": "360a3e03c3d424dca1a4",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 8,
+            "page_start": 8,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "Advisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Certification Maintenance Requirements\n\nDate: 10/03/11 Initiated by: ANM-117\n\nAC No: 25-19A\n\n1. Purpose. This advisory circular (AC) provides guidance on the selection, documentation, and control of Certification Maintenance Requirements (CMR). This AC also provides a rational basis for coordinating the Maintenance Review Board (MRB), if the MRB process is used, and CMR selection processes to ensure premises made in the system safety analyses supporting the compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.1309, and other system safety rules (such as §§ 25.671, 25.783, 25.901, and 25.933) are protected in service. This AC describes an acceptable means, but not the only means, for selecting, documenting, and managing CMRs. Terms such as \"shall\" and \"must\" are used only in the sense of ensuring applicability of this particular means of compliance when the acceptable means of compliance described herein is used.\n\n2. Applicability.\n\na. The guidance provided in this document is directed to airplane manufacturers, modifiers, civil aviation authorities, and Federal Aviation Administration (FAA) transport airplane type certification engineers and their designees.\n\nb. Like all advisory material, this AC is not, in itself, mandatory, and does not constitute a regulation. It describes an acceptable means, but not the only means, for showing compliance with the requirements for transport category airplanes. The FAA will consider other means of demonstrating compliance that an applicant may elect to present. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the relevant regulations. On the other hand, if we become aware of circumstances that convince us that following this AC would not result in compliance with the applicable regulations, we will not be bound by the terms of this AC, and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This material does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Cancellation. Advisory Circular 25-19, Certification Maintenance Requirements, dated 11/28/94, is canceled.\n\n4. Related Documents.\n\na. Title 14, Code of Federal Regulations (14 CFR), part 25.\n\nSection=25.1309; Title=Equipment, systems, and installations\nSection=25.1529; Title=Instructions for continued airworthiness\n\n完整表格：\n<table><tr><td>Section</td><td>Title</td></tr><tr><td>25.1309</td><td>Equipment, systems, and installations</td></tr><tr><td>25.1529</td><td>Instructions for continued airworthiness</td></tr></table>\n\nb. FAA ACs.\n\nAC No.=25.1309-1A; Title=System Design and Analysis; Date=6/21/88\nAC No.=120-17A; Title=Maintenance Control By Reliability Methods; Date=3/27/78\nAC No.=121-22A; Title=Maintenance Review Board Procedures; Date=3/7/97\n\n完整表格：\n<table><tr><td>AC No.</td><td>Title</td><td>Date</td></tr><tr><td>25.1309-1A</td><td>System Design and Analysis</td><td>6/21/88</td></tr><tr><td>120-17A</td><td>Maintenance Control By Reliability Methods</td><td>3/27/78</td></tr><tr><td>121-22A</td><td>Maintenance Review Board Procedures</td><td>3/7/97</td></tr></table>\n\nc. Other Documents.\n\nAir Transport Association (ATA) Maintenance Steering Group (MSG-3), Airline/Manufacturer Maintenance Program Development Document. Available from the ATA, 1301 Pennsylvania Avenue, N.W. Suite 1100, Washington, DC 20004-1707.\n\nEuropean Aviation Safety Agency (EASA) Acceptable Means of Compliance (AMC) 25.1309, System Design and Analysis. Available on the internet at: http://easa.europa.eu/agency-measures/certificationspecifications.php.\n\nAviation Rulemaking Advisory Committee recommended draft Advisory Circular 25.1309-Arsenal, System Design and Analysis, dated 6/10/ 2002. Available on the internet at:\n\nhttp://www.faa.gov/regulations\\_policies/rulemaking/committees/arac/media /tae/TAE\\_SDA\\_T2.pdf.\n\n5. Certification Maintenance Requirements (CMR) Definition. A CMR is a required scheduled maintenance task established during the design certification of the airplane systems as an operating limitation of the type certificate (TC) or supplemental type certificate (STC). The CMRs are a subset of the instructions for continued airworthiness identified during the certification process. A CMR usually results from a formal, numerical analysis conducted to show compliance with the requirements applicable to catastrophic and hazardous failure conditions, as defined in paragraph 6d below. Compliance may also result from a qualitative, engineering judgment-based analysis.\n\na. The CMRs are required tasks, and associated intervals, developed to achieve compliance with § 25.1309 and other regulations requiring safety analyses (such as §§ 25.671, 25.783, 25.901, and 25.933). A CMR is intended to detect safety-significant latent failures that would, in combination with one or more other specific failures or events, result in a hazardous or catastrophic failure condition. A CMR can also be used to establish a required task to detect an impending wear-out of an item whose failure is associated with a hazardous or catastrophic failure condition.\n\nb. It is important to note that CMRs are derived from a fundamentally different analysis process than the maintenance tasks and intervals that result from the MSG-3 analysis associated with MRB activities (if the MRB process is used). Although both types of analysis may produce equivalent maintenance tasks and intervals, it is not always appropriate to substitute a CMR with an MSG-3 task.\n\nc. The CMRs verify that a certain failure has or has not occurred, indicate that repairs are necessary if the item has failed, or identify the need to inspect for impending failures (e.g., heavy wear or leakage). Because the exposure time to a latent failure is a key element in the calculations used in a safety analysis, limiting the exposure time will have a significant effect on the resultant overall failure probability of the system. The intervals for CMR tasks should be designated in terms of flight hours, cycles, or calendar time, as appropriate.\n\nd. The type certification process assumes the airplane will be maintained in a condition of airworthiness equal to its certified or properly altered condition. The process described in this AC is not intended to establish normal maintenance tasks (e.g., greasing, fluid-level checks, etc.) that should be defined through the MSG-3 analysis process. Also, this process is not intended to establish CMRs for the purpose of providing supplemental margins of safety for concerns arising late in the type design approval process. Such concerns should be resolved by appropriate means, which are unlikely to include CMRs not established via normal safety analyses.\n\ne. CMRs should not be confused with required structural inspection programs that are developed by the TC applicant to meet the inspection requirements for damage tolerance, as required by §§ 25.571, 25.1529, and Appendix H25.4 (Airworthiness Limitations section). The CMRs are to be developed and managed separately from any structural inspections programs.\n\n6. Other Definitions. The following terms apply to the system design and analysis requirements of § 25.1309(b), and (c), and to the guidance material provided in this AC. For a complete definition of these terms, refer to the applicable regulations and guidance material (e.g., AC 25.1309-1A). The applicable regulations and guidance material are the controlling documents for defining the following terms:\n\na. Crew. The cabin, flight, or maintenance crew, as applicable.\n\nb. Error. An omission or incorrect action by a crewmember or maintenance personnel, or a mistake in requirements, design, or implementation.\n\nc. Failure. An occurrence which affects the operation of a component, part, or element such that it can no longer function as intended (this includes both loss of function or a malfunction).\n\nd. Failure Condition. A condition caused or contributed to by one or more failures or errors, that has either a direct or consequential effect on the airplane, its occupants, and/or other persons. In identifying failure conditions, the flight phase, relevant adverse operational or environmental conditions, and external events should be considered. Failure conditions may be classified according to their severities as follows:\n\n(1) Minor Failure Conditions. Failure conditions that would not significantly reduce airplane safety, and which involve crew actions that are well within their capabilities. Minor Failure Conditions may include, for example:\n\n(a) A slight reduction in the safety margin or functional capabilities, or\n\n(b) A slight increase in crew workload, such as routine flight plan changes, or some physical discomfort to passengers or cabin crew.\n\n(2) Major Failure Conditions. Failure conditions that would reduce the capability of the airplane or the ability of the crew to cope with adverse operating conditions to the extent that there would be, for example:\n\n(a) A significant reduction in safety margins or functional capabilities,\n\n(b) A significant increase in crew workload or in conditions impairing crew efficiency, or\n\n(c) Discomfort to occupants, possibly including injures.\n\n(3) Hazardous Failure Conditions. Failure conditions that would reduce the capability of the airplane or the ability of the crew to cope with adverse operating conditions to the extent that there would be:\n\n(a) A large reduction in safety margins or functional capabilities,\n\n(b) Physical distress or higher workload such that the flightcrew cannot be relied upon to perform their tasks accurately or completely, or\n\n(c) Serious or fatal injury to a relatively small number of the occupants.\n\n(4) Catastrophic Failure Conditions. Failure conditions that would result in multiple fatalities, usually with the loss of the airplane. (Note: Catastrophic failure conditions are also defined as a failure condition that would prevent the continued safe flight and landing of the airplane.)\n\ne. Governing Aircraft Certification Office (ACO). The ACO responsible for making compliance findings and certificating a particular type design.\n\nf. Probability Terms. When using qualitative or quantitative assessments to determine compliance with § 25.1309(b), the following descriptions of the probability terms used in the requirement and in the advisory materials listed above have become commonly accepted aids to engineering judgment:\n\n(1) Probable Failure Conditions. Failure conditions anticipated to occur one or more times during the entire operational life of each airplane. Minor failure conditions may be probable. For quantitative analysis purposes, probable failure conditions are those having a probability greater than on the order of 1x10^5\n\n(2) Improbable Failure Conditions. Improbable failure conditions are divided into two categories, as follows:\n\n(a) Remote. Unlikely to occur to each airplane during its total life but may occur several times when considering the total operational life of a number of airplanes of that type. Major failure conditions must be no more frequent than remote. For quantitative analysis purposes, remote failure conditions are those having a probability on the order of 1xi0^-5 or less, but greater than on the order of 1x10^-7\n\n(b) Extremely Remote. Not anticipated to occur to each airplane during its total life, but may occur a few times when considering the total operational life of all of the airplanes of that type. Hazardous failure conditions must be no more frequent than extremely remote. For quantitative analysis purposes, extremely remote failure conditions are those having a probability on the order of 1x10^-7 or less, but greater than on the order of 1 ·x10^-9\n\n(3) Extremely Improbable Failure Conditions. Failure conditions so unlikely that they are not anticipated to occur during the entire operational life of all airplanes of one type. For quantitative analysis purposes, extremely improbable failure conditions are those having a probability on the order of 1x10^-9 or less. Catastrophic failure conditions must be shown to be extremely improbable.\n\ng. Qualitative. Analytical processes that assess system and airplane safety in an objective, non-numerical manner.\n\nh. Quantitative. Analytical processes that apply mathematical methods to assess system and airplane safety.\n\ni. Significant Latent Failures. A failure is latent until it is made known to the flightcrew or maintenance personnel. Significant latent failures are latent failures that would, in combination with one or more other specific failures or events, result in a hazardous or catastrophic failure condition.\n\nk. Wear out. A condition where a component is worn beyond a pre-determined limit.\n\n7. System Safety Assessments (SSA). Section 25.1309(b) provides general requirements for an inverse relationship between the probability and severity of each failure condition.\n\na. Section 25.1309(b) specifies required safety levels in qualitative terms, and a safety assessment must be made to show compliance. Various assessment techniques have been developed to help applicants and the FAA in determining that a logical and acceptable inverse relationship exists between the probability and the severity of each failure condition. These techniques include the use of service experience data of similar, previously approved systems, and thorough qualitative and quantitative analyses.\n\nb. In addition, difficulties have been experienced in assessing the acceptability of some designs, especially those of systems, or parts of systems, that are complex, that have a high degree of integration, that use new technology, or that perform safety-critical functions. These difficulties led to the selective use of rational analyses to estimate quantitative probabilities, and the development of related criteria based on historical data of accidents and incidents caused or contributed to by failures. These criteria, expressed as numerical probability ranges associated with the terms used in § 25.1309(b), became commonly accepted for evaluating the quantitative analyses that are often used in such cases to support experienced engineering and operational judgment and to supplement qualitative analyses and tests.\n\nNOTE: See AC 25.1309-1A, System Design and Analysis, or ARAC recommended draft AC 25.1309-Arsenal, for a complete description of the inverse relationship between the probability and severity of failure conditions, and the various methods of showing compliance with § 25.1309.\n\n8. Design Considerations Related to Candidate CMRs (CCMRs). A decision to create a CCMR should follow the guidelines given in the current AC 25.1309-1 and appendix 1 of this AC. Practical and reliable failure monitoring and indication systems to detect significant latent failures should be implemented in lieu of CMRs. A practical failure monitoring and indication system is one that is considered to be within the state of the art. Reliable failure monitoring and indication should utilize current state of the art technology to minimize the probability of falsely detecting and indicating non-existent failures. Experienced judgment should be applied when determining whether or not a failure monitoring and warning system would be practical and reliable. Comparison with similar, previously approved systems is sometimes helpful. Appendix 1 of this AC outlines design considerations that should be followed in any decision to create a CCMR.\n\n9. Overview of the Scheduled Maintenance Task Development Process. Figure 1, below, shows the relationship between the certification and MRB processes in establishing scheduled maintenance tasks. Those tasks related to the certification process, as well as those derived through MSG-3 analysis, are identified and documented as illustrated. The details of the process to be followed in defining, documenting, and handling CMRs are given in paragraphs 11 through 14, below.\n\nSource image on page 8; no OCR transcription available.\n\n10. Identification of Candidate CMRs (CCMRs).\n\na. Tasks that are candidates for selection as CMRs usually come from safety analyses (e.g., SSA, which establishes whether there is a need for tasks to be carried out periodically to comply with § 25.1309, and other requirements requiring this type of analysis (such as §§ 25.671, 25.783, 25.901, and 25.933). The SSA should identify as CCMRs the maintenance tasks intended to detect latent failures that would, in combination with one or more specified failures or events, lead to a hazardous or catastrophic failure condition. Tasks may also be selected from those intended to inspect for impending failures due to wear out. The CCMR should identify the failure mode to be detected, the failure condition of concern, the check interval, and the maintenance task.\n\nb. All Significant latent failures should be addressed in the SAA. In some situations, a failure condition might meet the quantitative probability objective, yet contain a component that, per the analysis, does not require inspections to meet that objective (i.e., could be left latently failed for the life of the airplane). In that situation, we believe that some inspections in the life of the airplane are necessary to avoid undue exposure to catastrophic or hazardous “single failure” situations, therefore a qualitative assessment to determine the required maintenance before end of airplane life is still necessary.\n\nc. As the safety analysis may be qualitative or quantitative, some task intervals may be derived in a qualitative manner (e.g., engineering judgment and service experience). Per the advisory material on § 25.1309, numerical analysis supplements, but does not replace, qualitative engineering and operational judgments. Therefore, other tasks that are not derived from numerical analysis of significant latent failures, but are based on properly justified engineering judgment, can also be candidates for CMRs. The justification should include the logic leading to identification as a candidate CMR, and the data and experience base supporting the logic. As § 25.1309(b) regulates catastrophic, hazardous, and major failure conditions, CMRs may also be identified for latent failures that would, in combination with one or more specified failures or events, lead to a major failure condition that is not identified and assigned a task via the MSG-3 process (however experience has shown these cases are rare).\n\n11. Certification Maintenance Coordination Committee (CMCC).\n\na. The CMCC should discuss and disposition all CCMRs. In order to grant airplane operators an opportunity to participate in the selection of CMRs, and to assess the candidate CMRs and the proposed MRB tasks and intervals in an integrated process, the TC applicant should convene a CMCC (see Figure 1 of this AC). This committee should be made up of manufacturer representatives (typically maintenance, design, and safety engineering personnel), operator representatives designated by the Industry Steering Committee (ISC) Chairperson, ACO specialists, and the MRB Chairperson. The governing ACO participation in the CMCC process is necessary to provide regulatory guidance to the selection of CMRs.\n\nb. As early as possible in the design phase of the airplane program, and at intervals as necessary, the CMCC should meet to review candidate CMRs and their purpose, the failure conditions and their criticality, the intended tasks, and other relevant factors. In addition, where multiple tasks result from a quantitative analysis, it may be possible to extend a given interval at the expense of one or more other intervals, in order to optimize the required maintenance activity. However, once a decision is made to create a CMR, then the CMR task interval should be based solely on the results of the safety analysis.\n\nc. The CMCC functions as an advisory committee for the TC applicant and proposes the necessary CMRs. The governing ACO is the authority that ultimately approves CMRs as a limitation of the type certificate per 14 CFR 21.41. The results of the CMCC (proposed CMRs to be included in the type design limitations, and proposed MRB tasks and/or intervals that meet the intent of the CCMRs) are forwarded by the TC applicant to the ISC for consideration. CMCC proposed MRB tasks and/or intervals accepted by the ISC are reflected in the MRB report proposal. Proposed MRB tasks and/or intervals rejected by the ISC will result in CMR tasks. Following the ISC's consideration, the TC applicant submits the CMR document to the governing ACO for final review and approval.\n\n12. Selection of CMRs. Each CCMR should be reviewed by the CMCC and a determination made as to whether it should be a CMR. The applicant should provide sufficient information to the CMCC to enable an understanding of the failure conditions and the failure or event combinations that result in the CCMR. CCMRs are evaluated in the context of the failure conditions in which they are involved, e.g., whether the latent failure is part of a dual failure, or a more complex failure condition.\n\na. The CMR designation should be applied in the case of catastrophic dual failures where one failure is latent. The CMR designation should also be applied to tasks that address wear out of a component involved in a catastrophic failure condition that results from two failures. The interval for the CMR task should be chosen such that the system safety analysis assumptions are protected in service, while allowing flexibility for the airplane operators to manage their maintenance programs. In the case where the system safety analysis does not specify an interval, the CMCC may establish an interval that is less than the life of the airplane considering factors that influence the outcome of the failure condition, such as the nature of the fault, field experience, or the task characteristics.\n\nb. The CMR designation may not be necessary if there is an equivalent MSG-3 task, or an approved AFM procedure, to accommodate the CCMR. The following criteria are used in making this determination:\n\n(1) The SSA allows the failure to be latent for the life of the airplane, or\n\n(2) Latent failures leaving the airplane one failure away from hazardous failure conditions, or\n\n(3) A wear out failure mode that directly or in combination with another failure, leads to a hazardous failure condition.\n\n(4) In all the above cases, the CCMR is satisfied by:\n\n(a) A MSG-3 task provided it meets all of the following criteria:\n\n1 It is a Failure Effect Category 8 task (FEC8) for latent failure, or FEC5 task for evident failure due to wear out. See the ATA document referenced in paragraph 4c above for definitions of FEC5 and FEC8. Note that because the MSG-3 logic may not consider a failure condition containing three or more failures, it is possible that there is no MSG-3 task identified for a CCMR.\n\n2 The FEC8 or FEC5 task interval is shorter than the interval that would be required for the CMR. For example, some applicants have applied, and the Authorities have accepted, a factor of one half of the CMR interval as a margin to guard against potential escalation of FEC8 task intervals beyond the intervals specified by the CMR.\n\n3 The applicant has procedures in place (e.g. tagging of MSG-3 tasks to identify those derived from the safety analysis) so that the FEC8 or FEC5 task would not be susceptible to escalation beyond the interval that would otherwise be required by a CMR. For example, due to difficulty in accessing the item, a task may not be conducted at the required interval. Engineering judgment indicates a CMR is appropriate for compliance rather than a MSG-3 task.\n\n(b) Tasks covered by the approved airplane flight manual (AFM) procedures.\n\nc. In complex failure conditions (e.g., a combination of three or more failures) the SSA may identify more than one CCMR. Equivalent and compatible MSG-3 tasks (if they exist) may be used to satisfy some of those CCMRs. The rationale for the disposition of each CCMR should be presented to the governing ACO for approval.\n\n13. Documentation and Handling of CMRs.\n\na. The CMR data location should be referenced in the type certificate data sheet (TCDS). The latest version of the CMR document should be controlled by a log of pages approved by the governing ACO. In this way, changes to CMRs following certification will not require an amendment to the TCDS. As stated in FAA Order 8110.54A, Instructions for Continued Airworthiness Responsibilities, Requirements, and Contents, dated 10/23/2010, CMRs are functionally equal to airworthiness limitations. An acceptable means is to include CMRs in the Airworthiness Limitations section of the airplane maintenance manual.\n\nb. Since CMRs are based on statistical averages and reliability rates, an “exceptional short term extension” for CMR intervals may be made on one airplane for a specific period of time without risking safety. Any exceptional short term extensions to CMR intervals must be defined and fully explained in the CMR document. The local regulatory authority (e.g., a Principal Maintenance Inspector) must concur with any exceptional short term extensions allowed by the CMR document before they take place using procedures established with the local regulatory\n\nauthority in the operators’ manuals. The exceptional short term extension process is applicable to CMR intervals. It should not be confused with the operator’s “short term escalation” program for normal maintenance tasks described in the operators’ manuals and in the Flight Standards Information Management System, Order 8900.1.\n\n(1) The term \"exceptional short term extension\" is defined as an increase in a CMR interval that may be needed to cover an uncontrollable or unexpected situation. Any allowable increase must be defined either as a percent of the normal interval, or a stated number of flight hours, flight cycles, or calendar days. If no exceptional short term extension is to be allowed for a given CMR, this restriction should be stated in the CMR document.\n\n(2) Repeated use of exceptional short term extensions, either on the same airplane or on similar airplanes in an operator's fleet, should not be used as a substitute for good management practices. Exceptional short term extensions must not be used for fleet CMR interval escalation.\n\n(3) The CMR document should state that the governing ACO must approve, prior to its use, any desired exceptional short term extension not explicitly listed in the CMR document.\n\n14. Post-Certification Changes to CMRs. Any post-certification changes to CMRs should be reviewed by the same entities that participated in the CMCC and must be approved by the ACO that approved the type design.\n\na. Since the purpose of a CMR is to limit the exposure time to a given Significant Latent Failure, or a given wear out, as part of an engineering analysis of overall system safety, instances of a CMR task repeatedly finding that no failure has occurred may not be sufficient justification for deleting the task or increasing the time between repetitive performances of the CMR task. In general, a CMR task change or interval escalation could only be made if world fleet service experience indicates that certain assumptions regarding component failure rates made early during the engineering analysis were too conservative, and a re-calculation of system reliability with revised failure rates of certain components reveals that the task or interval may be changed.\n\nb. The introduction of a new CMR or any change to an existing CMR should be reviewed by the same entities that were involved in the CMCC at time of initial certification. To allow the operators to manage their own maintenance programs, it is important that they be afforded the same opportunity for participation that they received during the original certification of the airplane.\n\nc. If later data provides a sufficient basis for the relaxation of a CMR (less restrictive actions to be required), the change may be documented by a revision to the CMR document and approved by the governing ACO.\n\nd. If the FAA determines that the requirements of an existing CMR must be increased (more restrictive actions to be performed), the new requirements will be mandated by an\n\nairworthiness directive (AD) and the CMR document will be revised to include the change.\n\ne. New CMRs that are unrelated to in-service events may be created and they should be documented and approved by the governing ACO. New CMRs can arise in situations such as:\n\n(1) Certification of design changes, or\n\n(2) Updates to the applicant’s certification compliance documentation. These may result from regulation changes, AD actions on similar systems or airplanes, awareness of additional hazardous or catastrophic failure conditions, revised failure rates, consideration of extended service goals, etc.\n\nOriginal signed by Ali Bahrami\n\nAli Bahrami Manager, Transport Airplane Directorate Aircraft Certification Service\n\nSource image on page 8; no OCR transcription available.\n\n![figure p8](http://localhost:8080/api/v1/ingestion/jobs/cf0e1af9b6414ccb813518fb53553501/assets/d17149699db92f6a0035)",
+          "end_at": 175,
+          "id": "5b47bd52-93e6-4478-b3a6-1fc3a0193b3b",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25-19A.pdf",
+          "knowledge_id": "fe1824bf-3dee-4086-a3d4-567638f15f4d",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25-19A.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25-19A.pdf\nSource image on page 8\n\nSource image on page 8; no OCR transcription available.\n\n![figure p8](http://localhost:8080/api/v1/ingestion/jobs/cf0e1af9b6414ccb813518fb53553501/assets/d17149699db92f6a0035)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "941a31740b269b6c00aa9bab53a622062acad7aae9efe288c474ce87057c58c1",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "9606a3118526aa74771b",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\9c\\9cea29f25c03ce36f9ed887752c69503ee2e26a8bc1d294ec0f9838b72507239\\source.pdf",
+            "internal_rag_source_sha256": "9cea29f25c03ce36f9ed887752c69503ee2e26a8bc1d294ec0f9838b72507239",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "7f205537-6706-45e3-b798-417a73f41717",
+          "score": 0.6373134328358208,
+          "seq": 15,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "5b47bd52-93e6-4478-b3a6-1fc3a0193b3b"
+          ]
+        },
+        {
+          "chunk_index": 1,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "f4fd55cd37d764f47f46"
+            ],
+            "block_ids": [
+              "42bc6b3b0abb7d180331"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "5e69526cde4a525c9730",
+            "external_parent_chunk_id": "a4a88c7caa4521411052",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 1,
+            "page_start": 1,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INTERIOR DESIGN TO FACILITATE SEARCHES\n\nDate: 10/24/08\n\nInitiated By: ANM-100\n\nAC No: 25.795-8\n\n1. PURPOSE. This advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR), part 25, § 25.795(c)(3), “Interior design to facilitate searches.” This section requires that the interior design of an airplane incorporate features that will make it more difficult to hide dangerous objects in the airplane or make it easier to find them if they have been brought onboard. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to whether the interior design deters concealment of dangerous objects (e.g., weapons or explosives) and facilitates a search for them in certain areas of the airplane. The requirements for searching an airplane are not affected by the requirements of § 25.795(c)(3). The design of the airplane will make it easier to search for hidden objects but will not affect the need for, or the diligence of, the search.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+          "end_at": 175,
+          "id": "be1798cf-f1a7-4047-b1c0-be25f21b4191",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25.795-8.pdf",
+          "knowledge_id": "ed0ae44a-a86c-4604-87bc-f446a864bc9e",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25.795-8.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25.795-8.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "1c3cff6b3a66db4a5e2484cbcde1ec64f01fea8ba0c13b9727c6b552347156a8",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "9fe2d7defeb3b52af42f",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83\\source.pdf",
+            "internal_rag_source_sha256": "38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "1e34a590-7e6f-49a6-b591-58baa9652d03",
+          "score": 0.6279411764705882,
+          "seq": 1,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "be1798cf-f1a7-4047-b1c0-be25f21b4191"
+          ]
+        },
+        {
+          "chunk_index": 11,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [
+              "8167a6082fa7d0302eda"
+            ],
+            "block_ids": [
+              "8e2fb2c87a0932b68deb"
+            ],
+            "content_type": "figure",
+            "external_chunk_id": "f90f6ac84c24a48d9cd1",
+            "external_parent_chunk_id": "f9d3eeccdcc76f446e5e",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 5,
+            "page_start": 5,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [
+              "8 WHERE TO FIND THIS AC."
+            ],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "8 WHERE TO FIND THIS AC.\n\n8.1 You may find this AC at http://www.faa.gov/regulations\\_policies/advisory\\_circulars.\n\n8.2 If you have any suggestions for improvements or changes, you may use the template provided at the end of this AC.\n\nSource image on page 5; no OCR transcription available.\n\nRichard E. Jennings\n\nActing Manager, Design, Manufacturing, &\n\nAirworthiness Division\n\nAircraft Certification Service\n\nAppendix A. Definitions\n\nAll definitions are provided solely for the context of this advisory circular.\n\nInstaller. An installer is anyone who replaces or adds articles, parts, or materials used in the alteration of any aircraft that has a United States airworthiness certificate or is responsible to ensure airworthiness prior to returning an altered aircraft to service.\n\nModification. A modification is a change to type design installed on the aircraft.\n\nType Club. A type club is an organized group of people with a common interest in a particular aircraft type or brand of aircraft. Information is a type club’s primary resource to members and a type club often provides technical expertise for aircraft models that no longer have an active design approval holder supporting continued operational safety. In some cases, a type club may even be the design approval holder of the aircraft itself.\n\nAppendix B. Advisory Circular Feedback Form\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) complete the form online at https://ksn2.faa.gov/avs/dfs/Pages/Home.aspx or (2) emailing this form to 9-AWA-AVS-AIR-DMO@faa.gov\n\nSubject: AC 20-188\n\nDate:\n\nPlease check all appropriate line items:\n\nAn error (procedural or typographical) has been noted in paragraph \\_\\_\\_\\_\\_\\_\\_ on page\n\nRecommend paragraph \\_\\_\\_\\_\\_\\_\\_ on page be changed as follows:\n\nIn a future change to this AC, please cover the following subject: (Briefly describe what you want added.)\n\nOther comments:\n\nI would like to discuss the above. Please contact me.\n\nSubmitted by:\n\nDate:\n\nSource image on page 5; no OCR transcription available.\n\n![figure p5](http://localhost:8080/api/v1/ingestion/jobs/1646f80ded064d2fb532822f87557972/assets/8167a6082fa7d0302eda)",
+          "end_at": 175,
+          "id": "5acef0f8-7965-4edf-8b20-1b43f80083e4",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_20-188.pdf",
+          "knowledge_id": "2fb78c8d-bbc3-46c4-b6de-0309e2d2403f",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_20-188.pdf",
+          "match_type": 0,
+          "matched_content": "AC_20-188.pdf\n8 WHERE TO FIND THIS AC. > Source image on page 5\n\nSource image on page 5; no OCR transcription available.\n\n![figure p5](http://localhost:8080/api/v1/ingestion/jobs/1646f80ded064d2fb532822f87557972/assets/8167a6082fa7d0302eda)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "ee7937f138051451c62d15ee870734ca564e1a2f027a24ab3e251c1a6609665e",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "44b95eae400200cd9f63",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\03\\03534247de86f8fe4469fb32410edded90ab9e70b79d710211e65db70c1d911c\\source.pdf",
+            "internal_rag_source_sha256": "03534247de86f8fe4469fb32410edded90ab9e70b79d710211e65db70c1d911c",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "f9b88380-3a20-4347-ae69-d62ef3bb0cf0",
+          "score": 0.6188405797101448,
+          "seq": 11,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "5acef0f8-7965-4edf-8b20-1b43f80083e4"
+          ]
+        },
+        {
+          "chunk_index": 3,
+          "chunk_metadata": {
+            "article_aliases": [],
+            "article_id_normalized": "",
+            "article_id_raw": "",
+            "article_parent_id": "",
+            "asset_ids": [],
+            "block_ids": [
+              "62afc1c7ba63f6f653db"
+            ],
+            "content_type": "text",
+            "external_chunk_id": "319beb92fcbeac44aae5",
+            "external_parent_chunk_id": "4886c652b74eded87aa9",
+            "formula_latex": [],
+            "keywords": [],
+            "page_end": 4,
+            "page_start": 4,
+            "question_aliases": [],
+            "related_chunks": [],
+            "section_path": [
+              "CONTENTS (CONTINUED)"
+            ],
+            "table_html": [],
+            "table_rows": []
+          },
+          "chunk_type": "text",
+          "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+          "end_at": 20,
+          "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+          "image_info": "",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+          "knowledge_channel": "api",
+          "knowledge_filename": "AC_25-25A.pdf",
+          "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+          "knowledge_source": "internal-rag",
+          "knowledge_title": "AC_25-25A.pdf",
+          "match_type": 0,
+          "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "04a389a1de97dc79f380",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+            "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+            "source_system": "internal-rag"
+          },
+          "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+          "score": 0.61,
+          "seq": 3,
+          "start_at": 0,
+          "sub_chunk_id": [
+            "c88791d2-5a32-4c11-bb5c-ae0562f313bd"
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -5,9 +5,11 @@ import (
 	"fmt"
 	"strings"
 	"sync"
+	"time"
 
 	"github.com/Tencent/WeKnora/internal/config"
 	"github.com/Tencent/WeKnora/internal/logger"
+	"github.com/Tencent/WeKnora/internal/models/chat"
 	"github.com/Tencent/WeKnora/internal/searchutil"
 	"github.com/Tencent/WeKnora/internal/tracing/langfuse"
 	"github.com/Tencent/WeKnora/internal/types"
@@ -19,6 +21,7 @@ type PluginSearch struct {
 	knowledgeBaseService  interfaces.KnowledgeBaseService
 	knowledgeService      interfaces.KnowledgeService
 	chunkService          interfaces.ChunkService
+	modelService          interfaces.ModelService
 	config                *config.Config
 	webSearchService      interfaces.WebSearchService
 	tenantService         interfaces.TenantService
@@ -31,6 +34,7 @@ func NewPluginSearch(eventManager *EventManager,
 	knowledgeBaseService interfaces.KnowledgeBaseService,
 	knowledgeService interfaces.KnowledgeService,
 	chunkService interfaces.ChunkService,
+	modelService interfaces.ModelService,
 	config *config.Config,
 	webSearchService interfaces.WebSearchService,
 	tenantService interfaces.TenantService,
@@ -42,6 +46,7 @@ func NewPluginSearch(eventManager *EventManager,
 		knowledgeBaseService:  knowledgeBaseService,
 		knowledgeService:      knowledgeService,
 		chunkService:          chunkService,
+		modelService:          modelService,
 		config:                config,
 		webSearchService:      webSearchService,
 		tenantService:         tenantService,
@@ -94,12 +99,14 @@ func (p *PluginSearch) OnEvent(ctx context.Context,
 	var mu sync.Mutex
 	allResults := make([]*types.SearchResult, 0)
 	var kbSearchErr error
+	var alternateResults []*types.SearchResult
+	query := strings.TrimSpace(chatManage.RewriteQuery)
 
 	wg.Add(2)
 	// Goroutine 1: Knowledge base search using SearchTargets
 	go func() {
 		defer wg.Done()
-		kbResults, err := p.searchByTargets(ctx, chatManage)
+		kbResults, err := p.searchByTargets(ctx, chatManage, query)
 		kbSearchErr = err
 		if len(kbResults) > 0 {
 			mu.Lock()
@@ -119,7 +126,25 @@ func (p *PluginSearch) OnEvent(ctx context.Context,
 		}
 	}()
 
+	if chatManage.CrossLanguageSearch && len(chatManage.SearchTargets) > 0 && query != "" {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			alternate := p.crossLanguageQuery(ctx, chatManage, query)
+			if alternate == "" || strings.EqualFold(alternate, query) {
+				return
+			}
+			var err error
+			alternateResults, err = p.searchByTargets(ctx, chatManage, alternate)
+			if err != nil {
+				pipelineWarn(ctx, "Search", "cross_language_search_failed", map[string]interface{}{"error": err.Error()})
+			}
+		}()
+	}
+
 	wg.Wait()
+	chatManage.CrossLanguageCandidates = len(alternateResults) > 0
+	allResults = append(allResults, alternateResults...)
 	if kbSearchErr != nil && len(allResults) == 0 {
 		pipelineError(ctx, "Search", "kb_search_failed", map[string]interface{}{
 			"error": kbSearchErr.Error(),
@@ -348,12 +373,11 @@ func targetReportsEmbedFailure(kb *types.KnowledgeBase) bool {
 func (p *PluginSearch) searchByTargets(
 	ctx context.Context,
 	chatManage *types.ChatManage,
+	queryText string,
 ) ([]*types.SearchResult, error) {
 	if len(chatManage.SearchTargets) == 0 {
 		return nil, nil
 	}
-
-	queryText := strings.TrimSpace(chatManage.RewriteQuery)
 
 	// Batch-fetch KB records to determine embedding model grouping.
 	// On failure, all targets fall into an empty-key group and HybridSearch
@@ -517,6 +541,30 @@ func (p *PluginSearch) searchByTargets(
 		"total_hits": len(results),
 	})
 	return results, firstErr
+}
+
+// crossLanguageQuery adds a retrieval query while keeping the effective original
+// query for web search, reranking, and answer generation.
+func (p *PluginSearch) crossLanguageQuery(ctx context.Context, cm *types.ChatManage, query string) string {
+	ctx, cancel := context.WithTimeout(ctx, 8*time.Second)
+	defer cancel()
+
+	model, err := p.modelService.GetChatModel(ctx, cm.ChatModelID)
+	if err != nil {
+		pipelineWarn(ctx, "Search", "cross_language_model_unavailable", map[string]interface{}{"error": err.Error()})
+		return ""
+	}
+
+	thinking := false
+	response, err := model.Chat(types.WithLLMCallMetadata(ctx, "cross_language_query", ""), []chat.Message{
+		{Role: "system", Content: "Translate the retrieval query without answering or adding information. Translate predominantly Chinese queries into English and predominantly English queries into Simplified Chinese. For other languages translate into English. Preserve technical terms, names, identifiers, and constraints. Output only the translated query."},
+		{Role: "user", Content: query},
+	}, &chat.ChatOptions{MaxCompletionTokens: 256, Thinking: &thinking})
+	if err != nil {
+		pipelineWarn(ctx, "Search", "cross_language_translation_failed", map[string]interface{}{"error": err.Error()})
+		return ""
+	}
+	return strings.TrimSpace(response.Content)
 }
 
 // searchSingleTarget performs hybrid retrieval inside one constrained target.

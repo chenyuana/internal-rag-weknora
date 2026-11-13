@@ -1,0 +1,4930 @@
+[
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "agent_query",
+    "content": "",
+    "done": true,
+    "session_id": "9c8c9a6e-669f-461b-aba9-7c62a4666ab4",
+    "assistant_message_id": "d93d7bb3-79a9-4905-835f-63ef91166ac9",
+    "data": {
+      "assistant_created_at": "2026-11-06T07:45:51.7459065Z",
+      "assistant_message_id": "d93d7bb3-79a9-4905-835f-63ef91166ac9",
+      "session_id": "9c8c9a6e-669f-461b-aba9-7c62a4666ab4",
+      "user_created_at": "2026-11-06T07:45:51.7096736Z",
+      "user_message_id": "fa37fb4f-ce01-4c93-9268-97ce54bb2cc0"
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "tool_call",
+    "content": "Calling tool: query_understand",
+    "done": false,
+    "data": {
+      "arguments": {
+        "query": "前飞时旋翼尾迹在悬停、小速度平飞、大速度平飞下分别近似什么形状？"
+      },
+      "tool_call_id": "ca9441ac-577c-40f2-ae3e-8fbff538a3af",
+      "tool_name": "query_understand"
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "tool_result",
+    "content": "",
+    "done": false,
+    "data": {
+      "duration_ms": 2908,
+      "error": "",
+      "output": "已完成问题理解",
+      "success": true,
+      "tool_call_id": "ca9441ac-577c-40f2-ae3e-8fbff538a3af",
+      "tool_name": "query_understand"
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "tool_call",
+    "content": "Calling tool: knowledge_search",
+    "done": false,
+    "data": {
+      "arguments": {
+        "query": "旋翼尾迹在悬停、小速度平飞和大速度平飞时分别近似什么形状",
+        "search_source": "knowledge"
+      },
+      "tool_call_id": "d3311364-ff9d-41b5-abc2-1d1b4254613c",
+      "tool_name": "knowledge_search"
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "tool_result",
+    "content": "",
+    "done": false,
+    "data": {
+      "candidate_count": 10,
+      "count": 0,
+      "doc_count": 0,
+      "duration_ms": 2444,
+      "error": "",
+      "output": "命中 10 条候选，相关性不足，未用于回答",
+      "search_source": "knowledge",
+      "success": true,
+      "tool_call_id": "d3311364-ff9d-41b5-abc2-1d1b4254613c",
+      "tool_name": "knowledge_search",
+      "web_count": 0
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "说明",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "：",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "知识",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "库",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "中存在",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "《",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "he",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "lic",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "opte",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "r-a",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "e",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "rodynamics",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "-native",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": ".pdf",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "》，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "但",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "本次",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "检索",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "没有",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "返回",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "可直接",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "引",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "用的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "具体",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "段落",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "因此",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "下面",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "依据",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "通用",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "旋",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "翼",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "空气",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "动力学",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "结论",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "作答",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "并非",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "来自",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "知识",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "库",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "原文",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "也未",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "引用",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "具体",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "来源",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "。\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "##",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "三种",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "状态的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "近似",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "形状",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "飞行",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "状态",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "近似",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "形状",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "主要",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "特征",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|---|---",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|---",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " **",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "悬",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "停",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " **",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "圆柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "形",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "圆",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "筒",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "形",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "即",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "状",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "桨",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尖",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "形成",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "螺旋",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "由于",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "向下",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "收缩",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "半径",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "收缩",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "到",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "约",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "0",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": ".",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "8",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "R",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "R",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "为",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "旋",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "翼",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "半径",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）；",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "轴对称",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "可用",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "动量",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "理论",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "/",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "模型",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "描述",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "最大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " **",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "小",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "飞",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "前进",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "比",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " μ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ≈",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "0",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": ".",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "05",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "–",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "0",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": ".",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "15",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " **",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "倾斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "圆柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "弯",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "状",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "自由",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "流",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "把",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "整体",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "“",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "吹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "”，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "轴线",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "向后",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "下方",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "倾斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "呈",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "置",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "圆柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "；",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "前行",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "侧",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "与",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "后",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "行",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "侧",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "不再",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "对称",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "后",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "行",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "侧",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "出现",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "回流",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "/",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "环",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "干扰",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "区",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "分布",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "畸",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "变",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "功率",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "中",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "悬",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "停",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "与",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "飞",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "之间",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "过渡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "|",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " **",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "飞",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "前进",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "比",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " μ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "较大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "约",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " >",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "0",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": ".",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "3",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " **",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "接近",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平面的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "螺旋",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "面",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平面",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "桨",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尖",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "快速",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "向下",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "游",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "拖",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "出",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "并被",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "“",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "压",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "”，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "面",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "近乎",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "与",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "桨",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "盘",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平行",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "、",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "略微",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "下",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "倾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "垂",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "向",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "很小",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "功率",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "占比",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "很低",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "特性",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "接近",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "固定",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "翼",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "模型",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "经典",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "刚性",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "/",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "预定",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "假设",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "即",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "基于",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "此",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " |\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "##",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "中间的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "过渡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "关系",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "随",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "前进",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "比",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "增大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "形态",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "连续",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "演变",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "：\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "圆柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " →",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "圆柱",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " →",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "压",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "扁",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "螺旋",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "面",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "趋",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "近",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平面",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "）",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "**\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "物理",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "上",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "这一",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "变化",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "对应",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "“",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "被",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "自由",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "流",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "对流",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "输",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "运",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "相对于",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "下",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "洗",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "比值",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "”",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "不断",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "增大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "：",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "悬",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "停",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "时",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "下",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "洗",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "主导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "成",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "管",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "；",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "增大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "后",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "自由",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "流",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "主导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "被",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "拉",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "、",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "拉",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "诱导",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "损失",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迅速",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "下降",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "，",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "这也是",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "飞",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "需",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "用",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "功率",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "曲线",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "在大",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "速度",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "段",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "趋于",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "平",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "缓",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "的原因",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "之一",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "。\n\n",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "如果你",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "需要",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "教材",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "中的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "原始",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "表述",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "与",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "图示",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "（",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "如",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "桨",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尖",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "涡",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "收缩",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "比",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "、",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "斜",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "尾",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "迹",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "的",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "几何",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "参数",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "），",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "可以",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "让我",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "针对",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "该",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " PDF",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": " ",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "再",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "检索",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "具体",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "章节",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "。",
+    "done": false,
+    "data": {
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "answer",
+    "content": "",
+    "done": true,
+    "data": {
+      "completed_at": 1793951167,
+      "duration_ms": 3210,
+      "event_id": "17fbeb45-fallback",
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "d0c0d9cf-67cf-4523-851e-6b4ac3184959",
+    "response_type": "complete",
+    "content": "",
+    "done": true,
+    "data": {
+      "final_content": "说明：知识库中存在《helicopter-aerodynamics-native.pdf》，但本次检索没有返回可直接引用的具体段落，因此下面依据通用旋翼空气动力学结论作答，并非来自知识库原文，也未引用具体来源。\n\n## 三种状态的尾迹近似形状\n\n| 飞行状态 | 尾迹近似形状 | 主要特征 |\n|---|---|---|\n| **悬停** | **圆柱形（圆筒形）涡管**，即柱状尾迹 | 桨尖涡形成螺旋涡管，由于诱导速度向下收缩，尾迹管半径收缩到约 0.8R（R 为旋翼半径）；轴对称，可用动量理论/涡管模型描述，诱导速度最大 |\n| **小速度平飞**（前进比 μ ≈ 0.05–0.15） | **倾斜的斜圆柱（弯柱状）尾迹** | 自由流把尾迹整体“吹斜”，涡管轴线向后下方倾斜，呈斜置圆柱；前行侧与后行侧不再对称，后行侧出现回流/涡环干扰区，诱导速度分布畸变，功率中悬停与平飞之间过渡 |\n| **大速度平飞**（前进比 μ 较大，约 >0.3） | **接近平面的螺旋涡面（平面尾迹）** | 桨尖涡快速向下游拖出并被“压平”，涡面近乎与桨盘平行、略微下倾，垂向诱导速度很小，诱导功率占比很低，特性接近固定翼的尾迹模型（经典刚性/预定尾迹假设即基于此） |\n\n## 中间的过渡关系\n\n随前进比增大，形态连续演变：\n\n**圆柱涡管 → 斜圆柱涡管 → 压扁的螺旋涡面（趋近平面）**\n\n物理上，这一变化对应“尾迹被自由流对流输运相对于诱导下洗的比值”不断增大：悬停时下洗主导，尾迹成管；速度增大后自由流主导，尾迹被拉斜、拉平，诱导损失迅速下降，这也是平飞需用功率曲线在大速度段趋于平缓的原因之一。\n\n如果你需要教材中的原始表述与图示（如桨尖涡收缩比、斜尾迹的几何参数），可以让我针对该 PDF 再检索具体章节。",
+      "total_duration_ms": 0,
+      "total_steps": 0
+    }
+  }
+]

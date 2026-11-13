@@ -1,0 +1,6 @@
+{
+  "session": "a44f75da-d540-47be-9dc7-85ab04294b2e",
+  "query": "AHRS 使用有 TSO 授权的 GNSS 速度数据。GNSS 在报无效后仍输出数值，开发方继续用于姿态修正，理由是“有 TSO 就已验证速度精度”。请逐项判断，并说明文件对 TSO-C129a 接口说到了哪一步。",
+  "group": "clean",
+  "agent": "builtin-wiki-researcher"
+}

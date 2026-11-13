@@ -35,6 +35,7 @@ func NewPluginSearchParallel(
 	knowledgeBaseService interfaces.KnowledgeBaseService,
 	knowledgeService interfaces.KnowledgeService,
 	chunkService interfaces.ChunkService,
+	modelService interfaces.ModelService,
 	config *config.Config,
 	webSearchService interfaces.WebSearchService,
 	tenantService interfaces.TenantService,
@@ -50,6 +51,7 @@ func NewPluginSearchParallel(
 		knowledgeBaseService:  knowledgeBaseService,
 		knowledgeService:      knowledgeService,
 		chunkService:          chunkService,
+		modelService:          modelService,
 		config:                config,
 		webSearchService:      webSearchService,
 		tenantService:         tenantService,
@@ -155,6 +157,7 @@ func (p *PluginSearchParallel) OnEvent(ctx context.Context,
 	// Merge results from both searches
 	chatManage.SearchResult = append(chunkCM.SearchResult, entityCM.SearchResult...)
 	chatManage.SearchResult = removeDuplicateResults(chatManage.SearchResult)
+	chatManage.CrossLanguageCandidates = chunkCM.CrossLanguageCandidates
 
 	for name, err := range errs {
 		logger.Warnf(ctx, "[SearchParallel] %s error: %v", name, err.Err)

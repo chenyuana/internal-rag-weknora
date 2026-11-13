@@ -1,0 +1,1098 @@
+[
+  {
+    "id": "04177bc4-1c66-440f-aa7f-38c57d07396c",
+    "request_id": "d31cd40b-1ac6-4bda-a664-77b3f6ae23cb",
+    "session_id": "6c4c02a6-afa2-4b09-acbd-778fa36ec21f",
+    "role": "user",
+    "content": "在滑行时应答机保持开启的飞机上，气象雷达会随应答机自动启动；另装有 IEC 3B 不可见激光。运营方提出二者都可自动工作，因为“地面运行不涉及飞行安全”。分别应如何处理？",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:37:41.478615+00:00",
+    "updated_at": "2026-10-22T06:37:41.479646+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "629ef8fb-1dbf-45af-9151-53166210d47d",
+    "request_id": "d31cd40b-1ac6-4bda-a664-77b3f6ae23cb",
+    "session_id": "6c4c02a6-afa2-4b09-acbd-778fa36ec21f",
+    "role": "assistant",
+    "content": "## 结论先行\n\n运营方“地面运行不涉及飞行安全，所以两者都可以自动工作”这个前提不能同时适用于这两件设备。**气象雷达**并不是一律禁止自动工作，但必须针对地面滑行期间的自动辐射开展专项**危险评估**，并采取抑制或缓解措施；**IEC 3B 激光**则属于**明确禁止**：在地面和滑行期间不得使用，且钥匙控制必须处于关闭位置，因此不能以“不涉及飞行安全”为由让它在滑行时自动工作。\n\n## 一、气象雷达随应答机自动启动\n\nAC 20-182A 第 6.1.5 段专门讨论了这种构型：用应答机模式自动激活雷达，本意是让机组即使没有人工打开雷达，也能在起飞时获得前视风切变告警。该设计形成于“飞机滑上跑道前才打开应答机、离开跑道后才关闭”的年代；但 ASDE-X 雷达和 ADS-B 出现后，机组在滑行时通常让应答机保持“开启”，于是雷达可能在地面滑行阶段就自动辐射。飞机引导员和牵引车操作员常在极接近机头雷达罩的位置作业，这会对他们构成危险。因此，AC 要求针对前视风切变功能的自动激活特性开展危险评估，并把这种运行方式或该功能的任何地面自动激活特性纳入考虑<kb doc=\"AC_20-182A.pdf\" chunk_id=\"f0cdd104-5906-4bf2-905e-be003c5df91b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n处理要点：\n\n1. **不能直接把自动激活取消**。同一 AC 仍要求前视风切变功能在起飞时自动激活，以提供及时的起飞告警；6.1.5 的落脚点是“做危险评估”，其要求级别是“should”，而不是“必须拆除自动激活”。\n2. **评估对象是地面辐射风险**，即滑行时雷达罩前方的引导员、牵引车司机等地面人员，而不是飞行机组。\n3. **缓解措施可以从设计和程序两方面入手**：例如修改自动激活逻辑，或引入空地信号、称重开关等地面抑制条件，使滑行时雷达不辐射、到跑道口或起飞阶段再激活；或者在 AFMS/操作程序中规定滑行时雷达置于待命或关闭位，仅在起飞前激活。采用哪种方式，取决于危险评估结论和具体构型。\n4. 该 AC 本身不是强制法规，而是可接受的符合性方法之一；但若申请人声明按该 AC 符合，就必须在所有重要方面遵循它，危险评估不能省略。\n\n## 二、IEC 3B 不可见激光\n\nAC 20-183 对 AFMS 的强制限制写得很明确：**不得在地面或滑行、起飞、着陆期间使用激光；对于 FDA IIIb 和 IV 类以及 IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置**<kb doc=\"AC_20-183.pdf\" chunk_id=\"5c673968-7461-4dab-aca1-fa05a92eddbc\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n因此：\n\n1. **“自动工作”本身不符合经批准的 AFMS 限制。** 对 IEC 3B 来说，在地面滑行阶段，正确状态不是“自动发射”，而是“钥匙控制处于 OFF”。这不是飞行安全与地面安全之间的取舍问题，而是 AFMS 限制条款的直接要求。\n2. **地面人员也在防护范围内。** AC 20-183 在背景中明确，机载激光可能对飞行机组、乘客、其他航空器乘员以及**非飞行公众**造成眼部危害；第 7.3.5 段注还鼓励：当激光故障可能导致**机外人员**暴露超过 MPE 时，采用业界系统安全与开发保证标准<kb doc=\"AC_20-183.pdf\" chunk_id=\"705d1c3e-e4f6-498f-8ad2-378b8db71905\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。因此，“地面运行不涉及飞行安全”不能推出“地面可以随便辐射”。\n3. **安装层面还有配套要求**：安装型号设计必须包含适用的 21 CFR 1040 要求，例如钥匙控制、发射指示器、标签、远程联锁连接器，以及 FDA 差异中影响飞机安装的技术控制，例如飞机接口安全联锁<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。必要时应设置联锁，例如与雷达高度表交联，在低于规定高度时禁用激光。\n4. **若无法满足上述要求**，只能走“禁用激光功能”的路径：型号设计数据表明激光功能已禁用，并在 TCDS/STC 限制、AFMS 和标牌中作出相应声明；非激光功能（如 FLIR）仍可通电工作<kb doc=\"AC_20-183.pdf\" chunk_id=\"3330ba50-ed65-4a2f-84c2-d9b96ae84133\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n## 三、两者处理方式对照\n\n| 项目 | 气象雷达（应答机自动激活） | IEC 3B 不可见激光 |\n|---|---|---|\n| 地面/滑行自动工作 | 并非当然禁止，但必须做危险评估并处置 | 明确禁止；钥匙控制必须 OFF |\n| 主要依据 | AC 20-182A 6.1.5<kb doc=\"AC_20-182A.pdf\" chunk_id=\"f0cdd104-5906-4bf2-905e-be003c5df91b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> | AC 20-183 7.3.7.1.2<kb doc=\"AC_20-183.pdf\" chunk_id=\"5c673968-7461-4dab-aca1-fa05a92eddbc\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 主要受影响对象 | 机头雷达罩附近的地面引导/牵引人员 | 地面人员、非飞行公众及机上人员 |\n| 典型处置 | 评估后加地面抑制/联锁，或程序上滑行时置备用，保留起飞自动激活 | 取消地面自动发射，钥匙控制关闭；必要时加飞机接口联锁；无法满足则禁用激光功能 |\n| 对“地面不涉及飞行安全”的回应 | 前提不成立：地面人员安全仍需评估 | 前提不成立：AFMS 限制和 21 CFR 控制直接覆盖地面使用 |\n\n简言之：**气象雷达要做的是“评估 + 缓解”，不是简单放行；IEC 3B 激光要做的是“禁止 + 关闭/联锁”，没有“自动工作”的合规空间。**",
+    "knowledge_references": [],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:37:43.9232362+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_vMsFIQVFiBVdnLBdBfeI6285",
+            "args": {
+              "query": "气象雷达|应答机|激光"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/tso-c63": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/ac-20-182a": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-ji-guang-cha-yi-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/forward-looking-turbulence-detection": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-lei-bie-yu-chan-pin-wei-hai": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/c5cf4dee-88c4-4a77-983a-35b9963588d8": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/atmospheric-threat-awareness-functions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-weather-radar-airworthiness-approval": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-weather-radar-system-test-and-evaluation": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"气象雷达|应答机|激光\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aircraft-weather-radar-airworthiness-approval|机载气象雷达系统适航批准]]</link>\n<type>concept</type>\n<aliases>气象雷达系统适航批准</aliases>\n<summary>本页依据 AC 20-182A 说明符合最新修订版 TSO-C63 的机载气象雷达系统初始与后续适航批准的非强制性指南、适用范围、批准途径及前视风切变与湍流探测的背景沿革。</summary>\n<match_snippet>... # 机载气象雷达系统适航批准 文件：AC 20-182A《Airworthiness Approval for Aircraft We ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/tso-c63|TSO-C63 机载气象雷达设备技术标准指令]]</link>\n<type>entity</type>\n<aliases>TSO-C63, TSO-C63e, TSO-C63d</aliases>\n<summary>本页汇总 TSO-C63 机载气象雷达设备技术标准指令的基本定位、TSO-C63d（2012年2月）与 TSO-C63e 的修订内容，以及 AC 20-182A 对该标准指令适用性与效力的说明。</summary>\n<match_snippet>... # TSO-C63 机载气象雷达设备技术标准指令 TSO-C63 是美国联邦航空管理局关于机载气象雷达设备的技术标准指令；最新修订版 TSO-C63e ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aircraft-weather-radar-system-test-and-evaluation|机载气象雷达系统测试与评估]]</link>\n<type>concept</type>\n<aliases>雷达系统测试与评估</aliases>\n<summary>依据 AC 20-182A 第 9 节，本页规定机载气象雷达系统装机后的测试与评估流程，涵盖气象与地面测绘雷达、前视风切变探测、湍流探测与大气威胁感知的验证项目及飞行测试方法。</summary>\n<match_snippet>... # 机载气象雷达系统测试与评估 本页依据 AC 20-182A（文件号原文标注为 AC 20-182A1，日期 10/1/16）第 9 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-an-quan-ji-hua|激光安全计划]]</link>\n<type>concept</type>\n<aliases>激光安全程序</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 激光安全计划 AC 20-183 第7.3.8节（Laser Safety Program）以建议方式提出：航空器运营人应 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 激光设备安装适航要求 来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e0 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing|激光设备认证标准符合性]]</link>\n<type>concept</type>\n<aliases>激光设备认证, FDA 21 CFR与IEC 60825-1符合性</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 激光设备认证标准符合性 来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-lei-bie-yu-chan-pin-wei-hai|激光类别与产品危害]]</link>\n<type>concept</type>\n<aliases>激光类别与危害分级, FDA/IEC激光类别</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 激光类别与产品危害 FDA 认可四大激光危害类别（I 至 IV），其中包括三个子类（IIa、IIIa、IIIb），如下表所 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>本页依据AC 20-183整理机载非必需不可见光谱激光设备（如红外监视激光与LIDAR）取得FAA适航批准的一种可接受方法，涵盖目的与适用范围、职责分工、第7节安装指导、公共用途条款及附录B的LIDAR示例。</summary>\n<match_snippet>... # 机载不可见光谱激光设备安装适航批准 来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e0 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu|公共用途航空器激光设备禁用要求]]</link>\n<type>concept</type>\n<aliases>公共用途激光禁用, 禁用激光功能要求</aliases>\n<summary>本页汇总AC_20-183.pdf第8节公共用途航空器激光设备禁用要求，涵盖型号设计、维修、ICA、适航限制、飞行手册与标牌等合规条件。</summary>\n<match_snippet>... # 公共用途航空器激光设备禁用要求 多数监视激光器是为公共用途运行而研制，未采用FAA认可的软件保证、系统保证、机载电子硬件保证及安全分析过 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-ji-guang-cha-yi-yao-qiu|FDA激光差异要求]]</link>\n<type>concept</type>\n<aliases>FDA variance, FDA差异</aliases>\n<summary>本页依据AC 20-183说明LIDAR安装批准中FDA激光差异（variance）要求的适用情形，包括表2第7.3.10段判定、后续构型改装条件及型号数据批准建议。</summary>\n<match_snippet>... # FDA激光差异要求 本页记录 AC 20-183 中就 LIDAR 激光设备安装批准所涉及的 FDA 差异（variance）要 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 17
+          },
+          {
+            "id": "call_01_Fvkm6wFDVGFOJtyenUyl1681",
+            "args": {
+              "query": "IEC 3B|不可见激光|laser"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-variance": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/laser-safety-definitions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-ji-guang-cha-yi-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-lei-bie-yu-chan-pin-wei-hai": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"IEC 3B|不可见激光|laser\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/laser-safety-definitions|激光安全术语与定义]]</link>\n<type>concept</type>\n<aliases>激光安全定义</aliases>\n<summary>本页汇总顾问通告第5节给出的激光安全术语与定义，包括可及发射限值、发散度、辐照度、最大允许照射量、标称眼危害距离与镜面反射六项参数。</summary>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-an-quan-ji-hua|激光安全计划]]</link>\n<type>concept</type>\n<aliases>激光安全程序</aliases>\n<summary>本页依据 AC 20-183 第7.3.8节，说明建议航空器运营人按 ANSI Z136.1 第1.3段建立激光安全计划，并列出该段在原文表2适用性判断中的结论。</summary>\n<match_snippet>... # 激光安全计划 AC 20-183 第7.3.8节（Laser Safety Program）以建议方式提出：航空器运营人应按 ANSI Z136.1 第1.3段建立激光安全计划。 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/afms|飞机飞行手册补充]]</link>\n<type>concept</type>\n<aliases>AFMS, 飞行手册补充</aliases>\n<summary>本页说明激光设备安装所需经批准飞机飞行手册补充的适用条件、必须包含的限制及用户信息要求。</summary>\n<match_snippet>... 意照射其他飞行中的航空器。 - 不得在地面或滑行、起飞、着陆期间使用激光。对于 FDA IIIb 和 IV 类激光以及 IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置。 - 当激光与人员之间的距离小于 NOHD 时 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/xi-tong-an-quan-fen-xi|系统安全分析]]</link>\n<type>concept</type>\n<aliases>系统安全分析要求</aliases>\n<summary>本页说明AC 20-183第7.3.1节对机载激光设备安装的系统安全分析要求，包括所引用的14 CFR 1309条与相关AC、需评估的失效条件，以及LIDAR（3R类）示例的适用性判断。</summary>\n<match_snippet>... n-pinggu|系统安全评估]]应涵盖的失效条件 系统安全评估应涵盖以下各项： **7.3.1.1 激光设备故障（Laser Equipment Malfunction）。** 激光设备故障导致飞机机组或乘客的眼或皮肤暴露于超过 MPE 的不可 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-cha-yi|FDA差异]]</link>\n<type>concept</type>\n<aliases>FDA Variance</aliases>\n<summary>本页依据 AC_20-183.pdf 表2说明“FDA差异（FDA Variance）”的含义：在3R类LIDAR示例中该段被判定为不适用，因为3R类激光不需要差异许可。</summary>\n<match_snippet>... a02fc686402/assets/33eead8f59d4459e88be) 需与该段区分的是同一表中的7.1段“Laser Equipment Certification”（激光设备认证）：该段适用，要求激光设备符合所有适用的FDA 21 C ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本顾问通告说明机载非必需不可见光谱激光设备取得FAA适航批准的一种可接受方法，并列出激光危害分级及第7节安装要求适用性示例。</summary>\n<match_snippet>... 和安装条件直接推广。 | 段落 | 标题 | 是否适用 | 说明 | |---|---|---|---| | 7 | Laser Equipment Installation | 是 | 设备安装必须证明满足所有适用适航要求，例如电气负载能力、电路 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>本页依据AC_20-183.pdf第7节及附录B，整理激光设备安装的适航要求、系统安全分析、AFMS/ICA要求及3R类LIDAR示例。</summary>\n<match_snippet>... 根据FDA，监视激光器和LIDAR系统被视为“surveying, leveling, and alignment laser products”，属于§1040.11(b)所述特定用途激光产品，并且对于不可见激光波长限于I类AEL。然而，大多数 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing|激光设备认证标准符合性]]</link>\n<type>concept</type>\n<aliases>激光设备认证, FDA 21 CFR与IEC 60825-1符合性</aliases>\n<summary>本页说明激光设备认证标准符合性，包括FDA 21 CFR要求、制造商自我认证、差异许可，以及IEC 60825-1与FDA激光通告第50号的替代关系。</summary>\n<match_snippet>... IDAR系统属于 § 1040.11(b) 所述“surveying, leveling, and alignment laser products”，对不可见激光波长限于class I AEL。 - 多数机载监视激光器和部分LIDAR超过不可见波长 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-variance|美国食品药品监督管理局差异（豁免）]]</link>\n<type>concept</type>\n<aliases>FDA差异, FDA豁免</aliases>\n<summary>说明依据21 CFR §1010.4取得的FDA差异（豁免）的适用条件、行政与技术控制，以及在机载激光设备安装型号设计、AFMS与构型控制中的体现。</summary>\n<match_snippet>... |FDA差异]]及其行政与技术控制要求。 ## 何时需要FDA差异 根据FDA，监视激光（surveillance lasers）和LIDAR系统被视为“surveying, leveling, and alignment laser produ ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-lei-bie-yu-chan-pin-wei-hai|激光类别与产品危害]]</link>\n<type>concept</type>\n<aliases>激光类别与危害分级, FDA/IEC激光类别</aliases>\n<summary>依据 AC 20-183 表1，对照 FDA 与 IEC 激光类别，说明各等级激光产品在直视、光学助视及反射条件下对眼、皮肤及引起火灾的危害。</summary>\n<match_snippet>... | | IV | 4 | 暴露于直接或反射光束时立即造成皮肤和眼危害；也可能构成火灾危害。 | ![Table 1. Laser Classes and Product Hazard](http://localhost:8080/api/v1/in ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 16
+          }
+        ],
+        "reasoning_content": "The user asks about aircraft where transponder stays on during taxi, weather radar auto-activates with transponder; also equipped with IEC 3B invisible laser. Operator claims both can work automatically because \"ground operations don't involve flight safety\". How to handle each?\n\nThis sounds like an EASA airworthiness directive / SIB? AC_20-184.pdf and AC_20-183.pdf. Actually \"AC 20-184\" is FAA Advisory Circular? Let me search the wiki.\n\nLet me search."
+      },
+      {
+        "thought": "",
+        "iteration": 1,
+        "timestamp": "2026-10-22T14:37:47.0381696+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_haCcadfUmlXQJ0AHcxwv4797",
+            "args": {
+              "query": "应答机|滑行|地面运行"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/reactive-windshear-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/c5cf4dee-88c4-4a77-983a-35b9963588d8": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/atmospheric-threat-awareness-functions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/forward-looking-windshear-detection-and-alerting": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-weather-radar-system-test-and-evaluation": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"6\" query=\"应答机|滑行|地面运行\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/forward-looking-windshear-detection-and-alerting|前视风切变探测与告警显示]]</link>\n<type>concept</type>\n<aliases>前视风切变探测, 风切变告警与显示</aliases>\n<summary>本页依据 AC 20-182A1（2016年10月1日）整理前视风切变探测功能的激活、告警等级与显示要求、告警抑制与优先级、图标显示及安装测试验证要点。</summary>\n<match_snippet>... 飞或连续起降（touch and go）情况下，前视风切变探测系统可重置到相应模式（着陆或起飞）。 - 某些系统构型利用应答机模式自动激活雷达，以便在飞行机组未人工激活雷达时仍能在起飞期间提供前视风切变告警。该构型形成于应答机在飞机滑上跑道前才开 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aircraft-weather-radar-system-test-and-evaluation|机载气象雷达系统测试与评估]]</link>\n<type>concept</type>\n<aliases>雷达系统测试与评估</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 场开展该项评估： - 9.2.2.1 跑道约 1 nm 范围内的高速公路与高流量地面道路。 - 9.2.2.2 附近的滑行飞机。 - 9.2.2.3 集中的城市杂波。杂波应占据机场周围最小约 1 nm 的面积。 ## 9.3 湍流探测或大气 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/afms|飞机飞行手册补充]]</link>\n<type>concept</type>\n<aliases>AFMS, 飞行手册补充</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 限制 对于激光设备安装，AFMS 必须包含以下限制： - 不得使用激光故意照射其他飞行中的航空器。 - 不得在地面或滑行、起飞、着陆期间使用激光。对于 FDA IIIb 和 IV 类激光以及 IEC 3B 和 4 类激光，在地面及滑行、起飞 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 3.7.1 对于激光设备安装，AFMS必须包含以下限制： - 不得使用激光有意照射其他飞行中的飞机。 - 不得在地面或滑行、起飞、着陆期间使用激光。对于FDA IIIb和IV类激光以及IEC 3B和4类激光，在地面以及滑行、起飞和着陆期间，钥 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 包含以下限制： - 7.3.7.1.1 不得使用激光器有意照射其他飞行中的飞机。 - 7.3.7.1.2 不得在地面或滑行、起飞、着陆期间使用激光器。对于FDA IIIb类和IV类激光以及IEC 3B类和4类激光，在地面及滑行、起飞、着陆期间 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi|激光设备AFMS限制与用户信息]]</link>\n<type>concept</type>\n<aliases>AFMS Limitations and User Information, 飞机飞行手册补充限制与用户信息</aliases>\n<summary>本页说明激光设备安装所需经批准AFMS中的使用限制与用户信息，并列出原文第7.3.7.1和7.3.7.2段的具体条目。</summary>\n<match_snippet>... AFMS使用限制： - 7.3.7.1.1 不得使用激光照射其他飞行中的航空器。 - 7.3.7.1.2 不得在地面或滑行、起飞、着陆期间使用激光。 - 7.3.7.1.3 当激光与人员之间的距离小于NOHD时，不得使用激光照射人员。应规定N ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 11
+          },
+          {
+            "id": "call_01_8o5krPgN0t1q928WyHa13214",
+            "args": {
+              "query": "雷达 地面 辐射|地面操作|开机"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {}
+              },
+              "output": "<search_results count=\"0\" query=\"雷达 地面 辐射|地面操作|开机\" />",
+              "success": true
+            },
+            "duration": 10
+          }
+        ],
+        "reasoning_content": "The question involves two things:\n1. Weather radar auto-starting with transponder during taxi — relevant to AC 20-182A? Weather radar operating on ground - radar safety. There may be a wiki page about \"地面运行\" radar operation / transponder. Let's search.\n2. IEC 3B laser — must have key control off during ground/taxi/takeoff/landing. From AFMS page: \"对于 FDA IIIb 和 IV 类激光以及 IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置。\"\n\nAlso the operator's claim \"ground operations don't involve flight safety\" — perhaps the wiki has a page on \"地面运行安全\" or AC 20-182A mentioning that weather radar can be on during ground ops for testing? Actually AC 20-182A section on weather radar ground operation: radar should not radiate while on ground except for specific test? Hmm.\n\nLet me search for 应答机, 地面, 滑行, 辐照."
+      },
+      {
+        "thought": "",
+        "iteration": 2,
+        "timestamp": "2026-10-22T14:37:50.6712499+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_wTQlYOfs4vt7rLXD7L7u0428",
+            "args": {
+              "slugs": [
+                "concept/forward-looking-windshear-detection-and-alerting",
+                "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi",
+                "concept/afms"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/reactive-windshear-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/c5cf4dee-88c4-4a77-983a-35b9963588d8": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/forward-looking-windshear-detection-and-alerting": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/forward-looking-windshear-detection-and-alerting|前视风切变探测与告警显示]]</link>\n<type>concept</type>\n<aliases>前视风切变探测, 风切变告警与显示</aliases>\n</metadata>\n<relationships>\n<links_to>[[entity/reactive-windshear-system]] (本页依据 AC 20-182A 第 6.4.2 节，说明反应式风切变系统在与机载前视风切变系统共存时的告警配置要求，包括提示告警禁用条件与警告告警保持启用。)</links_to>\n<linked_from>[[summary/c5cf4dee-88c4-4a77-983a-35b9963588d8]] (本咨询通告提供机载气象雷达系统初始及后续适航批准指导，涵盖气象/地面测绘、前视风切变与湍流探测，并规定测试评估要求。)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"c5cf4dee-88c4-4a77-983a-35b9963588d8\"/>\n</sources>\n<summary>\n本页依据 AC 20-182A1（2016年10月1日）整理前视风切变探测功能的激活、告警等级与显示要求、告警抑制与优先级、图标显示及安装测试验证要点。\n</summary>\n<content>\n# 前视风切变探测与告警显示\n\n本页内容来自 AC 20-182A1（2016年10月1日）。该 AC 就符合最新修订版 TSO-C63《Airborne Weather Radar Equipment》的机载气象雷达系统的初始批准和后续批准提供指导；就前视风切变探测能力而言，该 AC 的指导适用于 14 CFR 第 25 部和第 23 部固定翼飞机安装。该 AC 不是强制要求，也不构成法规；它描述的是可接受的符合性方法之一，但不是唯一方法；若采用该 AC 所述方法，则必须在所有重要方面遵循该 AC。附录 A 提供前视风切变系统告警、提示和显示图标的补充指导。\n\n## 背景：与 TSO-C63e 及 SLR 10.2 的关系\n\n前视风切变探测功能已纳入 TSO-C63e。该 AC 纳入并澄清了相应的适航指导，并消除 System Level Requirements (SLR) 10.2“Airborne Short and Long Range Windshear Predictive Systems (Forward-Looking Windshear Systems) Interim Certification Requirements, Revision 10.2”中的勘误。对于符合 TSO-C63e 或其后版本的系统，SLR 10.2 不再适用。\n\n## 前视风切变激活\n\n- 为允许因风切变条件及时中止起飞，应确保前视风切变功能能够在起飞滑跑开始前人工激活。\n- 应确保前视风切变功能为起飞自动激活，以提供及时的起飞警告。\n- 当前视风切变功能启用时，应确保系统在下降进近过程中自动激活，无需飞行机组干预，其激活高度足以按本 AC 第 6.2.2 段提供视觉和听觉告警。\n- 在复飞或连续起降（touch and go）情况下，前视风切变探测系统可重置到相应模式（着陆或起飞）。\n- 某些系统构型利用应答机模式自动激活雷达，以便在飞行机组未人工激活雷达时仍能在起飞期间提供前视风切变告警。该构型形成于应答机在飞机滑上跑道前才开启、离开跑道后才关闭的年代；但随着 Airport Surface Detection Equipment-Model X (ASDE-X) 雷达和 Automatic Dependent Surveillance-Broadcast (ADS-B) 的出现，飞行机组现在滑行时通常保持应答机“开启”。这可能对地面处理飞机的人员构成危险，因为飞机引导员和牵引车操作员常在极接近机头雷达罩的位置作业。应考虑此类运行或风切变功能任何自动地面激活特性，对前视风切变功能的自动激活特性进行危险评估。\n\n## 前视风切变告警要求\n\n- 必须确保告警和提示遵循飞机的驾驶舱告警理念，并遵守法规及下列 AC 最新修订版中针对第 23 部和第 25 部飞机的指导：14 CFR § 25.1322, Flight Crew Alerting；AC 25.1322-1, Flight Crew Alerting；AC 23.1311-1, Installation of Electronic Display in Part 23 Airplanes。\n- 必须确保集成系统能够发出附录 A 表 1 中所述的全部前视风切变 Advisory、Caution 和 Warning 提示与告警。\n- 必须确保在下列任一条件存在时发出视觉文本警告：听觉告警正在发出；威胁超过告警阈值；或威胁存在于 TSO-C63 最新修订版所定义的区域内。\n- 应确保风切变探测能力失效的提示在飞行机组正常坐姿位置即可见。\n\n## 前视风切变告警抑制\n\n- 起飞期间，系统应在旋转（rotation）之前某一规定的飞机速度抑制所有新的听觉和视觉告警，并在离地后重新启用告警能力。应按安装手册说明设置起飞告警设置，并确保抑制与机型特定的起飞告警抑制准则一致。\n- 最后进近期间，应确保所有新的系统听觉和视觉 caution 与 warning 告警在离地高度（AGL）50 英尺至接地之间被抑制。\n- 应确保所有新的听觉和视觉 warning 与 caution 告警在 1200 英尺 AGL 以上被抑制。\n\n## 前视风切变告警优先级\n\n- 应遵循本 AC 第 5.5 段关于飞机告警优先级的指导。\n- 若在同时装有[[entity/reactive-windshear-system|反应式风切变系统]]的飞机上安装前视风切变系统，应确保反应式风切变系统的 caution 告警被禁用。若前视风切变系统不工作，发出反应式风切变 caution 告警是可接受的。\n- 注：反应式风切变系统的 warning 告警应保持启用。\n\n## 显示要求\n\n- 允许在系统处于风切变模式预位的任何高度显示风切变图标。\n- 风切变图标由红黑相间的条组成。各条应定向为以顶点为中心的圆弧。使用红色是合适的，以便与下方的黄色气象显示形成视觉区分。附录 A 图 1 给出若干前视风切变图标示例。\n- 应确保每个条的深度使风切变图标相对于其他显示信息足够醒目。\n- 若飞行机组所选显示距离大于 5 海里（nm），且该距离选择使飞行机组无法将风切变符号与其他显示信息区分，则应确保琥珀色/黄色径向线从图标延伸至显示上边缘，以帮助区分风切变符号。为适应方位范围较宽的图标（或图标组），允许限制径向线之间的宽度；因此，径向线可沿位于图标左、右径向边界内侧的方位线延伸。\n- 若使用其他风切变符号，则应证明该符号为飞行机组提供清晰且实质的收益。\n- 当探测到风切变威胁时，相应显示可自动呈现或由飞行机组操作选择。若仅提供人工选择，则应确保按正常操作程序配置驾驶舱时，人工呈现风切变显示所需的飞行机组工作量最小，且不超过一个操作动作。\n\n## 表 1：前视风切变系统提示、告警与显示\n\n| Alert Level | Advisory | Caution | Warning |\n| --- | --- | --- | --- |\n| Visual Textual Alert | None | Amber/Yellow Visual Textual Annunciation (or lamp): “Windshear” or “Windshear Ahead” or “W/S Ahead” | Red Visual Textual Annunciation (or lamp): “Windshear” or “Windshear Ahead” or “W/S Ahead” |\n| Aural Alert | None | Distinctive Aural Alert: Chime or message; not containing the word windshear. Example: Tone “Whoop” or “Monitor Radar Display” | Voice Alert: Takeoff: “Windshear Ahead, Windshear Ahead” Approach or Go-around: “Go Around, Windshear Ahead” |\n| Icon | Icon symbology as defined in Section 6.5. | Icon symbology as defined in Section 6.5. | Icon symbology as defined in Section 6.5. |\n\n注 1：前视风切变图标作为气象危险位置指示提供，而不是告警。其颜色与 AC 25.1322-1 第 11 节或 AC 25-11 最新修订版不冲突。\n\n注 2：前视风切变 caution 告警可能依风切变危险的位置发展为时间紧迫（time-critical）的 windshear warning 告警。\n\n![Table 1. Forward-Looking Windshear System Annunciation, Alert, and Display](http://localhost:8080/api/v1/ingestion/jobs/fe60cb971dff466c96698251222ba819/assets/d312742465f64af14b88)\n\n![Figure 1. Forward-Looking Windshear System Icon Examples\nNote: These images are provided only as examples of possible icon implementations. Other implementations may be used. Refer to the manufacturer installation and operations manual for icon implementation.](http://localhost:8080/api/v1/ingestion/jobs/fe60cb971dff466c96698251222ba819/assets/6f6c47f181b712292626)\n\n![Figure 2. Examples of Windshear Icon Radial Lines](http://localhost:8080/api/v1/ingestion/jobs/fe60cb971dff466c96698251222ba819/assets/68eff46f9ce8f6cb6130)\n\n图 1 注：这些图像仅作为可能图标实现的示例提供，也可采用其他实现方式；图标实现请参阅制造商安装与操作手册。\n\n## 测试与评估：前视风切变探测\n\n若雷达系统包含前视风切变探测功能，应按本 AC 第 9.2 节执行。前视风切变功能的性能验证应遵循 TSO 说明。前视风切变功能的安装测试通常依赖第 9.1.1 段（AC 23-8, Chapter 5, paragraph 1.b(10)）和第 9.1.2 段（AC 25-7, Chapter 6, section 1, paragraph 170.c(8)）所述的一般气象雷达功能测试，以及集成测试，而非专门的前视风切变飞行测试。\n\n### 穿越飞行评估（Penetration Flight Evaluation）\n\n穿越飞行通常由雷达制造商作为 TSO 授权的一部分完成。若穿越数据和分析可用，且确定其适用，则无需进行穿越飞行测试。在 TSO 授权或以往取证工作中生成的先前已批准测试数据是可接受的。若前视风切变能力此前未经演示，则应通过在可被原位测量、适当的地面雷达系统或等效手段验证的对流活动区域飞行，来验证前视风切变系统的探测能力。\n\n注：在风暴单体内部或附近飞行可能极其危险。飞行机组在考虑接近或穿越任何风暴单体或湍流区域时，应基于对自身能力及飞机能力的了解，作出安全飞行的良好判断。\n\n### 杂波抑制飞行测试\n\n评估系统抑制虚假条件的能力（例如杂波抑制、双/多基地信号干扰、距离模糊回波以及雷达罩效应）。飞行测试可在目视气象条件下进行。应在一个或多个具有下列特征的机场进行该评估：\n\n- 跑道约 1 nm 范围内有高速公路和高流量地面道路；\n- 附近有滑行中的飞机；\n- 集中的城市杂波，该杂波应在机场周围占据最小约 1 nm 的面积。\n\n## 解析说明\n\n- 原文摘录标注的编号为“AC No: 20-182A1”，日期为 10/1/16。\n- 表 1 中“Icon”行三个告警级别均引用 Section 6.5，图标细节见第 6.5 节及附录 A 图 1、图 2；图像仅为例示，实际实现以制造商安装与操作手册为准。\n- 摘录未提供本 AC 中附录 A 图 1、图 2 所对应图标的具体图形数值，本页不作推测。\n- 本页仅涵盖前视风切变相关条款；同一 AC 中气象与地面测绘雷达、湍流探测、大气威胁感知及 AFM/S 等内容属其他主题，不在本页范围内。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi|激光设备AFMS限制与用户信息]]</link>\n<type>concept</type>\n<aliases>AFMS Limitations and User Information, 飞机飞行手册补充限制与用户信息</aliases>\n</metadata>\n<relationships>\n<links_to>[[concept/afms]] (本页说明激光设备安装所需经批准飞机飞行手册补充的适用条件、必须包含的限制及用户信息要求。)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页说明激光设备安装所需经批准AFMS中的使用限制与用户信息，并列出原文第7.3.7.1和7.3.7.2段的具体条目。\n</summary>\n<content>\n# 激光设备AFMS限制与用户信息\n\n原文表2将第7.3.7段“Aircraft Flight Manual Supplement”标为适用，并注明：激光设备安装需经批准的[[concept/afms|飞机飞行手册补充]]（AFMS）。该表同时将第7.3.7.1段“Limitations”和第7.3.7.2段“User Information”标为适用。\n\n## 使用限制\n\n原文表2列出以下AFMS使用限制：\n\n- 7.3.7.1.1 不得使用激光照射其他飞行中的航空器。\n- 7.3.7.1.2 不得在地面或滑行、起飞、着陆期间使用激光。\n- 7.3.7.1.3 当激光与人员之间的距离小于NOHD时，不得使用激光照射人员。应规定NOHD。\n- 7.3.7.1.4 不得使用激光的大气条件。\n- 7.3.7.1.5 不得使用激光的飞行条件（如坡度角、近距离接近地形飞行或升降作业）。\n- 7.3.7.1.7 不得使用激光的航空器构型（如货舱镜）。\n\n注：原文该段编号从7.3.7.1.5直接到7.3.7.1.7，未提供7.3.7.1.6条目。\n\n## 用户信息\n\n原文表2列出以下AFMS激光用户信息：\n\n- 7.3.7.2.1 充分的操作用说明，包括警告和告诫。\n- 7.3.7.2.2 所有标签和危险警告的清晰可读复制件。\n- 7.3.7.2.3 列出所有控制、调节以及正常、异常和应急操作程序，并包括以下声明：“Caution -use of controls or adjustments or performance of procedures other than those specified herein may result in hazardous radiation exposure.”\n\n![Table 2. Applicable Section 7 Paragraphs](http://localhost:8080/api/v1/ingestion/jobs/7fca8b7e95b34b4d90f4ca02fc686402/assets/33eead8f59d4459e88be)\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/afms|飞机飞行手册补充]]</link>\n<type>concept</type>\n<aliases>AFMS, 飞行手册补充</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>[[concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi]] (summary omitted, already seen), [[concept/nohd-mpe-ji-suan]] (本页说明NOHD与MPE计算的报告要求、暴露时间取值及可接受方法，并整理NOHD在AFMS和FDA差异技术控制中的使用。), [[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun]] (本页依据AC 20-183整理机载非必需不可见光谱激光设备（如红外监视激光与LIDAR）取得FAA适航批准的一种可接受方法，涵盖目的与适用范围、职责分工、第7节安装指导、公共用途条款及附录B的LIDAR示例。), [[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu]] (本页依据AC_20-183.pdf第7节及附录B，整理激光设备安装的适航要求、系统安全分析、AFMS/ICA要求及3R类LIDAR示例。)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页说明激光设备安装所需经批准飞机飞行手册补充的适用条件、必须包含的限制及用户信息要求。\n</summary>\n<content>\n# 飞机飞行手册补充\n\n当激光设备安装改变航空器限制、操作程序或基本航空器的飞行特性时，需要经批准的飞机飞行手册补充（AFMS）。AFMS 应包含激光系统安全运行所需的任何特殊程序；还必须包含安装导致的航空器限制的任何变化，尤其是外部安装系统。附加要求和许可应查阅 AC 70-1。\n\n## 7.3.7.1 必须包含的限制\n\n对于激光设备安装，AFMS 必须包含以下限制：\n\n- 不得使用激光故意照射其他飞行中的航空器。\n- 不得在地面或滑行、起飞、着陆期间使用激光。对于 FDA IIIb 和 IV 类激光以及 IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置。\n- 当激光与人员之间的距离小于 NOHD 时，不得使用激光照射人员。AFMS 中或标牌上应规定 NOHD。\n- 不得使用激光的大气条件（如雨或雪）。\n- 不得使用激光的飞行条件（如坡度角、近距离地形飞行或吊升作业）。\n- 如果任何需要与航空器系统接口的激光安全联锁不可用，则不得使用激光。AFMS 应标识航空器接口安全联锁。FDA 差异许可可能要求设置航空器接口安全联锁（例如与雷达高度表的接口，当航空器离地高度低于指定高度时禁用激光）。\n- 不得使用激光的航空器配置（例如安装货物反射镜时，因为它们可能提供进入驾驶舱的反射路径）。\n\n## 7.3.7.2 用户信息\n\nAFMS 还必须包含 § 1040.10(h)(1) 中标识的以下用户信息：\n\n- 充分的操作说明，包括警告和注意，说明避免可能暴露于超过可接触限值的激光和附带辐射的预防措施。\n- §§ 1040.10(g) 和 1040.11 要求固定在激光产品上的所有标签和危险警告的清晰复制件。\n- 所有控制装置、调节装置以及正常、异常和应急操作程序的清单，包括以下声明：“Caution—use of controls or adjustments or performance of procedures other than those specified herein may result in hazardous radiation exposure.”\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 16
+          }
+        ],
+        "reasoning_content": "Read the forward-looking windshear page and the AFMS/limitations pages."
+      },
+      {
+        "thought": "",
+        "iteration": 3,
+        "timestamp": "2026-10-22T14:37:55.9188032+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_bzpCCRqeek8IA2yF8DmQ8157",
+            "args": {
+              "query": "钥匙控制|key control"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-variance": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"7\" query=\"钥匙控制|key control\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/afms|飞机飞行手册补充]]</link>\n<type>concept</type>\n<aliases>AFMS, 飞行手册补充</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 期间使用激光。对于 FDA IIIb 和 IV 类激光以及 IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置。 - 当激光与人员之间的距离小于 NOHD 时，不得使用激光照射人员。AFMS 中或标牌上应规定 NO ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fei-ji-jie-kou-an-quan-lian-suo|飞机接口安全联锁]]</link>\n<type>concept</type>\n<aliases>航空器接口安全联锁</aliases>\n<summary>飞机接口安全联锁是FDA差异可能要求的激光安全联锁，用于特定飞机状态或高度条件下禁用激光。</summary>\n<match_snippet>... n-zhuang-xing-hao-she-ji|安装型号设计]]必须包括所有适用于安装的21 CFR 1040要求（如钥匙控制、发射指示器、标签和远程联锁连接器），以及FDA差异中影响飞机安装的技术控制（如飞机接口安全联锁）。 在安装前，安装者 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/an-zhuang-xing-hao-she-ji|安装型号设计]]</link>\n<type>concept</type>\n<aliases>安装型号设计要求</aliases>\n<summary>本页说明激光设备安装型号设计须纳入适用的21 CFR 1040要求，以及FDA差异中影响飞机安装的技术控制，并给出第7.3.3段的适用性判断。</summary>\n<match_snippet>... ion Type Design（安装型号设计） 安装型号设计必须包含所有适用于该安装的21 CFR 1040要求（例如钥匙控制、发射指示器、标签和遥控联锁连接器），以及[[concept/fda-cha-yi|FDA差异]]中影响飞机安装的技术控 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 受方法。 #### 7.3.3 安装型号设计 安装型号设计必须包括适用于该安装的所有21 CFR 1040要求（例如钥匙控制、发射指示器、标签和远程联锁连接器），以及FDA差异许可中影响飞机安装的技术控制（例如飞机接口安全联锁）。 #### ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing|激光设备认证标准符合性]]</link>\n<type>concept</type>\n<aliases>激光设备认证, FDA 21 CFR与IEC 60825-1符合性</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 装型号设计]]与适用条款 - 第7.3.3节要求，安装型号设计必须包括适用于该安装的所有21 CFR 1040要求（如钥匙控制、发射指示器、标签和远程联锁连接器），以及FDA差异许可中影响飞机安装的技术控制（如飞机接口安全联锁）。 - 第10节列 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-variance|美国食品药品监督管理局差异（豁免）]]</link>\n<type>concept</type>\n<aliases>FDA差异, FDA豁免</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... Installation Type Design）：安装型号设计必须包含所有适用于该安装的21 CFR 1040要求（如钥匙控制、发射指示器、标签和远程联锁连接器），以及来自FDA差异、影响飞机安装的技术控制（如飞机接口安全联锁）。 - 第7.3. ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... xing-hao-she-ji|安装型号设计]] 安装型号设计必须包含适用于该安装的所有21 CFR 1040要求（如钥匙控制、发射指示器、标签和远程联锁连接器），以及FDA差异许可中影响飞机安装的技术控制（如飞机接口安全联锁）。 #### 7 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 13
+          },
+          {
+            "id": "call_01_lbC1EeIogOY2yt10prdr0799",
+            "args": {
+              "slugs": [
+                "concept/xi-tong-an-quan-fen-xi"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/xi-tong-an-quan-fen-xi|系统安全分析]]</link>\n<type>concept</type>\n<aliases>系统安全分析要求</aliases>\n</metadata>\n<relationships>\n<links_to>[[concept/xitong-anquan-pinggu]] (本页依据FAA咨询通告AC 20-184（2015年10月15日）第2.4节（页码2-4），整理锂电池与电池系统安装的系统安全评估要求、评估内容清单、符合性说明与协调事项。)</links_to>\n<linked_from>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun]] (summary omitted, already seen), [[summary/e0166761-78fe-46eb-b323-0225fc5c9e02]] (本顾问通告说明机载非必需不可见光谱激光设备取得FAA适航批准的一种可接受方法，并列出激光危害分级及第7节安装要求适用性示例。), [[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页说明AC 20-183第7.3.1节对机载激光设备安装的系统安全分析要求，包括所引用的14 CFR 1309条与相关AC、需评估的失效条件，以及LIDAR（3R类）示例的适用性判断。\n</summary>\n<content>\n# 系统安全分析\n\n系统安全分析是 AC 20-183 第 7.3.1 节针对激光设备安装提出的适航验证要求：必须开展系统安全分析，评估所安装的激光设备是否满足 14 CFR 23.1309、25.1309、27.1309 或 29.1309。\n\n原文以“必须”（must）表述强制符合性要求，以“应”（should）表述建议性的分析内容与记录方式。\n\n## 引用文件\n\n应按飞机类别参考相应顾问通告：\n\n- 23 部飞机：AC 23.1309-1，System Safety Analysis and Assessment for Part 23 Airplanes。\n- 25 部飞机：AC 25.1309-1，System Design and Analysis。\n- 27 部旋翼机：AC 27.1309，Equipment, Systems and Installations。\n- 29 部旋翼机：AC 29.1309，Equipment, Systems and Installations。\n\n## [[concept/xitong-anquan-pinggu|系统安全评估]]应涵盖的失效条件\n\n系统安全评估应涵盖以下各项：\n\n**7.3.1.1 激光设备故障（Laser Equipment Malfunction）。** 激光设备故障导致飞机机组或乘客的眼或皮肤暴露于超过 MPE 的不可见激光辐射，被视为不低于危险（hazardous）功能失效条件；若因激光对飞行员眼或皮肤的损伤严重程度而无法继续安全飞行，则可能为灾难性（catastrophic）。在系统安全评估中，应记录将其归类为危险功能失效条件的理由。若由于激光位置及飞机结构提供的物理遮挡，不存在进入驾驶舱或客舱的直接或反射光路，则该失效条件不适用。\n\n**7.3.1.2 系统安全考虑（System Safety Considerations）。** 评估失效条件时应考虑：直接与反射辐射；激光器、激光束转向机构及电路的位置；用于防止激光被转向至可能使飞机乘员眼暴露于直接或反射辐射方向的机械、软件或机载电子硬件（AEH）限位装置；激光解除保险与发射电路；以及其他其故障可能导致意外暴露或超过 MPE 暴露的设计特征（例如用于降低 AEL 的内部激光漫射器失效）。若转向限位由软件或 AEH 实现，其保证等级应与该限位相关的功能失效条件相称。来自飞机任何部位（如结构、桨叶、滑橇或起落架）的反射应按镜面反射考虑。\n\n**7.3.1.3 飞机结构（Aircraft Structure）。** 任何因激光照射导致飞机结构损伤的故障，均应评估以确定飞机损伤程度及相应的功能失效条件分类。\n\n**7.3.1.4 设备接口（Equipment Interfaces）。** 激光设备与其他飞机系统接口的任何故障，均须评估以确定对飞机系统和激光设备的影响以及相应的功能失效条件分类。\n\n**7.3.1.5 其他功能失效条件（Other Functional Failure Condition）。** 本 AC 第 7.3.1.1 至 7.3.1.4 段未描述的其他故障应予以识别和评估，以确定其功能失效条件。\n\n**7.3.1.6 功能丧失（Loss of Function）。** 由于激光为非必需设备，激光功能丧失的功能失效条件为“无影响”（no effect）。\n\n## LIDAR 示例中的适用性（表 2）\n\n原文表 2 以 LIDAR（3R 类激光）为例给出第 7.3.1 节各段的适用性判断，属于示例性分析，不能脱离具体激光类别和安装条件直接推广。\n\n| 段落 | 标题 | 是否适用 | 说明 |\n|---|---|---|---|\n| 7.3.1 | System Safety Analysis | 是 | 应记录针对 7.3.1.1、7.3.1.2、7.3.1.3、7.3.1.4 和 7.3.1.5 的系统安全分析结果。就该示例而言，系统安全分析应记录这些段落中的功能失效条件为何不适用的理由。 |\n| 7.3.1.1 | Laser Equipment Malfunction | 否 | 由于不存在进入驾驶舱或客舱的直接或反射光路，7.3.1.1 所述故障不适用。 |\n| 7.3.1.2 | System Safety Considerations | 否 | 由于不存在进入驾驶舱或客舱的直接或反射光路，7.3.1.2 所述故障不适用。 |\n| 7.3.1.3 | Aircraft Structure | 否 | 3R 类激光不能烧灼或熔化飞机结构或漆层。 |\n| 7.3.1.4 | Equipment Interfaces | 否 | 该激光设备除电功率外不与其他飞机系统（如姿态航向基准系统）接口；电功率布线由尺寸适当的断路器保护。 |\n| 7.3.1.5 | Other Functional Failure Condition | 否 | 其他功能失效条件应针对每项设备安装进行评估。该特定设备安装没有其他功能失效条件（例如激光传感器无法收回而在着陆时构成危险）。 |\n\n![Table 2. Applicable Section 7 Paragraphs](http://localhost:8080/api/v1/ingestion/jobs/7fca8b7e95b34b4d90f4ca02fc686402/assets/33eead8f59d4459e88be)\n\n在该示例中，基于系统安全分析的结论（该激光设备安装没有会影响飞机或其乘员的功能失效条件），7.3.4 软件与 7.3.5 AEH 均判定为不适用，即激光设备软件无需按 AC 20-115C 开发，激光设备 AEH 无需按 AC 20-152 开发。\n\n在新 LIDAR 构型的安装批准（可能需 ASTC、STC、ATC 或重大更改的数据批准）评估中，原文亦将“system safety”（系统安全）列为安装适航性评估项目之一。\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 10
+          }
+        ],
+        "reasoning_content": "So for the weather radar: The AC 20-182A says automatic activation via transponder mode was designed when transponder turned on only before entering runway; with ASDE-X and ADS-B, crews keep transponder on while taxiing — this may pose hazard to ground handling personnel near nose radome (marshaller, tug operator). Should consider hazard assessment of such operations or any automatic ground activation features on windshear function.\n\nThe question: \"在滑行时应答机保持开启的飞机上，气象雷达会随应答机自动启动\" — operator claims both (radar auto-start and laser) can work automatically because \"ground operations don't involve flight safety\". How to handle each respectively?\n\nAnswer: \n1. Weather radar: The transponder-based auto-activation is acceptable/designed for launch, but since transponder is kept on during taxi, radar (windshear function) will radiate on ground. Need a hazard assessment of the automatic ground activation feature considering ground personnel near nose radome (marshalling/tow). It's not a regulation prohibition necessarily; AC guidance says \"should consider\" hazard assessment. Could also disable automatic ground activation or provide means to prevent radiation during taxi, e.g., radar off/standby, or interlock with weight-on-wheels, or modification to auto-activation logic. Actually the question likely asks for \"分别应如何处理\" — weather radar: conduct hazard assessment (per AC 20-182A §6.x) to address ground activation; laser: must have key control OFF during ground and taxi/takeoff/landing for IEC 3B — not acceptable to operate automatically; AFMS must include limitation. Also system safety analysis, and possibly FDA variance conditions and interlock.\n\nLet me get more evidence: search wiki for 危险评估/地面处理人员 and for 钥匙控制 (key control) page, and 系统安全分析 page, and maybe a page about \"自动地面激活\".\n\nAlso the claim \"地面运行不涉及飞行安全\" contradicts — laser installation still must satisfy §7.3.1 system safety analysis covering ground personnel exposure; and AFMS limits.\n\nLet me read the system safety analysis page and search for \"钥匙控制\" and \"危险评估\"."
+      },
+      {
+        "thought": "",
+        "iteration": 4,
+        "timestamp": "2026-10-22T14:37:59.5767982+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_CbfbUHPjo7gxpI0Kvvvn6883",
+            "args": {
+              "query": "ASDE-X|地面处理|牵引车|引导员|雷达罩"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/reactive-windshear-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/c5cf4dee-88c4-4a77-983a-35b9963588d8": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/forward-looking-windshear-detection-and-alerting": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"1\" query=\"ASDE-X|地面处理|牵引车|引导员|雷达罩\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/forward-looking-windshear-detection-and-alerting|前视风切变探测与告警显示]]</link>\n<type>concept</type>\n<aliases>前视风切变探测, 风切变告警与显示</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 开跑道后才关闭的年代；但随着 Airport Surface Detection Equipment-Model X (ASDE-X) 雷达和 Automatic Dependent Surveillance-Broadcast (ADS-B) 的出现 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 19
+          },
+          {
+            "id": "call_01_B3MBNRiXrGgLROdFFiZh1201",
+            "args": {
+              "query": "地面人员|非飞行机组|公众|人员安全"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/ac-20-179": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/government-records": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/electronic-modeling-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/certification-data-retention-agreement": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/type-design-data-submittal-and-retention": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/design-and-manufacturing-approval-applicability": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"3\" query=\"地面人员|非飞行机组|公众|人员安全\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/certification-data-retention-agreement|认证数据保留协议]]</link>\n<type>concept</type>\n<aliases>Certification Data Retention Agreement</aliases>\n<summary>本页依据 AC 20-179（2013年6月10日，AIR-110）整理认证数据保留协议的定义、建立条件、最低条款、修订与转让规则、协议格式及 FAA 保障措施。</summary>\n<match_snippet>... 础设计和证实数据的知识产权；知识产权的保护见本 AC 第 5 段，第 5.a 和 5.b 段要求 DAH 书面同意方可向公众发布数据。 书面数据保留协议不可转让。如果 TC 转移给另一实体： - 前型号合格证持有人应将其设施处保留的所有 F ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/type-design-data-submittal-and-retention|型号设计数据提交与保留]]</link>\n<type>concept</type>\n<aliases>型号设计数据, 符合性证实数据, 数据提交与保留</aliases>\n<summary>本页依据 AC 20-179（2013年6月10日）整理型号设计数据与证实数据的提交要求、代表 FAA 保留数据的条件、数据保留协议的内容与格式，以及电子数据存储与专有数据保护的相关规定。</summary>\n<match_snippet>... 础设计和证实数据的知识产权。知识产权的保护见本 AC 第 5 段；第 5.a. 和 b. 段要求 DAH 书面同意方可向公众发布数据。 书面数据保留协议不可转让。如果 TC 转让给另一实体，除非 FAA 已告知原持有人新持有人已与 FAA 签 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/flir|前视红外设备]]</link>\n<type>entity</type>\n<aliases>前视红外</aliases>\n<summary>本页介绍前视红外设备（FLIR）的定义、执法夜间隐蔽监视用途、其配备的激光照射器与测距仪所带来的眼部危害，以及相关波长与损伤机理。</summary>\n<match_snippet>... 点或大范围区域。此类机载监视设备安装的激光认证存在一些独特的挑战，因为激光可能对飞行机组、乘客、其他航空器乘员以及非飞行公众构成潜在的眼部危害。激光监视设备通常使用IIIb类或IV类激光。 在本指导文件之前，许多监视系统通过仅包含激光临时布线 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 19
+          }
+        ],
+        "reasoning_content": "Now I need evidence in AC 20-183 regarding ground personnel / non-flight-crew safety (the \"ground operations don't involve flight safety\" claim). Perhaps there's a section about \"适用性\" — AC 20-183 is for non-required laser equipment; it covers safety of aircraft occupants mainly, but AFMS limits ground operation. Also there may be a page about 公共用途/地面人员. Let's search 地面人员 and also read the main approval page and the AFMS limit page's source for exact quote. Also check whether the wiki discusses \"非必需\" and whether AC only covers in-flight safety.\n\nAlso for radar: check page about 气象与地面测绘雷达? maybe \"aircraft-weather-radar\" concept pages listing AFM requirements, but the key is the windshear auto-activation hazard assessment. Search for \"危险评估\" or \"ASDE-X\"."
+      },
+      {
+        "thought": "",
+        "iteration": 5,
+        "timestamp": "2026-10-22T14:38:03.8828904+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_ODguUH1cWhlbpC5RgofQ1371",
+            "args": {
+              "id": "c5cf4dee-88c4-4a77-983a-35b9963588d8",
+              "query": "transponder"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "transponder",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-182A.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+                    "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+                    "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219"
+                  },
+                  "file_name": "AC_20-182A.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 30,
+                  "knowledge_id": "c5cf4dee-88c4-4a77-983a-35b9963588d8",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "f03b2758-4521-46fc-a3e8-ca6754160df3",
+                  "f0cdd104-5906-4bf2-905e-be003c5df91b",
+                  "ce6f2e83-d74b-447e-980a-2ecf990575a6"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "c5cf4dee-88c4-4a77-983a-35b9963588d8",
+                "total_chunks": 30,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-182A.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 3/30 chunks from AC_20-182A.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 53
+          },
+          {
+            "id": "call_01_DA0vxfCPMu7f5Xa9Y4kL2602",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "key control taxi"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "key control taxi",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "705d1c3e-e4f6-498f-8ad2-378b8db71905",
+                  "5c673968-7461-4dab-aca1-fa05a92eddbc",
+                  "c4517bc0-14ed-4c18-8bd3-962817f02337"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 3/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 45
+          }
+        ],
+        "reasoning_content": "Good: FLIR page mentions laser may pose hazards to flight crew, passengers, other aircraft occupants, and non-flying public.\n\nNow the question's framing: \"运营方提出二者都可自动工作，因为'地面运行不涉及飞行安全'\" — the correct response: distinguish:\n- Weather radar auto-activation via transponder when transponder left on during taxi: the AC does not prohibit, but requires a hazard assessment considering ground handlers near nose radome; may need design change (e.g., inhibit ground radiation / weight-on-wheels or dedicated switch) or operational procedure. It's a hazard to ground personnel, not flight safety — so the operator's premise \"ground operations don't involve flight safety\" is partly true for the radar (it's not a flight safety issue but ground personnel safety issue) but that doesn't mean no action: hazard assessment needed.\n- IEC 3B laser: AFMS limitation explicitly requires key control OFF during ground/taxi/takeoff/landing; auto operation is non-compliant. Also installation type design must include 21 CFR 1040 key control etc.; FDA variance technical controls/interlock (e.g., radar altimeter interface); system safety analysis. Since IEC 3B laser is a high-power class, automatic ground operation violates AFMS limitations. Not acceptable.\n\nNow, is the \"自动工作\" for laser plausible? Maybe the laser is a LIDAR with auto operation. The wiki says no laser use during ground/taxi; key control off for class 3B.\n\nLet me read the main approval page for AC 20-183 to get details on applicability and whether the AC addresses ground personnel, and also read the AFMS source? Better read original documents for exact quotes: d2 = AC_20-183.pdf, d3 = AC_20-182A? Actually sources: forward-looking page source d3; AFMS page source d2. Runtime recent docs list d1 AC_20-184.pdf, d2 AC_20-183.pdf. So d3 = AC_20-182A.pdf presumably.\n\nLet me verify exact text in d2 about key control and 7.3.7 and maybe search \"ground\" in d2 for ground personnel. Also search d3 for \"transponder\" to confirm quote.\n\nLet me do read_document queries."
+      },
+      {
+        "thought": "",
+        "iteration": 6,
+        "timestamp": "2026-10-22T14:38:08.3681772+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_eOd5Uj4LmvXEazKwZty74356",
+            "args": {
+              "slugs": [
+                "entity/flir",
+                "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/flir|前视红外设备]]</link>\n<type>entity</type>\n<aliases>前视红外</aliases>\n</metadata>\n<relationships>\n<links_to>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02]] (summary omitted, already seen)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页介绍前视红外设备（FLIR）的定义、执法夜间隐蔽监视用途、其配备的激光照射器与测距仪所带来的眼部危害，以及相关波长与损伤机理。\n</summary>\n<content>\n# 前视红外设备\n\n来源：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf]] 第3节（BACKGROUND）。\n\n配备激光照射器、指示器或测距仪的前视红外（FLIR）设备，被地方、州和联邦执法机构用于夜间隐蔽监视。\n\n## 3.1 激光监视设备\n\n激光监视设备可用于支持多种任务，从目标测距到照射小光点或大范围区域。此类机载监视设备安装的激光认证存在一些独特的挑战，因为激光可能对飞行机组、乘客、其他航空器乘员以及非飞行公众构成潜在的眼部危害。激光监视设备通常使用IIIb类或IV类激光。\n\n在本指导文件之前，许多监视系统通过仅包含激光临时布线的激光监视设备STC进行安装。对于这些安装，STC型号设计会显示激光被电气禁用。这些安装可能未完全处理所有激光危害。\n\n## 3.3 眼危害\n\nFLIR（及LIDAR）激光可能特别危险，因为光束不可见，且没有保护眼睛的眨眼反射反应，因此眼部暴露可能最初未被察觉。\n\n- 在750至1,400纳米（nm）近红外光谱内工作的激光暴露可造成视网膜眼损伤；400至1,400 nm波段被称为视网膜危害区。\n- 在315至400 nm紫外或1,400至10,600 nm远红外光谱内工作的激光设备可损伤角膜、晶状体或两者。\n- 多数FLIR（及LIDAR）激光的工作波长为800至1570 nm。\n\n眼损伤程度取决于激光暴露剂量。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n</metadata>\n<relationships>\n<links_to>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02]] (summary omitted, already seen), [[entity/lidar]] (本页依据 AC 20-183 说明激光雷达（LIDAR）的定义、测距原理与用途、激光类别与外部发射等级，以及其不可见光束造成的眼危害与在机载适航安装中的定位。), [[concept/fda-cha-yi]] (本页依据 AC_20-183.pdf 表2说明“FDA差异（FDA Variance）”的含义：在3R类LIDAR示例中该段被判定为不适用，因为3R类激光不需要差异许可。), [[concept/fei-ji-jie-kou-an-quan-lian-suo]] (飞机接口安全联锁是FDA差异可能要求的激光安全联锁，用于特定飞机状态或高度条件下禁用激光。), [[concept/xi-tong-an-quan-fen-xi]] (summary omitted, already seen), [[concept/xitong-anquan-pinggu]] (summary omitted, already seen), [[concept/an-zhuang-xing-hao-she-ji]] (本页说明激光设备安装型号设计须纳入适用的21 CFR 1040要求，以及FDA差异中影响飞机安装的技术控制，并给出第7.3.3段的适用性判断。), [[concept/ji-zai-ruan-jian-bao-zheng]] (本页说明AC 20-183第7.3.1.5段对机载激光设备软件的保证要求：按AC 20-115C开发，软件等级与功能失效条件分类相称，并列出相关考虑因素与标准。), [[concept/aeh-she-ji-bao-zheng]] (本页说明机载电子硬件设计保证：定制AEH若可能促成第7.3.1节所述故障，应按RTCA/DO-254开发，并达到与功能失效条件分类相称的设计保证等级。), [[concept/configuration-control]] (本页说明构型控制概念，涵盖AC 20-180的AML构型控制与表格记录方法，并补充AC 20-183表2将第7.3.6节构型控制判定为适用。), [[concept/afms]] (summary omitted, already seen), [[concept/ji-guang-an-quan-ji-hua]] (本页依据 AC 20-183 第7.3.8节，说明建议航空器运营人按 ANSI Z136.1 第1.3段建立激光安全计划，并列出该段在原文表2适用性判断中的结论。), [[concept/lidar-she-bei-an-zhuang]] (本页整理AC 20-183中与机载LIDAR设备安装相关的适航内容，包括第7.3.9至7.3.11节的要求及附录B的Class 3R LIDAR安装示例与相关判定准则。)</links_to>\n<linked_from>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页依据AC 20-183整理机载非必需不可见光谱激光设备（如红外监视激光与LIDAR）取得FAA适航批准的一种可接受方法，涵盖目的与适用范围、职责分工、第7节安装指导、公共用途条款及附录B的LIDAR示例。\n</summary>\n<content>\n# 机载不可见光谱激光设备安装适航批准\n\n来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf]]。原文未标注版本日期；以下段落编号、附录编号及表格编号均按原文保留。\n\n## 1 目的\n\n1.1 本咨询通告（AC）推荐一种为机载、非必需、不可见光谱激光设备（如红外监视激光和[[entity/lidar|激光雷达]]（LIDAR）设备）安装取得联邦航空管理局（FAA）适航批准的方法。本AC不是强制要求，也不构成法规。本AC描述的是满足14 CFR 23.1301、23.1309、23.1529、23.1581、25.1301、25.1309、25.1529、25.1581、27.1301、27.1309、27.1529、27.1581、29.1301、29.1309、29.1529和29.1581中要求的一种可接受方法，但不是唯一方法，且仅针对激光设备方面。如果采用本AC所述方法，则必须完整遵循。\n\n1.2 本AC仅涉及激光特有的适航安装要求。它不是机载激光设备的全面安装指导，因为未涵盖所有适用的安装适航要求，例如下文第7段所讨论的要求。\n\n1.3 本AC不适用于寻求适航批准的必需机载设备，即激光辐射被限制在防护壳体内的设备（例如环形激光陀螺）。\n\n1.4 本AC不适用于激光武器及飞机自卫对抗措施设备的安装。\n\n## 2 适用对象\n\n本AC面向飞机制造商、激光设备制造商、安装单位及其他申请人，这些申请人为23、25、27和29部飞机上的不可见光谱激光设备安装寻求FAA适航批准。适航批准可在型号合格证（TC）、补充型号合格证（STC）、修订型号合格证（ATC）、修订补充型号合格证（ASTC）或重大更改的数据批准下进行。本AC也为参与安装不可见光谱激光设备的TC、STC、ATC、ASTC或重大更改数据批准的FAA人员提供指导。\n\n## 4 角色与责任\n\n### 4.1 FAA的监管职责\n\n当申请人证明激光安装满足适用的适航要求时，FAA负责为该飞机激光安装颁发设计批准（如STC）或其他数据批准。\n\n### 4.2 美国食品药品监督管理局（FDA）的监管职责\n\nFDA有权监管发光产品和电子产品辐射（《美国法典》第21编第360ii节，控制计划）。对于不满足《联邦法规》第21编（21 CFR）第1040部《发光产品性能标准》中激光性能标准的激光器，FDA还负责批准或不批准差异许可（variance）申请。\n\n### 4.3 激光制造商的设备认证职责\n\n激光制造商负责自我认证其激光器满足§ 1040.10《激光产品》中的性能标准，并在激光设备不满足某项激光性能标准时从FDA取得差异许可。\n\n### 4.4 安装申请人职责\n\n申请安装设计批准的申请人负责满足所有适用的FAA适航要求以及FDA激光性能和差异许可要求。\n\n## 7 激光设备安装指导\n\n本节为含不可见波长激光设备的激光相关方面提供安装指导。除本激光安装专项指导外，安装还必须满足所有其他适用的适航要求，例如涉及电气系统容量、电路保护、闪电直接效应、防冰、可燃性、环境鉴定（如辐射发射、坠撞安全性、振动和温度）、飞行与操纵特性变化（如阻力、失速、最大和最小空速、配平）、振动、结构、静压与全压系统，以及电气线路互联系统的要求。\n\n激光设备安装通常遵循三个基本步骤：(1) 激光设备制造商对激光设备进行认证；(2) FDA对差异许可的审查与批准；(3) FAA对激光设备安装的批准。如果安装者改装激光器或偏离[[concept/fda-cha-yi|FDA差异]]许可，可能需要第四步，即对激光设备重新认证。对于FDA I类或IEC 1类、2类和3R类激光的安装，不需要第2步。\n\n### 7.1 激光设备认证\n\n激光设备安装者必须按照制造商经其向FDA认证的规范安装设备。在安装激光设备之前，安装者必须符合所有适用的FDA 21 CFR要求（如§§ 1002.10、1010.2、1010.3、1040.10和1040.11），并在激光设备上永久附着或刻有标签或标牌，证明该设备符合第1040部激光产品性能标准。如果该标签或标牌载明了FDA差异许可，则安装的型号设计必须表明该差异许可中适用于本安装的技术控制（如[[concept/fei-ji-jie-kou-an-quan-lian-suo|飞机接口安全联锁]]）已得到满足。\n\n### 7.2 FDA差异许可\n\n根据FDA，监视激光器和LIDAR系统属于“测量、水准和准直激光产品”，即§ 1040.11(b)所述的特定用途激光产品，对于不可见激光波长限于I类AEL。然而，大多数机载监视激光器和部分LIDAR超过不可见波长允许的I类AEL，因此需要按§ 1010.4所述取得差异许可。对于按IEC分类体系标注的产品，IEC 1类、2类和3R类是不可见发射可接受的类别限值，因此不需要差异许可。\n\nFDA差异许可可能要求行政控制（例如激光设备采购组织保持对雇员进行激光系统安全使用的持续培训计划）和技术控制（例如当激光孔径与受照物体之间距离小于NOHD时使激光器失效的测距仪切断装置）。\n\n### 7.3 飞机激光设备安装\n\n#### 7.3.1 [[concept/xi-tong-an-quan-fen-xi|系统安全分析]]\n\n必须进行系统安全分析，以评估已安装的激光设备是否满足14 CFR 23.1309、25.1309、27.1309或29.1309。23部飞机参见AC 23.1309-1《23部飞机的系统安全分析与评估》；25部飞机参见AC 25.1309-1《系统设计与分析》；27部旋翼机参见AC 27.1309《设备、系统和安装》；29部旋翼机参见AC 29.1309《设备、系统和安装》。[[concept/xitong-anquan-pinggu|系统安全评估]]应涉及以下内容：\n\n7.3.1.1 激光设备故障。激光设备故障导致机组人员或乘客的眼或皮肤暴露于超过MPE的不可见激光辐射，被视为不低于危险的功能失效状态；如果由于激光对飞行员眼或皮肤损伤的严重程度导致无法继续安全飞行，则可能是灾难性的。在系统安全评估中，应记录将其归类为危险功能失效状态的理由。如果由于激光位置和飞机结构提供的物理屏蔽，不存在进入驾驶舱或客舱的直接或反射路径，则该失效状态不适用。\n\n7.3.1.2 系统安全考虑。在评估失效状态时，应考虑直接和反射辐射；激光器、激光束转向机构和电路的位置；使用机械、软件或机载电子硬件（AEH）限位器防止激光被转向到可能导致飞机乘员眼睛暴露于直接或反射辐射的方向；激光待发和发射电路；以及其他设计特征，其故障可能导致意外暴露或超过MPE的暴露（例如用于降低AEL的内部激光漫射器故障）。如果激光的转向限位器由软件或AEH实现，其保证等级应与限位器相关的功能失效状态相称。飞机任何部件（如结构、桨叶、滑橇或起落架）的反射应视为镜面反射。\n\n7.3.1.3 飞机结构。因激光照射导致飞机结构损坏的任何故障，应予以评估，以确定飞机损伤程度及相关的功能失效状态分类。\n\n7.3.1.4 设备接口。激光设备与其他飞机系统接口的任何故障，须予以评估，以确定对飞机系统和激光设备的影响及相关的功能失效状态分类。\n\n7.3.1.5 其他功能失效状态。本AC 7.3.1.1至7.3.1.4未描述的其他故障应予以识别和评估，以确定其功能失效状态。\n\n7.3.1.6 功能丧失。由于激光是非必需设备，激光功能丧失的功能失效状态为“无影响”。\n\n#### 7.3.2 NOHD和MPE计算\n\n应提供报告，记录NOHD和MPE的计算方式，包括所有方程、方程引用、表格引用、方程参数（如波长、发散角、暴露时间和功率）、进入飞机窗口的反射与直接辐射路径尺寸，以及暴露持续时间的论证。对于激光照射器、光斑器、测距仪和其他非扫描激光器，NOHD暴露持续时间应基于预期的最大暴露持续时间，但不少于10秒。AC 70-1《户外激光运行》和美国国家标准学会文件ANSI Z136.1《激光安全使用美国国家标准》提供可接受的MPE和NOHD计算方法。\n\n#### 7.3.3 [[concept/an-zhuang-xing-hao-she-ji|安装型号设计]]\n\n安装型号设计必须包含适用于该安装的所有21 CFR 1040要求（如钥匙控制、发射指示器、标签和远程联锁连接器），以及FDA差异许可中影响飞机安装的技术控制（如飞机接口安全联锁）。\n\n#### 7.3.4 软件\n\n如果激光设备包含可能导致上文7.3.1所述故障的软件，应按照AC 20-115C《[[concept/ji-zai-ruan-jian-bao-zheng|机载软件保证]]》中的指导开发软件，软件等级应与由7.3.1确定的功能失效状态分类相称。\n\n#### 7.3.5 AEH\n\n如果激光设备包含可能导致上文7.3.1所述故障的定制AEH（如专用集成电路、现场可编程逻辑器件或可编程逻辑器件），应使用RTCA/DO-254《[[concept/aeh-she-ji-bao-zheng|机载电子硬件设计保证]]指南》开发AEH，设计保证等级应与由7.3.1确定的功能失效状态分类相称。对于被归类为简单的定制AEH，适用RTCA/DO-254第1.6段。\n\n注：当激光设备的故障可能导致激光器所在飞机之外的人员暴露超过MPE时，我们鼓励对该激光设备使用业界公认的系统安全标准（如SAE International ARP 4761和IEC 61508）和开发保证标准（如RTCA/DO-178C、RTCA/DO-254和IEC 61508）。\n\n#### 7.3.6 [[concept/configuration-control|构型控制]]\n\n不应对激光设备或安装进行未经批准的更改，因为这些更改可能影响设备安装的适航性（例如电磁和环境兼容性或新的失效模式），并使激光设备认证和FDA批准的差异许可失效。申请人应提供在产品全寿命周期内保持构型的计划。如果安装导致对激光设备制造商所认证的激光设备进行改装，激光设备必须按§ 1040.10(i)所述重新认证。\n\n#### 7.3.7 [[concept/afms|飞机飞行手册补充]]（AFMS）\n\n当由于拟议改装导致基本飞机的机体限制、操作程序或飞行特性发生变化时，激光设备安装需要经批准的AFMS。AFMS应包括激光系统安全运行所需的任何特殊程序，还必须包含安装引起的飞机限制的任何变化，特别是外部安装系统。应查阅AC 70-1了解额外要求和许可。\n\n7.3.7.1 对于激光设备安装，AFMS必须包含以下限制：\n\n- 7.3.7.1.1 不得使用激光器有意照射其他飞行中的飞机。\n- 7.3.7.1.2 不得在地面或滑行、起飞、着陆期间使用激光器。对于FDA IIIb类和IV类激光以及IEC 3B类和4类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置。\n- 7.3.7.1.3 当激光器与人员之间距离小于NOHD时，不得使用激光器照射人员。NOHD应在AFMS中或标牌上注明。\n- 7.3.7.1.4 不得使用激光器的大气条件（如雨或雪）。\n- 7.3.7.1.5 不得使用激光器的飞行条件（如坡度角、近距离贴近地形飞行或吊升作业）。\n- 7.3.7.1.6 如果任何需要与飞机系统接口的激光安全联锁不可用，不得使用激光器。AFMS应确定飞机接口安全联锁。FDA差异许可可能要求飞机接口安全联锁（例如与雷达高度表的接口，当飞机离地高度低于规定高度时使激光器失效）。\n- 7.3.7.1.7 不得使用激光器的飞机构型（例如安装货舱镜子时，因为它们可能提供进入驾驶舱的反射路径）。\n\n7.3.7.2 AFMS还必须包含§ 1040.10(h)(1)所确定的以下用户信息：\n\n- 7.3.7.2.1 充分的运行说明，包括有关避免可能暴露于超过可达限值的激光和附带辐射的警告和告诫。\n- 7.3.7.2.2 §§ 1040.10(g)和1040.11要求附着在激光产品上的所有标签和危险警告的清晰复制件。\n- 7.3.7.2.3 所有控制装置、调节装置以及正常运行、异常和应急程序的清单，包括以下陈述：“Caution—use of controls or adjustments or performance of procedures other than those specified herein may result in hazardous radiation exposure.”（告诫——使用本文规定之外的控制、调节或执行程序可能导致危险辐射暴露。）\n\n#### 7.3.8 [[concept/ji-guang-an-quan-ji-hua|激光安全计划]]\n\n建议飞机运营人按照ANSI Z136.1第1.3段建立激光安全计划。\n\n#### 7.3.9 持续适航文件（ICA）\n\n除适航法规要求之外，ICA应包含以下激光服务信息：\n\n- 7.3.9.1 服务程序，附有适当的警告和预防措施，以避免暴露于超过可达发射限值的激光和附带辐射；\n- 7.3.9.2 保持产品符合性的维护计划；\n- 7.3.9.3 可能提高可达辐射水平的控制装置和程序清单；\n- 7.3.9.4 识别允许人员接近超过可达发射限值的激光或附带辐射的防护壳体可拆卸部分；\n- 7.3.9.5 对每项待执行的维护程序或维护程序顺序，避免暴露于已知危险的激光和附带辐射水平的程序；\n- 7.3.9.6 所要求标签（颜色可选）和警告的复制件；以及\n- 7.3.9.7 所要求标签和警告的设备位置。\n\n#### 7.3.10 STC限制\n\nSTC限制必须包含FDA差异许可中会限制STC适用性的行政控制（例如仅限政府机构）。\n\n#### 7.3.11 LIDAR安装\n\n附录B给出应适用于一个LIDAR安装示例构型的第7.3段各段落，为具有多个LIDAR设备构型的安装提供建议，并给出LIDAR设备更改被视为型号设计小改或小改动的标准。\n\n## 8 公共用途\n\n8.1 大多数监视激光器是为公共用途运行而开发的，开发时未使用FAA认可的软件保证、系统保证、机载电子硬件保证和安全分析过程。因此，它们很可能不满足适用的适航要求。我们认识到，《美国法典》第49编第40102(a)(41)和40125节所定义的公共航空器不要求满足FAA适航要求。但是，如果公共航空器运营人希望保持FAA符合性，申请人必须选择：(1) 满足本AC第7段中的指导材料或某些可接受的替代方法，或 (2) 安装的型号设计必须表明激光功能已被禁用。以下是禁用激光器的安装认证、维护和飞行手册要求：\n\n- 8.1.1 型号设计数据必须表明激光功能已禁用（例如待发和发射线束连接器被加盖并妥善存放）。非激光功能（如FLIR）可以通电并工作。\n- 8.1.2 在公共用途之外的运行中使用飞机之前，必须通过某种维护措施（如取下加密狗或断开、加盖并妥善存放线束）禁用激光功能。\n- 8.1.3 已安装的激光设备应符合所有适用的21 CFR要求（如§§ 1002.10、1010.2、1010.3、1010.4、1040.10和1040.11）。\n- 8.1.4 ICA必须包含验证激光功能已禁用的检查说明。从FAA批准的民用构型转换为改装的公共用途构型并再转换回民用构型的程序应包含在ICA中。\n- 8.1.5 ICA应包含保护维修人员免受激光危害的维护程序。\n- 8.1.6 对于TC或ATC安装，型号合格证数据表（TCDS）中的限制必须写明：“Laser operation is not FAA approved for civil aircraft operations. The laser is disabled.”（激光运行未获FAA批准用于民用航空器运行。激光器已禁用。）\n- 8.1.7 对于STC或ASTC安装，“限制与条件”部分中的限制必须写明：“Laser operation is not FAA approved for civil aircraft operations. The laser is disabled.”（激光运行未获FAA批准用于民用航空器运行。激光器已禁用。）\n- 8.1.8 飞行手册补充必须包含一项限制：“Laser features are not FAA approved for civil aircraft operations. These features are disabled.”（激光功能未获FAA批准用于民用航空器运行。这些功能已禁用。）\n- 8.1.9 必须将以下告诫加入飞行手册补充：“The FAA has not assessed all hazards associated with the laser feature(s) and the FAA has not validated the manufacturer's laser safety or hazard assessments.”（FAA未评估与激光功能相关的所有危害，FAA也未验证制造商的激光安全或危害评估。）\n- 8.1.10 必须在激光控制装置附近安装标牌，写明：“Laser operation is not FAA approved.”（激光运行未获FAA批准。）\n\n## 9 适用的14 CFR条款\n\n参见14 CFR 23.1301、23.1309、23.1529、23.1581、25.1301、25.1309、25.1529、25.1581、27.1301、27.1309、27.1529、27.1581、29.1301、29.1309、29.1529和29.1581。对于23部飞机，§ 23.1301可能不适用。\n\n## 附录B\n\n### B.1 3R类LIDAR示例\n\nB.1.1 下表给出对于一种内部安装LIDAR（机身底部开有用于LIDAR激光孔径的开口）应适用的第7段各段落。就本示例而言，在所有扫描角度下均不存在从激光器进入客舱或驾驶舱窗口的直接路径或反射路径。该LIDAR为IEC 3R类激光。唯一的飞机电气接口是电功率。驾驶舱内设有激光发射指示器、激光安全开关和LIDAR飞行指引显示器。\n\nTable 2. 适用的第7节段落\n\n| 段落 | 标题 | 是否适用 | 说明 |\n|---|---|---|---|\n| 7 | 激光设备安装 | 是 | 必须证明设备安装满足所有适用的适航要求，例如电气负载容量、电路保护、布线、搭接和接地；可燃性；环境鉴定；ICA；AFMS；以及结构和应力方面。由于该激光设备为非必需、机载客舱安装设备，AC 20-168中的指导可用于本节7.3未具体涉及的适航要求。 |\n| 7.1 | 激光设备认证 | 是 | 激光设备必须符合所有适用的FDA 21 CFR标准。由于该激光设备符合IEC 60825-1标准，可使用FDA的Laser Notice No. 50确定哪些IEC 60825-1指导可替代FDA的21 CFR标准。 |\n| 7.2 | FDA差异许可 | 否 | 由于该LIDAR为3R类激光，不需要差异许可。 |\n| 7.3.1 | 系统安全分析 | 是 | 应记录7.3.1.1、7.3.1.2、7.3.1.3、7.3.1.4和7.3.1.5的系统安全分析结果。对于本示例，系统安全分析将记录这些段落中的功能失效状态为何不适用的理由。 |\n| 7.3.1.1 | 激光设备故障 | 否 | 由于不存在进入驾驶舱或客舱的直接或反射路径，7.3.1.1所述故障不适用。 |\n| 7.3.1.2 | 系统安全考虑 | 否 | 由于不存在进入驾驶舱或客舱的直接或反射路径，7.3.1.2所述故障不适用。 |\n| 7.3.1.3 | 飞机结构 | 否 | 3R类激光不能烧毁或熔化飞机结构或油漆。 |\n| 7.3.1.4 | 设备接口 | 否 | 该激光设备除电功率外不与任何其他飞机系统（如姿态航向基准系统）接口。电功率线路由适当规格的断路器保护。 |\n| 7.3.1.5 | 其他功能失效状态 | 否 | 应对每项设备安装评估其他功能失效状态。该特定设备安装没有其他功能失效状态（如激光传感器未能收回而在着陆时构成危险）。 |\n| 7.3.2 | NOHD和MPE计算 | 是 | 由于不是I类激光，应计算NOHD和MPE并在报告中记录。 |\n| 7.3.3 | 安装型号设计 | 是 | 安装型号设计应包含所有适用的21 CFR 1040要求（如驾驶舱内的激光发射指示器、标签）。 |\n| 7.3.4 | 软件 | 否 | 根据系统安全分析，该激光设备安装没有会影响飞机或其乘员的功能失效状态。因此，激光设备软件不必使用AC 20-115C开发。 |\n| 7.3.5 | AEH | 否 | 根据系统安全分析，该激光设备安装没有会影响飞机或其乘员的功能失效状态。因此，激光设备AEH不必使用AC 20-152开发。 |\n| 7.3.6 | 构型控制 | 是 | 对激光设备的更改可能影响激光设备安装的适航性和激光设备认证。 |\n| 7.3.7 | 飞机飞行手册补充 | 是 | 激光设备安装需要经批准的AFMS。 |\n| 7.3.7.1 | 限制 | 是 | 适用以下AFMS限制：7.3.7.1.1 不得使用激光器照射其他飞行中的飞机。7.3.7.1.2 不得在地面或滑行、起飞、着陆期间使用激光器。7.3.7.1.3 当激光器与人员之间距离小于NOHD时，不得使用激光器照射人员，应注明NOHD。7.3.7.1.4 不得使用激光器的大气条件。7.3.7.1.5 不得使用激光器的飞行条件（如坡度角、近距离贴近地形飞行或吊升作业）。7.3.7.1.7 不得使用激光器的飞机构型（如货舱镜子）。（原文此条列举未含7.3.7.1.6） |\n| 7.3.7.2 | 用户信息 | 是 | 适用以下AFMS激光用户信息：7.3.7.2.1 充分的运行说明，包括警告和告诫。7.3.7.2.2 所有标签和危险警告的清晰复制件。7.3.7.2.3 所有控制装置、调节装置以及正常、异常和应急运行程序的清单，包括以下陈述：“Caution -use of controls or adjustments or performance of procedures other than those specified herein may result in hazardous radiation exposure.” |\n| 7.3.8 | 激光安全计划 | 是 | 建议制定激光安全计划。 |\n\n![Table 2. Applicable Section 7 Paragraphs](http://localhost:8080/api/v1/ingestion/jobs/7fca8b7e95b34b4d90f4ca02fc686402/assets/33eead8f59d4459e88be)\n\n### B.2 具有多个LIDAR构型的安装\n\n部分LIDAR运营人需要频繁更换LIDAR设备。为支持这些设备更换，建议初始批准（如STC、重大更改的数据批准）包含所有已证明符合适用适航标准的LIDAR构型的描述性数据。AFMS和ICA也应包含每种LIDAR构型所需的所有数据。对于初始批准，应对所有LIDAR构型进行安装适航性评估。安装批准应列出经批准的LIDAR构型。\n\n### B.3 新LIDAR构型的批准\n\n新LIDAR构型的安装批准可能需要ASTC、STC、ATC或重大更改的数据批准，并需修订ICA和AFMS。应对新LIDAR构型进行安装适航性评估，例如电气系统容量、系统安全、电路保护、闪电直接效应、防冰、可燃性、环境鉴定（如辐射发射、坠撞安全性、振动和温度）、飞行与操纵特性变化（如阻力、失速、最大和最小空速、配平）、振动、结构、静压与全压系统，以及电气线路互联系统。\n\n### B.4 LIDAR型号设计小改或小改动\n\nB.4.1 当满足以下各项标准且更改过程经申请人所在地区FAA航空器审定办公室批准时，新的LIDAR设备构型可作为型号设计小改获得批准。以下标准也可用于将某项更改归类为小改动。\n\n- B.4.1.1 初始[[concept/lidar-she-bei-an-zhuang|LIDAR设备安装]]是在TC、STC、ATC、ASTC或重大更改的数据批准下批准的，且包含LIDAR激光设备。此前的批准不仅限于预留（如安装和电功率）。\n- B.4.1.2 新LIDAR设备安装不存在激光辐射进入驾驶舱或客舱窗口的直接或反射路径。\n- B.4.1.3 新激光设备必须符合所有适用的FDA 21 CFR要求（如§§ 1002.10、1010.2、1010.3、1040.10和1040.11），并在设备上永久附着或刻有标签或标牌，证明设备符合第1040部激光产品性能标准。\n- B.4.1.4 新LIDAR设备的激光类别必须等于或低于此前批准的激光设备类别。\n- B.4.1.5 新LIDAR设备除飞机电功率外不与任何飞机系统（如大气数据）接口。\n- B.4.1.6 如果初始LIDAR安装批准需要FDA差异许可，新LIDAR设备需要相同的差异许可。\n- B.4.1.7 如果原LIDAR安装批准不需要FDA差异许可，新LIDAR设备不需要差异许可。\n- B.4.1.8 除全球定位系统天线圆盘外，所有设备均内部安装在飞机内，或安装在飞机外部携带的防护壳体内。若安装在防护壳体内，该防护壳体必须在初始安装批准时获得批准且不得有任何改装。\n- B.4.1.9 初始安装批准时批准的、7.3.7所要求的LIDAR设备AFMS限制和用户信息，必须适用于新LIDAR设备构型而无需更改。可使用驾驶舱标牌标明新的LIDAR型号和NOHD，以替代修订AFMS。\n- B.4.1.10 对于安装在客舱内或飞机外防护壳体内的LIDAR设备，新设备的重量、重心和包线必须落在初始安装批准规定的范围内。新LIDAR设备的安装连接点和安装方法必须在初始安装批准时已获批准。\n- B.4.1.11 所有LIDAR设备的电功率不得大于初始批准规定的最大功率。新激光设备应使用激光设备制造商建议安培额定值的断路器或保险丝保护。\n- B.4.1.12 所有新LIDAR设备必须通过RTCA/DO-160第21节射频能量发射，类别M或H。\n- B.4.1.13 对于客舱安装设备，新设备必须通过RTCA/DO-160第7节坠撞安全性试验。\n- B.4.1.14 在所有新设备安装并运行的情况下，使用FAA可接受的程序（如初始STC时原本使用的程序）进行飞机电磁兼容性试验并记录。\n- B.4.1.15 除初始批准时所批准的内容外，不安装其他设备。\n- B.4.1.16 新设备不得引入任何会影响适航性的新功能失效状态。\n- B.4.1.17 视LIDAR设备构型不同，可能需要新的或修订的小改标准。\n- B.4.1.18 对STC的小改应加入STC描述性数据，包括新LIDAR设备的识别、RTCA试验结果、NOHD计算、机上电磁试验结果、断路器规格以及支持该更改的任何数据。\n- B.4.1.19 小改动记录在维修记录中。\n\n### B.5 型号设计与重大更改数据批准建议\n\nB.5.1 为便于新LIDAR构型的批准，建议初始安装型号设计或重大更改的初始数据批准包含规定以下内容的描述性数据：\n\n- B.5.1.1 激光类别。\n- B.5.1.2 安装于飞机上的设备的允许重量范围、重心范围和最大包线。\n- B.5.1.3 LIDAR设备的安装连接点和安装方法。\n- B.5.1.4 LIDAR设备断路器与电功率线路可支持的LIDAR设备最大电功率。\n- B.5.1.5 LIDAR设备的RTCA/DO-160试验和类别。\n- B.5.1.6 适用FDA差异许可的技术和行政控制。\n\n## 附录C 咨询通告反馈信息\n\n如对本咨询通告（AC）有改进意见或建议、拟新增的项目或主题，或发现错误，可使用该页作为模板，1）发送电子邮件至 9-AWA-AVS-AIR500-Coord@faa.gov，或 2）传真至 202-267-3983 转 AIR Directives Management Officer。\n\nSubject:（填入AC编号和标题）\nDate:（填入日期）\nComment/Recommendation/Error:（请填写所有适用项）\nAn error has been noted:\nParagraph \\_\\_\\_\\_\nPage \\_\\_\\_\\_\nType of error（勾选所有适用项）：Editorial---- Procedural---- Conceptual\nDescription/Comments:\n\n## 原文解析疑点\n\n- 7.3.5正文要求定制AEH按RTCA/DO-254开发，而附录B表2中对7.3.5的说明提到“激光设备AEH不必使用AC 20-152开发”，两处引用的文件编号不一致，按原文如实保留，实际适用时需核对。\n- 附录B表2中7.3.7.1“限制”一行列举了7.3.7.1.1至7.3.7.1.5及7.3.7.1.7，但未列出7.3.7.1.6（飞机接口安全联锁），原文如此。\n- 提供的转录内容中未出现原文第3、5、6段，本页不作补写。\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 9
+          }
+        ],
+        "reasoning_content": "Excellent. Now for the laser side, the operator's claim that \"ground operations don't involve flight safety\" — AC 20-183's system safety analysis focuses on crew/passengers; but AFMS limitation explicitly prohibits ground use, regardless. Also there's a note about encouraging safety standards for people outside the aircraft. Also maybe the AC's purpose covers \"non-required\" equipment and does address hazards to persons outside. Let me check the FLIR page and the main approval page for scope statements about \"people outside\" and \"ground operations\".\n\nAlso, is there a wiki page about \"AC 20-183 适用范围\" saying AC applies to installations where laser could injure persons outside the aircraft? Let me read entity/flir and concept/ji-zai-bu-ke-jian... maybe. Also search \"public\" / \"persons outside\".\n\nAlso for radar: the AC applies to weather radar systems in part 23/25; automatic activation hazard assessment is a \"should\" recommendation, not a rule. Handling: conduct hazard assessment; if hazard can't be mitigated, disable/avoid automatic ground activation (e.g., radar standby until takeoff, or design inhibit) — but note auto activation for takeoff is also \"should\" for timely warning. So a solution: keep automatic activation but add ground inhibit (e.g., weight-on-wheels/squat switch) or ensure radar doesn't radiate during taxi; or procedural control ensuring ground crew not in front of radome. The AC doesn't dictate a specific mitigation, only hazard assessment.\n\nLet me read the main AC 20-183 page and FLIR for wording about non-flying public and whether the AC's safety analysis covers outside persons. Also check the \"public use\" page maybe not relevant.\n\nLet me also check if wiki has a page on AC 20-182A scope/purpose, e.g., \"aircraft-weather-radar-airworthiness-approval\". That page may mention radar ground operation/TSU. But the key evidence is 6.1.5.\n\nLet me read entity/flir and concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun (long). I'll read both."
+      },
+      {
+        "thought": "",
+        "iteration": 7,
+        "timestamp": "2026-10-22T14:38:18.5318719+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_NMuQNfssyyeiTDtutsZ30831",
+            "args": {
+              "query": "自动激活|危险评估|hazard assessment"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-347": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/teshu-tiaojian": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/14-cfr-part-25-appendix-f": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/reactive-windshear-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/a55aa2ce-d249-4213-a67d-5b8ae36edfb1": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/c5cf4dee-88c4-4a77-983a-35b9963588d8": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidianzi-dianchi-anzhuang-ceshi-yaoqiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/forward-looking-windshear-detection-and-alerting": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"6\" query=\"自动激活|危险评估|hazard assessment\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/forward-looking-windshear-detection-and-alerting|前视风切变探测与告警显示]]</link>\n<type>concept</type>\n<aliases>前视风切变探测, 风切变告警与显示</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... - 为允许因风切变条件及时中止起飞，应确保前视风切变功能能够在起飞滑跑开始前人工激活。 - 应确保前视风切变功能为起飞自动激活，以提供及时的起飞警告。 - 当前视风切变功能启用时，应确保系统在下降进近过程中自动激活，无需飞行机组干预，其激活高度足 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... he FAA has not validated the manufacturer’s laser safety or hazard assessments.” - 必须在激光控制装置附近安装标牌，声明：“Laser operation is not FAA approve ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... he FAA has not validated the manufacturer's laser safety or hazard assessments.”（FAA未评估与激光功能相关的所有危害，FAA也未验证制造商的激光安全或危害评估。） - 8.1.10 必须在激光 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidianzi-dianchi-anzhuang-ceshi-yaoqiu|锂离子电池安装测试要求]]</link>\n<type>concept</type>\n<aliases>测试要求</aliases>\n<summary>本页依据AC 20-184整理锂离子电池安装测试要求，涵盖环境鉴定标准、按电池尺寸分级的符合性方法、附录E/F引用的RTCA DO-347与DO-311设计与试验章节，以及可燃性测试与符合性核查要点。</summary>\n<match_snippet>... ompliance test plans and results are required. A Functional Hazard Assessment, System Safety Assessment, Fault Tree Analysis and/or Failu ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]</link>\n<type>entity</type>\n<aliases>AC 20-184, 咨询通告20-184</aliases>\n<summary>本页整理FAA咨询通告AC 20-184（2015年10月15日，AIR-133）的内容，涵盖航空器可充电锂电池与电池系统安装的可接受符合性方法、测试要求、系统安全评估、持续适航文件及维护与运行考虑。</summary>\n<match_snippet>... 计划与结果。应按 14 CFR 23/25/27/29.1309 和 25.1709 完成适用的 Functional Hazard Assessment、System Safety Assessment、Fault Tree Analysis 和/或 Failure Mo ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/rtca-do-347|RTCA DO-347标准]]</link>\n<type>entity</type>\n<aliases>DO-347, RTCA DO-347</aliases>\n<summary>RTCA DO-347是RTCA发布的《Certification Test Guidance for Small and Medium Sized Rechargeable Lithium Batteries and Battery Systems》，FAA AC 20-184（2015-10-15）将其列为小型和中型可充电锂电池及电池系统的可接受符合性方法标准。</summary>\n<match_snippet>... ompliance test plans and results are required. A Functional Hazard Assessment, System Safety Assessment, Fault Tree Analysis and/or Failu ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 17
+          }
+        ],
+        "reasoning_content": "Now I have solid evidence. Note: the question says \"另装有 IEC 3B 不可见激光\" — likely an IEC Class 3B laser device, maybe a surveillance laser. AC 20-183 applies. The operator claims both can work automatically because ground ops don't involve flight safety.\n\nCorrect handling:\n\nWeather radar:\n- AC 20-182A §6.1.5: transponder auto-activation legacy design; with ASDE-X/ADS-B crews keep transponder on during taxi; could create hazard to ground crews (marshals/tug operators near nose radome); a hazard assessment should be done for the automatic activation feature, considering this operation or any automatic ground activation feature.\n- So: no automatic acceptance; perform hazard assessment covering ground radiation during taxi; determine mitigation. Mitigation options: modify auto-activation logic / add ground inhibit (weight-on-wheels or radar standby), or operational procedure ensuring radar in standby until lineup, or keep ground personnel out of radiation zone. Since the AC says \"should\" not \"must\", it's a recommended acceptable method; but if operator uses this AC as compliance method, must follow all important aspects.\n\nLaser:\n- AFMS must include limitation 7.3.7.1.2: laser must not be used on the ground or during taxi, takeoff, landing; for IEC 3B (and FDA IIIb/IV), key control must be OFF on the ground and during taxi, takeoff, landing. So automatic working during taxi is not acceptable — must be disabled; key control off; installation type design must include 21 CFR 1040 key control; safety interlocks (aircraft interface, e.g., radar altimeter) if required by FDA variance; system safety analysis; AFMS limitation; possibly also laser safety program.\n- The operator's \"ground ops don't involve flight safety\" is irrelevant: the AFMS limitation is explicit and ground people outside the aircraft can be harmed (AC note encourages safety standards for people outside aircraft; background says non-flying public). Also the equipment is non-required and laser must not be used on ground regardless.\n\nDistinguish: different logic — radar's automatic ground activation is not categorically prohibited but requires hazard assessment and likely mitigation; laser is categorically prohibited during ground/taxi (key control off for 3B), so auto operation must be prevented.\n\nAdditional nuance: \"二者都可自动工作\" — for the radar, the auto activation is actually desired for takeoff (6.1.2 says should auto activate for takeoff), so one cannot simply delete it; the point is ground taxi phase. Recommendation: keep auto activation for takeoff but add a ground/taxi inhibit (e.g., based on weight-on-wheels or air/ground logic) so radar doesn't radiate while taxiing with transponder on, or ensure radar is in standby until takeoff. Hazard assessment must consider ground staff near nose radome.\n\nFor the laser, is automatic operation possibly allowed if it's Class 3B but the laser is \"non-required\"? No — AFMS limit is explicit for 3B. Even if the operator argues ground ops don't involve flight safety, the rule is about ground personnel safety; and airworthiness approval conditions apply. The laser must be disabled on ground; key control off; if automatic function cannot be disabled, design change needed or laser function disabled (like public use option: type design shows laser function disabled).\n\nMaybe mention that if the operator wants to keep automatic ground operation for the laser, they must show compliance with 7.3.7.1.2 (AFMS) — impossible since it prohibits, so no. There is no \"equivalent level of safety\" for an explicit AFMS limitation; could propose alternative method of compliance to FAA? The AC is not mandatory, but if using AC method must follow; alternative could be proposed, but the ground-use prohibition for 3B is fundamental and tied to 21 CFR key control and FDA variance. We can say: not acceptable under this AC; only FAA-approved alternate method could be considered, and absent that, disable.\n\nAlso maybe the radar question involves \"气象雷达随应答机自动启动\" — but is the radar's auto activation a \"windshear function\" auto-activation? Yes, per 6.1.5 the transponder mode activates radar to provide forward-looking windshear alerts. The wiki page says \"某些系统构型利用应答机模式自动激活雷达\" — good.\n\nShould I also mention that AC 20-182A's guidance applies to part 23/25 fixed-wing for windshear; it's non-mandatory. And the hazard assessment is \"should\" — but for TC/STC approval using this AC, must follow all aspects.\n\nAlso mention 14 CFR 25.1309 system safety? For radar, hazard to ground crew isn't covered by 1309 (which addresses aircraft occupants), but the AC explicitly requires hazard assessment. For laser, system safety analysis 7.3.1 covers crew/passengers only, but AFMS and 21 CFR cover ground. Could clarify: the operator's claim misreads \"flight safety\" — the AC's §7.3.1 analysis addresses occupants, but independent AFMS limitation 7.3.7.1.2 and 21 CFR 1040 controls apply to ground operation; and AC 20-183 explicitly notes potential hazards to non-flying public.\n\nMaybe also mention laser safety program ANSI Z136.1 recommended.\n\nNow, should I check if there is a page about \"AC 20-182A 危险评估\" or \"地面自动激活\" separate? Search \"自动激活\"."
+      },
+      {
+        "thought": "",
+        "iteration": 8,
+        "timestamp": "2026-10-22T14:38:23.0122902+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_HmMgDi4opsrcjwJmiky52173",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "key control"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "key control",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "7361e2fd-4593-4bcf-8045-6e0397e83049",
+                  "79659251-4c1d-4f55-ac16-2ff68b33293e",
+                  "194bad1b-f471-473c-95b1-9c1aee704c45",
+                  "705d1c3e-e4f6-498f-8ad2-378b8db71905",
+                  "5c673968-7461-4dab-aca1-fa05a92eddbc",
+                  "c4517bc0-14ed-4c18-8bd3-962817f02337"
+                ],
+                "truncated": false,
+                "match_count": 2,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 6,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 6/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 20
+          },
+          {
+            "id": "call_01_8yNoA0xMWFT5N4pvdikO7551",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "System Safety Analysis"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "System Safety Analysis",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "d21e67c3-edfc-4a4c-96f0-ecde36264851",
+                  "b33fa162-afba-4ec2-9074-766cbc224fab",
+                  "e4652dac-e9c2-44d2-a6ef-e7bd227b7e96",
+                  "7361e2fd-4593-4bcf-8045-6e0397e83049",
+                  "057681af-43c8-42cf-90b3-66fc72b8592c",
+                  "3330ba50-ed65-4a2f-84c2-d9b96ae84133",
+                  "14b6d930-8b3a-42fe-a386-1a14586e3b0a",
+                  "5444ff1c-c357-45d6-b9ca-e9d5609756ee",
+                  "fa191de2-7376-45a9-bab5-3ed3206d0204",
+                  "a37f8ac9-b6f4-4c59-802c-9008876ef9f0",
+                  "c6c583a4-72f6-4445-ba98-12800678e5cc",
+                  "4b1fc6a1-3dcd-41f5-bd1c-39cee51181db",
+                  "23af9b86-6b8b-4f19-b8f1-310648c51e0b"
+                ],
+                "truncated": true,
+                "match_count": 5,
+                "next_offset": 34,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 13,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 13/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 23
+          }
+        ],
+        "reasoning_content": "Enough. I'll answer in Chinese, structured: conclusion first (operator's premise is wrong / partly wrong), then 气象雷达 handling, then IEC 3B laser handling, then comparison table maybe. Include citations for claims.\n\nCitations: \n- Radar: c2 (AC 20-182A §6.1.5 full text). Also could cite forward-looking page but the chunk c2 is the direct source. Cite <kb doc=\"AC_20-182A.pdf\" chunk_id=\"f0cdd104-5906-4bf2-905e-be003c5df91b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />.\n- Laser ground limitation: c5 (AC 20-183 7.3.7.1.2). Also c5 includes 7.3.7.1.1-1.5. Key control off.\n- 7.3.1 system safety and non-flying public: need chunk handle. I read pages, not chunks, for system safety. I could cite chunk? I have not retrieved chunks from d2 for 7.3.1. I could query d2 for \"non-flying public\" or \"System Safety Analysis\". Let's get chunk handles for 7.3.1 and 7.3.3, 7.2 note about outside people. Then cite.\n\nAlso maybe 7.3.3 key control in type design. Query d2 \"key control\" maybe returns 7.3.3 and 7.3.7.1.2. Let's query \"System Safety Analysis\" and \"key control\"."
+      },
+      {
+        "thought": "## 结论先行\n\n运营方“地面运行不涉及飞行安全，所以两者都可以自动工作”这个前提不能同时适用于这两件设备。**气象雷达**并不是一律禁止自动工作，但必须针对地面滑行期间的自动辐射开展专项**危险评估**，并采取抑制或缓解措施；**IEC 3B 激光**则属于**明确禁止**：在地面和滑行期间不得使用，且钥匙控制必须处于关闭位置，因此不能以“不涉及飞行安全”为由让它在滑行时自动工作。\n\n## 一、气象雷达随应答机自动启动\n\nAC 20-182A 第 6.1.5 段专门讨论了这种构型：用应答机模式自动激活雷达，本意是让机组即使没有人工打开雷达，也能在起飞时获得前视风切变告警。该设计形成于“飞机滑上跑道前才打开应答机、离开跑道后才关闭”的年代；但 ASDE-X 雷达和 ADS-B 出现后，机组在滑行时通常让应答机保持“开启”，于是雷达可能在地面滑行阶段就自动辐射。飞机引导员和牵引车操作员常在极接近机头雷达罩的位置作业，这会对他们构成危险。因此，AC 要求针对前视风切变功能的自动激活特性开展危险评估，并把这种运行方式或该功能的任何地面自动激活特性纳入考虑<kb doc=\"AC_20-182A.pdf\" chunk_id=\"f0cdd104-5906-4bf2-905e-be003c5df91b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n处理要点：\n\n1. **不能直接把自动激活取消**。同一 AC 仍要求前视风切变功能在起飞时自动激活，以提供及时的起飞告警；6.1.5 的落脚点是“做危险评估”，其要求级别是“should”，而不是“必须拆除自动激活”。\n2. **评估对象是地面辐射风险**，即滑行时雷达罩前方的引导员、牵引车司机等地面人员，而不是飞行机组。\n3. **缓解措施可以从设计和程序两方面入手**：例如修改自动激活逻辑，或引入空地信号、称重开关等地面抑制条件，使滑行时雷达不辐射、到跑道口或起飞阶段再激活；或者在 AFMS/操作程序中规定滑行时雷达置于待命或关闭位，仅在起飞前激活。采用哪种方式，取决于危险评估结论和具体构型。\n4. 该 AC 本身不是强制法规，而是可接受的符合性方法之一；但若申请人声明按该 AC 符合，就必须在所有重要方面遵循它，危险评估不能省略。\n\n## 二、IEC 3B 不可见激光\n\nAC 20-183 对 AFMS 的强制限制写得很明确：**不得在地面或滑行、起飞、着陆期间使用激光；对于 FDA IIIb 和 IV 类以及 IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置**<kb doc=\"AC_20-183.pdf\" chunk_id=\"5c673968-7461-4dab-aca1-fa05a92eddbc\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n因此：\n\n1. **“自动工作”本身不符合经批准的 AFMS 限制。** 对 IEC 3B 来说，在地面滑行阶段，正确状态不是“自动发射”，而是“钥匙控制处于 OFF”。这不是飞行安全与地面安全之间的取舍问题，而是 AFMS 限制条款的直接要求。\n2. **地面人员也在防护范围内。** AC 20-183 在背景中明确，机载激光可能对飞行机组、乘客、其他航空器乘员以及**非飞行公众**造成眼部危害；第 7.3.5 段注还鼓励：当激光故障可能导致**机外人员**暴露超过 MPE 时，采用业界系统安全与开发保证标准<kb doc=\"AC_20-183.pdf\" chunk_id=\"705d1c3e-e4f6-498f-8ad2-378b8db71905\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。因此，“地面运行不涉及飞行安全”不能推出“地面可以随便辐射”。\n3. **安装层面还有配套要求**：安装型号设计必须包含适用的 21 CFR 1040 要求，例如钥匙控制、发射指示器、标签、远程联锁连接器，以及 FDA 差异中影响飞机安装的技术控制，例如飞机接口安全联锁<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。必要时应设置联锁，例如与雷达高度表交联，在低于规定高度时禁用激光。\n4. **若无法满足上述要求**，只能走“禁用激光功能”的路径：型号设计数据表明激光功能已禁用，并在 TCDS/STC 限制、AFMS 和标牌中作出相应声明；非激光功能（如 FLIR）仍可通电工作<kb doc=\"AC_20-183.pdf\" chunk_id=\"3330ba50-ed65-4a2f-84c2-d9b96ae84133\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n## 三、两者处理方式对照\n\n| 项目 | 气象雷达（应答机自动激活） | IEC 3B 不可见激光 |\n|---|---|---|\n| 地面/滑行自动工作 | 并非当然禁止，但必须做危险评估并处置 | 明确禁止；钥匙控制必须 OFF |\n| 主要依据 | AC 20-182A 6.1.5<kb doc=\"AC_20-182A.pdf\" chunk_id=\"f0cdd104-5906-4bf2-905e-be003c5df91b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> | AC 20-183 7.3.7.1.2<kb doc=\"AC_20-183.pdf\" chunk_id=\"5c673968-7461-4dab-aca1-fa05a92eddbc\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 主要受影响对象 | 机头雷达罩附近的地面引导/牵引人员 | 地面人员、非飞行公众及机上人员 |\n| 典型处置 | 评估后加地面抑制/联锁，或程序上滑行时置备用，保留起飞自动激活 | 取消地面自动发射，钥匙控制关闭；必要时加飞机接口联锁；无法满足则禁用激光功能 |\n| 对“地面不涉及飞行安全”的回应 | 前提不成立：地面人员安全仍需评估 | 前提不成立：AFMS 限制和 21 CFR 控制直接覆盖地面使用 |\n\n简言之：**气象雷达要做的是“评估 + 缓解”，不是简单放行；IEC 3B 激光要做的是“禁止 + 关闭/联锁”，没有“自动工作”的合规空间。**",
+        "iteration": 9,
+        "timestamp": "2026-10-22T14:38:37.890464+08:00",
+        "tool_calls": [],
+        "reasoning_content": "I have enough. Note c4 (from earlier) includes the note about people outside the aircraft (7.3.5 note). Good citation for \"ground people outside aircraft matter\".\n\nNow craft answer in Chinese. Structure:\n\n先给结论: 运营方的\"地面运行不涉及飞行安全，所以都可自动工作\"这个前提对两件事都不成立，但处理路径不同：气象雷达——不是一律禁止，而是必须做专项危险评估并处置地面辐射风险；IEC 3B激光——地面/滑行期间禁止使用且钥匙控制必须关闭，自动工作不可接受，必须联锁/关闭。\n\n1. 气象雷达\n- 依据 AC 20-182A 6.1.5 说明历史构型与现状：应答机自动激活雷达是为了起飞前视风切变告警；但 ASDE-X/ADS-B 使机组滑行时常开应答机，导致地面滑行时雷达自动辐射，危及机头雷达罩附近的引导员/牵引车操作员。AC 要求对这种运行或任何风切变功能地面自动激活特性做危险评估。\n- 处理: 不要直接取消起飞自动激活（6.1.2 要求起飞自动激活），而是评估+缓解：修改自动激活逻辑/增加地面抑制（如空地信号/称重开关），或规定滑行时雷达置备用、仅跑道口/起飞时激活；评估地面人员接近雷达罩的风险并形成文件。AC 是\"should\"，非强制，但作为可接受符合性方法须完整遵循。若作为型号设计更改，需评估并更新 AFMS/手册程序。\n\n2. IEC 3B 激光\n- AFMS 必须包含 7.3.7.1.2: 不得在地面或滑行、起飞、着陆期间使用激光；对 IEC 3B（以及 FDA IIIb/IV）钥匙控制在地面及滑行、起飞、着陆期间必须处于关闭位置。\n- 自动工作 = 违反经批准 AFMS 限制；地面人员（非飞行公众）也可能受照，AC 背景明确激光危害包括非飞行公众，7.3.5 注也鼓励对机外人员暴露使用安全标准。所以不能以\"不涉及飞行安全\"为由默认开启。\n- 处理: 关闭自动地面工作/将钥匙控制置 OFF；安装型号设计必须纳入 21 CFR 1040 的钥匙控制、发射指示器等，以及 FDA 差异的技术控制（如与雷达高度表接口的联锁）；AFMS 限制与用户信息、ICA、激光安全计划。若无法满足，只能按公共用途条款禁用激光功能（型号设计数据表明禁用，TCDS/STC限制、AFMS声明等），非激光功能（如 FLIR）可继续工作。\n\n3. 共同点/差异表:\n| | 气象雷达 | IEC 3B 激光 |\n是否自动地面工作 | 允许但须危险评估 | 禁止，钥匙控制OFF |\n依据 | AC 20-182A 6.1.5 | AC 20-183 7.3.7.1.2 |\n对象 | 地面引导/牵引人员 | 地面人员/非飞行公众 + 机组 |\n处理 | 评估 + 缓解/抑制 | 禁止 + 联锁/关闭 |\n\nAlso mention \"地面运行不涉及飞行安全\"混淆了\"飞行安全\"与\"地面人员安全\"; 适航批准/AFMS 限制并不只服务飞行安全.\n\nAdd citations inline. Use c2 for radar, c5 for laser limit, c8 for 7.3.3 key control, c4 for outside people note, c14 for public use disabled option maybe. Also maybe cite c12 for system safety analysis. Keep concise but complete.\n\nCitations format: <kb doc=\"AC_20-182A.pdf\" chunk_id=\"f0cdd104-5906-4bf2-905e-be003c5df91b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> etc. Same line.\n\nLet me write with headings and a table. Ensure Chinese default. Avoid over-length but thorough.\n\nOne nuance: question says \"另装有 IEC 3B 不可见激光\" — perhaps 3B laser is not necessarily \"surveillance\"; but AC 20-183 applies to non-required invisible-spectrum laser equipment. If it's required equipment, AC doesn't apply (1.3); but assume non-required. Could note assumption briefly: 按 AC 20-183（非必需、不可见光谱激光）处理; if it's required equipment, different path. Probably unnecessary but a short caveat is good? The question likely expects AC 20-183 application. Keep a note at end maybe.\n\nAlso note the radar AC applies to part 23/25 fixed wing for windshear; but general principle.\n\nLet's compose."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:37:41.485475+00:00",
+    "updated_at": "2026-10-22T06:38:37.901621+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 56328,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "369910ed507d333d49233fa2822f7941013fc479cc4593352f27a6f0c6b4fc47",
+      "knowledge_base_ids": [
+        "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": {
+      "cache_status": "hit",
+      "total_tokens": 201804,
+      "cached_tokens": 160512,
+      "prompt_tokens": 195396,
+      "cache_reported": true,
+      "cache_miss_tokens": 34884,
+      "cache_read_tokens": 160512,
+      "completion_tokens": 6408,
+      "context_token_scale": 0.7913961038961039
+    },
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

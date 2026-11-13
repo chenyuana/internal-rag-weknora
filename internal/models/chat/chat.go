@@ -26,9 +26,11 @@ type FunctionDef struct {
 
 // ChatOptions 聊天选项
 type ChatOptions struct {
-	Temperature float64 `json:"temperature"` // 温度参数
-	TopP        float64 `json:"top_p"`       // Top P 参数
-	Seed        int     `json:"seed"`        // 随机种子
+	// RequireImageInput forbids silently retrying visual-evidence answers without images.
+	RequireImageInput bool    `json:"-"`
+	Temperature       float64 `json:"temperature"` // 温度参数
+	TopP              float64 `json:"top_p"`       // Top P 参数
+	Seed              int     `json:"seed"`        // 随机种子
 	// MaxTokens and MaxCompletionTokens are aliases for one completion budget.
 	// Callers may set either; CompletionBudget() prefers MaxCompletionTokens.
 	// The outbound Chat Completions JSON carries exactly one of max_tokens or

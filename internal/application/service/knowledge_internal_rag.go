@@ -170,5 +170,24 @@ func (s *knowledgeService) ImportInternalRAG(ctx context.Context, kbID string, p
 	if err := s.chunkRepo.SaveChunks(ctx, stored); err != nil {
 		return nil, err
 	}
-	return &types.InternalRAGImportResult{KnowledgeID: knowledge.ID, Action: action, ChunkCount: len(payload.Chunks)}, nil
+	result := &types.InternalRAGImportResult{KnowledgeID: knowledge.ID, Action: action, ChunkCount: len(payload.Chunks)}
+	// Schedule only after external metadata is durable, so Wiki citations retain
+	// the ingestion desk's original provenance. Do not enable other postprocessors.
+	if err := s.enqueueInternalRAGWiki(ctx, kb, knowledge.ID); err != nil {
+		return nil, fmt.Errorf("document %s imported, but automatic Wiki scheduling failed: %w", knowledge.ID, err)
+	}
+	if kb.IndexingStrategy.WikiEnabled {
+		result.WikiStatus = "queued"
+	}
+	return result, nil
+}
+
+func (s *knowledgeService) enqueueInternalRAGWiki(ctx context.Context, kb *types.KnowledgeBase, knowledgeID string) error {
+	if !kb.IndexingStrategy.WikiEnabled {
+		return nil
+	}
+	_, err := s.EnrichExistingChunks(ctx, kb.ID, &types.ExistingChunksEnrichRequest{
+		KnowledgeIDs: []string{knowledgeID}, Wiki: true,
+	})
+	return err
 }

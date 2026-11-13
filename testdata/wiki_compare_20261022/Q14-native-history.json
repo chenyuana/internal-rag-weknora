@@ -1,0 +1,669 @@
+[
+  {
+    "id": "e3cf9f7f-9ada-4756-a08b-dbefd65e332a",
+    "request_id": "c2715613-6b76-40b5-bf70-20f15f97cfc1",
+    "session_id": "6836dd41-54b3-4908-b29f-42c7057348c1",
+    "role": "user",
+    "content": "原客舱板无批准燃烧数据，也没有备件。团队称“只能每换一种饰面就从飞机切一次板，而且一次燃烧试验就是烧一个试样”。请给出替代路径、减少切板的办法和试样数要求。若能以合理价格购买原板备件，结论如何变化？",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:31:15.455989+00:00",
+    "updated_at": "2026-10-22T06:31:22.496305+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "## Reference materials (source data)\n<documents>\n<document>\n<title>AC_20-181.pdf</title>\n<description>该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。</description>\n</document>\n<document>\n<title>AC_20-183.pdf</title>\n<description>该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。</description>\n</document>\n<document>\n<title>AC_20-180.pdf</title>\n<description>该咨询通告由美国联邦航空管理局发布，说明申请获批型号清单补充型号合格证（AML-STC）的可接受方法，并强调其非强制性、不构成法规。文件界定适用范围与参考文件，解释以基线数据覆盖多个机型、同一类别限制，以及每个机型需符合14 CFR part 21第21.20条并提交型号设计、证实数据和飞行手册补充。文件还说明不得仅引用第三方TC/STC编号作为合规依据，并概述型号设计更改及附录中机型清单各栏目的填写要求。</description>\n</document>\n<document>\n<title>AC_20-182A.pdf</title>\n<description>该咨询通告为满足最新版 TSO-C63 的航空器天气雷达系统提供初始及后续适航批准指导，涵盖天气探测与地面测绘、前视风切变探测、前视湍流探测和大气威胁感知能力，适用于 14 CFR 第 23、25、27、29 部航空器。文件说明该通告非强制性，是可接受的符合性方法之一，并面向通过型号合格证、补充型号合格证等申请适航批准的申请人。通告还给出显示告警、颜色使用、系统接口及湍流与大气威胁显示等方面的通用要求，并取消 2014 年发布的 AC 20-182。</description>\n</document>\n<document>\n<title>AC_20-184.pdf</title>\n<description>本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。</description>\n</document>\n</documents>\n<context id=\"1\">c)\t TSO-C201 Categorizations and Applications; and, \nd)\t Operational Considerations. \n2. AHRS AIDING SOURCES. An AHRS aiding source is an internal or external system which \nprovides additional sensor information to the core strap down attitude heading reference function. \nGlobal Navigation Satellite System (GNSS) and air data computer (ADC) aiding sources are \ncommonly used to identify aircraft accelerations to reduce errors in the attitude function. Flux valves \nand magnetometers provide magnetic reference for heading functions, and numerous sources can be \nused for performance monitoring. Some aiding designs only supplement the AHRS functionality, and \nloss of aiding may only have limited effect on AHRS performance. On other designs, aiding may \nprovide integral information where loss of the aiding source could lead to loss of AHRS functionality. \n2.1 Internal Aiding Source Installations. Evaluate internal aiding sources as part of the overall \narticle’s intended function evaluation. The internal aiding source should be qualified as part of the \nTSO-C201 design approval process. Ensure the aiding source provides the needed inputs with the \nappropriate accuracy, integrity, availability, and software level and electronic hardware design\n\nassurance for its intended use. For example, if the system was developed for a general aviation \naircraft, but will be installed on a commuter aircraft, then the internal aiding source may need to be \nre-evaluated to ensure the appropriate compatibility with the aircraft’s design architecture and its \nusage. \n2.2 External Aiding Source Installations. This paragraph applies to external aiding sources not \nqualified as part of the TSO-C201 article’s design approval. \n2.2.1 External Aiding Source Performance. When the AHRS requires an external aiding source, \nensure the aiding source installed in the aircraft provides the appropriate accuracy, integrity, \navailability, software level and electronic hardware design assurance. \n2.2.2 External Aiding Source Annunciations. The applicant should determine how an external \naiding source failure and annunciation affects AHRS performance. Conduct ground and flight testing \nas necessary to ensure appropriateness of the annunciation and pilot action. Any annunciations should \nbe operationally relevant to minimize flightcrew workload; should be clear, unambiguous and timely; \nshould only be indicated while the condition exists; should be consistently located in a specific area of \nthe electronic display; and be located in the flightcrew’s primary field of view when immediate \nflightcrew awareness is required. If testing is not possible, provide an analysis to ensure the \nappropriate action occurs with degradation or failure of the external aiding source. For example, if the \nAHRS disables the attitude output or switches modes when the aiding source fails, as part of the \n§§23.1309, 25.1309, 27.1309, or 29.1309 safety analysis, ensure the AHRS acts per design when the \naiding source is intentionally disabled. \n2.3 GNSS Aiding. GNSS refers to all types of positioning satellites which provide autonomous \ngeo-spatial positioning. Common GNSS systems include, but are not limited to, the navigation signal \ntiming and ranging (NAVSTAR) global positioning system (GPS) (U.S.), globalnaya navigatsionnaya \nsputnikovaya sistema (GLONASS) (Russian) and Galileo (Europe). GNSS velocity data can be used \nto compute longitudinal accelerations to help eliminate errors. \n2.3.1 GNSS Qualification: When interfacing the AHRS to an external GNSS, ensure the external \nGNSS provides the needed inputs with the appropriate accuracy, integrity, availability, and software \nand hardware design assurance.</context>\n<context id=\"2\">system and laser equipment as well as the associated functional failure \ncondition classifications.\n7.3.1.5 Other Functional Failure Condition.\nOther malfunctions not described in paragraphs 7.3.1.1 through 7.3.1.4\nof this AC should be identified and assessed to determine their functional \nfailure conditions.\n\n7.3.1.6 Loss of Function.\nBecause the laser is nonrequired equipment, the functional failure \ncondition for loss of the laser function is “no effect.”\n7.3.2 NOHD and MPE Calculations.\nYou should provide a report that documents how the NOHD and MPE were calculated \nto include all equations, references for those equations, table references, equation \nparameters (such as wavelength, divergence, exposure time, and power), dimensions for \nthe reflected and direct radiation paths into aircraft’s windows, and justification for the \nexposure duration. For laser illuminators, spotters, range finders, and other nonscanning \nlasers, the NOHD exposure duration should be based on the maximum exposure \nduration expected, but not less than 10 seconds. AC 70-1, Outdoor Laser Operations, \nand American National Standards Institute document ANSI Z136.1, American National \nStandard for Safe Use of Lasers, provide acceptable means to calculate MPE and \nNOHD.\n7.3.3 Installation Type Design.\nThe installation type design must include all the 21 CFR 1040 requirements that would \nbe applicable to the installation (such as the key control, emissions indicator, labels, and\nremote interlock connector) and the technical controls (such as the aircraft interface \nsafety interlock) from the FDA variance that affect the aircraft installation.\n7.3.4 Software.\nIf the laser equipment includes software that can contribute to malfunctions described \nin paragraph 7.3.1 above, develop the software using the guidance in AC 20-115C, \nAirborne Software Assurance, to a software level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1.\n7.3.5 AEH.\nIf the laser equipment includes custom AEH (such as an application-specific integrated \ncircuit, field programmable logic device, or programmable logic device), which can \ncontribute to the malfunctions described in paragraph 7.3.1 above, develop the AEH \nusing RTCA, Inc., document RTCA/DO-254, Design Assurance Guidance for Airborne \nElectronic Hardware, to a design assurance level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1. For custom AEH \nclassified as simple, paragraph 1.6 of RTCA/DO-254 applies.\nNote: We encourage the use of industry-recognized system safety standards (such as\nSAE International ARP 4761 and IEC 61508) and development assurance standards \n(such as RTCA/DO-178C, RTCA/DO-254, and IEC 61508) for the laser equipment \nwhen its malfunction could result in an exposure that could exceed the MPE for people\noutside the laser-equipped aircraft.\n7.3.6 Configuration Control.\nUnapproved changes to the laser equipment or the installation should not be made \nbecause they could affect the airworthiness (for example, electromagnetic and\n\nenvironmental compatibility or new failure modes) of the equipment installation and \ninvalidate the laser equipment certification and FDA-approved variances. The applicant \nshould provide a plan for maintaining configuration throughout the product life cycle. \nIf the installation results in a modification to the laser equipment as certified by the \nlaser equipment manufacturer, the laser equipment must be recertified as described \nin § 1040.10(i).</context>\n<context id=\"3\">established, then AML-STC is not the proper method of approval.\nAdvisory\nCircular\n\n5. AML-STC. The AML-STC must comply with the requirements of 14 CFR part 21,\nsubpart E, for the issuance of STCs.\na. The applicability of the baseline data for each model must clearly be established.\nb. An AML-STC is issued for aircraft that are type-certificated in the same category (e.g., an \nAML-STC for an aircraft certificated under 14 CFR part 23 cannot include aircraft certificated \nunder parts 25, 27, or 29. Further, it is recommended that each category of aircraft within 14 CFR \npart 23 (i.e., normal, utility, acrobatic, and commuter) have a separate AML-STC due to possible \ndifferences that may exist in the certification requirements. This depends on the type of \nmodification to the affected area (e.g. structure, powerplant, systems, avionics, etc.).\nCoordination with the responsible ACO may be required to review the proposed modification and \ndetermine whether it is necessary to issue a separate AML-STC to document the specific \ncertification requirement for each category.\nc. Compliance with the requirements of section 21.20 and applicable data must be shown for \nevery model on the AML (e.g., type design, substantiating data, and flight manual supplement\n(FMS)). Whether this data is generated from testing (e.g., flight testing), or re-submitted from a\nprevious approval, substantiation for each additional aircraft model is required. When adding new \nmodel(s) or amending an existing model, an AML-STC approval allows the use of previouslysubmitted compliance data that are applicable without the need for further review. If adding a new\nmodel that has differences from the previously-approved models, then further substantiation may\nbe required in order to address those differences. The AML-STC is not meant to be a blanket \napproval by allowing additional models without further substantiation.\nd. The certification basis and amendment level to the areas affected by the modification is \nestablished for each model.\ne. The modification to the affected area does not create an acoustical change to the typecertificated product per section 21.93(b).\nf. The Flight Manual Supplement (FMS) is applicable to each model per section 21.5.\ng. The AML-STC may not be suitable for systems that can directly control the aircraft. For\nexample, autopilot installations or similar systems that involve control inputs may require careful \ndesign installation, and testing on each proposed model regardless of baseline data shared between \nthem. For these types of installations, there may be serial number specific requirements that have\nto be assessed on a case-by-case basis. Another example would be an STC for reduced vertical \nseparation minimum (RVSM) equipment, where the model and serial number specific static\nsource error correction curve for RVSM approval is only applicable to a single serial number\naircraft.\nh. It is important for those who are seeking an AML-STC approval to discuss their plan early\nwith their respective aircraft certification office (ACO). Coordination with the ACO is imperative\nin order to determine any outstanding issues that may have an impact on a multi-model installation \napproval.</context>\n<context id=\"4\">variance’s technical controls applicable to the installation (such as aircraft interface \nsafety interlock) have been satisfied. \n7.2 FDA Variance.\nAccording to the FDA, surveillance lasers and LIDAR systems are considered \n“surveying, leveling, and alignment laser products,” which are specific purpose laser \nproducts described in § 1040.11(b) and limited to class I AEL for the invisible laser \nwavelengths. However, most airborne surveillance lasers and some LIDARs exceed the \nallowable class I AELs for the invisible wavelengths and therefore require variances as \ndescribed in § 1010.4. For products labeled under the classification system of the IEC, \nclasses 1, 2, and 3R are acceptable class limits for an invisible emission and therefore \ndo not require a variance. The FDA variance may require administrative controls \n(for example, the laser equipment purchasing organization is to maintain an active \nprogram of training for its employees in the safe use of the laser system) and technical \ncontrols (such as a range finder cutoff that disables the laser when the distance between \nthe laser’s aperture and the object being exposed is less than the NOHD).\n7.3 Aircraft Laser Equipment Installation.\n7.3.1 System Safety Analysis.\nYou must perform a system safety analysis to assess whether the installed laser \nequipment meets 14 CFR 23.1309, 25.1309, 27.1309, or 29.1309. Refer to \nAC 23.1309-1, System Safety Analysis and Assessment for Part 23 Airplanes. For \npart 25 airplanes, refer to AC 25.1309-1, System Design and Analysis. For part 27 \nrotorcraft, refer to AC 27.1309, Equipment, Systems and Installations. For part 29\n\nrotorcraft, refer to AC 29.1309, Equipment, Systems and Installations. The systems \nsafety assessment should address the following:\n7.3.1.1 Laser Equipment Malfunction.\nLaser equipment malfunction resulting in an aircraft crewmember’s or \npassenger’s eye or skin being exposed to invisible laser radiation \nexceeding the MPE is considered no less than a hazardous functional \nfailure condition and could be catastrophic if continued safe flight is not \npossible because of the severity of the laser damage to a pilot’s eye or \nskin. In your system safety assessment, you should document the rationale \nfor a hazardous functional failure condition classification. If there is no \ndirect or reflected path into the cockpit or cabin because of the location of \nthe laser and physical shielding provided by the aircraft structure, this \nfailure condition does not apply. \n7.3.1.2 System Safety Considerations.\nIn assessing the failure conditions, you should consider direct and \nreflected radiation; the location of the laser, laser beam steering \nmechanism, and circuitry; the use of mechanical, software, or airborne \nelectronic hardware (AEH) stops that prevent the laser from being steered \nin a direction that could result in the aircraft occupants’ eyes being \nexposed to direct or reflected radiation; laser arming and firing circuitry; \nand other design features whose malfunction could contribute to an \ninadvertent exposure or an exposure that exceeds the MPE (such as failure \nof the internal laser diffuser used to reduce the AEL). If the laser’s\nsteering stops are implemented in software or AEH, their assurance level \nshould be commensurate with the functional failure condition associated \nwith the stops. Reflections off any part of the aircraft (such as the \nstructure, blades, skids, or landing gear) should be considered specular.\n7.3.1.3 Aircraft Structure. \nAny malfunction resulting in damage to aircraft structure due to laser \nexposure should be assessed to determine the extent of aircraft damage \nand the associated functional failure condition classification.\n7.3.1.4 Equipment Interfaces.\nAny malfunction of the laser equipment’s interfaces with other aircraft \nsystem will have to be assessed to determine the effect on the aircraft \nsystem and laser equipment as well as the associated functional failure \ncondition classifications.</context>\n<context id=\"5\">AC and integration testing versus dedicated forward-looking windshear flight testing. \n9.2.1 Penetration Flight Evaluation.\nPenetration flights will typically be accomplished by the radar manufacturer as part of the \nTSO authorization. If penetration data and analysis are available and you determine they \nare applicable, then you do not need to conduct penetration flight tests. Previously\n\napproved test data generated during the TSO authorization or previous certification effort \nis acceptable. If forward-looking windshear capability was not previously demonstrated, \nthen verify the detection capability of the forward-looking windshear system by flying in \nareas of convective activity that can be verified by in-situ measurements, appropriate \nground-based radar systems, or the equivalent. \nNote: Flying in or near storm cells can be extremely hazardous. Flight crews should \nexercise good judgment for safe flight based on knowledge of their own abilities and of \nthe capability of the aircraft when considering approaching or penetrating any storm cell \nor turbulent area. \n9.2.2 Clutter Suppression Flight Test.\nEvaluate the system’s ability to reject spurious conditions (e.g., clutter suppression, \nbi/multi-static signal interference, range ambiguous returns, and radome effects). The \nflight tests may be conducted under visual meteorological conditions. Conduct this \nevaluation at one or more airports with the following characteristics: \n9.2.2.1 Expressways and high-volume surface streets within approximately 1 nm \nof the runway. \n9.2.2.2 Nearby taxiing aircraft. \n9.2.2.3 Concentrated urban clutter. The clutter should occupy a minimum area of \napproximately 1 nm surrounding the airport. \n9.3 Turbulence Detection or Atmospheric Threat Awareness. \nFollow the TSO installation instructions to verify performance of turbulence detection or \natmospheric threat awareness functions. Atmospheric threat awareness functions could \ninclude, but are not limited to, hail and lightning indication. Installation testing of these \nfunctions often relies on general weather radar functional testing as described in \nparagraphs 9.1.1 and 9.1.2 of this AC and integration testing versus dedicated flight \ntesting. You should attempt to evaluate the performance of these functions against \noperationally significant weather when weather is reasonably available and you can do \nso without placing the aircraft in the hazardous weather. This performance evaluation \nshould ensure the depiction of turbulence or weather hazard is consistent with actual \nweather phenomenon. Data from the radar manufacturer may be used to supplement or \nreplace additional flight testing if the data is determined to be applicable. \n10 AIRCRAFT FLIGHT MANUAL/SUPPLEMENT (AFM/S). \nFollow AC 23-8, Chapter 6, Section 3 for small airplane flight manual/supplement. \nFollow AC 25.1581-1, Airplane Flight Manual, for transport category airplane flight \nmanual/supplement. Follow AC 27-1 and 29-2 as appropriate for rotorcraft flight \nmanual/supplement. You should incorporate the following radar specific information in \nthe AFM/S:\n\n10.1 Describe the weather and ground mapping, windshear, turbulence detection, and/or \natmospheric threat awareness capabilities of the system. \n10.2 Provide limitations that are necessary for the safe operation of the weather radar system. \n10.3 Describe the appropriate actions and recovery procedures for annunciations and alerts. \n10.4 Describe the conditions necessary for automatic activation of the system, if applicable. \n10.5 Describe when alerts are provided and when they are inhibited. \n10.6 Outline hazard areas associated with radar operation on the ground. \n10.7 Provide normal and abnormal operating procedures. \n11 INSTRUCTIONS FOR CONTINUED AIRWORTHINESS (ICA). \n11.1 You should incorporate the following information into the ICA: \n11.1.1 Maintenance instructions for the radar system and radome. \n11.1.2 Description of the interface between the radar and the aircraft.</context>\n<context id=\"6\">7.1 Laser Equipment Certification Yes The laser equipment must comply with all \napplicable FDA 21 CFR standards. Since \nthe laser equipment complies with IEC \nstandard 60825-1, the FDA’s Laser Notice \nNo. 50 may be used to determine what \nIEC 60825-1 guidance can be substituted \nfor the FDA’s 21 CFR standards. \n7.2 FDA Variance No Since the LIDAR is a class 3R laser, a \nvariance is not required \n7.3.1 System Safety Analysis Yes The results of the systems safety analysis \nfor paragraphs 7.3.1.1, 7.3.1.2, 7.3.1.3, \n7.3.1.4, and 7.3.1.5 should be \ndocumented. For this example, the \nsystem safety analysis would document \nthe rationale why the functional failure \nconditions in paragraphs 7.3.1.1, 7.3.1.2,\n\nAppendix B \nB-2 \n7.3.1.3, 7.3.1.4, and 7.3.1.5 are not \napplicable. \n7.3.1.1 Laser Equipment Malfunction No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.1 is not applicable. \n7.3.1.2 System Safety Considerations No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.2 is not applicable. \n7.3.1.3 Aircraft Structure No A class 3R laser is not capable of burning \nor melting the aircraft structure or paint. \n7.3.1.4 Equipment Interfaces No The laser equipment does not interface \nwith any other are aircraft systems (e.g. \nattitude heading reference system) other \nthan electrical power. The electrical \npower wiring is protected with an \nappropriately sized circuit breaker. \n7.3.1.5 Other Functional Failure No Other functional failure conditions should \nCondition be assessed for each equipment \ninstallation. This specific equipment \ninstallation does not have other functional \nfailure conditions (such as the laser sensor \nfails to retract posing a hazard during \nlanding). \n7.3.2 NOHD and MPE Calculations Yes Since this is not a class I laser, the NOHD \nand MPE should be calculated and \ndocumented in a report. \n7.3.3 Installation Type Design Yes The type design for the installation should \ninclude all the applicable 21 CFR 1040 \nrequirements (such as laser emissions \nindicator in the cockpit, labels) \n7.3.4 Software No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment software \nwould not have to be developed using AC \n20-115C. \n7.3.5 AEH No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment AEH \nwould not have to be developed using AC \n20-152. \n7.3.6 Configuration Control Yes Changes to the laser equipment could \naffect the laser equipment installation\n\nAppendix B \nB-3 \nairworthiness and the laser equipment \ncertification.\n7.3.7 Aircraft Flight Manual Yes An approved AFMS is required for laser \nSupplement equipment installation. \n7.3.7.1 Limitations Yes The following AFMS limitations would \napply: \n7.3.7.1.1 Laser must not be used to radiate \nother flying aircraft.\n7.3.7.1.2 Laser must not be used on the \nground or during taxi, takeoff, or landing. \n7.3.7.1.3 Laser must not be used to radiate \npeople when the distance between the \nlaser and the people is less than NOHD. \nThe NOHD should be specified. \n7.3.7.1.4 Atmospheric conditions when \nthe laser must not be used. \n7.3.7.1.5 Flight conditions when the laser \nmust not be used (such as angle of bank, \nflying in close proximity to terrain, or \nhoist operations). \n7.3.7.1.7 Aircraft configurations when the \nlaser must not be used (such as cargo \nmirrors).</context>\n<context id=\"7\">3.1.7 Shop-Level Maintenance Procedures.\nShop procedures must follow the lithium battery manufacturer’s recommendations.\n3.1.8 Aircraft Battery Inspection.\nEvidence of battery failure can sometimes be detected by a visual inspection.\nManufacturer-recommended inspections should include, but not be limited to, the \nfollowing actions:\n3.1.8.1 Inspect battery terminals and all other connections for evidence of \ncorrosion, pitting, arcing, and burns. Clean as required.\n3.1.8.2 Inspect the battery for improper installation (loose terminal screws, battery \nterminal links, or connector).\n3.1.8.3 Inspect the battery mounting.\n3.1.8.4 Inspect for evidence of physical damage including heat \ndamage/discoloration.\n3.1.9 Batteries in a rotating stock must be functionally checked at the manufacturer’s \nrecommended inspection intervals. Some failure modes may include degraded charge \nretention capability, settling of particulates, or other damage due to prolonged storage.\nBatteries in rotating stock may also require periodic servicing per the manufacturer’s \ninstructions.\n3.2 Aircraft Battery Replacement.\n3.2.1 Make sure replacement batteries are in airworthy condition. Refer to the battery \nmanufacturer maintenance manuals for proper maintenance of lithium batteries. Refer \nto the aircraft maintenance procedures for replacement of lithium batteries.\n3.2.2 The ICA should include the manufacturer’s recommendations for the battery mandatory\nreplacement schedule and periodic maintenance.\n\n3-3\n3.2.3 Installation of lithium batteries differs from aircraft system to aircraft system. Refer to \nthe applicable aircraft manuals to remove and install batteries.\n3.2.4 When replacing batteries, check for corrosion and moisture on the battery interfaces.\n3.2.5 When replacing batteries, check for short circuit to battery case such as insulation \nresistance test.\n3.2.6 The maintenance record should reflect all battery replacements. Record the expiration \ndate of the battery.\n3.2.7 The lithium batteries should be replaced with an approved battery for the specific \naircraft application.\n3.2.8 Deep discharge may result in a potentially unsafe condition. Replace the battery based \non the manufacturer’s recommendation.\n3.3 Aircraft Battery Storage and Handling.\n3.3.1 Storage requirements can vary with the battery type, so follow the manufacturer’s \nrecommended storage procedures to achieve the best results.\n3.3.2 Record the date of charging. If the battery is not used within the manufacturer’s \nrecommended interval, service the battery per the manufacturer’s recommendation.\n3.3.3 To maintain battery integrity, follow the manufacturer’s recommendation for charged \nbatteries being held in “ready for service” areas.\n3.3.4 Handling procedures and precautions vary with battery size and configuration. Follow \nthe manufacturer’s recommendation to prevent mishandling of the battery.\n3.3.5 Follow the manufacturer’s recommendation procedure to prevent electrostatic discharge \nduring storage and handling.\n3.3.6 For packaging and shipping, follow the manufacturer’s recommended procedures. \n3.3.7 Check batteries before use for any leakage or deformity. Do not use the batteries if there \nis any evidence of leakage or deformity.\n3.3.8 Aircraft vibration and/or contact oxidation can result in poor electrical connections. \nEnsure proper connector maintenance procedures are followed.\n3.3.9 Observe the following precautions when handling lithium batteries:\n3.3.9.1 Do not store lithium batteries with other hazardous or \ncombustible materials.\n3.3.9.2 Do not heat or incinerate lithium batteries.\n\n3-4\n3.3.9.3 Do not dispose of lithium batteries with other waste unless allowed by \napplicable regulations.\n3.3.9.4 Use special care in handling lithium batteries. Do not open, puncture, crush, \ndisassemble, or subject batteries to physical abuse.\n3.3.10 Lithium batteries can be a personal safety hazard due to the possibility of lethal shock \nand must be labeled to clearly indicate the hazard.\n3.3.11 Follow all manufacturer’s recommended safety precautions and procedures.</context>\n<context id=\"8\">with the most recent revision of RTCA/DO-254, Design Assurance Guidance for \nAirborne Electronic Hardware, and AC 20-152.\n2.7 Health Monitoring.\nLithium batteries should be stored in accordance with the manufacturer's \nrecommendations for state of charge and temperature; consideration should be provided \nfor any monitoring circuitry that may drain the battery during the storage period.\nAdditionally, overcharging of individual cells could lead to thermal runaway. Health \nmonitoring of lithium batteries needs to be taken into account during testing and \ncertification to ensure that proper state of charge can be maintained.\n\n2-6\n2.8 Flammability.\nAircraft batteries must meet the applicable flammability requirements of \n§§ 23/25/27/29.853, 23/25/27/29.863, and 25.869 that ensure the protection of structure \nand critical systems. Test the materials to ensure they meet applicable requirements of \n§§ 23/25/27/29.853, 23/25/27/29.863, and 25.869.\nThe FAA Aircraft Materials Fire Test Handbook, DOT/FAA/AR-00/12, describes an \nacceptable means of compliance with 14 CFR part 25, Appendix F. If thermal and \nacoustic insulation material is used as part of the battery equipment and exposed, the \nrequirements of § 25.856(a), Appendix F, part VI, at amendment 25-111 (or later \namendment) must be met. Refer to the test methods described by AC 25.856-1, \nThermal/Acoustic Insulation Flame Propagation Test Method Details.\n2.9 Instructions for Continued Airworthiness (ICA).\n2.9.1 During the certification process of the lithium batteries, complete the ICA in accordance \nwith the following as applicable to the certification basis of the product:\n2.9.1.1 14 CFR part 21.50(b);\n2.9.1.2 14 CFR part 23/25/27/29.1529;\n2.9.1.3 14 CFR parts 25.1709 and 25.1729;\n2.9.1.4 14 CFR part 23, Appendix G;\n2.9.1.5 14 CFR part 25, Appendix H;\n2.9.1.6 14 CFR parts 27/29, Appendix A; and\n2.9.1.7 FAA Order 8110.54, Instructions for Continued Airworthiness, \nResponsibilities, Requirements, and Contents.\n2.9.2 Develop the ICA so it is compatible with other maintenance instructions for the aircraft.\n2.9.3 Refer to chapter 3 of this AC for additional details specific to the maintenance of \nlithium batteries on aircraft.\n2.9.4 The ICA must contain an “Airworthiness Limitations” section if deemed necessary. The \nAirworthiness Limitations section is FAA-approved and specifies maintenance required \nunder §§ 43.16 and 91.403, unless the FAA has approved an alternative program.\n2.9.5 The ICA should also include, but are not limited to, the following information:\n2.9.5.1 Specifics of the lithium batteries installation, including individual \ncomponent part numbers and any other unique installation requirements;\n2.9.5.2 Electrical wiring diagrams/schematics, electrical equipment drawing;\n\n2-7\n2.9.5.3 Maintenance instructions, basic control and operation, testing, servicing, \nmaintenance schedule, inspection, troubleshooting, removing and replacing \nparts, repairs, special tools, fixtures and equipment, component manual; and\n2.9.5.4 Configuration control, storage instructions.\n2.9.6 The ICA must contain the recommended manufacturer’s maintenance and inspection \nrequirements to ensure the batteries whose function is required for safe operation of the \naircraft will perform their intended function as long they are installed in the aircraft. \nThe ICA must contain:\n2.9.6.1 Operating instructions and equipment limitations in an installation \nmaintenance manual.\n2.9.6.2 Installation procedures and limitations sufficient to ensure cells or batteries, \nwhen installed according to the installation procedures, still meet the \nairworthiness requirements of the aircraft. The limitations must identify \nany unique aspects of the installation. \n2.9.6.3 Maintenance requirements for measurements of battery capacity at \nappropriate intervals will be performed to ensure the batteries, whose \nfunction is required for safe operation of the aircraft, will continue to meet \ntheir intended function as long as they are installed in the aircraft.</context>\n\n## Request metadata\nCurrent time: 2026-10-22 Thursday\n\n## User request\n原客舱板无批准燃烧数据，也没有备件。团队称“只能每换一种饰面就从飞机切一次板，而且一次燃烧试验就是烧一个试样”。请给出替代路径、减少切板的办法和试样数要求。若能以合理价格购买原板备件，结论如何变化？\n",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "63cb02e3-3ea1-4a70-9485-404e26d09015",
+    "request_id": "c2715613-6b76-40b5-bf70-20f15f97cfc1",
+    "session_id": "6836dd41-54b3-4908-b29f-42c7057348c1",
+    "role": "assistant",
+    "content": "## 先说明证据范围\n\n检索到的知识库文献是 AC 20-180（AML-STC）、AC 20-181（AHRS）、AC 20-182A（气象雷达）、AC 20-183（激光设备）和 AC 20-184（锂电池），都不涉及客舱内饰板的燃烧合格性。因此，以下内容是依据 14 CFR 25.853 / 附录 F 及 FAA 防火测试实践的通用适航思路，需要以现行附录 F 原文、FAA《Aircraft Materials Fire Test Handbook》以及你们型号的认证基础和修正案级别为准。\n\n## 一、先纠正两个前提\n\n**“只能从飞机上切板”不是唯一路径。** 法规要求试样“代表装机件”，即材料、结构、厚度、胶层、饰面、固化/压制工艺一致；并未要求试样必须从飞机上切下来。用同批次、同工艺制作的试验板，或从可拆卸的侧壁板/顶板上取试样，都是常见做法。\n\n**“一次燃烧试验烧一个试样”本身没错，但它不等于“换一种饰面就要切一次飞机板”。** 一个试验条件通常需要 3 个有效试样；一个条件烧 3 个试样，只代表一个条件需要 3 个试样，不代表需要 3 块飞机板。一块 2 ft × 4 ft 的板，按 3 in × 12 in 下料，理论上可出几十个试样。真正限制不是“试样消耗”，而是“是否有代表性板材来源”。\n\n## 二、替代路径（按优先顺序）\n\n1. **先找原始批准数据，而不是先切板。**\n   如果这块板是 TC 或 STC 的一部分，TC/STC 持有人手上应有 25.853 的符合性数据（燃烧报告、材料规范、工艺规范）。即使运营人没有，也可以向 TC/STC 持有人或板件供应商索取。很多时候“无批准燃烧数据”只是“文件没传到运营人手里”，并不等于“从未做过”。\n\n2. **用同规范、同工艺制作的试验板。**\n   按原板的结构逐层复现：装饰层（laminate/film）、胶膜、芯材/基材、厚度、压制温度压力与固化制度。只要能够说明“与装机件代表”，就不需要动飞机。关键是要有材料批次、工艺记录和结构剖面图作为证据。\n\n3. **只鉴定“变更的饰面系统”，而不是整块板。**\n   如果基材和胶层未变，只有装饰膜/漆层颜色或牌号变化，可以把试验聚焦在“饰面 + 胶 + 基材”的组合上；若供应商能证明该饰面体系在相同克重/厚度下燃烧性能不变，可进一步减少试验矩阵。\n\n4. **按“家族/最坏情况”分组，而不是每个饰面各做一套。**\n   同一化学体系、仅颜料或色号不同的饰面，可做分组论证，选风险最高的代表（通常深色、高颜料/金属颜料、最厚胶层）做试验，其余以工程分析覆盖。前提是能证明色料/批次不显著影响 12 s/60 s 垂直燃烧、热释放和烟密度。\n\n5. **走 DER/ODA 的符合性声明或“无实质性更改”判定。**\n   如果变更被判定为不影响已批准的燃烧合格性，可由 DER/ODA 出符合性 finding，或与 ACO 做 MOC 协调，避免重复试验。\n\n6. **最后才考虑从飞机上取板。**\n   优先取可拆卸的侧壁板/顶板/柜板，取完成后再装回或补板；不要在承力或受损区域取样。\n\n## 三、减少切板的具体做法\n\n- **先确认试验矩阵，不要“全套都做”。** 很多客舱板只适用 12 s 或 60 s 垂直燃烧；热释放（OSU）和烟密度通常只在适用 § 25.853(d) 的大型运输类飞机上才需要。矩阵缩小一半，试样数就少一半。\n- **一次下料、长期留样。** 按试样尺寸做排样（nesting），从一块板的平整区域一次切出全部条件所需试样，并额外留 1–2 个备样；标注批次、方向、饰面编号，建立“试样库”。\n- **取“代表性区域”。** 避开边缘、紧固件孔、拼接缝、修补区和已受热/受污染区域；试样方向（经纬向）要与装机件一致。\n- **用“母板 + 复制板”模式。** 拆下一块板作为母板，测量剖面和工艺参数，复制若干试验板；以后换饰面只在复制板上做，不再动飞机。\n- **把“换饰面”变成“换面层”。** 若基材已合格，只对新面层做材料级试验，再以胶接工艺一致性论证覆盖整板。\n- **和实验室一起排期。** 燃烧试验是破坏性的，排样时把“首轮 3 个 + 复测 2–3 个”一起切出来，避免失败后重新找板。\n\n## 四、试样数要求（通用矩阵）\n\n| 试验 | 典型试样尺寸 | 有效试样数 | 说明 |\n|---|---|---|---|\n| 12 s 垂直燃烧（附录 F Part I） | 3 in × 12 in | 3 | 每个条件 3 个；按平均值判定，具体看条款是否有单件限制 |\n| 60 s 垂直燃烧（附录 F Part I） | 3 in × 12 in | 3 | 与 12 s 同时适用时共 6 个 |\n| 热释放 OSU（Part V，如适用） | 6 in × 6 in | 3 | 通常判定平均峰值 HRR 和 2 min 总热释放 |\n| 烟密度（Part VI，如适用） | 3 in × 3 in | 3 | 通常判定平均 Ds |\n| 45°/60° 等其他条件（如适用） | 按条款 | 3 | 仅在被适用条款要求时做 |\n\n要点：\n\n- **“一个条件 3 个试样”是常规要求，不是“一个试样代表一个条件”。** 三个试样是取平均、覆盖批次/位置差异用的。\n- **复测要预留。** 若某个试样因缺陷或边缘效应异常，通常需要补充试样复测；建议每个条件多切 1–2 个备样，关键项目按 2 倍准备。\n- **不是所有板都要做全部四项。** 先按安装位置和认证基础确定适用条款，再定矩阵；这比“每换饰面全套做一遍”省得多。\n\n## 五、如果能以合理价格买到原板备件，结论怎么变\n\n**结论会明显改善，而且应优先买。**\n\n1. **“切飞机板”这个约束基本消失。** 备件就是最理想的代表性试样来源：同件号、同构型、同工艺，直接下料即可，不用拆装机件，也不影响适航状态。\n2. **可以建立“试样库/备件库”。** 一次采购若干块，覆盖首轮试验、复测和未来几次饰面变更；把“每次换饰面切一次飞机”变成“从备件库取试样”。\n3. **经济性通常更优。** 一块备件的价格，往往低于“拆板—取样—补板—恢复—停场”的综合成本；即使备件单价不低，也应把停场和工时算进去比较。\n4. **但仍有两个前提不能省：**\n   - **构型一致性**：备件件号、 build standard、饰面/胶层/基材必须与装机件一致；若备件是旧构型或不同批次，试验数据未必能代表当前装机件。\n   - **变更后的饰面仍要鉴定**：备件若是旧饰面，换新饰面时仍需在备件（或复制板）上施加新饰面再做试验；备件解决的是“基板来源”，不自动解决“新饰面合格性”。\n5. **建议的决策顺序：**\n   - 先向 TC/STC 持有人或供应商索取既有燃烧数据；\n   - 无数据则买备件，建立试样库；\n   - 备件不可得，再做同规范复制试验板；\n   - 最后才从飞机上取可拆卸板。\n\n**一句话结论：** “每换一种饰面就从飞机切一次板、一次试验烧一个试样”是把“试样消耗”误当成“板材来源约束”。先缩小试验矩阵、用同规范试验板或备件建立试样库、按家族/最坏情况分组，通常就能避免反复切飞机；若能合理价买到原板备件，应优先采购并把它作为长期试样来源，剩下的只是构型一致性和新饰面鉴定问题。",
+    "knowledge_references": [
+      {
+        "id": "7ea3b132-7c8e-4c9e-9c9a-9787814c88cd",
+        "seq": 19,
+        "score": 0.8757196969696969,
+        "end_at": 5246,
+        "content": "c)\t TSO-C201 Categorizations and Applications; and, \nd)\t Operational Considerations. \n2. AHRS AIDING SOURCES. An AHRS aiding source is an internal or external system which \nprovides additional sensor information to the core strap down attitude heading reference function. \nGlobal Navigation Satellite System (GNSS) and air data computer (ADC) aiding sources are \ncommonly used to identify aircraft accelerations to reduce errors in the attitude function. Flux valves \nand magnetometers provide magnetic reference for heading functions, and numerous sources can be \nused for performance monitoring. Some aiding designs only supplement the AHRS functionality, and \nloss of aiding may only have limited effect on AHRS performance. On other designs, aiding may \nprovide integral information where loss of the aiding source could lead to loss of AHRS functionality. \n2.1 Internal Aiding Source Installations. Evaluate internal aiding sources as part of the overall \narticle’s intended function evaluation. The internal aiding source should be qualified as part of the \nTSO-C201 design approval process. Ensure the aiding source provides the needed inputs with the \nappropriate accuracy, integrity, availability, and software level and electronic hardware design\n\nassurance for its intended use. For example, if the system was developed for a general aviation \naircraft, but will be installed on a commuter aircraft, then the internal aiding source may need to be \nre-evaluated to ensure the appropriate compatibility with the aircraft’s design architecture and its \nusage. \n2.2 External Aiding Source Installations. This paragraph applies to external aiding sources not \nqualified as part of the TSO-C201 article’s design approval. \n2.2.1 External Aiding Source Performance. When the AHRS requires an external aiding source, \nensure the aiding source installed in the aircraft provides the appropriate accuracy, integrity, \navailability, software level and electronic hardware design assurance. \n2.2.2 External Aiding Source Annunciations. The applicant should determine how an external \naiding source failure and annunciation affects AHRS performance. Conduct ground and flight testing \nas necessary to ensure appropriateness of the annunciation and pilot action. Any annunciations should \nbe operationally relevant to minimize flightcrew workload; should be clear, unambiguous and timely; \nshould only be indicated while the condition exists; should be consistently located in a specific area of \nthe electronic display; and be located in the flightcrew’s primary field of view when immediate \nflightcrew awareness is required. If testing is not possible, provide an analysis to ensure the \nappropriate action occurs with degradation or failure of the external aiding source. For example, if the \nAHRS disables the attitude output or switches modes when the aiding source fails, as part of the \n§§23.1309, 25.1309, 27.1309, or 29.1309 safety analysis, ensure the AHRS acts per design when the \naiding source is intentionally disabled. \n2.3 GNSS Aiding. GNSS refers to all types of positioning satellites which provide autonomous \ngeo-spatial positioning. Common GNSS systems include, but are not limited to, the navigation signal \ntiming and ranging (NAVSTAR) global positioning system (GPS) (U.S.), globalnaya navigatsionnaya \nsputnikovaya sistema (GLONASS) (Russian) and Galileo (Europe). GNSS velocity data can be used \nto compute longitudinal accelerations to help eliminate errors. \n2.3.1 GNSS Qualification: When interfacing the AHRS to an external GNSS, ensure the external \nGNSS provides the needed inputs with the appropriate accuracy, integrity, availability, and software \nand hardware design assurance.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 4935,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 19,
+        "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+        "sub_chunk_id": [
+          "7ea3b132-7c8e-4c9e-9c9a-9787814c88cd"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792546989710255900",
+              "question": "当系统从通用航空飞机安装到通勤类飞机时，内部辅助源应如何重新评估以确保兼容性？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792546989710256901",
+              "question": "为什么内部辅助源需要根据飞机的设计架构和实际使用方式进行重新评估？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792546989710257102",
+              "question": "内部辅助源重新评估时如何确保与目标飞机设计架构和使用场景的适当兼容性？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-181.pdf",
+        "matched_content": "AC_20-181.pdf\n为什么内部辅助源需要根据飞机的设计架构和实际使用方式进行重新评估？",
+        "parent_chunk_id": "9574f40c-2e69-4678-9141-dd3814187d2c",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1035,
+              0.0893,
+              0.8853,
+              0.1615
+            ],
+            "page": 3,
+            "type": "pdf",
+            "quote": "assurance for its intended use. For example, if the system was developed for a general aviation aircraft, but will be installed on a commuter aircraft, then the internal aiding source may need to be re-evaluated to ensure the appropriate compatibility with the aircraft’s design architecture and its usage.",
+            "mapping": "exact",
+            "source_id": "pdf:3:0:311",
+            "source_hash": "3017b0c1eea1c02a3ab07a935e1b84ed"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-181.pdf",
+        "knowledge_description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。"
+      },
+      {
+        "id": "bf4b9eb5-3af4-48cf-a84a-e8630ce3d125",
+        "seq": 69,
+        "score": 0.7,
+        "end_at": 17700,
+        "content": "system and laser equipment as well as the associated functional failure \ncondition classifications.\n7.3.1.5 Other Functional Failure Condition.\nOther malfunctions not described in paragraphs 7.3.1.1 through 7.3.1.4\nof this AC should be identified and assessed to determine their functional \nfailure conditions.\n\n7.3.1.6 Loss of Function.\nBecause the laser is nonrequired equipment, the functional failure \ncondition for loss of the laser function is “no effect.”\n7.3.2 NOHD and MPE Calculations.\nYou should provide a report that documents how the NOHD and MPE were calculated \nto include all equations, references for those equations, table references, equation \nparameters (such as wavelength, divergence, exposure time, and power), dimensions for \nthe reflected and direct radiation paths into aircraft’s windows, and justification for the \nexposure duration. For laser illuminators, spotters, range finders, and other nonscanning \nlasers, the NOHD exposure duration should be based on the maximum exposure \nduration expected, but not less than 10 seconds. AC 70-1, Outdoor Laser Operations, \nand American National Standards Institute document ANSI Z136.1, American National \nStandard for Safe Use of Lasers, provide acceptable means to calculate MPE and \nNOHD.\n7.3.3 Installation Type Design.\nThe installation type design must include all the 21 CFR 1040 requirements that would \nbe applicable to the installation (such as the key control, emissions indicator, labels, and\nremote interlock connector) and the technical controls (such as the aircraft interface \nsafety interlock) from the FDA variance that affect the aircraft installation.\n7.3.4 Software.\nIf the laser equipment includes software that can contribute to malfunctions described \nin paragraph 7.3.1 above, develop the software using the guidance in AC 20-115C, \nAirborne Software Assurance, to a software level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1.\n7.3.5 AEH.\nIf the laser equipment includes custom AEH (such as an application-specific integrated \ncircuit, field programmable logic device, or programmable logic device), which can \ncontribute to the malfunctions described in paragraph 7.3.1 above, develop the AEH \nusing RTCA, Inc., document RTCA/DO-254, Design Assurance Guidance for Airborne \nElectronic Hardware, to a design assurance level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1. For custom AEH \nclassified as simple, paragraph 1.6 of RTCA/DO-254 applies.\nNote: We encourage the use of industry-recognized system safety standards (such as\nSAE International ARP 4761 and IEC 61508) and development assurance standards \n(such as RTCA/DO-178C, RTCA/DO-254, and IEC 61508) for the laser equipment \nwhen its malfunction could result in an exposure that could exceed the MPE for people\noutside the laser-equipped aircraft.\n7.3.6 Configuration Control.\nUnapproved changes to the laser equipment or the installation should not be made \nbecause they could affect the airworthiness (for example, electromagnetic and\n\nenvironmental compatibility or new failure modes) of the equipment installation and \ninvalidate the laser equipment certification and FDA-approved variances. The applicant \nshould provide a plan for maintaining configuration throughout the product life cycle. \nIf the installation results in a modification to the laser equipment as certified by the \nlaser equipment manufacturer, the laser equipment must be recertified as described \nin § 1040.10(i).",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 17337,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 69,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "bf4b9eb5-3af4-48cf-a84a-e8630ce3d125"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547343734332900",
+              "question": "为什么飞机激光设备或安装不能进行未经批准的更改？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547343734333801",
+              "question": "未经批准的飞机激光设备更改可能影响哪些适航性问题？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547343734334102",
+              "question": "未经批准的飞机激光设备安装更改会如何影响激光设备认证和FDA批准的差异许可？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n为什么飞机激光设备或安装不能进行未经批准的更改？",
+        "parent_chunk_id": "965789e1-509a-4b14-a80a-f3dd9c081204",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.8363,
+              0.368,
+              0.8562
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "7.3.6 Configuration Control.",
+            "mapping": "exact",
+            "source_id": "pdf:7:2601:2630",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.8575,
+              0.8367,
+              0.8948
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "Unapproved changes to the laser equipment or the installation should not be made because they could affect the airworthiness (for example, electromagnetic and",
+            "mapping": "exact",
+            "source_id": "pdf:7:2630:2789",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.0893,
+              0.881,
+              0.1963
+            ],
+            "page": 8,
+            "type": "pdf",
+            "quote": "environmental compatibility or new failure modes) of the equipment installation and invalidate the laser equipment certification and FDA-approved variances. The applicant",
+            "mapping": "exact",
+            "source_id": "pdf:8:0:452",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "0b7835d6-504d-4665-816e-3b15cb3fb84d",
+        "seq": 12,
+        "score": 0.6976151761517615,
+        "end_at": 4330,
+        "content": "established, then AML-STC is not the proper method of approval.\nAdvisory\nCircular\n\n5. AML-STC. The AML-STC must comply with the requirements of 14 CFR part 21,\nsubpart E, for the issuance of STCs.\na. The applicability of the baseline data for each model must clearly be established.\nb. An AML-STC is issued for aircraft that are type-certificated in the same category (e.g., an \nAML-STC for an aircraft certificated under 14 CFR part 23 cannot include aircraft certificated \nunder parts 25, 27, or 29. Further, it is recommended that each category of aircraft within 14 CFR \npart 23 (i.e., normal, utility, acrobatic, and commuter) have a separate AML-STC due to possible \ndifferences that may exist in the certification requirements. This depends on the type of \nmodification to the affected area (e.g. structure, powerplant, systems, avionics, etc.).\nCoordination with the responsible ACO may be required to review the proposed modification and \ndetermine whether it is necessary to issue a separate AML-STC to document the specific \ncertification requirement for each category.\nc. Compliance with the requirements of section 21.20 and applicable data must be shown for \nevery model on the AML (e.g., type design, substantiating data, and flight manual supplement\n(FMS)). Whether this data is generated from testing (e.g., flight testing), or re-submitted from a\nprevious approval, substantiation for each additional aircraft model is required. When adding new \nmodel(s) or amending an existing model, an AML-STC approval allows the use of previouslysubmitted compliance data that are applicable without the need for further review. If adding a new\nmodel that has differences from the previously-approved models, then further substantiation may\nbe required in order to address those differences. The AML-STC is not meant to be a blanket \napproval by allowing additional models without further substantiation.\nd. The certification basis and amendment level to the areas affected by the modification is \nestablished for each model.\ne. The modification to the affected area does not create an acoustical change to the typecertificated product per section 21.93(b).\nf. The Flight Manual Supplement (FMS) is applicable to each model per section 21.5.\ng. The AML-STC may not be suitable for systems that can directly control the aircraft. For\nexample, autopilot installations or similar systems that involve control inputs may require careful \ndesign installation, and testing on each proposed model regardless of baseline data shared between \nthem. For these types of installations, there may be serial number specific requirements that have\nto be assessed on a case-by-case basis. Another example would be an STC for reduced vertical \nseparation minimum (RVSM) equipment, where the model and serial number specific static\nsource error correction curve for RVSM approval is only applicable to a single serial number\naircraft.\nh. It is important for those who are seeking an AML-STC approval to discuss their plan early\nwith their respective aircraft certification office (ACO). Coordination with the ACO is imperative\nin order to determine any outstanding issues that may have an impact on a multi-model installation \napproval.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 3948,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 12,
+        "knowledge_id": "aa7ee8a1-1112-4931-a85f-564ca8a49850",
+        "sub_chunk_id": [
+          "0b7835d6-504d-4665-816e-3b15cb3fb84d"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792546881698719700",
+              "question": "在AML-STC批准下增加新机型时，先前提交的符合性数据在什么条件下可以无需进一步审查直接使用？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792546881698722501",
+              "question": "使用AML-STC批准修订现有机型时，先前提交的符合性数据如何适用于修订部分？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792546881698723102",
+              "question": "新增机型与已批准机型存在差异时，AML-STC申请是否还需要额外的实质性证明？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-180.pdf",
+        "matched_content": "AC_20-180.pdf\n新增机型与已批准机型存在差异时，AML-STC申请是否还需要额外的实质性证明？",
+        "parent_chunk_id": "d70cbeec-acd0-4ebb-b8aa-f8f4f479242c",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.3481,
+              0.8925,
+              0.5077
+            ],
+            "page": 2,
+            "type": "pdf",
+            "quote": "previous approval, substantiation for each additional aircraft model is required. When adding new model(s) or amending an existing model, an AML-STC approval allows the use of previouslysubmitted compliance data that are applicable without the need for further review. If adding a new model that has differences from the previously-approved models, then further substantiation may",
+            "mapping": "exact",
+            "source_id": "pdf:2:998:1828",
+            "source_hash": "bf8aed503a0ca988f295eb1aa5fbd716"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-180.pdf",
+        "knowledge_description": "该咨询通告由美国联邦航空管理局发布，说明申请获批型号清单补充型号合格证（AML-STC）的可接受方法，并强调其非强制性、不构成法规。文件界定适用范围与参考文件，解释以基线数据覆盖多个机型、同一类别限制，以及每个机型需符合14 CFR part 21第21.20条并提交型号设计、证实数据和飞行手册补充。文件还说明不得仅引用第三方TC/STC编号作为合规依据，并概述型号设计更改及附录中机型清单各栏目的填写要求。"
+      },
+      {
+        "id": "69419942-67b4-4c5e-a3a8-86f875345c3e",
+        "seq": 57,
+        "score": 0.6887096774193547,
+        "end_at": 14248,
+        "content": "variance’s technical controls applicable to the installation (such as aircraft interface \nsafety interlock) have been satisfied. \n7.2 FDA Variance.\nAccording to the FDA, surveillance lasers and LIDAR systems are considered \n“surveying, leveling, and alignment laser products,” which are specific purpose laser \nproducts described in § 1040.11(b) and limited to class I AEL for the invisible laser \nwavelengths. However, most airborne surveillance lasers and some LIDARs exceed the \nallowable class I AELs for the invisible wavelengths and therefore require variances as \ndescribed in § 1010.4. For products labeled under the classification system of the IEC, \nclasses 1, 2, and 3R are acceptable class limits for an invisible emission and therefore \ndo not require a variance. The FDA variance may require administrative controls \n(for example, the laser equipment purchasing organization is to maintain an active \nprogram of training for its employees in the safe use of the laser system) and technical \ncontrols (such as a range finder cutoff that disables the laser when the distance between \nthe laser’s aperture and the object being exposed is less than the NOHD).\n7.3 Aircraft Laser Equipment Installation.\n7.3.1 System Safety Analysis.\nYou must perform a system safety analysis to assess whether the installed laser \nequipment meets 14 CFR 23.1309, 25.1309, 27.1309, or 29.1309. Refer to \nAC 23.1309-1, System Safety Analysis and Assessment for Part 23 Airplanes. For \npart 25 airplanes, refer to AC 25.1309-1, System Design and Analysis. For part 27 \nrotorcraft, refer to AC 27.1309, Equipment, Systems and Installations. For part 29\n\nrotorcraft, refer to AC 29.1309, Equipment, Systems and Installations. The systems \nsafety assessment should address the following:\n7.3.1.1 Laser Equipment Malfunction.\nLaser equipment malfunction resulting in an aircraft crewmember’s or \npassenger’s eye or skin being exposed to invisible laser radiation \nexceeding the MPE is considered no less than a hazardous functional \nfailure condition and could be catastrophic if continued safe flight is not \npossible because of the severity of the laser damage to a pilot’s eye or \nskin. In your system safety assessment, you should document the rationale \nfor a hazardous functional failure condition classification. If there is no \ndirect or reflected path into the cockpit or cabin because of the location of \nthe laser and physical shielding provided by the aircraft structure, this \nfailure condition does not apply. \n7.3.1.2 System Safety Considerations.\nIn assessing the failure conditions, you should consider direct and \nreflected radiation; the location of the laser, laser beam steering \nmechanism, and circuitry; the use of mechanical, software, or airborne \nelectronic hardware (AEH) stops that prevent the laser from being steered \nin a direction that could result in the aircraft occupants’ eyes being \nexposed to direct or reflected radiation; laser arming and firing circuitry; \nand other design features whose malfunction could contribute to an \ninadvertent exposure or an exposure that exceeds the MPE (such as failure \nof the internal laser diffuser used to reduce the AEL). If the laser’s\nsteering stops are implemented in software or AEH, their assurance level \nshould be commensurate with the functional failure condition associated \nwith the stops. Reflections off any part of the aircraft (such as the \nstructure, blades, skids, or landing gear) should be considered specular.\n7.3.1.3 Aircraft Structure. \nAny malfunction resulting in damage to aircraft structure due to laser \nexposure should be assessed to determine the extent of aircraft damage \nand the associated functional failure condition classification.\n7.3.1.4 Equipment Interfaces.\nAny malfunction of the laser equipment’s interfaces with other aircraft \nsystem will have to be assessed to determine the effect on the aircraft \nsystem and laser equipment as well as the associated functional failure \ncondition classifications.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 14011,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 57,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "69419942-67b4-4c5e-a3a8-86f875345c3e"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547272902945800",
+              "question": "激光照射导致飞机结构损伤时，如何评估飞机损伤程度并确定功能失效状态分类？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547272902947701",
+              "question": "飞机结构因激光暴露发生损坏后，应如何开展功能失效条件分类评估？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547272902948202",
+              "question": "AC 20-183对激光引起的飞机结构损伤评估有哪些规定？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n飞机结构因激光暴露发生损坏后，应如何开展功能失效条件分类评估？",
+        "parent_chunk_id": "f2f99aa9-5b76-4b0d-8628-a0dbf88bf303",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1882,
+              0.6128,
+              0.4425,
+              0.6327
+            ],
+            "page": 6,
+            "type": "pdf",
+            "quote": "7.3.1.3 Aircraft Structure.",
+            "mapping": "exact",
+            "source_id": "pdf:6:1847:1876",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.2941,
+              0.634,
+              0.8555,
+              0.6887
+            ],
+            "page": 6,
+            "type": "pdf",
+            "quote": "Any malfunction resulting in damage to aircraft structure due to laser exposure should be assessed to determine the extent of aircraft damage and the associated functional failure condition classification.",
+            "mapping": "exact",
+            "source_id": "pdf:6:1876:2084",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "696e6110-9960-4ca6-8770-b308abcad579",
+        "seq": 66,
+        "score": 0.6877298263534217,
+        "end_at": 16139,
+        "content": "AC and integration testing versus dedicated forward-looking windshear flight testing. \n9.2.1 Penetration Flight Evaluation.\nPenetration flights will typically be accomplished by the radar manufacturer as part of the \nTSO authorization. If penetration data and analysis are available and you determine they \nare applicable, then you do not need to conduct penetration flight tests. Previously\n\napproved test data generated during the TSO authorization or previous certification effort \nis acceptable. If forward-looking windshear capability was not previously demonstrated, \nthen verify the detection capability of the forward-looking windshear system by flying in \nareas of convective activity that can be verified by in-situ measurements, appropriate \nground-based radar systems, or the equivalent. \nNote: Flying in or near storm cells can be extremely hazardous. Flight crews should \nexercise good judgment for safe flight based on knowledge of their own abilities and of \nthe capability of the aircraft when considering approaching or penetrating any storm cell \nor turbulent area. \n9.2.2 Clutter Suppression Flight Test.\nEvaluate the system’s ability to reject spurious conditions (e.g., clutter suppression, \nbi/multi-static signal interference, range ambiguous returns, and radome effects). The \nflight tests may be conducted under visual meteorological conditions. Conduct this \nevaluation at one or more airports with the following characteristics: \n9.2.2.1 Expressways and high-volume surface streets within approximately 1 nm \nof the runway. \n9.2.2.2 Nearby taxiing aircraft. \n9.2.2.3 Concentrated urban clutter. The clutter should occupy a minimum area of \napproximately 1 nm surrounding the airport. \n9.3 Turbulence Detection or Atmospheric Threat Awareness. \nFollow the TSO installation instructions to verify performance of turbulence detection or \natmospheric threat awareness functions. Atmospheric threat awareness functions could \ninclude, but are not limited to, hail and lightning indication. Installation testing of these \nfunctions often relies on general weather radar functional testing as described in \nparagraphs 9.1.1 and 9.1.2 of this AC and integration testing versus dedicated flight \ntesting. You should attempt to evaluate the performance of these functions against \noperationally significant weather when weather is reasonably available and you can do \nso without placing the aircraft in the hazardous weather. This performance evaluation \nshould ensure the depiction of turbulence or weather hazard is consistent with actual \nweather phenomenon. Data from the radar manufacturer may be used to supplement or \nreplace additional flight testing if the data is determined to be applicable. \n10 AIRCRAFT FLIGHT MANUAL/SUPPLEMENT (AFM/S). \nFollow AC 23-8, Chapter 6, Section 3 for small airplane flight manual/supplement. \nFollow AC 25.1581-1, Airplane Flight Manual, for transport category airplane flight \nmanual/supplement. Follow AC 27-1 and 29-2 as appropriate for rotorcraft flight \nmanual/supplement. You should incorporate the following radar specific information in \nthe AFM/S:\n\n10.1 Describe the weather and ground mapping, windshear, turbulence detection, and/or \natmospheric threat awareness capabilities of the system. \n10.2 Provide limitations that are necessary for the safe operation of the weather radar system. \n10.3 Describe the appropriate actions and recovery procedures for annunciations and alerts. \n10.4 Describe the conditions necessary for automatic activation of the system, if applicable. \n10.5 Describe when alerts are provided and when they are inhibited. \n10.6 Outline hazard areas associated with radar operation on the ground. \n10.7 Provide normal and abnormal operating procedures. \n11 INSTRUCTIONS FOR CONTINUED AIRWORTHINESS (ICA). \n11.1 You should incorporate the following information into the ICA: \n11.1.1 Maintenance instructions for the radar system and radome. \n11.1.2 Description of the interface between the radar and the aircraft.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 15833,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 66,
+        "knowledge_id": "bc1af029-f306-42bf-b3d1-b28235258d73",
+        "sub_chunk_id": [
+          "696e6110-9960-4ca6-8770-b308abcad579"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547201109660700",
+              "question": "根据AC 20-182A，雷达制造商在TSO授权中通常如何完成穿透飞行评估？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547201109661901",
+              "question": "在AC 20-182A中，已有穿透数据和分分析并确定适用时，是否还需要进行穿透飞行试验？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547201109662302",
+              "question": "AC 20-182A第9.2.1节规定，哪些情况下可以免除穿透飞行试验？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-182A.pdf",
+        "matched_content": "AC_20-182A.pdf\n在AC 20-182A中，已有穿透数据和分分析并确定适用时，是否还需要进行穿透飞行试验？",
+        "parent_chunk_id": "879ae16c-5661-4697-9920-b06f43f27b46",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1177,
+              0.8016,
+              0.4124,
+              0.8154
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "9.2.1 Penetration Flight Evaluation.",
+            "mapping": "exact",
+            "source_id": "pdf:7:1945:1982",
+            "source_hash": "aef647d38904abece9ec5122d32b00f6"
+          },
+          {
+            "bbox": [
+              0.1765,
+              0.8266,
+              0.8848,
+              0.8752
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "Penetration flights will typically be accomplished by the radar manufacturer as part of the TSO authorization. If penetration data and analysis are available and you determine they are applicable, then you do not need to conduct penetration flight tests. Previously",
+            "mapping": "exact",
+            "source_id": "pdf:7:1982:2249",
+            "source_hash": "aef647d38904abece9ec5122d32b00f6"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-182A.pdf",
+        "knowledge_description": "该咨询通告为满足最新版 TSO-C63 的航空器天气雷达系统提供初始及后续适航批准指导，涵盖天气探测与地面测绘、前视风切变探测、前视湍流探测和大气威胁感知能力，适用于 14 CFR 第 23、25、27、29 部航空器。文件说明该通告非强制性，是可接受的符合性方法之一，并面向通过型号合格证、补充型号合格证等申请适航批准的申请人。通告还给出显示告警、颜色使用、系统接口及湍流与大气威胁显示等方面的通用要求，并取消 2014 年发布的 AC 20-182。"
+      },
+      {
+        "id": "3784bf7e-c309-4bb1-9a21-1686c28e6ff8",
+        "seq": 123,
+        "score": 0.6777777777777777,
+        "end_at": 32462,
+        "content": "7.1 Laser Equipment Certification Yes The laser equipment must comply with all \napplicable FDA 21 CFR standards. Since \nthe laser equipment complies with IEC \nstandard 60825-1, the FDA’s Laser Notice \nNo. 50 may be used to determine what \nIEC 60825-1 guidance can be substituted \nfor the FDA’s 21 CFR standards. \n7.2 FDA Variance No Since the LIDAR is a class 3R laser, a \nvariance is not required \n7.3.1 System Safety Analysis Yes The results of the systems safety analysis \nfor paragraphs 7.3.1.1, 7.3.1.2, 7.3.1.3, \n7.3.1.4, and 7.3.1.5 should be \ndocumented. For this example, the \nsystem safety analysis would document \nthe rationale why the functional failure \nconditions in paragraphs 7.3.1.1, 7.3.1.2,\n\nAppendix B \nB-2 \n7.3.1.3, 7.3.1.4, and 7.3.1.5 are not \napplicable. \n7.3.1.1 Laser Equipment Malfunction No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.1 is not applicable. \n7.3.1.2 System Safety Considerations No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.2 is not applicable. \n7.3.1.3 Aircraft Structure No A class 3R laser is not capable of burning \nor melting the aircraft structure or paint. \n7.3.1.4 Equipment Interfaces No The laser equipment does not interface \nwith any other are aircraft systems (e.g. \nattitude heading reference system) other \nthan electrical power. The electrical \npower wiring is protected with an \nappropriately sized circuit breaker. \n7.3.1.5 Other Functional Failure No Other functional failure conditions should \nCondition be assessed for each equipment \ninstallation. This specific equipment \ninstallation does not have other functional \nfailure conditions (such as the laser sensor \nfails to retract posing a hazard during \nlanding). \n7.3.2 NOHD and MPE Calculations Yes Since this is not a class I laser, the NOHD \nand MPE should be calculated and \ndocumented in a report. \n7.3.3 Installation Type Design Yes The type design for the installation should \ninclude all the applicable 21 CFR 1040 \nrequirements (such as laser emissions \nindicator in the cockpit, labels) \n7.3.4 Software No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment software \nwould not have to be developed using AC \n20-115C. \n7.3.5 AEH No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment AEH \nwould not have to be developed using AC \n20-152. \n7.3.6 Configuration Control Yes Changes to the laser equipment could \naffect the laser equipment installation\n\nAppendix B \nB-3 \nairworthiness and the laser equipment \ncertification.\n7.3.7 Aircraft Flight Manual Yes An approved AFMS is required for laser \nSupplement equipment installation. \n7.3.7.1 Limitations Yes The following AFMS limitations would \napply: \n7.3.7.1.1 Laser must not be used to radiate \nother flying aircraft.\n7.3.7.1.2 Laser must not be used on the \nground or during taxi, takeoff, or landing. \n7.3.7.1.3 Laser must not be used to radiate \npeople when the distance between the \nlaser and the people is less than NOHD. \nThe NOHD should be specified. \n7.3.7.1.4 Atmospheric conditions when \nthe laser must not be used. \n7.3.7.1.5 Flight conditions when the laser \nmust not be used (such as angle of bank, \nflying in close proximity to terrain, or \nhoist operations). \n7.3.7.1.7 Aircraft configurations when the \nlaser must not be used (such as cargo \nmirrors).",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 32089,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 123,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "3784bf7e-c309-4bb1-9a21-1686c28e6ff8",
+          "4a9fc1b6-61f7-42db-85ed-771394bb2465"
+        ],
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.1 is not applicable. \n7.3.1.2 System Safety Considerations No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.2 is not applicable. \n7.3.1.3 Aircraft Structure No A class 3R laser is not capable of burning \nor melting the aircraft structure or paint.",
+        "parent_chunk_id": "acbcf52a-4b13-49ec-a70b-7b66446e9cdb",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.127,
+              0.8818,
+              0.1818
+            ],
+            "page": 16,
+            "type": "pdf",
+            "quote": "into the cockpit or cabin, the malfunction described in 7.3.1.1 is not applicable.",
+            "mapping": "exact",
+            "source_id": "pdf:16:69:237",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1176,
+              0.1799,
+              0.8818,
+              0.2347
+            ],
+            "page": 16,
+            "type": "pdf",
+            "quote": "7.3.1.2 System Safety Considerations No Since there is no direct or reflected path into the cockpit or cabin, the malfunction described in 7.3.1.2 is not applicable.",
+            "mapping": "exact",
+            "source_id": "pdf:16:237:406",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1176,
+              0.2328,
+              0.8843,
+              0.2701
+            ],
+            "page": 16,
+            "type": "pdf",
+            "quote": "7.3.1.3 Aircraft Structure No A class 3R laser is not capable of burning or melting the aircraft structure or paint.",
+            "mapping": "exact",
+            "source_id": "pdf:16:406:525",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1176,
+              0.2684,
+              0.8724,
+              0.3754
+            ],
+            "page": 16,
+            "type": "pdf",
+            "quote": "7.3.1.4 Equipment Interfaces No The laser equipment does not interface with any other are aircraft systems (e.g. attitude heading reference system) other than electrical power. The electrical power wiring is protected with an appropriately sized circuit breaker.",
+            "mapping": "exact",
+            "source_id": "pdf:16:525:794",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "2ddeaeed-8202-417d-8733-4e923b381d31",
+        "seq": 124,
+        "score": 0.6719619666048237,
+        "end_at": 30310,
+        "content": "3.1.7 Shop-Level Maintenance Procedures.\nShop procedures must follow the lithium battery manufacturer’s recommendations.\n3.1.8 Aircraft Battery Inspection.\nEvidence of battery failure can sometimes be detected by a visual inspection.\nManufacturer-recommended inspections should include, but not be limited to, the \nfollowing actions:\n3.1.8.1 Inspect battery terminals and all other connections for evidence of \ncorrosion, pitting, arcing, and burns. Clean as required.\n3.1.8.2 Inspect the battery for improper installation (loose terminal screws, battery \nterminal links, or connector).\n3.1.8.3 Inspect the battery mounting.\n3.1.8.4 Inspect for evidence of physical damage including heat \ndamage/discoloration.\n3.1.9 Batteries in a rotating stock must be functionally checked at the manufacturer’s \nrecommended inspection intervals. Some failure modes may include degraded charge \nretention capability, settling of particulates, or other damage due to prolonged storage.\nBatteries in rotating stock may also require periodic servicing per the manufacturer’s \ninstructions.\n3.2 Aircraft Battery Replacement.\n3.2.1 Make sure replacement batteries are in airworthy condition. Refer to the battery \nmanufacturer maintenance manuals for proper maintenance of lithium batteries. Refer \nto the aircraft maintenance procedures for replacement of lithium batteries.\n3.2.2 The ICA should include the manufacturer’s recommendations for the battery mandatory\nreplacement schedule and periodic maintenance.\n\n3-3\n3.2.3 Installation of lithium batteries differs from aircraft system to aircraft system. Refer to \nthe applicable aircraft manuals to remove and install batteries.\n3.2.4 When replacing batteries, check for corrosion and moisture on the battery interfaces.\n3.2.5 When replacing batteries, check for short circuit to battery case such as insulation \nresistance test.\n3.2.6 The maintenance record should reflect all battery replacements. Record the expiration \ndate of the battery.\n3.2.7 The lithium batteries should be replaced with an approved battery for the specific \naircraft application.\n3.2.8 Deep discharge may result in a potentially unsafe condition. Replace the battery based \non the manufacturer’s recommendation.\n3.3 Aircraft Battery Storage and Handling.\n3.3.1 Storage requirements can vary with the battery type, so follow the manufacturer’s \nrecommended storage procedures to achieve the best results.\n3.3.2 Record the date of charging. If the battery is not used within the manufacturer’s \nrecommended interval, service the battery per the manufacturer’s recommendation.\n3.3.3 To maintain battery integrity, follow the manufacturer’s recommendation for charged \nbatteries being held in “ready for service” areas.\n3.3.4 Handling procedures and precautions vary with battery size and configuration. Follow \nthe manufacturer’s recommendation to prevent mishandling of the battery.\n3.3.5 Follow the manufacturer’s recommendation procedure to prevent electrostatic discharge \nduring storage and handling.\n3.3.6 For packaging and shipping, follow the manufacturer’s recommended procedures. \n3.3.7 Check batteries before use for any leakage or deformity. Do not use the batteries if there \nis any evidence of leakage or deformity.\n3.3.8 Aircraft vibration and/or contact oxidation can result in poor electrical connections. \nEnsure proper connector maintenance procedures are followed.\n3.3.9 Observe the following precautions when handling lithium batteries:\n3.3.9.1 Do not store lithium batteries with other hazardous or \ncombustible materials.\n3.3.9.2 Do not heat or incinerate lithium batteries.\n\n3-4\n3.3.9.3 Do not dispose of lithium batteries with other waste unless allowed by \napplicable regulations.\n3.3.9.4 Use special care in handling lithium batteries. Do not open, puncture, crush, \ndisassemble, or subject batteries to physical abuse.\n3.3.10 Lithium batteries can be a personal safety hazard due to the possibility of lethal shock \nand must be labeled to clearly indicate the hazard.\n3.3.11 Follow all manufacturer’s recommended safety precautions and procedures.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 30033,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 124,
+        "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+        "sub_chunk_id": [
+          "2ddeaeed-8202-417d-8733-4e923b381d31"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547483329843900",
+              "question": "飞机电池更换时，按照AC_20-184.pdf应如何检查电池接口的腐蚀和湿气？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547483329844801",
+              "question": "飞机电池更换时，按照AC_20-184.pdf应如何检查电池壳体短路并进行绝缘电阻测试？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547483329845002",
+              "question": "飞机电池拆装时，AC_20-184.pdf要求参考哪些适用飞机手册？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-184.pdf",
+        "matched_content": "AC_20-184.pdf\n飞机电池更换时，按照AC_20-184.pdf应如何检查电池壳体短路并进行绝缘电阻测试？",
+        "parent_chunk_id": "011357f7-c212-49d4-8ec4-d33198b1bb92",
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-184.pdf",
+        "knowledge_description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。"
+      },
+      {
+        "id": "76b55f3a-ae90-47f5-a9a9-2fd39067a0f0",
+        "seq": 88,
+        "score": 0.6671874999999999,
+        "end_at": 21703,
+        "content": "with the most recent revision of RTCA/DO-254, Design Assurance Guidance for \nAirborne Electronic Hardware, and AC 20-152.\n2.7 Health Monitoring.\nLithium batteries should be stored in accordance with the manufacturer's \nrecommendations for state of charge and temperature; consideration should be provided \nfor any monitoring circuitry that may drain the battery during the storage period.\nAdditionally, overcharging of individual cells could lead to thermal runaway. Health \nmonitoring of lithium batteries needs to be taken into account during testing and \ncertification to ensure that proper state of charge can be maintained.\n\n2-6\n2.8 Flammability.\nAircraft batteries must meet the applicable flammability requirements of \n§§ 23/25/27/29.853, 23/25/27/29.863, and 25.869 that ensure the protection of structure \nand critical systems. Test the materials to ensure they meet applicable requirements of \n§§ 23/25/27/29.853, 23/25/27/29.863, and 25.869.\nThe FAA Aircraft Materials Fire Test Handbook, DOT/FAA/AR-00/12, describes an \nacceptable means of compliance with 14 CFR part 25, Appendix F. If thermal and \nacoustic insulation material is used as part of the battery equipment and exposed, the \nrequirements of § 25.856(a), Appendix F, part VI, at amendment 25-111 (or later \namendment) must be met. Refer to the test methods described by AC 25.856-1, \nThermal/Acoustic Insulation Flame Propagation Test Method Details.\n2.9 Instructions for Continued Airworthiness (ICA).\n2.9.1 During the certification process of the lithium batteries, complete the ICA in accordance \nwith the following as applicable to the certification basis of the product:\n2.9.1.1 14 CFR part 21.50(b);\n2.9.1.2 14 CFR part 23/25/27/29.1529;\n2.9.1.3 14 CFR parts 25.1709 and 25.1729;\n2.9.1.4 14 CFR part 23, Appendix G;\n2.9.1.5 14 CFR part 25, Appendix H;\n2.9.1.6 14 CFR parts 27/29, Appendix A; and\n2.9.1.7 FAA Order 8110.54, Instructions for Continued Airworthiness, \nResponsibilities, Requirements, and Contents.\n2.9.2 Develop the ICA so it is compatible with other maintenance instructions for the aircraft.\n2.9.3 Refer to chapter 3 of this AC for additional details specific to the maintenance of \nlithium batteries on aircraft.\n2.9.4 The ICA must contain an “Airworthiness Limitations” section if deemed necessary. The \nAirworthiness Limitations section is FAA-approved and specifies maintenance required \nunder §§ 43.16 and 91.403, unless the FAA has approved an alternative program.\n2.9.5 The ICA should also include, but are not limited to, the following information:\n2.9.5.1 Specifics of the lithium batteries installation, including individual \ncomponent part numbers and any other unique installation requirements;\n2.9.5.2 Electrical wiring diagrams/schematics, electrical equipment drawing;\n\n2-7\n2.9.5.3 Maintenance instructions, basic control and operation, testing, servicing, \nmaintenance schedule, inspection, troubleshooting, removing and replacing \nparts, repairs, special tools, fixtures and equipment, component manual; and\n2.9.5.4 Configuration control, storage instructions.\n2.9.6 The ICA must contain the recommended manufacturer’s maintenance and inspection \nrequirements to ensure the batteries whose function is required for safe operation of the \naircraft will perform their intended function as long they are installed in the aircraft. \nThe ICA must contain:\n2.9.6.1 Operating instructions and equipment limitations in an installation \nmaintenance manual.\n2.9.6.2 Installation procedures and limitations sufficient to ensure cells or batteries, \nwhen installed according to the installation procedures, still meet the \nairworthiness requirements of the aircraft. The limitations must identify \nany unique aspects of the installation. \n2.9.6.3 Maintenance requirements for measurements of battery capacity at \nappropriate intervals will be performed to ensure the batteries, whose \nfunction is required for safe operation of the aircraft, will continue to meet \ntheir intended function as long as they are installed in the aircraft.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 21384,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 88,
+        "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+        "sub_chunk_id": [
+          "76b55f3a-ae90-47f5-a9a9-2fd39067a0f0",
+          "1104e8d4-e65e-48ba-b3a5-83039e6db2d1"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547456463717500",
+              "question": "飞机电池材料需要满足哪些可燃性要求？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547456463718501",
+              "question": "如何测试飞机电池材料以确保符合可燃性法规？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547456463718702",
+              "question": "AC 20-184中关于飞机电池可燃性测试的规定是什么？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-184.pdf",
+        "matched_content": "AC_20-184.pdf\n如何测试飞机电池材料以确保符合可燃性法规？",
+        "parent_chunk_id": "45e255b3-8716-440d-b0bd-dfe7eee7ea2f",
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-184.pdf",
+        "knowledge_description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。"
+      }
+    ],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:31:22.4049537+08:00",
+        "tool_calls": [
+          {
+            "id": "ragpipe-e81d307a-989e-4c78-a550-e6ee74147f6c",
+            "args": {
+              "query": "原客舱板无批准燃烧数据，也没有备件。团队称“只能每换一种饰面就从飞机切一次板，而且一次燃烧试验就是烧一个试样”。请给出替代路径、减少切板的办法和试样数要求。若能以合理价格购买原板备件，结论如何变化？",
+              "search_source": "knowledge"
+            },
+            "name": "knowledge_search",
+            "result": {
+              "data": {
+                "count": 8,
+                "doc_count": 8,
+                "web_count": 0,
+                "search_source": "knowledge",
+                "candidate_count": 0
+              },
+              "output": "检索到 8 条相关内容",
+              "success": true
+            },
+            "duration": 6881
+          }
+        ],
+        "reasoning_content": "The user is asking about cabin panels (原客舱板) with no approved burn data and no spare parts. They claim the only way is to cut a panel from the aircraft each time they change a finish, and one burn test burns one specimen. They want alternative paths, ways to reduce cutting panels, and specimen count requirements. And if original panel spares can be purchased at reasonable price, how does conclusion change?\n\nThis is a knowledge base with AC 20-181 (AHRS), AC 20-183 (lasers), AC 20-180 (AML-STC), AC 20-182A (weather radar), AC 20-184 (lithium batteries). None of these seem to be about cabin interior burn testing (which would be 14 CFR 25.853, Appendix F, AC 20-xxx?). The retrieved chunks are irrelevant. So the knowledge base doesn't contain relevant evidence for cabin panel burn testing.\n\nI should search the Wiki? The tools available? The prompt says I'm a Wiki Researcher and mentions wiki_search, wiki_read_page, read_document, wiki_flag_issue. But in this conversation no tools are actually provided—the reference materials are given. Actually there are no tool definitions in this request. So I must answer based on... general knowledge? The wiki content doesn't cover cabin burn testing.\n\nI should be honest: the bound knowledge base doesn't cover this topic (it covers AHRS, lasers, AML-STC, weather radar, lithium batteries). I can answer from general aviation regulatory knowledge (14 CFR 25.853, Appendix F, AC 20-xxx, heat release rate, OSU 65/65, vertical burn 12s/60s, FAA policy on burn testing specimens, DER, MOC). But should I? The user asks a technical certification question. I can provide general guidance with caveats that it's not from the knowledge base.\n\nLet me think about the actual technical content—this is a cabin interior flammability certification question. Key knowledge:\n\n14 CFR 25.853 and Appendix F:\n- Part I: 12-second vertical burn test (60-second vertical burn for certain).\n- Part II: 12-second horizontal? Actually Part I is vertical Bunsen burner, 12 s and 60 s.\n- Part III: horizontal? No. Part IV: 45-degree?\nLet me recall: Appendix F to Part 25:\n- Part I: Vertical Test (12-second and 60-second)\n- Part II: Horizontal Test\n- Part III: 45-degree test\n- Part IV: 60-degree test\n- Part V: Heat release rate (OSU 65/65)\n- Part VI: Smoke density (ASTM E662, Ds ≤ 200)\n- Part VII: Seat cushion oil burner (for seats)?\n\nActually Part V is \"Heat Release Rate\" (OSU), Part VI \"Smoke Density\".\n\nSpecimen sizes: 12-second vertical: 3 inches wide × 12 inches long; 60-second vertical: 3 × 12. Horizontal: 4 × 14? Something like that. Heat release: 6 × 6 inches (15 cm × 15 cm). Smoke density: 3 × 3 inches.\n\nNumber of specimens: Appendix F typically requires 3 specimens for the vertical burn tests (12-second: 3 specimens; 60-second: 3 specimens). Actually the regulation says \"three specimens\" for many tests. For OSU heat release, typically 3 specimens (per § 25.853(d) Appendix F Part IV... hmm). For smoke density, 3 specimens.\n\nActually for OSU heat release, FAA guidance (DOT/FAA/AR-00/12? or the \"Aircraft Materials Fire Test Handbook\") says test 3 specimens; the average peak HRR ≤ 65 kW/m² and average total heat release over 2 min ≤ 65 kW·min/m². The test criteria are based on the average of three specimens. If one specimen fails, retest? There is a policy on retesting.\n\nKey concept: \"one burn test burns one specimen\" is correct in the sense that each specimen is consumed. But you don't need to cut a panel per finish if you can get panel material from the panel supplier, or make test panels using the same materials and processes (identical construction), or use \"design of experiments\"/equivalency.\n\nAlternative paths:\n1. Obtain the original panel manufacturer's approved burn data (TC/STC holder, supplier). Data may exist in the type design certification basis (e.g., the panel was certified as part of TC with 25.853 compliance). Search the TC holder's compliance data, or the panel supplier's TSO/qualification data.\n2. Buy spare panels from the OEM/supplier (if available at reasonable cost) — a whole panel can yield many specimens if cut appropriately (avoid edges, use flat areas; specimens must be representative, not from damaged/contaminated areas).\n3. Make \"simulant\" test panels using the identical decorative laminate/film, adhesive, core, and layup, produced with the same process (same press, temperature, pressure, cure). This is acceptable if you can show equivalence; often FAA/EASA accept \"test panels manufactured with the same materials and processes\" rather than cutting from the aircraft.\n4. Use a \"build-up\" of the exact same construction: decorative layer, adhesive, substrate. If the finish change is only the decorative film (e.g., color change of the same qualified system), you may be able to qualify the finish system rather than each color, if the manufacturer has data showing colorant doesn't affect flammability. \"Family/grouping\" approach: same chemistry, only pigment change → can be grouped with justification, maybe test worst case (dark colors / high pigment loading).\n5. Use the OEM's \"minor change\" / \"design change\" process; if the finish is within the approved design, no new test.\n6. Use a DER or ODA to make a finding of compliance based on existing data plus analysis; or use \"MOC\" with the FAA.\n7. If the panel is already covered by an STC, the STC holder may have data.\n\nReduce cutting:\n- Get the panel specification and build test panels from stock material.\n- Cut multiple specimens from one removed panel (one panel can yield many 3×12 specimens if there's enough flat area).\n- Use \"coupon-level\" testing with representative construction.\n- Group finishes by chemistry and test worst case.\n- Use existing test data from the material supplier (e.g., laminate manufacturer's data for the decorative laminate on the same substrate).\n- Do a \"pigment only\" change justification; color changes usually don't affect burn unless heavy metallic/pearl.\n- Consider that you don't need to test the whole panel assembly if only the finish film changes and the film is qualified; but you must ensure the adhesive and film don't change the result.\n\nSpecimen counts:\n- 12-second vertical: 3 specimens (Appendix F, Part I(a)? Actually 25.853(a) requires 12-second vertical for interior ceiling/wall panels etc; 60-second vertical for other).\n- 60-second vertical: 3 specimens.\n- Heat release (OSU): 3 specimens.\n- Smoke density: 3 specimens.\n- If a specimen fails, typically retest with additional specimens (per FAA guidance, 3 more? Or the \"burn test handbook\" allows retest). Need to be careful.\n\nThe user's claim \"一次燃烧试验就是烧一个试样\" — one test burns one specimen, so 3 specimens = 3 tests. That's right per specimen. But \"only way is cut from aircraft each time\" is false: you can fabricate test panels.\n\nIf you can buy original board spares at a reasonable price: then the best path is to buy spare panels/stock and use them for specimen preparation; no need to cut from the aircraft. Conclusion: the \"cut from aircraft\" constraint disappears; you can build a test library and do finish changes with new specimens from stock; but note procurement must ensure the spare is the same configuration/part number and not a different build standard. Also shelf life / batch variability: test the actual production batch.\n\nI need to be careful about accuracy of the specifics. Let me recall the actual FAA guidance on cabin interior burn testing: AC 20-xxx? There's \"AC 25.853-1 Flammability Requirements for Aircraft Seat Cushions\". For interior panels, the applicable document is 14 CFR 25.853 and Appendix F; FAA \"Aircraft Materials Fire Test Handbook\" DOT/FAA/AR-00/12. There's also policy on \"Flammability Testing of Aircraft Interior Materials\" and the FAA's \"Fire Test Handbook.\"\n\nSpecimen counts in Appendix F:\nPart I, 12-second vertical: \"Three specimens are required.\" Test specimen 3 in × 12 in.\nPart I, 60-second vertical: same.\nPart II horizontal: 4 in × 14 in, 3 specimens.\nPart IV 45-degree: ?\nPart V heat release: 6 in × 6 in, 3 specimens.\nPart VI smoke: 3 in × 3 in, 3 specimens.\n\nActually Appendix F Part IV is the \"45-degree\" test; Part V heat release (OSU); Part VI smoke density; Part VII oil burner (seat cushions).\n\nI should present this as general regulatory knowledge, clearly flagged as not from the bound KB, and recommend verifying with the current Appendix F and the FAA fire test handbook.\n\nAlso there is a nuance: for a change to an existing TC, you might use the \"changed product rule\" and only need to show compliance for the changed areas. If the finish is a decorative change, you may need to show the new finish meets 25.853. If the substrate is unchanged and the decorative film is qualified, maybe only the film needs testing.\n\nAlso \"no approved burn data\" — you need to establish compliance. For a panel installed per TC, the TC holder should have data; if it's an aftermarket STC, the STC holder. If truly none, you need testing.\n\nI should also mention \"25.853(a)\" applies to interior compartments; \"25.853(d)\" applies to heat release/smoke for large airplanes (Part 25, amendment 25-xxx). Heat release and smoke density requirements apply to interiors of transport category airplanes (Part 25) per § 25.853(d), not to Part 23 commuter? Actually 23.853 for commuter category references 25.853? Hmm.\n\nThe answer should be structured: \n1. What the rule requires (don't overstate).\n2. Alternative paths (5-6).\n3. How to reduce cutting.\n4. Specimen counts.\n5. If spares purchasable → conclusion changes.\n\nCaveat: the bound KB has no relevant content; I'll state that upfront briefly. No citations possible.\n\nBut wait—should I mention that the provided documents are irrelevant? The user gave retrieval results from a KB about AC 20-181, 183, 180, 182A, 184. None address cabin panels. I should say the retrieved knowledge base doesn't cover this, and my answer is general regulatory knowledge to be verified.\n\nActually, I should consider whether the task expects me to search the wiki. No tools were provided. I'll just answer.\n\nLet me also think about \"原客舱板无批准燃烧数据，也没有备件\" — original cabin panel has no approved burn data and no spare parts. Team says \"only way is to cut a panel from the aircraft each time you change a finish, and one burn test burns one specimen.\" The user wants alternatives.\n\nKey insight: The premise \"cut from aircraft\" is one option, not the only one. Test specimens must be representative of the installed configuration, but FAA accepts test panels fabricated from the same materials/processes. Also the panel itself may be removable (sidewall/ceiling panels are removable), so you don't cut from the aircraft structure—you remove the panel and cut a coupon, then reinstall; but if no spare, you'd have a hole. Better: remove a panel, use it as a template, fabricate duplicates.\n\nAlso: a \"burn test burns one specimen\" is true, but a single panel can yield many specimens; e.g., a 2 ft × 4 ft panel yields dozens of 3×12 coupons. So per finish you need 3 for 12s + 3 for 60s + 3 for OSU + 3 for smoke = 12 specimens, likely more for retests. One panel might suffice.\n\nActually not all tests apply to every material. For a wall panel: 25.853(a) 12-second vertical? Let me recall Table: \n- Interior ceiling panels, wall panels, partition panels: 12-second vertical Bunsen burner, 60-second vertical? I think § 25.853(a) requires 12-second vertical for \"interior ceiling, wall panels, partitions...\" and 60-second vertical for \"other interior surfaces\"? Hmm.\n\nActually 25.853(a): \"Materials within the passenger compartment must meet the following: (a) Interior ceiling panels, interior wall panels, partitions, galley structure, large cabinet walls, structural flooring... must meet the test requirements of Part I of Appendix F (12-second vertical)...\" Then (a)(1)(ii) \"All other interior materials... must meet 60-second vertical.\" Let me not over-specify.\n\nLet me be careful: I'll give the commonly applicable specimen counts with a note that the exact matrix depends on panel location and whether § 25.853(a) or (d) applies.\n\nAlso mention: heat release and smoke density (OSU and smoke) typically apply to large transport category airplanes; for smaller Part 23 airplanes, may not apply. So the test matrix may be just vertical burn.\n\nLet me draft.\n\nStructure:\n- 结论先行: \"切板\"不是唯一路径; 试样数取决于适用条款; 买备件后基本解决。\n- 1. 先明确适用条款与测试矩阵 (don't test more than needed).\n- 2. 替代路径 (5).\n- 3. 减少切板的具体做法.\n- 4. 试样数.\n- 5. 买备件后的结论变化.\n- 6. 建议行动.\n\nI need to avoid citing anything since no relevant sources. I'll state the KB gap.\n\nLet me write in Chinese, as the user asked in Chinese.\n\nDetails on test panels: FAA accepts \"panels representative of the production article\" — same materials, same processes, same thickness, same cure. The key is \"representative\" not \"cut from the aircraft.\" Advisory circulars and the Fire Test Handbook emphasize specimen conditioning (70°F, 50% RH, 24 h?) and specimen preparation.\n\nRetest policy: FAA guidance often allows retesting if a specimen fails due to atypical defect; but you can't just retest until pass. Typically 3 specimens, and the requirement is that all 3 pass? For 12-second vertical: average burn length ≤ 8 in, average after flame ≤ 15 s, average drip flame ≤ 5 s; no specimen may have burn length > 8 in? Actually the criteria: \"average burn length not exceed 8 inches, average after flame time not exceed 15 seconds, average drip flame time not exceed 5 seconds.\" Individual specimen limits? I think for 60-second: average burn length ≤ 8 in, average after flame ≤ 15 s, average drip flame ≤ 5 s, and no specimen burn length > 8 in? Hmm.\n\nLet me not over-specify individual pass/fail; say \"3 specimens per condition, evaluated on average against the Appendix F criteria; check whether the specific paragraph imposes individual specimen limits.\"\n\nFor OSU: average peak heat release rate ≤ 65 kW/m² and average total heat release ≤ 65 kW·min/m² over the first 2 minutes; 3 specimens.\n\nSmoke: average Ds ≤ 200; 3 specimens.\n\nAlso \"burn test burns one specimen\" — yes, destructive. So plan for 3 per test condition plus contingency (e.g., 1 extra = 4, or double if retest). Recommend 2× (6 per condition) if scheduling risk.\n\nNow the \"if buy spares at reasonable price\" — the conclusion changes:\n- You no longer need to cut from the aircraft; use spares as test articles and as \"coupons.\"\n- But: a spare must be the same part number/build standard; if the spare is an older build with different adhesive/film, test data may not represent current production. Need configuration control.\n- Buy enough to cover the full test matrix plus retests and future finish changes; consider a \"test reserve.\"\n- Also, if spares are available, you can qualify the finish change on a \"worst-case\" basis and keep a coupon library.\n- Cost-benefit: buying a few panels is likely cheaper than aircraft downtime and re-installation.\n\nAlternative paths more specifically:\n1. Retrieve existing data from TC/STC holder or panel OEM (compliance data, TSO, supplier burn reports). Original panel may have been qualified as part of the type design even if the operator doesn't have the report; the TC holder must.\n2. Test panels fabricated to the same specification (identical materials/processes) — accepted by FAA/EASA as representative.\n3. Material-level qualification: qualify the decorative laminate/film and adhesive, then show the substrate is noncombustible/qualified; if only the finish changes, test the finish system.\n4. Grouping/family approach: same chemistry, pigment-only changes → test worst case; justification that colorant loading is below threshold.\n5. Use of a DER/ODA for finding of compliance and possibly a \"no-change\" determination.\n6. If the change is minor and the existing panel already meets the rule, a design change under the TC/STC may not require new burn testing — check the certification basis and change criteria.\n\nReduce cutting:\n- Remove one representative panel (if removable) and use it as a master to fabricate matched test panels; or use it directly for coupons if enough area.\n- Cut coupons from flat, unburned, representative areas away from edges/fasteners; one panel yields multiple coupons.\n- Plan the coupon layout (nesting) to maximize yield: 3×12 specimens from a panel.\n- Keep offcuts as future coupons; label and store with batch traceability.\n- Use \"run-in\" specimens? No.\n\nSpecimen count details:\n- 12-second vertical: 3 specimens (3 in × 12 in).\n- 60-second vertical: 3 specimens (3 in × 12 in).\n- Heat release (OSU): 3 specimens (6 in × 6 in).\n- Smoke density: 3 specimens (3 in × 3 in).\n- If both 12s and 60s apply, 6 specimens.\n- Add contingency for retest: 1-2 extra per condition.\n\nTotal for a panel: possibly 12 specimens (3+3+3+3) plus contingency → 16-18.\n\nOne 4×8 ft panel yields many: 3×12 coupons → a 4×8 ft sheet can yield ~100+ if no defects, but you need representative flat area. So one spare panel covers multiple finish changes.\n\nLet me also mention conditioning and specimen selection per Appendix F and the Fire Test Handbook, and that test labs (e.g., FAA-accepted) can advise.\n\nI should note the \"no approved burn data\" issue: absence of data doesn't mean noncompliant; you need to establish compliance. If the panel is part of the original TC, the TC holder's compliance data should exist; request it. If the panel was installed under an STC, the STC holder.\n\nAlso mention \"equivalency\" and \"MOC\" with the local ACO/ODA.\n\nLet me write the answer with headings and a small table for specimen counts. No citations. Add a note at the top: 检索到的知识库文献（AC 20-180/181/182A/183/184）不涉及客舱内饰燃烧，因此以下为通用适航实践，需以现行 14 CFR 25.853/Appendix F 和 FAA 防火测试手册为准。\n\nI'll keep it reasonably detailed but not bloated. Use Chinese.\n\nLet me double check the Part numbers of Appendix F:\n- Part I: Vertical Bunsen burner (12-second and 60-second)\n- Part II: Horizontal\n- Part III: 45-degree\n- Part IV: 60-degree\n- Part V: Heat release rate (OSU)\n- Part VI: Smoke density\nActually I recall Part IV is \"60-degree test\" and Part V \"heat release rate\", Part VI \"smoke density\". Yes.\n\nFor §25.853(d) heat release/smoke applies to \"interior materials of large airplanes\" — actually (d) applies to \"airplanes with passenger capacity of 20 or more\" or \"transport category\"? Let me recall: § 25.853(d) \"Heat release and smoke density\" applies to interior materials in \"compartment interiors\" of transport category airplanes; exception for small airplanes? It says \"In addition to the requirements of paragraph (a)... interior materials must meet...\" It applies to Part 25 airplanes. For Part 23 commuter, 23.853 may reference 25.853? Not exactly. I'll say \"若适用 §25.853(d)（大型运输类）\".\n\nI'll caveat that the exact applicability depends on certification basis and amendment level.\n\nLet me write.\n\nOne more: \"试样数要求\" — maybe they ask \"how many specimens per test.\" I'll give a table with test, specimen size, count, notes. And mention that \"one test burns one specimen\" is correct but a \"test condition\" requires 3 valid specimens, so 3 specimens per condition.\n\nAlso mention: don't cut from a burned/damaged panel; specimens must be from representative, non-damaged areas.\n\nNow, the \"if buy original spares at reasonable price\" conclusion:\n- Then the \"cut from aircraft\" problem disappears; buy enough for the full matrix + retest reserve + future changes.\n- The remaining issue is configuration/batch equivalence; verify part number, build standard, and that the spare's decorative finish matches the one to be qualified.\n- If the spare has the OLD finish and you're changing finish, you still need to apply the new finish to a spare (or fabricate) — but you can use the spare as substrate, which is better than cutting from the aircraft.\n- Cost: compare spare cost vs aircraft downtime; likely favorable.\n- Also, if spares are the same build standard as installed, you can use them to create a \"coupon bank\" for future finish changes.\n\nI'll present a decision logic:\n1. Can you get TC/STC holder data? → no test needed.\n2. Can you get spare panels? → use them.\n3. Can you fabricate representative panels? → use them.\n4. Only then consider removing a panel from the aircraft (and plan replacement).\n\nLet me produce the final answer."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:31:15.467414+00:00",
+    "updated_at": "2026-10-22T06:32:06.72973+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "6bb0db7439c4c8605897c25b5f1fa32fd9a6ccf0fa13e2769126ca965bca0243",
+      "knowledge_base_ids": [
+        "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

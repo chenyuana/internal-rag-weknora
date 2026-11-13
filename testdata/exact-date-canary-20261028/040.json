@@ -1,0 +1,1947 @@
+{
+  "num": "040",
+  "query": "AC 20-136C 的完整主题（Subject）？",
+  "session": "322e480b-a9fd-4bcb-9e53-b946dd66587f",
+  "answer": "AC 20-136C 的完整主题（Subject）为：**Aircraft Electrical and Electronic System Lightning Protection**（飞机电气与电子系统雷击防护）<kb doc=\"AC_20-136C.pdf\" chunk_id=\"8b6ba39e-b0a1-4269-8903-6bf785c73be9\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />。",
+  "references": [
+    {
+      "id": "0e4b9497-06ab-4c51-af5e-fc9a028d4ce4",
+      "content": "Source image on page 1; no OCR transcription available.\n\nAdvisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Aircraft Electrical and Electronic System Lightning Protection\n\nDate:\n\nInitiated By: AIR-626\n\nAC No: 20-136C\n\nThis advisory circular (AC) provides you, the applicant, with information and guidance on how you can protect aircraft electrical and electronic systems from the effects of lightning. This AC describes a means, but not the only means, for you to demonstrate compliance with title 14, Code of Federal Regulations (14 CFR) 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, and 29.1316, Electrical and electronic system lightning protection, as they pertain to the type or supplemental type certification of your aircraft.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDaniel J. Elgas Aviation Safety Director, Policy and Standards, Division Aircraft Certification Service\n\nTable of Contents\n\nParagraph Page\n\n1 Purpose....1\n2 Applicability....1\n3 Cancellation....2\n4 Scope....2\n5 Related Material....2\n6 Background....7\n7 Steps for Showing Compliance....7\n8 Lightning Compliance....16\n9 Effects of Transients....20\n10 Steps to LCL A System Lightning Compliance....21\n11 Steps to LCL B And C System Lightning Compliance....32\n12 Maintenance, Protection Assurance, and Modifications....36\nAppendix A. Definitions....A-1\nAppendix B. Acronyms....B-1\nAppendix C. Examples of Lightning Safety Assessment Considerations - LCL A Systems on Transport Category Airplanes....C-1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/2743a00e42bfcf518eab)",
+      "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+      "chunk_index": 0,
+      "knowledge_title": "AC_20-136C.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 0,
+      "score": 1,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "847c493be4f8b794f46a",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+        "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+        "kept_by": "document_header",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "54a5ede1-047a-48b0-9c5c-2744ff69a724",
+      "image_info": "",
+      "knowledge_filename": "AC_20-136C.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "Source image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/2743a00e42bfcf518eab)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "3a6c41ad-52d3-4086-8aac-6d25c3d6ac7b",
+      "content": "CANCELLATION.\n\nThis AC cancels AC 20-136B, Aircraft Electrical and Electronic System Lightning Protection, dated September 7, 2011.",
+      "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+      "chunk_index": 6,
+      "knowledge_title": "AC_20-136C.pdf",
+      "start_at": 0,
+      "end_at": 131,
+      "seq": 6,
+      "score": 0.9887096774193547,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "847c493be4f8b794f46a",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+        "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "c0d1b76a-3539-43a4-bfea-ffa9115db232",
+      "image_info": "",
+      "knowledge_filename": "AC_20-136C.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "CANCELLATION.\n\nThis AC cancels AC 20-136B, Aircraft Electrical and Electronic System Lightning Protection, dated September 7, 2011.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "4a706f29-5a61-4a04-8074-cdabb1648ddb",
+      "content": "7 STEPS FOR SHOWING COMPLIANCE.\n\n7.1 General.\n\n7.1.1 The following steps describe a method for complying with §§ 23.1306 (amendment 23- 61) 23.2515, 25.1316, 27.1316, and 29.1316 requirements for your aircraft’s electrical and electronic systems. Adherence to the order of activities in the list below is not required.\n\n• Identify the systems to be assessed.\n\n• Perform a lightning safety assessment.\n\n• Determine the lightning strike zones for the aircraft.\n\n• Establish the aircraft lightning environment for each zone.\n\n• Determine the lightning transient environment associated with the systems.\n\nEstablish equipment transient design levels (ETDLs) and aircraft actual transient levels (ATLs).\n\n• Verify compliance with the requirements.\n\n• Take corrective measures, if needed.\n\nNote: The steps above should be performed to address lightning transients induced in electrical and electronic system wiring and equipment, and lightning damage to aircraft external equipment and sensors that are connected to electrical and electronic systems, such as radio antennas and air data probes. More detailed guidance on lightning protection of systems is provided in SAE ARP5415 / EUROCAE ED-158. Additional guidance on lightning protection against lightning damage for external equipment and sensor installations can be found in SAE ARP5577.\n\n7.2 Identify the Systems to be Assessed.\n\n7.2.1 The aircraft systems requiring a lightning safety assessment should be identified. Address any electrical or electronic system failure that may cause or contribute to an adverse effect on the aircraft (catastrophic, hazardous, or major failure condition). The effects of a lightning strike, therefore, should be assessed in a manner that allows for the determination of the degree to which the aircraft’s and/or its systems’ safety may be influenced. The lightning safety assessment should cover:\n\n• All normal aircraft operating modes, phases of flight, and operating conditions; and\n\nAll lightning-related failure conditions and their subsequent effect on aircraft operations and the flightcrew.\n\n• System responses and any required flightcrew actions.\n\n7.3 Lightning Safety Assessment.\n\n7.3.1 A safety assessment related to lightning effects should be performed to establish and classify the system failure conditions. Tables 1 and 2 provide the corresponding failure condition classification and system lightning certification level (LCL) for the appropriate lightning regulations. The failure condition classifications and terms used in this AC are consistent with those used in AC 23.1309-1, AC 25.1309-1, AC 27-1, and AC 29-2, as applicable. Only those systems identified as performing or contributing to functions whose failure would result in catastrophic, hazardous, or major failure conditions are subject to lightning regulations. Based on the failure condition classification established by the safety assessment, the systems should be assigned appropriate LCLs, as shown in Tables 1 and 2. The lightning safety assessment should consider the common cause<sup>1</sup> effects of lightning, particularly for highly integrated systems and systems with redundant elements. Common cause effects due to lightning exposure may simultaneously have an adverse impact on multiple electrical and electronic systems’ functions. The lightning safety assessment determines the consequences of failures for the aircraft functions that the systems perform.\n\n7.3.2 The LCL classification assigned to the system and functions may be different from the development assurance level assigned for equipment redundancy, software, and airborne electronic hardware. This is because the lightning environment may lead to common cause effects. The term “development assurance level” should not be used to describe the LCL because of the potential differences in assigned classifications for software, airborne electronic hardware, and equipment redundancy. The lightning safety assessment should include all electrical and electronic equipment, components, and electrical interconnections, and should assume that they are potentially affected by lightning. It is not appropriate to use the lightning immunity data for electrical and electronic equipment, components, and electrical interconnections as information input to the lightning safety assessment. Lightning immunity should only be used to demonstrate compliance with the applicable paragraph of the lightning regulations, after the required LCL for the system and functions are determined by lightning safety assessment.\n\n<sup>1</sup> Reference ACs 23.1309-1, 25.1309-1, 27-1, or 29-2 for common cause considerations and analysis.\n\n7.3.3 The lightning safety assessment should have input from and be coordinated between the applicant’s safety specialists, system specialists, and lightning specialists. This process may vary from applicant to applicant. Further guidance on performing a safety assessment can be found in AC 23.1309-1, AC 25.1309-1, AC 27-1, AC 29-2, SAE ARP4754, and ARP4761. More detailed guidance on the lightning safety assessment is provided in SAE ARP5415 / EUROCAE ED-158.\n\nNote: Considering that lightning and HIRF environments may have similar effects on electronic systems (disturbing electrical signals causing upsets or damage to circuits) and that the regulations are similarly structured, the system LCL and HIRF certification level (HCL) may be the same.\n\nTable 1. Lightning Failure Conditions and Certification Levels\nLIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316=(a) Each electrical and electronic system that performs a function, for which failure would prevent the continued safe flight and landing of the [aircraft] ^2 ...; MOST SEVERE FAILURE CONDITION=Catastrophic; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=A\nLIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316=(b) Each electrical and electronic system that performs a function, for which failure would reduce the capability of the [aircraft] or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraph (b) in this table is applicable for normal category airplanes and rotorcraft (part 23 and 27, respectively) approved for instrument flight rules (IFR) operations.; MOST SEVERE FAILURE CONDITION=Hazardous Major; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=B C\n\n完整表格：\n<table><tr><td>LIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316</td><td>MOST SEVERE FAILURE CONDITION</td><td>SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)</td></tr><tr><td>(a) Each electrical and electronic system that performs a function, for which failure would prevent the continued safe flight and landing of the [aircraft] ^2 ...</td><td>Catastrophic</td><td>A</td></tr><tr><td>(b) Each electrical and electronic system that performs a function, for which failure would reduce the capability of the [aircraft] or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraph (b) in this table is applicable for normal category airplanes and rotorcraft (part 23 and 27, respectively) approved for instrument flight rules (IFR) operations.</td><td>Hazardous Major</td><td>B C</td></tr></table>\n\n<sup>2</sup> Parts 23 and 25 refer to airplanes, and parts 27 and 29 refer to rotorcraft.\n\nTable 2. Lightning Failure Conditions and Certification Levels (§ 23.2515)\nLIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)=(a) Each electrical or electronic system that performs a function, the failure of which would prevent the continued safe flight and landing of the airplane...; MOST SEVERE FAILURE CONDITION=Catastrophic; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=A\nLIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)=(b) Each electrical and electronic system that performs a function, the failure of which would significantly reduce the capability of the airplane or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraphs (a) and (b) in this table are applicable for normal category airplanes approved for instrument flight rules (IFR) operations unless an applicant shows that exposure to lightning is unlikely.; MOST SEVERE FAILURE CONDITION=Hazardous; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=B\n\n完整表格：\n<table><tr><td>LIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)</td><td>MOST SEVERE FAILURE CONDITION</td><td>SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)</td></tr><tr><td>(a) Each electrical or electronic system that performs a function, the failure of which would prevent the continued safe flight and landing of the airplane...</td><td>Catastrophic</td><td>A</td></tr><tr><td>(b) Each electrical and electronic system that performs a function, the failure of which would significantly reduce the capability of the airplane or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraphs (a) and (b) in this table are applicable for normal category airplanes approved for instrument flight rules (IFR) operations unless an applicant shows that exposure to lightning is unlikely.</td><td>Hazardous</td><td>B</td></tr></table>\n\n7.3.3.1 LCL A Systems.\n\n7.3.3.1.1 You must demonstrate compliance with §§ 23.1306(a) (amendment 23- 61), 23.2515(a), 25.1316(a), 27.1316(a), or § 29.1316(a), for aircraft functions and systems that perform functions whose failure would prevent continued safe flight and landing of the aircraft. Additionally, paragraph (a)(2) of those regulations require the electrical and electronic system to automatically recover normal operation of the functions in a timely manner after an airplane is exposed to lightning, with the exception of § 23.2515(a)(2), which allows manual recovery (flightcrew action) or automatic recovery. If all electrical and electronic equipment, components, and electrical interconnections that are required for normal operation of the Level A^3 functions comply with the requirements of paragraph (a), then all electrical and electronic equipment, components, and electrical interconnections that are only operational in non-normal situations may comply with paragraph (b) of these regulations, unless the FAA determines the failure is catastrophic.\n\n<sup>3</sup> In the context of this AC, refers to a critical function whose failure may be catastrophic (LCL A system).\n\n7.3.3.1.2 The lightning safety assessment should consider effects of lightningrelated failures or malfunctions on systems with lower failure classification that may affect the function of LCL A systems. You should demonstrate that any system with wiring connections to an LCL A system will not adversely affect the functions with catastrophic failure conditions performed by the LCL A system when the aircraft is exposed to lightning. Redundancy alone cannot protect against lightning because the lightninggenerated electromagnetic fields, conducted currents, and induced currents in the aircraft, can simultaneously induce transients in all electrical wiring on an aircraft.\n\n7.3.3.2 LCL B or C Systems.\n\nYou must demonstrate compliance with §§ 23.1306(b) (amendment 23- 61), 23.2515(b), 25.1316(b), 27.1316(b), or § 29.1316(b), for a system that performs a function whose failure would reduce the capability of the aircraft or the ability of the flightcrew to respond to an adverse operating condition. Simultaneous and common cause failures due to lightning exposure generally do not have to be assumed for LCL B or C systems incorporating redundant, spatially separated installations in the aircraft. This is because aircraft transfer function tests and in-service experience have shown these redundant and spatially separated installations are not simultaneously exposed to the maximum lightning induced transients. For example, redundant systems (internal to the airframe) may mitigate lightning indirect effects, if there is acceptable separation between the equipment to prevent damage to multiple systems, so that the function is maintained. Therefore, simultaneous loss of all of these redundant and spatially separated LCL B or C systems due to lightning exposure does not need to be considered. However, if multiple LCL B or C systems including interface wiring are designed and installed within the same location in the aircraft, or share a common wiring connection, then the combined failure due to lightning exposure should be assessed to determine if the combined failures are catastrophic. If so, these systems should be designated as LCL A systems.\n\n7.3.3.3 Failure Conditions.\n\nThe lightning safety assessment should consider all potential adverse effects due to system failures, malfunctions, or misleading information. The lightning safety assessment may show that a system’s functions have different failure conditions in different phases of flight. Therefore, the system LCL corresponds to phase of flight with the most severe failure condition. For example, an automatic flight control system may have a catastrophic failure condition for autoland, while automatic flight control system operations in cruise may have a hazardous failure condition.\n\n7.4 Determine the Lightning Strike Zones for the Aircraft.\n\nThe purpose of lightning zoning is to determine those areas of the aircraft likely to experience lightning channel attachment and those structures that may conduct lightning current between lightning attachment points. You should determine the lightning attachment zones for your aircraft configuration, since the zones will be dependent upon the aircraft’s geometry, materials, and operational factors. Lightning attachment zones often vary from one aircraft type to another.\n\nNote: AC 20-155 provides guidance to determine the lightning attachment zones for aircraft.\n\n7.5 Establish the Aircraft Lightning Environment for Each Zone.\n\nZones 1 and 2 identify where lightning is likely to attach and, as a result, the entrance and exit points for current flow through the aircraft. The appropriate voltage waveforms and current components to apply in those zones should be identified. By definition, Zone 3 areas carry lightning current flow between initial (or swept stroke) attachment points, so they may include contributions from all of the current components. The FAA accepts analysis to estimate Zone 3 current levels that result from the external environment. The external lightning environment is:\n\n7.5.1 Caused by the lightning flash interacting with the exterior of the aircraft.\n\n7.5.2 Represented by combined waveforms of the lightning current components at the aircraft surface. Note: AC 20-155 provides guidance for selecting the lightning waveforms and their applications.\n\n7.6 Determine the Lightning Transient Environment Associated with the Systems.\n\n7.6.1 The lightning environment, as seen by electrical and electronic systems, consists of voltages and currents produced by lightning current flowing through the aircraft. The voltages and currents that appear at system wiring interfaces result from aperture coupling, structural voltages, or conducted currents resulting from direct attachments to equipment and sensors.\n\n7.6.2 Determine the lightning voltage and current transient waveforms and amplitudes that can appear at the electrical and electronic equipment interface circuits for each system identified in paragraph 7.2. You may determine the lightning transients in terms of the wire bundle current, or the open circuit voltage and the short circuit current appearing at system wiring and equipment interface circuits. Refer to SAE ARP5415 / EUROCAE ED-158 for more detailed guidance. The voltage and current transient waveforms and amplitudes are dependent upon the loop impedances of the system and its interconnecting wiring.\n\n7.7 Establish Equipment Transient Design Levels (ETDLs) and Aircraft Actual Transient Levels (ATLs).\n\nThe regulations in §§ 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, and 29.1316 define requirements in terms of functional effects that are performed by aircraft electrical and electronic systems. From a design point of view, lightning protection for systems is shared between protection incorporated into the aircraft structure and wiring, and protection incorporated into the equipment. Therefore, requirements for the electrical and electronic system lightning protection can be based on the concept of ETDLs and ATLs.\n\n7.7.1 Determine and specify the ETDLs for the electrical and electronic equipment that make up the systems to be assessed. The ETDLs set qualification test levels for the systems and equipment. They define the voltage and current amplitudes and waveforms that the systems and equipment must withstand without any adverse effects. The ETDLs for a specific system depend on the anticipated system and wiring installation locations on the aircraft, the expected shielding performance of the wire bundles and structure, and the system criticality.\n\n7.7.2 The ATLs are the voltage and current amplitudes and transient waveforms generated on the aircraft wiring when the aircraft is exposed to lightning, as determined by aircraft test, analysis, or similarity. The difference between an ETDL and ATL is the margin. Figure 1 shows the relationship between the ATL and ETDL. You should evaluate the aircraft, interconnecting wiring, and equipment protection to determine the most effective combination of ATLs and ETDLs that will provide acceptable margin. Appropriate margins to account for uncertainties in the verification techniques may be required as discussed in paragraph 10.12 of this AC.\n\nSource image on page 17; no OCR transcription available.\n\n7.7.3 Typically, you specify the ETDLs prior to aircraft certification lightning tests or analyses to determine the aircraft ATLs. Therefore, the expected aircraft transients must be based upon results of lightning tests on existing aircraft, engineering analysis, or\n\nknowledgeable estimates. These expected aircraft lightning transient levels are termed transient control levels (TCL). Specify the TCL’s voltage and current amplitudes and waveforms based upon the expected lightning transients that would be generated on wiring in specific areas of the aircraft. The ATLs should not exceed the aircraft TCLs. The TCLs for a specific wire bundle depend on the configuration of the aircraft, the wire bundle, and the wire bundle installation. You should design your aircraft lightning protection to meet the specified TCLs.\n\n7.8 Verify Compliance with the Regulations.\n\n7.8.1 You must demonstrate that the systems comply with the applicable requirements of §§ 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, or § 29.1316.\n\n7.8.2 You should demonstrate that the ETDLs exceed the ATLs by the margin established in your certification plan.\n\n7.8.3 Verification may be accomplished by tests, by analysis, or by demonstrating similarity with previously certified aircraft and systems. The certification process for LCL A systems is discussed in paragraph 10. The certification process for LCL B and C systems is discussed in paragraph 11.\n\n7.8.4 Submit your certification plan early in the program to the cognizant certification branch for review. Experience shows, particularly with aircraft using new technology or those that have complex systems, that early agreement on the certification plan benefits both the applicant and the cognizant certification branch. The plan should define acceptable ways to resolve critical issues during the certification process. Analysis and test results during the certification process may warrant modifications in the design or verification methods. When significant changes are necessary, update the certification plan accordingly. The plan may include the items listed in Table 3.\n\nNote: You may refer to paragraph 8.1 for more information.\n\n7.9 Take Corrective Measures.\n\nIf tests and analyses show that the system did not meet the pass/fail criteria, review the aircraft, installation, or system design and improve protection against lightning.\n\n7.10 Margins.\n\nMargins account for uncertainty in the verification process. For lightning certification, the margin is the difference between the ETDLs and ATLs. The verification approach should be described in the certification plan with justification for margin, which requires agreement by the respective FAA certification branch. Refer to paragraph 10.12 for additional guidance on margin.\n\nTable 3. Items Recommended for a Lightning Certification Plan\nITEM=Description of Systems; DISCUSSION=Describe systems' installation, including unusual or unique features; the system failure condition classifications or initial LCLs; the operational aspects; lightning attachment zones; lightning environment; preliminary estimate of ETDLs and TCLs; and acceptable margins between ETDLs and ATLs.\nITEM=Description of Compliance Method; DISCUSSION=Describe how to verify compliance. Typically, your verification method includes similarity, analytical procedures, and tests. If using analytical procedures, describe how to verify them. (See paragraph 10.9 of this AC.)\nITEM=Acceptance Criteria; DISCUSSION=Determine the pass/fail criteria for each system by analyzing how safe the system is; this information may be finalized in the test plan. During this safety analysis, assess the aircraft in its various operational states; account for the failure and disruption modes caused by the effects of lightning.\nITEM=Test Plans; DISCUSSION=Plan each test you include as part of your certification process. As an applicant, you can decide if your test plans are separate documents or part of the certification plan. Your test plans should state the test sequence.\n\n完整表格：\n<table><tr><td>ITEM</td><td>DISCUSSION</td></tr><tr><td>Description of Systems</td><td>Describe systems&#x27; installation, including unusual or unique features; the system failure condition classifications or initial LCLs; the operational aspects; lightning attachment zones; lightning environment; preliminary estimate of ETDLs and TCLs; and acceptable margins between ETDLs and ATLs.</td></tr><tr><td>Description of Compliance Method</td><td>Describe how to verify compliance. Typically, your verification method includes similarity, analytical procedures, and tests. If using analytical procedures, describe how to verify them. (See paragraph 10.9 of this AC.)</td></tr><tr><td>Acceptance Criteria</td><td>Determine the pass/fail criteria for each system by analyzing how safe the system is; this information may be finalized in the test plan. During this safety analysis, assess the aircraft in its various operational states; account for the failure and disruption modes caused by the effects of lightning.</td></tr><tr><td>Test Plans</td><td>Plan each test you include as part of your certification process. As an applicant, you can decide if your test plans are separate documents or part of the certification plan. Your test plans should state the test sequence.</td></tr></table>",
+      "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+      "chunk_index": 21,
+      "knowledge_title": "AC_20-136C.pdf",
+      "start_at": 0,
+      "end_at": 89,
+      "seq": 21,
+      "score": 0.953125,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "847c493be4f8b794f46a",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+        "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "5eca19b6-ec3b-4d1f-8283-1f7bbf971f31",
+      "image_info": "",
+      "knowledge_filename": "AC_20-136C.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "<sup>2</sup> Parts 23 and 25 refer to airplanes, and parts 27 and 29 refer to rotorcraft.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "900e4a3b-aff1-4463-8ede-8d2fd59428e4",
+      "content": "21—26 [RESERVED]",
+      "knowledge_id": "ada93799-930c-49f4-a7ee-7ab674a7ef57",
+      "chunk_index": 48,
+      "knowledge_title": "AC_25.1329-1C.pdf",
+      "start_at": 0,
+      "end_at": 16,
+      "seq": 48,
+      "score": 0.6887096774193547,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "ffab31dfb95f6ec967e4ec6c57b4634bc8e18956f59ea4d07647448cbd5946d4",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "187fafeebb9dafd875e2",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\d1\\d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0\\source.pdf",
+        "internal_rag_source_sha256": "d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "87dc5386-7da6-425d-8431-5c7cced6ce4b",
+      "image_info": "",
+      "knowledge_filename": "AC_25.1329-1C.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.1329-1C.pdf\n21—26 [RESERVED]\n\n21—26 [RESERVED]",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "8f1b55b9-b458-45ce-86f2-d3edd751966d",
+      "content": "13—16 [RESERVED]",
+      "knowledge_id": "ada93799-930c-49f4-a7ee-7ab674a7ef57",
+      "chunk_index": 38,
+      "knowledge_title": "AC_25.1329-1C.pdf",
+      "start_at": 0,
+      "end_at": 16,
+      "seq": 38,
+      "score": 0.6671874999999999,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "ffab31dfb95f6ec967e4ec6c57b4634bc8e18956f59ea4d07647448cbd5946d4",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "187fafeebb9dafd875e2",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\d1\\d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0\\source.pdf",
+        "internal_rag_source_sha256": "d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "711caa08-d9e5-4433-bac9-8b20a554fb50",
+      "image_info": "",
+      "knowledge_filename": "AC_25.1329-1C.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.1329-1C.pdf\n13—16 [RESERVED]\n\n13—16 [RESERVED]",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "b0d7ea5b-e31e-4653-90b8-28472116a97f",
+      "content": "APPENDIX 2",
+      "knowledge_id": "ba1338e2-fd09-41de-9c29-b1976d7498c6",
+      "chunk_index": 22,
+      "knowledge_title": "AC_20-133.pdf",
+      "start_at": 0,
+      "end_at": 10,
+      "seq": 22,
+      "score": 0.6469696969696969,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "8d85de81e023b962d9a3a9f64caa9377adb45ff4e6f3e901d4c3a65c1252e48a",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "38d98b926a44dfe139b3",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\c5\\c5079b56871bfd2d5988a4efd951b16540de93e1efd4dc5bbee6456917fca34e\\source.pdf",
+        "internal_rag_source_sha256": "c5079b56871bfd2d5988a4efd951b16540de93e1efd4dc5bbee6456917fca34e",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "c861a99a-47a2-467d-a3a1-12ee1896b2d9",
+      "image_info": "",
+      "knowledge_filename": "AC_20-133.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_20-133.pdf\nAPPENDIX 2\n\nAPPENDIX 2",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    }
+  ],
+  "events": [
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "agent_query",
+      "content": "",
+      "done": true,
+      "session_id": "322e480b-a9fd-4bcb-9e53-b946dd66587f",
+      "assistant_message_id": "437db8f3-bb87-4877-adc0-11feac92183a",
+      "data": {
+        "assistant_created_at": "2026-10-28T06:13:01.541658Z",
+        "assistant_message_id": "437db8f3-bb87-4877-adc0-11feac92183a",
+        "session_id": "322e480b-a9fd-4bcb-9e53-b946dd66587f",
+        "user_created_at": "2026-10-28T06:13:01.5221673Z",
+        "user_message_id": "5227ea70-d4b6-4db0-ac8e-d65df032b174"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "tool_call",
+      "content": "Calling tool: query_understand",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 20-136C 的完整主题（Subject）？"
+        },
+        "tool_call_id": "71cf094c-bc7f-4ae1-afb9-149d3b9b45e4",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "duration_ms": 1337,
+        "error": "",
+        "output": "已完成问题理解",
+        "success": true,
+        "tool_call_id": "71cf094c-bc7f-4ae1-afb9-149d3b9b45e4",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "tool_call",
+      "content": "Calling tool: knowledge_search",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 20-136C 的完整主题（Subject）是什么",
+          "search_source": "knowledge"
+        },
+        "tool_call_id": "eedf3e9b-84bc-4a51-a4c3-59e87f03e6aa",
+        "tool_name": "knowledge_search"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "candidate_count": 0,
+        "count": 6,
+        "doc_count": 6,
+        "duration_ms": 2622,
+        "error": "",
+        "output": "检索到 6 条相关内容",
+        "search_source": "knowledge",
+        "success": true,
+        "tool_call_id": "eedf3e9b-84bc-4a51-a4c3-59e87f03e6aa",
+        "tool_name": "knowledge_search",
+        "web_count": 0
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "references",
+      "content": "",
+      "done": false,
+      "knowledge_references": [
+        {
+          "id": "0e4b9497-06ab-4c51-af5e-fc9a028d4ce4",
+          "content": "Source image on page 1; no OCR transcription available.\n\nAdvisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Aircraft Electrical and Electronic System Lightning Protection\n\nDate:\n\nInitiated By: AIR-626\n\nAC No: 20-136C\n\nThis advisory circular (AC) provides you, the applicant, with information and guidance on how you can protect aircraft electrical and electronic systems from the effects of lightning. This AC describes a means, but not the only means, for you to demonstrate compliance with title 14, Code of Federal Regulations (14 CFR) 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, and 29.1316, Electrical and electronic system lightning protection, as they pertain to the type or supplemental type certification of your aircraft.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDaniel J. Elgas Aviation Safety Director, Policy and Standards, Division Aircraft Certification Service\n\nTable of Contents\n\nParagraph Page\n\n1 Purpose....1\n2 Applicability....1\n3 Cancellation....2\n4 Scope....2\n5 Related Material....2\n6 Background....7\n7 Steps for Showing Compliance....7\n8 Lightning Compliance....16\n9 Effects of Transients....20\n10 Steps to LCL A System Lightning Compliance....21\n11 Steps to LCL B And C System Lightning Compliance....32\n12 Maintenance, Protection Assurance, and Modifications....36\nAppendix A. Definitions....A-1\nAppendix B. Acronyms....B-1\nAppendix C. Examples of Lightning Safety Assessment Considerations - LCL A Systems on Transport Category Airplanes....C-1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/2743a00e42bfcf518eab)",
+          "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+          "chunk_index": 0,
+          "knowledge_title": "AC_20-136C.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 0,
+          "score": 1,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "847c493be4f8b794f46a",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+            "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+            "kept_by": "document_header",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "54a5ede1-047a-48b0-9c5c-2744ff69a724",
+          "image_info": "",
+          "knowledge_filename": "AC_20-136C.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "Source image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/2743a00e42bfcf518eab)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "3a6c41ad-52d3-4086-8aac-6d25c3d6ac7b",
+          "content": "CANCELLATION.\n\nThis AC cancels AC 20-136B, Aircraft Electrical and Electronic System Lightning Protection, dated September 7, 2011.",
+          "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+          "chunk_index": 6,
+          "knowledge_title": "AC_20-136C.pdf",
+          "start_at": 0,
+          "end_at": 131,
+          "seq": 6,
+          "score": 0.9887096774193547,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "847c493be4f8b794f46a",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+            "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "c0d1b76a-3539-43a4-bfea-ffa9115db232",
+          "image_info": "",
+          "knowledge_filename": "AC_20-136C.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "CANCELLATION.\n\nThis AC cancels AC 20-136B, Aircraft Electrical and Electronic System Lightning Protection, dated September 7, 2011.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "4a706f29-5a61-4a04-8074-cdabb1648ddb",
+          "content": "7 STEPS FOR SHOWING COMPLIANCE.\n\n7.1 General.\n\n7.1.1 The following steps describe a method for complying with §§ 23.1306 (amendment 23- 61) 23.2515, 25.1316, 27.1316, and 29.1316 requirements for your aircraft’s electrical and electronic systems. Adherence to the order of activities in the list below is not required.\n\n• Identify the systems to be assessed.\n\n• Perform a lightning safety assessment.\n\n• Determine the lightning strike zones for the aircraft.\n\n• Establish the aircraft lightning environment for each zone.\n\n• Determine the lightning transient environment associated with the systems.\n\nEstablish equipment transient design levels (ETDLs) and aircraft actual transient levels (ATLs).\n\n• Verify compliance with the requirements.\n\n• Take corrective measures, if needed.\n\nNote: The steps above should be performed to address lightning transients induced in electrical and electronic system wiring and equipment, and lightning damage to aircraft external equipment and sensors that are connected to electrical and electronic systems, such as radio antennas and air data probes. More detailed guidance on lightning protection of systems is provided in SAE ARP5415 / EUROCAE ED-158. Additional guidance on lightning protection against lightning damage for external equipment and sensor installations can be found in SAE ARP5577.\n\n7.2 Identify the Systems to be Assessed.\n\n7.2.1 The aircraft systems requiring a lightning safety assessment should be identified. Address any electrical or electronic system failure that may cause or contribute to an adverse effect on the aircraft (catastrophic, hazardous, or major failure condition). The effects of a lightning strike, therefore, should be assessed in a manner that allows for the determination of the degree to which the aircraft’s and/or its systems’ safety may be influenced. The lightning safety assessment should cover:\n\n• All normal aircraft operating modes, phases of flight, and operating conditions; and\n\nAll lightning-related failure conditions and their subsequent effect on aircraft operations and the flightcrew.\n\n• System responses and any required flightcrew actions.\n\n7.3 Lightning Safety Assessment.\n\n7.3.1 A safety assessment related to lightning effects should be performed to establish and classify the system failure conditions. Tables 1 and 2 provide the corresponding failure condition classification and system lightning certification level (LCL) for the appropriate lightning regulations. The failure condition classifications and terms used in this AC are consistent with those used in AC 23.1309-1, AC 25.1309-1, AC 27-1, and AC 29-2, as applicable. Only those systems identified as performing or contributing to functions whose failure would result in catastrophic, hazardous, or major failure conditions are subject to lightning regulations. Based on the failure condition classification established by the safety assessment, the systems should be assigned appropriate LCLs, as shown in Tables 1 and 2. The lightning safety assessment should consider the common cause<sup>1</sup> effects of lightning, particularly for highly integrated systems and systems with redundant elements. Common cause effects due to lightning exposure may simultaneously have an adverse impact on multiple electrical and electronic systems’ functions. The lightning safety assessment determines the consequences of failures for the aircraft functions that the systems perform.\n\n7.3.2 The LCL classification assigned to the system and functions may be different from the development assurance level assigned for equipment redundancy, software, and airborne electronic hardware. This is because the lightning environment may lead to common cause effects. The term “development assurance level” should not be used to describe the LCL because of the potential differences in assigned classifications for software, airborne electronic hardware, and equipment redundancy. The lightning safety assessment should include all electrical and electronic equipment, components, and electrical interconnections, and should assume that they are potentially affected by lightning. It is not appropriate to use the lightning immunity data for electrical and electronic equipment, components, and electrical interconnections as information input to the lightning safety assessment. Lightning immunity should only be used to demonstrate compliance with the applicable paragraph of the lightning regulations, after the required LCL for the system and functions are determined by lightning safety assessment.\n\n<sup>1</sup> Reference ACs 23.1309-1, 25.1309-1, 27-1, or 29-2 for common cause considerations and analysis.\n\n7.3.3 The lightning safety assessment should have input from and be coordinated between the applicant’s safety specialists, system specialists, and lightning specialists. This process may vary from applicant to applicant. Further guidance on performing a safety assessment can be found in AC 23.1309-1, AC 25.1309-1, AC 27-1, AC 29-2, SAE ARP4754, and ARP4761. More detailed guidance on the lightning safety assessment is provided in SAE ARP5415 / EUROCAE ED-158.\n\nNote: Considering that lightning and HIRF environments may have similar effects on electronic systems (disturbing electrical signals causing upsets or damage to circuits) and that the regulations are similarly structured, the system LCL and HIRF certification level (HCL) may be the same.\n\nTable 1. Lightning Failure Conditions and Certification Levels\nLIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316=(a) Each electrical and electronic system that performs a function, for which failure would prevent the continued safe flight and landing of the [aircraft] ^2 ...; MOST SEVERE FAILURE CONDITION=Catastrophic; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=A\nLIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316=(b) Each electrical and electronic system that performs a function, for which failure would reduce the capability of the [aircraft] or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraph (b) in this table is applicable for normal category airplanes and rotorcraft (part 23 and 27, respectively) approved for instrument flight rules (IFR) operations.; MOST SEVERE FAILURE CONDITION=Hazardous Major; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=B C\n\n完整表格：\n<table><tr><td>LIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316</td><td>MOST SEVERE FAILURE CONDITION</td><td>SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)</td></tr><tr><td>(a) Each electrical and electronic system that performs a function, for which failure would prevent the continued safe flight and landing of the [aircraft] ^2 ...</td><td>Catastrophic</td><td>A</td></tr><tr><td>(b) Each electrical and electronic system that performs a function, for which failure would reduce the capability of the [aircraft] or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraph (b) in this table is applicable for normal category airplanes and rotorcraft (part 23 and 27, respectively) approved for instrument flight rules (IFR) operations.</td><td>Hazardous Major</td><td>B C</td></tr></table>\n\n<sup>2</sup> Parts 23 and 25 refer to airplanes, and parts 27 and 29 refer to rotorcraft.\n\nTable 2. Lightning Failure Conditions and Certification Levels (§ 23.2515)\nLIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)=(a) Each electrical or electronic system that performs a function, the failure of which would prevent the continued safe flight and landing of the airplane...; MOST SEVERE FAILURE CONDITION=Catastrophic; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=A\nLIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)=(b) Each electrical and electronic system that performs a function, the failure of which would significantly reduce the capability of the airplane or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraphs (a) and (b) in this table are applicable for normal category airplanes approved for instrument flight rules (IFR) operations unless an applicant shows that exposure to lightning is unlikely.; MOST SEVERE FAILURE CONDITION=Hazardous; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=B\n\n完整表格：\n<table><tr><td>LIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)</td><td>MOST SEVERE FAILURE CONDITION</td><td>SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)</td></tr><tr><td>(a) Each electrical or electronic system that performs a function, the failure of which would prevent the continued safe flight and landing of the airplane...</td><td>Catastrophic</td><td>A</td></tr><tr><td>(b) Each electrical and electronic system that performs a function, the failure of which would significantly reduce the capability of the airplane or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraphs (a) and (b) in this table are applicable for normal category airplanes approved for instrument flight rules (IFR) operations unless an applicant shows that exposure to lightning is unlikely.</td><td>Hazardous</td><td>B</td></tr></table>\n\n7.3.3.1 LCL A Systems.\n\n7.3.3.1.1 You must demonstrate compliance with §§ 23.1306(a) (amendment 23- 61), 23.2515(a), 25.1316(a), 27.1316(a), or § 29.1316(a), for aircraft functions and systems that perform functions whose failure would prevent continued safe flight and landing of the aircraft. Additionally, paragraph (a)(2) of those regulations require the electrical and electronic system to automatically recover normal operation of the functions in a timely manner after an airplane is exposed to lightning, with the exception of § 23.2515(a)(2), which allows manual recovery (flightcrew action) or automatic recovery. If all electrical and electronic equipment, components, and electrical interconnections that are required for normal operation of the Level A^3 functions comply with the requirements of paragraph (a), then all electrical and electronic equipment, components, and electrical interconnections that are only operational in non-normal situations may comply with paragraph (b) of these regulations, unless the FAA determines the failure is catastrophic.\n\n<sup>3</sup> In the context of this AC, refers to a critical function whose failure may be catastrophic (LCL A system).\n\n7.3.3.1.2 The lightning safety assessment should consider effects of lightningrelated failures or malfunctions on systems with lower failure classification that may affect the function of LCL A systems. You should demonstrate that any system with wiring connections to an LCL A system will not adversely affect the functions with catastrophic failure conditions performed by the LCL A system when the aircraft is exposed to lightning. Redundancy alone cannot protect against lightning because the lightninggenerated electromagnetic fields, conducted currents, and induced currents in the aircraft, can simultaneously induce transients in all electrical wiring on an aircraft.\n\n7.3.3.2 LCL B or C Systems.\n\nYou must demonstrate compliance with §§ 23.1306(b) (amendment 23- 61), 23.2515(b), 25.1316(b), 27.1316(b), or § 29.1316(b), for a system that performs a function whose failure would reduce the capability of the aircraft or the ability of the flightcrew to respond to an adverse operating condition. Simultaneous and common cause failures due to lightning exposure generally do not have to be assumed for LCL B or C systems incorporating redundant, spatially separated installations in the aircraft. This is because aircraft transfer function tests and in-service experience have shown these redundant and spatially separated installations are not simultaneously exposed to the maximum lightning induced transients. For example, redundant systems (internal to the airframe) may mitigate lightning indirect effects, if there is acceptable separation between the equipment to prevent damage to multiple systems, so that the function is maintained. Therefore, simultaneous loss of all of these redundant and spatially separated LCL B or C systems due to lightning exposure does not need to be considered. However, if multiple LCL B or C systems including interface wiring are designed and installed within the same location in the aircraft, or share a common wiring connection, then the combined failure due to lightning exposure should be assessed to determine if the combined failures are catastrophic. If so, these systems should be designated as LCL A systems.\n\n7.3.3.3 Failure Conditions.\n\nThe lightning safety assessment should consider all potential adverse effects due to system failures, malfunctions, or misleading information. The lightning safety assessment may show that a system’s functions have different failure conditions in different phases of flight. Therefore, the system LCL corresponds to phase of flight with the most severe failure condition. For example, an automatic flight control system may have a catastrophic failure condition for autoland, while automatic flight control system operations in cruise may have a hazardous failure condition.\n\n7.4 Determine the Lightning Strike Zones for the Aircraft.\n\nThe purpose of lightning zoning is to determine those areas of the aircraft likely to experience lightning channel attachment and those structures that may conduct lightning current between lightning attachment points. You should determine the lightning attachment zones for your aircraft configuration, since the zones will be dependent upon the aircraft’s geometry, materials, and operational factors. Lightning attachment zones often vary from one aircraft type to another.\n\nNote: AC 20-155 provides guidance to determine the lightning attachment zones for aircraft.\n\n7.5 Establish the Aircraft Lightning Environment for Each Zone.\n\nZones 1 and 2 identify where lightning is likely to attach and, as a result, the entrance and exit points for current flow through the aircraft. The appropriate voltage waveforms and current components to apply in those zones should be identified. By definition, Zone 3 areas carry lightning current flow between initial (or swept stroke) attachment points, so they may include contributions from all of the current components. The FAA accepts analysis to estimate Zone 3 current levels that result from the external environment. The external lightning environment is:\n\n7.5.1 Caused by the lightning flash interacting with the exterior of the aircraft.\n\n7.5.2 Represented by combined waveforms of the lightning current components at the aircraft surface. Note: AC 20-155 provides guidance for selecting the lightning waveforms and their applications.\n\n7.6 Determine the Lightning Transient Environment Associated with the Systems.\n\n7.6.1 The lightning environment, as seen by electrical and electronic systems, consists of voltages and currents produced by lightning current flowing through the aircraft. The voltages and currents that appear at system wiring interfaces result from aperture coupling, structural voltages, or conducted currents resulting from direct attachments to equipment and sensors.\n\n7.6.2 Determine the lightning voltage and current transient waveforms and amplitudes that can appear at the electrical and electronic equipment interface circuits for each system identified in paragraph 7.2. You may determine the lightning transients in terms of the wire bundle current, or the open circuit voltage and the short circuit current appearing at system wiring and equipment interface circuits. Refer to SAE ARP5415 / EUROCAE ED-158 for more detailed guidance. The voltage and current transient waveforms and amplitudes are dependent upon the loop impedances of the system and its interconnecting wiring.\n\n7.7 Establish Equipment Transient Design Levels (ETDLs) and Aircraft Actual Transient Levels (ATLs).\n\nThe regulations in §§ 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, and 29.1316 define requirements in terms of functional effects that are performed by aircraft electrical and electronic systems. From a design point of view, lightning protection for systems is shared between protection incorporated into the aircraft structure and wiring, and protection incorporated into the equipment. Therefore, requirements for the electrical and electronic system lightning protection can be based on the concept of ETDLs and ATLs.\n\n7.7.1 Determine and specify the ETDLs for the electrical and electronic equipment that make up the systems to be assessed. The ETDLs set qualification test levels for the systems and equipment. They define the voltage and current amplitudes and waveforms that the systems and equipment must withstand without any adverse effects. The ETDLs for a specific system depend on the anticipated system and wiring installation locations on the aircraft, the expected shielding performance of the wire bundles and structure, and the system criticality.\n\n7.7.2 The ATLs are the voltage and current amplitudes and transient waveforms generated on the aircraft wiring when the aircraft is exposed to lightning, as determined by aircraft test, analysis, or similarity. The difference between an ETDL and ATL is the margin. Figure 1 shows the relationship between the ATL and ETDL. You should evaluate the aircraft, interconnecting wiring, and equipment protection to determine the most effective combination of ATLs and ETDLs that will provide acceptable margin. Appropriate margins to account for uncertainties in the verification techniques may be required as discussed in paragraph 10.12 of this AC.\n\nSource image on page 17; no OCR transcription available.\n\n7.7.3 Typically, you specify the ETDLs prior to aircraft certification lightning tests or analyses to determine the aircraft ATLs. Therefore, the expected aircraft transients must be based upon results of lightning tests on existing aircraft, engineering analysis, or\n\nknowledgeable estimates. These expected aircraft lightning transient levels are termed transient control levels (TCL). Specify the TCL’s voltage and current amplitudes and waveforms based upon the expected lightning transients that would be generated on wiring in specific areas of the aircraft. The ATLs should not exceed the aircraft TCLs. The TCLs for a specific wire bundle depend on the configuration of the aircraft, the wire bundle, and the wire bundle installation. You should design your aircraft lightning protection to meet the specified TCLs.\n\n7.8 Verify Compliance with the Regulations.\n\n7.8.1 You must demonstrate that the systems comply with the applicable requirements of §§ 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, or § 29.1316.\n\n7.8.2 You should demonstrate that the ETDLs exceed the ATLs by the margin established in your certification plan.\n\n7.8.3 Verification may be accomplished by tests, by analysis, or by demonstrating similarity with previously certified aircraft and systems. The certification process for LCL A systems is discussed in paragraph 10. The certification process for LCL B and C systems is discussed in paragraph 11.\n\n7.8.4 Submit your certification plan early in the program to the cognizant certification branch for review. Experience shows, particularly with aircraft using new technology or those that have complex systems, that early agreement on the certification plan benefits both the applicant and the cognizant certification branch. The plan should define acceptable ways to resolve critical issues during the certification process. Analysis and test results during the certification process may warrant modifications in the design or verification methods. When significant changes are necessary, update the certification plan accordingly. The plan may include the items listed in Table 3.\n\nNote: You may refer to paragraph 8.1 for more information.\n\n7.9 Take Corrective Measures.\n\nIf tests and analyses show that the system did not meet the pass/fail criteria, review the aircraft, installation, or system design and improve protection against lightning.\n\n7.10 Margins.\n\nMargins account for uncertainty in the verification process. For lightning certification, the margin is the difference between the ETDLs and ATLs. The verification approach should be described in the certification plan with justification for margin, which requires agreement by the respective FAA certification branch. Refer to paragraph 10.12 for additional guidance on margin.\n\nTable 3. Items Recommended for a Lightning Certification Plan\nITEM=Description of Systems; DISCUSSION=Describe systems' installation, including unusual or unique features; the system failure condition classifications or initial LCLs; the operational aspects; lightning attachment zones; lightning environment; preliminary estimate of ETDLs and TCLs; and acceptable margins between ETDLs and ATLs.\nITEM=Description of Compliance Method; DISCUSSION=Describe how to verify compliance. Typically, your verification method includes similarity, analytical procedures, and tests. If using analytical procedures, describe how to verify them. (See paragraph 10.9 of this AC.)\nITEM=Acceptance Criteria; DISCUSSION=Determine the pass/fail criteria for each system by analyzing how safe the system is; this information may be finalized in the test plan. During this safety analysis, assess the aircraft in its various operational states; account for the failure and disruption modes caused by the effects of lightning.\nITEM=Test Plans; DISCUSSION=Plan each test you include as part of your certification process. As an applicant, you can decide if your test plans are separate documents or part of the certification plan. Your test plans should state the test sequence.\n\n完整表格：\n<table><tr><td>ITEM</td><td>DISCUSSION</td></tr><tr><td>Description of Systems</td><td>Describe systems&#x27; installation, including unusual or unique features; the system failure condition classifications or initial LCLs; the operational aspects; lightning attachment zones; lightning environment; preliminary estimate of ETDLs and TCLs; and acceptable margins between ETDLs and ATLs.</td></tr><tr><td>Description of Compliance Method</td><td>Describe how to verify compliance. Typically, your verification method includes similarity, analytical procedures, and tests. If using analytical procedures, describe how to verify them. (See paragraph 10.9 of this AC.)</td></tr><tr><td>Acceptance Criteria</td><td>Determine the pass/fail criteria for each system by analyzing how safe the system is; this information may be finalized in the test plan. During this safety analysis, assess the aircraft in its various operational states; account for the failure and disruption modes caused by the effects of lightning.</td></tr><tr><td>Test Plans</td><td>Plan each test you include as part of your certification process. As an applicant, you can decide if your test plans are separate documents or part of the certification plan. Your test plans should state the test sequence.</td></tr></table>",
+          "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+          "chunk_index": 21,
+          "knowledge_title": "AC_20-136C.pdf",
+          "start_at": 0,
+          "end_at": 89,
+          "seq": 21,
+          "score": 0.953125,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "847c493be4f8b794f46a",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+            "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "5eca19b6-ec3b-4d1f-8283-1f7bbf971f31",
+          "image_info": "",
+          "knowledge_filename": "AC_20-136C.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "<sup>2</sup> Parts 23 and 25 refer to airplanes, and parts 27 and 29 refer to rotorcraft.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "900e4a3b-aff1-4463-8ede-8d2fd59428e4",
+          "content": "21—26 [RESERVED]",
+          "knowledge_id": "ada93799-930c-49f4-a7ee-7ab674a7ef57",
+          "chunk_index": 48,
+          "knowledge_title": "AC_25.1329-1C.pdf",
+          "start_at": 0,
+          "end_at": 16,
+          "seq": 48,
+          "score": 0.6887096774193547,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "ffab31dfb95f6ec967e4ec6c57b4634bc8e18956f59ea4d07647448cbd5946d4",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "187fafeebb9dafd875e2",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\d1\\d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0\\source.pdf",
+            "internal_rag_source_sha256": "d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "87dc5386-7da6-425d-8431-5c7cced6ce4b",
+          "image_info": "",
+          "knowledge_filename": "AC_25.1329-1C.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.1329-1C.pdf\n21—26 [RESERVED]\n\n21—26 [RESERVED]",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "8f1b55b9-b458-45ce-86f2-d3edd751966d",
+          "content": "13—16 [RESERVED]",
+          "knowledge_id": "ada93799-930c-49f4-a7ee-7ab674a7ef57",
+          "chunk_index": 38,
+          "knowledge_title": "AC_25.1329-1C.pdf",
+          "start_at": 0,
+          "end_at": 16,
+          "seq": 38,
+          "score": 0.6671874999999999,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "ffab31dfb95f6ec967e4ec6c57b4634bc8e18956f59ea4d07647448cbd5946d4",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "187fafeebb9dafd875e2",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\d1\\d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0\\source.pdf",
+            "internal_rag_source_sha256": "d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "711caa08-d9e5-4433-bac9-8b20a554fb50",
+          "image_info": "",
+          "knowledge_filename": "AC_25.1329-1C.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.1329-1C.pdf\n13—16 [RESERVED]\n\n13—16 [RESERVED]",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "b0d7ea5b-e31e-4653-90b8-28472116a97f",
+          "content": "APPENDIX 2",
+          "knowledge_id": "ba1338e2-fd09-41de-9c29-b1976d7498c6",
+          "chunk_index": 22,
+          "knowledge_title": "AC_20-133.pdf",
+          "start_at": 0,
+          "end_at": 10,
+          "seq": 22,
+          "score": 0.6469696969696969,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "8d85de81e023b962d9a3a9f64caa9377adb45ff4e6f3e901d4c3a65c1252e48a",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "38d98b926a44dfe139b3",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\c5\\c5079b56871bfd2d5988a4efd951b16540de93e1efd4dc5bbee6456917fca34e\\source.pdf",
+            "internal_rag_source_sha256": "c5079b56871bfd2d5988a4efd951b16540de93e1efd4dc5bbee6456917fca34e",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "c861a99a-47a2-467d-a3a1-12ee1896b2d9",
+          "image_info": "",
+          "knowledge_filename": "AC_20-133.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_20-133.pdf\nAPPENDIX 2\n\nAPPENDIX 2",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        }
+      ],
+      "data": {
+        "references": [
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "2743a00e42bfcf518eab"
+              ],
+              "block_ids": [
+                "2bfe4b82c1f16950daa3"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "955ffcbfdfdaf0a87cd2",
+              "external_parent_chunk_id": "04a3537125ae0e90939d",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Source image on page 1; no OCR transcription available.\n\nAdvisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Aircraft Electrical and Electronic System Lightning Protection\n\nDate:\n\nInitiated By: AIR-626\n\nAC No: 20-136C\n\nThis advisory circular (AC) provides you, the applicant, with information and guidance on how you can protect aircraft electrical and electronic systems from the effects of lightning. This AC describes a means, but not the only means, for you to demonstrate compliance with title 14, Code of Federal Regulations (14 CFR) 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, and 29.1316, Electrical and electronic system lightning protection, as they pertain to the type or supplemental type certification of your aircraft.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDaniel J. Elgas Aviation Safety Director, Policy and Standards, Division Aircraft Certification Service\n\nTable of Contents\n\nParagraph Page\n\n1 Purpose....1\n2 Applicability....1\n3 Cancellation....2\n4 Scope....2\n5 Related Material....2\n6 Background....7\n7 Steps for Showing Compliance....7\n8 Lightning Compliance....16\n9 Effects of Transients....20\n10 Steps to LCL A System Lightning Compliance....21\n11 Steps to LCL B And C System Lightning Compliance....32\n12 Maintenance, Protection Assurance, and Modifications....36\nAppendix A. Definitions....A-1\nAppendix B. Acronyms....B-1\nAppendix C. Examples of Lightning Safety Assessment Considerations - LCL A Systems on Transport Category Airplanes....C-1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/2743a00e42bfcf518eab)",
+            "end_at": 175,
+            "id": "0e4b9497-06ab-4c51-af5e-fc9a028d4ce4",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-136C.pdf",
+            "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-136C.pdf",
+            "match_type": 0,
+            "matched_content": "Source image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/2743a00e42bfcf518eab)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "847c493be4f8b794f46a",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+              "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+              "kept_by": "document_header",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "54a5ede1-047a-48b0-9c5c-2744ff69a724",
+            "score": 1,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "0e4b9497-06ab-4c51-af5e-fc9a028d4ce4",
+              "8b6ba39e-b0a1-4269-8903-6bf785c73be9"
+            ]
+          },
+          {
+            "chunk_index": 6,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "699a6fe6c7503a7dae53",
+                "23b3c6bd44a0ec50a510"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "d97e0c04e27c44bfb6cc",
+              "external_parent_chunk_id": "fe944aebb45fd452516d",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 5,
+              "page_start": 5,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "CANCELLATION."
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "CANCELLATION.\n\nThis AC cancels AC 20-136B, Aircraft Electrical and Electronic System Lightning Protection, dated September 7, 2011.",
+            "end_at": 131,
+            "id": "3a6c41ad-52d3-4086-8aac-6d25c3d6ac7b",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-136C.pdf",
+            "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-136C.pdf",
+            "match_type": 0,
+            "matched_content": "CANCELLATION.\n\nThis AC cancels AC 20-136B, Aircraft Electrical and Electronic System Lightning Protection, dated September 7, 2011.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "847c493be4f8b794f46a",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+              "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "c0d1b76a-3539-43a4-bfea-ffa9115db232",
+            "score": 0.9887096774193547,
+            "seq": 6,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "3a6c41ad-52d3-4086-8aac-6d25c3d6ac7b"
+            ]
+          },
+          {
+            "chunk_index": 21,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "6ee2aa38968764159fcf"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "0dbb505ea6f37c0477bd",
+              "external_parent_chunk_id": "3b3a178a4ddd74e95b53",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 13,
+              "page_start": 13,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "7 STEPS FOR SHOWING COMPLIANCE."
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "7 STEPS FOR SHOWING COMPLIANCE.\n\n7.1 General.\n\n7.1.1 The following steps describe a method for complying with §§ 23.1306 (amendment 23- 61) 23.2515, 25.1316, 27.1316, and 29.1316 requirements for your aircraft’s electrical and electronic systems. Adherence to the order of activities in the list below is not required.\n\n• Identify the systems to be assessed.\n\n• Perform a lightning safety assessment.\n\n• Determine the lightning strike zones for the aircraft.\n\n• Establish the aircraft lightning environment for each zone.\n\n• Determine the lightning transient environment associated with the systems.\n\nEstablish equipment transient design levels (ETDLs) and aircraft actual transient levels (ATLs).\n\n• Verify compliance with the requirements.\n\n• Take corrective measures, if needed.\n\nNote: The steps above should be performed to address lightning transients induced in electrical and electronic system wiring and equipment, and lightning damage to aircraft external equipment and sensors that are connected to electrical and electronic systems, such as radio antennas and air data probes. More detailed guidance on lightning protection of systems is provided in SAE ARP5415 / EUROCAE ED-158. Additional guidance on lightning protection against lightning damage for external equipment and sensor installations can be found in SAE ARP5577.\n\n7.2 Identify the Systems to be Assessed.\n\n7.2.1 The aircraft systems requiring a lightning safety assessment should be identified. Address any electrical or electronic system failure that may cause or contribute to an adverse effect on the aircraft (catastrophic, hazardous, or major failure condition). The effects of a lightning strike, therefore, should be assessed in a manner that allows for the determination of the degree to which the aircraft’s and/or its systems’ safety may be influenced. The lightning safety assessment should cover:\n\n• All normal aircraft operating modes, phases of flight, and operating conditions; and\n\nAll lightning-related failure conditions and their subsequent effect on aircraft operations and the flightcrew.\n\n• System responses and any required flightcrew actions.\n\n7.3 Lightning Safety Assessment.\n\n7.3.1 A safety assessment related to lightning effects should be performed to establish and classify the system failure conditions. Tables 1 and 2 provide the corresponding failure condition classification and system lightning certification level (LCL) for the appropriate lightning regulations. The failure condition classifications and terms used in this AC are consistent with those used in AC 23.1309-1, AC 25.1309-1, AC 27-1, and AC 29-2, as applicable. Only those systems identified as performing or contributing to functions whose failure would result in catastrophic, hazardous, or major failure conditions are subject to lightning regulations. Based on the failure condition classification established by the safety assessment, the systems should be assigned appropriate LCLs, as shown in Tables 1 and 2. The lightning safety assessment should consider the common cause<sup>1</sup> effects of lightning, particularly for highly integrated systems and systems with redundant elements. Common cause effects due to lightning exposure may simultaneously have an adverse impact on multiple electrical and electronic systems’ functions. The lightning safety assessment determines the consequences of failures for the aircraft functions that the systems perform.\n\n7.3.2 The LCL classification assigned to the system and functions may be different from the development assurance level assigned for equipment redundancy, software, and airborne electronic hardware. This is because the lightning environment may lead to common cause effects. The term “development assurance level” should not be used to describe the LCL because of the potential differences in assigned classifications for software, airborne electronic hardware, and equipment redundancy. The lightning safety assessment should include all electrical and electronic equipment, components, and electrical interconnections, and should assume that they are potentially affected by lightning. It is not appropriate to use the lightning immunity data for electrical and electronic equipment, components, and electrical interconnections as information input to the lightning safety assessment. Lightning immunity should only be used to demonstrate compliance with the applicable paragraph of the lightning regulations, after the required LCL for the system and functions are determined by lightning safety assessment.\n\n<sup>1</sup> Reference ACs 23.1309-1, 25.1309-1, 27-1, or 29-2 for common cause considerations and analysis.\n\n7.3.3 The lightning safety assessment should have input from and be coordinated between the applicant’s safety specialists, system specialists, and lightning specialists. This process may vary from applicant to applicant. Further guidance on performing a safety assessment can be found in AC 23.1309-1, AC 25.1309-1, AC 27-1, AC 29-2, SAE ARP4754, and ARP4761. More detailed guidance on the lightning safety assessment is provided in SAE ARP5415 / EUROCAE ED-158.\n\nNote: Considering that lightning and HIRF environments may have similar effects on electronic systems (disturbing electrical signals causing upsets or damage to circuits) and that the regulations are similarly structured, the system LCL and HIRF certification level (HCL) may be the same.\n\nTable 1. Lightning Failure Conditions and Certification Levels\nLIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316=(a) Each electrical and electronic system that performs a function, for which failure would prevent the continued safe flight and landing of the [aircraft] ^2 ...; MOST SEVERE FAILURE CONDITION=Catastrophic; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=A\nLIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316=(b) Each electrical and electronic system that performs a function, for which failure would reduce the capability of the [aircraft] or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraph (b) in this table is applicable for normal category airplanes and rotorcraft (part 23 and 27, respectively) approved for instrument flight rules (IFR) operations.; MOST SEVERE FAILURE CONDITION=Hazardous Major; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=B C\n\n完整表格：\n<table><tr><td>LIGHTNING REQUIREMENTS EXCERPTS FROM §§ 23.1306 (amendment 23-61), 25.1316, 27.1316, and 29.1316</td><td>MOST SEVERE FAILURE CONDITION</td><td>SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)</td></tr><tr><td>(a) Each electrical and electronic system that performs a function, for which failure would prevent the continued safe flight and landing of the [aircraft] ^2 ...</td><td>Catastrophic</td><td>A</td></tr><tr><td>(b) Each electrical and electronic system that performs a function, for which failure would reduce the capability of the [aircraft] or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraph (b) in this table is applicable for normal category airplanes and rotorcraft (part 23 and 27, respectively) approved for instrument flight rules (IFR) operations.</td><td>Hazardous Major</td><td>B C</td></tr></table>\n\n<sup>2</sup> Parts 23 and 25 refer to airplanes, and parts 27 and 29 refer to rotorcraft.\n\nTable 2. Lightning Failure Conditions and Certification Levels (§ 23.2515)\nLIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)=(a) Each electrical or electronic system that performs a function, the failure of which would prevent the continued safe flight and landing of the airplane...; MOST SEVERE FAILURE CONDITION=Catastrophic; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=A\nLIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)=(b) Each electrical and electronic system that performs a function, the failure of which would significantly reduce the capability of the airplane or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraphs (a) and (b) in this table are applicable for normal category airplanes approved for instrument flight rules (IFR) operations unless an applicant shows that exposure to lightning is unlikely.; MOST SEVERE FAILURE CONDITION=Hazardous; SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)=B\n\n完整表格：\n<table><tr><td>LIGHTNING REQUIREMENTS EXCERPTS FROM § 23.2515 (Amendment 23-64)</td><td>MOST SEVERE FAILURE CONDITION</td><td>SYSTEM LIGHTNING CERTIFICATION LEVEL (LCL)</td></tr><tr><td>(a) Each electrical or electronic system that performs a function, the failure of which would prevent the continued safe flight and landing of the airplane...</td><td>Catastrophic</td><td>A</td></tr><tr><td>(b) Each electrical and electronic system that performs a function, the failure of which would significantly reduce the capability of the airplane or the ability of the flightcrew to respond to an adverse operation condition...Note: Paragraphs (a) and (b) in this table are applicable for normal category airplanes approved for instrument flight rules (IFR) operations unless an applicant shows that exposure to lightning is unlikely.</td><td>Hazardous</td><td>B</td></tr></table>\n\n7.3.3.1 LCL A Systems.\n\n7.3.3.1.1 You must demonstrate compliance with §§ 23.1306(a) (amendment 23- 61), 23.2515(a), 25.1316(a), 27.1316(a), or § 29.1316(a), for aircraft functions and systems that perform functions whose failure would prevent continued safe flight and landing of the aircraft. Additionally, paragraph (a)(2) of those regulations require the electrical and electronic system to automatically recover normal operation of the functions in a timely manner after an airplane is exposed to lightning, with the exception of § 23.2515(a)(2), which allows manual recovery (flightcrew action) or automatic recovery. If all electrical and electronic equipment, components, and electrical interconnections that are required for normal operation of the Level A^3 functions comply with the requirements of paragraph (a), then all electrical and electronic equipment, components, and electrical interconnections that are only operational in non-normal situations may comply with paragraph (b) of these regulations, unless the FAA determines the failure is catastrophic.\n\n<sup>3</sup> In the context of this AC, refers to a critical function whose failure may be catastrophic (LCL A system).\n\n7.3.3.1.2 The lightning safety assessment should consider effects of lightningrelated failures or malfunctions on systems with lower failure classification that may affect the function of LCL A systems. You should demonstrate that any system with wiring connections to an LCL A system will not adversely affect the functions with catastrophic failure conditions performed by the LCL A system when the aircraft is exposed to lightning. Redundancy alone cannot protect against lightning because the lightninggenerated electromagnetic fields, conducted currents, and induced currents in the aircraft, can simultaneously induce transients in all electrical wiring on an aircraft.\n\n7.3.3.2 LCL B or C Systems.\n\nYou must demonstrate compliance with §§ 23.1306(b) (amendment 23- 61), 23.2515(b), 25.1316(b), 27.1316(b), or § 29.1316(b), for a system that performs a function whose failure would reduce the capability of the aircraft or the ability of the flightcrew to respond to an adverse operating condition. Simultaneous and common cause failures due to lightning exposure generally do not have to be assumed for LCL B or C systems incorporating redundant, spatially separated installations in the aircraft. This is because aircraft transfer function tests and in-service experience have shown these redundant and spatially separated installations are not simultaneously exposed to the maximum lightning induced transients. For example, redundant systems (internal to the airframe) may mitigate lightning indirect effects, if there is acceptable separation between the equipment to prevent damage to multiple systems, so that the function is maintained. Therefore, simultaneous loss of all of these redundant and spatially separated LCL B or C systems due to lightning exposure does not need to be considered. However, if multiple LCL B or C systems including interface wiring are designed and installed within the same location in the aircraft, or share a common wiring connection, then the combined failure due to lightning exposure should be assessed to determine if the combined failures are catastrophic. If so, these systems should be designated as LCL A systems.\n\n7.3.3.3 Failure Conditions.\n\nThe lightning safety assessment should consider all potential adverse effects due to system failures, malfunctions, or misleading information. The lightning safety assessment may show that a system’s functions have different failure conditions in different phases of flight. Therefore, the system LCL corresponds to phase of flight with the most severe failure condition. For example, an automatic flight control system may have a catastrophic failure condition for autoland, while automatic flight control system operations in cruise may have a hazardous failure condition.\n\n7.4 Determine the Lightning Strike Zones for the Aircraft.\n\nThe purpose of lightning zoning is to determine those areas of the aircraft likely to experience lightning channel attachment and those structures that may conduct lightning current between lightning attachment points. You should determine the lightning attachment zones for your aircraft configuration, since the zones will be dependent upon the aircraft’s geometry, materials, and operational factors. Lightning attachment zones often vary from one aircraft type to another.\n\nNote: AC 20-155 provides guidance to determine the lightning attachment zones for aircraft.\n\n7.5 Establish the Aircraft Lightning Environment for Each Zone.\n\nZones 1 and 2 identify where lightning is likely to attach and, as a result, the entrance and exit points for current flow through the aircraft. The appropriate voltage waveforms and current components to apply in those zones should be identified. By definition, Zone 3 areas carry lightning current flow between initial (or swept stroke) attachment points, so they may include contributions from all of the current components. The FAA accepts analysis to estimate Zone 3 current levels that result from the external environment. The external lightning environment is:\n\n7.5.1 Caused by the lightning flash interacting with the exterior of the aircraft.\n\n7.5.2 Represented by combined waveforms of the lightning current components at the aircraft surface. Note: AC 20-155 provides guidance for selecting the lightning waveforms and their applications.\n\n7.6 Determine the Lightning Transient Environment Associated with the Systems.\n\n7.6.1 The lightning environment, as seen by electrical and electronic systems, consists of voltages and currents produced by lightning current flowing through the aircraft. The voltages and currents that appear at system wiring interfaces result from aperture coupling, structural voltages, or conducted currents resulting from direct attachments to equipment and sensors.\n\n7.6.2 Determine the lightning voltage and current transient waveforms and amplitudes that can appear at the electrical and electronic equipment interface circuits for each system identified in paragraph 7.2. You may determine the lightning transients in terms of the wire bundle current, or the open circuit voltage and the short circuit current appearing at system wiring and equipment interface circuits. Refer to SAE ARP5415 / EUROCAE ED-158 for more detailed guidance. The voltage and current transient waveforms and amplitudes are dependent upon the loop impedances of the system and its interconnecting wiring.\n\n7.7 Establish Equipment Transient Design Levels (ETDLs) and Aircraft Actual Transient Levels (ATLs).\n\nThe regulations in §§ 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, and 29.1316 define requirements in terms of functional effects that are performed by aircraft electrical and electronic systems. From a design point of view, lightning protection for systems is shared between protection incorporated into the aircraft structure and wiring, and protection incorporated into the equipment. Therefore, requirements for the electrical and electronic system lightning protection can be based on the concept of ETDLs and ATLs.\n\n7.7.1 Determine and specify the ETDLs for the electrical and electronic equipment that make up the systems to be assessed. The ETDLs set qualification test levels for the systems and equipment. They define the voltage and current amplitudes and waveforms that the systems and equipment must withstand without any adverse effects. The ETDLs for a specific system depend on the anticipated system and wiring installation locations on the aircraft, the expected shielding performance of the wire bundles and structure, and the system criticality.\n\n7.7.2 The ATLs are the voltage and current amplitudes and transient waveforms generated on the aircraft wiring when the aircraft is exposed to lightning, as determined by aircraft test, analysis, or similarity. The difference between an ETDL and ATL is the margin. Figure 1 shows the relationship between the ATL and ETDL. You should evaluate the aircraft, interconnecting wiring, and equipment protection to determine the most effective combination of ATLs and ETDLs that will provide acceptable margin. Appropriate margins to account for uncertainties in the verification techniques may be required as discussed in paragraph 10.12 of this AC.\n\nSource image on page 17; no OCR transcription available.\n\n7.7.3 Typically, you specify the ETDLs prior to aircraft certification lightning tests or analyses to determine the aircraft ATLs. Therefore, the expected aircraft transients must be based upon results of lightning tests on existing aircraft, engineering analysis, or\n\nknowledgeable estimates. These expected aircraft lightning transient levels are termed transient control levels (TCL). Specify the TCL’s voltage and current amplitudes and waveforms based upon the expected lightning transients that would be generated on wiring in specific areas of the aircraft. The ATLs should not exceed the aircraft TCLs. The TCLs for a specific wire bundle depend on the configuration of the aircraft, the wire bundle, and the wire bundle installation. You should design your aircraft lightning protection to meet the specified TCLs.\n\n7.8 Verify Compliance with the Regulations.\n\n7.8.1 You must demonstrate that the systems comply with the applicable requirements of §§ 23.1306 (amendment 23-61), 23.2515, 25.1316, 27.1316, or § 29.1316.\n\n7.8.2 You should demonstrate that the ETDLs exceed the ATLs by the margin established in your certification plan.\n\n7.8.3 Verification may be accomplished by tests, by analysis, or by demonstrating similarity with previously certified aircraft and systems. The certification process for LCL A systems is discussed in paragraph 10. The certification process for LCL B and C systems is discussed in paragraph 11.\n\n7.8.4 Submit your certification plan early in the program to the cognizant certification branch for review. Experience shows, particularly with aircraft using new technology or those that have complex systems, that early agreement on the certification plan benefits both the applicant and the cognizant certification branch. The plan should define acceptable ways to resolve critical issues during the certification process. Analysis and test results during the certification process may warrant modifications in the design or verification methods. When significant changes are necessary, update the certification plan accordingly. The plan may include the items listed in Table 3.\n\nNote: You may refer to paragraph 8.1 for more information.\n\n7.9 Take Corrective Measures.\n\nIf tests and analyses show that the system did not meet the pass/fail criteria, review the aircraft, installation, or system design and improve protection against lightning.\n\n7.10 Margins.\n\nMargins account for uncertainty in the verification process. For lightning certification, the margin is the difference between the ETDLs and ATLs. The verification approach should be described in the certification plan with justification for margin, which requires agreement by the respective FAA certification branch. Refer to paragraph 10.12 for additional guidance on margin.\n\nTable 3. Items Recommended for a Lightning Certification Plan\nITEM=Description of Systems; DISCUSSION=Describe systems' installation, including unusual or unique features; the system failure condition classifications or initial LCLs; the operational aspects; lightning attachment zones; lightning environment; preliminary estimate of ETDLs and TCLs; and acceptable margins between ETDLs and ATLs.\nITEM=Description of Compliance Method; DISCUSSION=Describe how to verify compliance. Typically, your verification method includes similarity, analytical procedures, and tests. If using analytical procedures, describe how to verify them. (See paragraph 10.9 of this AC.)\nITEM=Acceptance Criteria; DISCUSSION=Determine the pass/fail criteria for each system by analyzing how safe the system is; this information may be finalized in the test plan. During this safety analysis, assess the aircraft in its various operational states; account for the failure and disruption modes caused by the effects of lightning.\nITEM=Test Plans; DISCUSSION=Plan each test you include as part of your certification process. As an applicant, you can decide if your test plans are separate documents or part of the certification plan. Your test plans should state the test sequence.\n\n完整表格：\n<table><tr><td>ITEM</td><td>DISCUSSION</td></tr><tr><td>Description of Systems</td><td>Describe systems&#x27; installation, including unusual or unique features; the system failure condition classifications or initial LCLs; the operational aspects; lightning attachment zones; lightning environment; preliminary estimate of ETDLs and TCLs; and acceptable margins between ETDLs and ATLs.</td></tr><tr><td>Description of Compliance Method</td><td>Describe how to verify compliance. Typically, your verification method includes similarity, analytical procedures, and tests. If using analytical procedures, describe how to verify them. (See paragraph 10.9 of this AC.)</td></tr><tr><td>Acceptance Criteria</td><td>Determine the pass/fail criteria for each system by analyzing how safe the system is; this information may be finalized in the test plan. During this safety analysis, assess the aircraft in its various operational states; account for the failure and disruption modes caused by the effects of lightning.</td></tr><tr><td>Test Plans</td><td>Plan each test you include as part of your certification process. As an applicant, you can decide if your test plans are separate documents or part of the certification plan. Your test plans should state the test sequence.</td></tr></table>",
+            "end_at": 89,
+            "id": "4a706f29-5a61-4a04-8074-cdabb1648ddb",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-136C.pdf",
+            "knowledge_id": "36c16620-3ba2-4556-a1d6-6639a78dd9f7",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-136C.pdf",
+            "match_type": 0,
+            "matched_content": "<sup>2</sup> Parts 23 and 25 refer to airplanes, and parts 27 and 29 refer to rotorcraft.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "67cd3393d154ece178bc231557631a2626872036d25f39c3297177d41895f964",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "847c493be4f8b794f46a",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a9\\a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd\\source.pdf",
+              "internal_rag_source_sha256": "a97137a34f9094ac10e6fb7caba11688edf5ab0b866ddf3d5ffa40f00e327cdd",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "5eca19b6-ec3b-4d1f-8283-1f7bbf971f31",
+            "related_images": [
+              {
+                "caption": "Table 1 — page 13",
+                "chunk_id": "58f18f33-b376-4e6d-8bf9-4347c3e01df9",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/742e7810cf5ca12ae969"
+              },
+              {
+                "caption": "Table 2 — page 14",
+                "chunk_id": "f9a5ca9b-092c-4312-acee-d4f7c9e80ba4",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/fb6de7a680e28d192393"
+              },
+              {
+                "caption": "Table 3 — page 19",
+                "chunk_id": "8e6c466d-08f8-463f-8e9e-cd86fafc0fa8",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/2ee15932a82640819fe8d9962a05d447/assets/340e9bb95cab49fd5d91"
+              }
+            ],
+            "score": 0.953125,
+            "seq": 21,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "4a706f29-5a61-4a04-8074-cdabb1648ddb"
+            ]
+          },
+          {
+            "chunk_index": 48,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "342ded54ea9f09d5fb7d"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "1cd728d8a094116bdc80",
+              "external_parent_chunk_id": "72e1a46672f54c5a878b",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 33,
+              "page_start": 33,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "21—26 [RESERVED]"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "21—26 [RESERVED]",
+            "end_at": 16,
+            "id": "900e4a3b-aff1-4463-8ede-8d2fd59428e4",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.1329-1C.pdf",
+            "knowledge_id": "ada93799-930c-49f4-a7ee-7ab674a7ef57",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.1329-1C.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.1329-1C.pdf\n21—26 [RESERVED]\n\n21—26 [RESERVED]",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "ffab31dfb95f6ec967e4ec6c57b4634bc8e18956f59ea4d07647448cbd5946d4",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "187fafeebb9dafd875e2",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\d1\\d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0\\source.pdf",
+              "internal_rag_source_sha256": "d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "87dc5386-7da6-425d-8431-5c7cced6ce4b",
+            "score": 0.6887096774193547,
+            "seq": 48,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "900e4a3b-aff1-4463-8ede-8d2fd59428e4"
+            ]
+          },
+          {
+            "chunk_index": 38,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "557aa4caad7b1bc9e6ab"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "16fc784607afe1299d17",
+              "external_parent_chunk_id": "0b9520388d5a90761c85",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 26,
+              "page_start": 26,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "13—16 [RESERVED]"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "13—16 [RESERVED]",
+            "end_at": 16,
+            "id": "8f1b55b9-b458-45ce-86f2-d3edd751966d",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.1329-1C.pdf",
+            "knowledge_id": "ada93799-930c-49f4-a7ee-7ab674a7ef57",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.1329-1C.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.1329-1C.pdf\n13—16 [RESERVED]\n\n13—16 [RESERVED]",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "ffab31dfb95f6ec967e4ec6c57b4634bc8e18956f59ea4d07647448cbd5946d4",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "187fafeebb9dafd875e2",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\d1\\d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0\\source.pdf",
+              "internal_rag_source_sha256": "d1122e89d61663cc44456dd1ebff460127469027d8d667b0fd695bc8436357e0",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "711caa08-d9e5-4433-bac9-8b20a554fb50",
+            "score": 0.6671874999999999,
+            "seq": 38,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "8f1b55b9-b458-45ce-86f2-d3edd751966d"
+            ]
+          },
+          {
+            "chunk_index": 22,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "ac2ee6f6b8daf7c854df"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "0f7f9da73fad80d4afa6",
+              "external_parent_chunk_id": "2985785f7a85ad5dc671",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 9,
+              "page_start": 9,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "APPENDIX 2"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "APPENDIX 2",
+            "end_at": 10,
+            "id": "b0d7ea5b-e31e-4653-90b8-28472116a97f",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-133.pdf",
+            "knowledge_id": "ba1338e2-fd09-41de-9c29-b1976d7498c6",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-133.pdf",
+            "match_type": 0,
+            "matched_content": "AC_20-133.pdf\nAPPENDIX 2\n\nAPPENDIX 2",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "8d85de81e023b962d9a3a9f64caa9377adb45ff4e6f3e901d4c3a65c1252e48a",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "38d98b926a44dfe139b3",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\c5\\c5079b56871bfd2d5988a4efd951b16540de93e1efd4dc5bbee6456917fca34e\\source.pdf",
+              "internal_rag_source_sha256": "c5079b56871bfd2d5988a4efd951b16540de93e1efd4dc5bbee6456917fca34e",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "c861a99a-47a2-467d-a3a1-12ee1896b2d9",
+            "score": 0.6469696969696969,
+            "seq": 22,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "b0d7ea5b-e31e-4653-90b8-28472116a97f"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "We",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " need",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " answe",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "r Chinese",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Question",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " \"",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "20",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "136",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "C",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "完整",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "主题",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "Subject",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "？",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "\"",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Need",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " give",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " full",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " subject",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " line",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " \"",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "A",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "ircraft",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Electrical",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " and",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Electronic",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " System",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Lightning",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Protection",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "\".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Cite",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "2",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " No",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " image",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " needed",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Straight",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "forward",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Need",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " perhaps",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " note",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " No",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Date",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " blank",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Answe",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "r direct",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Use",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Chinese",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " No",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " need",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " tables",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Cite",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " exact",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " Ensu",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "re citation",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " same",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": " line",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "thinking",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167988,
+        "duration_ms": 506,
+        "event_id": "ff76a0e6-thinking"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "20",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "136",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "C",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "完整",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "主题",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "Subject",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "：",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "**",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "A",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "ircraft",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " Electrical",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " and",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " Electronic",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " System",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " Lightning",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": " Protection",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "**",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "飞机",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "电气",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "与",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "电子",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "系统",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "雷",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "击",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "防护",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_20-136C.pdf\" chunk_id=\"8b6ba39e-b0a1-4269-8903-6bf785c73be9\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "answer",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167988,
+        "duration_ms": 122,
+        "event_id": "e7fc7909-answer"
+      }
+    },
+    {
+      "id": "cf893076-9219-4f2b-b4a9-2fc37bdf17c1",
+      "response_type": "complete",
+      "content": "",
+      "done": true,
+      "data": {
+        "final_content": "AC 20-136C 的完整主题（Subject）为：**Aircraft Electrical and Electronic System Lightning Protection**（飞机电气与电子系统雷击防护）<kb doc=\"AC_20-136C.pdf\" chunk_id=\"8b6ba39e-b0a1-4269-8903-6bf785c73be9\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />。",
+        "total_duration_ms": 0,
+        "total_steps": 0
+      }
+    }
+  ],
+  "seconds": 11.16
+}

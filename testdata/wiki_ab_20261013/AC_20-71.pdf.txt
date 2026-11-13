@@ -1,0 +1,178 @@
+[chunk 76e8f87f-fbcd-4a35-8b87-4c8dea4aedfa]
+Source image on page 1; no OCR transcription available.
+
+![figure p1](http://localhost:8080/api/v1/ingestion/jobs/d13339cfc5a34e98b594efa54f647129/assets/cd7327bbc5c5a2716187)
+
+[chunk 24aea835-44ed-44c8-ac9e-6329244d3c69]
+Source image on page 1; no OCR transcription available.
+
+![figure p1](http://localhost:8080/api/v1/ingestion/jobs/d13339cfc5a34e98b594efa54f647129/assets/cd7327bbc5c5a2716187)
+
+AC NO: 20-71
+DATE: 12/8/70
+
+[chunk 6c9073c9-7334-46a1-8a9f-2275002f76de]
+AC NO: 20-71
+DATE: 12/8/70
+
+[chunk 2fe28ded-3e99-4372-ba6d-4d9007b1c048]
+ADVISORY CIRCULAR
+
+[chunk 7579d4dd-d04d-4163-98e7-d67338dd7cc4]
+ADVISORY CIRCULAR
+
+[chunk d07b3617-43eb-458b-8e19-f31367b0a6ff]
+DEPARTMENT OF TRANSPORTATION FEDERAL AVIATION ADMINISTRATION
+
+SUBJECT: DUAL LOCKING DEVICES ON FASTENERS
+
+1. PURPOSE. This advisory circular provides guidance and acceptable means, not the sole means, by which compliance may be shown with the requirements for dual locking devices on removable fasteners installed in rotorcraft and transport category airplanes.
+
+2. REFERENCES. Federal Aviation Regulations 25.607, 27.607, and 29.607.
+
+3. BACKGROUND. It is common practice to secure fasteners (i.e., bolts, screws, nuts, pins, etc.) with a single locking device. Service experience has indicated that due to maintenance, manufacturing, or design errors, a single locking device is not adequate for critical applications in rotorcraft and transport category airplanes. Due to a number of instances of loss of fastener integrity involving such fasteners installed on these aircraft, it was considered necessary to require two separate locking devices on all removable fasteners in any installation in which the loss of the fastener could jeopardize the safe operation of rotorcraft or transport category airplanes, and that consideration must be given to the environmental conditions associated with a particular fastener installation in determining the appropriate locking devices for that fastener; therefore, FARs 25.607, 27.607, and 29.607 were amended to specify two separate locking devices on removable fasteners for critical applications.
+
+4. REMOVABLE FASTENERS. By a removable fastener in the referenced rules is meant the conventional attachment devices such as bolts and nuts, screws, pins, etc., which can be readily removed and reinstalled or replaced by other identical fasteners.
+
+5. LOCKING DEVICE. By a locking device is meant the feature incorporated on the fastener which will prevent the loss of this fastener and retain the fastener in its proper installation. The locking devices on the fasteners may be either friction or nonfriction types. Permanent, solid, nonmetallic friction inserts are considered acceptable as friction-type locks provided they perform their intended functions.
+
+6. DUAL LOCKING DEVICE. A dual locking device on a fastener consists of any two separate locking features described in paragraph 5.
+
+7. BOLTS SUBJECT TO ROTATION. A bolt is considered to be subject to rotation if it serves as an axis of rotation producing relative motion between the bolt and one or more components attached to the bolt.
+
+[chunk a180c0b4-0be3-453a-a727-684fa266b152]
+DEPARTMENT OF TRANSPORTATION FEDERAL AVIATION ADMINISTRATION
+
+SUBJECT: DUAL LOCKING DEVICES ON FASTENERS
+
+1. PURPOSE. This advisory circular provides guidance and acceptable means, not the sole means, by which compliance may be shown with the requirements for dual locking devices on removable fasteners installed in rotorcraft and transport category airplanes.
+
+2. REFERENCES. Federal Aviation Regulations 25.607, 27.607, and 29.607.
+
+3. BACKGROUND. It is common practice to secure fasteners (i.e., bolts, screws, nuts, pins, etc.) with a single locking device. Service experience has indicated that due to maintenance, manufacturing, or design errors, a single locking device is not adequate for critical applications in rotorcraft and transport category airplanes. Due to a number of instances of loss of fastener integrity involving such fasteners installed on these aircraft, it was considered necessary to require two separate locking devices on all removable fasteners in any installation in which the loss of the fastener could jeopardize the safe operation of rotorcraft or transport category airplanes, and that consideration must be given to the environmental conditions associated with a particular fastener installation in determining the appropriate locking devices for that fastener; therefore, FARs 25.607, 27.607, and 29.607 were amended to specify two separate locking devices on removable fasteners for critical applications.
+
+[chunk 7664138d-6060-44f7-b0fd-d0d36019244f]
+8. APPLICATION.
+
+a. The most obvious critical application of removable fasteners with dual locking devices would be in the aircraft's primary control system where the failure of a single fastener joint can result in loss or reduction of control capability. However, there are other critical applications such as non-failsafe structural joints on the airframe and landing gear in many aircraft as well as joints in the power transmission system and primary powerplant controls of helicopters where loss of a single fastener could preclude continued safe flight and landing. Each application should be evaluated individually to determine critical joints where fasteners with dual locking devices are necessary. Once such a critical joint has been determined, the fastener incorporating dual locking devices should be carefully selected considering the structural and fatigue strength and the proper functional performance of the fastener in conjunction with the environmental conditions associated with the particular fastener installation. Provisions to accommodate the dual locking feature in a bolt-nut fastener, for example, may have altered the stripping torque and may have reduced the bearing area in the thread between the nut and the bolt when this bolt-nut fastener is compared to a similar standard bolt-nut fastener without double locking features. In addition, the installation of the fastener should not introduce detrimental interference with adjacent structure, equipment, etc., under all operating conditions.
+
+b. Care should be exercised to assure that each lock will in fact prevent the loss of the fastener such as a bolt, due to backing off of the nut, etc., under the most severe expected operating conditions, including vibration and temperature, where applicable.
+
+c. Assuming that one of the two required separate locking devices on the fastener should not perform properly or should fail for any reason, such malfunctioning or failure should not cause the other locking device to fail or become ineffective.
+
+d. Fasteners which have been removed for any reason during inspection and maintenance should be carefully evaluated for continued air-worthiness and proper functioning of incorporated locking devices before reinstallation. Fasteners determined to be worn and unairworthy but which nevertheless give the appearance of suitability for reinstallation should be marked conspicuously to prevent their inadvertent return to service.
+
+e. Bolts which are subject to rotation must have at least one nonfriction-type lock. The other lock, if dual locks are required, may be either a friction or nonfriction-type lock.
+
+f. Fasteners which are not subject to rotation may have the following type locks if dual locks are required:
+
+(1) Two nonfriction-type locks.
+
+(2) Two friction-type locks.
+
+(3) One friction-type and one nonfriction-type lock.
+
+It should be noted that many designs of joints may require custom-designed, one-of-a-kind fasteners; therefore, no attempt is made to illustrate any particular types of fasteners which incorporate dual locking devices. The following checklist may be useful in considering approval of a particular fastener for a specific application if it has been determined that compliance is required with FARs 25.607, 27.607, or 29.607.
+
+[chunk e9a87ad6-0684-4d4a-bc3c-4191e999124b]
+4. REMOVABLE FASTENERS. By a removable fastener in the referenced rules is meant the conventional attachment devices such as bolts and nuts, screws, pins, etc., which can be readily removed and reinstalled or replaced by other identical fasteners.
+
+5. LOCKING DEVICE. By a locking device is meant the feature incorporated on the fastener which will prevent the loss of this fastener and retain the fastener in its proper installation. The locking devices on the fasteners may be either friction or nonfriction types. Permanent, solid, nonmetallic friction inserts are considered acceptable as friction-type locks provided they perform their intended functions.
+
+6. DUAL LOCKING DEVICE. A dual locking device on a fastener consists of any two separate locking features described in paragraph 5.
+
+7. BOLTS SUBJECT TO ROTATION. A bolt is considered to be subject to rotation if it serves as an axis of rotation producing relative motion between the bolt and one or more components attached to the bolt.
+
+[chunk a90bc6a0-202c-45d8-bf28-292145e3b8f4]
+9. CHECKLIST.
+
+a. Are two locking devices or features on the fastener?
+
+b. Would either one of the two locking devices on the fastener by itself prevent the loss of the fastener and retain it in its proper installation?
+
+c. Will either one locking device effectively lock and prevent the loss of the fastener when the other locking device fails or malfunctions?
+
+d. Has the fastener been substantiated for adequate structural strength?
+
+e. Has the fastener been substantiated for fatigue strength, when appropriate?
+
+f. Has the suitability of the fastener, including locking devices, been substantiated for all environmental conditions such as vibration, temperature, susceptibility to corrosion, etc., where applicable?
+
+g. Will the fastener perform its intended functions under all operating conditions?
+
+h. Will the installation of the fastener introduce no detrimental interference with adjacent structure, components, equipment, etc., under all operating conditions?
+
+1. If the fastener (bolt) is subject to rotation, is at least one of the two locking devices a nonfriction-type?
+
+j. If the fastener has been used previously, has continued airworthiness been determined, including proper functioning of incorporated locking devices, before installation?
+
+k. If the correct or incomplete installation of a fastener would introduce detrimental effects, are proper means provided to prevent an incorrect installation?
+
+1. Are the design features and physical characteristics of the fastener and, especially the locking features, such that their purpose, functioning, and proper positioning is easily recognized?
+
+Source image on page 4; no OCR transcription available.
+
+![figure p4](http://localhost:8080/api/v1/ingestion/jobs/d13339cfc5a34e98b594efa54f647129/assets/afc489babd09fc8f6eba)
+
+Acting Director, Flight Standards Service
+
+[chunk 7240f05c-605b-459f-9f27-e04ea6e0bcae]
+8. APPLICATION.
+
+a. The most obvious critical application of removable fasteners with dual locking devices would be in the aircraft's primary control system where the failure of a single fastener joint can result in loss or reduction of control capability. However, there are other critical applications such as non-failsafe structural joints on the airframe and landing gear in many aircraft as well as joints in the power transmission system and primary powerplant controls of helicopters where loss of a single fastener could preclude continued safe flight and landing. Each application should be evaluated individually to determine critical joints where fasteners with dual locking devices are necessary. Once such a critical joint has been determined, the fastener incorporating dual locking devices should be carefully selected considering the structural and fatigue strength and the proper functional performance of the fastener in conjunction with the environmental conditions associated with the particular fastener installation. Provisions to accommodate the dual locking feature in a bolt-nut fastener, for example, may have altered the stripping torque and may have reduced the bearing area in the thread between the nut and the bolt when this bolt-nut fastener is compared to a similar standard bolt-nut fastener without double locking features. In addition, the installation of the fastener should not introduce detrimental interference with adjacent structure, equipment, etc., under all operating conditions.
+
+[chunk 2d71841c-d3ee-4cec-ad2e-ae4b58c08eb8]
+b. Care should be exercised to assure that each lock will in fact prevent the loss of the fastener such as a bolt, due to backing off of the nut, etc., under the most severe expected operating conditions, including vibration and temperature, where applicable.
+
+c. Assuming that one of the two required separate locking devices on the fastener should not perform properly or should fail for any reason, such malfunctioning or failure should not cause the other locking device to fail or become ineffective.
+
+d. Fasteners which have been removed for any reason during inspection and maintenance should be carefully evaluated for continued air-worthiness and proper functioning of incorporated locking devices before reinstallation. Fasteners determined to be worn and unairworthy but which nevertheless give the appearance of suitability for reinstallation should be marked conspicuously to prevent their inadvertent return to service.
+
+e. Bolts which are subject to rotation must have at least one nonfriction-type lock. The other lock, if dual locks are required, may be either a friction or nonfriction-type lock.
+
+f. Fasteners which are not subject to rotation may have the following type locks if dual locks are required:
+
+(1) Two nonfriction-type locks.
+
+(2) Two friction-type locks.
+
+(3) One friction-type and one nonfriction-type lock.
+
+[chunk df61ba36-bc53-4725-9ec5-0fe6056d11b6]
+It should be noted that many designs of joints may require custom-designed, one-of-a-kind fasteners; therefore, no attempt is made to illustrate any particular types of fasteners which incorporate dual locking devices. The following checklist may be useful in considering approval of a particular fastener for a specific application if it has been determined that compliance is required with FARs 25.607, 27.607, or 29.607.
+
+[chunk 53412f50-7c70-4572-bc98-7433aa932853]
+9. CHECKLIST.
+
+a. Are two locking devices or features on the fastener?
+
+b. Would either one of the two locking devices on the fastener by itself prevent the loss of the fastener and retain it in its proper installation?
+
+c. Will either one locking device effectively lock and prevent the loss of the fastener when the other locking device fails or malfunctions?
+
+d. Has the fastener been substantiated for adequate structural strength?
+
+e. Has the fastener been substantiated for fatigue strength, when appropriate?
+
+f. Has the suitability of the fastener, including locking devices, been substantiated for all environmental conditions such as vibration, temperature, susceptibility to corrosion, etc., where applicable?
+
+g. Will the fastener perform its intended functions under all operating conditions?
+
+h. Will the installation of the fastener introduce no detrimental interference with adjacent structure, components, equipment, etc., under all operating conditions?
+
+1. If the fastener (bolt) is subject to rotation, is at least one of the two locking devices a nonfriction-type?
+
+j. If the fastener has been used previously, has continued airworthiness been determined, including proper functioning of incorporated locking devices, before installation?
+
+k. If the correct or incomplete installation of a fastener would introduce detrimental effects, are proper means provided to prevent an incorrect installation?
+
+[chunk b8c4e2bb-2fa6-4191-bec0-e5369968305b]
+1. Are the design features and physical characteristics of the fastener and, especially the locking features, such that their purpose, functioning, and proper positioning is easily recognized?
+
+[chunk 632c13ee-df33-4657-a9f5-d8c45c6a51b0]
+Source image on page 4; no OCR transcription available.
+
+![figure p4](http://localhost:8080/api/v1/ingestion/jobs/d13339cfc5a34e98b594efa54f647129/assets/afc489babd09fc8f6eba)
+
+[chunk 7c692d2d-f895-4c7f-9904-ad835c296ca7]
+Acting Director, Flight Standards Service

@@ -1,0 +1,12 @@
+**适用范围**：Part 25 运输类飞机的旅客座椅软垫（驾驶舱飞行机组座椅除外）<kb doc="AC_25.853-1.pdf" chunk_id="fc9b5c7c-d9d6-4a17-af82-96d27c717208" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。判据来自 CCAR/FAR Part 25 附录 F 第 II 部分“座椅软垫可燃性”，判定以“座椅组”（座垫+靠背成对）为单位，最少试验 3 组<kb doc="AC_25-17A_part04_p0601-0800.pdf" chunk_id="df0d86cd-a8fa-46ad-9973-9a50c57cadc5" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。
+
+| 判据项 | 合格要求 |
+|---|---|
+| 失重 | 平均失重率不得超过 10%；且不少于三分之二（2/3）的试验组失重不超过 10%。称取试验后重量前，须清除从软垫及安装架掉落的碎屑<kb doc="AC_25-17A_part04_p0601-0800.pdf" chunk_id="10fe1603-063a-453c-b7bc-9a641628de46" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" /><kb doc="AC_25-17A_part04_p0601-0800.pdf" chunk_id="df0d86cd-a8fa-46ad-9973-9a50c57cadc5" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" /> |
+| 烧损长度 | 从最靠近燃烧器的座椅框架内缘量至最远损伤处的垂直距离，不得超过 17 in（约 431.8 mm 量级，原文以 17 英寸给出）；且不少于 2/3 的试验组，其烧损长度不得到达背离燃烧器的一侧<kb doc="AC_25-17A_part04_p0601-0800.pdf" chunk_id="df0d86cd-a8fa-46ad-9973-9a50c57cadc5" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" /><kb doc="AC_25-17A_part04_p0601-0800.pdf" chunk_id="10fe1603-063a-453c-b7bc-9a641628de46" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" /> |
+
+补充说明（解释性指引）：当共测 3 组时，“2/3”即至少 2 组烧损长度不超过 17 in；超过 17 in 视为火焰已到达软垫背离燃烧器的一侧；烧损长度取任一表面上最长者（通常在水平件顶面或垂直件前面）<kb doc="AC_25.853-1.pdf" chunk_id="55e2dea4-15de-4743-be53-0601f2dcd1d9" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。每个座椅部件（座垫、靠背、头靠、脚靠等）的试验组须各自独立满足失重与烧损长度判据，结果不得由一个部件外推到另一个部件<kb doc="AC_25.853-1.pdf" chunk_id="55e2dea4-15de-4743-be53-0601f2dcd1d9" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。
+
+**试验燃料**：燃烧器使用标称流量 **2.0 gallon/hour 的 2 号（#2 Grade）煤油或等效燃料**（油喷嘴标称 2.25 gal/h @100 psi、80°喷雾角）<kb doc="AC_25-17A_part04_p0601-0800.pdf" chunk_id="e3dc484a-963b-48bd-8ee5-12916191c249" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />；该试验方法本身即为“2 gal/h 油燃烧器”方法<kb doc="AC_25.853-1.pdf" chunk_id="f6d3d80a-1f43-4219-8dcf-ad33db62e5c4" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。
+
+**补充参考**：AC 25.853-1 指出，若标称燃油流量、火焰温度和热流满足附录 F 要求，1 号煤油、燃料油或 2 号柴油可视为与规定燃料等效；改用其他燃料（如丙烷）则需与使用 2 号煤油或等效燃料的燃烧器进行对比试验<kb doc="AC_25.853-1.pdf" chunk_id="cc10bb79-8671-463b-9002-d8fcefcbc44a" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" /><kb doc="AC_25.853-1.pdf" chunk_id="92c8acfb-8850-4eac-975c-c4cf17eb7ca1" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。

@@ -1,0 +1,332 @@
+[chunk ec12a32e-63b7-436f-995b-a463ee5551cb]
+ADVISORY CIRCULAR
+
+Source image on page 1; no OCR transcription available.
+
+![figure p1](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/9526b99bebf51530aa8f)
+
+DEPARTMENT OF TRANSPORTATION
+
+Federal Aviation Administration
+
+Washington, D.C.
+
+[chunk 55011006-c191-4353-a45b-36a3b0ff653a]
+ADVISORY CIRCULAR
+
+[chunk 2c61f378-e688-40f5-80d5-e4294251304b]
+Source image on page 1; no OCR transcription available.
+
+![figure p1](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/9526b99bebf51530aa8f)
+
+[chunk a2da4921-6bb4-4ef7-b7ac-9b5a37919955]
+RECOMMENDED RADIATION SAFETY PRECAUTIONS FOR GROUND OPERATION
+
+Subject: OF AIRBORNE WEATHER RADAR
+
+1. PURPOSE. This circular sets forth recommended radiation safety precautions to be taken by personnel when operating airborne weather radar on the ground.
+
+2. CANCELLATION. AC 20-68A, dated April 11, 1975, is canceled.
+
+3. RELATED READING MATERIAL.
+
+a. Barnes and Taylor, Radiation Hazards and Protection (London: George Newnes Limited, 1963), p. 211.
+
+b. U.S. Department of Health, Education and Welfare, Public Health Service, Consumer Protection and Environmental Health Service, "Environmental health microwaves, ultraviolet radiation and radiation from lasers and television receivers - An Annotated Bibliography," FS 2.300: RH-35, Washington, U.S. Government Printing Office, pp. 56-57.
+
+c. Mumford, W. W., "Some technical aspects of microwave radiation hazards," Proceedings of the IRE, Washington, U.S. Government Printing Office, February 1961, pp. 427-447.
+
+4. BACKGROUND. Dangers from ground operation of airborne weather radar include the possibility of human body damage and ignition of combustible materials by radiated energy. Low tolerance parts of the body include the eyes and testes.
+
+5. PRECAUTIONS. Management and supervisory personnel should establish procedures for advising personnel of dangers from operating airborne weather radars on the ground. Precautionary signs should be displayed in affected areas to alert personnel of ground testing.
+
+a. General.
+
+(1) Airborne weather radar should be operated on the ground only by qualified personnel.
+
+(2) Installed airborne radar should not be operated while the aircraft is in a hangar or other enclosure unless the radar transmitter is not operating, or the energy is directed toward an absorption shield which dissipates the radio frequency energy. Otherwise, radiation within the enclosure can be reflected throughout the area.
+
+b. Body Damage. To prevent possible human body damage, the following precautions should be taken:
+
+(1) Personnel should never stand nearby and in front of a radar antenna which is transmitting. When the antenna is not scanning, the danger increases.
+
+(2) A recommended safe distance from operating airborne weather radars should be established. A safe distance can be determined by using the equations in Appendix 1 or the graphs of figures 1 and 2. This criterion is now accepted by many industrial organizations and is based on limiting exposure of humans to an average power density not greater than 10 milliwatts per square centimeter.
+
+(3) Personnel should be advised to avoid the end of an open waveguide unless the radar is turned off.
+
+(4) Personnel should be advised to avoid looking into a waveguide, or into the open end of a coaxial connector or line connector to a radar transmitter output, as severe eye damage may result.
+
+(5) Personnel should be advised that when high power radar transmitters are operated out of their protective cases, X-rays may be emitted. Stray X-rays may emanate from the glass envelope type pulser, oscillator, clipper, or rectifier tubes, as well as magnetrons.
+
+c. Combustible Materials. To prevent possible fuel ignition, an installed airborne weather radar should not be operated while an aircraft is being refueled or defueled.
+
+McBuang
+M. C. BEARD
+
+Director of Airworthiness
+
+<div class="mineru-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+where  $R_{S}$  = The minimum safe distance in meters.
+P = Transmitted average power in watts.
+G = Antenna gain
+</div>
+
+[chunk 6dbd5e82-577b-4fbf-889c-1d9480f02dc7]
+APPENDIX 1. SAFE DISTANCE DETERMINATION
+
+The following information can be used in establishing a minimum safe distance from the antenna for personnel near an operating airborne weather radar. An applicable graph is shown in figure 1.
+
+1. NEAR FIELD/FAR FIELD INTERSECTION. The distance to the near field/far field intersection can be computed by:
+
+R_i=(G_λ)/(8π)1
+
+<div class="mineru-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+where  $R_{i}$  = Intersection distance from the antenna (in meters)
+ $\lambda$  = Wave length (in meters)
+G = Antenna gain
+</div>
+
+2. DISTANCE TO 10 mw/cm ^2 SAFE LIMIT. For a far field power density of 10 mw/cm ^2 , the distance (in meters) from the antenna may be calculated by:
+
+R_S=sqrt(GP/400π)2
+
+```txt
+An applicable graph is shown in figure 2.
+```
+
+3. PROCEDURES. The above formulas or the graphs of figures 1 and 2 may be used to determine the minimum safe distance. In either case the following procedures apply:
+
+a. Determine the distance ( R_i ) to the near field/far field intersection (paragraph 1).
+
+<div class="mineru-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+b. Determine the distance ( $R_{s}$ ) to 10 mw/cm $^{2}$ power density (paragraph 2).
+</div>
+
+c. If the distance (R_S) determined in 3b above is less than (R_i) found in 3 a above, use distance (R_i) as the minimum safe distance.
+
+d. If the distance (R_s) determined in 3b above is greater than (R_i) found in 3a above, use distance (R_s) as the minimum safe distance.
+
+[原始公式]
+$$
+R _ {i} = \frac {G _ {\lambda}}{8 \pi}\tag{1}
+$$
+$$
+R _ {S} = \sqrt {G P / 4 0 0 \pi}\tag{2}
+$$
+
+![$$
+R _ {i} = \\frac {G _ {\\lambda}}{8 \\pi}\\tag{1}
+$$](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/52cd890aca93ecc24c7c)
+![$$
+R _ {S} = \\sqrt {G P / 4 0 0 \\pi}\\tag{2}
+$$](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/081f5d91032d086c91da)
+
+[chunk 847b2ea9-f93e-4120-a104-8837a7f530e0]
+DEPARTMENT OF TRANSPORTATION
+
+Federal Aviation Administration
+
+Washington, D.C.
+
+[chunk b1d8aa35-2244-42ef-abe8-d56d5dcf4757]
+4. EXAMPLE
+
+```txt
+a. Data. The following is typical data for an airborne weather radar.
+Antenna Diameter : 22 inches = 56 cm
+Transmitter Frequency : 9375 ± 30 MHz
+Wave Length : 3.2 cm
+Pulse Length : 1.5 microseconds (search)
+Pulse Repetition : 400 Hz
+Peak Power : 40 kilowatts
+Average Power : 24 watts (search)
+Antenna Gain : 1000 (30db)
+```
+
+b. Calculations.
+
+(1). Distance (R_i) to the near field/far field intersection.
+
+(2) Distance ( R_s ) to 10 mw/cm ^2 safe limit.
+
+arrayrlR_S&=sqrt(GP/400π)&=sqrt(1000×24/400π)&=4.37meters=14.3feetarray
+
+The distance (R_s) is greater than (R_i) , therefore, the minimum safe distance is 14.3 feet.
+
+R_i . Distance to near field-far field intersection in feet
+
+[原始公式]
+$$
+\begin{array}{r l} R _ {S} & = \sqrt {G P / 4 0 0 \pi} \\ & = \sqrt {1 0 0 0 \times 2 4 / 4 0 0 \pi} \\ & = 4. 3 7 \text { meters } = 1 4. 3 \text { feet } \end{array}
+$$
+
+![$$
+\\begin{array}{r l} R _ {S} & = \\sqrt {G P / 4 0 0 \\pi} \\\\ & = \\sqrt {1 0 0 0 \\times 2 4 / 4 0 0 \\pi} \\\\ & = 4. 3 7 \\text { meters } = 1 4. 3 \\text { feet } \\end{array}
+$$](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/f15ecf3430c4a673da01)
+
+FREQUENCY IN MEGA HERTZ
+Distance to Intersection of Near and Far Fields
+
+![FREQUENCY IN MEGA HERTZ
+Distance to Intersection of Near and Far Fields](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/f942f73f25cc069d4303)
+
+Source image on page 6; no OCR transcription available.
+
+![figure p6](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/50f8943ae76c01f5086e)
+
+Distance on Antenna Beam Axis for Power Density - 10mw/cm²
+
+[chunk ff1deab4-6529-4600-8e81-7f9791c74f64]
+RECOMMENDED RADIATION SAFETY PRECAUTIONS FOR GROUND OPERATION
+
+Subject: OF AIRBORNE WEATHER RADAR
+
+1. PURPOSE. This circular sets forth recommended radiation safety precautions to be taken by personnel when operating airborne weather radar on the ground.
+
+2. CANCELLATION. AC 20-68A, dated April 11, 1975, is canceled.
+
+3. RELATED READING MATERIAL.
+
+a. Barnes and Taylor, Radiation Hazards and Protection (London: George Newnes Limited, 1963), p. 211.
+
+b. U.S. Department of Health, Education and Welfare, Public Health Service, Consumer Protection and Environmental Health Service, "Environmental health microwaves, ultraviolet radiation and radiation from lasers and television receivers - An Annotated Bibliography," FS 2.300: RH-35, Washington, U.S. Government Printing Office, pp. 56-57.
+
+c. Mumford, W. W., "Some technical aspects of microwave radiation hazards," Proceedings of the IRE, Washington, U.S. Government Printing Office, February 1961, pp. 427-447.
+
+4. BACKGROUND. Dangers from ground operation of airborne weather radar include the possibility of human body damage and ignition of combustible materials by radiated energy. Low tolerance parts of the body include the eyes and testes.
+
+5. PRECAUTIONS. Management and supervisory personnel should establish procedures for advising personnel of dangers from operating airborne weather radars on the ground. Precautionary signs should be displayed in affected areas to alert personnel of ground testing.
+
+a. General.
+
+(1) Airborne weather radar should be operated on the ground only by qualified personnel.
+
+[chunk eda22bf2-9b64-477f-af8d-76190fdb44eb]
+(2) Installed airborne radar should not be operated while the aircraft is in a hangar or other enclosure unless the radar transmitter is not operating, or the energy is directed toward an absorption shield which dissipates the radio frequency energy. Otherwise, radiation within the enclosure can be reflected throughout the area.
+
+b. Body Damage. To prevent possible human body damage, the following precautions should be taken:
+
+(1) Personnel should never stand nearby and in front of a radar antenna which is transmitting. When the antenna is not scanning, the danger increases.
+
+(2) A recommended safe distance from operating airborne weather radars should be established. A safe distance can be determined by using the equations in Appendix 1 or the graphs of figures 1 and 2. This criterion is now accepted by many industrial organizations and is based on limiting exposure of humans to an average power density not greater than 10 milliwatts per square centimeter.
+
+(3) Personnel should be advised to avoid the end of an open waveguide unless the radar is turned off.
+
+(4) Personnel should be advised to avoid looking into a waveguide, or into the open end of a coaxial connector or line connector to a radar transmitter output, as severe eye damage may result.
+
+(5) Personnel should be advised that when high power radar transmitters are operated out of their protective cases, X-rays may be emitted. Stray X-rays may emanate from the glass envelope type pulser, oscillator, clipper, or rectifier tubes, as well as magnetrons.
+
+[chunk 87a6b6a1-7b3c-4500-98a7-352cd03658ae]
+c. Combustible Materials. To prevent possible fuel ignition, an installed airborne weather radar should not be operated while an aircraft is being refueled or defueled.
+
+McBuang
+M. C. BEARD
+
+Director of Airworthiness
+
+<div class="mineru-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+where  $R_{S}$  = The minimum safe distance in meters.
+P = Transmitted average power in watts.
+G = Antenna gain
+</div>
+
+[chunk e74abecd-adfe-4bfd-9561-5f7f5c5f5131]
+APPENDIX 1. SAFE DISTANCE DETERMINATION
+
+The following information can be used in establishing a minimum safe distance from the antenna for personnel near an operating airborne weather radar. An applicable graph is shown in figure 1.
+
+1. NEAR FIELD/FAR FIELD INTERSECTION. The distance to the near field/far field intersection can be computed by:
+
+R_i=(G_λ)/(8π)1
+
+<div class="mineru-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+where  $R_{i}$  = Intersection distance from the antenna (in meters)
+ $\lambda$  = Wave length (in meters)
+G = Antenna gain
+</div>
+
+2. DISTANCE TO 10 mw/cm ^2 SAFE LIMIT. For a far field power density of 10 mw/cm ^2 , the distance (in meters) from the antenna may be calculated by:
+
+R_S=sqrt(GP/400π)2
+
+```txt
+An applicable graph is shown in figure 2.
+```
+
+3. PROCEDURES. The above formulas or the graphs of figures 1 and 2 may be used to determine the minimum safe distance. In either case the following procedures apply:
+
+a. Determine the distance ( R_i ) to the near field/far field intersection (paragraph 1).
+
+<div class="mineru-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+b. Determine the distance ( $R_{s}$ ) to 10 mw/cm $^{2}$ power density (paragraph 2).
+</div>
+
+c. If the distance (R_S) determined in 3b above is less than (R_i) found in 3 a above, use distance (R_i) as the minimum safe distance.
+
+d. If the distance (R_s) determined in 3b above is greater than (R_i) found in 3a above, use distance (R_s) as the minimum safe distance.
+
+[原始公式]
+$$
+R _ {i} = \frac {G _ {\lambda}}{8 \pi}\tag{1}
+$$
+$$
+R _ {S} = \sqrt {G P / 4 0 0 \pi}\tag{2}
+$$
+
+![$$
+R _ {i} = \\frac {G _ {\\lambda}}{8 \\pi}\\tag{1}
+$$](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/52cd890aca93ecc24c7c)
+![$$
+R _ {S} = \\sqrt {G P / 4 0 0 \\pi}\\tag{2}
+$$](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/081f5d91032d086c91da)
+
+[chunk a78207ec-724a-4101-aa3c-a49ae4a7dadc]
+4. EXAMPLE
+
+```txt
+a. Data. The following is typical data for an airborne weather radar.
+Antenna Diameter : 22 inches = 56 cm
+Transmitter Frequency : 9375 ± 30 MHz
+Wave Length : 3.2 cm
+Pulse Length : 1.5 microseconds (search)
+Pulse Repetition : 400 Hz
+Peak Power : 40 kilowatts
+Average Power : 24 watts (search)
+Antenna Gain : 1000 (30db)
+```
+
+b. Calculations.
+
+(1). Distance (R_i) to the near field/far field intersection.
+
+(2) Distance ( R_s ) to 10 mw/cm ^2 safe limit.
+
+arrayrlR_S&=sqrt(GP/400π)&=sqrt(1000×24/400π)&=4.37meters=14.3feetarray
+
+The distance (R_s) is greater than (R_i) , therefore, the minimum safe distance is 14.3 feet.
+
+R_i . Distance to near field-far field intersection in feet
+
+[原始公式]
+$$
+\begin{array}{r l} R _ {S} & = \sqrt {G P / 4 0 0 \pi} \\ & = \sqrt {1 0 0 0 \times 2 4 / 4 0 0 \pi} \\ & = 4. 3 7 \text { meters } = 1 4. 3 \text { feet } \end{array}
+$$
+
+![$$
+\\begin{array}{r l} R _ {S} & = \\sqrt {G P / 4 0 0 \\pi} \\\\ & = \\sqrt {1 0 0 0 \\times 2 4 / 4 0 0 \\pi} \\\\ & = 4. 3 7 \\text { meters } = 1 4. 3 \\text { feet } \\end{array}
+$$](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/f15ecf3430c4a673da01)
+
+[chunk de667309-cbef-4016-9cf9-1b1b9d373660]
+FREQUENCY IN MEGA HERTZ
+Distance to Intersection of Near and Far Fields
+
+![FREQUENCY IN MEGA HERTZ
+Distance to Intersection of Near and Far Fields](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/f942f73f25cc069d4303)
+
+[chunk d26fc279-8565-4214-9a86-7543e08d12d1]
+Source image on page 6; no OCR transcription available.
+
+![figure p6](http://localhost:8080/api/v1/ingestion/jobs/306f3df5c92743f0aeb3e5a36345ca90/assets/50f8943ae76c01f5086e)
+
+[chunk 07e7ff9f-08fa-497b-a204-3397d36eacef]
+Distance on Antenna Beam Axis for Power Density - 10mw/cm²

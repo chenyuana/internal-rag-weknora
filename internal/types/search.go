@@ -149,6 +149,8 @@ func (st SearchTargets) ContainsKB(kbID string) bool {
 
 // SearchResult represents the search result
 type SearchResult struct {
+	// RelatedImages are source figures explicitly named by this text result.
+	RelatedImages []RelatedImage `json:"related_images,omitempty" gorm:"-"`
 	// ID
 	ID string `gorm:"column:id"              json:"id"`
 	// Content
@@ -224,6 +226,12 @@ type SearchResult struct {
 	// longer describe the body. Internal only: used by the merge pipeline,
 	// never serialized.
 	ContentRewritten bool `json:"-"`
+}
+
+type RelatedImage struct {
+	URL     string `json:"url"`
+	Caption string `json:"caption"`
+	ChunkID string `json:"chunk_id"`
 }
 
 // SearchParams represents the search parameters

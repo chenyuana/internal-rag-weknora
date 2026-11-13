@@ -1,0 +1,2610 @@
+{
+  "num": "029",
+  "query": "AC 25.335-1A 的签发日期？",
+  "session": "2218e192-144d-4ce0-beff-872a747bfffa",
+  "answer": "AC 25.335-1A 的签发日期是 **2000 年 9 月 29 日**，该日期在文档中写作“9/29/00”。<kb doc=\"AC_25.335-1A.pdf\" chunk_id=\"9a398c13-6505-47c2-97e7-011a2b160492\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n补充说明：这份咨询通告（AC）取代了 1997 年 10 月 20 日（10/20/97）签发的 AC 25.335-1《Design Dive Speed》。<kb doc=\"AC_25.335-1A.pdf\" chunk_id=\"9a398c13-6505-47c2-97e7-011a2b160492\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+  "references": [
+    {
+      "id": "9a398c13-6505-47c2-97e7-011a2b160492",
+      "content": "Subject: DESIGN DIVE SPEED\n\nDate: 9/29/00\nInitiated by: ANM-110\n\nAC No. 25.335-1A\n\n1. PURPOSE. This advisory circular (AC) sets forth an acceptable means, but not the only means, of demonstrating compliance with the airworthiness standards for transport category airplanes related to the minimum speed margin between design cruise speed and design dive speed. Like all AC's, it is not regulatory but provides guidance for applicants in demonstrating compliance with the objective safety standards set forth in the rule.\n\n2. CANCELATION. Advisory Circular 25.335-1, Design Dive Speed, dated 10/20/97, is canceled.\n\n3. RELATED FAR SECTIONS. Part 25, Section 25.335 \"Design airspeeds.\"\n\n4. BACKGROUND. Section 25.335(b) requires the design dive speed, V_D , of the airplane to be established so that the design cruise speed is no greater than 0.8 times the design dive speed, or that it be based on an upset criterion initiated at the design cruise speed, V_C . At altitudes where the cruise speed is limited by compressibility effects, § 25.335(b)(2) requires the margin to be not less than 0.05 Mach. Furthermore, at any altitude, the margin must be great enough to provide for atmospheric variations (such as horizontal gusts and the penetration of jet streams), instrument errors, and production variations. This AC provides a rational method for considering the atmospheric variations.\n\n5. DESIGN DIVE SPEED MARGIN DUE TO ATMOSPHERIC VARIATIONS.\n\na. In the absence of evidence supporting alternative criteria, compliance with § 25.335(b)(2) may be shown by providing a margin between V_C/M_C and V_D/M_D sufficient to provide for the following atmospheric conditions:\n\n(1) Encounter with a Horizontal Gust. The effect of encounters with a substantially head-on gust, assumed to act at the most adverse angle between 30 degrees above and 30 degrees below the flight path, should be considered. The gust velocity should be 50 fps in equivalent airspeed (EAS) at altitudes up to 20,000 feet. At altitudes above 20,000 feet the gust velocity may be reduced linearly from 50 fps in EAS at 20,000 feet to 25 fps in EAS at 50,000 feet, above which the gust velocity is considered to be constant. The gust velocity should be assumed to build up in not more than 2 seconds and last for 30 seconds.\n\n(2) Entry into Jetstreams or Regions of High Windshear.\n\n(i) Conditions of horizontal and vertical windshear should be investigated taking into account the windshear data of this paragraph which are worldwide extreme values.\n\n(ii) Horizontal windshear is the rate of change of horizontal wind speed with horizontal distance. Encounters with horizontal windshear change the airplane apparent head wind in level flight as the airplane traverses into regions of changing wind speed. The horizontal windshear region is assumed to have no significant vertical gradient of wind speed.\n\n(iii) Vertical windshear is the rate of change of horizontal wind speed with altitude. Encounters with windshear change the airplane apparent head wind as the airplane climbs or descends into regions of changing wind speed. The vertical windshear region changes slowly so that temporal or spatial changes in the vertical windshear gradient are assumed to have no significant affect on an airplane in level flight.\n\n(iv) With the airplane at V_c/M_c within normal rates of climb and descent, the most extreme condition of windshear that it might encounter, according to available meteorological data, can be expressed as follows:\n\n(A) Horizontal Windshear. The jet stream is assumed to consist of a linear shear of 3.6 KTAS/NM over a distance of 25 NM or of 2.52 KTAS/NM over a distance of 50 NM or of 1.8 KTAS/NM over a distance of 100 NM, whichever is most severe.\n\n(B) Vertical Windshear. The windshear region is assumed to have the most severe of the following characteristics and design values for windshear intensity and height band. As shown in Figure 1, the total vertical thickness of the windshear region is twice the height band so that the windshear intensity specified in Table 1 applies to a vertical distance equal to the height band above and below the reference altitude. The variation of horizontal wind speed with altitude in the windshear region is linear through the height band from zero at the edge of the region to a strength at the reference altitude determined by the windshear intensity multiplied by the height band. Windshear intensity varies linearly between the reference altitudes in Table 1.\n\n[Cross-page references; curve values not transcribed]\nRelated figure: Figure 1 - Windshear Region; source page 3.\n\nFigure 1 - Windshear Region\n\n[Cross-page references; curve values not transcribed]\nReferenced from page 2, 5. DESIGN DIVE SPEED MARGIN DUE TO ATMOSPHERIC VARIATIONS.:\n(B) Vertical Windshear. The windshear region is assumed to have the most severe of the following characteristics and design values for windshear intensity and height band. As shown in Figure 1, the total vertical thickness of the windshear region is twice the height band so that the windshear intensity specified in Table 1 applies to a vertical distance equal to the height band above and below the reference altitude. The variation of horizontal wind speed with altitude in the windshear region is linear through the height band from zero at the edge of the region to a strength at the reference altitude determined by the windshear intensity multiplied by the height band. Windshear intensity varies linearly between the reference altitudes in Table 1.\n\ndescending from point “A” and climbing from point “B”\n\nTable 1 - Vertical Windshear Intensity Characteristics\nColumn 2=1000; Column 3=3000; Column 4=5000; Column 5=7000\nColumn 1=Reference Altitude - Ft.; Columns 2-5=Vertical WindshearUnits: ft./sec. per foot of height (KTAS per 1000 feet of height)\nColumn 1=0; Column 2=0.095 (56.3); Column 3=0.05 (29.6); Column 4=0.035 (20.7); Column 5=0.03 (17.8)\nColumn 1=40,000; Column 2=0.145 (85.9); Column 3=0.075 (44.4); Column 4=0.055 (32.6); Column 5=0.04 (23.7)\nColumn 1=45,000; Column 2=0.265 (157.0); Column 3=0.135 (80.0); Column 4=0.10 (59.2); Column 5=0.075 (44.4)\nColumn 1=Above 45,000; Column 2=0.265 (157.0); Column 3=0.135 (80.0); Column 4=0.10 (59.2); Column 5=0.075 (44.4)\nColumns 1-5=Windshear intensity varies linearly between specified altitudes.\n\n完整表格：\n<table><tr><td></td><td colspan=\"4\">Height Band - Ft.</td></tr><tr><td></td><td>1000</td><td>3000</td><td>5000</td><td>7000</td></tr><tr><td>Reference Altitude - Ft.</td><td colspan=\"4\">Vertical WindshearUnits: ft./sec. per foot of height (KTAS per 1000 feet of height)</td></tr><tr><td>0</td><td>0.095 (56.3)</td><td>0.05 (29.6)</td><td>0.035 (20.7)</td><td>0.03 (17.8)</td></tr><tr><td>40,000</td><td>0.145 (85.9)</td><td>0.075 (44.4)</td><td>0.055 (32.6)</td><td>0.04 (23.7)</td></tr><tr><td>45,000</td><td>0.265 (157.0)</td><td>0.135 (80.0)</td><td>0.10 (59.2)</td><td>0.075 (44.4)</td></tr><tr><td>Above 45,000</td><td>0.265 (157.0)</td><td>0.135 (80.0)</td><td>0.10 (59.2)</td><td>0.075 (44.4)</td></tr><tr><td colspan=\"5\">Windshear intensity varies linearly between specified altitudes.</td></tr></table>\n\n(v) The entry of the airplane into horizontal and vertical windshear should be treated as separate cases. Because the penetration of these large scale phenomena is fairly slow, recovery action by the pilot is usually possible. In the case of manual flight (i.e., when flight is being controlled by inputs made by the pilot), the airplane is assumed to maintain constant attitude until at least 3 seconds after the operation of the overspeed warning device, at which time recovery action may be started by using the primary aerodynamic controls and thrust at a normal acceleration of 1.5g, or the maximum available, whichever is lower.\n\nb. At altitudes where speed is limited by Mach number, a speed margin of .07 Mach between M_C and M_D is considered sufficient without further investigation.\n\nAerenda a Baler\n\nDORENDA D. BAKER\n\nActing Manager, Transport Airplane Directorate\n\nAircraft Certification Service, ANM-100",
+      "knowledge_id": "c235393a-1c8d-4ae8-973e-15bd2a7db584",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.335-1A.pdf",
+      "start_at": 0,
+      "end_at": 1387,
+      "seq": 0,
+      "score": 1,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "612341bdaf47b3cb5963f3bb3c22e3f8abff0b2777fe56da3ba40e718f7209db",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "a9b26a113f703a14a8f9",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\4c\\4c780780119aef8c5826d984dee64fa649efd46fa4c3599ee063caeddf4c534c\\source.pdf",
+        "internal_rag_source_sha256": "4c780780119aef8c5826d984dee64fa649efd46fa4c3599ee063caeddf4c534c",
+        "kept_by": "document_header",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "3765eff2-215a-4778-9ef7-c4284b77f9f6",
+      "image_info": "",
+      "knowledge_filename": "AC_25.335-1A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "Subject: DESIGN DIVE SPEED\n\nDate: 9/29/00\nInitiated by: ANM-110\n\nAC No. 25.335-1A\n\n1. PURPOSE. This advisory circular (AC) sets forth an acceptable means, but not the only means, of demonstrating compliance with the airworthiness standards for transport category airplanes related to the minimum speed margin between design cruise speed and design dive speed. Like all AC's, it is not regulatory but provides guidance for applicants in demonstrating compliance with the objective safety standards set forth in the rule.\n\n2. CANCELATION. Advisory Circular 25.335-1, Design Dive Speed, dated 10/20/97, is canceled.\n\n3. RELATED FAR SECTIONS. Part 25, Section 25.335 \"Design airspeeds.\"\n\n4. BACKGROUND. Section 25.335(b) requires the design dive speed, V_D , of the airplane to be established so that the design cruise speed is no greater than 0.8 times the design dive speed, or that it be based on an upset criterion initiated at the design cruise speed, V_C . At altitudes where the cruise speed is limited by compressibility effects, § 25.335(b)(2) requires the margin to be not less than 0.05 Mach. Furthermore, at any altitude, the margin must be great enough to provide for atmospheric variations (such as horizontal gusts and the penetration of jet streams), instrument errors, and production variations. This AC provides a rational method for considering the atmospheric variations.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "33b95d84-4afa-4bba-ad1c-7c0fa8092145",
+      "content": "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+      "knowledge_id": "3615f931-f054-4520-914e-65ed3c704798",
+      "chunk_index": 4,
+      "knowledge_title": "AC_23-16A.pdf",
+      "start_at": 0,
+      "end_at": 311,
+      "seq": 4,
+      "score": 0.7,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "33130c9a14616f38fdb3e1bb86b885dc3813880bbf84950c12bafe084152726b",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "7c784814c60e17fdf8cb",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\41\\4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45\\source.pdf",
+        "internal_rag_source_sha256": "4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "f0894b96-0623-4b83-8774-39368d138d26",
+      "image_info": "",
+      "knowledge_filename": "AC_23-16A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_23-16A.pdf\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+      "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+      "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+      "chunk_index": 3,
+      "knowledge_title": "AC_25-25A.pdf",
+      "start_at": 0,
+      "end_at": 20,
+      "seq": 3,
+      "score": 0.6887096774193547,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "04a389a1de97dc79f380",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+        "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+      "image_info": "",
+      "knowledge_filename": "AC_25-25A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "3baf7835-7d39-45ab-a5d4-6e08e08364ff",
+      "content": "6 SUGGESTIONS FOR IMPROVING THIS AC.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular feedback form at the end of this AC.\n\nSource image on page 6; no OCR transcription available.\n\nDigitally signed by\n\nVICTOR W WICKLUND\n\nDate: 2022.11.28\n\n13:44:04 -08'00'\n\nVictor Wicklund\n\nActing Director, Policy & Innovation Division\n\nAircraft Certification Service\n\nAdvisory Circular Feedback Form\n\nPaperwork Reduction Act Burden Statement: A federal agency may not conduct or sponsor, and a person is not required to respond to, nor shall a person be subject to a penalty for failure to comply with a collection of information subject to the requirements of the Paperwork Reduction Act unless that collection of information displays a currently valid OMB Control Number. The OMB Control Number for this information collection is 2120-0746. Public reporting for this collection of information is estimated to be approximately 20 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, completing and reviewing the collection of information.\n\nAll responses to this collection of information are voluntary FAA Order 1320.46D Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to: Information Collection Clearance Officer, Barbara Hall, 800 Independence Ave, Washington, D.C. 20590.\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to ( ) or (2) faxing it to the attention of the LOB/SO ( ).\n\nSubject: Date:\n\nPlease mark all appropriate line items:\n\n□ An error (procedural or typographical) has been noted in paragraph on page\n\n□ Recommend paragraph on page be changed as follows:\n\n□ In a future change to this AC, please cover the following subject:\n\n(Briefly describe what you want added.)\n\n□ Other comments:\n\n□ Iwould like to discuss the above. Please contact me.\n\nSubmitted by: Date:\n\nFAA Form 1320-73 (09/22) SUPERSEDES PREVIOUS EDITIONS\n\nSource image on page 6; no OCR transcription available.\n\n![figure p6](http://localhost:8080/api/v1/ingestion/jobs/e2bc1fdde3fa470596ce215a890b63c7/assets/6a3820045e35887d54f4)",
+      "knowledge_id": "c86135bb-1c03-4680-b33f-68c8553b24f1",
+      "chunk_index": 14,
+      "knowledge_title": "AC_25.353-1.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 14,
+      "score": 0.6671874999999999,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "7081662412dccee834eea74d644bdcea37bcab68fc7b77700856c0ffd15c2aef",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "0f3aa3a042c0ea19df50",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\67\\67896a811332199a23599ad3d4692d017a6acf91c9cf728058448505ae07395c\\source.pdf",
+        "internal_rag_source_sha256": "67896a811332199a23599ad3d4692d017a6acf91c9cf728058448505ae07395c",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "4b9f475d-1c82-4276-80e7-dce548ed7b51",
+      "image_info": "",
+      "knowledge_filename": "AC_25.353-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.353-1.pdf\n6 SUGGESTIONS FOR IMPROVING THIS AC. > Source image on page 6\n\nSource image on page 6; no OCR transcription available.\n\n![figure p6](http://localhost:8080/api/v1/ingestion/jobs/e2bc1fdde3fa470596ce215a890b63c7/assets/6a3820045e35887d54f4)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad",
+      "content": "3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+      "knowledge_id": "1a414314-3b50-4225-a100-ae2d36ca5e32",
+      "chunk_index": 3,
+      "knowledge_title": "AC_20-182A.pdf",
+      "start_at": 0,
+      "end_at": 84,
+      "seq": 3,
+      "score": 0.6569230769230768,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+        "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "1760d379-7cd1-4496-8be2-e8b88b3da2f2",
+      "image_info": "",
+      "knowledge_filename": "AC_20-182A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_20-182A.pdf\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "07926c5b-77af-46a2-b2fa-5c9c841b2d16",
+      "content": "GENERAL\n\nFields: 23.301 Loads; (Amendment 23-48)\n\n完整表格：\n<table><tr><td>23.301 Loads</td><td>(Amendment 23-48)</td></tr></table>\n\n9. Should references be included in the loads calculations? Yes. Each Basic Loads calculation should be annotated with the airworthiness standard section for which compliance is shown, for example, use part 23, § 23.301(a); they may also be shown in Design Criteria, Test Plans, Test Reports, and Software Documents.\n\n10. What effect do cutouts have in structure? Doors, windows, access holes, etc., in aircraft structure causes redistribution of axial and shear loads, pressure loads, and stiffness changes. Fatigue capabilities may be affected. Damage tolerance capabilities may be affected. Account for all such design changes.\n\n11. Do Biplane designs require any special aerodynamic load criteria?\n\na. Yes. A previously used typical approach includes:\n\n(1) Developing an equivalent single wing (cellule), which aerodynamically represents the biplane wings. Civil Aeronautics Manual 04 (CAM 04), paragraph 217, provides an acceptable method unless the biplane has an unusual amount of stagger or decalage. Also, see CAM 04, Appendix III.\n\n(2) Defining wing and tail loads from part 23 load conditions using the equivalent single wing.\n\n(3) Distributing the equivalent single wing load between the upper and lower biplane wings. CAM 8, paragraph 212, provides an acceptable method for biplanes with no decalage.\n\n(4) Distributing the individual wing-loads spanwise using a method such as Schrenk or ANC-1. (See Figure 1.)\n\nb. Other acceptable methods for obtaining aerodynamic parameters for biplanes and other unique configurations include computational fluid dynamic (CFD) codes, including VS-Aero, MG-Aero, and TRANAIR. Applicants should validate the suitability of these codes for their particular configuration. Wind tunnel and flight tests are also acceptable methods of measuring load intensities.\n\n12. What is the effect of increased engine power? An increase in engine power causes larger loads on, and in, several aircraft structures. A different engine, with different weight, center of gravity (c.g.) and horsepower, will change the inertial, gyroscopic, and aerodynamic loads from those of the previous engine. A changed propeller imparts similar effects on inertial, aerodynamic and gyroscopic loads, which are imposed on airplane structures.\n\n13. Can ultimate load flight tests be used?\n\na. The FAA discourages attempting ultimate load flight tests unless the applicant understands fully the risks involved, and then the FAA advises caution.\n\nb. See “Note” in 23.305, paragraph 22b, of this AC concerning flight tests.\n\n14. Can I use wind tunnel data?\n\na. Wind tunnel tests may be used to measure several parameters used in determining airplane loads. Force models can be used to measure the tail-off and tail-on airplane lift, pitching moment and drag curves, downwash at the tail, and stability and control parameters. Pressure models can be used to obtain the wingspan loading and the pressure distributions on airplane components. Measured pressure distributions are particularly useful in determining loads on secondary structure, including nacelles, canopies, and fairings.\n\nb. Lower performance conventional airplanes are commonly designed without the benefit of wind tunnel testing. Conventional, as used here, means an airplane having a main wing at or near the c.g. and an empennage aft of the airplane c.g. Wind tunnel tests are more likely to be useful for airplanes with unconventional configurations, unusual aerodynamic features, or high performance airplanes where compressibility effects cannot be neglected.\n\nc. Scaling of test results to full-scale airplane values requires similarity of geometry, Mach Number and Reynolds Number. Similarity of Reynolds Number is the most difficult of these to achieve. Test data acquired at Reynolds Numbers significantly lower than flight may be of little use for certification purposes due to the large corrections that must be applied to the test data. Reynolds Number similarity can be achieved by using large-scale models or pressurized wind tunnels. Boundary layer transition strips or dots are frequently used to model flight scale Reynolds Number effects on a model tested at lower Reynolds Numbers.\n\n15. How can I determine the span-wise lift distribution? The span-wise distribution of lift on the wing may be obtained from wind tunnel test, flight test, analysis, or a combination of analysis and test. Figure 1 lists some commonly used span-wise lift distribution analysis methods. In addition to the methods listed in Figure 1, there are\n\nvarious computer codes available that use computation fluid dynamics (CFD), such as, VS-Aero, MG-Aero, and TRANAIR.\n\na. The National Advisory Committee for Aeronautics (NACA) Technical Report 572 reports on the Anderson method. The wings under consideration covered a complete range of taper ratios and aspect ratios from 2 to 20. It does not say that 20 is a limit.\n\nb. Reference 1 (page 228) states that NACA Technical Report 585 contains an exact method.\n\nc. The “Fourier Series Method” is described in Reference 1 on pages 233 to 242. This is the method in ANC-1 (which has tabular forms for ease of calculation). This method uses lifting line theory, which is good for conventional unswept wings with aspect ratios greater than 5 or 6 (see Reference 1, page 247).\n\nd. Weissenger's “Method” (Reference 2) is applicable to straight or swept wings of low or high aspect ratio. This is a modified lifting theory method.\n\ne. Schrenk's “Approximation” basically averages the lift forces obtained from an elliptical lift distribution with those obtained from a planform lift distribution. This approximation is accurate for wings that approach an elliptical planform (Reference 1, page 224). This method is contained in Civil Aeronautics Manual (CAM) 04, Appendix IV. The Limitations, in Section 6, state that it applies to the normal range of aspect ratios (from 5 to 12).\n\nf. Reference 3 (page 14) lists NACA Technical Reports 572, 585, and 606. The first two of these technical reports are discussed in Items a and b above. Technical Report 606 is titled “Empirical Corrections to the Span Load Distribution at the Tip.” Correction is only necessary if the wing is tapered less than 2:1 and has a blunt tip.\n\ng. Reference 4 lists several references: 3.5 through 3.12 (see Enclosure 3).\n\nh. In the paper titled “Application of Microcomputer Software to the Aerodynamic Design of a Motorglider” Technical Soaring, October 1993, the lifting line theory FORTRAN program in Reference 5 (pages 159-164) was used (on an Apple Macintosh Plus computer) to calculate the lift distribution of a 17-meter (55.76 foot) wing (aspect ratio unstated). A comparison was made of the lift distribution calculated by Schrenk's approximation.\n\ni. Reference 6 contains a vortex lattice FORTRAN program.\n\nj. Reference 7 is an aeroelastic supplement for the NASTRAN finite element program.\n\nk. NACA TN 3030 titled, “A Method for Calculating the Subsonic Steady-state Loading on an Airplane with a Wing of Arbitrary Planform and Stiffness” includes both\n\nthe aeroelastic effects and the ability to base the span loading on linearized wind tunnel wing section data. It also allows for correcting wind tunnel model elastics and jig twist.\n\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES NOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\nMETHOD=ANC-1; APPROACH TO SOLUTION=Fourier Solution. Based on lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Conventional unswept wings with aspect ratios greater than 5 to 6.; COMMENTS=Exact Solution despite limitations of lifting line theory. Similar Methods: LOTZ GLAUERT (Elements of Aerofoil and Airscrew Theory) ANDERSON (Theory of Wing Sections)\nMETHOD=SHRENK'S NACA TM-948; APPROACH TO SOLUTION=Approximate Solution. Based on lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Conventional unswept wings with aspect ratios greater than 5 to 6.; COMMENTS=Accuracy approaches ANC-1. Small inaccuracies overshadowed by original assumptions. Much easier to apply.\nMETHOD=SHERMAN'S NACA TN-732; APPROACH TO SOLUTION=Successive approximations to match chord distribution. Each angle of attack requires separate calculation.; LIMITATIONS ON APPLICATION=Applicable to any straight wing without high lift devices.; COMMENTS=Accuracy compares with ANC-1 but unsatisfactory due to separate calculation for each angle of attack.\nMETHOD=PLANFORM (Often used for horizontal tail); APPROACH TO SOLUTION=Air load distribution directly proportional to chord variation.; LIMITATIONS ON APPLICATION=Untwisted high taper ratio wings.; COMMENTS=Unconservative for Taper Ratios < 0.25. Conservative for Taper Ratios > 0.35.\n\n完整表格：\n<table><tr><th>METHOD</th><th>APPROACH TO SOLUTION</th><th>LIMITATIONS ON APPLICATION</th><th>COMMENTS</th></tr><tr><td>ANC-1</td><td>Fourier Solution. Based on lifting line theory. Basic and additional lift.</td><td>Conventional unswept wings with aspect ratios greater than 5 to 6.</td><td>Exact Solution despite limitations of lifting line theory. Similar Methods: LOTZ GLAUERT (Elements of Aerofoil and Airscrew Theory) ANDERSON (Theory of Wing Sections)</td></tr><tr><td>SHRENK&#x27;S NACA TM-948</td><td>Approximate Solution. Based on lifting line theory. Basic and additional lift.</td><td>Conventional unswept wings with aspect ratios greater than 5 to 6.</td><td>Accuracy approaches ANC-1. Small inaccuracies overshadowed by original assumptions. Much easier to apply.</td></tr><tr><td>SHERMAN&#x27;S NACA TN-732</td><td>Successive approximations to match chord distribution. Each angle of attack requires separate calculation.</td><td>Applicable to any straight wing without high lift devices.</td><td>Accuracy compares with ANC-1 but unsatisfactory due to separate calculation for each angle of attack.</td></tr><tr><td>PLANFORM (Often used for horizontal tail)</td><td>Air load distribution directly proportional to chord variation.</td><td>Untwisted high taper ratio wings.</td><td>Unconservative for Taper Ratios &lt; 0.25. Conservative for Taper Ratios &gt; 0.35.</td></tr></table>\n\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES NOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\nMETHOD=WEISSINGER NACA TM 1120; APPROACH TO SOLUTION=Iteration process based on modified lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Applicable to straight or swept wings of low or high aspect ratio.; COMMENTS=Lifting surface method also presented as applicable to straight wings.\nMETHOD=DeYOUNG & HARPER NACA TR 921; APPROACH TO SOLUTION=Based on simplified lifting surface theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Applicable to straight or swept wings of low or high taper ratio.; COMMENTS=Extension of Weissinger Method. Can account for compressibility M > 0.5 @ S.L.\nMETHOD=DIEDERICH NACA TR 1000; APPROACH TO SOLUTION=Matrix Iteration process utilizing aero-elastic matrix determined from aerodynamic and structural properties of wing.; LIMITATIONS ON APPLICATION=No planform limitations.; COMMENTS=Considers loading and divergence speed.\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES\nNOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\n\n完整表格：\n<table><tr><th>METHOD</th><th>APPROACH TO SOLUTION</th><th>LIMITATIONS ON APPLICATION</th><th>COMMENTS</th></tr><tr><td>WEISSINGER NACA TM 1120</td><td>Iteration process based on modified lifting line theory. Basic and additional lift.</td><td>Applicable to straight or swept wings of low or high aspect ratio.</td><td>Lifting surface method also presented as applicable to straight wings.</td></tr><tr><td>DeYOUNG &amp; HARPER NACA TR 921</td><td>Based on simplified lifting surface theory. Basic and additional lift.</td><td>Applicable to straight or swept wings of low or high taper ratio.</td><td>Extension of Weissinger Method. Can account for compressibility M &gt; 0.5 @ S.L.</td></tr><tr><td>DIEDERICH NACA TR 1000</td><td>Matrix Iteration process utilizing aero-elastic matrix determined from aerodynamic and structural properties of wing.</td><td>No planform limitations.</td><td>Considers loading and divergence speed.</td></tr></table>\n\nGENERAL",
+      "knowledge_id": "677937ce-f74a-4874-af37-e261a9caa5a1",
+      "chunk_index": 13,
+      "knowledge_title": "AC_23-19A.pdf",
+      "start_at": 0,
+      "end_at": 7,
+      "seq": 13,
+      "score": 0.6469696969696969,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "f3870f1a32c0f99ac0acf1b783cc11ed581ad35f1aa688419163480aff3610ec",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "fd978403ae0dcd437c87",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\f7\\f7dfb2123fc4f2f3cb201e9b09cda182d19437df772a78ca4f49821ab66ba75d\\source.pdf",
+        "internal_rag_source_sha256": "f7dfb2123fc4f2f3cb201e9b09cda182d19437df772a78ca4f49821ab66ba75d",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "fc73ce3b-4f63-417f-8a06-bea134da5818",
+      "image_info": "",
+      "knowledge_filename": "AC_23-19A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_23-19A.pdf\nGENERAL\n\nGENERAL",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "fabec096-f947-41e1-b326-a3caf68d6298",
+      "content": "3 CANCELLATION.\n\nThis AC cancels AC 20-164, dated March 15, 2010.",
+      "knowledge_id": "722d8573-ad7e-434d-9d0a-37f9a4254e95",
+      "chunk_index": 3,
+      "knowledge_title": "AC_20-164A.pdf",
+      "start_at": 0,
+      "end_at": 65,
+      "seq": 3,
+      "score": 0.6373134328358208,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "8abd4066ba61b049dbac14ac75f1d25785990136685f48c891c5ad49b80cc89e",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "bddd08bccfd4c656e3c4",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\32\\3234457d4dcea26c7472cb69bd77974a9d9c03bdb7a4f5149fd80d06162986e4\\source.pdf",
+        "internal_rag_source_sha256": "3234457d4dcea26c7472cb69bd77974a9d9c03bdb7a4f5149fd80d06162986e4",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "2e90a4fe-669c-4db8-8a6c-1dd96cb3a62d",
+      "image_info": "",
+      "knowledge_filename": "AC_20-164A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_20-164A.pdf\n3 CANCELLATION.\n\n3 CANCELLATION.\n\nThis AC cancels AC 20-164, dated March 15, 2010.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    }
+  ],
+  "events": [
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "agent_query",
+      "content": "",
+      "done": true,
+      "session_id": "2218e192-144d-4ce0-beff-872a747bfffa",
+      "assistant_message_id": "94d4e786-2593-4441-9805-b7e546f906af",
+      "data": {
+        "assistant_created_at": "2026-10-28T06:12:12.4850302Z",
+        "assistant_message_id": "94d4e786-2593-4441-9805-b7e546f906af",
+        "session_id": "2218e192-144d-4ce0-beff-872a747bfffa",
+        "user_created_at": "2026-10-28T06:12:12.4791225Z",
+        "user_message_id": "fd2a52fc-aeb8-4c93-982d-09a0a454f106"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "tool_call",
+      "content": "Calling tool: query_understand",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.335-1A 的签发日期？"
+        },
+        "tool_call_id": "37065c10-9dcd-42cb-9579-ea44ad4d5fd4",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "duration_ms": 3163,
+        "error": "",
+        "output": "已完成问题理解",
+        "success": true,
+        "tool_call_id": "37065c10-9dcd-42cb-9579-ea44ad4d5fd4",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "tool_call",
+      "content": "Calling tool: knowledge_search",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.335-1A的签发日期是什么",
+          "search_source": "knowledge"
+        },
+        "tool_call_id": "6a8adf67-7c05-4eea-b2af-608deaeea81b",
+        "tool_name": "knowledge_search"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "candidate_count": 0,
+        "count": 7,
+        "doc_count": 7,
+        "duration_ms": 1498,
+        "error": "",
+        "output": "检索到 7 条相关内容",
+        "search_source": "knowledge",
+        "success": true,
+        "tool_call_id": "6a8adf67-7c05-4eea-b2af-608deaeea81b",
+        "tool_name": "knowledge_search",
+        "web_count": 0
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "references",
+      "content": "",
+      "done": false,
+      "knowledge_references": [
+        {
+          "id": "9a398c13-6505-47c2-97e7-011a2b160492",
+          "content": "Subject: DESIGN DIVE SPEED\n\nDate: 9/29/00\nInitiated by: ANM-110\n\nAC No. 25.335-1A\n\n1. PURPOSE. This advisory circular (AC) sets forth an acceptable means, but not the only means, of demonstrating compliance with the airworthiness standards for transport category airplanes related to the minimum speed margin between design cruise speed and design dive speed. Like all AC's, it is not regulatory but provides guidance for applicants in demonstrating compliance with the objective safety standards set forth in the rule.\n\n2. CANCELATION. Advisory Circular 25.335-1, Design Dive Speed, dated 10/20/97, is canceled.\n\n3. RELATED FAR SECTIONS. Part 25, Section 25.335 \"Design airspeeds.\"\n\n4. BACKGROUND. Section 25.335(b) requires the design dive speed, V_D , of the airplane to be established so that the design cruise speed is no greater than 0.8 times the design dive speed, or that it be based on an upset criterion initiated at the design cruise speed, V_C . At altitudes where the cruise speed is limited by compressibility effects, § 25.335(b)(2) requires the margin to be not less than 0.05 Mach. Furthermore, at any altitude, the margin must be great enough to provide for atmospheric variations (such as horizontal gusts and the penetration of jet streams), instrument errors, and production variations. This AC provides a rational method for considering the atmospheric variations.\n\n5. DESIGN DIVE SPEED MARGIN DUE TO ATMOSPHERIC VARIATIONS.\n\na. In the absence of evidence supporting alternative criteria, compliance with § 25.335(b)(2) may be shown by providing a margin between V_C/M_C and V_D/M_D sufficient to provide for the following atmospheric conditions:\n\n(1) Encounter with a Horizontal Gust. The effect of encounters with a substantially head-on gust, assumed to act at the most adverse angle between 30 degrees above and 30 degrees below the flight path, should be considered. The gust velocity should be 50 fps in equivalent airspeed (EAS) at altitudes up to 20,000 feet. At altitudes above 20,000 feet the gust velocity may be reduced linearly from 50 fps in EAS at 20,000 feet to 25 fps in EAS at 50,000 feet, above which the gust velocity is considered to be constant. The gust velocity should be assumed to build up in not more than 2 seconds and last for 30 seconds.\n\n(2) Entry into Jetstreams or Regions of High Windshear.\n\n(i) Conditions of horizontal and vertical windshear should be investigated taking into account the windshear data of this paragraph which are worldwide extreme values.\n\n(ii) Horizontal windshear is the rate of change of horizontal wind speed with horizontal distance. Encounters with horizontal windshear change the airplane apparent head wind in level flight as the airplane traverses into regions of changing wind speed. The horizontal windshear region is assumed to have no significant vertical gradient of wind speed.\n\n(iii) Vertical windshear is the rate of change of horizontal wind speed with altitude. Encounters with windshear change the airplane apparent head wind as the airplane climbs or descends into regions of changing wind speed. The vertical windshear region changes slowly so that temporal or spatial changes in the vertical windshear gradient are assumed to have no significant affect on an airplane in level flight.\n\n(iv) With the airplane at V_c/M_c within normal rates of climb and descent, the most extreme condition of windshear that it might encounter, according to available meteorological data, can be expressed as follows:\n\n(A) Horizontal Windshear. The jet stream is assumed to consist of a linear shear of 3.6 KTAS/NM over a distance of 25 NM or of 2.52 KTAS/NM over a distance of 50 NM or of 1.8 KTAS/NM over a distance of 100 NM, whichever is most severe.\n\n(B) Vertical Windshear. The windshear region is assumed to have the most severe of the following characteristics and design values for windshear intensity and height band. As shown in Figure 1, the total vertical thickness of the windshear region is twice the height band so that the windshear intensity specified in Table 1 applies to a vertical distance equal to the height band above and below the reference altitude. The variation of horizontal wind speed with altitude in the windshear region is linear through the height band from zero at the edge of the region to a strength at the reference altitude determined by the windshear intensity multiplied by the height band. Windshear intensity varies linearly between the reference altitudes in Table 1.\n\n[Cross-page references; curve values not transcribed]\nRelated figure: Figure 1 - Windshear Region; source page 3.\n\nFigure 1 - Windshear Region\n\n[Cross-page references; curve values not transcribed]\nReferenced from page 2, 5. DESIGN DIVE SPEED MARGIN DUE TO ATMOSPHERIC VARIATIONS.:\n(B) Vertical Windshear. The windshear region is assumed to have the most severe of the following characteristics and design values for windshear intensity and height band. As shown in Figure 1, the total vertical thickness of the windshear region is twice the height band so that the windshear intensity specified in Table 1 applies to a vertical distance equal to the height band above and below the reference altitude. The variation of horizontal wind speed with altitude in the windshear region is linear through the height band from zero at the edge of the region to a strength at the reference altitude determined by the windshear intensity multiplied by the height band. Windshear intensity varies linearly between the reference altitudes in Table 1.\n\ndescending from point “A” and climbing from point “B”\n\nTable 1 - Vertical Windshear Intensity Characteristics\nColumn 2=1000; Column 3=3000; Column 4=5000; Column 5=7000\nColumn 1=Reference Altitude - Ft.; Columns 2-5=Vertical WindshearUnits: ft./sec. per foot of height (KTAS per 1000 feet of height)\nColumn 1=0; Column 2=0.095 (56.3); Column 3=0.05 (29.6); Column 4=0.035 (20.7); Column 5=0.03 (17.8)\nColumn 1=40,000; Column 2=0.145 (85.9); Column 3=0.075 (44.4); Column 4=0.055 (32.6); Column 5=0.04 (23.7)\nColumn 1=45,000; Column 2=0.265 (157.0); Column 3=0.135 (80.0); Column 4=0.10 (59.2); Column 5=0.075 (44.4)\nColumn 1=Above 45,000; Column 2=0.265 (157.0); Column 3=0.135 (80.0); Column 4=0.10 (59.2); Column 5=0.075 (44.4)\nColumns 1-5=Windshear intensity varies linearly between specified altitudes.\n\n完整表格：\n<table><tr><td></td><td colspan=\"4\">Height Band - Ft.</td></tr><tr><td></td><td>1000</td><td>3000</td><td>5000</td><td>7000</td></tr><tr><td>Reference Altitude - Ft.</td><td colspan=\"4\">Vertical WindshearUnits: ft./sec. per foot of height (KTAS per 1000 feet of height)</td></tr><tr><td>0</td><td>0.095 (56.3)</td><td>0.05 (29.6)</td><td>0.035 (20.7)</td><td>0.03 (17.8)</td></tr><tr><td>40,000</td><td>0.145 (85.9)</td><td>0.075 (44.4)</td><td>0.055 (32.6)</td><td>0.04 (23.7)</td></tr><tr><td>45,000</td><td>0.265 (157.0)</td><td>0.135 (80.0)</td><td>0.10 (59.2)</td><td>0.075 (44.4)</td></tr><tr><td>Above 45,000</td><td>0.265 (157.0)</td><td>0.135 (80.0)</td><td>0.10 (59.2)</td><td>0.075 (44.4)</td></tr><tr><td colspan=\"5\">Windshear intensity varies linearly between specified altitudes.</td></tr></table>\n\n(v) The entry of the airplane into horizontal and vertical windshear should be treated as separate cases. Because the penetration of these large scale phenomena is fairly slow, recovery action by the pilot is usually possible. In the case of manual flight (i.e., when flight is being controlled by inputs made by the pilot), the airplane is assumed to maintain constant attitude until at least 3 seconds after the operation of the overspeed warning device, at which time recovery action may be started by using the primary aerodynamic controls and thrust at a normal acceleration of 1.5g, or the maximum available, whichever is lower.\n\nb. At altitudes where speed is limited by Mach number, a speed margin of .07 Mach between M_C and M_D is considered sufficient without further investigation.\n\nAerenda a Baler\n\nDORENDA D. BAKER\n\nActing Manager, Transport Airplane Directorate\n\nAircraft Certification Service, ANM-100",
+          "knowledge_id": "c235393a-1c8d-4ae8-973e-15bd2a7db584",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.335-1A.pdf",
+          "start_at": 0,
+          "end_at": 1387,
+          "seq": 0,
+          "score": 1,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "612341bdaf47b3cb5963f3bb3c22e3f8abff0b2777fe56da3ba40e718f7209db",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "a9b26a113f703a14a8f9",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\4c\\4c780780119aef8c5826d984dee64fa649efd46fa4c3599ee063caeddf4c534c\\source.pdf",
+            "internal_rag_source_sha256": "4c780780119aef8c5826d984dee64fa649efd46fa4c3599ee063caeddf4c534c",
+            "kept_by": "document_header",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "3765eff2-215a-4778-9ef7-c4284b77f9f6",
+          "image_info": "",
+          "knowledge_filename": "AC_25.335-1A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "Subject: DESIGN DIVE SPEED\n\nDate: 9/29/00\nInitiated by: ANM-110\n\nAC No. 25.335-1A\n\n1. PURPOSE. This advisory circular (AC) sets forth an acceptable means, but not the only means, of demonstrating compliance with the airworthiness standards for transport category airplanes related to the minimum speed margin between design cruise speed and design dive speed. Like all AC's, it is not regulatory but provides guidance for applicants in demonstrating compliance with the objective safety standards set forth in the rule.\n\n2. CANCELATION. Advisory Circular 25.335-1, Design Dive Speed, dated 10/20/97, is canceled.\n\n3. RELATED FAR SECTIONS. Part 25, Section 25.335 \"Design airspeeds.\"\n\n4. BACKGROUND. Section 25.335(b) requires the design dive speed, V_D , of the airplane to be established so that the design cruise speed is no greater than 0.8 times the design dive speed, or that it be based on an upset criterion initiated at the design cruise speed, V_C . At altitudes where the cruise speed is limited by compressibility effects, § 25.335(b)(2) requires the margin to be not less than 0.05 Mach. Furthermore, at any altitude, the margin must be great enough to provide for atmospheric variations (such as horizontal gusts and the penetration of jet streams), instrument errors, and production variations. This AC provides a rational method for considering the atmospheric variations.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "33b95d84-4afa-4bba-ad1c-7c0fa8092145",
+          "content": "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+          "knowledge_id": "3615f931-f054-4520-914e-65ed3c704798",
+          "chunk_index": 4,
+          "knowledge_title": "AC_23-16A.pdf",
+          "start_at": 0,
+          "end_at": 311,
+          "seq": 4,
+          "score": 0.7,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "33130c9a14616f38fdb3e1bb86b885dc3813880bbf84950c12bafe084152726b",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "7c784814c60e17fdf8cb",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\41\\4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45\\source.pdf",
+            "internal_rag_source_sha256": "4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "f0894b96-0623-4b83-8774-39368d138d26",
+          "image_info": "",
+          "knowledge_filename": "AC_23-16A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_23-16A.pdf\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+          "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+          "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+          "chunk_index": 3,
+          "knowledge_title": "AC_25-25A.pdf",
+          "start_at": 0,
+          "end_at": 20,
+          "seq": 3,
+          "score": 0.6887096774193547,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "04a389a1de97dc79f380",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+            "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+          "image_info": "",
+          "knowledge_filename": "AC_25-25A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "3baf7835-7d39-45ab-a5d4-6e08e08364ff",
+          "content": "6 SUGGESTIONS FOR IMPROVING THIS AC.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular feedback form at the end of this AC.\n\nSource image on page 6; no OCR transcription available.\n\nDigitally signed by\n\nVICTOR W WICKLUND\n\nDate: 2022.11.28\n\n13:44:04 -08'00'\n\nVictor Wicklund\n\nActing Director, Policy & Innovation Division\n\nAircraft Certification Service\n\nAdvisory Circular Feedback Form\n\nPaperwork Reduction Act Burden Statement: A federal agency may not conduct or sponsor, and a person is not required to respond to, nor shall a person be subject to a penalty for failure to comply with a collection of information subject to the requirements of the Paperwork Reduction Act unless that collection of information displays a currently valid OMB Control Number. The OMB Control Number for this information collection is 2120-0746. Public reporting for this collection of information is estimated to be approximately 20 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, completing and reviewing the collection of information.\n\nAll responses to this collection of information are voluntary FAA Order 1320.46D Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to: Information Collection Clearance Officer, Barbara Hall, 800 Independence Ave, Washington, D.C. 20590.\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to ( ) or (2) faxing it to the attention of the LOB/SO ( ).\n\nSubject: Date:\n\nPlease mark all appropriate line items:\n\n□ An error (procedural or typographical) has been noted in paragraph on page\n\n□ Recommend paragraph on page be changed as follows:\n\n□ In a future change to this AC, please cover the following subject:\n\n(Briefly describe what you want added.)\n\n□ Other comments:\n\n□ Iwould like to discuss the above. Please contact me.\n\nSubmitted by: Date:\n\nFAA Form 1320-73 (09/22) SUPERSEDES PREVIOUS EDITIONS\n\nSource image on page 6; no OCR transcription available.\n\n![figure p6](http://localhost:8080/api/v1/ingestion/jobs/e2bc1fdde3fa470596ce215a890b63c7/assets/6a3820045e35887d54f4)",
+          "knowledge_id": "c86135bb-1c03-4680-b33f-68c8553b24f1",
+          "chunk_index": 14,
+          "knowledge_title": "AC_25.353-1.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 14,
+          "score": 0.6671874999999999,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "7081662412dccee834eea74d644bdcea37bcab68fc7b77700856c0ffd15c2aef",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "0f3aa3a042c0ea19df50",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\67\\67896a811332199a23599ad3d4692d017a6acf91c9cf728058448505ae07395c\\source.pdf",
+            "internal_rag_source_sha256": "67896a811332199a23599ad3d4692d017a6acf91c9cf728058448505ae07395c",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "4b9f475d-1c82-4276-80e7-dce548ed7b51",
+          "image_info": "",
+          "knowledge_filename": "AC_25.353-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.353-1.pdf\n6 SUGGESTIONS FOR IMPROVING THIS AC. > Source image on page 6\n\nSource image on page 6; no OCR transcription available.\n\n![figure p6](http://localhost:8080/api/v1/ingestion/jobs/e2bc1fdde3fa470596ce215a890b63c7/assets/6a3820045e35887d54f4)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad",
+          "content": "3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+          "knowledge_id": "1a414314-3b50-4225-a100-ae2d36ca5e32",
+          "chunk_index": 3,
+          "knowledge_title": "AC_20-182A.pdf",
+          "start_at": 0,
+          "end_at": 84,
+          "seq": 3,
+          "score": 0.6569230769230768,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+            "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "1760d379-7cd1-4496-8be2-e8b88b3da2f2",
+          "image_info": "",
+          "knowledge_filename": "AC_20-182A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_20-182A.pdf\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "07926c5b-77af-46a2-b2fa-5c9c841b2d16",
+          "content": "GENERAL\n\nFields: 23.301 Loads; (Amendment 23-48)\n\n完整表格：\n<table><tr><td>23.301 Loads</td><td>(Amendment 23-48)</td></tr></table>\n\n9. Should references be included in the loads calculations? Yes. Each Basic Loads calculation should be annotated with the airworthiness standard section for which compliance is shown, for example, use part 23, § 23.301(a); they may also be shown in Design Criteria, Test Plans, Test Reports, and Software Documents.\n\n10. What effect do cutouts have in structure? Doors, windows, access holes, etc., in aircraft structure causes redistribution of axial and shear loads, pressure loads, and stiffness changes. Fatigue capabilities may be affected. Damage tolerance capabilities may be affected. Account for all such design changes.\n\n11. Do Biplane designs require any special aerodynamic load criteria?\n\na. Yes. A previously used typical approach includes:\n\n(1) Developing an equivalent single wing (cellule), which aerodynamically represents the biplane wings. Civil Aeronautics Manual 04 (CAM 04), paragraph 217, provides an acceptable method unless the biplane has an unusual amount of stagger or decalage. Also, see CAM 04, Appendix III.\n\n(2) Defining wing and tail loads from part 23 load conditions using the equivalent single wing.\n\n(3) Distributing the equivalent single wing load between the upper and lower biplane wings. CAM 8, paragraph 212, provides an acceptable method for biplanes with no decalage.\n\n(4) Distributing the individual wing-loads spanwise using a method such as Schrenk or ANC-1. (See Figure 1.)\n\nb. Other acceptable methods for obtaining aerodynamic parameters for biplanes and other unique configurations include computational fluid dynamic (CFD) codes, including VS-Aero, MG-Aero, and TRANAIR. Applicants should validate the suitability of these codes for their particular configuration. Wind tunnel and flight tests are also acceptable methods of measuring load intensities.\n\n12. What is the effect of increased engine power? An increase in engine power causes larger loads on, and in, several aircraft structures. A different engine, with different weight, center of gravity (c.g.) and horsepower, will change the inertial, gyroscopic, and aerodynamic loads from those of the previous engine. A changed propeller imparts similar effects on inertial, aerodynamic and gyroscopic loads, which are imposed on airplane structures.\n\n13. Can ultimate load flight tests be used?\n\na. The FAA discourages attempting ultimate load flight tests unless the applicant understands fully the risks involved, and then the FAA advises caution.\n\nb. See “Note” in 23.305, paragraph 22b, of this AC concerning flight tests.\n\n14. Can I use wind tunnel data?\n\na. Wind tunnel tests may be used to measure several parameters used in determining airplane loads. Force models can be used to measure the tail-off and tail-on airplane lift, pitching moment and drag curves, downwash at the tail, and stability and control parameters. Pressure models can be used to obtain the wingspan loading and the pressure distributions on airplane components. Measured pressure distributions are particularly useful in determining loads on secondary structure, including nacelles, canopies, and fairings.\n\nb. Lower performance conventional airplanes are commonly designed without the benefit of wind tunnel testing. Conventional, as used here, means an airplane having a main wing at or near the c.g. and an empennage aft of the airplane c.g. Wind tunnel tests are more likely to be useful for airplanes with unconventional configurations, unusual aerodynamic features, or high performance airplanes where compressibility effects cannot be neglected.\n\nc. Scaling of test results to full-scale airplane values requires similarity of geometry, Mach Number and Reynolds Number. Similarity of Reynolds Number is the most difficult of these to achieve. Test data acquired at Reynolds Numbers significantly lower than flight may be of little use for certification purposes due to the large corrections that must be applied to the test data. Reynolds Number similarity can be achieved by using large-scale models or pressurized wind tunnels. Boundary layer transition strips or dots are frequently used to model flight scale Reynolds Number effects on a model tested at lower Reynolds Numbers.\n\n15. How can I determine the span-wise lift distribution? The span-wise distribution of lift on the wing may be obtained from wind tunnel test, flight test, analysis, or a combination of analysis and test. Figure 1 lists some commonly used span-wise lift distribution analysis methods. In addition to the methods listed in Figure 1, there are\n\nvarious computer codes available that use computation fluid dynamics (CFD), such as, VS-Aero, MG-Aero, and TRANAIR.\n\na. The National Advisory Committee for Aeronautics (NACA) Technical Report 572 reports on the Anderson method. The wings under consideration covered a complete range of taper ratios and aspect ratios from 2 to 20. It does not say that 20 is a limit.\n\nb. Reference 1 (page 228) states that NACA Technical Report 585 contains an exact method.\n\nc. The “Fourier Series Method” is described in Reference 1 on pages 233 to 242. This is the method in ANC-1 (which has tabular forms for ease of calculation). This method uses lifting line theory, which is good for conventional unswept wings with aspect ratios greater than 5 or 6 (see Reference 1, page 247).\n\nd. Weissenger's “Method” (Reference 2) is applicable to straight or swept wings of low or high aspect ratio. This is a modified lifting theory method.\n\ne. Schrenk's “Approximation” basically averages the lift forces obtained from an elliptical lift distribution with those obtained from a planform lift distribution. This approximation is accurate for wings that approach an elliptical planform (Reference 1, page 224). This method is contained in Civil Aeronautics Manual (CAM) 04, Appendix IV. The Limitations, in Section 6, state that it applies to the normal range of aspect ratios (from 5 to 12).\n\nf. Reference 3 (page 14) lists NACA Technical Reports 572, 585, and 606. The first two of these technical reports are discussed in Items a and b above. Technical Report 606 is titled “Empirical Corrections to the Span Load Distribution at the Tip.” Correction is only necessary if the wing is tapered less than 2:1 and has a blunt tip.\n\ng. Reference 4 lists several references: 3.5 through 3.12 (see Enclosure 3).\n\nh. In the paper titled “Application of Microcomputer Software to the Aerodynamic Design of a Motorglider” Technical Soaring, October 1993, the lifting line theory FORTRAN program in Reference 5 (pages 159-164) was used (on an Apple Macintosh Plus computer) to calculate the lift distribution of a 17-meter (55.76 foot) wing (aspect ratio unstated). A comparison was made of the lift distribution calculated by Schrenk's approximation.\n\ni. Reference 6 contains a vortex lattice FORTRAN program.\n\nj. Reference 7 is an aeroelastic supplement for the NASTRAN finite element program.\n\nk. NACA TN 3030 titled, “A Method for Calculating the Subsonic Steady-state Loading on an Airplane with a Wing of Arbitrary Planform and Stiffness” includes both\n\nthe aeroelastic effects and the ability to base the span loading on linearized wind tunnel wing section data. It also allows for correcting wind tunnel model elastics and jig twist.\n\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES NOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\nMETHOD=ANC-1; APPROACH TO SOLUTION=Fourier Solution. Based on lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Conventional unswept wings with aspect ratios greater than 5 to 6.; COMMENTS=Exact Solution despite limitations of lifting line theory. Similar Methods: LOTZ GLAUERT (Elements of Aerofoil and Airscrew Theory) ANDERSON (Theory of Wing Sections)\nMETHOD=SHRENK'S NACA TM-948; APPROACH TO SOLUTION=Approximate Solution. Based on lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Conventional unswept wings with aspect ratios greater than 5 to 6.; COMMENTS=Accuracy approaches ANC-1. Small inaccuracies overshadowed by original assumptions. Much easier to apply.\nMETHOD=SHERMAN'S NACA TN-732; APPROACH TO SOLUTION=Successive approximations to match chord distribution. Each angle of attack requires separate calculation.; LIMITATIONS ON APPLICATION=Applicable to any straight wing without high lift devices.; COMMENTS=Accuracy compares with ANC-1 but unsatisfactory due to separate calculation for each angle of attack.\nMETHOD=PLANFORM (Often used for horizontal tail); APPROACH TO SOLUTION=Air load distribution directly proportional to chord variation.; LIMITATIONS ON APPLICATION=Untwisted high taper ratio wings.; COMMENTS=Unconservative for Taper Ratios < 0.25. Conservative for Taper Ratios > 0.35.\n\n完整表格：\n<table><tr><th>METHOD</th><th>APPROACH TO SOLUTION</th><th>LIMITATIONS ON APPLICATION</th><th>COMMENTS</th></tr><tr><td>ANC-1</td><td>Fourier Solution. Based on lifting line theory. Basic and additional lift.</td><td>Conventional unswept wings with aspect ratios greater than 5 to 6.</td><td>Exact Solution despite limitations of lifting line theory. Similar Methods: LOTZ GLAUERT (Elements of Aerofoil and Airscrew Theory) ANDERSON (Theory of Wing Sections)</td></tr><tr><td>SHRENK&#x27;S NACA TM-948</td><td>Approximate Solution. Based on lifting line theory. Basic and additional lift.</td><td>Conventional unswept wings with aspect ratios greater than 5 to 6.</td><td>Accuracy approaches ANC-1. Small inaccuracies overshadowed by original assumptions. Much easier to apply.</td></tr><tr><td>SHERMAN&#x27;S NACA TN-732</td><td>Successive approximations to match chord distribution. Each angle of attack requires separate calculation.</td><td>Applicable to any straight wing without high lift devices.</td><td>Accuracy compares with ANC-1 but unsatisfactory due to separate calculation for each angle of attack.</td></tr><tr><td>PLANFORM (Often used for horizontal tail)</td><td>Air load distribution directly proportional to chord variation.</td><td>Untwisted high taper ratio wings.</td><td>Unconservative for Taper Ratios &lt; 0.25. Conservative for Taper Ratios &gt; 0.35.</td></tr></table>\n\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES NOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\nMETHOD=WEISSINGER NACA TM 1120; APPROACH TO SOLUTION=Iteration process based on modified lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Applicable to straight or swept wings of low or high aspect ratio.; COMMENTS=Lifting surface method also presented as applicable to straight wings.\nMETHOD=DeYOUNG & HARPER NACA TR 921; APPROACH TO SOLUTION=Based on simplified lifting surface theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Applicable to straight or swept wings of low or high taper ratio.; COMMENTS=Extension of Weissinger Method. Can account for compressibility M > 0.5 @ S.L.\nMETHOD=DIEDERICH NACA TR 1000; APPROACH TO SOLUTION=Matrix Iteration process utilizing aero-elastic matrix determined from aerodynamic and structural properties of wing.; LIMITATIONS ON APPLICATION=No planform limitations.; COMMENTS=Considers loading and divergence speed.\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES\nNOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\n\n完整表格：\n<table><tr><th>METHOD</th><th>APPROACH TO SOLUTION</th><th>LIMITATIONS ON APPLICATION</th><th>COMMENTS</th></tr><tr><td>WEISSINGER NACA TM 1120</td><td>Iteration process based on modified lifting line theory. Basic and additional lift.</td><td>Applicable to straight or swept wings of low or high aspect ratio.</td><td>Lifting surface method also presented as applicable to straight wings.</td></tr><tr><td>DeYOUNG &amp; HARPER NACA TR 921</td><td>Based on simplified lifting surface theory. Basic and additional lift.</td><td>Applicable to straight or swept wings of low or high taper ratio.</td><td>Extension of Weissinger Method. Can account for compressibility M &gt; 0.5 @ S.L.</td></tr><tr><td>DIEDERICH NACA TR 1000</td><td>Matrix Iteration process utilizing aero-elastic matrix determined from aerodynamic and structural properties of wing.</td><td>No planform limitations.</td><td>Considers loading and divergence speed.</td></tr></table>\n\nGENERAL",
+          "knowledge_id": "677937ce-f74a-4874-af37-e261a9caa5a1",
+          "chunk_index": 13,
+          "knowledge_title": "AC_23-19A.pdf",
+          "start_at": 0,
+          "end_at": 7,
+          "seq": 13,
+          "score": 0.6469696969696969,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "f3870f1a32c0f99ac0acf1b783cc11ed581ad35f1aa688419163480aff3610ec",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "fd978403ae0dcd437c87",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\f7\\f7dfb2123fc4f2f3cb201e9b09cda182d19437df772a78ca4f49821ab66ba75d\\source.pdf",
+            "internal_rag_source_sha256": "f7dfb2123fc4f2f3cb201e9b09cda182d19437df772a78ca4f49821ab66ba75d",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "fc73ce3b-4f63-417f-8a06-bea134da5818",
+          "image_info": "",
+          "knowledge_filename": "AC_23-19A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_23-19A.pdf\nGENERAL\n\nGENERAL",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "fabec096-f947-41e1-b326-a3caf68d6298",
+          "content": "3 CANCELLATION.\n\nThis AC cancels AC 20-164, dated March 15, 2010.",
+          "knowledge_id": "722d8573-ad7e-434d-9d0a-37f9a4254e95",
+          "chunk_index": 3,
+          "knowledge_title": "AC_20-164A.pdf",
+          "start_at": 0,
+          "end_at": 65,
+          "seq": 3,
+          "score": 0.6373134328358208,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "8abd4066ba61b049dbac14ac75f1d25785990136685f48c891c5ad49b80cc89e",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "bddd08bccfd4c656e3c4",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\32\\3234457d4dcea26c7472cb69bd77974a9d9c03bdb7a4f5149fd80d06162986e4\\source.pdf",
+            "internal_rag_source_sha256": "3234457d4dcea26c7472cb69bd77974a9d9c03bdb7a4f5149fd80d06162986e4",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "2e90a4fe-669c-4db8-8a6c-1dd96cb3a62d",
+          "image_info": "",
+          "knowledge_filename": "AC_20-164A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_20-164A.pdf\n3 CANCELLATION.\n\n3 CANCELLATION.\n\nThis AC cancels AC 20-164, dated March 15, 2010.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        }
+      ],
+      "data": {
+        "references": [
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "f5631346a35c6d1f6815",
+                "84cf332f3026ccd0814e",
+                "bfeb4b3aa8dcb1d6fe8e",
+                "9df75562cbe9f31c4f5b",
+                "b469d0eae35806586eb0",
+                "7682baa0ba23d563682c",
+                "7929e9e2ed27dbe45792"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "9bf8e617f319fcd0dd1e",
+              "external_parent_chunk_id": "0d253a825405a5c25b34",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Subject: DESIGN DIVE SPEED\n\nDate: 9/29/00\nInitiated by: ANM-110\n\nAC No. 25.335-1A\n\n1. PURPOSE. This advisory circular (AC) sets forth an acceptable means, but not the only means, of demonstrating compliance with the airworthiness standards for transport category airplanes related to the minimum speed margin between design cruise speed and design dive speed. Like all AC's, it is not regulatory but provides guidance for applicants in demonstrating compliance with the objective safety standards set forth in the rule.\n\n2. CANCELATION. Advisory Circular 25.335-1, Design Dive Speed, dated 10/20/97, is canceled.\n\n3. RELATED FAR SECTIONS. Part 25, Section 25.335 \"Design airspeeds.\"\n\n4. BACKGROUND. Section 25.335(b) requires the design dive speed, V_D , of the airplane to be established so that the design cruise speed is no greater than 0.8 times the design dive speed, or that it be based on an upset criterion initiated at the design cruise speed, V_C . At altitudes where the cruise speed is limited by compressibility effects, § 25.335(b)(2) requires the margin to be not less than 0.05 Mach. Furthermore, at any altitude, the margin must be great enough to provide for atmospheric variations (such as horizontal gusts and the penetration of jet streams), instrument errors, and production variations. This AC provides a rational method for considering the atmospheric variations.\n\n5. DESIGN DIVE SPEED MARGIN DUE TO ATMOSPHERIC VARIATIONS.\n\na. In the absence of evidence supporting alternative criteria, compliance with § 25.335(b)(2) may be shown by providing a margin between V_C/M_C and V_D/M_D sufficient to provide for the following atmospheric conditions:\n\n(1) Encounter with a Horizontal Gust. The effect of encounters with a substantially head-on gust, assumed to act at the most adverse angle between 30 degrees above and 30 degrees below the flight path, should be considered. The gust velocity should be 50 fps in equivalent airspeed (EAS) at altitudes up to 20,000 feet. At altitudes above 20,000 feet the gust velocity may be reduced linearly from 50 fps in EAS at 20,000 feet to 25 fps in EAS at 50,000 feet, above which the gust velocity is considered to be constant. The gust velocity should be assumed to build up in not more than 2 seconds and last for 30 seconds.\n\n(2) Entry into Jetstreams or Regions of High Windshear.\n\n(i) Conditions of horizontal and vertical windshear should be investigated taking into account the windshear data of this paragraph which are worldwide extreme values.\n\n(ii) Horizontal windshear is the rate of change of horizontal wind speed with horizontal distance. Encounters with horizontal windshear change the airplane apparent head wind in level flight as the airplane traverses into regions of changing wind speed. The horizontal windshear region is assumed to have no significant vertical gradient of wind speed.\n\n(iii) Vertical windshear is the rate of change of horizontal wind speed with altitude. Encounters with windshear change the airplane apparent head wind as the airplane climbs or descends into regions of changing wind speed. The vertical windshear region changes slowly so that temporal or spatial changes in the vertical windshear gradient are assumed to have no significant affect on an airplane in level flight.\n\n(iv) With the airplane at V_c/M_c within normal rates of climb and descent, the most extreme condition of windshear that it might encounter, according to available meteorological data, can be expressed as follows:\n\n(A) Horizontal Windshear. The jet stream is assumed to consist of a linear shear of 3.6 KTAS/NM over a distance of 25 NM or of 2.52 KTAS/NM over a distance of 50 NM or of 1.8 KTAS/NM over a distance of 100 NM, whichever is most severe.\n\n(B) Vertical Windshear. The windshear region is assumed to have the most severe of the following characteristics and design values for windshear intensity and height band. As shown in Figure 1, the total vertical thickness of the windshear region is twice the height band so that the windshear intensity specified in Table 1 applies to a vertical distance equal to the height band above and below the reference altitude. The variation of horizontal wind speed with altitude in the windshear region is linear through the height band from zero at the edge of the region to a strength at the reference altitude determined by the windshear intensity multiplied by the height band. Windshear intensity varies linearly between the reference altitudes in Table 1.\n\n[Cross-page references; curve values not transcribed]\nRelated figure: Figure 1 - Windshear Region; source page 3.\n\nFigure 1 - Windshear Region\n\n[Cross-page references; curve values not transcribed]\nReferenced from page 2, 5. DESIGN DIVE SPEED MARGIN DUE TO ATMOSPHERIC VARIATIONS.:\n(B) Vertical Windshear. The windshear region is assumed to have the most severe of the following characteristics and design values for windshear intensity and height band. As shown in Figure 1, the total vertical thickness of the windshear region is twice the height band so that the windshear intensity specified in Table 1 applies to a vertical distance equal to the height band above and below the reference altitude. The variation of horizontal wind speed with altitude in the windshear region is linear through the height band from zero at the edge of the region to a strength at the reference altitude determined by the windshear intensity multiplied by the height band. Windshear intensity varies linearly between the reference altitudes in Table 1.\n\ndescending from point “A” and climbing from point “B”\n\nTable 1 - Vertical Windshear Intensity Characteristics\nColumn 2=1000; Column 3=3000; Column 4=5000; Column 5=7000\nColumn 1=Reference Altitude - Ft.; Columns 2-5=Vertical WindshearUnits: ft./sec. per foot of height (KTAS per 1000 feet of height)\nColumn 1=0; Column 2=0.095 (56.3); Column 3=0.05 (29.6); Column 4=0.035 (20.7); Column 5=0.03 (17.8)\nColumn 1=40,000; Column 2=0.145 (85.9); Column 3=0.075 (44.4); Column 4=0.055 (32.6); Column 5=0.04 (23.7)\nColumn 1=45,000; Column 2=0.265 (157.0); Column 3=0.135 (80.0); Column 4=0.10 (59.2); Column 5=0.075 (44.4)\nColumn 1=Above 45,000; Column 2=0.265 (157.0); Column 3=0.135 (80.0); Column 4=0.10 (59.2); Column 5=0.075 (44.4)\nColumns 1-5=Windshear intensity varies linearly between specified altitudes.\n\n完整表格：\n<table><tr><td></td><td colspan=\"4\">Height Band - Ft.</td></tr><tr><td></td><td>1000</td><td>3000</td><td>5000</td><td>7000</td></tr><tr><td>Reference Altitude - Ft.</td><td colspan=\"4\">Vertical WindshearUnits: ft./sec. per foot of height (KTAS per 1000 feet of height)</td></tr><tr><td>0</td><td>0.095 (56.3)</td><td>0.05 (29.6)</td><td>0.035 (20.7)</td><td>0.03 (17.8)</td></tr><tr><td>40,000</td><td>0.145 (85.9)</td><td>0.075 (44.4)</td><td>0.055 (32.6)</td><td>0.04 (23.7)</td></tr><tr><td>45,000</td><td>0.265 (157.0)</td><td>0.135 (80.0)</td><td>0.10 (59.2)</td><td>0.075 (44.4)</td></tr><tr><td>Above 45,000</td><td>0.265 (157.0)</td><td>0.135 (80.0)</td><td>0.10 (59.2)</td><td>0.075 (44.4)</td></tr><tr><td colspan=\"5\">Windshear intensity varies linearly between specified altitudes.</td></tr></table>\n\n(v) The entry of the airplane into horizontal and vertical windshear should be treated as separate cases. Because the penetration of these large scale phenomena is fairly slow, recovery action by the pilot is usually possible. In the case of manual flight (i.e., when flight is being controlled by inputs made by the pilot), the airplane is assumed to maintain constant attitude until at least 3 seconds after the operation of the overspeed warning device, at which time recovery action may be started by using the primary aerodynamic controls and thrust at a normal acceleration of 1.5g, or the maximum available, whichever is lower.\n\nb. At altitudes where speed is limited by Mach number, a speed margin of .07 Mach between M_C and M_D is considered sufficient without further investigation.\n\nAerenda a Baler\n\nDORENDA D. BAKER\n\nActing Manager, Transport Airplane Directorate\n\nAircraft Certification Service, ANM-100",
+            "end_at": 1387,
+            "id": "9a398c13-6505-47c2-97e7-011a2b160492",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.335-1A.pdf",
+            "knowledge_id": "c235393a-1c8d-4ae8-973e-15bd2a7db584",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.335-1A.pdf",
+            "match_type": 0,
+            "matched_content": "Subject: DESIGN DIVE SPEED\n\nDate: 9/29/00\nInitiated by: ANM-110\n\nAC No. 25.335-1A\n\n1. PURPOSE. This advisory circular (AC) sets forth an acceptable means, but not the only means, of demonstrating compliance with the airworthiness standards for transport category airplanes related to the minimum speed margin between design cruise speed and design dive speed. Like all AC's, it is not regulatory but provides guidance for applicants in demonstrating compliance with the objective safety standards set forth in the rule.\n\n2. CANCELATION. Advisory Circular 25.335-1, Design Dive Speed, dated 10/20/97, is canceled.\n\n3. RELATED FAR SECTIONS. Part 25, Section 25.335 \"Design airspeeds.\"\n\n4. BACKGROUND. Section 25.335(b) requires the design dive speed, V_D , of the airplane to be established so that the design cruise speed is no greater than 0.8 times the design dive speed, or that it be based on an upset criterion initiated at the design cruise speed, V_C . At altitudes where the cruise speed is limited by compressibility effects, § 25.335(b)(2) requires the margin to be not less than 0.05 Mach. Furthermore, at any altitude, the margin must be great enough to provide for atmospheric variations (such as horizontal gusts and the penetration of jet streams), instrument errors, and production variations. This AC provides a rational method for considering the atmospheric variations.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "612341bdaf47b3cb5963f3bb3c22e3f8abff0b2777fe56da3ba40e718f7209db",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "a9b26a113f703a14a8f9",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\4c\\4c780780119aef8c5826d984dee64fa649efd46fa4c3599ee063caeddf4c534c\\source.pdf",
+              "internal_rag_source_sha256": "4c780780119aef8c5826d984dee64fa649efd46fa4c3599ee063caeddf4c534c",
+              "kept_by": "document_header",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "3765eff2-215a-4778-9ef7-c4284b77f9f6",
+            "related_images": [
+              {
+                "caption": "Table 1 — page 3",
+                "chunk_id": "b896ec3e-ec5b-4208-b71b-f0c344f77728",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/60e25457f46646119938b6bcdba3b41b/assets/cccfc2115c5fe61e24a1"
+              },
+              {
+                "caption": "Figure 1 - Windshear Region",
+                "chunk_id": "ffde65eb-c939-4285-8b88-97341c65ede4",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/60e25457f46646119938b6bcdba3b41b/assets/93cb7b09f97e1d26f2ba"
+              }
+            ],
+            "score": 1,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "9a398c13-6505-47c2-97e7-011a2b160492",
+              "01975543-4dab-4b46-93d3-d9155ef67ff0",
+              "e709060e-2130-4138-a6d5-b7bd4ccfb73d"
+            ]
+          },
+          {
+            "chunk_index": 4,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "57e2f52b7ee5f9146f07",
+                "20437f7d0f9373d8c956"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "e00ab36369c34a84337b",
+              "external_parent_chunk_id": "c9c7b27dbf6a94475047",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 2,
+              "page_start": 2,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+            "end_at": 311,
+            "id": "33b95d84-4afa-4bba-ad1c-7c0fa8092145",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_23-16A.pdf",
+            "knowledge_id": "3615f931-f054-4520-914e-65ed3c704798",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_23-16A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_23-16A.pdf\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "33130c9a14616f38fdb3e1bb86b885dc3813880bbf84950c12bafe084152726b",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "7c784814c60e17fdf8cb",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\41\\4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45\\source.pdf",
+              "internal_rag_source_sha256": "4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "f0894b96-0623-4b83-8774-39368d138d26",
+            "score": 0.7,
+            "seq": 4,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "33b95d84-4afa-4bba-ad1c-7c0fa8092145"
+            ]
+          },
+          {
+            "chunk_index": 3,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "62afc1c7ba63f6f653db"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "319beb92fcbeac44aae5",
+              "external_parent_chunk_id": "4886c652b74eded87aa9",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 4,
+              "page_start": 4,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "CONTENTS (CONTINUED)"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+            "end_at": 20,
+            "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25-25A.pdf",
+            "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25-25A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "04a389a1de97dc79f380",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+              "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+            "score": 0.6887096774193547,
+            "seq": 3,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "c88791d2-5a32-4c11-bb5c-ae0562f313bd"
+            ]
+          },
+          {
+            "chunk_index": 14,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "6a3820045e35887d54f4"
+              ],
+              "block_ids": [
+                "823f275cde97fc4cf5de"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "f5b999ebe836fdd43672",
+              "external_parent_chunk_id": "168f5a6730495354ae20",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 6,
+              "page_start": 6,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "6 SUGGESTIONS FOR IMPROVING THIS AC."
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "6 SUGGESTIONS FOR IMPROVING THIS AC.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular feedback form at the end of this AC.\n\nSource image on page 6; no OCR transcription available.\n\nDigitally signed by\n\nVICTOR W WICKLUND\n\nDate: 2022.11.28\n\n13:44:04 -08'00'\n\nVictor Wicklund\n\nActing Director, Policy & Innovation Division\n\nAircraft Certification Service\n\nAdvisory Circular Feedback Form\n\nPaperwork Reduction Act Burden Statement: A federal agency may not conduct or sponsor, and a person is not required to respond to, nor shall a person be subject to a penalty for failure to comply with a collection of information subject to the requirements of the Paperwork Reduction Act unless that collection of information displays a currently valid OMB Control Number. The OMB Control Number for this information collection is 2120-0746. Public reporting for this collection of information is estimated to be approximately 20 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, completing and reviewing the collection of information.\n\nAll responses to this collection of information are voluntary FAA Order 1320.46D Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to: Information Collection Clearance Officer, Barbara Hall, 800 Independence Ave, Washington, D.C. 20590.\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to ( ) or (2) faxing it to the attention of the LOB/SO ( ).\n\nSubject: Date:\n\nPlease mark all appropriate line items:\n\n□ An error (procedural or typographical) has been noted in paragraph on page\n\n□ Recommend paragraph on page be changed as follows:\n\n□ In a future change to this AC, please cover the following subject:\n\n(Briefly describe what you want added.)\n\n□ Other comments:\n\n□ Iwould like to discuss the above. Please contact me.\n\nSubmitted by: Date:\n\nFAA Form 1320-73 (09/22) SUPERSEDES PREVIOUS EDITIONS\n\nSource image on page 6; no OCR transcription available.\n\n![figure p6](http://localhost:8080/api/v1/ingestion/jobs/e2bc1fdde3fa470596ce215a890b63c7/assets/6a3820045e35887d54f4)",
+            "end_at": 175,
+            "id": "3baf7835-7d39-45ab-a5d4-6e08e08364ff",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.353-1.pdf",
+            "knowledge_id": "c86135bb-1c03-4680-b33f-68c8553b24f1",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.353-1.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.353-1.pdf\n6 SUGGESTIONS FOR IMPROVING THIS AC. > Source image on page 6\n\nSource image on page 6; no OCR transcription available.\n\n![figure p6](http://localhost:8080/api/v1/ingestion/jobs/e2bc1fdde3fa470596ce215a890b63c7/assets/6a3820045e35887d54f4)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "7081662412dccee834eea74d644bdcea37bcab68fc7b77700856c0ffd15c2aef",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "0f3aa3a042c0ea19df50",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\67\\67896a811332199a23599ad3d4692d017a6acf91c9cf728058448505ae07395c\\source.pdf",
+              "internal_rag_source_sha256": "67896a811332199a23599ad3d4692d017a6acf91c9cf728058448505ae07395c",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "4b9f475d-1c82-4276-80e7-dce548ed7b51",
+            "score": 0.6671874999999999,
+            "seq": 14,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "3baf7835-7d39-45ab-a5d4-6e08e08364ff"
+            ]
+          },
+          {
+            "chunk_index": 3,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "9908cb9dd18f5702f4f2",
+                "af87277897c3286c2dd7"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "b48d00356ea8e352494b",
+              "external_parent_chunk_id": "d5d847d3c4a4b9dec4da",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 2,
+              "page_start": 2,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "3 DOES THIS AC CANCEL ANY PRIOR AC?"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+            "end_at": 84,
+            "id": "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-182A.pdf",
+            "knowledge_id": "1a414314-3b50-4225-a100-ae2d36ca5e32",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-182A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_20-182A.pdf\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+              "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "1760d379-7cd1-4496-8be2-e8b88b3da2f2",
+            "score": 0.6569230769230768,
+            "seq": 3,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad"
+            ]
+          },
+          {
+            "chunk_index": 13,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "6f3c532e766620fbeaaf"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "fd48a1e175ede4a5d857",
+              "external_parent_chunk_id": "91c711a6d8dcd624e010",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 8,
+              "page_start": 8,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "GENERAL"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "GENERAL\n\nFields: 23.301 Loads; (Amendment 23-48)\n\n完整表格：\n<table><tr><td>23.301 Loads</td><td>(Amendment 23-48)</td></tr></table>\n\n9. Should references be included in the loads calculations? Yes. Each Basic Loads calculation should be annotated with the airworthiness standard section for which compliance is shown, for example, use part 23, § 23.301(a); they may also be shown in Design Criteria, Test Plans, Test Reports, and Software Documents.\n\n10. What effect do cutouts have in structure? Doors, windows, access holes, etc., in aircraft structure causes redistribution of axial and shear loads, pressure loads, and stiffness changes. Fatigue capabilities may be affected. Damage tolerance capabilities may be affected. Account for all such design changes.\n\n11. Do Biplane designs require any special aerodynamic load criteria?\n\na. Yes. A previously used typical approach includes:\n\n(1) Developing an equivalent single wing (cellule), which aerodynamically represents the biplane wings. Civil Aeronautics Manual 04 (CAM 04), paragraph 217, provides an acceptable method unless the biplane has an unusual amount of stagger or decalage. Also, see CAM 04, Appendix III.\n\n(2) Defining wing and tail loads from part 23 load conditions using the equivalent single wing.\n\n(3) Distributing the equivalent single wing load between the upper and lower biplane wings. CAM 8, paragraph 212, provides an acceptable method for biplanes with no decalage.\n\n(4) Distributing the individual wing-loads spanwise using a method such as Schrenk or ANC-1. (See Figure 1.)\n\nb. Other acceptable methods for obtaining aerodynamic parameters for biplanes and other unique configurations include computational fluid dynamic (CFD) codes, including VS-Aero, MG-Aero, and TRANAIR. Applicants should validate the suitability of these codes for their particular configuration. Wind tunnel and flight tests are also acceptable methods of measuring load intensities.\n\n12. What is the effect of increased engine power? An increase in engine power causes larger loads on, and in, several aircraft structures. A different engine, with different weight, center of gravity (c.g.) and horsepower, will change the inertial, gyroscopic, and aerodynamic loads from those of the previous engine. A changed propeller imparts similar effects on inertial, aerodynamic and gyroscopic loads, which are imposed on airplane structures.\n\n13. Can ultimate load flight tests be used?\n\na. The FAA discourages attempting ultimate load flight tests unless the applicant understands fully the risks involved, and then the FAA advises caution.\n\nb. See “Note” in 23.305, paragraph 22b, of this AC concerning flight tests.\n\n14. Can I use wind tunnel data?\n\na. Wind tunnel tests may be used to measure several parameters used in determining airplane loads. Force models can be used to measure the tail-off and tail-on airplane lift, pitching moment and drag curves, downwash at the tail, and stability and control parameters. Pressure models can be used to obtain the wingspan loading and the pressure distributions on airplane components. Measured pressure distributions are particularly useful in determining loads on secondary structure, including nacelles, canopies, and fairings.\n\nb. Lower performance conventional airplanes are commonly designed without the benefit of wind tunnel testing. Conventional, as used here, means an airplane having a main wing at or near the c.g. and an empennage aft of the airplane c.g. Wind tunnel tests are more likely to be useful for airplanes with unconventional configurations, unusual aerodynamic features, or high performance airplanes where compressibility effects cannot be neglected.\n\nc. Scaling of test results to full-scale airplane values requires similarity of geometry, Mach Number and Reynolds Number. Similarity of Reynolds Number is the most difficult of these to achieve. Test data acquired at Reynolds Numbers significantly lower than flight may be of little use for certification purposes due to the large corrections that must be applied to the test data. Reynolds Number similarity can be achieved by using large-scale models or pressurized wind tunnels. Boundary layer transition strips or dots are frequently used to model flight scale Reynolds Number effects on a model tested at lower Reynolds Numbers.\n\n15. How can I determine the span-wise lift distribution? The span-wise distribution of lift on the wing may be obtained from wind tunnel test, flight test, analysis, or a combination of analysis and test. Figure 1 lists some commonly used span-wise lift distribution analysis methods. In addition to the methods listed in Figure 1, there are\n\nvarious computer codes available that use computation fluid dynamics (CFD), such as, VS-Aero, MG-Aero, and TRANAIR.\n\na. The National Advisory Committee for Aeronautics (NACA) Technical Report 572 reports on the Anderson method. The wings under consideration covered a complete range of taper ratios and aspect ratios from 2 to 20. It does not say that 20 is a limit.\n\nb. Reference 1 (page 228) states that NACA Technical Report 585 contains an exact method.\n\nc. The “Fourier Series Method” is described in Reference 1 on pages 233 to 242. This is the method in ANC-1 (which has tabular forms for ease of calculation). This method uses lifting line theory, which is good for conventional unswept wings with aspect ratios greater than 5 or 6 (see Reference 1, page 247).\n\nd. Weissenger's “Method” (Reference 2) is applicable to straight or swept wings of low or high aspect ratio. This is a modified lifting theory method.\n\ne. Schrenk's “Approximation” basically averages the lift forces obtained from an elliptical lift distribution with those obtained from a planform lift distribution. This approximation is accurate for wings that approach an elliptical planform (Reference 1, page 224). This method is contained in Civil Aeronautics Manual (CAM) 04, Appendix IV. The Limitations, in Section 6, state that it applies to the normal range of aspect ratios (from 5 to 12).\n\nf. Reference 3 (page 14) lists NACA Technical Reports 572, 585, and 606. The first two of these technical reports are discussed in Items a and b above. Technical Report 606 is titled “Empirical Corrections to the Span Load Distribution at the Tip.” Correction is only necessary if the wing is tapered less than 2:1 and has a blunt tip.\n\ng. Reference 4 lists several references: 3.5 through 3.12 (see Enclosure 3).\n\nh. In the paper titled “Application of Microcomputer Software to the Aerodynamic Design of a Motorglider” Technical Soaring, October 1993, the lifting line theory FORTRAN program in Reference 5 (pages 159-164) was used (on an Apple Macintosh Plus computer) to calculate the lift distribution of a 17-meter (55.76 foot) wing (aspect ratio unstated). A comparison was made of the lift distribution calculated by Schrenk's approximation.\n\ni. Reference 6 contains a vortex lattice FORTRAN program.\n\nj. Reference 7 is an aeroelastic supplement for the NASTRAN finite element program.\n\nk. NACA TN 3030 titled, “A Method for Calculating the Subsonic Steady-state Loading on an Airplane with a Wing of Arbitrary Planform and Stiffness” includes both\n\nthe aeroelastic effects and the ability to base the span loading on linearized wind tunnel wing section data. It also allows for correcting wind tunnel model elastics and jig twist.\n\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES NOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\nMETHOD=ANC-1; APPROACH TO SOLUTION=Fourier Solution. Based on lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Conventional unswept wings with aspect ratios greater than 5 to 6.; COMMENTS=Exact Solution despite limitations of lifting line theory. Similar Methods: LOTZ GLAUERT (Elements of Aerofoil and Airscrew Theory) ANDERSON (Theory of Wing Sections)\nMETHOD=SHRENK'S NACA TM-948; APPROACH TO SOLUTION=Approximate Solution. Based on lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Conventional unswept wings with aspect ratios greater than 5 to 6.; COMMENTS=Accuracy approaches ANC-1. Small inaccuracies overshadowed by original assumptions. Much easier to apply.\nMETHOD=SHERMAN'S NACA TN-732; APPROACH TO SOLUTION=Successive approximations to match chord distribution. Each angle of attack requires separate calculation.; LIMITATIONS ON APPLICATION=Applicable to any straight wing without high lift devices.; COMMENTS=Accuracy compares with ANC-1 but unsatisfactory due to separate calculation for each angle of attack.\nMETHOD=PLANFORM (Often used for horizontal tail); APPROACH TO SOLUTION=Air load distribution directly proportional to chord variation.; LIMITATIONS ON APPLICATION=Untwisted high taper ratio wings.; COMMENTS=Unconservative for Taper Ratios < 0.25. Conservative for Taper Ratios > 0.35.\n\n完整表格：\n<table><tr><th>METHOD</th><th>APPROACH TO SOLUTION</th><th>LIMITATIONS ON APPLICATION</th><th>COMMENTS</th></tr><tr><td>ANC-1</td><td>Fourier Solution. Based on lifting line theory. Basic and additional lift.</td><td>Conventional unswept wings with aspect ratios greater than 5 to 6.</td><td>Exact Solution despite limitations of lifting line theory. Similar Methods: LOTZ GLAUERT (Elements of Aerofoil and Airscrew Theory) ANDERSON (Theory of Wing Sections)</td></tr><tr><td>SHRENK&#x27;S NACA TM-948</td><td>Approximate Solution. Based on lifting line theory. Basic and additional lift.</td><td>Conventional unswept wings with aspect ratios greater than 5 to 6.</td><td>Accuracy approaches ANC-1. Small inaccuracies overshadowed by original assumptions. Much easier to apply.</td></tr><tr><td>SHERMAN&#x27;S NACA TN-732</td><td>Successive approximations to match chord distribution. Each angle of attack requires separate calculation.</td><td>Applicable to any straight wing without high lift devices.</td><td>Accuracy compares with ANC-1 but unsatisfactory due to separate calculation for each angle of attack.</td></tr><tr><td>PLANFORM (Often used for horizontal tail)</td><td>Air load distribution directly proportional to chord variation.</td><td>Untwisted high taper ratio wings.</td><td>Unconservative for Taper Ratios &lt; 0.25. Conservative for Taper Ratios &gt; 0.35.</td></tr></table>\n\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES NOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\nMETHOD=WEISSINGER NACA TM 1120; APPROACH TO SOLUTION=Iteration process based on modified lifting line theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Applicable to straight or swept wings of low or high aspect ratio.; COMMENTS=Lifting surface method also presented as applicable to straight wings.\nMETHOD=DeYOUNG & HARPER NACA TR 921; APPROACH TO SOLUTION=Based on simplified lifting surface theory. Basic and additional lift.; LIMITATIONS ON APPLICATION=Applicable to straight or swept wings of low or high taper ratio.; COMMENTS=Extension of Weissinger Method. Can account for compressibility M > 0.5 @ S.L.\nMETHOD=DIEDERICH NACA TR 1000; APPROACH TO SOLUTION=Matrix Iteration process utilizing aero-elastic matrix determined from aerodynamic and structural properties of wing.; LIMITATIONS ON APPLICATION=No planform limitations.; COMMENTS=Considers loading and divergence speed.\nFIGURE 1 SPANWISE WING-LOADING METHODOLOGIES\nNOTE: See NACA TN 606 for Empirical Tip Corrections, and RM L53B18 for Tip Tank Effects on Load Distribution.\n\n完整表格：\n<table><tr><th>METHOD</th><th>APPROACH TO SOLUTION</th><th>LIMITATIONS ON APPLICATION</th><th>COMMENTS</th></tr><tr><td>WEISSINGER NACA TM 1120</td><td>Iteration process based on modified lifting line theory. Basic and additional lift.</td><td>Applicable to straight or swept wings of low or high aspect ratio.</td><td>Lifting surface method also presented as applicable to straight wings.</td></tr><tr><td>DeYOUNG &amp; HARPER NACA TR 921</td><td>Based on simplified lifting surface theory. Basic and additional lift.</td><td>Applicable to straight or swept wings of low or high taper ratio.</td><td>Extension of Weissinger Method. Can account for compressibility M &gt; 0.5 @ S.L.</td></tr><tr><td>DIEDERICH NACA TR 1000</td><td>Matrix Iteration process utilizing aero-elastic matrix determined from aerodynamic and structural properties of wing.</td><td>No planform limitations.</td><td>Considers loading and divergence speed.</td></tr></table>\n\nGENERAL",
+            "end_at": 7,
+            "id": "07926c5b-77af-46a2-b2fa-5c9c841b2d16",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_23-19A.pdf",
+            "knowledge_id": "677937ce-f74a-4874-af37-e261a9caa5a1",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_23-19A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_23-19A.pdf\nGENERAL\n\nGENERAL",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "f3870f1a32c0f99ac0acf1b783cc11ed581ad35f1aa688419163480aff3610ec",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "fd978403ae0dcd437c87",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\f7\\f7dfb2123fc4f2f3cb201e9b09cda182d19437df772a78ca4f49821ab66ba75d\\source.pdf",
+              "internal_rag_source_sha256": "f7dfb2123fc4f2f3cb201e9b09cda182d19437df772a78ca4f49821ab66ba75d",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "fc73ce3b-4f63-417f-8a06-bea134da5818",
+            "score": 0.6469696969696969,
+            "seq": 13,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "07926c5b-77af-46a2-b2fa-5c9c841b2d16"
+            ]
+          },
+          {
+            "chunk_index": 3,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "18195ecdebe5267cf6d6",
+                "0d16edda8fe25f290ceb"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "1d1c8a4b4eb715de0293",
+              "external_parent_chunk_id": "df90a265b12b7815815b",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "3 CANCELLATION."
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "3 CANCELLATION.\n\nThis AC cancels AC 20-164, dated March 15, 2010.",
+            "end_at": 65,
+            "id": "fabec096-f947-41e1-b326-a3caf68d6298",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-164A.pdf",
+            "knowledge_id": "722d8573-ad7e-434d-9d0a-37f9a4254e95",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-164A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_20-164A.pdf\n3 CANCELLATION.\n\n3 CANCELLATION.\n\nThis AC cancels AC 20-164, dated March 15, 2010.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "8abd4066ba61b049dbac14ac75f1d25785990136685f48c891c5ad49b80cc89e",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "bddd08bccfd4c656e3c4",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\32\\3234457d4dcea26c7472cb69bd77974a9d9c03bdb7a4f5149fd80d06162986e4\\source.pdf",
+              "internal_rag_source_sha256": "3234457d4dcea26c7472cb69bd77974a9d9c03bdb7a4f5149fd80d06162986e4",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "2e90a4fe-669c-4db8-8a6c-1dd96cb3a62d",
+            "score": 0.6373134328358208,
+            "seq": 3,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "fabec096-f947-41e1-b326-a3caf68d6298"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "The",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " use",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "r asks",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "335",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "A",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "？",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "Answe",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "r:",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "9",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "29",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "00",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " (",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "200",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "0",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "9",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "29",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ").",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " Cite",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".\n\n",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "Also",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " note",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " cancellation",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " of",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "335",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " dated",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "20",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "97",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".\n\n",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "Images",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " a",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "re not",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " necessary",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " fo",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "r the",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " date",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " question",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " Not",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " relevant",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " Don",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "'t",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " include",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " images",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".\n\n",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "Answe",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "r briefly",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " in",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": " Chinese",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "thinking",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167939,
+        "duration_ms": 963,
+        "event_id": "64a0a31b-thinking"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "335",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "A",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "是",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " **",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "200",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "0",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "9",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "29",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "**",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "该",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "在",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "文档",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "中",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "写作",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "“",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "9",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "29",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "00",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "”。",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_25.335-1A.pdf\" chunk_id=\"9a398c13-6505-47c2-97e7-011a2b160492\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "补充",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "说明",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "：",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "这份",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "咨询",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "通告",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "取代",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "了",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "199",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "7",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "20",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "20",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "97",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "签",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "发的",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "335",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "《",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "Design",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " Dive",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": " Speed",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "》。",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_25.335-1A.pdf\" chunk_id=\"9a398c13-6505-47c2-97e7-011a2b160492\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+      "done": false,
+      "data": {
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "answer",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167941,
+        "duration_ms": 2023,
+        "event_id": "e6fc988f-answer"
+      }
+    },
+    {
+      "id": "ab67733f-706b-44e7-9f55-62efb48604c0",
+      "response_type": "complete",
+      "content": "",
+      "done": true,
+      "data": {
+        "final_content": "AC 25.335-1A 的签发日期是 **2000 年 9 月 29 日**，该日期在文档中写作“9/29/00”。<kb doc=\"AC_25.335-1A.pdf\" chunk_id=\"9a398c13-6505-47c2-97e7-011a2b160492\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n补充说明：这份咨询通告（AC）取代了 1997 年 10 月 20 日（10/20/97）签发的 AC 25.335-1《Design Dive Speed》。<kb doc=\"AC_25.335-1A.pdf\" chunk_id=\"9a398c13-6505-47c2-97e7-011a2b160492\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+        "total_duration_ms": 0,
+        "total_steps": 0
+      }
+    }
+  ],
+  "seconds": 13.22
+}

@@ -1,0 +1,1739 @@
+{
+  "num": "002",
+  "query": "AC 25.773-1 的责任办公室代号？",
+  "session": "85a5a39c-2bd1-49e3-8b09-5cdb936eb1a7",
+  "answer": "AC 25.773-1《PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS》（日期 1993 年 1 月 8 日）的责任办公室代号为 **ANM-110**，该文件中标注为“Initiated by: ANM-110”<kb doc=\"AC_25.773-1.pdf\" chunk_id=\"dc5b0222-1022-4f67-852e-2adc0a1999d1\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />。",
+  "references": [
+    {
+      "id": "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+      "content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.\n\n2. RELATED DOCUMENTS.\n\na. Federal Aviation Regulations (FAR). The related sections of Part 25 include:\n\n§ 25.237 Wind velocities\n\n§ 25.773 Pilot compartment view",
+      "knowledge_id": "71d44815-6c6a-41ae-a5e6-1c80a45a8f47",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.773-1.pdf",
+      "start_at": 0,
+      "end_at": 427,
+      "seq": 0,
+      "score": 1,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "cf9d738508c2d9280f9f035a32f451ad53e4705bdd1620139889a2c81f3fec41",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "91c3c18e0499ab17a9b3",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\21\\214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d\\source.pdf",
+        "internal_rag_source_sha256": "214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d",
+        "kept_by": "document_header",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "d668f5be-7b14-4ae6-8c81-74ada1f5021b",
+      "image_info": "",
+      "knowledge_filename": "AC_25.773-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+      "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+      "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+      "chunk_index": 3,
+      "knowledge_title": "AC_25-25A.pdf",
+      "start_at": 0,
+      "end_at": 20,
+      "seq": 3,
+      "score": 0.7,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "04a389a1de97dc79f380",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+        "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+      "image_info": "",
+      "knowledge_filename": "AC_25-25A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "290e51f7-c36b-4f12-b22d-537b6358cff7",
+      "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Installation of Physical Secondary Barriers for Transport Category Airplanes\n\nDate:\n\nInitiated By: AIR-600\n\nAC No: 25.795-10\n\nThis advisory circular provides an acceptable means of showing compliance with the requirements of paragraph (a)(4) of title 14, Code of Federal Regulations (14 CFR) 25.795, Security Considerations, at amendment 25-150. Section 25.795(a)(4) requires installation of a physical secondary barrier that protects the flightdeck in certain transport category airplanes.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDANIEL J. Ditay signed y DANIEL J\n\nELGAS Date: 2023.06.2 15:40:5\n\nVictor Wicklund Acting Director, Policy & Standards Division Aircraft Certification Service",
+      "knowledge_id": "fed59260-1164-494c-b3fe-f949150906a1",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.795-10.pdf",
+      "start_at": 0,
+      "end_at": 17,
+      "seq": 0,
+      "score": 0.6569230769230768,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "321d57fb493b106f9618fa6ed879fb9c39d73c036aaed3086ec91cf1937e4f23",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "22278a090690aad6f66c",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5\\source.pdf",
+        "internal_rag_source_sha256": "38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "f4c13980-9929-4cb9-8d8b-e86abbe6171c",
+      "image_info": "",
+      "knowledge_filename": "AC_25.795-10.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.795-10.pdf\nDocument preamble\n\nAdvisory Circular",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "c1ffddf9-859a-47f6-950e-dd2a103b81d0",
+      "content": "APPENDIX 9 ACRONYMS\n\nAC: Aircraft Certification\nAC: Advisory Circular\nACO: Aircraft Certification Office\nAFM: Airplane Flight Manual\nASTM: American Society of Testing and Materials\nAWG: American Gage Size Conductor\nBTU: British Thermal Unit\nCFR: Code of Federal Regulations\nELT: Emergency Locator Transmitter\nFAA: Federal Aviation Administration\nFSSR: Flight Standards Service Releases\ng.: Gravity\nGPH: Gallons Per Hour\nHg: Mercury\nHIC: Head Injury Criterion\nNACA: National Advisory Committee for Aeronautics\nNASA: National Aeronautics and Space Administration\nPSI: Pounds per Square-inch\nRTO: Rejected Takeoff\nSAE: Society of Automotive Engineers\nSRP: Seat Reference Point\nSTC: Supplemental Type Certificate\nTSO: Technical Standard Order\nTT & L: Taxi, Takeoff, and Landing\n\n完整表格：\n<table><tr><td>AC</td><td>Aircraft Certification</td></tr><tr><td>AC</td><td>Advisory Circular</td></tr><tr><td>ACO</td><td>Aircraft Certification Office</td></tr><tr><td>AFM</td><td>Airplane Flight Manual</td></tr><tr><td>ASTM</td><td>American Society of Testing and Materials</td></tr><tr><td>AWG</td><td>American Gage Size Conductor</td></tr><tr><td>BTU</td><td>British Thermal Unit</td></tr><tr><td>CFR</td><td>Code of Federal Regulations</td></tr><tr><td>ELT</td><td>Emergency Locator Transmitter</td></tr><tr><td>FAA</td><td>Federal Aviation Administration</td></tr><tr><td>FSSR</td><td>Flight Standards Service Releases</td></tr><tr><td>g.</td><td>Gravity</td></tr><tr><td>GPH</td><td>Gallons Per Hour</td></tr><tr><td>Hg</td><td>Mercury</td></tr><tr><td>HIC</td><td>Head Injury Criterion</td></tr><tr><td>NACA</td><td>National Advisory Committee for Aeronautics</td></tr><tr><td>NASA</td><td>National Aeronautics and Space Administration</td></tr><tr><td>PSI</td><td>Pounds per Square-inch</td></tr><tr><td>RTO</td><td>Rejected Takeoff</td></tr><tr><td>SAE</td><td>Society of Automotive Engineers</td></tr><tr><td>SRP</td><td>Seat Reference Point</td></tr><tr><td>STC</td><td>Supplemental Type Certificate</td></tr><tr><td>TSO</td><td>Technical Standard Order</td></tr><tr><td>TT &amp; L</td><td>Taxi, Takeoff, and Landing</td></tr></table>\n\nTHIS PAGE INTENTIONALLY LEFT BLANK",
+      "knowledge_id": "80965a8d-29cc-4ec8-9e25-a4312f68f51a",
+      "chunk_index": 45,
+      "knowledge_title": "AC_25-17A_part05_p0801-0893.pdf",
+      "start_at": 0,
+      "end_at": 34,
+      "seq": 45,
+      "score": 0.6469696969696969,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "2b323dd109affcc535532de3a14966958f2ae6dfe6d708c89c2b73d4d5e81836",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "e13dec952922f55d584b",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\fa\\faca2d36d6819160afc27f016d8aff40a4347996f498f467d71e7cde4cd307f4\\source.pdf",
+        "internal_rag_source_sha256": "faca2d36d6819160afc27f016d8aff40a4347996f498f467d71e7cde4cd307f4",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "00a1679d-9593-452b-8e1b-894a73ff7311",
+      "image_info": "",
+      "knowledge_filename": "AC_25-17A_part05_p0801-0893.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25-17A_part05_p0801-0893.pdf\nAPPENDIX 9 ACRONYMS\n\nTHIS PAGE INTENTIONALLY LEFT BLANK",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    }
+  ],
+  "events": [
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "agent_query",
+      "content": "",
+      "done": true,
+      "session_id": "85a5a39c-2bd1-49e3-8b09-5cdb936eb1a7",
+      "assistant_message_id": "43efbf43-f538-4e09-9e64-15a487648d4d",
+      "data": {
+        "assistant_created_at": "2026-10-28T06:09:59.717102Z",
+        "assistant_message_id": "43efbf43-f538-4e09-9e64-15a487648d4d",
+        "session_id": "85a5a39c-2bd1-49e3-8b09-5cdb936eb1a7",
+        "user_created_at": "2026-10-28T06:09:59.7111944Z",
+        "user_message_id": "0813775e-9224-432f-afc2-2fa39eff3a1e"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "tool_call",
+      "content": "Calling tool: query_understand",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.773-1 的责任办公室代号？"
+        },
+        "tool_call_id": "5f95db10-a4f7-429d-a7f0-bd148e7694a7",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "duration_ms": 3263,
+        "error": "",
+        "output": "已完成问题理解",
+        "success": true,
+        "tool_call_id": "5f95db10-a4f7-429d-a7f0-bd148e7694a7",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "tool_call",
+      "content": "Calling tool: knowledge_search",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.773-1的责任办公室代号是什么",
+          "search_source": "knowledge"
+        },
+        "tool_call_id": "6a08aa44-ce11-40b6-9f93-4924bf374dd8",
+        "tool_name": "knowledge_search"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "candidate_count": 0,
+        "count": 4,
+        "doc_count": 4,
+        "duration_ms": 2591,
+        "error": "",
+        "output": "检索到 4 条相关内容",
+        "search_source": "knowledge",
+        "success": true,
+        "tool_call_id": "6a08aa44-ce11-40b6-9f93-4924bf374dd8",
+        "tool_name": "knowledge_search",
+        "web_count": 0
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "references",
+      "content": "",
+      "done": false,
+      "knowledge_references": [
+        {
+          "id": "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+          "content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.\n\n2. RELATED DOCUMENTS.\n\na. Federal Aviation Regulations (FAR). The related sections of Part 25 include:\n\n§ 25.237 Wind velocities\n\n§ 25.773 Pilot compartment view",
+          "knowledge_id": "71d44815-6c6a-41ae-a5e6-1c80a45a8f47",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.773-1.pdf",
+          "start_at": 0,
+          "end_at": 427,
+          "seq": 0,
+          "score": 1,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "cf9d738508c2d9280f9f035a32f451ad53e4705bdd1620139889a2c81f3fec41",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "91c3c18e0499ab17a9b3",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\21\\214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d\\source.pdf",
+            "internal_rag_source_sha256": "214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d",
+            "kept_by": "document_header",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "d668f5be-7b14-4ae6-8c81-74ada1f5021b",
+          "image_info": "",
+          "knowledge_filename": "AC_25.773-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+          "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+          "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+          "chunk_index": 3,
+          "knowledge_title": "AC_25-25A.pdf",
+          "start_at": 0,
+          "end_at": 20,
+          "seq": 3,
+          "score": 0.7,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "04a389a1de97dc79f380",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+            "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+          "image_info": "",
+          "knowledge_filename": "AC_25-25A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "290e51f7-c36b-4f12-b22d-537b6358cff7",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Installation of Physical Secondary Barriers for Transport Category Airplanes\n\nDate:\n\nInitiated By: AIR-600\n\nAC No: 25.795-10\n\nThis advisory circular provides an acceptable means of showing compliance with the requirements of paragraph (a)(4) of title 14, Code of Federal Regulations (14 CFR) 25.795, Security Considerations, at amendment 25-150. Section 25.795(a)(4) requires installation of a physical secondary barrier that protects the flightdeck in certain transport category airplanes.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDANIEL J. Ditay signed y DANIEL J\n\nELGAS Date: 2023.06.2 15:40:5\n\nVictor Wicklund Acting Director, Policy & Standards Division Aircraft Certification Service",
+          "knowledge_id": "fed59260-1164-494c-b3fe-f949150906a1",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.795-10.pdf",
+          "start_at": 0,
+          "end_at": 17,
+          "seq": 0,
+          "score": 0.6569230769230768,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "321d57fb493b106f9618fa6ed879fb9c39d73c036aaed3086ec91cf1937e4f23",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "22278a090690aad6f66c",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5\\source.pdf",
+            "internal_rag_source_sha256": "38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "f4c13980-9929-4cb9-8d8b-e86abbe6171c",
+          "image_info": "",
+          "knowledge_filename": "AC_25.795-10.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.795-10.pdf\nDocument preamble\n\nAdvisory Circular",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "c1ffddf9-859a-47f6-950e-dd2a103b81d0",
+          "content": "APPENDIX 9 ACRONYMS\n\nAC: Aircraft Certification\nAC: Advisory Circular\nACO: Aircraft Certification Office\nAFM: Airplane Flight Manual\nASTM: American Society of Testing and Materials\nAWG: American Gage Size Conductor\nBTU: British Thermal Unit\nCFR: Code of Federal Regulations\nELT: Emergency Locator Transmitter\nFAA: Federal Aviation Administration\nFSSR: Flight Standards Service Releases\ng.: Gravity\nGPH: Gallons Per Hour\nHg: Mercury\nHIC: Head Injury Criterion\nNACA: National Advisory Committee for Aeronautics\nNASA: National Aeronautics and Space Administration\nPSI: Pounds per Square-inch\nRTO: Rejected Takeoff\nSAE: Society of Automotive Engineers\nSRP: Seat Reference Point\nSTC: Supplemental Type Certificate\nTSO: Technical Standard Order\nTT & L: Taxi, Takeoff, and Landing\n\n完整表格：\n<table><tr><td>AC</td><td>Aircraft Certification</td></tr><tr><td>AC</td><td>Advisory Circular</td></tr><tr><td>ACO</td><td>Aircraft Certification Office</td></tr><tr><td>AFM</td><td>Airplane Flight Manual</td></tr><tr><td>ASTM</td><td>American Society of Testing and Materials</td></tr><tr><td>AWG</td><td>American Gage Size Conductor</td></tr><tr><td>BTU</td><td>British Thermal Unit</td></tr><tr><td>CFR</td><td>Code of Federal Regulations</td></tr><tr><td>ELT</td><td>Emergency Locator Transmitter</td></tr><tr><td>FAA</td><td>Federal Aviation Administration</td></tr><tr><td>FSSR</td><td>Flight Standards Service Releases</td></tr><tr><td>g.</td><td>Gravity</td></tr><tr><td>GPH</td><td>Gallons Per Hour</td></tr><tr><td>Hg</td><td>Mercury</td></tr><tr><td>HIC</td><td>Head Injury Criterion</td></tr><tr><td>NACA</td><td>National Advisory Committee for Aeronautics</td></tr><tr><td>NASA</td><td>National Aeronautics and Space Administration</td></tr><tr><td>PSI</td><td>Pounds per Square-inch</td></tr><tr><td>RTO</td><td>Rejected Takeoff</td></tr><tr><td>SAE</td><td>Society of Automotive Engineers</td></tr><tr><td>SRP</td><td>Seat Reference Point</td></tr><tr><td>STC</td><td>Supplemental Type Certificate</td></tr><tr><td>TSO</td><td>Technical Standard Order</td></tr><tr><td>TT &amp; L</td><td>Taxi, Takeoff, and Landing</td></tr></table>\n\nTHIS PAGE INTENTIONALLY LEFT BLANK",
+          "knowledge_id": "80965a8d-29cc-4ec8-9e25-a4312f68f51a",
+          "chunk_index": 45,
+          "knowledge_title": "AC_25-17A_part05_p0801-0893.pdf",
+          "start_at": 0,
+          "end_at": 34,
+          "seq": 45,
+          "score": 0.6469696969696969,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "2b323dd109affcc535532de3a14966958f2ae6dfe6d708c89c2b73d4d5e81836",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "e13dec952922f55d584b",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\fa\\faca2d36d6819160afc27f016d8aff40a4347996f498f467d71e7cde4cd307f4\\source.pdf",
+            "internal_rag_source_sha256": "faca2d36d6819160afc27f016d8aff40a4347996f498f467d71e7cde4cd307f4",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "00a1679d-9593-452b-8e1b-894a73ff7311",
+          "image_info": "",
+          "knowledge_filename": "AC_25-17A_part05_p0801-0893.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25-17A_part05_p0801-0893.pdf\nAPPENDIX 9 ACRONYMS\n\nTHIS PAGE INTENTIONALLY LEFT BLANK",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        }
+      ],
+      "data": {
+        "references": [
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "a6768c7c4347bf4c44c7",
+                "bd65a2d55880f0183625",
+                "566d14d887d1cf9bed9b",
+                "8fc43052724418bab510",
+                "2f212c749f4525db04e1",
+                "38f9408ec7f119fb3236"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "4585be8466a930edd7fa",
+              "external_parent_chunk_id": "2ff6f9c541a4305593ad",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.\n\n2. RELATED DOCUMENTS.\n\na. Federal Aviation Regulations (FAR). The related sections of Part 25 include:\n\n§ 25.237 Wind velocities\n\n§ 25.773 Pilot compartment view",
+            "end_at": 427,
+            "id": "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.773-1.pdf",
+            "knowledge_id": "71d44815-6c6a-41ae-a5e6-1c80a45a8f47",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.773-1.pdf",
+            "match_type": 0,
+            "matched_content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "cf9d738508c2d9280f9f035a32f451ad53e4705bdd1620139889a2c81f3fec41",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "91c3c18e0499ab17a9b3",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\21\\214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d\\source.pdf",
+              "internal_rag_source_sha256": "214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d",
+              "kept_by": "document_header",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "d668f5be-7b14-4ae6-8c81-74ada1f5021b",
+            "score": 1,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+              "e6c63a67-b4fe-4226-bf96-738ae24ccbc6",
+              "40e3089a-32d0-4ed8-9fa9-626ff0d0c0f5",
+              "7a5636b3-1eb5-45ff-a202-7b056a14430d"
+            ]
+          },
+          {
+            "chunk_index": 3,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "62afc1c7ba63f6f653db"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "319beb92fcbeac44aae5",
+              "external_parent_chunk_id": "4886c652b74eded87aa9",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 4,
+              "page_start": 4,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "CONTENTS (CONTINUED)"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+            "end_at": 20,
+            "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25-25A.pdf",
+            "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25-25A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "04a389a1de97dc79f380",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+              "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+            "score": 0.7,
+            "seq": 3,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "c88791d2-5a32-4c11-bb5c-ae0562f313bd"
+            ]
+          },
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "36f8e146c40ca136482d"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "e90e2d242b0869bb72db",
+              "external_parent_chunk_id": "0f069de4425b5fd5cc2c",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Installation of Physical Secondary Barriers for Transport Category Airplanes\n\nDate:\n\nInitiated By: AIR-600\n\nAC No: 25.795-10\n\nThis advisory circular provides an acceptable means of showing compliance with the requirements of paragraph (a)(4) of title 14, Code of Federal Regulations (14 CFR) 25.795, Security Considerations, at amendment 25-150. Section 25.795(a)(4) requires installation of a physical secondary barrier that protects the flightdeck in certain transport category airplanes.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDANIEL J. Ditay signed y DANIEL J\n\nELGAS Date: 2023.06.2 15:40:5\n\nVictor Wicklund Acting Director, Policy & Standards Division Aircraft Certification Service",
+            "end_at": 17,
+            "id": "290e51f7-c36b-4f12-b22d-537b6358cff7",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.795-10.pdf",
+            "knowledge_id": "fed59260-1164-494c-b3fe-f949150906a1",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.795-10.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.795-10.pdf\nDocument preamble\n\nAdvisory Circular",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "321d57fb493b106f9618fa6ed879fb9c39d73c036aaed3086ec91cf1937e4f23",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "22278a090690aad6f66c",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5\\source.pdf",
+              "internal_rag_source_sha256": "38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "f4c13980-9929-4cb9-8d8b-e86abbe6171c",
+            "score": 0.6569230769230768,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "290e51f7-c36b-4f12-b22d-537b6358cff7"
+            ]
+          },
+          {
+            "chunk_index": 45,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "f7ab2b7feb85cae53605"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "c62c692aa57e07bb1fec",
+              "external_parent_chunk_id": "380e3744771b023fa5b8",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 30,
+              "page_start": 30,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "APPENDIX 9 ACRONYMS"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "APPENDIX 9 ACRONYMS\n\nAC: Aircraft Certification\nAC: Advisory Circular\nACO: Aircraft Certification Office\nAFM: Airplane Flight Manual\nASTM: American Society of Testing and Materials\nAWG: American Gage Size Conductor\nBTU: British Thermal Unit\nCFR: Code of Federal Regulations\nELT: Emergency Locator Transmitter\nFAA: Federal Aviation Administration\nFSSR: Flight Standards Service Releases\ng.: Gravity\nGPH: Gallons Per Hour\nHg: Mercury\nHIC: Head Injury Criterion\nNACA: National Advisory Committee for Aeronautics\nNASA: National Aeronautics and Space Administration\nPSI: Pounds per Square-inch\nRTO: Rejected Takeoff\nSAE: Society of Automotive Engineers\nSRP: Seat Reference Point\nSTC: Supplemental Type Certificate\nTSO: Technical Standard Order\nTT & L: Taxi, Takeoff, and Landing\n\n完整表格：\n<table><tr><td>AC</td><td>Aircraft Certification</td></tr><tr><td>AC</td><td>Advisory Circular</td></tr><tr><td>ACO</td><td>Aircraft Certification Office</td></tr><tr><td>AFM</td><td>Airplane Flight Manual</td></tr><tr><td>ASTM</td><td>American Society of Testing and Materials</td></tr><tr><td>AWG</td><td>American Gage Size Conductor</td></tr><tr><td>BTU</td><td>British Thermal Unit</td></tr><tr><td>CFR</td><td>Code of Federal Regulations</td></tr><tr><td>ELT</td><td>Emergency Locator Transmitter</td></tr><tr><td>FAA</td><td>Federal Aviation Administration</td></tr><tr><td>FSSR</td><td>Flight Standards Service Releases</td></tr><tr><td>g.</td><td>Gravity</td></tr><tr><td>GPH</td><td>Gallons Per Hour</td></tr><tr><td>Hg</td><td>Mercury</td></tr><tr><td>HIC</td><td>Head Injury Criterion</td></tr><tr><td>NACA</td><td>National Advisory Committee for Aeronautics</td></tr><tr><td>NASA</td><td>National Aeronautics and Space Administration</td></tr><tr><td>PSI</td><td>Pounds per Square-inch</td></tr><tr><td>RTO</td><td>Rejected Takeoff</td></tr><tr><td>SAE</td><td>Society of Automotive Engineers</td></tr><tr><td>SRP</td><td>Seat Reference Point</td></tr><tr><td>STC</td><td>Supplemental Type Certificate</td></tr><tr><td>TSO</td><td>Technical Standard Order</td></tr><tr><td>TT &amp; L</td><td>Taxi, Takeoff, and Landing</td></tr></table>\n\nTHIS PAGE INTENTIONALLY LEFT BLANK",
+            "end_at": 34,
+            "id": "c1ffddf9-859a-47f6-950e-dd2a103b81d0",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25-17A_part05_p0801-0893.pdf",
+            "knowledge_id": "80965a8d-29cc-4ec8-9e25-a4312f68f51a",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25-17A_part05_p0801-0893.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25-17A_part05_p0801-0893.pdf\nAPPENDIX 9 ACRONYMS\n\nTHIS PAGE INTENTIONALLY LEFT BLANK",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "2b323dd109affcc535532de3a14966958f2ae6dfe6d708c89c2b73d4d5e81836",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "e13dec952922f55d584b",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\fa\\faca2d36d6819160afc27f016d8aff40a4347996f498f467d71e7cde4cd307f4\\source.pdf",
+              "internal_rag_source_sha256": "faca2d36d6819160afc27f016d8aff40a4347996f498f467d71e7cde4cd307f4",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "00a1679d-9593-452b-8e1b-894a73ff7311",
+            "score": 0.6469696969696969,
+            "seq": 45,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "c1ffddf9-859a-47f6-950e-dd2a103b81d0"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "The",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " use",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "r asks",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "773",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "的责任",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "办公室",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "代号",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " (",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "responsible",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " office",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " code",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ").",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " From",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " \"",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "Init",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "iated",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " by",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " AN",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "M",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "110",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "\".",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " So",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " answe",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "r:",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " AN",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "M",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "110",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ".\n\n",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "Note",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " \"",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "Init",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "iated",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " by",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "\"",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " is",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " the",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " responsible",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " office",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " Provide",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " citation",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "thinking",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167806,
+        "duration_ms": 231,
+        "event_id": "47b74f03-thinking"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "773",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "《",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "P",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "IL",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "OT",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " COMP",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "ARTMENT",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " VIEW",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " DESIGN",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " CONS",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "IDER",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "ATIONS",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "》（",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "199",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "3",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "8",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "的责任",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "办公室",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "代号",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " **",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "AN",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "M",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "110",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "**",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "该",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "文件中",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "标注",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "“",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "Init",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "iated",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " by",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": " AN",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "M",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "110",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "”",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_25.773-1.pdf\" chunk_id=\"dc5b0222-1022-4f67-852e-2adc0a1999d1\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "answer",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167806,
+        "duration_ms": 210,
+        "event_id": "c3c7277d-answer"
+      }
+    },
+    {
+      "id": "7dea4d0c-19bc-49bd-b317-9ad280f8c14d",
+      "response_type": "complete",
+      "content": "",
+      "done": true,
+      "data": {
+        "final_content": "AC 25.773-1《PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS》（日期 1993 年 1 月 8 日）的责任办公室代号为 **ANM-110**，该文件中标注为“Initiated by: ANM-110”<kb doc=\"AC_25.773-1.pdf\" chunk_id=\"dc5b0222-1022-4f67-852e-2adc0a1999d1\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />。",
+        "total_duration_ms": 0,
+        "total_steps": 0
+      }
+    }
+  ],
+  "seconds": 11.78
+}

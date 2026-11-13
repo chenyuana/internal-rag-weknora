@@ -1,0 +1,54 @@
+[chunk c637e55e-43f3-41bf-aeca-3fee776707ab]
+Subject: AIRBORNE VHF COMMUNICATIONS EQUIPMENT INSTALLATIONS
+
+Date: 1/16/86
+
+Initiated by: AWS-120
+
+AC No: 20-67B
+
+Change:
+
+1. PURPOSE. This advisory circular (AC) sets forth one means, but not the only means, of demonstrating compliance with the airworthiness rules governing the functioning of airborne VHF communications equipment.
+
+2. CANCELLATION. AC 20-67A, Airborne VHF Communication System Installations, dated October 17, 1972, is cancelled.
+
+3. RELATED FEDERAL AVIATION REGULATION (FAR) SECTIONS. FAR Sections .1301 of FAR Parts 23, 25, 27, and 29; 25.1307(d), 29.1307(e); and .1309 of FAR Parts 25 and 29.
+
+4. BACKGROUND. Airborne VHF communications systems and equipment have become more complex over the last several years, using digital data applications and computerized equipment and control. There has also been an increase in the use of select calling and digital data link applications, in addition to mandatory air traffic control air-to-ground voice communication. To meet these developments, the Radio Technical Commission for Aeronautics (RTCA) SC-148 committee has presented recommendations to cover performance and compatibility for the wider variety of VHF communications equipment being installed. Existing technical standard order design standards for VHF communications equipment and for substitute equipment (AC 20-41A, Substitute Technical Standard Order Aircraft Equipment) are still applicable for specific systems and should be referred to for guidance.
+
+5. ACCEPTABLE MEANS OF COMPLIANCE. An acceptable means of compliance with the regulations referenced in paragraph 3, as they apply to the functioning of airborne VHF communications equipment provided for use under IFR conditions, is to satisfy the criteria set forth in Section 3 of RTCA Document DO-186, "Minimum Operational Performance Standards for Airborne Radio Communications Equipment Operating Within the Radio Frequency Range 117.975 to 137.000 MHz," dated January 20, 1984. This document may be examined at any Federal Aviation Administration regional office or purchased from: RTCA Secretariat, One McPherson Square, 1425 K Street, NW., Suite 500, Washington, DC 20005.
+
+Wilsoni Pullen
+
+William J. Sullivan
+
+Acting Deputy Director of Airworthiness
+
+[chunk 64a5ae0d-9b50-45ec-98b7-09733fed3f2e]
+Subject: AIRBORNE VHF COMMUNICATIONS EQUIPMENT INSTALLATIONS
+
+Date: 1/16/86
+
+Initiated by: AWS-120
+
+AC No: 20-67B
+
+Change:
+
+1. PURPOSE. This advisory circular (AC) sets forth one means, but not the only means, of demonstrating compliance with the airworthiness rules governing the functioning of airborne VHF communications equipment.
+
+2. CANCELLATION. AC 20-67A, Airborne VHF Communication System Installations, dated October 17, 1972, is cancelled.
+
+3. RELATED FEDERAL AVIATION REGULATION (FAR) SECTIONS. FAR Sections .1301 of FAR Parts 23, 25, 27, and 29; 25.1307(d), 29.1307(e); and .1309 of FAR Parts 25 and 29.
+
+4. BACKGROUND. Airborne VHF communications systems and equipment have become more complex over the last several years, using digital data applications and computerized equipment and control. There has also been an increase in the use of select calling and digital data link applications, in addition to mandatory air traffic control air-to-ground voice communication. To meet these developments, the Radio Technical Commission for Aeronautics (RTCA) SC-148 committee has presented recommendations to cover performance and compatibility for the wider variety of VHF communications equipment being installed. Existing technical standard order design standards for VHF communications equipment and for substitute equipment (AC 20-41A, Substitute Technical Standard Order Aircraft Equipment) are still applicable for specific systems and should be referred to for guidance.
+
+[chunk 695a062f-b505-4408-b3c7-04abf0e3f0be]
+5. ACCEPTABLE MEANS OF COMPLIANCE. An acceptable means of compliance with the regulations referenced in paragraph 3, as they apply to the functioning of airborne VHF communications equipment provided for use under IFR conditions, is to satisfy the criteria set forth in Section 3 of RTCA Document DO-186, "Minimum Operational Performance Standards for Airborne Radio Communications Equipment Operating Within the Radio Frequency Range 117.975 to 137.000 MHz," dated January 20, 1984. This document may be examined at any Federal Aviation Administration regional office or purchased from: RTCA Secretariat, One McPherson Square, 1425 K Street, NW., Suite 500, Washington, DC 20005.
+
+Wilsoni Pullen
+
+William J. Sullivan
+
+Acting Deputy Director of Airworthiness

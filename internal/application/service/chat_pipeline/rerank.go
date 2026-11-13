@@ -200,6 +200,10 @@ func (p *PluginRerank) OnEvent(ctx context.Context,
 		sr.Metadata["base_score"] = fmt.Sprintf("%.4f", base)
 		modelScore := rr.RelevanceScore
 		sr.Metadata["model_score"] = fmt.Sprintf("%.4f", modelScore)
+		// Retrieval scores from different query languages are not comparable.
+		if chatManage.CrossLanguageCandidates {
+			base = modelScore
+		}
 		sr.Score = compositeScore(sr, modelScore, base)
 
 		// Apply FAQ score boost if enabled

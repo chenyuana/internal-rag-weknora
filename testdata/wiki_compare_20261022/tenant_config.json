@@ -1,0 +1,17 @@
+[
+  {
+    "retrieval": {
+      "rrf_k": 60,
+      "rerank_top_k": 10,
+      "embedding_top_k": 50,
+      "rerank_model_id": "",
+      "rerank_threshold": 0.2,
+      "vector_threshold": 0.15,
+      "keyword_threshold": 0.3,
+      "rrf_vector_weight": 0.7,
+      "rrf_keyword_weight": 0.3
+    },
+    "conversation": null,
+    "memory": null
+  }
+]

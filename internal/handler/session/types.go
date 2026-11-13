@@ -50,16 +50,17 @@ type CreateKnowledgeQARequest struct {
 	AgentSourceTenantID   uint64                       `json:"agent_source_tenant_id,omitempty"`      // Optional disambiguator; backend still verifies the share relation
 	LocalBrowserEnabled   bool                         `json:"local_browser_enabled"`                 // Browser source
 	WebSearchEnabled      bool                         `json:"web_search_enabled"`                    // Whether web search is enabled for this request
-	SummaryModelID        string                       `json:"summary_model_id"`                      // Optional summary model ID for this request (overrides session default)
-	MCPServiceIDs         []string                     `json:"mcp_service_ids"`                       // Per-request MCP services selected via @mention
-	SkillNames            []string                     `json:"skill_names"`                           // Per-request Skills selected via @mention
-	TagIDs                []string                     `json:"tag_ids"`                               // @mentioned tag IDs (display/debug; scoped via MentionedItems)
-	MentionedItems        []MentionedItemRequest       `json:"mentioned_items"`                       // @mentioned knowledge bases and files
-	DisableTitle          bool                         `json:"disable_title"`                         // Whether to disable auto title generation
-	Images                []ImageAttachment            `json:"images"`                                // Attached images for multimodal chat
-	AttachmentUploads     []AttachmentUpload           `json:"attachment_uploads,omitempty"`          // Attached files (documents, audio, etc.)
-	AttachmentIDs         []string                     `json:"attachment_ids,omitempty"`              // Pre-uploaded session-scoped document IDs
-	Channel               string                       `json:"channel"`                               // Source channel: "web", "api", "im", etc.
+	CrossLanguageSearch   bool                         `json:"cross_language_search"`
+	SummaryModelID        string                       `json:"summary_model_id"`             // Optional summary model ID for this request (overrides session default)
+	MCPServiceIDs         []string                     `json:"mcp_service_ids"`              // Per-request MCP services selected via @mention
+	SkillNames            []string                     `json:"skill_names"`                  // Per-request Skills selected via @mention
+	TagIDs                []string                     `json:"tag_ids"`                      // @mentioned tag IDs (display/debug; scoped via MentionedItems)
+	MentionedItems        []MentionedItemRequest       `json:"mentioned_items"`              // @mentioned knowledge bases and files
+	DisableTitle          bool                         `json:"disable_title"`                // Whether to disable auto title generation
+	Images                []ImageAttachment            `json:"images"`                       // Attached images for multimodal chat
+	AttachmentUploads     []AttachmentUpload           `json:"attachment_uploads,omitempty"` // Attached files (documents, audio, etc.)
+	AttachmentIDs         []string                     `json:"attachment_ids,omitempty"`     // Pre-uploaded session-scoped document IDs
+	Channel               string                       `json:"channel"`                      // Source channel: "web", "api", "im", etc.
 	SuggestionAttribution *types.SuggestionAttribution `json:"suggestion_attribution,omitempty"`
 }
 

@@ -1,0 +1,508 @@
+[chunk 94a729d4-322e-4890-95f7-520108e64917]
+Subject: Protection of Aircraft Fuel Systems Against Vapor Ignition Caused by Lightning
+
+Date: 09/24/18
+
+AC No: 20-53C
+
+Initiated By: AIR-6B0
+
+[chunk b679b2be-871a-43df-85ef-fe5f6c966bca]
+Subject: Protection of Aircraft Fuel Systems Against Vapor Ignition Caused by Lightning
+
+Date: 09/24/18
+
+AC No: 20-53C
+
+Initiated By: AIR-6B0
+
+[chunk a786ab79-e20b-4a72-9e3d-4c1e52da1266]
+1 PURPOSE.
+
+1.1 This advisory circular (AC) provides applicants with guidance for obtaining Federal Aviation Administration (FAA) approval of compliance pursuant to title 14, Code of Federal Regulations (14 CFR) 23.954, 27.954, and 29.954, Fuel system lightning protection. This AC recommends how to protect an aircraft’s fuel system from lightning strikes that may ignite fuel vapors.
+
+1.2 For guidance on compliance pursuant to 14 CFR 25.954, Fuel system lightning protection, for transport category airplanes, see AC 25.954-1, Transport Airplane Fuel System Lightning Protection, dated September 6, 2018 (83 FR 47548, September 20, 2018).
+
+1.3 This AC is not mandatory and does not constitute a regulation. This AC describes an acceptable means, but not the only means, to obtain certification for fuel system lightning protection. However, if you use the means described in this AC, you must follow it in all important respects. The term “must” is used to indicate mandatory requirements when following the guidance in this AC. The term “should” is used when following the guidance as recommended, but not required to comply with this AC.
+
+[chunk 816bd3fe-ff22-4b00-8a65-cddf76de6a9c]
+1 PURPOSE.
+
+1.1 This advisory circular (AC) provides applicants with guidance for obtaining Federal Aviation Administration (FAA) approval of compliance pursuant to title 14, Code of Federal Regulations (14 CFR) 23.954, 27.954, and 29.954, Fuel system lightning protection. This AC recommends how to protect an aircraft’s fuel system from lightning strikes that may ignite fuel vapors.
+
+1.2 For guidance on compliance pursuant to 14 CFR 25.954, Fuel system lightning protection, for transport category airplanes, see AC 25.954-1, Transport Airplane Fuel System Lightning Protection, dated September 6, 2018 (83 FR 47548, September 20, 2018).
+
+1.3 This AC is not mandatory and does not constitute a regulation. This AC describes an acceptable means, but not the only means, to obtain certification for fuel system lightning protection. However, if you use the means described in this AC, you must follow it in all important respects. The term “must” is used to indicate mandatory requirements when following the guidance in this AC. The term “should” is used when following the guidance as recommended, but not required to comply with this AC.
+
+[chunk 5c63b448-3b47-4308-bbce-8b0241119bba]
+2 AUDIENCE.
+
+This AC affects persons and organizations who are seeking certification for fuel system lightning protection pursuant to §§ 23.954, 27.954, and 29.954.
+
+[chunk eca1364c-22fa-4965-8612-4bce2d170086]
+2 AUDIENCE.
+
+This AC affects persons and organizations who are seeking certification for fuel system lightning protection pursuant to §§ 23.954, 27.954, and 29.954.
+
+[chunk ac5f3715-f392-4753-9edb-7ef86fddf643]
+3 CHANGES.
+
+The purpose of this revision is to reference AC 25.954-1 for guidance on compliance pursuant to § 25.954.
+
+[chunk 877b1aae-369b-42da-9cde-ceded53fd77b]
+3 CHANGES.
+
+The purpose of this revision is to reference AC 25.954-1 for guidance on compliance pursuant to § 25.954.
+
+[chunk fa4ee949-be2b-4671-acf2-81544591ba02]
+4 CANCELLATION.
+
+This AC cancels AC 20-53B, Protection of Aircraft Fuel Systems Against Fuel Vapor Ignition Caused by Lightning, dated June 5, 2006.
+
+[chunk 285b5fe3-26a5-4845-bb0d-2bd450049f1c]
+4 CANCELLATION.
+
+This AC cancels AC 20-53B, Protection of Aircraft Fuel Systems Against Fuel Vapor Ignition Caused by Lightning, dated June 5, 2006.
+
+[chunk b9096e67-0398-4ae0-b25b-2848dbde383a]
+5 RELATED DOCUMENTS.
+
+5.1 FAA Regulations.
+
+Order copies of the 14 CFR sections referenced in this AC from the Superintendent of Documents, Government Printing Office, Washington, DC 20402-9325. Telephone (202) 512-1800; fax (202) 512-2250. You can also get copies from the Government Printing Office’s (GPO) CFR website at www.access.gpo.gov/cfr/.
+
+5.2 FAA ACs.
+
+Order copies of AC 20-136, Aircraft Electrical and Electronic System Lightning Protection; AC 20-155, Industry Documents to Support Aircraft Lightning Protection Certification; and AC 25.954-1 from the U.S. Department of Transportation, Subsequent Distribution Office, M-30, Ardmore East Business Center, 3341 Q 75th Avenue, Landover, MD 20795. Telephone (301) 322-5377; fax (301) 386-5394. You can also get copies from the FAA website at http://www.faa.gov/regulations\_policies/advisory\_circulars/.
+
+5.3 FAA Reports.
+
+Order DOT/FAA/CT-83/3, User’s Manual for AC 20-53A Protection of Aircraft Fuel Systems Against Fuel Vapor Ignition Due to Lightning; and DOT/FAA/CT-89/22, Aircraft Lightning Protection Handbook, from the National Technical Information Service, 5285 Port Royal Road, Springfield, VA 22161. Telephone (703) 605-6000; fax (703) 605-6900, website www.ntis.gov. You can also get copies from the FAA’s William J. Hughes Technical Center Reference and Research Library at http://actlibrary.tc.faa.gov/. On the website, select “Search Library Catalog” and then input the report number.
+
+[chunk aba642d3-aad1-4ae0-a1ce-f9b3eb518d33]
+5 RELATED DOCUMENTS.
+
+5.1 FAA Regulations.
+
+Order copies of the 14 CFR sections referenced in this AC from the Superintendent of Documents, Government Printing Office, Washington, DC 20402-9325. Telephone (202) 512-1800; fax (202) 512-2250. You can also get copies from the Government Printing Office’s (GPO) CFR website at www.access.gpo.gov/cfr/.
+
+5.2 FAA ACs.
+
+Order copies of AC 20-136, Aircraft Electrical and Electronic System Lightning Protection; AC 20-155, Industry Documents to Support Aircraft Lightning Protection Certification; and AC 25.954-1 from the U.S. Department of Transportation, Subsequent Distribution Office, M-30, Ardmore East Business Center, 3341 Q 75th Avenue, Landover, MD 20795. Telephone (301) 322-5377; fax (301) 386-5394. You can also get copies from the FAA website at http://www.faa.gov/regulations\_policies/advisory\_circulars/.
+
+5.3 FAA Reports.
+
+Order DOT/FAA/CT-83/3, User’s Manual for AC 20-53A Protection of Aircraft Fuel Systems Against Fuel Vapor Ignition Due to Lightning; and DOT/FAA/CT-89/22, Aircraft Lightning Protection Handbook, from the National Technical Information Service, 5285 Port Royal Road, Springfield, VA 22161. Telephone (703) 605-6000; fax (703) 605-6900, website www.ntis.gov. You can also get copies from the FAA’s William J. Hughes Technical Center Reference and Research Library at http://actlibrary.tc.faa.gov/. On the website, select “Search Library Catalog” and then input the report number.
+
+[chunk d53a77dc-ca70-4a6d-827c-a833d8e0bce1]
+6 SCOPE.
+
+6.1 You can apply this AC to both conventional fuel systems and those using advanced composite structures or other new technologies. This AC provides information on, and references to, lightning effects and verification methods.
+
+6.2 This AC addresses ignition hazards caused by lightning-related arcing, sparking, puncture, and induced transients on main and auxiliary fuel tanks, fuel tank components, and plumbing. This AC also addresses analog or digital electronic and electrical systems, which could lead to fuel vapor ignition in a fuel tank.
+
+Note: For information on how lightning affects electrical and electronic systems, see the current version of AC 20-136.
+
+6.3 You can also apply this AC when modifying fuel systems, for example, when adding tanks or other fuel system components. Since externally mounted tanks are often in lightning attachment zones, those tanks may be especially vulnerable to lightning hazards and must be adequately protected.
+
+[chunk 12081288-b30d-4b92-9be8-61b313de63b1]
+6 SCOPE.
+
+6.1 You can apply this AC to both conventional fuel systems and those using advanced composite structures or other new technologies. This AC provides information on, and references to, lightning effects and verification methods.
+
+6.2 This AC addresses ignition hazards caused by lightning-related arcing, sparking, puncture, and induced transients on main and auxiliary fuel tanks, fuel tank components, and plumbing. This AC also addresses analog or digital electronic and electrical systems, which could lead to fuel vapor ignition in a fuel tank.
+
+Note: For information on how lightning affects electrical and electronic systems, see the current version of AC 20-136.
+
+6.3 You can also apply this AC when modifying fuel systems, for example, when adding tanks or other fuel system components. Since externally mounted tanks are often in lightning attachment zones, those tanks may be especially vulnerable to lightning hazards and must be adequately protected.
+
+[chunk 3a10868e-e9f0-458c-aaeb-fb9f4c79d4da]
+7 DEFINITIONS.
+
+7.1 Attachment Point (or Strike Attachment): The point where the lightning flash contacts the aircraft.
+
+7.2 Carbon Fiber Composite: Composite material that has a matrix (metal, polymer, or ceramic) reinforced with carbon fibers.
+
+7.3 Charge Center: Area of high potential of electrical charge.
+
+7.4 Corona: Luminous discharge caused by an electrical potential difference between the aircraft and the surrounding atmosphere.
+
+7.5 Lightning Flash: The total lightning event consisting of one or more lightning strokes, plus intermediate or continuing currents.
+
+7.6 Lightning Strike: Attachment of the lightning flash to the aircraft.
+
+7.7 Lightning Strike Zones: Aircraft surface areas and structures that are susceptible to lightning attachment, dwell time, and current conduction.
+
+7.8 Lightning Stroke: Current surge occurring when lightning makes contact with the ground or another charge center.
+
+7.9 Streamer: Branch-like ionized path caused by a lightning strike or lightning strikes that are imminent.
+
+[chunk 1da85843-112b-4b1b-aa5b-9e6496e0ca63]
+7 DEFINITIONS.
+
+7.1 Attachment Point (or Strike Attachment): The point where the lightning flash contacts the aircraft.
+
+7.2 Carbon Fiber Composite: Composite material that has a matrix (metal, polymer, or ceramic) reinforced with carbon fibers.
+
+7.3 Charge Center: Area of high potential of electrical charge.
+
+7.4 Corona: Luminous discharge caused by an electrical potential difference between the aircraft and the surrounding atmosphere.
+
+7.5 Lightning Flash: The total lightning event consisting of one or more lightning strokes, plus intermediate or continuing currents.
+
+7.6 Lightning Strike: Attachment of the lightning flash to the aircraft.
+
+7.7 Lightning Strike Zones: Aircraft surface areas and structures that are susceptible to lightning attachment, dwell time, and current conduction.
+
+7.8 Lightning Stroke: Current surge occurring when lightning makes contact with the ground or another charge center.
+
+7.9 Streamer: Branch-like ionized path caused by a lightning strike or lightning strikes that are imminent.
+
+[chunk 6a166660-c7ba-44b3-bffc-4dac8e010162]
+8 LIGHTNING EFFECTS ON FUEL SYSTEMS.
+
+8.1 Lightning may strike aircraft flying in or near thunderstorms, and nearby lightning flashes may produce corona and streamer formations on the aircraft. Lightning can be a hazard to aircraft fuel systems if those systems are not properly designed, built, and maintained.
+
+8.2 The effects of lightning on aircraft can range from seemingly insignificant sparking at fasteners or joints to severe damage. If sparking occurs in a fuel vapor environment, it may ignite the fuel vapor and damage the aircraft.
+
+8.3 All or some of the lightning current may be conducted through fuel tanks or fuel system components. It is important to determine where the lightning current flows through the aircraft to allow for adequate design measures to protect the fuel system.
+
+Note: FAA Reports DOT/FAA/CT-83/3 and DOT/FAA/CT-89/22 provide guidance on determining lightning current flow through the aircraft and fuel system lightning protection techniques.
+
+[chunk ca573745-0bba-41e1-9d8b-6f16493eb116]
+8 LIGHTNING EFFECTS ON FUEL SYSTEMS.
+
+8.1 Lightning may strike aircraft flying in or near thunderstorms, and nearby lightning flashes may produce corona and streamer formations on the aircraft. Lightning can be a hazard to aircraft fuel systems if those systems are not properly designed, built, and maintained.
+
+8.2 The effects of lightning on aircraft can range from seemingly insignificant sparking at fasteners or joints to severe damage. If sparking occurs in a fuel vapor environment, it may ignite the fuel vapor and damage the aircraft.
+
+8.3 All or some of the lightning current may be conducted through fuel tanks or fuel system components. It is important to determine where the lightning current flows through the aircraft to allow for adequate design measures to protect the fuel system.
+
+Note: FAA Reports DOT/FAA/CT-83/3 and DOT/FAA/CT-89/22 provide guidance on determining lightning current flow through the aircraft and fuel system lightning protection techniques.
+
+8.4 Aircraft skin and fuel tanks are constructed of metals, low electrical conductivity composite materials, and electrically insulating materials. These materials react differently when subjected to a lightning strike. Metals and carbon fiber composite materials (CFC) offer a high degree of electric field shielding and some magnetic field shielding. Electrically insulating materials, however, offer little or no electric or magnetic field shielding. For this reason, lightning does not have to come into direct contact with fuel systems to pose a hazard. Lightning-induced arcing, sparking, or corona may be sufficient to ignite fuel.
+
+8.5 Damage from lightning strikes to non-conducting materials, such as fiberglass and aramid-reinforced composites, can be more severe than damage to metal surfaces. A lightning strike can penetrate non-conducting materials easier and ignite fuel vapors.
+
+[chunk a14c7fd8-5ccd-4c60-9600-613ac377e511]
+8.4 Aircraft skin and fuel tanks are constructed of metals, low electrical conductivity composite materials, and electrically insulating materials. These materials react differently when subjected to a lightning strike. Metals and carbon fiber composite materials (CFC) offer a high degree of electric field shielding and some magnetic field shielding. Electrically insulating materials, however, offer little or no electric or magnetic field shielding. For this reason, lightning does not have to come into direct contact with fuel systems to pose a hazard. Lightning-induced arcing, sparking, or corona may be sufficient to ignite fuel.
+
+8.5 Damage from lightning strikes to non-conducting materials, such as fiberglass and aramid-reinforced composites, can be more severe than damage to metal surfaces. A lightning strike can penetrate non-conducting materials easier and ignite fuel vapors.
+
+[chunk b2519e65-6cae-4f15-a647-8c6175e6d7da]
+9 FUEL SYSTEM LIGHTNING PROTECTION.
+
+9.1 To protect fuel systems from lightning, you should perform one, or a combination of, the following steps:
+
+9.1.1 Rid the fuel tank and fuel system of ignition sources. This is the preferred approach. To achieve this, you must specifically design for ignition source prevention, as thousands of amperes of current are conducted, and yet a spark of only about two-tenths of a millijoule, released inside a fuel tank, can ignite fuel vapor; or
+
+9.1.2 Reduce fuel tank flammability to ensure the fuel tank atmosphere will not support combustion; or
+
+9.1.3 Design the fuel tank so that fuel tank pressures do not exceed structural design limits if fuel ignition occurs.
+
+Note: FAA Reports DOT/FAA/CT-83/3 and DOT/FAA/CT-89/22 provide detailed fuel system lightning protection techniques.
+
+9.2 When designing the fuel system lightning protection, consider the following factors:
+
+9.2.1 Flammable fuel vapor may exist in any part of the fuel system;
+
+9.2.2 Streamers or lightning strikes may ignite flammable vapors in vent outlets;
+
+9.2.3 Streamers or corona can contain enough energy to serve as an ignition source;
+
+9.2.4 Strike attachment to poorly conducting parts may result in energy levels sufficient to induce sparks and arc inside the fuel tank, and could ignite fuel vapors;
+
+9.2.5 Strike attachments may puncture the skin, heat fuel tank skins, or cause arcing in fuel tank structures;
+
+9.2.6 Lightning currents flowing in the internal components of the fuel system (such as fuel and vent lines, conduits, or internal structural parts) may produce electrical sparks and ignite fuel vapors;
+
+9.2.7 Lightning currents flowing in the airframe produce voltage differences between adjacent parts or structure. The lightning electromagnetic fields can induce transient voltage and current in the electrical wiring and components of the fuel system; and
+
+9.2.8 Strike attachment may weaken adhesives/structural bonds or mechanical fasteners enough to affect the integrity of the fuel tank.
+
+9.3 Composite materials such as CFCs have lower electrical conductivity than aluminum. When used to construct fuel systems, CFCs often require design features different from those required on metallic structures to provide an equivalent level of protection. Using adhesive bonding in the construction of CFC to build fuel systems may decrease lightning current conductivity. Decreased conductivity affects both metallic and non-metallic structures such as rubber or fiberglass. In composite structures, lightning-induced voltage and current in electrical wiring in the fuel system and other electrically conducting parts may be higher and have different waveforms than in conventional aluminum airframes.
+
+9.4 Parts of the fuel system are typically found throughout much of an aircraft and occupy considerable volume. These parts include the fuel tanks themselves and other areas that may contain fuel vapors. Protect all the following parts from lightning strikes when designing the aircraft:
+
+9.4.1 Vent outlets,
+
+9.4.2 Metal fittings inside fuel tanks,
+
+9.4.3 Fuel filler caps and access doors,
+
+9.4.4 Drain plugs,
+
+9.4.5 Tank skins,
+
+9.4.6 Fuel transfer lines inside and outside the tanks,
+
+9.4.7 Electrical bonding jumpers between components in a tank,
+
+9.4.8 Mechanical fasteners inside tanks, and
+
+9.4.9 Electrical and electronic fuel system components and wiring.
+
+[chunk e30ab606-7bf9-469c-b791-534113e07994]
+9 FUEL SYSTEM LIGHTNING PROTECTION.
+
+9.1 To protect fuel systems from lightning, you should perform one, or a combination of, the following steps:
+
+9.1.1 Rid the fuel tank and fuel system of ignition sources. This is the preferred approach. To achieve this, you must specifically design for ignition source prevention, as thousands of amperes of current are conducted, and yet a spark of only about two-tenths of a millijoule, released inside a fuel tank, can ignite fuel vapor; or
+
+9.1.2 Reduce fuel tank flammability to ensure the fuel tank atmosphere will not support combustion; or
+
+9.1.3 Design the fuel tank so that fuel tank pressures do not exceed structural design limits if fuel ignition occurs.
+
+Note: FAA Reports DOT/FAA/CT-83/3 and DOT/FAA/CT-89/22 provide detailed fuel system lightning protection techniques.
+
+9.2 When designing the fuel system lightning protection, consider the following factors:
+
+9.2.1 Flammable fuel vapor may exist in any part of the fuel system;
+
+9.2.2 Streamers or lightning strikes may ignite flammable vapors in vent outlets;
+
+9.2.3 Streamers or corona can contain enough energy to serve as an ignition source;
+
+9.2.4 Strike attachment to poorly conducting parts may result in energy levels sufficient to induce sparks and arc inside the fuel tank, and could ignite fuel vapors;
+
+9.2.5 Strike attachments may puncture the skin, heat fuel tank skins, or cause arcing in fuel tank structures;
+
+[chunk 00677189-236c-4033-91a3-f621be2fff65]
+10 STEPS TO DEMONSTRATE COMPLIANCE.
+
+You may demonstrate compliance with the applicable certification requirements by following the steps below:
+
+10.1 Create a Certification Plan.
+
+Describe the fuel system lightning protection approach and analytical procedures or qualification tests planned to show the protection effectiveness of your proposed aircraft fuel lightning protection. For designs consisting of unique characteristics or materials, the FAA may impose special conditions, issue papers, or other regulations to show compliance with the certification requirements. The compliance plan should include the following:
+
+10.1.1 Determine the lightning strike zones. Determine the aircraft surfaces, or zones, where lightning strike attachment will likely occur to your particular design, and the portions of the airframe through which currents may flow between these attachment points.
+
+10.1.2 Determine the lightning environment. Identify the particular aircraft components that will be in each lightning strike zone, and determine whether certain components should be located elsewhere.
+
+Note: AC 20-155A offers methods you can use in determining lightning strike zones and the aircraft lightning environment.
+
+10.1.3 Identify possible ignition sources. Identify systems and components that might ignite fuel vapor.
+
+10.1.4 Set protection criteria. Set lightning protection pass/fail criteria for items you are evaluating.
+
+10.2 Verify Protection Adequacy.
+
+To verify the adequacy of the protection designs, perform simulated lightning tests, perform analysis, or compare the protection design with previously proven protection designs. When analyzing protection designs, you should also identify margins to account for assumptions made in the analytical techniques. Compliance is verified by determining that the fuel system can tolerate the applicable lightning environments. If the acceptance criteria are not met, modifications should be made to the design. When your intended means of compliance includes tests, you should do the following:
+
+10.2.1 In your test plans, describe:
+
+10.2.1.1 The production or test articles,
+
+10.2.1.2 Production or test article drawings as required,
+
+10.2.1.3 Installation procedures for the product,
+
+10.2.1.4 Applicable lightning zones,
+
+10.2.1.5 Test voltage or current waveforms used for your lightning simulations,
+
+10.2.1.6 Spark detection methods,
+
+10.2.1.7 Pass/fail criteria, and
+
+10.2.1.8 Schedules and locations of proposed tests.
+
+10.2.2 Obtain FAA acceptance of your test plan.
+
+10.2.3 Obtain FAA conformity of the test articles and installation conformity of applicable portions of the test setup.
+
+10.2.4 Schedule dates for the FAA to witness tests, as coordinated.
+
+10.2.5 Submit test reports describing all results for FAA review and approval.
+
+[chunk 76019c45-68ea-44e9-8d63-3b28dd32a1d1]
+9.2.6 Lightning currents flowing in the internal components of the fuel system (such as fuel and vent lines, conduits, or internal structural parts) may produce electrical sparks and ignite fuel vapors;
+
+9.2.7 Lightning currents flowing in the airframe produce voltage differences between adjacent parts or structure. The lightning electromagnetic fields can induce transient voltage and current in the electrical wiring and components of the fuel system; and
+
+9.2.8 Strike attachment may weaken adhesives/structural bonds or mechanical fasteners enough to affect the integrity of the fuel tank.
+
+9.3 Composite materials such as CFCs have lower electrical conductivity than aluminum. When used to construct fuel systems, CFCs often require design features different from those required on metallic structures to provide an equivalent level of protection. Using adhesive bonding in the construction of CFC to build fuel systems may decrease lightning current conductivity. Decreased conductivity affects both metallic and non-metallic structures such as rubber or fiberglass. In composite structures, lightning-induced voltage and current in electrical wiring in the fuel system and other electrically conducting parts may be higher and have different waveforms than in conventional aluminum airframes.
+
+9.4 Parts of the fuel system are typically found throughout much of an aircraft and occupy considerable volume. These parts include the fuel tanks themselves and other areas that may contain fuel vapors. Protect all the following parts from lightning strikes when designing the aircraft:
+
+[chunk d3f659b1-ffe5-4257-b0c1-c6a213a8142f]
+11 MAINTAINING FUEL SYSTEM LIGHTNING PROTECTION.
+
+11.1 Some fuel systems or equipment require dedicated protection devices or specific techniques to protect them. For these fuel systems and equipment, you should define requirements for maintaining and monitoring the lightning protection devices or techniques to ensure their integrity remains intact. You should also define the aircraft dispatch requirements, limitations, or both when a protection device has degraded.
+
+11.2 Some fuel system components may be protected through the use of shield and connector electrical bonding, sealing materials, grounding jumpers, and structural foil shield liners. When using these types of devices, you must specify in the instructions for continued airworthiness the procedures you will use to prevent these protection items from remaining on the aircraft in a degraded condition, or describe how you will prevent their accidental removal during normal aircraft maintenance. Degradation or removal of these items could cause the system to lose its designed protection integrity.
+
+11.3 Where possible, do not use devices susceptible to corrosion, fretting, flexing cycles, or other life-limiting design features. However, when using these types of devices, you must publish their replacement cycles in your instructions for continued airworthiness manual. When using devices such as surge protectors, you must identify the number of lightning strikes each device can encounter before it must be replaced.
+
+Note: FAA Report DOT/FAA/CT-89/22 provides guidance on surge protectors and their maintenance.
+
+11.4 Define the inspection techniques and intervals necessary to ensure the continued integrity of the lightning protection features. Examples of inspection techniques include built-in test equipment, resistance measurements, continuity checks of the entire system, and general visual or detailed visual inspections for damage, wear, or corrosion.
+
+[chunk 7d843d19-dfe4-4d99-b1df-716669ef77d9]
+9.4.1 Vent outlets,
+
+9.4.2 Metal fittings inside fuel tanks,
+
+9.4.3 Fuel filler caps and access doors,
+
+9.4.4 Drain plugs,
+
+9.4.5 Tank skins,
+
+9.4.6 Fuel transfer lines inside and outside the tanks,
+
+9.4.7 Electrical bonding jumpers between components in a tank,
+
+9.4.8 Mechanical fasteners inside tanks, and
+
+9.4.9 Electrical and electronic fuel system components and wiring.
+
+[chunk f6af1d96-3516-46fd-8001-646732a3ef72]
+12 WHERE TO FIND THIS AC.
+
+You may find this AC at http://www.faa.gov/regulations\_policies/advisory\_circulars/.
+
+If you have any suggestions for improvements or changes, you may use the template provided at the end of this AC.
+
+Source image on page 8; no OCR transcription available.
+
+![figure p8](http://localhost:8080/api/v1/ingestion/jobs/6528a637bfd749f9aeda2e3f99cb0bec/assets/5498ff58bc9b9cad673e)
+
+Dr. Michael C. Romanowski
+
+Director, Policy and Innovation Division
+
+Aircraft Certification Service
+
+Advisory Circular Feedback
+
+If you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVS-AIR-DMO@faa.gov, or (2) faxing it to (202) 267-1813.
+
+Subject: AC 20-53C, Protection of Aircraft Fuel Systems Against Vapor Ignition Caused by Lightning
+
+Please check all appropriate line items:
+
+☐ An error (procedural or typographical) has been noted in paragraph \_\_\_\_\_\_\_ on page
+
+☐ Recommend paragraph \_\_\_\_\_\_\_ on page \_\_\_\_\_\_\_ be changed as follows:
+
+☐ In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)
+
+☐ Other comments:
+
+☐ I would like to discuss the above. Please contact me.
+
+I would like to discuss the above. Please contact me.
+
+Submitted by: Date:
+
+Telephone Number: Email:
+
+[chunk 54c52936-23bc-4df1-9238-781dd963c894]
+10 STEPS TO DEMONSTRATE COMPLIANCE.
+
+You may demonstrate compliance with the applicable certification requirements by following the steps below:
+
+10.1 Create a Certification Plan.
+
+Describe the fuel system lightning protection approach and analytical procedures or qualification tests planned to show the protection effectiveness of your proposed aircraft fuel lightning protection. For designs consisting of unique characteristics or materials, the FAA may impose special conditions, issue papers, or other regulations to show compliance with the certification requirements. The compliance plan should include the following:
+
+10.1.1 Determine the lightning strike zones. Determine the aircraft surfaces, or zones, where lightning strike attachment will likely occur to your particular design, and the portions of the airframe through which currents may flow between these attachment points.
+
+10.1.2 Determine the lightning environment. Identify the particular aircraft components that will be in each lightning strike zone, and determine whether certain components should be located elsewhere.
+
+Note: AC 20-155A offers methods you can use in determining lightning strike zones and the aircraft lightning environment.
+
+10.1.3 Identify possible ignition sources. Identify systems and components that might ignite fuel vapor.
+
+10.1.4 Set protection criteria. Set lightning protection pass/fail criteria for items you are evaluating.
+
+10.2 Verify Protection Adequacy.
+
+[chunk db70cf9c-8a6e-491c-97f3-bae4598e0bbe]
+To verify the adequacy of the protection designs, perform simulated lightning tests, perform analysis, or compare the protection design with previously proven protection designs. When analyzing protection designs, you should also identify margins to account for assumptions made in the analytical techniques. Compliance is verified by determining that the fuel system can tolerate the applicable lightning environments. If the acceptance criteria are not met, modifications should be made to the design. When your intended means of compliance includes tests, you should do the following:
+
+10.2.1 In your test plans, describe:
+
+10.2.1.1 The production or test articles,
+
+10.2.1.2 Production or test article drawings as required,
+
+10.2.1.3 Installation procedures for the product,
+
+10.2.1.4 Applicable lightning zones,
+
+10.2.1.5 Test voltage or current waveforms used for your lightning simulations,
+
+10.2.1.6 Spark detection methods,
+
+10.2.1.7 Pass/fail criteria, and
+
+10.2.1.8 Schedules and locations of proposed tests.
+
+10.2.2 Obtain FAA acceptance of your test plan.
+
+10.2.3 Obtain FAA conformity of the test articles and installation conformity of applicable portions of the test setup.
+
+10.2.4 Schedule dates for the FAA to witness tests, as coordinated.
+
+10.2.5 Submit test reports describing all results for FAA review and approval.
+
+[chunk 4a7cfc06-e9e3-4533-b172-266f77c0a538]
+11 MAINTAINING FUEL SYSTEM LIGHTNING PROTECTION.
+
+11.1 Some fuel systems or equipment require dedicated protection devices or specific techniques to protect them. For these fuel systems and equipment, you should define requirements for maintaining and monitoring the lightning protection devices or techniques to ensure their integrity remains intact. You should also define the aircraft dispatch requirements, limitations, or both when a protection device has degraded.
+
+11.2 Some fuel system components may be protected through the use of shield and connector electrical bonding, sealing materials, grounding jumpers, and structural foil shield liners. When using these types of devices, you must specify in the instructions for continued airworthiness the procedures you will use to prevent these protection items from remaining on the aircraft in a degraded condition, or describe how you will prevent their accidental removal during normal aircraft maintenance. Degradation or removal of these items could cause the system to lose its designed protection integrity.
+
+11.3 Where possible, do not use devices susceptible to corrosion, fretting, flexing cycles, or other life-limiting design features. However, when using these types of devices, you must publish their replacement cycles in your instructions for continued airworthiness manual. When using devices such as surge protectors, you must identify the number of lightning strikes each device can encounter before it must be replaced.
+
+Note: FAA Report DOT/FAA/CT-89/22 provides guidance on surge protectors and their maintenance.
+
+[chunk 9696d0f9-73e6-4682-9fce-76db1d061c89]
+11.4 Define the inspection techniques and intervals necessary to ensure the continued integrity of the lightning protection features. Examples of inspection techniques include built-in test equipment, resistance measurements, continuity checks of the entire system, and general visual or detailed visual inspections for damage, wear, or corrosion.
+
+[chunk 599ed022-b08b-47a5-8f1b-ef7cb24eb007]
+12 WHERE TO FIND THIS AC.
+
+You may find this AC at http://www.faa.gov/regulations\_policies/advisory\_circulars/.
+
+If you have any suggestions for improvements or changes, you may use the template provided at the end of this AC.
+
+[chunk eacf5254-73d0-46d7-94f7-b26c85a4b14d]
+Source image on page 8; no OCR transcription available.
+
+![figure p8](http://localhost:8080/api/v1/ingestion/jobs/6528a637bfd749f9aeda2e3f99cb0bec/assets/5498ff58bc9b9cad673e)
+
+[chunk 06cc5657-9a54-4cff-b5f4-18a5d62ac32b]
+Dr. Michael C. Romanowski
+
+Director, Policy and Innovation Division
+
+Aircraft Certification Service
+
+Advisory Circular Feedback
+
+If you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVS-AIR-DMO@faa.gov, or (2) faxing it to (202) 267-1813.
+
+Subject: AC 20-53C, Protection of Aircraft Fuel Systems Against Vapor Ignition Caused by Lightning
+
+Please check all appropriate line items:
+
+☐ An error (procedural or typographical) has been noted in paragraph \_\_\_\_\_\_\_ on page
+
+☐ Recommend paragraph \_\_\_\_\_\_\_ on page \_\_\_\_\_\_\_ be changed as follows:
+
+☐ In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)
+
+☐ Other comments:
+
+☐ I would like to discuss the above. Please contact me.
+
+I would like to discuss the above. Please contact me.
+
+Submitted by: Date:
+
+Telephone Number: Email:

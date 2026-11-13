@@ -1,0 +1,42 @@
+## 结论
+
+**不成立。** 这个推论包含两个错误前提：①“退化模式能维持基本姿态显示”并不等于“能驱动自动驾驶、HUD、SVS”；②多型号批准（AML-STC）从来不是免于逐型号证实的通道，它对涉及控制输入的系统还有额外限制。
+
+## 一、退化模式的定位：仅支持“基本姿态与正控制”
+
+TSO-C201 的退化模式，是在 AHRS 部分失效或失去辅助源时，仍然提供基本姿态性能，其目的是使机组“even under instrument meteorological conditions (IMC), to maintain positive control of the aircraft”<kb doc="AC_20-181.pdf" chunk_id="c1185200-e52d-4f2f-803d-2893f21fdd2d" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。RTCA DO-334 指出，该模式可支持巡航、爬升、下降、等待与仪表进近，但“the degraded mode may not be acceptable for autopilot operation or certain flight procedures”<kb doc="AC_20-181.pdf" chunk_id="0af7475e-960e-47b5-b3fa-7f4a37e550b0" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="0e5793bf-2ca3-4ecf-a037-f1b63585b48f" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+
+§3.3 的表述更直接：退化模式性能是**为支持主姿态、航向、转弯率与侧滑指示而定义**的；对其他应用必须评估其适用性，因为“it may not be sufficient for higher performance applications, such as an autopilot, head-up display (HUD), or a synthetic vision system (SVS) display. **If the analysis shows the degraded mode is not sufficient for other aircraft applications, ensure the degraded mode does not drive those particular aircraft applications**”<kb doc="AC_20-181.pdf" chunk_id="7511ef79-5b06-4d5b-b082-d7c36c585384" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="91d7c971-818c-459d-ab20-b994c5631fde" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+
+这意味着：默认做法是“评估—若不足则不驱动（即断开/抑制）”，而不是“能显示姿态就继续工作”。
+
+## 二、逐项判断
+
+| 应用 | 能否沿用退化模式 | 关键依据 |
+|---|---|---|
+| 主姿态、航向、转弯与侧滑显示 | 可以（这是设计目的） | <kb doc="AC_20-181.pdf" chunk_id="7511ef79-5b06-4d5b-b082-d7c36c585384" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /> |
+| 自动驾驶（AP） | 原则上不行，除非另有演示；涉及控制输入，须逐型号设计与试验 | <kb doc="AC_20-181.pdf" chunk_id="0af7475e-960e-47b5-b3fa-7f4a37e550b0" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="ae2d253c-d8c2-498f-80d4-19b224385159" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /> |
+| HUD | 需更高精度姿态类别；必须核对接口系统要求 | <kb doc="AC_20-181.pdf" chunk_id="ccda93b9-09e9-4a0e-85a8-dcc81449eb67" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="3006473a-1abc-40fe-887f-7f28f95b26c1" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /> |
+| SVS | 同属 §3.3 列举的“更高性能应用”，须证明退化模式足够，否则不得驱动 | <kb doc="AC_20-181.pdf" chunk_id="91d7c971-818c-459d-ab20-b994c5631fde" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /> |
+| EFVS / FMS 集成 | 航向类别可能要求更高；H10/H11 仅限磁异常时短期使用 | <kb doc="AC_20-181.pdf" chunk_id="77a0777c-eb62-42f1-a1b2-cca8dab19ea9" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="c180bb8a-3b80-456b-a835-827d4268a00a" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /> |
+
+补充约束：退化模式面向较小、较低性能的飞机（如 Part 23 与“non-appendix B”Part 27），**不得**作为减少所需姿态仪表数量的依据；安装手册如规定飞行包线或时间限制，必须写入飞行手册；该模式用于非正常状态，在地面（初始起动或发动机起动后）不得启用<kb doc="AC_20-181.pdf" chunk_id="bab7be2e-7ec5-463b-9165-bf12c335ab61" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="93982b30-9ed8-48d4-bd24-aee046d4d13a" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="1a70e384-cab9-488f-be72-e92d769611e6" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。操作说明还必须写明“which system applications will be lost (e.g., autopilot)”以及退化模式下可执行的机动限制<kb doc="AC_20-181.pdf" chunk_id="3a2e542a-2c45-454d-bd86-8adc42cc1349" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="fde02d4a-20cf-4447-b868-a8bcf7017f40" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+
+## 三、多型号批准并不消除逐型号验证
+
+1. **AML-STC 的定义本身就带条件**：它是把一组符合性数据（型号设计数据与证实性数据）作为“baseline data”适用于多个机型的方法；适用前提是“installations that are identical or similar and that share baseline data between the models”；一旦型号间安装差异导致相似性与基线数据无法建立，“AML-STC is not the proper method of approval”<kb doc="AC_20-180.pdf" chunk_id="0924030b-22fa-4924-a2af-2d6ee499fbba" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="fe1a6262-c9c1-47c6-b31d-ea39b67c2db2" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="4fae9143-7d3a-401c-ab39-ed30797e04bd" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+2. **明确规定不是一揽子批准**：对每个新增机型仍需证实；“The AML-STC is not meant to be a blanket approval by allowing additional models without further substantiation”；与既有批准机型存在差异时，还须补充证实以覆盖这些差异<kb doc="AC_20-180.pdf" chunk_id="0b7835d6-504d-4665-816e-3b15cb3fb84d" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="54cefa7a-b21f-45f0-897e-6cb10848502a" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+3. **逐型号项目**：受影响区域的认证基础与修正案水平“is established for each model”；飞行手册补充按 §21.5 逐个机型适用<kb doc="AC_20-180.pdf" chunk_id="d11310b2-0451-4004-b8f0-ac873322592f" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />；检查单要求对清单上每个取证类别都表明符合，且列名机型须共享同一基线数据，差异处须恰当注明<kb doc="AC_20-180.pdf" chunk_id="f77bfb0e-49de-4d41-96fb-c135fb00ee44" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="88e5e757-9bc5-4b43-bf18-a5b645b2278b" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+4. **对“直接控制航空器的系统”的特别警示**——这正是自动驾驶的情形：“autopilot installations or similar systems that involve control inputs may require careful design installation, and testing on each proposed model **regardless of baseline data shared between them**”，并可能有序列号特定的要求需逐案评估<kb doc="AC_20-180.pdf" chunk_id="d11310b2-0451-4004-b8f0-ac873322592f" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="ae2d253c-d8c2-498f-80d4-19b224385159" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="c60aa1f5-d6db-4ce3-88fc-0073a2b8feeb" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+5. **类别限制**：AML-STC 只覆盖同一类别取证的航空器，例如 Part 23 的 AML-STC 不能包含 Part 25/27/29 的航空器<kb doc="AC_20-180.pdf" chunk_id="466ab8b6-2757-4cf0-8bc3-1ca8083532d6" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="0308de12-f868-474a-9643-d1ada865347d" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+6. **后续安装仍须演示退化模式性能**：存在独特飞行包线或运行条件时须演示；可用分析时也须确保其安全执行预期功能且不显著影响机组工作负荷与操纵能力<kb doc="AC_20-181.pdf" chunk_id="17cf986d-37e1-487a-85bf-dc60f1d87aba" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="c2e2113f-5474-4dc8-a554-7efa9c1491df" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。退化模式的试验方式也与触发类型相关：可在飞行中禁用者（如拔断路器）应做飞行试验，不可在飞行中评估者可用分析或仿真，但须覆盖正常 IFR 机动与机组控制能力<kb doc="AC_20-181.pdf" chunk_id="da32e89d-40dd-4727-bd65-2bd44cd229aa" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="ce1239f6-fd35-4a4b-844e-963159620399" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+
+## 四、对本案的具体判断
+
+- “让 AP/HUD/SVS 在退化模式下继续工作”须**逐项**证明退化模式满足该应用的性能与适航要求；否则设计上必须禁止退化模式驱动这些应用（例如自动驾驶自动断开、HUD/SVS 抑制或降级显示），并在 A/RFMS 与操作说明中写明丧失的功能<kb doc="AC_20-181.pdf" chunk_id="91d7c971-818c-459d-ab20-b994c5631fde" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="3a2e542a-2c45-454d-bd86-8adc42cc1349" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="fde02d4a-20cf-4447-b868-a8bcf7017f40" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+- 即便退化模式本身在某一机型上通过评估，多型号批准也不能替代：逐型号的基线数据适用性确立、差异补充证实、FMS 逐型号适用；自动驾驶这类控制输入系统更是“regardless of baseline data”须逐型号设计安装与试验<kb doc="AC_20-180.pdf" chunk_id="466ab8b6-2757-4cf0-8bc3-1ca8083532d6" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="d11310b2-0451-4004-b8f0-ac873322592f" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-180.pdf" chunk_id="ae2d253c-d8c2-498f-80d4-19b224385159" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+- 若拟将同一变更扩展到不同类别（如固定翼与旋翼机），连一份 AML-STC 都不可行，须按类别分别取证<kb doc="AC_20-180.pdf" chunk_id="0308de12-f868-474a-9643-d1ada865347d" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />。
+
+## 五、资料界限
+
+AC 20-181 未给出 HUD、SVS、自动驾驶的具体最低性能判据，只要求“参照接口系统的姿态/航向性能与适航要求”并确保安装满足之<kb doc="AC_20-181.pdf" chunk_id="3006473a-1abc-40fe-887f-7f28f95b26c1" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" /><kb doc="AC_20-181.pdf" chunk_id="c180bb8a-3b80-456b-a835-827d4268a00a" kb_id="ec1ebcc3-6d50-46d6-8a64-5444dce0962e" />；这些判据需查相应 TSO/接口系统规范。检索内容中不存在“多型号批准可免除逐型号验证”的任何条款。相关背景页：[[concept/ahrs-degraded-mode|AHRS退化模式]]、[[concept/tso-c201-category-coding-and-applications|TSO-C201类别编码与应用]]、[[concept/aml-stc|AML-STC]]。

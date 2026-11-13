@@ -1,0 +1,2655 @@
+{
+  "num": "017",
+  "query": "AC 25.621-1 的签发日期？",
+  "session": "4391a2e7-7533-41e0-a413-ca7c9f754512",
+  "answer": "AC 25.621-1《Casting Factors》（铸造系数）的签发日期为 **2014年10月6日**（原文标注为 “Date: 10/06/14”）。<kb doc=\"AC_25.621-1.pdf\" chunk_id=\"75e018dc-d4a9-4c5c-932c-9301dddec0a2\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n该咨询通告由 FAA 运输类飞机审定服务部门（Aircraft Certification Service, Transport Airplane Directorate）发布，签发人为 Jeffrey E. Duven，发起单位为 ANM-1 15。<kb doc=\"AC_25.621-1.pdf\" chunk_id=\"75e018dc-d4a9-4c5c-932c-9301dddec0a2\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n说明：原文日期采用美式写法“月/日/年”，即 10/06/14 对应 2014 年 10 月 6 日。",
+  "references": [
+    {
+      "id": "75e018dc-d4a9-4c5c-932c-9301dddec0a2",
+      "content": "Advisory Circular\n\n0\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Casting Factors\n\nDate: 10/06/14\n\nInitiated By: ANM-1 15\n\nAC No: 25.621-1\n\nThis advisory circular describes an acceptable means for showing compliance with the requirements of§ 25.621, Castingfactors, of Title 14, Code of Federal Regulations part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.\n\nIf you have suggestions for improving this AC, you may use the feedback form at the end of this AC.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n3 Related Regulations....1   \n4 Definitions....2   \n4.1 Casting....2   \n4.2 Critical Casting....2   \n4.3 Premium Casting Process....2   \n4.4 Prolongation....2   \n4.5 Test Casting....2   \n5 Background....2   \n5.1 Regulatory Background....2   \n5.2 Application of Special Factors of Safety....3   \n6 General Guidance for Use of Casting Factors....3   \n6.1 Factors of Safety....3   \n6.2 Inspections....4   \n6.3 Static Testing....4   \n6.4 Rework of Castings....4   \n7 Premium Casting Process....4   \n7.1 General....5   \n7.2 One Means of Qualification for Casting Process....5   \n7.3 Proof of Product....8   \n7.4 Monitoring the Process....10   \n7.5 Modifications to the Casting Design, Material, and Process....10\n\nTables\n\nPage Table 1. Recommended Verification Testing.... 11\n\n1 PURPOSE.\n\nThis advisory circular (AC) describes an acceptable means for showing compliance with the requirements of § 25.621, Casting factors, of Title 14, Code of Federal Regulations (14 CFR) part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.",
+      "knowledge_id": "535c28b0-5f2f-4f9b-8ee9-09c3734f5708",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.621-1.pdf",
+      "start_at": 0,
+      "end_at": 1507,
+      "seq": 0,
+      "score": 1,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "ab88368b3e4c6fef14ecce4b5f7280f4ba876d4de7c3f75ae1094d23b98f322b",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "60eed9b93f35535b83f7",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3a\\3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070\\source.pdf",
+        "internal_rag_source_sha256": "3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070",
+        "kept_by": "document_header",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "54d01544-3de9-48ff-8f5e-f55a95ceff64",
+      "image_info": "",
+      "knowledge_filename": "AC_25.621-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "Advisory Circular\n\n0\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Casting Factors\n\nDate: 10/06/14\n\nInitiated By: ANM-1 15\n\nAC No: 25.621-1\n\nThis advisory circular describes an acceptable means for showing compliance with the requirements of§ 25.621, Castingfactors, of Title 14, Code of Federal Regulations part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.\n\nIf you have suggestions for improving this AC, you may use the feedback form at the end of this AC.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n3 Related Regulations....1   \n4 Definitions....2   \n4.1 Casting....2   \n4.2 Critical Casting....2   \n4.3 Premium Casting Process....2   \n4.4 Prolongation....2   \n4.5 Test Casting....2   \n5 Background....2   \n5.1 Regulatory Background....2   \n5.2 Application of Special Factors of Safety....3   \n6 General Guidance for Use of Casting Factors....3   \n6.1 Factors of Safety....3   \n6.2 Inspections....4   \n6.3 Static Testing....4   \n6.4 Rework of Castings....4   \n7 Premium Casting Process....4   \n7.1 General....5   \n7.2 One Means of Qualification for Casting Process....5   \n7.3 Proof of Product....8   \n7.4 Monitoring the Process....10   \n7.5 Modifications to the Casting Design, Material, and Process....10\n\nTables\n\nPage Table 1. Recommended Verification Testing.... 11",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "ce3dda00-8840-4a58-ab97-2480e77f6a83",
+      "content": "5 BACKGROUND.\n\n5.1 Regulatory Background.\n\n5.1.1 The airworthiness standards of 14 CFR part 25 relative to transport category airplanes require classification of structural castings as either “critical” or “non-critical.” Depending on classification, the current standards specify the accomplishment of certain inspection and test requirements, and the application of special factors of safety for ultimate strength and deformation.\n\n5.1.2 The original requirements specified in § 25.621, Casting factors, stated that critical castings in structural applications must have a minimum casting factor of 1.25, which was to be applied in addition to the limit load factor of safety required by § 25.303, Factor of safety. Those requirements were in effect for many years, having been carried forward in 1964 from Part 4b of the Civil Air Regulations (CAR 4b.307). Prior to that, Civil Aeronautics Manual 04 required a minimum additional ultimate strength factor of\n\n2.0 for castings used in primary structure. Under those regulations, the Administrator had the authority to prevent the use of any casting that was not considered acceptable for a given application.\n\n5.2 Application of Special Factors of Safety.\n\n5.2.1 The application of factors of safety to castings is based on the fact that the casting process can be inconsistent. Casting is a method of forming an object by pouring molten metal into a mold, allowing the material to solidify inside the mold, and removing it when solidification is complete. Castings are subject to variability in mechanical properties due to this casting process, which can result in imperfections, such as voids, within the cast part. Using certain inspection techniques, for example radiographic (X-ray), it is possible to detect such imperfections above a minimum detectable size, but accurate detection depends on the dimensions of the part, the inspection equipment used, and the skill of the inspector.\n\n5.2.2 Section 25.619, Special factors, includes a requirement to apply a special factor to the factor of safety prescribed in § 25.303 for each part of the airplane structure whose strength is subject to appreciable variability because of uncertainties in the manufacturing processes or inspection methods. Since the mechanical properties of a casting depend on the casting design, the design values established under § 25.613, Material strength properties and material design values, for one casting might not be applicable to another casting made to the same specification. Thus, casting factors have been necessary for castings produced by normal techniques and methodologies to ensure the structural integrity of castings in light of these uncertainties.\n\n5.2.3 Another approach is to reduce the uncertainties in the casting manufacturing process by use of a “premium casting process” (discussed below), which enables the applicant to use a casting factor of 1.0. Section 25.621 does permit the use of a casting factor of 1.0 for critical castings, provided that—\n\n5.2.3.1 The manufacturer has established tight controls for the casting process, inspection, and testing; and\n\n5.2.3.2 The material strength properties of the casting have no more variability than equivalent wrought alloys.",
+      "knowledge_id": "535c28b0-5f2f-4f9b-8ee9-09c3734f5708",
+      "chunk_index": 8,
+      "knowledge_title": "AC_25.621-1.pdf",
+      "start_at": 0,
+      "end_at": 532,
+      "seq": 8,
+      "score": 0.8395516741737395,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "ab88368b3e4c6fef14ecce4b5f7280f4ba876d4de7c3f75ae1094d23b98f322b",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "60eed9b93f35535b83f7",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3a\\3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070\\source.pdf",
+        "internal_rag_source_sha256": "3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "4b6beda2-bbe6-4691-9d77-83c7cbed5991",
+      "image_info": "",
+      "knowledge_filename": "AC_25.621-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "5.2.3 Another approach is to reduce the uncertainties in the casting manufacturing process by use of a “premium casting process” (discussed below), which enables the applicant to use a casting factor of 1.0. Section 25.621 does permit the use of a casting factor of 1.0 for critical castings, provided that—\n\n5.2.3.1 The manufacturer has established tight controls for the casting process, inspection, and testing; and\n\n5.2.3.2 The material strength properties of the casting have no more variability than equivalent wrought alloys.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "4a50bbfa-4f3d-46a5-a32f-814722e73ba0",
+      "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Aeroelastic Stability Substantiation of Transport Category Airplanes\n\nDate: 08/30/2024\n\nInitiated By: AIR-600\n\nAC No: 25.629-1C\n\nThis advisory circular (AC) provides general guidance for acceptable means, but not the only means, of demonstrating compliance with those provisions of Title 14, Code of Federal Regulations (14 CFR) 25.629, Aeroelastic stability requirements, and other part 25 regulations related to aeroelastic instabilities of flutter, divergence, and control reversal. Revision C of this AC contains guidance based on rule changes to § 25.629.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nDANIEL J. Digitally signed by <sub>DANIEL</sub> <sub>J.</sub> <sub>ELGAS</sub>\n\nELGAS Date: 2024.08.30\n\nDaniel Elgas Director, Policy and Standards Division Aircraft Certification Service\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/032cc5d18bcd4fb189ef9c920c195e57/assets/aeaee011562625a749a1)",
+      "knowledge_id": "65aa149d-5810-4e4f-8944-5e30af19349e",
+      "chunk_index": 1,
+      "knowledge_title": "AC_25.629-1C.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 1,
+      "score": 0.7,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "ca6f1fba6466a8569d5f7d3b4691a0b51e1ec89acfaf833eb91d2211ea9d8bf8",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "1f93bf2e824bc92b65ae",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\8b\\8b40586b5167f131057ba33a2d49a56b204b681e9f8999f3c7533e1d6398c7fc\\source.pdf",
+        "internal_rag_source_sha256": "8b40586b5167f131057ba33a2d49a56b204b681e9f8999f3c7533e1d6398c7fc",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "157f580f-94f8-4dd1-8c0e-d4fc9c34067e",
+      "image_info": "",
+      "knowledge_filename": "AC_25.629-1C.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.629-1C.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/032cc5d18bcd4fb189ef9c920c195e57/assets/aeaee011562625a749a1)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "ec255cfc-2916-40af-952e-8273a3c751c3",
+      "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Control Systems—General\n\nDate: 08/30/2024\n\nAC No: 25.671-1\n\nInitiated By: AIR-600\n\nThis advisory circular (AC) describes acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.671, Control Systems— General. These means are intended to provide guidance to supplement the engineering and operational judgment that forms the basis of any showing of compliance. Section 25.671 applies to all flight control system installations (including primary, secondary, trim, lift, drag, feel, and load alleviation and stability augmentation systems, and other systems or functions implemented through or supporting the flight control components) regardless of implementation technique (manual, powered, fly-by-wire, or other means). While § 25.671 applies to flight control systems, § 25.671(d) applies to all control systems required to provide control, including deceleration, for the phases specified. This AC provides guidance on means of compliance with regulatory provisions that address operation of the control systems (§ 25.671(a)), design of the control system assembly (§ 25.671(b)), failures of the control system (§ 25.671(c)), control system design in the event all engines fail (§ 25.671(d)), control authority awareness (§ 25.671(e)), and flight control system modes of operation (§ 25.671(f)).\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nDANIEL J. Digitally signed by <sub>DANIEL</sub> <sub>J.</sub> <sub>ELGAS</sub> ELGAS <sup>Date:</sup> <sup>2024.08.30</sup><sub>14:46:05</sub> <sub>-04'00'</sub>\n\nDaniel J. Elgas Director, Policy and Standards Division Aircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n2.1 Applicability of this AC....1   \n2.2 Applicability of § 25.671....1   \n3 Related Documents....1   \n3.1 Related Regulations....1   \n3.2 Advisory Circulars....2   \n3.3 Other Documents....2   \n4 Background....2   \n5 Definitions....3   \n5.1 Continued Safe Flight and Landing....3   \n5.2 Exceptional Pilot Skill or Strength....3   \n5.3 Exposure Time....3   \n5.4 Failure....3   \n5.4.1 Jam....3   \n5.4.2 Loss of Control of Surface....4   \n5.4.3 Oscillatory Failure....4   \n5.4.4 Restricted Control....4   \n5.4.5 Runaway or Hardover....4   \n5.4.6 Stiff or Binding Controls....5   \n5.5 Flight Control System....5   \n6 Evaluation of Flight Control Operation—§ 25.671(a)....5   \n7 Evaluation of Flight Control Assembly—§ 25.671(b)....6   \n8 Evaluation of Flight Control System Failures—§ 25.671(c)....7   \n8.1 General....7   \n8.2 Evaluation of Flight Control Jam Conditions....8   \n8.3 Determination of Normally Encountered Flight Control Surface or Pilot Control Positions....10   \n8.3.1 General....10   \n8.3.2 Jammed Lateral Control Positions....11   \n8.3.3 Jammed Longitudinal Control Positions....12\n\nContents (continued)\n\nParagraph Page\n8.3.4 Jammed Directional Control Positions....12\n8.3.5 Control Tabs, Trim Tabs, and Trimming Stabilizers....13\n8.3.6 Speed Brakes....13\n8.3.7 High Lift Devices....13\n8.3.8 Load Alleviation Systems....13\n8.4 Assessment of Continued Safe Flight and Landing....14\n8.4.1 Flight Characteristics....14\n8.4.2 Structural Strength for Flight Control System Failures....17\n9 Evaluation of All-Engines-Failed Condition—§ 25.671(d)....18\n9.1 Explanation....18\n9.2 Procedures....19\n10 Evaluation of Control Authority Awareness—§ 25.671(e)....20\n11 Evaluation of Flight Control System Submodes—§ 25.671(f)....21\n12 Acceptable Means of Compliance....21\n13 Evaluation of Fly-By-Wire Flight Control Systems....21\n13.1 Evaluation of Command Signal Integrity....23\n13.2 Compliance Strategy for Fly-By-Wire Flight Control Systems....25\n\nTables\n\nNumber Page Table 1. Reaction Times for Flight Conditions ...... 16\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/89e38350bda82741b769)",
+      "knowledge_id": "e67d2fda-7114-470c-bfe9-991dade24a61",
+      "chunk_index": 1,
+      "knowledge_title": "AC_25.671-1.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 1,
+      "score": 0.6887096774193547,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "db15d7f8c9b5571e13342b4ece2675ecfdb0848bf852c0cb69b653f869b44f3c",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "1d6d2c54f5c508132b62",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\1d\\1de2e7533b46983eee0d0b9110b76669aa42f8cb554d55d2256d8fa313da2c11\\source.pdf",
+        "internal_rag_source_sha256": "1de2e7533b46983eee0d0b9110b76669aa42f8cb554d55d2256d8fa313da2c11",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "a75146a4-21e2-42f5-8ced-e3db4606b9de",
+      "image_info": "",
+      "knowledge_filename": "AC_25.671-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.671-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/89e38350bda82741b769)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad",
+      "content": "3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+      "knowledge_id": "1a414314-3b50-4225-a100-ae2d36ca5e32",
+      "chunk_index": 3,
+      "knowledge_title": "AC_20-182A.pdf",
+      "start_at": 0,
+      "end_at": 84,
+      "seq": 3,
+      "score": 0.6777777777777777,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+        "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "1760d379-7cd1-4496-8be2-e8b88b3da2f2",
+      "image_info": "",
+      "knowledge_filename": "AC_20-182A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_20-182A.pdf\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+      "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+      "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+      "chunk_index": 3,
+      "knowledge_title": "AC_25-25A.pdf",
+      "start_at": 0,
+      "end_at": 20,
+      "seq": 3,
+      "score": 0.6569230769230768,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "04a389a1de97dc79f380",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+        "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+      "image_info": "",
+      "knowledge_filename": "AC_25-25A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "33b95d84-4afa-4bba-ad1c-7c0fa8092145",
+      "content": "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+      "knowledge_id": "3615f931-f054-4520-914e-65ed3c704798",
+      "chunk_index": 4,
+      "knowledge_title": "AC_23-16A.pdf",
+      "start_at": 0,
+      "end_at": 311,
+      "seq": 4,
+      "score": 0.6469696969696969,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "33130c9a14616f38fdb3e1bb86b885dc3813880bbf84950c12bafe084152726b",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "7c784814c60e17fdf8cb",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\41\\4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45\\source.pdf",
+        "internal_rag_source_sha256": "4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "f0894b96-0623-4b83-8774-39368d138d26",
+      "image_info": "",
+      "knowledge_filename": "AC_23-16A.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_23-16A.pdf\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    }
+  ],
+  "events": [
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "agent_query",
+      "content": "",
+      "done": true,
+      "session_id": "4391a2e7-7533-41e0-a413-ca7c9f754512",
+      "assistant_message_id": "d58bbc87-dad2-4cf1-83ea-a48ad81e211a",
+      "data": {
+        "assistant_created_at": "2026-10-28T06:11:08.3657461Z",
+        "assistant_message_id": "d58bbc87-dad2-4cf1-83ea-a48ad81e211a",
+        "session_id": "4391a2e7-7533-41e0-a413-ca7c9f754512",
+        "user_created_at": "2026-10-28T06:11:08.3606844Z",
+        "user_message_id": "db359773-af05-41b8-a608-f56217e36a53"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "tool_call",
+      "content": "Calling tool: query_understand",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.621-1 的签发日期？"
+        },
+        "tool_call_id": "513b0bfb-c4cc-44da-8950-f7bac86d94df",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "duration_ms": 1026,
+        "error": "",
+        "output": "已完成问题理解",
+        "success": true,
+        "tool_call_id": "513b0bfb-c4cc-44da-8950-f7bac86d94df",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "tool_call",
+      "content": "Calling tool: knowledge_search",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.621-1的签发日期是什么？",
+          "search_source": "knowledge"
+        },
+        "tool_call_id": "ce03d79f-9445-45a1-b3f8-96011db921d8",
+        "tool_name": "knowledge_search"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "candidate_count": 0,
+        "count": 7,
+        "doc_count": 7,
+        "duration_ms": 1561,
+        "error": "",
+        "output": "检索到 7 条相关内容",
+        "search_source": "knowledge",
+        "success": true,
+        "tool_call_id": "ce03d79f-9445-45a1-b3f8-96011db921d8",
+        "tool_name": "knowledge_search",
+        "web_count": 0
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "references",
+      "content": "",
+      "done": false,
+      "knowledge_references": [
+        {
+          "id": "75e018dc-d4a9-4c5c-932c-9301dddec0a2",
+          "content": "Advisory Circular\n\n0\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Casting Factors\n\nDate: 10/06/14\n\nInitiated By: ANM-1 15\n\nAC No: 25.621-1\n\nThis advisory circular describes an acceptable means for showing compliance with the requirements of§ 25.621, Castingfactors, of Title 14, Code of Federal Regulations part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.\n\nIf you have suggestions for improving this AC, you may use the feedback form at the end of this AC.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n3 Related Regulations....1   \n4 Definitions....2   \n4.1 Casting....2   \n4.2 Critical Casting....2   \n4.3 Premium Casting Process....2   \n4.4 Prolongation....2   \n4.5 Test Casting....2   \n5 Background....2   \n5.1 Regulatory Background....2   \n5.2 Application of Special Factors of Safety....3   \n6 General Guidance for Use of Casting Factors....3   \n6.1 Factors of Safety....3   \n6.2 Inspections....4   \n6.3 Static Testing....4   \n6.4 Rework of Castings....4   \n7 Premium Casting Process....4   \n7.1 General....5   \n7.2 One Means of Qualification for Casting Process....5   \n7.3 Proof of Product....8   \n7.4 Monitoring the Process....10   \n7.5 Modifications to the Casting Design, Material, and Process....10\n\nTables\n\nPage Table 1. Recommended Verification Testing.... 11\n\n1 PURPOSE.\n\nThis advisory circular (AC) describes an acceptable means for showing compliance with the requirements of § 25.621, Casting factors, of Title 14, Code of Federal Regulations (14 CFR) part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.",
+          "knowledge_id": "535c28b0-5f2f-4f9b-8ee9-09c3734f5708",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.621-1.pdf",
+          "start_at": 0,
+          "end_at": 1507,
+          "seq": 0,
+          "score": 1,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "ab88368b3e4c6fef14ecce4b5f7280f4ba876d4de7c3f75ae1094d23b98f322b",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "60eed9b93f35535b83f7",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3a\\3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070\\source.pdf",
+            "internal_rag_source_sha256": "3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070",
+            "kept_by": "document_header",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "54d01544-3de9-48ff-8f5e-f55a95ceff64",
+          "image_info": "",
+          "knowledge_filename": "AC_25.621-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "Advisory Circular\n\n0\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Casting Factors\n\nDate: 10/06/14\n\nInitiated By: ANM-1 15\n\nAC No: 25.621-1\n\nThis advisory circular describes an acceptable means for showing compliance with the requirements of§ 25.621, Castingfactors, of Title 14, Code of Federal Regulations part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.\n\nIf you have suggestions for improving this AC, you may use the feedback form at the end of this AC.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n3 Related Regulations....1   \n4 Definitions....2   \n4.1 Casting....2   \n4.2 Critical Casting....2   \n4.3 Premium Casting Process....2   \n4.4 Prolongation....2   \n4.5 Test Casting....2   \n5 Background....2   \n5.1 Regulatory Background....2   \n5.2 Application of Special Factors of Safety....3   \n6 General Guidance for Use of Casting Factors....3   \n6.1 Factors of Safety....3   \n6.2 Inspections....4   \n6.3 Static Testing....4   \n6.4 Rework of Castings....4   \n7 Premium Casting Process....4   \n7.1 General....5   \n7.2 One Means of Qualification for Casting Process....5   \n7.3 Proof of Product....8   \n7.4 Monitoring the Process....10   \n7.5 Modifications to the Casting Design, Material, and Process....10\n\nTables\n\nPage Table 1. Recommended Verification Testing.... 11",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "ce3dda00-8840-4a58-ab97-2480e77f6a83",
+          "content": "5 BACKGROUND.\n\n5.1 Regulatory Background.\n\n5.1.1 The airworthiness standards of 14 CFR part 25 relative to transport category airplanes require classification of structural castings as either “critical” or “non-critical.” Depending on classification, the current standards specify the accomplishment of certain inspection and test requirements, and the application of special factors of safety for ultimate strength and deformation.\n\n5.1.2 The original requirements specified in § 25.621, Casting factors, stated that critical castings in structural applications must have a minimum casting factor of 1.25, which was to be applied in addition to the limit load factor of safety required by § 25.303, Factor of safety. Those requirements were in effect for many years, having been carried forward in 1964 from Part 4b of the Civil Air Regulations (CAR 4b.307). Prior to that, Civil Aeronautics Manual 04 required a minimum additional ultimate strength factor of\n\n2.0 for castings used in primary structure. Under those regulations, the Administrator had the authority to prevent the use of any casting that was not considered acceptable for a given application.\n\n5.2 Application of Special Factors of Safety.\n\n5.2.1 The application of factors of safety to castings is based on the fact that the casting process can be inconsistent. Casting is a method of forming an object by pouring molten metal into a mold, allowing the material to solidify inside the mold, and removing it when solidification is complete. Castings are subject to variability in mechanical properties due to this casting process, which can result in imperfections, such as voids, within the cast part. Using certain inspection techniques, for example radiographic (X-ray), it is possible to detect such imperfections above a minimum detectable size, but accurate detection depends on the dimensions of the part, the inspection equipment used, and the skill of the inspector.\n\n5.2.2 Section 25.619, Special factors, includes a requirement to apply a special factor to the factor of safety prescribed in § 25.303 for each part of the airplane structure whose strength is subject to appreciable variability because of uncertainties in the manufacturing processes or inspection methods. Since the mechanical properties of a casting depend on the casting design, the design values established under § 25.613, Material strength properties and material design values, for one casting might not be applicable to another casting made to the same specification. Thus, casting factors have been necessary for castings produced by normal techniques and methodologies to ensure the structural integrity of castings in light of these uncertainties.\n\n5.2.3 Another approach is to reduce the uncertainties in the casting manufacturing process by use of a “premium casting process” (discussed below), which enables the applicant to use a casting factor of 1.0. Section 25.621 does permit the use of a casting factor of 1.0 for critical castings, provided that—\n\n5.2.3.1 The manufacturer has established tight controls for the casting process, inspection, and testing; and\n\n5.2.3.2 The material strength properties of the casting have no more variability than equivalent wrought alloys.",
+          "knowledge_id": "535c28b0-5f2f-4f9b-8ee9-09c3734f5708",
+          "chunk_index": 8,
+          "knowledge_title": "AC_25.621-1.pdf",
+          "start_at": 0,
+          "end_at": 532,
+          "seq": 8,
+          "score": 0.8395516741737395,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "ab88368b3e4c6fef14ecce4b5f7280f4ba876d4de7c3f75ae1094d23b98f322b",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "60eed9b93f35535b83f7",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3a\\3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070\\source.pdf",
+            "internal_rag_source_sha256": "3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "4b6beda2-bbe6-4691-9d77-83c7cbed5991",
+          "image_info": "",
+          "knowledge_filename": "AC_25.621-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "5.2.3 Another approach is to reduce the uncertainties in the casting manufacturing process by use of a “premium casting process” (discussed below), which enables the applicant to use a casting factor of 1.0. Section 25.621 does permit the use of a casting factor of 1.0 for critical castings, provided that—\n\n5.2.3.1 The manufacturer has established tight controls for the casting process, inspection, and testing; and\n\n5.2.3.2 The material strength properties of the casting have no more variability than equivalent wrought alloys.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "4a50bbfa-4f3d-46a5-a32f-814722e73ba0",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Aeroelastic Stability Substantiation of Transport Category Airplanes\n\nDate: 08/30/2024\n\nInitiated By: AIR-600\n\nAC No: 25.629-1C\n\nThis advisory circular (AC) provides general guidance for acceptable means, but not the only means, of demonstrating compliance with those provisions of Title 14, Code of Federal Regulations (14 CFR) 25.629, Aeroelastic stability requirements, and other part 25 regulations related to aeroelastic instabilities of flutter, divergence, and control reversal. Revision C of this AC contains guidance based on rule changes to § 25.629.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nDANIEL J. Digitally signed by <sub>DANIEL</sub> <sub>J.</sub> <sub>ELGAS</sub>\n\nELGAS Date: 2024.08.30\n\nDaniel Elgas Director, Policy and Standards Division Aircraft Certification Service\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/032cc5d18bcd4fb189ef9c920c195e57/assets/aeaee011562625a749a1)",
+          "knowledge_id": "65aa149d-5810-4e4f-8944-5e30af19349e",
+          "chunk_index": 1,
+          "knowledge_title": "AC_25.629-1C.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 1,
+          "score": 0.7,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "ca6f1fba6466a8569d5f7d3b4691a0b51e1ec89acfaf833eb91d2211ea9d8bf8",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "1f93bf2e824bc92b65ae",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\8b\\8b40586b5167f131057ba33a2d49a56b204b681e9f8999f3c7533e1d6398c7fc\\source.pdf",
+            "internal_rag_source_sha256": "8b40586b5167f131057ba33a2d49a56b204b681e9f8999f3c7533e1d6398c7fc",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "157f580f-94f8-4dd1-8c0e-d4fc9c34067e",
+          "image_info": "",
+          "knowledge_filename": "AC_25.629-1C.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.629-1C.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/032cc5d18bcd4fb189ef9c920c195e57/assets/aeaee011562625a749a1)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "ec255cfc-2916-40af-952e-8273a3c751c3",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Control Systems—General\n\nDate: 08/30/2024\n\nAC No: 25.671-1\n\nInitiated By: AIR-600\n\nThis advisory circular (AC) describes acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.671, Control Systems— General. These means are intended to provide guidance to supplement the engineering and operational judgment that forms the basis of any showing of compliance. Section 25.671 applies to all flight control system installations (including primary, secondary, trim, lift, drag, feel, and load alleviation and stability augmentation systems, and other systems or functions implemented through or supporting the flight control components) regardless of implementation technique (manual, powered, fly-by-wire, or other means). While § 25.671 applies to flight control systems, § 25.671(d) applies to all control systems required to provide control, including deceleration, for the phases specified. This AC provides guidance on means of compliance with regulatory provisions that address operation of the control systems (§ 25.671(a)), design of the control system assembly (§ 25.671(b)), failures of the control system (§ 25.671(c)), control system design in the event all engines fail (§ 25.671(d)), control authority awareness (§ 25.671(e)), and flight control system modes of operation (§ 25.671(f)).\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nDANIEL J. Digitally signed by <sub>DANIEL</sub> <sub>J.</sub> <sub>ELGAS</sub> ELGAS <sup>Date:</sup> <sup>2024.08.30</sup><sub>14:46:05</sub> <sub>-04'00'</sub>\n\nDaniel J. Elgas Director, Policy and Standards Division Aircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n2.1 Applicability of this AC....1   \n2.2 Applicability of § 25.671....1   \n3 Related Documents....1   \n3.1 Related Regulations....1   \n3.2 Advisory Circulars....2   \n3.3 Other Documents....2   \n4 Background....2   \n5 Definitions....3   \n5.1 Continued Safe Flight and Landing....3   \n5.2 Exceptional Pilot Skill or Strength....3   \n5.3 Exposure Time....3   \n5.4 Failure....3   \n5.4.1 Jam....3   \n5.4.2 Loss of Control of Surface....4   \n5.4.3 Oscillatory Failure....4   \n5.4.4 Restricted Control....4   \n5.4.5 Runaway or Hardover....4   \n5.4.6 Stiff or Binding Controls....5   \n5.5 Flight Control System....5   \n6 Evaluation of Flight Control Operation—§ 25.671(a)....5   \n7 Evaluation of Flight Control Assembly—§ 25.671(b)....6   \n8 Evaluation of Flight Control System Failures—§ 25.671(c)....7   \n8.1 General....7   \n8.2 Evaluation of Flight Control Jam Conditions....8   \n8.3 Determination of Normally Encountered Flight Control Surface or Pilot Control Positions....10   \n8.3.1 General....10   \n8.3.2 Jammed Lateral Control Positions....11   \n8.3.3 Jammed Longitudinal Control Positions....12\n\nContents (continued)\n\nParagraph Page\n8.3.4 Jammed Directional Control Positions....12\n8.3.5 Control Tabs, Trim Tabs, and Trimming Stabilizers....13\n8.3.6 Speed Brakes....13\n8.3.7 High Lift Devices....13\n8.3.8 Load Alleviation Systems....13\n8.4 Assessment of Continued Safe Flight and Landing....14\n8.4.1 Flight Characteristics....14\n8.4.2 Structural Strength for Flight Control System Failures....17\n9 Evaluation of All-Engines-Failed Condition—§ 25.671(d)....18\n9.1 Explanation....18\n9.2 Procedures....19\n10 Evaluation of Control Authority Awareness—§ 25.671(e)....20\n11 Evaluation of Flight Control System Submodes—§ 25.671(f)....21\n12 Acceptable Means of Compliance....21\n13 Evaluation of Fly-By-Wire Flight Control Systems....21\n13.1 Evaluation of Command Signal Integrity....23\n13.2 Compliance Strategy for Fly-By-Wire Flight Control Systems....25\n\nTables\n\nNumber Page Table 1. Reaction Times for Flight Conditions ...... 16\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/89e38350bda82741b769)",
+          "knowledge_id": "e67d2fda-7114-470c-bfe9-991dade24a61",
+          "chunk_index": 1,
+          "knowledge_title": "AC_25.671-1.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 1,
+          "score": 0.6887096774193547,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "db15d7f8c9b5571e13342b4ece2675ecfdb0848bf852c0cb69b653f869b44f3c",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "1d6d2c54f5c508132b62",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\1d\\1de2e7533b46983eee0d0b9110b76669aa42f8cb554d55d2256d8fa313da2c11\\source.pdf",
+            "internal_rag_source_sha256": "1de2e7533b46983eee0d0b9110b76669aa42f8cb554d55d2256d8fa313da2c11",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "a75146a4-21e2-42f5-8ced-e3db4606b9de",
+          "image_info": "",
+          "knowledge_filename": "AC_25.671-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.671-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/89e38350bda82741b769)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad",
+          "content": "3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+          "knowledge_id": "1a414314-3b50-4225-a100-ae2d36ca5e32",
+          "chunk_index": 3,
+          "knowledge_title": "AC_20-182A.pdf",
+          "start_at": 0,
+          "end_at": 84,
+          "seq": 3,
+          "score": 0.6777777777777777,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+            "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "1760d379-7cd1-4496-8be2-e8b88b3da2f2",
+          "image_info": "",
+          "knowledge_filename": "AC_20-182A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_20-182A.pdf\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+          "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+          "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+          "chunk_index": 3,
+          "knowledge_title": "AC_25-25A.pdf",
+          "start_at": 0,
+          "end_at": 20,
+          "seq": 3,
+          "score": 0.6569230769230768,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "04a389a1de97dc79f380",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+            "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+          "image_info": "",
+          "knowledge_filename": "AC_25-25A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "33b95d84-4afa-4bba-ad1c-7c0fa8092145",
+          "content": "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+          "knowledge_id": "3615f931-f054-4520-914e-65ed3c704798",
+          "chunk_index": 4,
+          "knowledge_title": "AC_23-16A.pdf",
+          "start_at": 0,
+          "end_at": 311,
+          "seq": 4,
+          "score": 0.6469696969696969,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "33130c9a14616f38fdb3e1bb86b885dc3813880bbf84950c12bafe084152726b",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "7c784814c60e17fdf8cb",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\41\\4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45\\source.pdf",
+            "internal_rag_source_sha256": "4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "f0894b96-0623-4b83-8774-39368d138d26",
+          "image_info": "",
+          "knowledge_filename": "AC_23-16A.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_23-16A.pdf\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        }
+      ],
+      "data": {
+        "references": [
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "e5153287632f1d42e99f",
+                "19b668b2584cfbb4ba6e",
+                "442691a46cbc7a930f54",
+                "f4ffd3e66ff421d6f277",
+                "8f0b690a3562afb8ae36",
+                "487b755676c9c45177c3",
+                "3c3bde9d7b2faf2339dd",
+                "ff1bb25829b1a516a630",
+                "57807780625514425c48",
+                "ee6b862e518775a80d5a",
+                "adb8bcc84b981c6e228a",
+                "352130820d8f40a9e6a2",
+                "5bedfc89d6ef2aafc252",
+                "3500ca91aab8184af13b",
+                "ff9cf119ee4856681307",
+                "bdd2154987e6183ba9e8"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "d408719e468116b02b38",
+              "external_parent_chunk_id": "4448309bdf8278f3c03d",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 2,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\n0\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Casting Factors\n\nDate: 10/06/14\n\nInitiated By: ANM-1 15\n\nAC No: 25.621-1\n\nThis advisory circular describes an acceptable means for showing compliance with the requirements of§ 25.621, Castingfactors, of Title 14, Code of Federal Regulations part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.\n\nIf you have suggestions for improving this AC, you may use the feedback form at the end of this AC.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n3 Related Regulations....1   \n4 Definitions....2   \n4.1 Casting....2   \n4.2 Critical Casting....2   \n4.3 Premium Casting Process....2   \n4.4 Prolongation....2   \n4.5 Test Casting....2   \n5 Background....2   \n5.1 Regulatory Background....2   \n5.2 Application of Special Factors of Safety....3   \n6 General Guidance for Use of Casting Factors....3   \n6.1 Factors of Safety....3   \n6.2 Inspections....4   \n6.3 Static Testing....4   \n6.4 Rework of Castings....4   \n7 Premium Casting Process....4   \n7.1 General....5   \n7.2 One Means of Qualification for Casting Process....5   \n7.3 Proof of Product....8   \n7.4 Monitoring the Process....10   \n7.5 Modifications to the Casting Design, Material, and Process....10\n\nTables\n\nPage Table 1. Recommended Verification Testing.... 11\n\n1 PURPOSE.\n\nThis advisory circular (AC) describes an acceptable means for showing compliance with the requirements of § 25.621, Casting factors, of Title 14, Code of Federal Regulations (14 CFR) part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.",
+            "end_at": 1507,
+            "id": "75e018dc-d4a9-4c5c-932c-9301dddec0a2",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.621-1.pdf",
+            "knowledge_id": "535c28b0-5f2f-4f9b-8ee9-09c3734f5708",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.621-1.pdf",
+            "match_type": 0,
+            "matched_content": "Advisory Circular\n\n0\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Casting Factors\n\nDate: 10/06/14\n\nInitiated By: ANM-1 15\n\nAC No: 25.621-1\n\nThis advisory circular describes an acceptable means for showing compliance with the requirements of§ 25.621, Castingfactors, of Title 14, Code of Federal Regulations part 25. Section 25.621 outlines the factors, tests, and inspections that must be applied to castings used in structural applications.\n\nIf you have suggestions for improving this AC, you may use the feedback form at the end of this AC.\n\nJeffrey E. Duven\n\nManager, Transport Airplane Directorate\n\nAircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n3 Related Regulations....1   \n4 Definitions....2   \n4.1 Casting....2   \n4.2 Critical Casting....2   \n4.3 Premium Casting Process....2   \n4.4 Prolongation....2   \n4.5 Test Casting....2   \n5 Background....2   \n5.1 Regulatory Background....2   \n5.2 Application of Special Factors of Safety....3   \n6 General Guidance for Use of Casting Factors....3   \n6.1 Factors of Safety....3   \n6.2 Inspections....4   \n6.3 Static Testing....4   \n6.4 Rework of Castings....4   \n7 Premium Casting Process....4   \n7.1 General....5   \n7.2 One Means of Qualification for Casting Process....5   \n7.3 Proof of Product....8   \n7.4 Monitoring the Process....10   \n7.5 Modifications to the Casting Design, Material, and Process....10\n\nTables\n\nPage Table 1. Recommended Verification Testing.... 11",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "ab88368b3e4c6fef14ecce4b5f7280f4ba876d4de7c3f75ae1094d23b98f322b",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "60eed9b93f35535b83f7",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3a\\3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070\\source.pdf",
+              "internal_rag_source_sha256": "3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070",
+              "kept_by": "document_header",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "54d01544-3de9-48ff-8f5e-f55a95ceff64",
+            "related_images": [
+              {
+                "caption": "Table 1 — page 13",
+                "chunk_id": "9dfa720c-a0e3-4bcb-9eb9-81bb73ee6a59",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/2713fc9aa32840daaa4eb59d2dc011a8/assets/562fd3eef18119998bc6"
+              }
+            ],
+            "score": 1,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "75e018dc-d4a9-4c5c-932c-9301dddec0a2",
+              "99e38c3e-4abb-463b-a35d-f4092131d682"
+            ]
+          },
+          {
+            "chunk_index": 8,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "4338f5fdfd0e4d77b67a",
+                "3274ccd12af793592178",
+                "9233b2673e4812250f51"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "db3866ba50bda02c6a13",
+              "external_parent_chunk_id": "1008c6db924e64b2cb88",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 5,
+              "page_start": 5,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "5 BACKGROUND."
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "5 BACKGROUND.\n\n5.1 Regulatory Background.\n\n5.1.1 The airworthiness standards of 14 CFR part 25 relative to transport category airplanes require classification of structural castings as either “critical” or “non-critical.” Depending on classification, the current standards specify the accomplishment of certain inspection and test requirements, and the application of special factors of safety for ultimate strength and deformation.\n\n5.1.2 The original requirements specified in § 25.621, Casting factors, stated that critical castings in structural applications must have a minimum casting factor of 1.25, which was to be applied in addition to the limit load factor of safety required by § 25.303, Factor of safety. Those requirements were in effect for many years, having been carried forward in 1964 from Part 4b of the Civil Air Regulations (CAR 4b.307). Prior to that, Civil Aeronautics Manual 04 required a minimum additional ultimate strength factor of\n\n2.0 for castings used in primary structure. Under those regulations, the Administrator had the authority to prevent the use of any casting that was not considered acceptable for a given application.\n\n5.2 Application of Special Factors of Safety.\n\n5.2.1 The application of factors of safety to castings is based on the fact that the casting process can be inconsistent. Casting is a method of forming an object by pouring molten metal into a mold, allowing the material to solidify inside the mold, and removing it when solidification is complete. Castings are subject to variability in mechanical properties due to this casting process, which can result in imperfections, such as voids, within the cast part. Using certain inspection techniques, for example radiographic (X-ray), it is possible to detect such imperfections above a minimum detectable size, but accurate detection depends on the dimensions of the part, the inspection equipment used, and the skill of the inspector.\n\n5.2.2 Section 25.619, Special factors, includes a requirement to apply a special factor to the factor of safety prescribed in § 25.303 for each part of the airplane structure whose strength is subject to appreciable variability because of uncertainties in the manufacturing processes or inspection methods. Since the mechanical properties of a casting depend on the casting design, the design values established under § 25.613, Material strength properties and material design values, for one casting might not be applicable to another casting made to the same specification. Thus, casting factors have been necessary for castings produced by normal techniques and methodologies to ensure the structural integrity of castings in light of these uncertainties.\n\n5.2.3 Another approach is to reduce the uncertainties in the casting manufacturing process by use of a “premium casting process” (discussed below), which enables the applicant to use a casting factor of 1.0. Section 25.621 does permit the use of a casting factor of 1.0 for critical castings, provided that—\n\n5.2.3.1 The manufacturer has established tight controls for the casting process, inspection, and testing; and\n\n5.2.3.2 The material strength properties of the casting have no more variability than equivalent wrought alloys.",
+            "end_at": 532,
+            "id": "ce3dda00-8840-4a58-ab97-2480e77f6a83",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.621-1.pdf",
+            "knowledge_id": "535c28b0-5f2f-4f9b-8ee9-09c3734f5708",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.621-1.pdf",
+            "match_type": 1,
+            "matched_content": "5.2.3 Another approach is to reduce the uncertainties in the casting manufacturing process by use of a “premium casting process” (discussed below), which enables the applicant to use a casting factor of 1.0. Section 25.621 does permit the use of a casting factor of 1.0 for critical castings, provided that—\n\n5.2.3.1 The manufacturer has established tight controls for the casting process, inspection, and testing; and\n\n5.2.3.2 The material strength properties of the casting have no more variability than equivalent wrought alloys.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "ab88368b3e4c6fef14ecce4b5f7280f4ba876d4de7c3f75ae1094d23b98f322b",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "60eed9b93f35535b83f7",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3a\\3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070\\source.pdf",
+              "internal_rag_source_sha256": "3a27dacef76ae100ca20c80ca8040f6e5fe3cc9415619614bb780f6892b17070",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "4b6beda2-bbe6-4691-9d77-83c7cbed5991",
+            "score": 0.8395516741737395,
+            "seq": 8,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "ce3dda00-8840-4a58-ab97-2480e77f6a83"
+            ]
+          },
+          {
+            "chunk_index": 1,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "aeaee011562625a749a1"
+              ],
+              "block_ids": [
+                "7a6d3b0cbbd3e3da9128"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "49fcd35132a0516c03cd",
+              "external_parent_chunk_id": "25bc9c258eca197117ca",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Aeroelastic Stability Substantiation of Transport Category Airplanes\n\nDate: 08/30/2024\n\nInitiated By: AIR-600\n\nAC No: 25.629-1C\n\nThis advisory circular (AC) provides general guidance for acceptable means, but not the only means, of demonstrating compliance with those provisions of Title 14, Code of Federal Regulations (14 CFR) 25.629, Aeroelastic stability requirements, and other part 25 regulations related to aeroelastic instabilities of flutter, divergence, and control reversal. Revision C of this AC contains guidance based on rule changes to § 25.629.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nDANIEL J. Digitally signed by <sub>DANIEL</sub> <sub>J.</sub> <sub>ELGAS</sub>\n\nELGAS Date: 2024.08.30\n\nDaniel Elgas Director, Policy and Standards Division Aircraft Certification Service\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/032cc5d18bcd4fb189ef9c920c195e57/assets/aeaee011562625a749a1)",
+            "end_at": 175,
+            "id": "4a50bbfa-4f3d-46a5-a32f-814722e73ba0",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.629-1C.pdf",
+            "knowledge_id": "65aa149d-5810-4e4f-8944-5e30af19349e",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.629-1C.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.629-1C.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/032cc5d18bcd4fb189ef9c920c195e57/assets/aeaee011562625a749a1)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "ca6f1fba6466a8569d5f7d3b4691a0b51e1ec89acfaf833eb91d2211ea9d8bf8",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "1f93bf2e824bc92b65ae",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\8b\\8b40586b5167f131057ba33a2d49a56b204b681e9f8999f3c7533e1d6398c7fc\\source.pdf",
+              "internal_rag_source_sha256": "8b40586b5167f131057ba33a2d49a56b204b681e9f8999f3c7533e1d6398c7fc",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "157f580f-94f8-4dd1-8c0e-d4fc9c34067e",
+            "score": 0.7,
+            "seq": 1,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "4a50bbfa-4f3d-46a5-a32f-814722e73ba0"
+            ]
+          },
+          {
+            "chunk_index": 1,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "89e38350bda82741b769"
+              ],
+              "block_ids": [
+                "a33c093100cfab2ef541"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "bf62bd9495bdb3403b5c",
+              "external_parent_chunk_id": "e8e73e68671947019e18",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Control Systems—General\n\nDate: 08/30/2024\n\nAC No: 25.671-1\n\nInitiated By: AIR-600\n\nThis advisory circular (AC) describes acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.671, Control Systems— General. These means are intended to provide guidance to supplement the engineering and operational judgment that forms the basis of any showing of compliance. Section 25.671 applies to all flight control system installations (including primary, secondary, trim, lift, drag, feel, and load alleviation and stability augmentation systems, and other systems or functions implemented through or supporting the flight control components) regardless of implementation technique (manual, powered, fly-by-wire, or other means). While § 25.671 applies to flight control systems, § 25.671(d) applies to all control systems required to provide control, including deceleration, for the phases specified. This AC provides guidance on means of compliance with regulatory provisions that address operation of the control systems (§ 25.671(a)), design of the control system assembly (§ 25.671(b)), failures of the control system (§ 25.671(c)), control system design in the event all engines fail (§ 25.671(d)), control authority awareness (§ 25.671(e)), and flight control system modes of operation (§ 25.671(f)).\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback form at the end of this AC.\n\nDANIEL J. Digitally signed by <sub>DANIEL</sub> <sub>J.</sub> <sub>ELGAS</sub> ELGAS <sup>Date:</sup> <sup>2024.08.30</sup><sub>14:46:05</sub> <sub>-04'00'</sub>\n\nDaniel J. Elgas Director, Policy and Standards Division Aircraft Certification Service\n\nContents\n\nParagraph Page   \n1 Purpose....1   \n2 Applicability....1   \n2.1 Applicability of this AC....1   \n2.2 Applicability of § 25.671....1   \n3 Related Documents....1   \n3.1 Related Regulations....1   \n3.2 Advisory Circulars....2   \n3.3 Other Documents....2   \n4 Background....2   \n5 Definitions....3   \n5.1 Continued Safe Flight and Landing....3   \n5.2 Exceptional Pilot Skill or Strength....3   \n5.3 Exposure Time....3   \n5.4 Failure....3   \n5.4.1 Jam....3   \n5.4.2 Loss of Control of Surface....4   \n5.4.3 Oscillatory Failure....4   \n5.4.4 Restricted Control....4   \n5.4.5 Runaway or Hardover....4   \n5.4.6 Stiff or Binding Controls....5   \n5.5 Flight Control System....5   \n6 Evaluation of Flight Control Operation—§ 25.671(a)....5   \n7 Evaluation of Flight Control Assembly—§ 25.671(b)....6   \n8 Evaluation of Flight Control System Failures—§ 25.671(c)....7   \n8.1 General....7   \n8.2 Evaluation of Flight Control Jam Conditions....8   \n8.3 Determination of Normally Encountered Flight Control Surface or Pilot Control Positions....10   \n8.3.1 General....10   \n8.3.2 Jammed Lateral Control Positions....11   \n8.3.3 Jammed Longitudinal Control Positions....12\n\nContents (continued)\n\nParagraph Page\n8.3.4 Jammed Directional Control Positions....12\n8.3.5 Control Tabs, Trim Tabs, and Trimming Stabilizers....13\n8.3.6 Speed Brakes....13\n8.3.7 High Lift Devices....13\n8.3.8 Load Alleviation Systems....13\n8.4 Assessment of Continued Safe Flight and Landing....14\n8.4.1 Flight Characteristics....14\n8.4.2 Structural Strength for Flight Control System Failures....17\n9 Evaluation of All-Engines-Failed Condition—§ 25.671(d)....18\n9.1 Explanation....18\n9.2 Procedures....19\n10 Evaluation of Control Authority Awareness—§ 25.671(e)....20\n11 Evaluation of Flight Control System Submodes—§ 25.671(f)....21\n12 Acceptable Means of Compliance....21\n13 Evaluation of Fly-By-Wire Flight Control Systems....21\n13.1 Evaluation of Command Signal Integrity....23\n13.2 Compliance Strategy for Fly-By-Wire Flight Control Systems....25\n\nTables\n\nNumber Page Table 1. Reaction Times for Flight Conditions ...... 16\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/89e38350bda82741b769)",
+            "end_at": 175,
+            "id": "ec255cfc-2916-40af-952e-8273a3c751c3",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.671-1.pdf",
+            "knowledge_id": "e67d2fda-7114-470c-bfe9-991dade24a61",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.671-1.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.671-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/89e38350bda82741b769)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "db15d7f8c9b5571e13342b4ece2675ecfdb0848bf852c0cb69b653f869b44f3c",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "1d6d2c54f5c508132b62",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\1d\\1de2e7533b46983eee0d0b9110b76669aa42f8cb554d55d2256d8fa313da2c11\\source.pdf",
+              "internal_rag_source_sha256": "1de2e7533b46983eee0d0b9110b76669aa42f8cb554d55d2256d8fa313da2c11",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "a75146a4-21e2-42f5-8ced-e3db4606b9de",
+            "related_images": [
+              {
+                "caption": "Table 1 — page 19",
+                "chunk_id": "42b8d46a-3130-41b8-962e-99b3f6d8ac87",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/e1b24914bd6049d797026f692c598abf/assets/445973b08a353aa5e11b"
+              }
+            ],
+            "score": 0.6887096774193547,
+            "seq": 1,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "ec255cfc-2916-40af-952e-8273a3c751c3"
+            ]
+          },
+          {
+            "chunk_index": 3,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "9908cb9dd18f5702f4f2",
+                "af87277897c3286c2dd7"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "b48d00356ea8e352494b",
+              "external_parent_chunk_id": "d5d847d3c4a4b9dec4da",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 2,
+              "page_start": 2,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "3 DOES THIS AC CANCEL ANY PRIOR AC?"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+            "end_at": 84,
+            "id": "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_20-182A.pdf",
+            "knowledge_id": "1a414314-3b50-4225-a100-ae2d36ca5e32",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_20-182A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_20-182A.pdf\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\n3 DOES THIS AC CANCEL ANY PRIOR AC?\n\nThis AC cancels AC 20-182, dated June 17, 2014.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+              "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "1760d379-7cd1-4496-8be2-e8b88b3da2f2",
+            "score": 0.6777777777777777,
+            "seq": 3,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "ea915bc6-ff2a-4ddc-981c-238bd9a3ebad"
+            ]
+          },
+          {
+            "chunk_index": 3,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "62afc1c7ba63f6f653db"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "319beb92fcbeac44aae5",
+              "external_parent_chunk_id": "4886c652b74eded87aa9",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 4,
+              "page_start": 4,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "CONTENTS (CONTINUED)"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "CONTENTS (CONTINUED)\n\nParagraph Page\n4.10 Longitudinal Control, § 25.145....4-26\n4.11 Directional and Lateral Control, § 25.147....4-26\n4.12 Trim, § 25.161....4-27\n4.13 Stability—General, § 25.171....4-27\n4.14 Demonstration of Static Longitudinal Stability, § 25.175....4-27\n4.15 Static Lateral–Directional Stability, § 25.177....4-28\n4.16 Dynamic Stability, § 25.181....4-29\n4.17 Stall Demonstration, § 25.201/Stall Characteristics, § 25.203....4-29\n4.18 Stall Warning, § 25.207....4-31\n4.19 Wind Velocities, § 25.237. To show compliance with this requirement:....4-32\n4.20 Vibration and Buffeting, § 25.251....4-33\n4.21 Natural Icing Conditions, § 25.1419(b)....4-33\n4.22 Failure Conditions, § 25.1309....4-37\nAppendix A. Airframe Ice Accretions....A-1\nAppendix B. Simulated Ice Accretions....B-1\nAppendix C. Design Features....C-1\nAppendix D. Examples of Airplane Flight Manual Limitations and Operating Procedures for Operations in Supercooled Large Drop Icing Conditions....D-1\nAppendix E. Related Regulations and Advisory Circulars....E-1\nAppendix F. Acronyms....F-1\n\nCONTENTS (CONTINUED)",
+            "end_at": 20,
+            "id": "c88791d2-5a32-4c11-bb5c-ae0562f313bd",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25-25A.pdf",
+            "knowledge_id": "f920864b-dd0a-48a2-90a0-7674c7212b8c",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25-25A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25-25A.pdf\nCONTENTS (CONTINUED)\n\nCONTENTS (CONTINUED)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "5612fa7ca6c089325bcdab5a37e354ee81028ab64ec080eb15a82bf351915539",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "04a389a1de97dc79f380",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ac\\ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df\\source.pdf",
+              "internal_rag_source_sha256": "ac324a9d52681b8108fac4023ce96019e62ec9e73667c4d1d79906775460c2df",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "fd10b0b3-6da4-44fb-b06e-48eb36272113",
+            "score": 0.6569230769230768,
+            "seq": 3,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "c88791d2-5a32-4c11-bb5c-ae0562f313bd"
+            ]
+          },
+          {
+            "chunk_index": 4,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "57e2f52b7ee5f9146f07",
+                "20437f7d0f9373d8c956"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "e00ab36369c34a84337b",
+              "external_parent_chunk_id": "c9c7b27dbf6a94475047",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 2,
+              "page_start": 2,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+            "end_at": 311,
+            "id": "33b95d84-4afa-4bba-ad1c-7c0fa8092145",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_23-16A.pdf",
+            "knowledge_id": "3615f931-f054-4520-914e-65ed3c704798",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_23-16A.pdf",
+            "match_type": 0,
+            "matched_content": "AC_23-16A.pdf\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\n3. WHAT IS THE BACKGROUND FOR THIS AC AND WHAT TIME PERIOD DOES THIS AC COVER?\n\nThe AC is current through Amendment 23-55, effective February 22, 2002. Policy released before December 31, 2002 is included in this AC. This material spans nearly 38 years of Federal Aviation Administration (FAA) aviation history.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "33130c9a14616f38fdb3e1bb86b885dc3813880bbf84950c12bafe084152726b",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "7c784814c60e17fdf8cb",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\41\\4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45\\source.pdf",
+              "internal_rag_source_sha256": "4102e074c6b2d3b9691cc2a070a0b05e649059b05c2dc5b64692594e28a2ce45",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "f0894b96-0623-4b83-8774-39368d138d26",
+            "score": 0.6469696969696969,
+            "seq": 4,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "33b95d84-4afa-4bba-ad1c-7c0fa8092145"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "The",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " use",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "r asks",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "621",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "？",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "From",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " Date",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "06",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "14",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " So",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " Octobe",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "r ",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "6",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ",",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "201",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "4",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ".\n\n",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "Answe",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "r in",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " Chinese",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ",",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " cite",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "thinking",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167872,
+        "duration_ms": 153,
+        "event_id": "ead0cd36-thinking"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "621",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "《",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "C",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "asting",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Factors",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "》（",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "铸造",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "系数",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " **",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "201",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "4",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "6",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "**",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "原文",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "标注",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " “",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "Date",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "06",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "14",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "”",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "）。",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_25.621-1.pdf\" chunk_id=\"75e018dc-d4a9-4c5c-932c-9301dddec0a2\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "该",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "咨询",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "通告",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "由",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " FAA",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "运输",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "类",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "飞机",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "审定",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "服务",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "部门",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "（",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "A",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "ircraft",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Certification",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Service",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": ",",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Transport",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Ai",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "rplane",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Directorate",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "）",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "发布",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "人为",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Jeffrey",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " E",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " Du",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "ven",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "发起",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "单位为",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " AN",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "M",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "15",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_25.621-1.pdf\" chunk_id=\"75e018dc-d4a9-4c5c-932c-9301dddec0a2\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "说明",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "：",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "原文",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "采用",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "美",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "式",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "写法",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "“",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "”，",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "即",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "06",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "14",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "对应",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "201",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "4",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "10",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "6",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "answer",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167873,
+        "duration_ms": 941,
+        "event_id": "e26bd7ad-answer"
+      }
+    },
+    {
+      "id": "783abe93-9955-4509-9f83-fce63eb0c438",
+      "response_type": "complete",
+      "content": "",
+      "done": true,
+      "data": {
+        "final_content": "AC 25.621-1《Casting Factors》（铸造系数）的签发日期为 **2014年10月6日**（原文标注为 “Date: 10/06/14”）。<kb doc=\"AC_25.621-1.pdf\" chunk_id=\"75e018dc-d4a9-4c5c-932c-9301dddec0a2\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n该咨询通告由 FAA 运输类飞机审定服务部门（Aircraft Certification Service, Transport Airplane Directorate）发布，签发人为 Jeffrey E. Duven，发起单位为 ANM-1 15。<kb doc=\"AC_25.621-1.pdf\" chunk_id=\"75e018dc-d4a9-4c5c-932c-9301dddec0a2\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />\n\n说明：原文日期采用美式写法“月/日/年”，即 10/06/14 对应 2014 年 10 月 6 日。",
+        "total_duration_ms": 0,
+        "total_steps": 0
+      }
+    }
+  ],
+  "seconds": 9.64
+}

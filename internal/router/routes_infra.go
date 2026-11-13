@@ -86,6 +86,7 @@ func RegisterEvaluationRoutes(r *gin.RouterGroup, handler *handler.EvaluationHan
 	evaluationRoutes := g.apiKeyGroup(r.Group("/evaluation"), apiKeyRunEvaluations(apiKeyFullAccess()))
 	{
 		evaluationRoutes.POST("", g.Admin(), handler.Evaluation)
+		evaluationRoutes.POST("/ragas", g.Admin(), handler.Ragas)
 		evaluationRoutes.GET("", g.Viewer(), handler.GetEvaluationResult)
 	}
 }

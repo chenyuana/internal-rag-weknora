@@ -4616,6 +4616,8 @@ export default {
     placeholderAgent: '{name} 질문하기',
     agentMode: 'Agent 모드',
     normalMode: '일반 모드',
+    crossLanguageSearch: '교차 언어 검색',
+    crossLanguageSearchHint: '이 질문을 다른 언어로도 검색합니다',
     normalModeDesc: '지식베이스 기반 RAG Q&A',
     agentModeDesc: 'ReAct 추론 프레임워크, 다단계 사고',
     agentMissingAllowedTools: '허용된 도구',

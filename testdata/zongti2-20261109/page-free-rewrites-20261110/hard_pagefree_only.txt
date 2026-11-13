@@ -1,0 +1,20 @@
+按表 19.6 的情景 2（两架 300 座合计生产 1000 架、600 座只生产 500 架），600 座方案的采购成本与 DOC/ASM 相对两架 300 座各差多少？请用表中数值验算这两个百分比，并说明为什么开发成本相同、采购成本却变贵。
+4052X_07 的初始起飞重量算例取商载 17 100 kg、使用空重分数 51%、燃油分数 21.4%，得 M_TO≈61 957 kg。若把使用空重分数改为 52%、其余不变，按同一质量方程 M_TO 约为多少？比原结果高多少？
+70 座基准若改为 6 并列 84 座、起飞质量不变，航程会降到多少？若仍要求 1250 nm，84 座与 96 座的 MTOM 和 DOC/ASM 相对 70 座如何变化？机翼面积是否改变？
+按表 9.4，涵道比从 3.0 增到 13.0 时推重比和短舱直径各怎样变化？四种发动机中短舱最长的是哪一个？
+按表 17.1，EH101 与 UH-60A 的满载质量各是多少？用满载质量除以全长，谁的单位长度质量更高？
+为什么民机客舱直径一旦确定就难以更改，而机身长度却能在后续型别中加长？长径比过低与过高各有什么代价？
+参数研究为什么一次只改变一两个变量？两变量时“九点研究”怎样组织、结果怎样读出？基准设计点为什么常取中心点？
+发动机的四种推力额定各是什么？哪两个由合格审定型号试验确定？起飞额定每次飞行允许多久，何时可延长？最大连续为什么不在正常飞行中使用？
+制造商按“现金基础”报出的 DOC 与总额法差在哪？他们为什么这样做？引用厂商或媒体公布的 DOC 时要注意什么？
+查书末索引：trim drag、carpet plots、type record 的 overview 分别指向哪一页？
+按目录，第 13 章 Parametric Studies 的前一章和后一章各是什么？本章自身包含哪两个小节？
+按目录，第 9 章的 9.10、9.11、9.12 分别是什么小节？三者的主题分别关于什么？
+According to the Chinese helicopter design handbook (Vol. 19), which engine characteristics must be given as the main powerplant general parameters, and which other powerplant items are listed alongside the engine?
+What numerical limits does the same handbook give for minimum engine specific fuel consumption, engine power-to-weight ratio, and transmission power-to-weight ratio?
+In the New Large Aircraft study, how are seats arranged on the main and upper decks of the single-fuselage twin-deck layout, and why must the layout be multi-deck?
+按书中的折旧公式，若残值为初始价格的 15%、折旧期为 12 年，年折旧率是多少？请写出计算式。
+能否用 Fig. 12.3 的“价格—空机重量”图线估算 70–100 座支线客机的价格？书中对这类图线和价格数据有哪些限制？
+该书把适航性分成哪几个标题？环境方面主要监管哪两项，它们主要与什么有关？
+《Civil Jet Aircraft Design》表 1.1 中 2010 年的定期航班客运量（passenger-km）是多少？
+总体2 里那架 70 座先进支线客机的首飞日期、首架交付客户和启动用户分别是什么？

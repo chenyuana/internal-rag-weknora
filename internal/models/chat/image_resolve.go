@@ -100,6 +100,14 @@ func stripImagesFromMessages(messages []Message) []Message {
 	for i, msg := range messages {
 		cleaned[i] = msg
 		cleaned[i].Images = nil
+		if len(msg.MultiContent) > 0 {
+			cleaned[i].MultiContent = nil
+			for _, part := range msg.MultiContent {
+				if part.Type != "image_url" && part.ImageURL == nil {
+					cleaned[i].MultiContent = append(cleaned[i].MultiContent, part)
+				}
+			}
+		}
 	}
 	return cleaned
 }

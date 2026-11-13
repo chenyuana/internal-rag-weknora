@@ -1,0 +1,649 @@
+[
+  {
+    "id": "137ea51f-4359-40f8-8e88-ade2199d4daa",
+    "request_id": "c2f4c177-fbc5-4c27-8c50-3b58f367da08",
+    "session_id": "725aab28-f99d-4eee-a794-c0b3581554a9",
+    "role": "user",
+    "content": "依据这七份文件，为一台1550nm不可见激光给出精确 NOHD 数值。已知它不扫描，单次任务预计最长照射3秒。若无法算出，仍须指出能确定的计算时长下限和需要的证据，不能只回答“资料不足”。",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:32:23.450789+00:00",
+    "updated_at": "2026-10-22T06:32:27.180486+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "## Reference materials (source data)\n<documents>\n<document>\n<title>AC_20-183.pdf</title>\n<description>该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。</description>\n</document>\n</documents>\n<context id=\"1\">system and laser equipment as well as the associated functional failure \ncondition classifications.\n7.3.1.5 Other Functional Failure Condition.\nOther malfunctions not described in paragraphs 7.3.1.1 through 7.3.1.4\nof this AC should be identified and assessed to determine their functional \nfailure conditions.\n\n7.3.1.6 Loss of Function.\nBecause the laser is nonrequired equipment, the functional failure \ncondition for loss of the laser function is “no effect.”\n7.3.2 NOHD and MPE Calculations.\nYou should provide a report that documents how the NOHD and MPE were calculated \nto include all equations, references for those equations, table references, equation \nparameters (such as wavelength, divergence, exposure time, and power), dimensions for \nthe reflected and direct radiation paths into aircraft’s windows, and justification for the \nexposure duration. For laser illuminators, spotters, range finders, and other nonscanning \nlasers, the NOHD exposure duration should be based on the maximum exposure \nduration expected, but not less than 10 seconds. AC 70-1, Outdoor Laser Operations, \nand American National Standards Institute document ANSI Z136.1, American National \nStandard for Safe Use of Lasers, provide acceptable means to calculate MPE and \nNOHD.\n7.3.3 Installation Type Design.\nThe installation type design must include all the 21 CFR 1040 requirements that would \nbe applicable to the installation (such as the key control, emissions indicator, labels, and\nremote interlock connector) and the technical controls (such as the aircraft interface \nsafety interlock) from the FDA variance that affect the aircraft installation.\n7.3.4 Software.\nIf the laser equipment includes software that can contribute to malfunctions described \nin paragraph 7.3.1 above, develop the software using the guidance in AC 20-115C, \nAirborne Software Assurance, to a software level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1.\n7.3.5 AEH.\nIf the laser equipment includes custom AEH (such as an application-specific integrated \ncircuit, field programmable logic device, or programmable logic device), which can \ncontribute to the malfunctions described in paragraph 7.3.1 above, develop the AEH \nusing RTCA, Inc., document RTCA/DO-254, Design Assurance Guidance for Airborne \nElectronic Hardware, to a design assurance level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1. For custom AEH \nclassified as simple, paragraph 1.6 of RTCA/DO-254 applies.\nNote: We encourage the use of industry-recognized system safety standards (such as\nSAE International ARP 4761 and IEC 61508) and development assurance standards \n(such as RTCA/DO-178C, RTCA/DO-254, and IEC 61508) for the laser equipment \nwhen its malfunction could result in an exposure that could exceed the MPE for people\noutside the laser-equipped aircraft.\n7.3.6 Configuration Control.\nUnapproved changes to the laser equipment or the installation should not be made \nbecause they could affect the airworthiness (for example, electromagnetic and\n\nenvironmental compatibility or new failure modes) of the equipment installation and \ninvalidate the laser equipment certification and FDA-approved variances. The applicant \nshould provide a plan for maintaining configuration throughout the product life cycle. \nIf the installation results in a modification to the laser equipment as certified by the \nlaser equipment manufacturer, the laser equipment must be recertified as described \nin § 1040.10(i).</context>\n<context id=\"2\">variance’s technical controls applicable to the installation (such as aircraft interface \nsafety interlock) have been satisfied. \n7.2 FDA Variance.\nAccording to the FDA, surveillance lasers and LIDAR systems are considered \n“surveying, leveling, and alignment laser products,” which are specific purpose laser \nproducts described in § 1040.11(b) and limited to class I AEL for the invisible laser \nwavelengths. However, most airborne surveillance lasers and some LIDARs exceed the \nallowable class I AELs for the invisible wavelengths and therefore require variances as \ndescribed in § 1010.4. For products labeled under the classification system of the IEC, \nclasses 1, 2, and 3R are acceptable class limits for an invisible emission and therefore \ndo not require a variance. The FDA variance may require administrative controls \n(for example, the laser equipment purchasing organization is to maintain an active \nprogram of training for its employees in the safe use of the laser system) and technical \ncontrols (such as a range finder cutoff that disables the laser when the distance between \nthe laser’s aperture and the object being exposed is less than the NOHD).\n7.3 Aircraft Laser Equipment Installation.\n7.3.1 System Safety Analysis.\nYou must perform a system safety analysis to assess whether the installed laser \nequipment meets 14 CFR 23.1309, 25.1309, 27.1309, or 29.1309. Refer to \nAC 23.1309-1, System Safety Analysis and Assessment for Part 23 Airplanes. For \npart 25 airplanes, refer to AC 25.1309-1, System Design and Analysis. For part 27 \nrotorcraft, refer to AC 27.1309, Equipment, Systems and Installations. For part 29\n\nrotorcraft, refer to AC 29.1309, Equipment, Systems and Installations. The systems \nsafety assessment should address the following:\n7.3.1.1 Laser Equipment Malfunction.\nLaser equipment malfunction resulting in an aircraft crewmember’s or \npassenger’s eye or skin being exposed to invisible laser radiation \nexceeding the MPE is considered no less than a hazardous functional \nfailure condition and could be catastrophic if continued safe flight is not \npossible because of the severity of the laser damage to a pilot’s eye or \nskin. In your system safety assessment, you should document the rationale \nfor a hazardous functional failure condition classification. If there is no \ndirect or reflected path into the cockpit or cabin because of the location of \nthe laser and physical shielding provided by the aircraft structure, this \nfailure condition does not apply. \n7.3.1.2 System Safety Considerations.\nIn assessing the failure conditions, you should consider direct and \nreflected radiation; the location of the laser, laser beam steering \nmechanism, and circuitry; the use of mechanical, software, or airborne \nelectronic hardware (AEH) stops that prevent the laser from being steered \nin a direction that could result in the aircraft occupants’ eyes being \nexposed to direct or reflected radiation; laser arming and firing circuitry; \nand other design features whose malfunction could contribute to an \ninadvertent exposure or an exposure that exceeds the MPE (such as failure \nof the internal laser diffuser used to reduce the AEL). If the laser’s\nsteering stops are implemented in software or AEH, their assurance level \nshould be commensurate with the functional failure condition associated \nwith the stops. Reflections off any part of the aircraft (such as the \nstructure, blades, skids, or landing gear) should be considered specular.\n7.3.1.3 Aircraft Structure. \nAny malfunction resulting in damage to aircraft structure due to laser \nexposure should be assessed to determine the extent of aircraft damage \nand the associated functional failure condition classification.\n7.3.1.4 Equipment Interfaces.\nAny malfunction of the laser equipment’s interfaces with other aircraft \nsystem will have to be assessed to determine the effect on the aircraft \nsystem and laser equipment as well as the associated functional failure \ncondition classifications.</context>\n<context id=\"3\">7.1 Laser Equipment Certification Yes The laser equipment must comply with all \napplicable FDA 21 CFR standards. Since \nthe laser equipment complies with IEC \nstandard 60825-1, the FDA’s Laser Notice \nNo. 50 may be used to determine what \nIEC 60825-1 guidance can be substituted \nfor the FDA’s 21 CFR standards. \n7.2 FDA Variance No Since the LIDAR is a class 3R laser, a \nvariance is not required \n7.3.1 System Safety Analysis Yes The results of the systems safety analysis \nfor paragraphs 7.3.1.1, 7.3.1.2, 7.3.1.3, \n7.3.1.4, and 7.3.1.5 should be \ndocumented. For this example, the \nsystem safety analysis would document \nthe rationale why the functional failure \nconditions in paragraphs 7.3.1.1, 7.3.1.2,\n\nAppendix B \nB-2 \n7.3.1.3, 7.3.1.4, and 7.3.1.5 are not \napplicable. \n7.3.1.1 Laser Equipment Malfunction No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.1 is not applicable. \n7.3.1.2 System Safety Considerations No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.2 is not applicable. \n7.3.1.3 Aircraft Structure No A class 3R laser is not capable of burning \nor melting the aircraft structure or paint. \n7.3.1.4 Equipment Interfaces No The laser equipment does not interface \nwith any other are aircraft systems (e.g. \nattitude heading reference system) other \nthan electrical power. The electrical \npower wiring is protected with an \nappropriately sized circuit breaker. \n7.3.1.5 Other Functional Failure No Other functional failure conditions should \nCondition be assessed for each equipment \ninstallation. This specific equipment \ninstallation does not have other functional \nfailure conditions (such as the laser sensor \nfails to retract posing a hazard during \nlanding). \n7.3.2 NOHD and MPE Calculations Yes Since this is not a class I laser, the NOHD \nand MPE should be calculated and \ndocumented in a report. \n7.3.3 Installation Type Design Yes The type design for the installation should \ninclude all the applicable 21 CFR 1040 \nrequirements (such as laser emissions \nindicator in the cockpit, labels) \n7.3.4 Software No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment software \nwould not have to be developed using AC \n20-115C. \n7.3.5 AEH No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment AEH \nwould not have to be developed using AC \n20-152. \n7.3.6 Configuration Control Yes Changes to the laser equipment could \naffect the laser equipment installation\n\nAppendix B \nB-3 \nairworthiness and the laser equipment \ncertification.\n7.3.7 Aircraft Flight Manual Yes An approved AFMS is required for laser \nSupplement equipment installation. \n7.3.7.1 Limitations Yes The following AFMS limitations would \napply: \n7.3.7.1.1 Laser must not be used to radiate \nother flying aircraft.\n7.3.7.1.2 Laser must not be used on the \nground or during taxi, takeoff, or landing. \n7.3.7.1.3 Laser must not be used to radiate \npeople when the distance between the \nlaser and the people is less than NOHD. \nThe NOHD should be specified. \n7.3.7.1.4 Atmospheric conditions when \nthe laser must not be used. \n7.3.7.1.5 Flight conditions when the laser \nmust not be used (such as angle of bank, \nflying in close proximity to terrain, or \nhoist operations). \n7.3.7.1.7 Aircraft configurations when the \nlaser must not be used (such as cargo \nmirrors).</context>\n<context id=\"4\"># Summary\nFAA关于机载不可见光谱激光设备（含红外监视激光与LIDAR）安装适航批准的建议指南。\n\n该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。</context>\n<context id=\"5\">Department\nnsportation\nal Aviation\nnistration\nAdvisory \nCircular\nct: Laser Airworthiness Installation\nnce \nDate: 12/15/14 \nInitiated By: AIR-134 \nAC No: 20-183\nU.S. \nof Tra\nFeder\nAdmi\nSubje\nGuida\n1 PURPOSE.\n1.1 In this advisory circular (AC), we recommend one way to obtain Federal Aviation \nAdministration (FAA) airworthiness approval for the installation of aircraft-mounted, \nnonrequired, invisible spectrum laser equipment such as infrared surveillance laser and \nlight detection and ranging (LIDAR) equipment. This AC is not mandatory and does not \nconstitute a regulation. This AC describes an acceptable means, but not the only means, \nto comply with the requirements found in Title 14 of the Code of Federal Regulations \n(14 CFR) 23.1301, 23.1309, 23.1529, 23.1581, 25.1301, 25.1309, 25.1529, 25.1581, \n27.1301, 27.1309, 27.1529, 27.1581, 29.1301, 29.1309, 29.1529, and 29.1581 for the \nlaser equipment aspects only. If you use the means described in this AC, you must \nfollow it in its entirety.\n1.2 This AC only addresses unique laser airworthiness installation requirements. It is not \ncomprehensive installation guidance for airborne equipment with lasers because it does \nnot address all the applicable installation airworthiness requirements such as those \ndiscussed in paragraph 7 below. \n1.3 This AC is not intended for installations seeking airworthiness approval of required \naircraft equipment that has a laser with radiation contained within a protective housing \n(for example, a ring laser gyro). \n1.4 This AC is not intended for laser-based weapons and aircraft self-protection \ncountermeasures equipment installations. \n1.5 This AC is only intended for invisible lasers. This AC does not apply to visible lasers \nbecause they pose additional hazards (such as flash blindness) that are not addressed \nin this AC. \n1.6 Additional airworthiness certification criteria beyond what is described in this AC \nwould be required for installations intended for laser operation with head- or \nhelmet-mounted vision devices such as night vision goggles (NVG). For NVG\n\n1.7 guidance, refer to AC 27.1, Certification of Normal Category Rotorcraft, miscellaneous \nguidance (MG) 16, or AC 29.2, Certification of Transport Category Rotorcraft, MG 16. \n2 AUDIENCE.\nWe wrote this AC for aircraft manufacturers, laser equipment manufacturers, \ninstallation shops, and other applicants seeking FAA airworthiness approval of \ninvisible spectrum laser equipment installations on part 23, 25, 27, and 29 aircraft. \nThe airworthiness approval can occur under a type certificate (TC), supplemental type \ncertificate (STC), amended type certificate (ATC), amended supplemental type \ncertificate (ASTC) or data approval for major alteration. This AC also provides \nguidance to FAA personnel involved in a TC, STC, ATC, ASTC, or data approval for \nmajor alterations that install invisible spectrum laser equipment.\n3 BACKGROUND.\n3.1 Laser Surveillance Equipment.\nLocal, State, and Federal law enforcement agencies use forward looking infrared \n(FLIR) equipment with laser illuminators, pointers, and range finders for nighttime, \ncovert surveillance. Laser surveillance equipment may be used to support several kinds \nof tasks and missions, varying from target range-finding to illuminating small spots or \nlarge areas. Certification of such airborne surveillance equipment installations with \nlasers presents some unique challenges because lasers can pose a potential eye hazard\nto flight crew, passengers, other aircraft occupants, and the nonflying public. Laser \nsurveillance equipment typically uses class IIIb or IV lasers. Before this guidance, many \nsurveillance systems were installed using an STC for laser surveillance equipment that \nonly included provisional wiring for the laser. For these installations, the STC type \ndesign would show that the laser was electrically disabled. These installations may have \nnot completely addressed all the laser hazards.</context>\n<context id=\"6\">design would show that the laser was electrically disabled. These installations may have \nnot completely addressed all the laser hazards.\n3.2 LIDAR.\nA LIDAR uses a laser to perform ranging by measuring the reflected return of a \nprojected laser beam. LIDAR devices can be used in mapping terrain elevation, \nobstacles, and vegetation; or atmospheric measuring (for example, particulate tracking \nor turbulence monitoring). Some LIDARs use an internal class IIIb or IV laser, and \nthrough an internal mechanism, diffuse the external laser emissions to a class I level.\nLIDAR external laser emissions can range from class I to class IV.\n3.3 Eye Hazard.\nFLIR and LIDAR lasers can be especially hazardous because the beam is invisible and\nthere is no blink reflex reaction to protect the eye, so eye exposure may initially go \nundetected. Exposure to lasers operating within the 750 to 1,400 nanometer (nm) \nnear infrared spectrum can cause retinal eye damage. The 400 to 1,400 nm wave band is \nknown as the retinal hazard region. Laser equipment that operates in the 315 to 400 nm \nultraviolet or the 1,400 to 10,600 nm far infrared spectrums can damage the cornea,\n\nlens, or both. Most FLIR and LIDAR lasers operate with a wavelength of 800 to \n1570 nm. The extent of eye damage depends on the laser exposure dose.\n4 ROLES AND RESPONSIBILITIES.\n4.1 FAA Regulatory Authority Role. \nThe FAA is responsible for issuing a design approval (such as an STC) or other data \napproval for an aircraft laser installation when an applicant demonstrates the laser \ninstallation meets the applicable airworthiness requirements.\n4.2 Food and Drug Administration (FDA) Regulatory Authority Role.\nThe FDA has the authority to regulate light-emitting products and electronic product \nradiation (Title 21 of the United States Code section 360ii, Program of control). The \nFDA is also responsible for approval or disapproval of variance applications for a laser \nnot meeting the laser performance standards found in Title 21 of the Code Federal \nRegulations (21 CFR) part 1040, Performance Standards for Light-Emitting Products.\n4.3 Laser Manufacturer Equipment Certification Role.\nThe laser manufacturer is responsible for self-certifying that the laser meets the \nperformance standards in § 1040.10, Laser products, and obtaining a variance \nfrom the FDA when laser equipment does not meet a laser performance standard.\n4.4 Installation Applicant Role.\nThe applicant who applies for an installation design approval is responsible for \nmeeting all applicable FAA airworthiness and FDA laser performance and \nvariance requirements.\n5 DEFINITIONS.\n5.1 Accessible Emission Limit (AEL).\nThe maximum accessible emission level permitted by the FDA within a particular \nlaser hazard class as stated in § 1040.10(c), (d), and (e).\n5.2 Divergence.\nThe increase in diameter of the laser beam with distance from the exit aperture. \nDivergence is an angular measurement of the beam spread, expressed in milliradians \n(mrad) defined at the points where the irradiance is 37 percent of the peak irradiance. \n5.3 Irradiance.\nA means of expressing power of the beam per unit area, which is expressed in \nwatts per centimeter squared (W/cm2).\n\n5.4 Maximum Permissible Exposure (MPE). \nThe level of laser radiation to which an unprotected person may be exposed without \nhazardous effect or adverse biological change in the eye or skin, normally expressed \nin milliwatts per centimeter squared (mW/cm2) or millijoules per centimeter \nsquared (mJ/cm2).\n5.5 Nominal Ocular Hazard Distance (NOHD). \nThe distance from the laser beyond which the laser radiation does not exceed the MPE.</context>\n\n## Request metadata\nCurrent time: 2026-10-22 Thursday\n\n## User request\n依据这七份文件，为一台1550nm不可见激光给出精确 NOHD 数值。已知它不扫描，单次任务预计最长照射3秒。若无法算出，仍须指出能确定的计算时长下限和需要的证据，不能只回答“资料不足”。\n",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "26bc5aa6-6588-4a43-a64e-d50e8b6fe02c",
+    "request_id": "c2f4c177-fbc5-4c27-8c50-3b58f367da08",
+    "session_id": "725aab28-f99d-4eee-a794-c0b3581554a9",
+    "role": "assistant",
+    "content": "**结论：** 仅凭现有材料，无法给出一个可辩护的精确 NOHD 数值。不过，可以确定一项关键参数：**计算曝光时长应取 10 s，而不是任务最长的 3 s**。\n\n> 说明：本次检索实际只返回了 **AC 20-183** 的内容，未见到其余六份文件；因此下面只依据该 AC 作答，不能假装已经完成了对七份文件的交叉计算。\n\n## 1. 可以确定的计算时长下限\n\nAC 20-183 对不扫描激光明确规定：\n\n> “For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds.”<kb doc=\"AC_20-183.pdf\" chunk_id=\"1a2b68d6-e33c-4fda-b226-0e7f612a94ad\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />\n\n因此，即使单次任务预计最长只照射 3 s，NOHD 计算仍应取：\n\n**t_calc = max（预计最大曝光时长, 10 s）= 10 s**\n\n这里的 10 s 是计算假设的下限，并非设备实际会连续照射 10 s。如果实际预期最大曝光时间超过 10 s，就应改用更大的值。10 s 只是“时长下限”，还不是 NOHD 数值。\n\n## 2. 仍算不出精确 NOHD 的原因\n\nNOHD 的定义是：激光辐射不超过 MPE 的距离<kb doc=\"AC_20-183.pdf\" chunk_id=\"34453ec1-4c95-44ed-9ef3-de367a101fe3\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。要算出数值，必须同时知道 MPE 和激光束参数。AC 20-183 将 MPE/NOHD 的计算方法指向 AC 70-1 和 ANSI Z136.1<kb doc=\"AC_20-183.pdf\" chunk_id=\"1a2b68d6-e33c-4fda-b226-0e7f612a94ad\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-183.pdf\" chunk_id=\"cd389c51-3c16-487e-b4ad-db68432ab4ed\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />，但本次检索到的内容没有给出 1550 nm、10 s 条件下可直接代入的 MPE 数值或表格。\n\n1550 nm 位于 1,400–10,600 nm 远红外波段，主要危害是角膜和晶状体<kb doc=\"AC_20-183.pdf\" chunk_id=\"68e596a2-27ed-4da2-8569-20c930653521\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />，但这仍不能替代具体的 MPE 限值。\n\n此外，AC 明确要求计算报告列出公式、公式来源、表号、波长、发散角、曝光时间、功率，以及直接和反射光路进入飞机窗户的尺寸等参数<kb doc=\"AC_20-183.pdf\" chunk_id=\"6fb4573b-f049-4fa1-a093-e61eb66e0b29\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。目前缺少这些输入，所以无法得出唯一数值。\n\n## 3. 复算所需的一般公式与输入\n\n在工程复算中，圆形均匀光束可写成：\n\n**NOHD = [ √(4P / (π·MPE)) − D ] / θ**\n\n其中：P 为功率（W），MPE 为辐照度限值（W/cm²），D 为出射光束直径（cm），θ 为全角发散角（rad）。若厂家给出的是 mrad，需先换算。该式只是复算框架，**不是 AC 20-183 原文公式**；正式报告还应按 AC 要求注明公式来源和表号<kb doc=\"AC_20-183.pdf\" chunk_id=\"6fb4573b-f049-4fa1-a093-e61eb66e0b29\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。高斯光束还需按峰值辐照度和 1/e² 束径修正，不能直接套用。\n\n要得到精确 NOHD，至少需要补充：\n\n| 所需证据 | 具体内容 |\n|---|---|\n| 激光输出参数 | 1550 nm 确认、平均功率或脉冲能量/重频/脉宽、出射口径、全角发散角、光束轮廓 |\n| MPE 依据 | ANSI Z136.1 的具体版本、表号或公式；1550 nm、10 s、眼部（角膜）限值 |\n| 光路几何 | 直接路径及镜面反射路径到驾驶舱/客舱窗户的距离、入射角、窗口透射率；飞机结构反射应按镜面反射考虑<kb doc=\"AC_20-183.pdf\" chunk_id=\"f9de2a39-eeb9-4c30-9f5e-ba96ccfd1cb7\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| 计算报告 | 公式、公式引用、表号、全部参数、直接/反射光路尺寸及曝光时长合理性说明<kb doc=\"AC_20-183.pdf\" chunk_id=\"6fb4573b-f049-4fa1-a093-e61eb66e0b29\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n\n## 4. 目前能给出的确定答案\n\n- **NOHD 精确数值：无法计算**，缺少功率、发散角、束径和 1550 nm/10 s 的 MPE 限值。\n- **计算曝光时长下限：10 s**；不是 3 s。若实际最大曝光时长大于 10 s，则取实际值<kb doc=\"AC_20-183.pdf\" chunk_id=\"1a2b68d6-e33c-4fda-b226-0e7f612a94ad\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n- **需要的关键证据：** 激光功率/能量参数、发散角与束径、ANSI Z136.1 的 MPE 表或公式，以及直接和镜面反射光路几何<kb doc=\"AC_20-183.pdf\" chunk_id=\"6fb4573b-f049-4fa1-a093-e61eb66e0b29\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-183.pdf\" chunk_id=\"cd389c51-3c16-487e-b4ad-db68432ab4ed\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n拿到上述数据后，才能把 P、θ、D 和 MPE 代入公式，给出可复核的 NOHD 数值及适用条件。",
+    "knowledge_references": [
+      {
+        "id": "6fb4573b-f049-4fa1-a093-e61eb66e0b29",
+        "seq": 61,
+        "score": 0.9772727272727271,
+        "end_at": 15267,
+        "content": "system and laser equipment as well as the associated functional failure \ncondition classifications.\n7.3.1.5 Other Functional Failure Condition.\nOther malfunctions not described in paragraphs 7.3.1.1 through 7.3.1.4\nof this AC should be identified and assessed to determine their functional \nfailure conditions.\n\n7.3.1.6 Loss of Function.\nBecause the laser is nonrequired equipment, the functional failure \ncondition for loss of the laser function is “no effect.”\n7.3.2 NOHD and MPE Calculations.\nYou should provide a report that documents how the NOHD and MPE were calculated \nto include all equations, references for those equations, table references, equation \nparameters (such as wavelength, divergence, exposure time, and power), dimensions for \nthe reflected and direct radiation paths into aircraft’s windows, and justification for the \nexposure duration. For laser illuminators, spotters, range finders, and other nonscanning \nlasers, the NOHD exposure duration should be based on the maximum exposure \nduration expected, but not less than 10 seconds. AC 70-1, Outdoor Laser Operations, \nand American National Standards Institute document ANSI Z136.1, American National \nStandard for Safe Use of Lasers, provide acceptable means to calculate MPE and \nNOHD.\n7.3.3 Installation Type Design.\nThe installation type design must include all the 21 CFR 1040 requirements that would \nbe applicable to the installation (such as the key control, emissions indicator, labels, and\nremote interlock connector) and the technical controls (such as the aircraft interface \nsafety interlock) from the FDA variance that affect the aircraft installation.\n7.3.4 Software.\nIf the laser equipment includes software that can contribute to malfunctions described \nin paragraph 7.3.1 above, develop the software using the guidance in AC 20-115C, \nAirborne Software Assurance, to a software level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1.\n7.3.5 AEH.\nIf the laser equipment includes custom AEH (such as an application-specific integrated \ncircuit, field programmable logic device, or programmable logic device), which can \ncontribute to the malfunctions described in paragraph 7.3.1 above, develop the AEH \nusing RTCA, Inc., document RTCA/DO-254, Design Assurance Guidance for Airborne \nElectronic Hardware, to a design assurance level commensurate with the functional \nfailure condition classifications determined from paragraph 7.3.1. For custom AEH \nclassified as simple, paragraph 1.6 of RTCA/DO-254 applies.\nNote: We encourage the use of industry-recognized system safety standards (such as\nSAE International ARP 4761 and IEC 61508) and development assurance standards \n(such as RTCA/DO-178C, RTCA/DO-254, and IEC 61508) for the laser equipment \nwhen its malfunction could result in an exposure that could exceed the MPE for people\noutside the laser-equipped aircraft.\n7.3.6 Configuration Control.\nUnapproved changes to the laser equipment or the installation should not be made \nbecause they could affect the airworthiness (for example, electromagnetic and\n\nenvironmental compatibility or new failure modes) of the equipment installation and \ninvalidate the laser equipment certification and FDA-approved variances. The applicant \nshould provide a plan for maintaining configuration throughout the product life cycle. \nIf the installation results in a modification to the laser equipment as certified by the \nlaser equipment manufacturer, the laser equipment must be recertified as described \nin § 1040.10(i).",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 14887,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 61,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "6fb4573b-f049-4fa1-a093-e61eb66e0b29",
+          "1a2b68d6-e33c-4fda-b226-0e7f612a94ad"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547273049442000",
+              "question": "AC 20-183要求NOHD和MPE计算报告包含哪些内容？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547273049443001",
+              "question": "AC 20-183要求NOHD和MPE计算报告记录哪些方程参数，例如波长、发散角、曝光时间和功率？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547273049443202",
+              "question": "AC 20-183要求如何说明反射和直接辐射路径进入飞机窗户的尺寸？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n7.3.2 NOHD and MPE Calculations.\nYou should provide a report that documents how the NOHD and MPE were calculated \nto include all equations, references for those equations, table references, equation \nparameters (such as wavelength, divergence, exposure time, and power), dimensions for \nthe reflected and direct radiation paths into aircraft’s windows, and justification for the",
+        "parent_chunk_id": "965789e1-509a-4b14-a80a-f3dd9c081204",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.1605,
+              0.4312,
+              0.1804
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "7.3.2 NOHD and MPE Calculations.",
+            "mapping": "exact",
+            "source_id": "pdf:7:151:184",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.1817,
+              0.8845,
+              0.341
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "You should provide a report that documents how the NOHD and MPE were calculated to include all equations, references for those equations, table references, equation parameters (such as wavelength, divergence, exposure time, and power), dimensions for the reflected and direct radiation paths into aircraft’s windows, and justification for the",
+            "mapping": "exact",
+            "source_id": "pdf:7:184:946",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.1817,
+              0.8845,
+              0.341
+            ],
+            "page": 7,
+            "type": "pdf",
+            "quote": "exposure duration. For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds. AC 70-1, Outdoor Laser Operations, and American National Standards Institute document ANSI Z136.1, American National",
+            "mapping": "exact",
+            "source_id": "pdf:7:184:946",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "91357a97-ff8d-402d-be66-b2003ba885ab",
+        "seq": 43,
+        "score": 0.9286160714285713,
+        "end_at": 11003,
+        "content": "variance’s technical controls applicable to the installation (such as aircraft interface \nsafety interlock) have been satisfied. \n7.2 FDA Variance.\nAccording to the FDA, surveillance lasers and LIDAR systems are considered \n“surveying, leveling, and alignment laser products,” which are specific purpose laser \nproducts described in § 1040.11(b) and limited to class I AEL for the invisible laser \nwavelengths. However, most airborne surveillance lasers and some LIDARs exceed the \nallowable class I AELs for the invisible wavelengths and therefore require variances as \ndescribed in § 1010.4. For products labeled under the classification system of the IEC, \nclasses 1, 2, and 3R are acceptable class limits for an invisible emission and therefore \ndo not require a variance. The FDA variance may require administrative controls \n(for example, the laser equipment purchasing organization is to maintain an active \nprogram of training for its employees in the safe use of the laser system) and technical \ncontrols (such as a range finder cutoff that disables the laser when the distance between \nthe laser’s aperture and the object being exposed is less than the NOHD).\n7.3 Aircraft Laser Equipment Installation.\n7.3.1 System Safety Analysis.\nYou must perform a system safety analysis to assess whether the installed laser \nequipment meets 14 CFR 23.1309, 25.1309, 27.1309, or 29.1309. Refer to \nAC 23.1309-1, System Safety Analysis and Assessment for Part 23 Airplanes. For \npart 25 airplanes, refer to AC 25.1309-1, System Design and Analysis. For part 27 \nrotorcraft, refer to AC 27.1309, Equipment, Systems and Installations. For part 29\n\nrotorcraft, refer to AC 29.1309, Equipment, Systems and Installations. The systems \nsafety assessment should address the following:\n7.3.1.1 Laser Equipment Malfunction.\nLaser equipment malfunction resulting in an aircraft crewmember’s or \npassenger’s eye or skin being exposed to invisible laser radiation \nexceeding the MPE is considered no less than a hazardous functional \nfailure condition and could be catastrophic if continued safe flight is not \npossible because of the severity of the laser damage to a pilot’s eye or \nskin. In your system safety assessment, you should document the rationale \nfor a hazardous functional failure condition classification. If there is no \ndirect or reflected path into the cockpit or cabin because of the location of \nthe laser and physical shielding provided by the aircraft structure, this \nfailure condition does not apply. \n7.3.1.2 System Safety Considerations.\nIn assessing the failure conditions, you should consider direct and \nreflected radiation; the location of the laser, laser beam steering \nmechanism, and circuitry; the use of mechanical, software, or airborne \nelectronic hardware (AEH) stops that prevent the laser from being steered \nin a direction that could result in the aircraft occupants’ eyes being \nexposed to direct or reflected radiation; laser arming and firing circuitry; \nand other design features whose malfunction could contribute to an \ninadvertent exposure or an exposure that exceeds the MPE (such as failure \nof the internal laser diffuser used to reduce the AEL). If the laser’s\nsteering stops are implemented in software or AEH, their assurance level \nshould be commensurate with the functional failure condition associated \nwith the stops. Reflections off any part of the aircraft (such as the \nstructure, blades, skids, or landing gear) should be considered specular.\n7.3.1.3 Aircraft Structure. \nAny malfunction resulting in damage to aircraft structure due to laser \nexposure should be assessed to determine the extent of aircraft damage \nand the associated functional failure condition classification.\n7.3.1.4 Equipment Interfaces.\nAny malfunction of the laser equipment’s interfaces with other aircraft \nsystem will have to be assessed to determine the effect on the aircraft \nsystem and laser equipment as well as the associated functional failure \ncondition classifications.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 10651,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 43,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "91357a97-ff8d-402d-be66-b2003ba885ab",
+          "0951dec5-9431-4716-9997-f1f9ab23ba41",
+          "d1c1ca26-9722-4732-b4d3-74f1cfd72bb3",
+          "b5a1731f-6376-498d-bbaf-ffc45b92cd01"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547226290039100",
+              "question": "FDA将监视激光器和LIDAR系统归类为哪类特定用途激光产品进行监管？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547226290040001",
+              "question": "为什么大多数机载监视激光器和部分LIDAR系统需要申请FDA差异许可（variance）？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547226290040302",
+              "question": "根据§1040.11(b)，监视、水准和准直激光产品在不可见波长下的AEL限制是什么？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n根据§1040.11(b)，监视、水准和准直激光产品在不可见波长下的AEL限制是什么？",
+        "parent_chunk_id": "f2f99aa9-5b76-4b0d-8628-a0dbf88bf303",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.5067,
+              0.3143,
+              0.5269
+            ],
+            "page": 5,
+            "type": "pdf",
+            "quote": "7.2 FDA Variance.",
+            "mapping": "exact",
+            "source_id": "pdf:5:1758:1776",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.5279,
+              0.88,
+              0.7395
+            ],
+            "page": 5,
+            "type": "pdf",
+            "quote": "According to the FDA, surveillance lasers and LIDAR systems are considered “surveying, leveling, and alignment laser products,” which are specific purpose laser products described in § 1040.11(b) and limited to class I AEL for the invisible laser wavelengths. However, most airborne surveillance lasers and some LIDARs exceed the",
+            "mapping": "exact",
+            "source_id": "pdf:5:1776:2798",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.5279,
+              0.88,
+              0.7395
+            ],
+            "page": 5,
+            "type": "pdf",
+            "quote": "However, most airborne surveillance lasers and some LIDARs exceed the allowable class I AELs for the invisible wavelengths and therefore require variances as described in § 1010.4. For products labeled under the classification system of the IEC, classes 1, 2, and 3R are acceptable class limits for an invisible emission and therefore",
+            "mapping": "exact",
+            "source_id": "pdf:5:1776:2798",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.5279,
+              0.88,
+              0.7395
+            ],
+            "page": 5,
+            "type": "pdf",
+            "quote": "the laser’s aperture and the object being exposed is less than the NOHD).",
+            "mapping": "exact",
+            "source_id": "pdf:5:1776:2798",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.2941,
+              0.1605,
+              0.8825,
+              0.3372
+            ],
+            "page": 6,
+            "type": "pdf",
+            "quote": "possible because of the severity of the laser damage to a pilot’s eye or skin. In your system safety assessment, you should document the rationale for a hazardous functional failure condition classification. If there is no direct or reflected path into the cockpit or cabin because of the location of the laser and physical shielding provided by the aircraft structure, this",
+            "mapping": "exact",
+            "source_id": "pdf:6:169:868",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "8f595080-d238-4005-b9e6-be1b32e61552",
+        "seq": 131,
+        "score": 0.9263720150816924,
+        "end_at": 34570,
+        "content": "7.1 Laser Equipment Certification Yes The laser equipment must comply with all \napplicable FDA 21 CFR standards. Since \nthe laser equipment complies with IEC \nstandard 60825-1, the FDA’s Laser Notice \nNo. 50 may be used to determine what \nIEC 60825-1 guidance can be substituted \nfor the FDA’s 21 CFR standards. \n7.2 FDA Variance No Since the LIDAR is a class 3R laser, a \nvariance is not required \n7.3.1 System Safety Analysis Yes The results of the systems safety analysis \nfor paragraphs 7.3.1.1, 7.3.1.2, 7.3.1.3, \n7.3.1.4, and 7.3.1.5 should be \ndocumented. For this example, the \nsystem safety analysis would document \nthe rationale why the functional failure \nconditions in paragraphs 7.3.1.1, 7.3.1.2,\n\nAppendix B \nB-2 \n7.3.1.3, 7.3.1.4, and 7.3.1.5 are not \napplicable. \n7.3.1.1 Laser Equipment Malfunction No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.1 is not applicable. \n7.3.1.2 System Safety Considerations No Since there is no direct or reflected path \ninto the cockpit or cabin, the malfunction \ndescribed in 7.3.1.2 is not applicable. \n7.3.1.3 Aircraft Structure No A class 3R laser is not capable of burning \nor melting the aircraft structure or paint. \n7.3.1.4 Equipment Interfaces No The laser equipment does not interface \nwith any other are aircraft systems (e.g. \nattitude heading reference system) other \nthan electrical power. The electrical \npower wiring is protected with an \nappropriately sized circuit breaker. \n7.3.1.5 Other Functional Failure No Other functional failure conditions should \nCondition be assessed for each equipment \ninstallation. This specific equipment \ninstallation does not have other functional \nfailure conditions (such as the laser sensor \nfails to retract posing a hazard during \nlanding). \n7.3.2 NOHD and MPE Calculations Yes Since this is not a class I laser, the NOHD \nand MPE should be calculated and \ndocumented in a report. \n7.3.3 Installation Type Design Yes The type design for the installation should \ninclude all the applicable 21 CFR 1040 \nrequirements (such as laser emissions \nindicator in the cockpit, labels) \n7.3.4 Software No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment software \nwould not have to be developed using AC \n20-115C. \n7.3.5 AEH No Based on the system safety analysis, the \nlaser equipment installation has no \nfunctional failure conditions that would \naffect the aircraft or its’ occupants. \nTherefore, the laser equipment AEH \nwould not have to be developed using AC \n20-152. \n7.3.6 Configuration Control Yes Changes to the laser equipment could \naffect the laser equipment installation\n\nAppendix B \nB-3 \nairworthiness and the laser equipment \ncertification.\n7.3.7 Aircraft Flight Manual Yes An approved AFMS is required for laser \nSupplement equipment installation. \n7.3.7.1 Limitations Yes The following AFMS limitations would \napply: \n7.3.7.1.1 Laser must not be used to radiate \nother flying aircraft.\n7.3.7.1.2 Laser must not be used on the \nground or during taxi, takeoff, or landing. \n7.3.7.1.3 Laser must not be used to radiate \npeople when the distance between the \nlaser and the people is less than NOHD. \nThe NOHD should be specified. \n7.3.7.1.4 Atmospheric conditions when \nthe laser must not be used. \n7.3.7.1.5 Flight conditions when the laser \nmust not be used (such as angle of bank, \nflying in close proximity to terrain, or \nhoist operations). \n7.3.7.1.7 Aircraft configurations when the \nlaser must not be used (such as cargo \nmirrors).",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 34191,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 131,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "8f595080-d238-4005-b9e6-be1b32e61552"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547331658515700",
+              "question": "AC 20-183 中激光设备适用的 AFMS 限制有哪些？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547331658518201",
+              "question": "飞机激光设备在哪些地面和飞行阶段禁止使用？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547331658518702",
+              "question": "激光设备不得照射人员时，NOHD 安全距离应如何规定？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n激光设备不得照射人员时，NOHD 安全距离应如何规定？",
+        "parent_chunk_id": "acbcf52a-4b13-49ec-a70b-7b66446e9cdb",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.1625,
+              0.2796,
+              0.1824
+            ],
+            "page": 17,
+            "type": "pdf",
+            "quote": "7.3.7.1 Limitations",
+            "mapping": "exact",
+            "source_id": "pdf:17:180:200",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.472,
+              0.1625,
+              0.8706,
+              0.1824
+            ],
+            "page": 17,
+            "type": "pdf",
+            "quote": "Yes The following AFMS limitations would",
+            "mapping": "exact",
+            "source_id": "pdf:17:199:242",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "page": 17,
+            "type": "pdf",
+            "quote": "apply:",
+            "mapping": "exact",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.5529,
+              0.1973,
+              0.8904,
+              0.2347
+            ],
+            "page": 17,
+            "type": "pdf",
+            "quote": "7.3.7.1.1 Laser must not be used to radiate other flying aircraft.",
+            "mapping": "exact",
+            "source_id": "pdf:17:250:318",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.5529,
+              0.2322,
+              0.8851,
+              0.2695
+            ],
+            "page": 17,
+            "type": "pdf",
+            "quote": "7.3.7.1.2 Laser must not be used on the ground or during taxi, takeoff, or landing.",
+            "mapping": "exact",
+            "source_id": "pdf:17:318:404",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.5529,
+              0.267,
+              0.8904,
+              0.3392
+            ],
+            "page": 17,
+            "type": "pdf",
+            "quote": "7.3.7.1.3 Laser must not be used to radiate people when the distance between the laser and the people is less than NOHD. The NOHD should be specified.",
+            "mapping": "exact",
+            "source_id": "pdf:17:404:559",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "98a89c56-f47e-43e2-a7b6-f426bce720a1",
+        "seq": 168,
+        "score": 0.8023529411764705,
+        "end_at": 0,
+        "content": "# Summary\nFAA关于机载不可见光谱激光设备（含红外监视激光与LIDAR）安装适航批准的建议指南。\n\n该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 0,
+        "chunk_type": "summary",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 168,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": null,
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "# Summary\nFAA关于机载不可见光谱激光设备（含红外监视激光与LIDAR）安装适航批准的建议指南。\n\n该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。",
+        "parent_chunk_id": "27517e54-5780-498d-ac56-152cf068071e",
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "7e155041-8f0b-4620-95dd-0e7ee1ad28af",
+        "seq": 10,
+        "score": 0.7615211810012836,
+        "end_at": 2760,
+        "content": "Department\nnsportation\nal Aviation\nnistration\nAdvisory \nCircular\nct: Laser Airworthiness Installation\nnce \nDate: 12/15/14 \nInitiated By: AIR-134 \nAC No: 20-183\nU.S. \nof Tra\nFeder\nAdmi\nSubje\nGuida\n1 PURPOSE.\n1.1 In this advisory circular (AC), we recommend one way to obtain Federal Aviation \nAdministration (FAA) airworthiness approval for the installation of aircraft-mounted, \nnonrequired, invisible spectrum laser equipment such as infrared surveillance laser and \nlight detection and ranging (LIDAR) equipment. This AC is not mandatory and does not \nconstitute a regulation. This AC describes an acceptable means, but not the only means, \nto comply with the requirements found in Title 14 of the Code of Federal Regulations \n(14 CFR) 23.1301, 23.1309, 23.1529, 23.1581, 25.1301, 25.1309, 25.1529, 25.1581, \n27.1301, 27.1309, 27.1529, 27.1581, 29.1301, 29.1309, 29.1529, and 29.1581 for the \nlaser equipment aspects only. If you use the means described in this AC, you must \nfollow it in its entirety.\n1.2 This AC only addresses unique laser airworthiness installation requirements. It is not \ncomprehensive installation guidance for airborne equipment with lasers because it does \nnot address all the applicable installation airworthiness requirements such as those \ndiscussed in paragraph 7 below. \n1.3 This AC is not intended for installations seeking airworthiness approval of required \naircraft equipment that has a laser with radiation contained within a protective housing \n(for example, a ring laser gyro). \n1.4 This AC is not intended for laser-based weapons and aircraft self-protection \ncountermeasures equipment installations. \n1.5 This AC is only intended for invisible lasers. This AC does not apply to visible lasers \nbecause they pose additional hazards (such as flash blindness) that are not addressed \nin this AC. \n1.6 Additional airworthiness certification criteria beyond what is described in this AC \nwould be required for installations intended for laser operation with head- or \nhelmet-mounted vision devices such as night vision goggles (NVG). For NVG\n\n1.7 guidance, refer to AC 27.1, Certification of Normal Category Rotorcraft, miscellaneous \nguidance (MG) 16, or AC 29.2, Certification of Transport Category Rotorcraft, MG 16. \n2 AUDIENCE.\nWe wrote this AC for aircraft manufacturers, laser equipment manufacturers, \ninstallation shops, and other applicants seeking FAA airworthiness approval of \ninvisible spectrum laser equipment installations on part 23, 25, 27, and 29 aircraft. \nThe airworthiness approval can occur under a type certificate (TC), supplemental type \ncertificate (STC), amended type certificate (ATC), amended supplemental type \ncertificate (ASTC) or data approval for major alteration. This AC also provides \nguidance to FAA personnel involved in a TC, STC, ATC, ASTC, or data approval for \nmajor alterations that install invisible spectrum laser equipment.\n3 BACKGROUND.\n3.1 Laser Surveillance Equipment.\nLocal, State, and Federal law enforcement agencies use forward looking infrared \n(FLIR) equipment with laser illuminators, pointers, and range finders for nighttime, \ncovert surveillance. Laser surveillance equipment may be used to support several kinds \nof tasks and missions, varying from target range-finding to illuminating small spots or \nlarge areas. Certification of such airborne surveillance equipment installations with \nlasers presents some unique challenges because lasers can pose a potential eye hazard\nto flight crew, passengers, other aircraft occupants, and the nonflying public. Laser \nsurveillance equipment typically uses class IIIb or IV lasers. Before this guidance, many \nsurveillance systems were installed using an STC for laser surveillance equipment that \nonly included provisional wiring for the laser. For these installations, the STC type \ndesign would show that the laser was electrically disabled. These installations may have \nnot completely addressed all the laser hazards.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 2427,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 10,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "7e155041-8f0b-4620-95dd-0e7ee1ad28af"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547227119229600",
+              "question": "在23、25、27和29部飞机上安装不可见光谱激光设备时，",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n在23、25、27和29部飞机上安装不可见光谱激光设备时，",
+        "parent_chunk_id": "180d3834-332a-443d-9830-e7f70b9b93e5",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1882,
+              0.1757,
+              0.869,
+              0.3175
+            ],
+            "page": 2,
+            "type": "pdf",
+            "quote": "invisible spectrum laser equipment installations on part 23, 25, 27, and 29 aircraft. The airworthiness approval can occur under a type certificate (TC), supplemental type certificate (STC), amended type certificate (ATC), amended supplemental type certificate (ASTC) or data approval for major alteration. This AC also provides",
+            "mapping": "exact",
+            "source_id": "pdf:2:190:829",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      },
+      {
+        "id": "432e53b6-e761-422c-b547-234cada92f0d",
+        "seq": 29,
+        "score": 0.7590182648401825,
+        "end_at": 7339,
+        "content": "design would show that the laser was electrically disabled. These installations may have \nnot completely addressed all the laser hazards.\n3.2 LIDAR.\nA LIDAR uses a laser to perform ranging by measuring the reflected return of a \nprojected laser beam. LIDAR devices can be used in mapping terrain elevation, \nobstacles, and vegetation; or atmospheric measuring (for example, particulate tracking \nor turbulence monitoring). Some LIDARs use an internal class IIIb or IV laser, and \nthrough an internal mechanism, diffuse the external laser emissions to a class I level.\nLIDAR external laser emissions can range from class I to class IV.\n3.3 Eye Hazard.\nFLIR and LIDAR lasers can be especially hazardous because the beam is invisible and\nthere is no blink reflex reaction to protect the eye, so eye exposure may initially go \nundetected. Exposure to lasers operating within the 750 to 1,400 nanometer (nm) \nnear infrared spectrum can cause retinal eye damage. The 400 to 1,400 nm wave band is \nknown as the retinal hazard region. Laser equipment that operates in the 315 to 400 nm \nultraviolet or the 1,400 to 10,600 nm far infrared spectrums can damage the cornea,\n\nlens, or both. Most FLIR and LIDAR lasers operate with a wavelength of 800 to \n1570 nm. The extent of eye damage depends on the laser exposure dose.\n4 ROLES AND RESPONSIBILITIES.\n4.1 FAA Regulatory Authority Role. \nThe FAA is responsible for issuing a design approval (such as an STC) or other data \napproval for an aircraft laser installation when an applicant demonstrates the laser \ninstallation meets the applicable airworthiness requirements.\n4.2 Food and Drug Administration (FDA) Regulatory Authority Role.\nThe FDA has the authority to regulate light-emitting products and electronic product \nradiation (Title 21 of the United States Code section 360ii, Program of control). The \nFDA is also responsible for approval or disapproval of variance applications for a laser \nnot meeting the laser performance standards found in Title 21 of the Code Federal \nRegulations (21 CFR) part 1040, Performance Standards for Light-Emitting Products.\n4.3 Laser Manufacturer Equipment Certification Role.\nThe laser manufacturer is responsible for self-certifying that the laser meets the \nperformance standards in § 1040.10, Laser products, and obtaining a variance \nfrom the FDA when laser equipment does not meet a laser performance standard.\n4.4 Installation Applicant Role.\nThe applicant who applies for an installation design approval is responsible for \nmeeting all applicable FAA airworthiness and FDA laser performance and \nvariance requirements.\n5 DEFINITIONS.\n5.1 Accessible Emission Limit (AEL).\nThe maximum accessible emission level permitted by the FDA within a particular \nlaser hazard class as stated in § 1040.10(c), (d), and (e).\n5.2 Divergence.\nThe increase in diameter of the laser beam with distance from the exit aperture. \nDivergence is an angular measurement of the beam spread, expressed in milliradians \n(mrad) defined at the points where the irradiance is 37 percent of the peak irradiance. \n5.3 Irradiance.\nA means of expressing power of the beam per unit area, which is expressed in \nwatts per centimeter squared (W/cm2).\n\n5.4 Maximum Permissible Exposure (MPE). \nThe level of laser radiation to which an unprotected person may be exposed without \nhazardous effect or adverse biological change in the eye or skin, normally expressed \nin milliwatts per centimeter squared (mW/cm2) or millijoules per centimeter \nsquared (mJ/cm2).\n5.5 Nominal Ocular Hazard Distance (NOHD). \nThe distance from the laser beyond which the laser radiation does not exceed the MPE.",
+        "metadata": {
+          "process_overrides": "map[asr_config:map[enabled:false language: model_id:] chunking_config:map[child_chunk_size:384 chunk_overlap:80 chunk_size:512 enable_parent_child:true parent_chunk_size:4096 separators:[\n\n \n 。 ！ ？ ; ；] strategy:auto] enable_multimodel:false extract_config:map[enabled:false] graph_enabled:false image_actions:map[ocr:map[on:[map[is:block prop:contain.text] map[is:true prop:contain.data_visual]] on_unobserved:true]] image_attrs_enabled:false image_vector_enabled:false question_generation_config:map[enabled:true question_count:3] summary_enabled:true vlm_config:map[api_key: base_url: enabled:false interface_type: model_id: model_name:]]"
+        },
+        "start_at": 6900,
+        "chunk_type": "text",
+        "image_info": "",
+        "match_type": 0,
+        "chunk_index": 29,
+        "knowledge_id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+        "sub_chunk_id": [
+          "432e53b6-e761-422c-b547-234cada92f0d"
+        ],
+        "chunk_metadata": {
+          "generated_questions": [
+            {
+              "id": "q1792547232071626400",
+              "question": "激光辐照度（Irradiance）的定义和常用单位是什么？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547232071628101",
+              "question": "激光最大允许照射量（MPE）是指什么，对眼和皮肤安全有何意义？",
+              "content_revision": 0
+            },
+            {
+              "id": "q1792547232071628302",
+              "question": "最大允许照射量（MPE）通常使用哪些单位表示？",
+              "content_revision": 0
+            }
+          ]
+        },
+        "knowledge_title": "AC_20-183.pdf",
+        "matched_content": "AC_20-183.pdf\n激光辐照度（Irradiance）的定义和常用单位是什么？",
+        "parent_chunk_id": "c7f9d42c-39f0-4a10-9e29-f22dc65d8c40",
+        "source_locators": [
+          {
+            "bbox": [
+              0.1176,
+              0.784,
+              0.2824,
+              0.8042
+            ],
+            "page": 3,
+            "type": "pdf",
+            "quote": "5.3 Irradiance.",
+            "mapping": "exact",
+            "source_id": "pdf:3:1909:1925",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.8052,
+              0.8047,
+              0.8425
+            ],
+            "page": 3,
+            "type": "pdf",
+            "quote": "A means of expressing power of the beam per unit area, which is expressed in watts per centimeter squared (W/cm2).",
+            "mapping": "exact",
+            "source_id": "pdf:3:1925:2040",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1176,
+              0.0893,
+              0.5327,
+              0.1095
+            ],
+            "page": 4,
+            "type": "pdf",
+            "quote": "5.4 Maximum Permissible Exposure (MPE).",
+            "mapping": "exact",
+            "source_id": "pdf:4:0:41",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "bbox": [
+              0.1882,
+              0.1105,
+              0.8547,
+              0.1653
+            ],
+            "page": 4,
+            "type": "pdf",
+            "quote": "The level of laser radiation to which an unprotected person may be exposed without hazardous effect or adverse biological change in the eye or skin, normally expressed in milliwatts per centimeter squared (mW/cm2) or millijoules per centimeter",
+            "mapping": "exact",
+            "source_id": "pdf:4:41:288",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          },
+          {
+            "page": 4,
+            "type": "pdf",
+            "quote": "squared (mJ/cm2).",
+            "mapping": "exact",
+            "source_hash": "775a1f9a4fb0e18402f45b394356aa5d"
+          }
+        ],
+        "knowledge_source": "",
+        "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+        "knowledge_channel": "web",
+        "knowledge_filename": "AC_20-183.pdf",
+        "knowledge_description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。"
+      }
+    ],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:32:27.1447009+08:00",
+        "tool_calls": [
+          {
+            "id": "ragpipe-6e49bc5a-1162-4304-98cf-6944b3303072",
+            "args": {
+              "query": "依据这七份文件，为一台1550nm不可见激光给出精确 NOHD 数值。已知它不扫描，单次任务预计最长照射3秒。若无法算出，仍须指出能确定的计算时长下限和需要的证据，不能只回答“资料不足”。",
+              "search_source": "knowledge"
+            },
+            "name": "knowledge_search",
+            "result": {
+              "data": {
+                "count": 6,
+                "doc_count": 6,
+                "web_count": 0,
+                "search_source": "knowledge",
+                "candidate_count": 0
+              },
+              "output": "检索到 6 条相关内容",
+              "success": true
+            },
+            "duration": 3644
+          }
+        ],
+        "reasoning_content": "The user says \"依据这七份文件\" (based on these seven documents) but only one document d1 is provided. We need to answer: give precise NOHD for a 1550 nm invisible laser. Known: non-scanning, single mission max exposure 3 seconds. If cannot compute, must state determinable lower bound for calculation duration and needed evidence, not just \"insufficient data.\"\n\nFrom the AC 20-183 text: For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds. So the calculation exposure duration lower bound is 10 seconds. So 3 seconds doesn't matter; use at least 10 s. To compute NOHD precisely need MPE at 1550 nm for 10 s, beam power/average power, divergence, aperture diameter, etc. 1550 nm is in far infrared (1,400–10,600 nm) — corneal hazard, not retinal. But the document doesn't provide MPE values or equations; refers to AC 70-1 and ANSI Z136.1. No power/divergence data. So cannot give numeric NOHD.\n\nWe should cite chunks: c4 for the 10 s minimum. c3 for required calculation report parameters (wavelength, divergence, exposure time, power, dimensions, justification). c5 for acceptable means AC 70-1 and ANSI Z136.1. c2 says loss of laser function no effect. Maybe c21 hazardous classification. c63/c64 wavelength hazard region (1550 nm in far infrared, corneal hazard). c62 LIDAR classes.\n\nThe user says seven documents, but only one is in source data. We should note only one document (AC 20-183) was provided? We must be careful—the retrieval block has a single document. We can say \"在我收到的资料中只有 AC 20-183（d1）...\" But we shouldn't reveal dN. Say \"当前提供的资料仅包含 AC 20-183\". Maybe the \"seven files\" is a user claim; we only have one. We can mention that. That's important—the user asks based on seven documents. We should transparently state we only see one.\n\nCompute formula demonstrating what's needed? We can give the general NOHD formula for a collimated Gaussian-ish beam:\n\nNOHD = (1/θ) * (sqrt(4P/(π MPE)) - d0) or for top-hat: NOHD = (1/θ)[sqrt(4P/(π·MPE)) - D] where θ divergence in radians, P power, MPE irradiance, D exit beam diameter. But the AC doesn't give the equation; it says refer to ANSI Z136.1. Should we include formula as general physics, not claimed from source. We can show why missing P, divergence, beam diameter, MPE prevents number. But user wants precise NOHD; impossible. We can present conditional formula and evidence list.\n\nNeed determine \"计算时长下限\" = 10 seconds for nonscanning laser per AC 20-183. The user's 3 s max exposure doesn't lower it. So use t=10 s. That's the key.\n\nCould we calculate with ANSI Z136.1 MPE at 1550 nm for 10 s? Let's think. ANSI Z136.1 MPE for 1550 nm (far IR, 1400 nm–1 mm) for eye: For 1.5 µm, MPE for 10 s? The far-infrared MPE for eye is based on corneal burn: for 1.4 µm to 1 mm, MPE = 0.1 W/cm² for t ≥ 10 s? Actually ANSI Z136.1 Table 5a: 1400 nm–1 mm, exposure duration 10^-9 to 10^-1? Hmm. For 1.5 µm, MPE is 0.1 W/cm² for t ≥ 10 s maybe; for shorter, 0.56 t^0.25? Let's recall.\n\nANSI Z136.1 MPE for eye:\n- 400–700 nm: 1.8 t^0.75 mJ/cm² for 1 ns–10 s? \n- 700–1050: 1.8 t^0.75 * 10^(0.002(λ-700)) mJ/cm²\n- 1050–1400: 5.0 t^0.75 * 10^(0.002(λ-1050))? Hmm no.\n- 1400 nm–1 mm: 0.1 W/cm² for t > 10 s? And for 1 ns–10 s: 0.56 t^0.25 J/cm²? Let me recall IEC 60825 MPE for 1550 nm: Class 1 accessible emission is 10 mW? At 1550 nm, Class 1 limit is 10 mW (for CW) due to eye safety (cornea). MPE ~ 10 mW/cm²? Hmm.\n\nBut we shouldn't compute from outside sources unless clearly labeled. The user asks based on documents. The documents don't give MPE tables. We can avoid giving a numeric MPE. But maybe we can give \"如果按 ANSI Z136.1\" conditional? That risks inaccuracy and unsupported. Better: exact NOHD cannot be produced; provide formula and input list. The user explicitly says don't just say insufficient—give computable duration lower bound and needed evidence. So we can satisfy without numeric NOHD.\n\nMaybe we can go further and show a \"可复算模板\" with placeholders. Also note 1550 nm is far-infrared (1,400–10,600 nm) where hazard is cornea/lens, not retina, per c64. But MPE still needed. Also NOHD is defined as distance beyond which radiation does not exceed MPE (c75). Good.\n\nWe should state:\n1. Only AC 20-183 available, not seven files.\n2. Regulatory calculation duration: not 3 s, but ≥10 s for nonscanning laser (illuminator/spotter/range finder/other nonscanning). If this 1550 nm device is one of those, t_calc = max(3 s, 10 s) = 10 s. This is a lower bound, not necessarily final if expected max exposure >10s.\n3. Cannot compute numeric NOHD without: output power (or pulse energy/PRF, average power), beam divergence, exit aperture diameter / beam diameter at aperture, MPE for 1550 nm at 10 s (from ANSI Z136.1 / AC 70-1), whether direct/reflected path and atmospheric attenuation assumptions; possibly NOHD for direct and specular reflected paths, and ocular exposure geometry.\n4. Formula:\nFor a circular top-hat beam: NOHD = [sqrt(4P/(π·MPE)) − D] / θ (all consistent units; θ in rad, D in cm, P in W, MPE W/cm²). For Gaussian: use 1/e² diameter and factor? We can present generic. Should be careful: NOHD formula often: NOHD = (1/θ)[(4P/(π MPE))^0.5 − d]. If beam divergence full angle, yes.\nIf using mrad, convert. This is a standard formula, but source says equations should be referenced in report. We can label as \"工程复算用的一般形式，不是本AC给出的公式\" to avoid misattribution.\n5. Provide an illustration? We can show that NOHD scales as sqrt(P)/θ etc. But no numeric.\n\nMaybe we can estimate order-of-magnitude under an assumed MPE? No, \"精确\" impossible; giving a guessed number would be misleading. Better not.\n\nNeed also mention that the AC requires a report documenting equations, references, parameters including wavelength, divergence, exposure time, power, dimensions for reflected and direct paths into aircraft windows, and justification for exposure duration (c3). That's exactly evidence list. Cite c3. Also c4 for 10 s and AC 70-1/ANSI. c5. c75 NOHD definition. c63-64 wavelength.\n\nNeed cite inline with  exactly. We have c3, c4, c5, c75, c64, c2 maybe. The final answer in Chinese. The user asks Chinese. Use headings, a table maybe.\n\nLet's draft.\n\nOpening: \"结论先说：按现有材料不能给出一个可辩护的精确 NOHD 数值；但可以确定计算曝光时长应取 10 s（不是 3 s），这是下限。\"\n\nThen \"资料范围\" note: \"我当前只收到 AC 20-183 这一份文件的检索内容，未见其余六份；因此以下只依据该 AC。\" This is important and honest. Maybe the system has seven files but retrieval only shows one. We shouldn't overstate \"only one\"; we can say \"本次检索结果只提供了...\" Good.\n\nThen \"为什么 10 s\":\n- AC 7.3.2: for laser illuminators, spotters, range finders, and other nonscanning lasers, NOHD exposure duration based on maximum expected but not less than 10 s. c4.\n- Given max 3 s, the regulatory floor still makes t=10 s. If actual maximum expected >10 s, use that.\n- Note \"10 s 是计算时长下限，不是 NOHD 数值.\"\n\nThen \"为什么算不出\":\nNOHD definition c75. Need MPE. AC says AC 70-1 and ANSI Z136.1 provide acceptable means c5. But no MPE table/equation in the retrieved AC. Also missing laser parameters. At 1550 nm, it's far infrared 1400–10600 nm, corneal/lens hazard c64, but that doesn't give MPE.\nMaybe c3 lists required parameters. Use it.\n\nTable:\n| 需要的输入 | 为什么 | 现状 |\nPower/average power P; divergence θ; aperture diameter D; MPE at 1550 nm for 10 s; beam profile; direct/reflected path geometry; atmospheric attenuation (maybe optional). We can say \"未提供\" for all. But table might be overkill. It helps.\n\nFormula:\n\"在缺少上述数据时，只能用一般形式表达：NOHD = [√(4P/(π·MPE)) − D] / θ。P 与 MPE 同单位制（W、W/cm²），D 用 cm，θ 用 rad；若厂家给的是全角 mrad，先换算。此式仅为复算框架，不是 AC 20-183 的原文公式；该 AC 要求报告引用所采用公式的来源。\"\nNeed consider Gaussian beam: maybe \"若为高斯光束，应按 1/e² 束径和相应 MPE 定义修正，不能直接套用.\" Good.\n\nThen \"要得到精确数值，至少需要以下证据\":\n1. 激光器规格：波长确认 1550 nm、平均功率/脉冲能量/重频/脉宽、束腰或出射口径、全角发散角、光束轮廓。\n2. MPE 依据：ANSI Z136.1 具体版本和表号/公式，10 s 曝光、1550 nm、眼睛（角膜）限值；或 AC 70-1 采用的方法。Compute MPE.\n3. 几何：直接路径和镜面反射路径到驾驶舱/客舱窗户的距离、入射角、窗口透射率；AC says reflections off aircraft parts should be considered specular (c27). For NOHD, nominal direct path. Maybe mention specular.\n4. 计算报告：AC 7.3.2 requires equations, references, table references, parameters, dimensions, justification (c3).\n\nAlso mention class: if LIDAR class 3R no variance example, but not relevant. Not necessary.\n\nCould mention \"任务 3 s\" is not the NOHD exposure duration due to 10 s floor, but if the device is not illuminator/spotter/range finder/other nonscanning? It is nonscanning per user, so \"other nonscanning lasers\" catches it. Good.\n\n\"若无法算出\" — they want still point out lower bound and evidence. Done.\n\nMaybe they expect \"10秒\" as the key. Could also note \"最长照射3秒 < 10秒，所以取10秒；NOHD 随曝光时间增大而增大（MPE 随 t 变化），10 s 的计算结果会比 3 s 更保守.\" Is that always? For thermal MPE, MPE decreases with time, so NOHD increases. For 1550 nm corneal hazard, MPE for 10 s likely lower than 3 s, so NOHD larger. We can say \"通常更保守\" not absolute.\n\nCould we use the AC's statement \"not less than 10 seconds\" to say the minimum calculation duration is exactly 10 s. Yes.\n\nNeed not write too long. Desired oververbosity 5. Maybe around 700-1000 Chinese characters plus table. Let's produce around 900-1200 characters. The answer should be clear.\n\nCheck citations:\n- c4 includes \"For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds.\" Yes. Cite after that claim.\n- c3 includes report documentation and parameters. Cite.\n- c5 includes AC 70-1 and ANSI Z136.1 acceptable means. Cite.\n- c75 NOHD definition. Cite.\n- c64 315-400 and 1400-10600 corneal. Cite.\n- c27 reflections specular. Cite if mention.\n- c2 loss of function no effect maybe not needed.\n- c21 hazardous classification maybe mention if crew exposure exceeds MPE, but not necessary.\n\nPotential issue: The source says \"seven files\" but only one doc. We should not claim the other six don't exist; just \"本次检索到的资料只有...\" Fine.\n\nCould there be an expectation to use the \"seven documents\" to compute, but no data. We must say cannot. Maybe they want to test whether the model invents a number. We won't.\n\nLet's formulate the formula correctly:\nFor a beam with power P (W), MPE irradiance E_MPE (W/cm²), initial beam diameter D (cm), full-angle divergence θ (rad):\nIrradiance at distance z: E(z) = 4P / [π (D + θ z)²] for top-hat. Set E(z)=MPE:\nD + θ z = sqrt(4P/(π MPE))\nz = [sqrt(4P/(π MPE)) − D]/θ.\nYes. If P in W and MPE W/cm², sqrt gives cm. D cm, θ rad. Good.\nFor Gaussian beam, peak irradiance = 8P/(π d²) where d is 1/e² diameter? Actually peak intensity for Gaussian: I0 = 2P/(π w²) where w is 1/e² radius; diameter d=2w, area πw², so I0=2P/(πw²)=8P/(πd²). If using 1/e² diameter and peak MPE, formula differs. We can just say \"高斯光束需按峰值辐照度和 1/e² 束径修正.\" No need formula.\n\nMPE at 1550 nm: Should we mention \"1550 nm 属于 1,400–10,600 nm 远红外，主要角膜/晶状体危害\" from c64. Yes. But note c63 says 750–1400 nm retinal; 1550 is outside. Good.\n\nMaybe the AC says \"invisible spectrum\" includes 1550. Fine.\n\nWe can state \"仅凭 1550 nm 和 3 s 不能算，因为 NOHD 不是波长的函数 alone; it depends on power and divergence.\" Good.\n\nLet's write in Chinese with a compact table.\n\nPotential answer:\n\n**结论**\n不能给出精确数值。能确定的是：计算曝光时长应取 **10 s**，而不是任务最长的 3 s。... Only AC 20-183 available.\n\n**1. 可确定的计算时长下限**\nAC 20-183 §7.3.2... quote/paraphrase. Therefore t_calc = max(3 s, 10 s) = 10 s. If expected max >10 s, use larger. This is a floor.\n\n**2. 为什么仍算不出 NOHD**\nNOHD defined... Need MPE... AC points to AC 70-1 and ANSI Z136.1 but does not provide MPE table/equation. At 1550 nm... far infrared. Missing P, θ, D, beam profile. AC 7.3.2 itself lists required report inputs... cite c3.\nGeneral formula... not from AC.\n\n**3. 需要补充的证据**\nTable with items. Maybe bullet list.\n\n**4. 一旦有数据如何交付**\n\"把 P, θ, D, MPE(1550 nm,10 s) 代入，报告里附公式来源和表号；直接路径与镜面反射路径分别算；给出 NOHD 数值和适用条件.\" The AC says reflected paths into windows dimensions. Cite c3 and c27.\n\nNeed avoid saying \"seven files\" maybe first sentence: \"本次检索实际只返回了 AC 20-183 一份文件的内容，未见其余六份；因此不能假装做了七份文件的交叉计算。\" That's direct. Is that too blunt? Fine.\n\nLet's ensure no raw IDs. Use \"AC 20-183\" not d1. Citations cN only. Good.\n\nOne nuance: \"单次任务预计最长照射3秒\" — AC says \"maximum exposure duration expected\" but not less than 10 seconds. If the laser is a nonscanning illuminator/spotter/range finder. User says \"不扫描\" but not type. \"其他不扫描激光\" covers it. So 10 s. If it's a LIDAR? LIDAR is scanning or non-scanning? User says non-scanning. The AC's examples include \"laser illuminators, spotters, range finders, and other nonscanning lasers.\" So yes.\n\nCould the \"single mission max 3 s\" mean exposure duration to a person? If the beam is staring at a person for 3 s, but AC still requires 10 s for calculation. Yes.\n\nMaybe we should mention that \"NOHD 的计算时长下限\" and \"实际最大照射时长\" are different. \"10 s 是保守计算假设，不是设备实际会照 10 s.\" Good.\n\nLet's produce final with citations inline. We need not cite every sentence; only claims. Let's draft carefully.\n\nCheck c3 exact: \"You should provide a report that documents how the NOHD and MPE were calculated to include all equations, references for those equations, table references, equation parameters (such as wavelength, divergence, exposure time, and power), dimensions for the reflected and direct radiation paths into aircraft’s windows, and justification for the exposure duration.\" Good.\n\nc4 exact: \"For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds. AC 70-1... and ANSI Z136.1... provide acceptable means to calculate MPE and NOHD.\" c5 continues. Cite c4 and c5.\n\nc75 exact: \"The distance from the laser beyond which the laser radiation does not exceed the MPE.\" Good.\n\nc64 exact: \"Laser equipment that operates in the 315 to 400 nm ultraviolet or the 1,400 to 10,600 nm far infrared spectrums can damage the cornea, lens, or both.\" Cite.\n\nc27 exact: \"Reflections off any part of the aircraft (such as the structure, blades, skids, or landing gear) should be considered specular.\" Cite if mentioning.\n\nMaybe c2: \"Because the laser is nonrequired equipment, functional failure condition for loss of laser function is 'no effect'.\" Not relevant to NOHD. Skip.\n\nLet's think if we can provide a \"conditional numeric range\" using typical 1550 nm laser? No, user asks precise, and no power. Don't.\n\nMaybe we can show that \"NOHD is proportional to sqrt(P)/θ\" and thus without those cannot even bound. Fine.\n\nLet's ensure not to overstate \"AC does not provide MPE table\"—we only have excerpts, not full document. The retrieved AC chunks don't include MPE values. Say \"在本次检索到的 AC 20-183 内容中，没有给出 1550 nm、10 s 的 MPE 数值或可直接代入的 MPE 表；它把计算指向 AC 70-1 和 ANSI Z136.1.\" That's precise and avoids claiming the full AC lacks it. Good.\n\nAlso \"only one document\" maybe \"本次检索结果只包含 AC 20-183 的段落，未包含其余六份文件\" — okay.\n\nLet's write final."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:32:23.461536+00:00",
+    "updated_at": "2026-10-22T06:32:59.167477+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "6bb0db7439c4c8605897c25b5f1fa32fd9a6ccf0fa13e2769126ca965bca0243",
+      "knowledge_base_ids": [
+        "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

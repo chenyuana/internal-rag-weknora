@@ -1,0 +1,51 @@
+[
+  {
+    "file": "AC_20-180.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "bf8aed503a0ca988f295eb1aa5fbd716",
+    "native_record_md5": "bf8aed503a0ca988f295eb1aa5fbd716",
+    "same_bytes_by_md5": true
+  },
+  {
+    "file": "AC_20-182A.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "aef647d38904abece9ec5122d32b00f6",
+    "native_record_md5": "aef647d38904abece9ec5122d32b00f6",
+    "same_bytes_by_md5": true
+  },
+  {
+    "file": "AC_20-181.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "3017b0c1eea1c02a3ab07a935e1b84ed",
+    "native_record_md5": "3017b0c1eea1c02a3ab07a935e1b84ed",
+    "same_bytes_by_md5": true
+  },
+  {
+    "file": "AC_20-179.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "6870d7c504096afd71acb8db46ed8810",
+    "native_record_md5": "6870d7c504096afd71acb8db46ed8810",
+    "same_bytes_by_md5": true
+  },
+  {
+    "file": "AC_20-183.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "775a1f9a4fb0e18402f45b394356aa5d",
+    "native_record_md5": "775a1f9a4fb0e18402f45b394356aa5d",
+    "same_bytes_by_md5": true
+  },
+  {
+    "file": "AC_20-184.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "ee242642a1cb109da50e263c3f73b422",
+    "native_record_md5": "ee242642a1cb109da50e263c3f73b422",
+    "same_bytes_by_md5": true
+  },
+  {
+    "file": "AC_20-178.pdf",
+    "clean_source_exists": true,
+    "clean_source_md5": "7703c5e95612ba85da640234c508f5db",
+    "native_record_md5": "7703c5e95612ba85da640234c508f5db",
+    "same_bytes_by_md5": true
+  }
+]

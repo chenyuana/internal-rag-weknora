@@ -26,7 +26,11 @@ conversation:
     max_input_chars: 16384
     repeat_penalty: 1.0
     temperature: 0.3
-    max_completion_tokens: 2048
+    # Answer generation reads this (chat_pipeline/common.go:50). 2048 was too
+    # small once retrieval context grew: with a reasoning model the whole budget
+    # went to reasoning_content and the answer came back empty (observed
+    # prompt_tokens=46260 / completion_tokens=2048 / empty message).
+    max_completion_tokens: 8192
     no_match_prefix: |-
       <think>
       </think>

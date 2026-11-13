@@ -13,12 +13,13 @@ import (
 
 // EvaluationHandler handles evaluation related HTTP requests
 type EvaluationHandler struct {
+	modelService      interfaces.ModelService
 	evaluationService interfaces.EvaluationService // Service for evaluation operations
 }
 
 // NewEvaluationHandler creates a new EvaluationHandler instance
-func NewEvaluationHandler(evaluationService interfaces.EvaluationService) *EvaluationHandler {
-	return &EvaluationHandler{evaluationService: evaluationService}
+func NewEvaluationHandler(evaluationService interfaces.EvaluationService, modelService interfaces.ModelService) *EvaluationHandler {
+	return &EvaluationHandler{evaluationService: evaluationService, modelService: modelService}
 }
 
 // EvaluationRequest contains parameters for evaluation request

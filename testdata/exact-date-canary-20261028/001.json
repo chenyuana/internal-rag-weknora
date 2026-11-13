@@ -1,0 +1,2156 @@
+{
+  "num": "001",
+  "query": "AC 25.773-1 的签发日期？",
+  "session": "27f5b479-fc26-4734-b2dd-83fd33f76ac1",
+  "answer": "AC 25.773-1《Pilot Compartment View Design Considerations》的签发日期为 **1/8/93**，即 1993 年 1 月 8 日。该 AC 由 ANM-110 发起，其内容为提供一种证明运输类飞机驾驶员舱视野适航标准符合性的方法；并明确指出它并非强制性要求，也不构成规章，仅供指导使用。<kb doc=\"AC_25.773-1.pdf\" chunk_id=\"dc5b0222-1022-4f67-852e-2adc0a1999d1\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+  "references": [
+    {
+      "id": "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+      "content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.\n\n2. RELATED DOCUMENTS.\n\na. Federal Aviation Regulations (FAR). The related sections of Part 25 include:\n\n§ 25.237 Wind velocities\n\n§ 25.773 Pilot compartment view",
+      "knowledge_id": "71d44815-6c6a-41ae-a5e6-1c80a45a8f47",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.773-1.pdf",
+      "start_at": 0,
+      "end_at": 427,
+      "seq": 0,
+      "score": 1,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "cf9d738508c2d9280f9f035a32f451ad53e4705bdd1620139889a2c81f3fec41",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "91c3c18e0499ab17a9b3",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\21\\214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d\\source.pdf",
+        "internal_rag_source_sha256": "214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d",
+        "kept_by": "document_header",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "d668f5be-7b14-4ae6-8c81-74ada1f5021b",
+      "image_info": "",
+      "knowledge_filename": "AC_25.773-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "05f99c21-0e83-4b2e-8cc2-425441d1f962",
+      "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INTERIOR DESIGN TO FACILITATE SEARCHES\n\nDate: 10/24/08\n\nInitiated By: ANM-100\n\nAC No: 25.795-8\n\n1. PURPOSE. This advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR), part 25, § 25.795(c)(3), “Interior design to facilitate searches.” This section requires that the interior design of an airplane incorporate features that will make it more difficult to hide dangerous objects in the airplane or make it easier to find them if they have been brought onboard. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to whether the interior design deters concealment of dangerous objects (e.g., weapons or explosives) and facilitates a search for them in certain areas of the airplane. The requirements for searching an airplane are not affected by the requirements of § 25.795(c)(3). The design of the airplane will make it easier to search for hidden objects but will not affect the need for, or the diligence of, the search.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+      "knowledge_id": "ed0ae44a-a86c-4604-87bc-f446a864bc9e",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.795-8.pdf",
+      "start_at": 0,
+      "end_at": 17,
+      "seq": 0,
+      "score": 0.7,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "1c3cff6b3a66db4a5e2484cbcde1ec64f01fea8ba0c13b9727c6b552347156a8",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "9fe2d7defeb3b52af42f",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83\\source.pdf",
+        "internal_rag_source_sha256": "38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "1e34a590-7e6f-49a6-b591-58baa9652d03",
+      "image_info": "",
+      "knowledge_filename": "AC_25.795-8.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.795-8.pdf\nDocument preamble\n\nAdvisory Circular",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "b6c844d5-a3ab-474b-bf14-533beb5f0f25",
+      "content": "Source image on page 1; no OCR transcription available.\n\nAdvisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Chemical Oxygen Generator Security Standards\n\nDate: 03/11/14 Initiated by: ANM-100\n\nAC No. 25.795-9\n\n1. Purpose. This advisory circular (AC) provides guidance for an acceptable means of showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.795(d), Chemical oxygen generators. Section 25.795(d) requires each chemical oxygen generator (COG) or its installation to be designed so it meets one of several criteria. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to a COG installed on an airplane.\n\n2. Applicability.\n\na. This AC provides guidance directed to design approval holders, such as airplane manufacturers and modifiers, civil aviation authorities, and Federal Aviation Administration (FAA) airplane type certification engineers, their designees, and inspectors.\n\nb. This material is neither mandatory nor regulatory in nature and does not constitute a regulation. It describes an acceptable means, but not the only means, for demonstrating compliance with the applicable regulations. The FAA will consider other means of demonstrating compliance that an applicant may elect to present. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the pertinent regulations. On the other hand, if we become aware of circumstances that convince us that following the guidance in this AC would not result in compliance with the applicable regulations, we will not be bound to the terms of this AC and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This material does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Definition of Terms. For this AC, the following definitions should be used.\n\na. Access - The ability to manipulate the COG with the intent of making alterations for a purpose for which the COG was not originally designed. This includes gaining access to the area surrounding the COG.\n\nb. Activation - Release of the firing mechanism of the COG for the purpose of initiating the chemical reaction inside.\n\nc. Alteration - A change in the configuration of the COG once access has been gained for the purpose of using the COG for other than its intended function.\n\nd. Chemical Oxygen Generator (COG) - A device that releases oxygen that is created from a chemical reaction.\n\ne. Immediately Obvious - Where an attempt to gain access to the COG would be readily recognized as suspicious (prior to gaining access). This would only be in locations with unrestricted access that are observable.\n\nf. Intervention - The actions crew members must take to prevent damage to the airplane once an alert is activated indicating that the COG is being tampered with. The time it takes to intervene with someone in the lavatory has not been determined; however, we assume that it will take several minutes to resolve the issue.\n\ng. Observable - A crew member is able to see if a person attempts to gain access to a COG installation during the course of the crew member’s normal duties.\n\nh. Tamper-Evident Feature - A unique feature that provides an active and obvious contemporaneous alert to crew members that someone is trying to gain access to the COG and immediate crew intervention is necessary.\n\ni. Tamper Resistance - The level of deterrence for gaining access to the COG.\n\nj. Unrestricted access - An area of the cabin passengers can enter without overcoming locks or other mechanical closure means.\n\n4. Related Documents.\n\na. Regulations. You can download an electronic copy of 14 CFR from the Internet at http://www.fdsys.gov. You can order a paper copy by sending a request to the U.S. Superintendent of Documents, U.S. Government Printing Office, Washington, D.C. 20402­ 0001, or by calling telephone number (202) 512-1800; or by sending a request by facsimile to (202) 512-2250.\n\n(1) § 25.1301, Equipment - Function and installation.\n\n(2) § 25.1309, Equipment, systems, and installations.\n\n(3) § 25.1322, Flightcrew alerting.\n\n(4) § 25.1450, Chemical oxygen generators.\n\n(5) § 25.1443, Minimum mass flow of supplemental oxygen.\n\nb. AC. You can download an electronic copy of the latest version of AC 25-22, Certification of Transport Airplane Mechanical Systems, from the Internet at http://rgl.faa.gov.\n\n5. Requirements of § 25.795(d).\n\na. Applicability. Section 25.795(d) is applicable to part 25 airplanes equipped with COGs.\n\nb. Requirements of § 25.795(d). The following text is quoted from § 25.795(d): “Each chemical oxygen generator or its installation must be designed to be secure from deliberate manipulation by one of the following:\n\n(1) “By providing effective resistance to tampering,\n\n(2) “By providing an effective combination of resistance to tampering and active tamper-evident features,\n\n(3) “By installation in a location or manner so any attempt to access the generator would be immediately obvious, or\n\n(4) “By a combination of approaches specified in paragraphs (1), (2), or (3) of this section that the Administrator finds provides a secure installation.”\n\nc. Requirements of Airworthiness Directive (AD) 2012-11-09. AD 2012-11-09 requires that after September 10, 2015, no person may operate a transport category airplane in passengercarrying operations …. unless each lavatory is equipped with a supplemental oxygen supply in accordance with §§ 25.1443 and 25.1447. COG installations must meet the requirements specified in § 25.795(d) in effect on May 12, 2014, or FAA Policy Statement PS-ANM-25-04, Chemical Oxygen Generator Installations, dated 12/21/2011.\n\n6. Compliance with § 25.795(d).\n\na. Acceptable Means of Determining if a COG or its Installation is Designed to be Secure. Several criteria may be used for determining if a COG installation is secure or has a security vulnerability. COG installations with a security vulnerability must include design features to prevent potential misuse of the COG. Figure 1, Criteria for Assessing an Installation, includes assessment criteria that can be used for determining if a COG installation has a security vulnerability. Table 1 includes guidance to assist in answering the questions in Figure 1. For installations identified as having security vulnerabilities, such as those for which the answers to the assessment statements in Figure 1 result in the answer to question number 4 being yes, the design should be changed. Alternatively, the COG can be replaced with an acceptable oxygen source that is not a security threat.\n\n[Cross-page references; curve values not transcribed]\nRelated figure: Figure 1: Criteria for Assessing an Installation; source page 4.\n\nFigure 1: Criteria for Assessing an Installation\n\n[Cross-page references; curve values not transcribed]\nReferenced from page 3, Document preamble:\na. Acceptable Means of Determining if a COG or its Installation is Designed to be Secure. Several criteria may be used for determining if a COG installation is secure or has a security vulnerability. COG installations with a security vulnerability must include design features to prevent potential misuse of the COG. Figure 1, Criteria for Assessing an Installation, includes assessment criteria that can be used for determining if a COG installation has a security vulnerability. Table 1 includes guidance to assist in answering the questions in Figure 1. For installations identified as having security vulnerabilities, such as those for which the answers to the assessment statements in Figure 1 result in the answer to question number 4 being yes, the design should be changed. Alternatively, the COG can be replaced with an acceptable oxygen source that is not a security threat.\n\nTable 1: Assessment Statement Analysis\nQuestion Number=1.; Notes and Questions to Assist with Assessment Statement Analysis=Review the instructions for continued airworthiness.Review the drawing system.Inspect the airplane's configuration.\nQuestion Number=2.; Notes and Questions to Assist with Assessment Statement Analysis=Can crew members observe the COG installation?Check the area where the COG is installed. Isolated areas, such as galleys, lavatories, crew rests, enclosed occupied compartments, and lower lobe lavatory complexes are potential areas of concern and require further evaluation.Are crew members close to the COG installation during their normal duties?Are there physical barriers between the crew member and the area being evaluated?Is there significant distance between the crew member and the area being observed?How accessible is the COG?Is the COG installation surrounded by curtains? Curtained areas are also considered potential areas of concern and may require further evaluation.\nQuestion Number=3.; Notes and Questions to Assist with Assessment Statement Analysis=Are there locks on doors/access panels to prevent access?Are there tamper-resistant fasteners on panels?Are alarms or some other active alerting tamper indication method part of the installation's design?\nQuestion Number=4.; Notes and Questions to Assist with Assessment Statement Analysis=Check if the COG can be compromised in place.Assess the vulnerability of the adjacent materials to contain the compromised device.Assess the ability of the compartment to contain the event.Check if the COG can be removed.\n\n完整表格：\n<table><tr><td>Question Number</td><td>Notes and Questions to Assist with Assessment Statement Analysis</td></tr><tr><td>1.</td><td>Review the instructions for continued airworthiness.Review the drawing system.Inspect the airplane&#x27;s configuration.</td></tr><tr><td>2.</td><td>Can crew members observe the COG installation?Check the area where the COG is installed. Isolated areas, such as galleys, lavatories, crew rests, enclosed occupied compartments, and lower lobe lavatory complexes are potential areas of concern and require further evaluation.Are crew members close to the COG installation during their normal duties?Are there physical barriers between the crew member and the area being evaluated?Is there significant distance between the crew member and the area being observed?How accessible is the COG?Is the COG installation surrounded by curtains? Curtained areas are also considered potential areas of concern and may require further evaluation.</td></tr><tr><td>3.</td><td>Are there locks on doors/access panels to prevent access?Are there tamper-resistant fasteners on panels?Are alarms or some other active alerting tamper indication method part of the installation&#x27;s design?</td></tr><tr><td>4.</td><td>Check if the COG can be compromised in place.Assess the vulnerability of the adjacent materials to contain the compromised device.Assess the ability of the compartment to contain the event.Check if the COG can be removed.</td></tr></table>\n\nb. Installation of Tamper-Resistant Features. Tamper-resistant design features can be used, in whole or in part, to make a COG installation secure. There are different types of tamper-resistant design features, and their functionality largely depends on the installation. The principal benefit of tamper resistance is to delay exploitation of the COG as a weapon. However, it is not likely that an existing COG installation that can be accessed from within the lavatory could be modified with tamper-resistant design features sufficient to prevent a successful attack. This is because typical measures of tamper resistance, such as special tools and fasteners, could likely be overcome given enough time. These measures are normally used as one of several\n\nlayers of security. Thus, the reliance on such measures is only one element of the security system.\n\n(1) A tamper-resistant installation employs multiple elements, which may include:\n\n(a) the COG’s location,\n\n(b) the method of mounting,\n\n(c) physical protection (through shielding or mechanical isolation of key components), and\n\n(d) internal design.\n\n(2) Eliminating access to the COG is the most straightforward way to make the COG tamper-resistant. Typically, this can be done by placing the COG in a location where significant disassembly of the cabin interior would be required to gain access. For example, the COG for a lavatory could be located so the entire lavatory module would have to be removed to access the COG. However, the installer should also consider the ramifications on maintenance when this approach is used.\n\nc. Installation of Tamper-Evident Features.\n\n(1) For COGs that can be accessed from isolated compartments, such as lavatories, some form of active tamper evidence (for example, an alarm), would be needed in addition to the installation of tamper-resistant features. This is necessary so the time to intervene and stop the attack is less than the time required to carry out the attack. In this case, passive tamper-evident features, such as a tamper-evident seal, are not effective because they provide an after-the-fact notification of tampering. The effectiveness of a tamper-evident system depends on intervention; it cannot be assumed that the alarm by itself would inhibit the attack.\n\n(2) Once an alert is activated indicating the COG is being tampered with, actions by crew members and other available authorized responders are necessary to prevent catastrophic damage to the airplane. Therefore, there is a critical relationship between the tamper-evidence system and the training and capability of the crew to respond. To be most effective, crew training should be accomplished prior to the alarm feature being deployed into the fleet. The time needed to successfully respond to the alarm may be several minutes and depends on several factors. The time available to respond to a threat and intervention times are functions of not only the design features but also many complex and human factors-dependent variables that are difficult to define. These variables include, but are not limited to, the individual capabilities and numbers of flight attendants/authorized responders relative to the terrorists/accomplices, as well as the extensiveness of the training received.\n\n(3) In order to be effective, the alerting system must itself be resistant to tampering. Otherwise, the entire concept of using the early notification to crew could be nullified and the COG accessed without impediment.\n\nd. System Safety Considerations. The applicant should consult the current version of AC 25.1309-1 for guidance on compliance with § 25.1309\n\ne. Hazard classification. Failure of tamper-resistant or tamper-evident features should be considered major.\n\nf. System Performance When Installed.\n\n(1) A tamper-evidence system installed for compliance with § 25.795(d) is intended to notify crew members that someone is trying to gain access to a COG. The system should provide aural and visual warnings to immediately notify crew members so they can provide direct response in a timely fashion. For example, visual indication should be provided so the crew can identity which COG location is being tampered with while performing their normal duties. Aural alerts should be distinct from other alerts and clearly audible to the crew members expected to respond to the alert If an alert is provided to theflightcrew, the alert should be presented in accordance with § 25.1322\n\n(2) The oxygen system installed to meet § 25.795(d) must comply with other regulations applicable to oxygen systems. If the oxygen system does not comply with any of these other regulations, the applicant needs to petition for an exemption in accordance with existing processes. There have been developments in oxygen system technologies that measure actual oxygen saturation levels in the blood. Using this approach can reduce the total quantity of oxygen required, which in turn can reduce the size of the supply source. A smaller supply source may allow room in existing space provisions for installing design features to address the security concern. This approach would require an equivalent level of safety finding to § 25.1443(c).\n\n7. Areas that are Immediately Obvious. For COG installations located where any attempt at access would be immediately obvious, additional safety measures are not required. Immediately obvious areas include the main passenger cabin and other areas where occupants are always present. While some measure of tamper resistance is encouraged for these locations, none is required to meet § 25.795(d). Private compartments (such as a lavatory) or visually divided sections of larger cabin areas are assessed independently. The immediately obvious criterion applies to the specific location of each COG installation, not simply the general area in which it is located. In addition, the installation must be evaluated under all conditions that may exist during a flight. So, for example, if tampering would be immediately obvious except when a curtain is pulled to provide privacy, the installation must be evaluated based on the curtain being arranged in a way that most conceals the installation. As with tamper-evident designs, crews should be made aware that tampering with any COG is a safety risk, and any necessary information incorporated into training programs.\n\nr\\*\n\nJeffrey E. Duven\n\nManager. Transport Airplane Directorate\n\nAircraft Certification Service\n\nAdvisory Circular Feedback\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVS-AIR500-Coord@faa.gov or (2) faxing it to the attention of the Aircraft Certification Service Directives Management Officer at (202) 267-3983.\n\nSubject: (insert AC title/number here)\n\nDate: Click here to enter text.\n\nPlease check all appropriate line items:\n\n☐\t An error (procedural or typographical) has been noted in paragraph Click here to enter text. on page Click here to enter text..\n\n☐\t Recommend paragraph Click here to enter text. on page Click here to enter text. be changed as follows:\n\nClick here to enter text.\n\n☐\t In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)\n\nClick here to enter text.\n\n☐\t Other comments:\n\nClick here to enter text.\n\n☐\t I would like to discuss the above. Please contact me.\n\nSubmitted by:\n\nDate:\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/7c6ea9771f040271bcc6)",
+      "knowledge_id": "d143e795-72fe-4c37-94df-99a6315d2c11",
+      "chunk_index": 0,
+      "knowledge_title": "AC_25.795-9.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 0,
+      "score": 0.6887096774193547,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "6c3dc355004fc96d06347eed9a70d2326f3b2212aac4aecf186340b2bc25a888",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "f9f1e0a830b980f069f3",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\5e\\5e4881df2b8aea0e2fcf3af54134e163cd782207e30fe6fdcba762f3d060b9c6\\source.pdf",
+        "internal_rag_source_sha256": "5e4881df2b8aea0e2fcf3af54134e163cd782207e30fe6fdcba762f3d060b9c6",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "c2a20293-c468-4363-a3f6-2d9660f3a41b",
+      "image_info": "",
+      "knowledge_filename": "AC_25.795-9.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.795-9.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/7c6ea9771f040271bcc6)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "3c36634a-fc23-4315-951a-0fa063fe9e89",
+      "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Installation of Physical Secondary Barriers for Transport Category Airplanes\n\nDate:\n\nInitiated By: AIR-600\n\nAC No: 25.795-10\n\nThis advisory circular provides an acceptable means of showing compliance with the requirements of paragraph (a)(4) of title 14, Code of Federal Regulations (14 CFR) 25.795, Security Considerations, at amendment 25-150. Section 25.795(a)(4) requires installation of a physical secondary barrier that protects the flightdeck in certain transport category airplanes.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDANIEL J. Ditay signed y DANIEL J\n\nELGAS Date: 2023.06.2 15:40:5\n\nVictor Wicklund Acting Director, Policy & Standards Division Aircraft Certification Service\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/fdf9310f77b9496eb1665e7181808fb5/assets/a8aa0f61f7d063c768a6)",
+      "knowledge_id": "fed59260-1164-494c-b3fe-f949150906a1",
+      "chunk_index": 1,
+      "knowledge_title": "AC_25.795-10.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 1,
+      "score": 0.6777777777777777,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "321d57fb493b106f9618fa6ed879fb9c39d73c036aaed3086ec91cf1937e4f23",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "22278a090690aad6f66c",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5\\source.pdf",
+        "internal_rag_source_sha256": "38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "f4c13980-9929-4cb9-8d8b-e86abbe6171c",
+      "image_info": "",
+      "knowledge_filename": "AC_25.795-10.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.795-10.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/fdf9310f77b9496eb1665e7181808fb5/assets/a8aa0f61f7d063c768a6)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "befbfc29-8f31-43ae-b5ec-25ca0fcbcda6",
+      "content": "Advisory Circular\n\nU.S. Department of Transportation\n\nFederal Aviation Administration\n\nSubject: Transport Airplane Landing Gear Retracting Mechanism\n\nDate: 12/28/2011\n\nInitiated by: ANM-110\n\nAC No. 25.729-1\n\nThis advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14 of the Code of Federal Regulations (14 CFR) 25.729 regarding the landing gear retracting mechanism requirements. It will be incorporated into AC 25-21, “Certification of Transport Airplane Structure” and 25-22, “Certification of Transport Airplane Mechanical Systems” at a later date.\n\nSource image on page 1; no OCR transcription available.\n\nAli Bah amiAli Bahrami Manager, Transport Airplane DirectorateManager, Transport Airplane Directorate Aircraft Certification ServiceAircraft Certification Service\n\n1. Purpose. This AC provides guidance concerning compliance with the landing gear retracting mechanism requirements for transport category airplanes.\n\n2. Applicability.\n\na. The guidance provided in this document is directed to airplane manufacturers, modifiers, foreign regulatory authorities, and Federal Aviation Administration (FAA) transport airplane type certification engineers and their designees.\n\nb. This material is neither mandatory nor regulatory in nature and does not constitute a regulation. It describes acceptable means, but not the only means, for demonstrating compliance with the applicable regulations. The FAA will consider other methods of demonstrating compliance that an applicant may elect to present. You may follow alternate FAA approved design recommendations. Mandatory words such as “must” apply only to those who seek to show compliance to a specific rule by use of a method prescribed in this AC without deviation. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the relevant regulations. As of the issuance date, the guidance provided in this AC is harmonized with that of the European Aviation Safety Agency (EASA). It provides a method of compliance that both the FAA and EASA have found acceptable. On the other hand, if we become aware of circumstances that convince us that following this AC would not result in compliance with the applicable regulations, we will not be bound by the terms of this AC, and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This AC does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Related Documents.\n\na. Related Federal Aviation Regulations. Section 25.729 of 14 CFR and other sections relating to landing gear retracting mechanism installations. Sections that prescribe requirements for the design, substantiation, and certification of landing gear retracting mechanisms include:\n\nSection 25.111 Takeoff path.\n\nSection 25.301 Loads.\n\nSection 25.303 Factor of safety.\n\nSection 25.305 Strength and deformation.\n\nSection 25.307 Proof of structure.\n\nSection 25.333 Flight maneuvering envelope.\n\nSection 25.335 Design airspeeds.\n\nSection 25.471 General [Ground loads].\n\nSection 25.561 General [Emergency Landing Cond.]. Section 25.601 General [Design and Construction]. Section 25.603 Materials. Section 25.605 Fabrication methods. Section 25.607 Fasteners. Section 25.609 Protection of structure. Section 25.613 Material strength properties and material design values. Section 25.619 Special factors. Section 25.621 Casting factors. Section 25.623 Bearing factors. Section 25.625 Fitting factors. Section 25.731 Wheels. Section 25.733 Tires. Section 25.735 Brakes and Braking Systems. Section 25.777 Cockpit controls. Section 25.863 Flammable fluid fire protection. Section 25.869 Fire protection: systems. Section 25.899 Electrical bonding and protection against static electricity. Section 25.1301 Function and installation. Section 25.1309 Equipment, systems and installations. Section 25.1322 Warning, caution, and advisory lights. Section 25.1435 Hydraulic systems. Section 25.1515 Landing gear speeds. Section 25.1555 Control markings. Section 25.1583 Operating limitations. Section 25.1585 Operating procedures.\n\nb. FAA Advisory Circulars.\n\nAC 20-34D Prevention of Retractable Landing Gear Failures\n\nAC 21-16F RTCA Document DO-160 versions D, E, F, and G, “Environmental Conditions and Test Procedures for Airborne Equipment”\n\nAC 23-17B Systems and Equipment Guide for Certification of Part 23 Airplanes and Airships\n\nAC 25-7B Chg. 1 Flight Test Guide for Certification of Transport Category Airplanes\n\nAC 25-21 Certification of Transport Airplane Structure\n\nAC 25-22 Certification of Transport Airplane Mechanical Systems\n\nAC 25.1309-1A System Design and Analysis\n\nAC 25.1322-1 Flightcrew Alerting\n\nAC 43.13-2B Chg. 1 Acceptable Methods, Techniques, and Practices – Aircraft Inspection and Repair\n\nc. FAA Orders.\n\nOrder 8110.4C Type Certification Process (Change 4 incorporated)\n\nNOTE: FAA ACs and orders can be obtained electronically from; Federal eRulemaking Portal; http://rgl.faa.gov/, or from the FAA websites; http://www.faa.gov or http://www.faa.gov/regulations\\_policies/orders\\_notices/.\n\nd. Society of Automotive Engineers (SAE) Documents.\n\nSAE AIR-4566-A Crashworthiness Landing Gear Design\n\nSAE ARP-1311C Landing Gear Structures and Mechanisms – Aircraft\n\nISO 7137 : 1995 Environmental Conditions and Test Procedures for Airborne Equipment (not an SAE document but is available from the SAE)\n\nNOTE: These documents can be obtained by mail from the Society of Automotive Engineers, Inc., 400 Commonwealth Drive, Warrendale, Pennsylvania, 15096; or electronically from the SAE International website, http://www.sae.org/.\n\ne. RTCA Documents.\n\nRTCA/DO-160G Environmental Conditions and Test Procedures for Airborne equipment, Issued December 6, 2007\n\nRTCA/DO-178B Software Considerations in Airborne Systems and Equipment Certification, Issued December 1, 1992\n\nNOTE: Copies of RTCA documents may be purchased by mail from the RTCA Inc., 1150 18th Street NW, Suite 910, Washington, DC 20036; by fax, after completing the Document Order Form and faxing to 202-833-9434; or electronically from the RTCA online store at: http://www.rtca.org/onlinecart/.\n\nf.\t Military Documents.\n\nMIL-STD-810F Environmental Test Methods and Engineering Guidelines\n\nNOTE: This document can be obtained by mail from the Department of Defense, DODSSP, Standardization Document Order Desk, 700 Robbins Avenue, Building 4D, Philadelphia, PA 19111-5094; or electronically from the DODSSP website at: http://dodssp.daps.dla.mil/.\n\ng. European Aviation Safety Agency Documents.\n\nEASA Certification Specifications (CS) and Acceptable Means of Compliance (AMC) for CSs are available on the EASA website, http://easa.europa.eu/agencymeasures/certification-specifications.php.\n\n4. Definitions. For definitions of V<sub>SR</sub>, V<sub>SR1</sub>, and V<sub>C</sub>, see 14 CFR part 1 §1.2, Abbreviations and symbols.\n\n5. Background. Amendment 25-136 revised § 25.729(a) through (f) to harmonize part 25 with CS 25.729. The amendment adopted the more stringent of the two requirements.\n\n6. Discussion and Demonstration of Compliance.\n\na. Intent of Rule. (Ref. § 25.729, Retracting mechanism). This rule provides minimum design and certification requirements for landing gear actuation systems to address:\n\n(1) Structural integrity for the nose and main landing gear, retracting mechanism(s), doors, and gear supporting structure for loads imposed during flight, (Ref. § 25.729(a)(1)(ii)(iii)),\n\n(2) Positive locking of the kinematic mechanisms, (Ref. § 25.729(b)),\n\n(3) Redundant means of extending the landing gear, (Ref. § 25.729(c)),\n\n(4) Demonstration of proper operation by test, (Ref § 25.729(d)),\n\n(5) Gear up-and-locked and down-and-locked position indications and aural warning, (Ref. § 25.729(e)(2)(5)),\n\n(6) Equipment damage from tire burst, loose tread, and wheel brake temperatures, (Ref. §§ 25.729(f)(1)(2), 25.731(d), and 25.735(j)).\n\nb. Demonstration of Retracting Mechanism Proper Functioning (Ref. § 25.729(d), Operation test). Guidance addressing flight testing used to demonstrate compliance with this section may be found in AC 25-7B Change 1 “Flight Test Guide for Certification of Transport Category Airplanes,” chapter 4, section 4, paragraph 52, issued December 7, 2011.\n\nc. Retracting Mechanism Indication (Ref. § 25.729(e), Position indicator and warning device).\n\n(1) When light indicators are used, they should be arranged so that:\n\n(a) A green light for each unit is illuminated only when the unit is secured in the correct landing position.\n\n(b) An alert consistent with § 25.1322 is illuminated at all times, except when the landing gear and its doors are secured in the landing or retracted position.\n\n(2) The alert required by § 25.729(e)(2) should be consistent with § 25.1322 and operate regardless of the position of wing leading-or trailing-edge devices, or the number of engines operating.\n\n(3) The design should be such that nuisance activation of the alert required by § 25.729(e)(2) is minimized, for example:\n\n(a) When the landing gear is retracted after a take-off following an engine failure, or during a take-off when a common flap setting is used for take-off and landing;\n\n(b) When the throttles are closed in a normal descent; or\n\n(c) When flying at low altitude in clean or low speed configuration (special operation).\n\n(4) Inhibition of the alert required by § 25.729(e)(2) above a safe altitude out of final approach phase either automatically or by some other means to prevent these situations is acceptable, but it should automatically reset for a further approach.\n\n(5) Means to de-activate the alert required by § 25.729(e)(2) may be installed for use in abnormal or emergency conditions provided that it is not readily available to the flight crew, that is, the control device is protected against inadvertent actuation by the flight crew and its deactivated state is obvious to the flight crew.\n\nd. Protection of Equipment on Landing Gear and in Wheel Wells (Acceptable Means of Compliance) (Ref. § 25.729(f), Protection of equipment in wheel wells).\n\n(1) The use of fusible plugs in the wheels is not a complete safeguard against damage due to a bursting tire.\n\n(2) Where brake overheating could be damaging to the equipment in the wheel wells, an indication of brake temperature should be provided to warn the pilot.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/a854c234382046ceaf6299dce6760139/assets/bb33d0189ea8b073ffa7)",
+      "knowledge_id": "8c537df5-37c5-46dd-9d8a-c410068acc28",
+      "chunk_index": 1,
+      "knowledge_title": "AC_25.729-1.pdf",
+      "start_at": 0,
+      "end_at": 175,
+      "seq": 1,
+      "score": 0.6671874999999999,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "e51ff24379145b3221e6b2afce5838e9659282fe9ce4f31f2028840f0acaca68",
+        "internal_rag_parser_name": "mineru-cloud-pdf",
+        "internal_rag_parser_version": "1",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "2647fd2c3421b2cb323b",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3c\\3c8dfcb7f1bb6e1b65489ca07f8399ee0b7bc520032c30871290fb933d1b2d80\\source.pdf",
+        "internal_rag_source_sha256": "3c8dfcb7f1bb6e1b65489ca07f8399ee0b7bc520032c30871290fb933d1b2d80",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "f2696add-7cd3-4fb0-a33c-d1237ebb413b",
+      "image_info": "",
+      "knowledge_filename": "AC_25.729-1.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "AC_25.729-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/a854c234382046ceaf6299dce6760139/assets/bb33d0189ea8b073ffa7)",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    },
+    {
+      "id": "451a17e2-7b72-4954-835f-c042f8fb6e10",
+      "content": "EFFECTIVE DATE:\n1977-05-02",
+      "knowledge_id": "830c17fd-fe89-48f0-89b0-414f1b05b6db",
+      "chunk_index": 2,
+      "knowledge_title": "23-18-final-14606-14324.pdf",
+      "start_at": 0,
+      "end_at": 26,
+      "seq": 2,
+      "score": 0.6569230769230768,
+      "match_type": 0,
+      "sub_chunk_id": null,
+      "metadata": {
+        "internal_rag_normalized_text_sha256": "3b6d50215a57870dd0037b640c25434869b06a6cb2f3d8f27b61f1251fd28ec8",
+        "internal_rag_parser_name": "native-pdf",
+        "internal_rag_parser_version": "6.14.2",
+        "internal_rag_schema_version": "document-ir/0.2",
+        "internal_rag_source_document_id": "2a786427325b5d168d41",
+        "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\5d\\5de033b295c2655a79f184f1bb2caa5568d5e6c218bef485ce1895038bec30ef\\source.pdf",
+        "internal_rag_source_sha256": "5de033b295c2655a79f184f1bb2caa5568d5e6c218bef485ce1895038bec30ef",
+        "source_system": "internal-rag"
+      },
+      "chunk_type": "text",
+      "parent_chunk_id": "05ead06f-0517-4909-bc8b-69bd47b007de",
+      "image_info": "",
+      "knowledge_filename": "23-18-final-14606-14324.pdf",
+      "knowledge_source": "internal-rag",
+      "knowledge_channel": "api",
+      "matched_content": "23-18-final-14606-14324.pdf\nEFFECTIVE DATE:\n\nEFFECTIVE DATE:\n1977-05-02",
+      "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+    }
+  ],
+  "events": [
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "agent_query",
+      "content": "",
+      "done": true,
+      "session_id": "27f5b479-fc26-4734-b2dd-83fd33f76ac1",
+      "assistant_message_id": "7ca269fe-b56d-46e5-b577-5049ac6ec56f",
+      "data": {
+        "assistant_created_at": "2026-10-28T06:09:59.687005Z",
+        "assistant_message_id": "7ca269fe-b56d-46e5-b577-5049ac6ec56f",
+        "session_id": "27f5b479-fc26-4734-b2dd-83fd33f76ac1",
+        "user_created_at": "2026-10-28T06:09:59.6774348Z",
+        "user_message_id": "57debc72-ddba-480e-b918-d1dfd97eb046"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "tool_call",
+      "content": "Calling tool: query_understand",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.773-1 的签发日期？"
+        },
+        "tool_call_id": "64f06238-c3db-4f88-ac59-39bbbff11534",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "duration_ms": 1354,
+        "error": "",
+        "output": "已完成问题理解",
+        "success": true,
+        "tool_call_id": "64f06238-c3db-4f88-ac59-39bbbff11534",
+        "tool_name": "query_understand"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "tool_call",
+      "content": "Calling tool: knowledge_search",
+      "done": false,
+      "data": {
+        "arguments": {
+          "query": "AC 25.773-1的签发日期是什么时候",
+          "search_source": "knowledge"
+        },
+        "tool_call_id": "0a7204e7-4f67-4fc9-bd46-765d14d31c90",
+        "tool_name": "knowledge_search"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "tool_result",
+      "content": "",
+      "done": false,
+      "data": {
+        "candidate_count": 0,
+        "count": 6,
+        "doc_count": 6,
+        "duration_ms": 4626,
+        "error": "",
+        "output": "检索到 6 条相关内容",
+        "search_source": "knowledge",
+        "success": true,
+        "tool_call_id": "0a7204e7-4f67-4fc9-bd46-765d14d31c90",
+        "tool_name": "knowledge_search",
+        "web_count": 0
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "references",
+      "content": "",
+      "done": false,
+      "knowledge_references": [
+        {
+          "id": "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+          "content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.\n\n2. RELATED DOCUMENTS.\n\na. Federal Aviation Regulations (FAR). The related sections of Part 25 include:\n\n§ 25.237 Wind velocities\n\n§ 25.773 Pilot compartment view",
+          "knowledge_id": "71d44815-6c6a-41ae-a5e6-1c80a45a8f47",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.773-1.pdf",
+          "start_at": 0,
+          "end_at": 427,
+          "seq": 0,
+          "score": 1,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "cf9d738508c2d9280f9f035a32f451ad53e4705bdd1620139889a2c81f3fec41",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "91c3c18e0499ab17a9b3",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\21\\214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d\\source.pdf",
+            "internal_rag_source_sha256": "214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d",
+            "kept_by": "document_header",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "d668f5be-7b14-4ae6-8c81-74ada1f5021b",
+          "image_info": "",
+          "knowledge_filename": "AC_25.773-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "05f99c21-0e83-4b2e-8cc2-425441d1f962",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INTERIOR DESIGN TO FACILITATE SEARCHES\n\nDate: 10/24/08\n\nInitiated By: ANM-100\n\nAC No: 25.795-8\n\n1. PURPOSE. This advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR), part 25, § 25.795(c)(3), “Interior design to facilitate searches.” This section requires that the interior design of an airplane incorporate features that will make it more difficult to hide dangerous objects in the airplane or make it easier to find them if they have been brought onboard. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to whether the interior design deters concealment of dangerous objects (e.g., weapons or explosives) and facilitates a search for them in certain areas of the airplane. The requirements for searching an airplane are not affected by the requirements of § 25.795(c)(3). The design of the airplane will make it easier to search for hidden objects but will not affect the need for, or the diligence of, the search.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+          "knowledge_id": "ed0ae44a-a86c-4604-87bc-f446a864bc9e",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.795-8.pdf",
+          "start_at": 0,
+          "end_at": 17,
+          "seq": 0,
+          "score": 0.7,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "1c3cff6b3a66db4a5e2484cbcde1ec64f01fea8ba0c13b9727c6b552347156a8",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "9fe2d7defeb3b52af42f",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83\\source.pdf",
+            "internal_rag_source_sha256": "38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "1e34a590-7e6f-49a6-b591-58baa9652d03",
+          "image_info": "",
+          "knowledge_filename": "AC_25.795-8.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.795-8.pdf\nDocument preamble\n\nAdvisory Circular",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "b6c844d5-a3ab-474b-bf14-533beb5f0f25",
+          "content": "Source image on page 1; no OCR transcription available.\n\nAdvisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Chemical Oxygen Generator Security Standards\n\nDate: 03/11/14 Initiated by: ANM-100\n\nAC No. 25.795-9\n\n1. Purpose. This advisory circular (AC) provides guidance for an acceptable means of showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.795(d), Chemical oxygen generators. Section 25.795(d) requires each chemical oxygen generator (COG) or its installation to be designed so it meets one of several criteria. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to a COG installed on an airplane.\n\n2. Applicability.\n\na. This AC provides guidance directed to design approval holders, such as airplane manufacturers and modifiers, civil aviation authorities, and Federal Aviation Administration (FAA) airplane type certification engineers, their designees, and inspectors.\n\nb. This material is neither mandatory nor regulatory in nature and does not constitute a regulation. It describes an acceptable means, but not the only means, for demonstrating compliance with the applicable regulations. The FAA will consider other means of demonstrating compliance that an applicant may elect to present. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the pertinent regulations. On the other hand, if we become aware of circumstances that convince us that following the guidance in this AC would not result in compliance with the applicable regulations, we will not be bound to the terms of this AC and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This material does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Definition of Terms. For this AC, the following definitions should be used.\n\na. Access - The ability to manipulate the COG with the intent of making alterations for a purpose for which the COG was not originally designed. This includes gaining access to the area surrounding the COG.\n\nb. Activation - Release of the firing mechanism of the COG for the purpose of initiating the chemical reaction inside.\n\nc. Alteration - A change in the configuration of the COG once access has been gained for the purpose of using the COG for other than its intended function.\n\nd. Chemical Oxygen Generator (COG) - A device that releases oxygen that is created from a chemical reaction.\n\ne. Immediately Obvious - Where an attempt to gain access to the COG would be readily recognized as suspicious (prior to gaining access). This would only be in locations with unrestricted access that are observable.\n\nf. Intervention - The actions crew members must take to prevent damage to the airplane once an alert is activated indicating that the COG is being tampered with. The time it takes to intervene with someone in the lavatory has not been determined; however, we assume that it will take several minutes to resolve the issue.\n\ng. Observable - A crew member is able to see if a person attempts to gain access to a COG installation during the course of the crew member’s normal duties.\n\nh. Tamper-Evident Feature - A unique feature that provides an active and obvious contemporaneous alert to crew members that someone is trying to gain access to the COG and immediate crew intervention is necessary.\n\ni. Tamper Resistance - The level of deterrence for gaining access to the COG.\n\nj. Unrestricted access - An area of the cabin passengers can enter without overcoming locks or other mechanical closure means.\n\n4. Related Documents.\n\na. Regulations. You can download an electronic copy of 14 CFR from the Internet at http://www.fdsys.gov. You can order a paper copy by sending a request to the U.S. Superintendent of Documents, U.S. Government Printing Office, Washington, D.C. 20402­ 0001, or by calling telephone number (202) 512-1800; or by sending a request by facsimile to (202) 512-2250.\n\n(1) § 25.1301, Equipment - Function and installation.\n\n(2) § 25.1309, Equipment, systems, and installations.\n\n(3) § 25.1322, Flightcrew alerting.\n\n(4) § 25.1450, Chemical oxygen generators.\n\n(5) § 25.1443, Minimum mass flow of supplemental oxygen.\n\nb. AC. You can download an electronic copy of the latest version of AC 25-22, Certification of Transport Airplane Mechanical Systems, from the Internet at http://rgl.faa.gov.\n\n5. Requirements of § 25.795(d).\n\na. Applicability. Section 25.795(d) is applicable to part 25 airplanes equipped with COGs.\n\nb. Requirements of § 25.795(d). The following text is quoted from § 25.795(d): “Each chemical oxygen generator or its installation must be designed to be secure from deliberate manipulation by one of the following:\n\n(1) “By providing effective resistance to tampering,\n\n(2) “By providing an effective combination of resistance to tampering and active tamper-evident features,\n\n(3) “By installation in a location or manner so any attempt to access the generator would be immediately obvious, or\n\n(4) “By a combination of approaches specified in paragraphs (1), (2), or (3) of this section that the Administrator finds provides a secure installation.”\n\nc. Requirements of Airworthiness Directive (AD) 2012-11-09. AD 2012-11-09 requires that after September 10, 2015, no person may operate a transport category airplane in passengercarrying operations …. unless each lavatory is equipped with a supplemental oxygen supply in accordance with §§ 25.1443 and 25.1447. COG installations must meet the requirements specified in § 25.795(d) in effect on May 12, 2014, or FAA Policy Statement PS-ANM-25-04, Chemical Oxygen Generator Installations, dated 12/21/2011.\n\n6. Compliance with § 25.795(d).\n\na. Acceptable Means of Determining if a COG or its Installation is Designed to be Secure. Several criteria may be used for determining if a COG installation is secure or has a security vulnerability. COG installations with a security vulnerability must include design features to prevent potential misuse of the COG. Figure 1, Criteria for Assessing an Installation, includes assessment criteria that can be used for determining if a COG installation has a security vulnerability. Table 1 includes guidance to assist in answering the questions in Figure 1. For installations identified as having security vulnerabilities, such as those for which the answers to the assessment statements in Figure 1 result in the answer to question number 4 being yes, the design should be changed. Alternatively, the COG can be replaced with an acceptable oxygen source that is not a security threat.\n\n[Cross-page references; curve values not transcribed]\nRelated figure: Figure 1: Criteria for Assessing an Installation; source page 4.\n\nFigure 1: Criteria for Assessing an Installation\n\n[Cross-page references; curve values not transcribed]\nReferenced from page 3, Document preamble:\na. Acceptable Means of Determining if a COG or its Installation is Designed to be Secure. Several criteria may be used for determining if a COG installation is secure or has a security vulnerability. COG installations with a security vulnerability must include design features to prevent potential misuse of the COG. Figure 1, Criteria for Assessing an Installation, includes assessment criteria that can be used for determining if a COG installation has a security vulnerability. Table 1 includes guidance to assist in answering the questions in Figure 1. For installations identified as having security vulnerabilities, such as those for which the answers to the assessment statements in Figure 1 result in the answer to question number 4 being yes, the design should be changed. Alternatively, the COG can be replaced with an acceptable oxygen source that is not a security threat.\n\nTable 1: Assessment Statement Analysis\nQuestion Number=1.; Notes and Questions to Assist with Assessment Statement Analysis=Review the instructions for continued airworthiness.Review the drawing system.Inspect the airplane's configuration.\nQuestion Number=2.; Notes and Questions to Assist with Assessment Statement Analysis=Can crew members observe the COG installation?Check the area where the COG is installed. Isolated areas, such as galleys, lavatories, crew rests, enclosed occupied compartments, and lower lobe lavatory complexes are potential areas of concern and require further evaluation.Are crew members close to the COG installation during their normal duties?Are there physical barriers between the crew member and the area being evaluated?Is there significant distance between the crew member and the area being observed?How accessible is the COG?Is the COG installation surrounded by curtains? Curtained areas are also considered potential areas of concern and may require further evaluation.\nQuestion Number=3.; Notes and Questions to Assist with Assessment Statement Analysis=Are there locks on doors/access panels to prevent access?Are there tamper-resistant fasteners on panels?Are alarms or some other active alerting tamper indication method part of the installation's design?\nQuestion Number=4.; Notes and Questions to Assist with Assessment Statement Analysis=Check if the COG can be compromised in place.Assess the vulnerability of the adjacent materials to contain the compromised device.Assess the ability of the compartment to contain the event.Check if the COG can be removed.\n\n完整表格：\n<table><tr><td>Question Number</td><td>Notes and Questions to Assist with Assessment Statement Analysis</td></tr><tr><td>1.</td><td>Review the instructions for continued airworthiness.Review the drawing system.Inspect the airplane&#x27;s configuration.</td></tr><tr><td>2.</td><td>Can crew members observe the COG installation?Check the area where the COG is installed. Isolated areas, such as galleys, lavatories, crew rests, enclosed occupied compartments, and lower lobe lavatory complexes are potential areas of concern and require further evaluation.Are crew members close to the COG installation during their normal duties?Are there physical barriers between the crew member and the area being evaluated?Is there significant distance between the crew member and the area being observed?How accessible is the COG?Is the COG installation surrounded by curtains? Curtained areas are also considered potential areas of concern and may require further evaluation.</td></tr><tr><td>3.</td><td>Are there locks on doors/access panels to prevent access?Are there tamper-resistant fasteners on panels?Are alarms or some other active alerting tamper indication method part of the installation&#x27;s design?</td></tr><tr><td>4.</td><td>Check if the COG can be compromised in place.Assess the vulnerability of the adjacent materials to contain the compromised device.Assess the ability of the compartment to contain the event.Check if the COG can be removed.</td></tr></table>\n\nb. Installation of Tamper-Resistant Features. Tamper-resistant design features can be used, in whole or in part, to make a COG installation secure. There are different types of tamper-resistant design features, and their functionality largely depends on the installation. The principal benefit of tamper resistance is to delay exploitation of the COG as a weapon. However, it is not likely that an existing COG installation that can be accessed from within the lavatory could be modified with tamper-resistant design features sufficient to prevent a successful attack. This is because typical measures of tamper resistance, such as special tools and fasteners, could likely be overcome given enough time. These measures are normally used as one of several\n\nlayers of security. Thus, the reliance on such measures is only one element of the security system.\n\n(1) A tamper-resistant installation employs multiple elements, which may include:\n\n(a) the COG’s location,\n\n(b) the method of mounting,\n\n(c) physical protection (through shielding or mechanical isolation of key components), and\n\n(d) internal design.\n\n(2) Eliminating access to the COG is the most straightforward way to make the COG tamper-resistant. Typically, this can be done by placing the COG in a location where significant disassembly of the cabin interior would be required to gain access. For example, the COG for a lavatory could be located so the entire lavatory module would have to be removed to access the COG. However, the installer should also consider the ramifications on maintenance when this approach is used.\n\nc. Installation of Tamper-Evident Features.\n\n(1) For COGs that can be accessed from isolated compartments, such as lavatories, some form of active tamper evidence (for example, an alarm), would be needed in addition to the installation of tamper-resistant features. This is necessary so the time to intervene and stop the attack is less than the time required to carry out the attack. In this case, passive tamper-evident features, such as a tamper-evident seal, are not effective because they provide an after-the-fact notification of tampering. The effectiveness of a tamper-evident system depends on intervention; it cannot be assumed that the alarm by itself would inhibit the attack.\n\n(2) Once an alert is activated indicating the COG is being tampered with, actions by crew members and other available authorized responders are necessary to prevent catastrophic damage to the airplane. Therefore, there is a critical relationship between the tamper-evidence system and the training and capability of the crew to respond. To be most effective, crew training should be accomplished prior to the alarm feature being deployed into the fleet. The time needed to successfully respond to the alarm may be several minutes and depends on several factors. The time available to respond to a threat and intervention times are functions of not only the design features but also many complex and human factors-dependent variables that are difficult to define. These variables include, but are not limited to, the individual capabilities and numbers of flight attendants/authorized responders relative to the terrorists/accomplices, as well as the extensiveness of the training received.\n\n(3) In order to be effective, the alerting system must itself be resistant to tampering. Otherwise, the entire concept of using the early notification to crew could be nullified and the COG accessed without impediment.\n\nd. System Safety Considerations. The applicant should consult the current version of AC 25.1309-1 for guidance on compliance with § 25.1309\n\ne. Hazard classification. Failure of tamper-resistant or tamper-evident features should be considered major.\n\nf. System Performance When Installed.\n\n(1) A tamper-evidence system installed for compliance with § 25.795(d) is intended to notify crew members that someone is trying to gain access to a COG. The system should provide aural and visual warnings to immediately notify crew members so they can provide direct response in a timely fashion. For example, visual indication should be provided so the crew can identity which COG location is being tampered with while performing their normal duties. Aural alerts should be distinct from other alerts and clearly audible to the crew members expected to respond to the alert If an alert is provided to theflightcrew, the alert should be presented in accordance with § 25.1322\n\n(2) The oxygen system installed to meet § 25.795(d) must comply with other regulations applicable to oxygen systems. If the oxygen system does not comply with any of these other regulations, the applicant needs to petition for an exemption in accordance with existing processes. There have been developments in oxygen system technologies that measure actual oxygen saturation levels in the blood. Using this approach can reduce the total quantity of oxygen required, which in turn can reduce the size of the supply source. A smaller supply source may allow room in existing space provisions for installing design features to address the security concern. This approach would require an equivalent level of safety finding to § 25.1443(c).\n\n7. Areas that are Immediately Obvious. For COG installations located where any attempt at access would be immediately obvious, additional safety measures are not required. Immediately obvious areas include the main passenger cabin and other areas where occupants are always present. While some measure of tamper resistance is encouraged for these locations, none is required to meet § 25.795(d). Private compartments (such as a lavatory) or visually divided sections of larger cabin areas are assessed independently. The immediately obvious criterion applies to the specific location of each COG installation, not simply the general area in which it is located. In addition, the installation must be evaluated under all conditions that may exist during a flight. So, for example, if tampering would be immediately obvious except when a curtain is pulled to provide privacy, the installation must be evaluated based on the curtain being arranged in a way that most conceals the installation. As with tamper-evident designs, crews should be made aware that tampering with any COG is a safety risk, and any necessary information incorporated into training programs.\n\nr\\*\n\nJeffrey E. Duven\n\nManager. Transport Airplane Directorate\n\nAircraft Certification Service\n\nAdvisory Circular Feedback\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVS-AIR500-Coord@faa.gov or (2) faxing it to the attention of the Aircraft Certification Service Directives Management Officer at (202) 267-3983.\n\nSubject: (insert AC title/number here)\n\nDate: Click here to enter text.\n\nPlease check all appropriate line items:\n\n☐\t An error (procedural or typographical) has been noted in paragraph Click here to enter text. on page Click here to enter text..\n\n☐\t Recommend paragraph Click here to enter text. on page Click here to enter text. be changed as follows:\n\nClick here to enter text.\n\n☐\t In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)\n\nClick here to enter text.\n\n☐\t Other comments:\n\nClick here to enter text.\n\n☐\t I would like to discuss the above. Please contact me.\n\nSubmitted by:\n\nDate:\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/7c6ea9771f040271bcc6)",
+          "knowledge_id": "d143e795-72fe-4c37-94df-99a6315d2c11",
+          "chunk_index": 0,
+          "knowledge_title": "AC_25.795-9.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 0,
+          "score": 0.6887096774193547,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "6c3dc355004fc96d06347eed9a70d2326f3b2212aac4aecf186340b2bc25a888",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "f9f1e0a830b980f069f3",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\5e\\5e4881df2b8aea0e2fcf3af54134e163cd782207e30fe6fdcba762f3d060b9c6\\source.pdf",
+            "internal_rag_source_sha256": "5e4881df2b8aea0e2fcf3af54134e163cd782207e30fe6fdcba762f3d060b9c6",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "c2a20293-c468-4363-a3f6-2d9660f3a41b",
+          "image_info": "",
+          "knowledge_filename": "AC_25.795-9.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.795-9.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/7c6ea9771f040271bcc6)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "3c36634a-fc23-4315-951a-0fa063fe9e89",
+          "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Installation of Physical Secondary Barriers for Transport Category Airplanes\n\nDate:\n\nInitiated By: AIR-600\n\nAC No: 25.795-10\n\nThis advisory circular provides an acceptable means of showing compliance with the requirements of paragraph (a)(4) of title 14, Code of Federal Regulations (14 CFR) 25.795, Security Considerations, at amendment 25-150. Section 25.795(a)(4) requires installation of a physical secondary barrier that protects the flightdeck in certain transport category airplanes.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDANIEL J. Ditay signed y DANIEL J\n\nELGAS Date: 2023.06.2 15:40:5\n\nVictor Wicklund Acting Director, Policy & Standards Division Aircraft Certification Service\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/fdf9310f77b9496eb1665e7181808fb5/assets/a8aa0f61f7d063c768a6)",
+          "knowledge_id": "fed59260-1164-494c-b3fe-f949150906a1",
+          "chunk_index": 1,
+          "knowledge_title": "AC_25.795-10.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 1,
+          "score": 0.6777777777777777,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "321d57fb493b106f9618fa6ed879fb9c39d73c036aaed3086ec91cf1937e4f23",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "22278a090690aad6f66c",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5\\source.pdf",
+            "internal_rag_source_sha256": "38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "f4c13980-9929-4cb9-8d8b-e86abbe6171c",
+          "image_info": "",
+          "knowledge_filename": "AC_25.795-10.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.795-10.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/fdf9310f77b9496eb1665e7181808fb5/assets/a8aa0f61f7d063c768a6)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "befbfc29-8f31-43ae-b5ec-25ca0fcbcda6",
+          "content": "Advisory Circular\n\nU.S. Department of Transportation\n\nFederal Aviation Administration\n\nSubject: Transport Airplane Landing Gear Retracting Mechanism\n\nDate: 12/28/2011\n\nInitiated by: ANM-110\n\nAC No. 25.729-1\n\nThis advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14 of the Code of Federal Regulations (14 CFR) 25.729 regarding the landing gear retracting mechanism requirements. It will be incorporated into AC 25-21, “Certification of Transport Airplane Structure” and 25-22, “Certification of Transport Airplane Mechanical Systems” at a later date.\n\nSource image on page 1; no OCR transcription available.\n\nAli Bah amiAli Bahrami Manager, Transport Airplane DirectorateManager, Transport Airplane Directorate Aircraft Certification ServiceAircraft Certification Service\n\n1. Purpose. This AC provides guidance concerning compliance with the landing gear retracting mechanism requirements for transport category airplanes.\n\n2. Applicability.\n\na. The guidance provided in this document is directed to airplane manufacturers, modifiers, foreign regulatory authorities, and Federal Aviation Administration (FAA) transport airplane type certification engineers and their designees.\n\nb. This material is neither mandatory nor regulatory in nature and does not constitute a regulation. It describes acceptable means, but not the only means, for demonstrating compliance with the applicable regulations. The FAA will consider other methods of demonstrating compliance that an applicant may elect to present. You may follow alternate FAA approved design recommendations. Mandatory words such as “must” apply only to those who seek to show compliance to a specific rule by use of a method prescribed in this AC without deviation. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the relevant regulations. As of the issuance date, the guidance provided in this AC is harmonized with that of the European Aviation Safety Agency (EASA). It provides a method of compliance that both the FAA and EASA have found acceptable. On the other hand, if we become aware of circumstances that convince us that following this AC would not result in compliance with the applicable regulations, we will not be bound by the terms of this AC, and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This AC does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Related Documents.\n\na. Related Federal Aviation Regulations. Section 25.729 of 14 CFR and other sections relating to landing gear retracting mechanism installations. Sections that prescribe requirements for the design, substantiation, and certification of landing gear retracting mechanisms include:\n\nSection 25.111 Takeoff path.\n\nSection 25.301 Loads.\n\nSection 25.303 Factor of safety.\n\nSection 25.305 Strength and deformation.\n\nSection 25.307 Proof of structure.\n\nSection 25.333 Flight maneuvering envelope.\n\nSection 25.335 Design airspeeds.\n\nSection 25.471 General [Ground loads].\n\nSection 25.561 General [Emergency Landing Cond.]. Section 25.601 General [Design and Construction]. Section 25.603 Materials. Section 25.605 Fabrication methods. Section 25.607 Fasteners. Section 25.609 Protection of structure. Section 25.613 Material strength properties and material design values. Section 25.619 Special factors. Section 25.621 Casting factors. Section 25.623 Bearing factors. Section 25.625 Fitting factors. Section 25.731 Wheels. Section 25.733 Tires. Section 25.735 Brakes and Braking Systems. Section 25.777 Cockpit controls. Section 25.863 Flammable fluid fire protection. Section 25.869 Fire protection: systems. Section 25.899 Electrical bonding and protection against static electricity. Section 25.1301 Function and installation. Section 25.1309 Equipment, systems and installations. Section 25.1322 Warning, caution, and advisory lights. Section 25.1435 Hydraulic systems. Section 25.1515 Landing gear speeds. Section 25.1555 Control markings. Section 25.1583 Operating limitations. Section 25.1585 Operating procedures.\n\nb. FAA Advisory Circulars.\n\nAC 20-34D Prevention of Retractable Landing Gear Failures\n\nAC 21-16F RTCA Document DO-160 versions D, E, F, and G, “Environmental Conditions and Test Procedures for Airborne Equipment”\n\nAC 23-17B Systems and Equipment Guide for Certification of Part 23 Airplanes and Airships\n\nAC 25-7B Chg. 1 Flight Test Guide for Certification of Transport Category Airplanes\n\nAC 25-21 Certification of Transport Airplane Structure\n\nAC 25-22 Certification of Transport Airplane Mechanical Systems\n\nAC 25.1309-1A System Design and Analysis\n\nAC 25.1322-1 Flightcrew Alerting\n\nAC 43.13-2B Chg. 1 Acceptable Methods, Techniques, and Practices – Aircraft Inspection and Repair\n\nc. FAA Orders.\n\nOrder 8110.4C Type Certification Process (Change 4 incorporated)\n\nNOTE: FAA ACs and orders can be obtained electronically from; Federal eRulemaking Portal; http://rgl.faa.gov/, or from the FAA websites; http://www.faa.gov or http://www.faa.gov/regulations\\_policies/orders\\_notices/.\n\nd. Society of Automotive Engineers (SAE) Documents.\n\nSAE AIR-4566-A Crashworthiness Landing Gear Design\n\nSAE ARP-1311C Landing Gear Structures and Mechanisms – Aircraft\n\nISO 7137 : 1995 Environmental Conditions and Test Procedures for Airborne Equipment (not an SAE document but is available from the SAE)\n\nNOTE: These documents can be obtained by mail from the Society of Automotive Engineers, Inc., 400 Commonwealth Drive, Warrendale, Pennsylvania, 15096; or electronically from the SAE International website, http://www.sae.org/.\n\ne. RTCA Documents.\n\nRTCA/DO-160G Environmental Conditions and Test Procedures for Airborne equipment, Issued December 6, 2007\n\nRTCA/DO-178B Software Considerations in Airborne Systems and Equipment Certification, Issued December 1, 1992\n\nNOTE: Copies of RTCA documents may be purchased by mail from the RTCA Inc., 1150 18th Street NW, Suite 910, Washington, DC 20036; by fax, after completing the Document Order Form and faxing to 202-833-9434; or electronically from the RTCA online store at: http://www.rtca.org/onlinecart/.\n\nf.\t Military Documents.\n\nMIL-STD-810F Environmental Test Methods and Engineering Guidelines\n\nNOTE: This document can be obtained by mail from the Department of Defense, DODSSP, Standardization Document Order Desk, 700 Robbins Avenue, Building 4D, Philadelphia, PA 19111-5094; or electronically from the DODSSP website at: http://dodssp.daps.dla.mil/.\n\ng. European Aviation Safety Agency Documents.\n\nEASA Certification Specifications (CS) and Acceptable Means of Compliance (AMC) for CSs are available on the EASA website, http://easa.europa.eu/agencymeasures/certification-specifications.php.\n\n4. Definitions. For definitions of V<sub>SR</sub>, V<sub>SR1</sub>, and V<sub>C</sub>, see 14 CFR part 1 §1.2, Abbreviations and symbols.\n\n5. Background. Amendment 25-136 revised § 25.729(a) through (f) to harmonize part 25 with CS 25.729. The amendment adopted the more stringent of the two requirements.\n\n6. Discussion and Demonstration of Compliance.\n\na. Intent of Rule. (Ref. § 25.729, Retracting mechanism). This rule provides minimum design and certification requirements for landing gear actuation systems to address:\n\n(1) Structural integrity for the nose and main landing gear, retracting mechanism(s), doors, and gear supporting structure for loads imposed during flight, (Ref. § 25.729(a)(1)(ii)(iii)),\n\n(2) Positive locking of the kinematic mechanisms, (Ref. § 25.729(b)),\n\n(3) Redundant means of extending the landing gear, (Ref. § 25.729(c)),\n\n(4) Demonstration of proper operation by test, (Ref § 25.729(d)),\n\n(5) Gear up-and-locked and down-and-locked position indications and aural warning, (Ref. § 25.729(e)(2)(5)),\n\n(6) Equipment damage from tire burst, loose tread, and wheel brake temperatures, (Ref. §§ 25.729(f)(1)(2), 25.731(d), and 25.735(j)).\n\nb. Demonstration of Retracting Mechanism Proper Functioning (Ref. § 25.729(d), Operation test). Guidance addressing flight testing used to demonstrate compliance with this section may be found in AC 25-7B Change 1 “Flight Test Guide for Certification of Transport Category Airplanes,” chapter 4, section 4, paragraph 52, issued December 7, 2011.\n\nc. Retracting Mechanism Indication (Ref. § 25.729(e), Position indicator and warning device).\n\n(1) When light indicators are used, they should be arranged so that:\n\n(a) A green light for each unit is illuminated only when the unit is secured in the correct landing position.\n\n(b) An alert consistent with § 25.1322 is illuminated at all times, except when the landing gear and its doors are secured in the landing or retracted position.\n\n(2) The alert required by § 25.729(e)(2) should be consistent with § 25.1322 and operate regardless of the position of wing leading-or trailing-edge devices, or the number of engines operating.\n\n(3) The design should be such that nuisance activation of the alert required by § 25.729(e)(2) is minimized, for example:\n\n(a) When the landing gear is retracted after a take-off following an engine failure, or during a take-off when a common flap setting is used for take-off and landing;\n\n(b) When the throttles are closed in a normal descent; or\n\n(c) When flying at low altitude in clean or low speed configuration (special operation).\n\n(4) Inhibition of the alert required by § 25.729(e)(2) above a safe altitude out of final approach phase either automatically or by some other means to prevent these situations is acceptable, but it should automatically reset for a further approach.\n\n(5) Means to de-activate the alert required by § 25.729(e)(2) may be installed for use in abnormal or emergency conditions provided that it is not readily available to the flight crew, that is, the control device is protected against inadvertent actuation by the flight crew and its deactivated state is obvious to the flight crew.\n\nd. Protection of Equipment on Landing Gear and in Wheel Wells (Acceptable Means of Compliance) (Ref. § 25.729(f), Protection of equipment in wheel wells).\n\n(1) The use of fusible plugs in the wheels is not a complete safeguard against damage due to a bursting tire.\n\n(2) Where brake overheating could be damaging to the equipment in the wheel wells, an indication of brake temperature should be provided to warn the pilot.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/a854c234382046ceaf6299dce6760139/assets/bb33d0189ea8b073ffa7)",
+          "knowledge_id": "8c537df5-37c5-46dd-9d8a-c410068acc28",
+          "chunk_index": 1,
+          "knowledge_title": "AC_25.729-1.pdf",
+          "start_at": 0,
+          "end_at": 175,
+          "seq": 1,
+          "score": 0.6671874999999999,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "e51ff24379145b3221e6b2afce5838e9659282fe9ce4f31f2028840f0acaca68",
+            "internal_rag_parser_name": "mineru-cloud-pdf",
+            "internal_rag_parser_version": "1",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "2647fd2c3421b2cb323b",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3c\\3c8dfcb7f1bb6e1b65489ca07f8399ee0b7bc520032c30871290fb933d1b2d80\\source.pdf",
+            "internal_rag_source_sha256": "3c8dfcb7f1bb6e1b65489ca07f8399ee0b7bc520032c30871290fb933d1b2d80",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "f2696add-7cd3-4fb0-a33c-d1237ebb413b",
+          "image_info": "",
+          "knowledge_filename": "AC_25.729-1.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "AC_25.729-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/a854c234382046ceaf6299dce6760139/assets/bb33d0189ea8b073ffa7)",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        },
+        {
+          "id": "451a17e2-7b72-4954-835f-c042f8fb6e10",
+          "content": "EFFECTIVE DATE:\n1977-05-02",
+          "knowledge_id": "830c17fd-fe89-48f0-89b0-414f1b05b6db",
+          "chunk_index": 2,
+          "knowledge_title": "23-18-final-14606-14324.pdf",
+          "start_at": 0,
+          "end_at": 26,
+          "seq": 2,
+          "score": 0.6569230769230768,
+          "match_type": 0,
+          "sub_chunk_id": null,
+          "metadata": {
+            "internal_rag_normalized_text_sha256": "3b6d50215a57870dd0037b640c25434869b06a6cb2f3d8f27b61f1251fd28ec8",
+            "internal_rag_parser_name": "native-pdf",
+            "internal_rag_parser_version": "6.14.2",
+            "internal_rag_schema_version": "document-ir/0.2",
+            "internal_rag_source_document_id": "2a786427325b5d168d41",
+            "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\5d\\5de033b295c2655a79f184f1bb2caa5568d5e6c218bef485ce1895038bec30ef\\source.pdf",
+            "internal_rag_source_sha256": "5de033b295c2655a79f184f1bb2caa5568d5e6c218bef485ce1895038bec30ef",
+            "source_system": "internal-rag"
+          },
+          "chunk_type": "text",
+          "parent_chunk_id": "05ead06f-0517-4909-bc8b-69bd47b007de",
+          "image_info": "",
+          "knowledge_filename": "23-18-final-14606-14324.pdf",
+          "knowledge_source": "internal-rag",
+          "knowledge_channel": "api",
+          "matched_content": "23-18-final-14606-14324.pdf\nEFFECTIVE DATE:\n\nEFFECTIVE DATE:\n1977-05-02",
+          "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215"
+        }
+      ],
+      "data": {
+        "references": [
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "a6768c7c4347bf4c44c7",
+                "bd65a2d55880f0183625",
+                "566d14d887d1cf9bed9b",
+                "8fc43052724418bab510",
+                "2f212c749f4525db04e1",
+                "38f9408ec7f119fb3236"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "4585be8466a930edd7fa",
+              "external_parent_chunk_id": "2ff6f9c541a4305593ad",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.\n\n2. RELATED DOCUMENTS.\n\na. Federal Aviation Regulations (FAR). The related sections of Part 25 include:\n\n§ 25.237 Wind velocities\n\n§ 25.773 Pilot compartment view",
+            "end_at": 427,
+            "id": "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.773-1.pdf",
+            "knowledge_id": "71d44815-6c6a-41ae-a5e6-1c80a45a8f47",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.773-1.pdf",
+            "match_type": 0,
+            "matched_content": "Subject: PILOT COMPARTMENT VIEW DESIGN CONSIDERATIONS\n\nDate: 1/8/93\n\nInitiated by: ANM-110\n\nAC No: 25.773-1\n\nChange:\n\n1. PURPOSE. This advisory circular (AC) sets forth a method for demonstrating compliance with the airworthiness standards for transport category airplanes pertaining to pilot compartment view. As with all AC material, it is not mandatory and does not constitute a regulation. It is for guidance purposes only.",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "cf9d738508c2d9280f9f035a32f451ad53e4705bdd1620139889a2c81f3fec41",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "91c3c18e0499ab17a9b3",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\21\\214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d\\source.pdf",
+              "internal_rag_source_sha256": "214b789222a4f8412694d53439bdaef20590a6dcaa8ad1435373f612f75f9f1d",
+              "kept_by": "document_header",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "d668f5be-7b14-4ae6-8c81-74ada1f5021b",
+            "score": 1,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "dc5b0222-1022-4f67-852e-2adc0a1999d1",
+              "e6c63a67-b4fe-4226-bf96-738ae24ccbc6",
+              "40e3089a-32d0-4ed8-9fa9-626ff0d0c0f5",
+              "7a5636b3-1eb5-45ff-a202-7b056a14430d"
+            ]
+          },
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "93be6a84a450c3420fb9"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "cce1861ddd5babf7c56a",
+              "external_parent_chunk_id": "a4a88c7caa4521411052",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: INTERIOR DESIGN TO FACILITATE SEARCHES\n\nDate: 10/24/08\n\nInitiated By: ANM-100\n\nAC No: 25.795-8\n\n1. PURPOSE. This advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR), part 25, § 25.795(c)(3), “Interior design to facilitate searches.” This section requires that the interior design of an airplane incorporate features that will make it more difficult to hide dangerous objects in the airplane or make it easier to find them if they have been brought onboard. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to whether the interior design deters concealment of dangerous objects (e.g., weapons or explosives) and facilitates a search for them in certain areas of the airplane. The requirements for searching an airplane are not affected by the requirements of § 25.795(c)(3). The design of the airplane will make it easier to search for hidden objects but will not affect the need for, or the diligence of, the search.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/85ac433301fe4d40bc7e76a44a64f7b6/assets/f4fd55cd37d764f47f46)",
+            "end_at": 17,
+            "id": "05f99c21-0e83-4b2e-8cc2-425441d1f962",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.795-8.pdf",
+            "knowledge_id": "ed0ae44a-a86c-4604-87bc-f446a864bc9e",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.795-8.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.795-8.pdf\nDocument preamble\n\nAdvisory Circular",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "1c3cff6b3a66db4a5e2484cbcde1ec64f01fea8ba0c13b9727c6b552347156a8",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "9fe2d7defeb3b52af42f",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83\\source.pdf",
+              "internal_rag_source_sha256": "38804c24fcec0271b641b92d5fd8a2407cc3642db5256d08eb0945c23cf9bd83",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "1e34a590-7e6f-49a6-b591-58baa9652d03",
+            "score": 0.7,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "05f99c21-0e83-4b2e-8cc2-425441d1f962",
+              "be1798cf-f1a7-4047-b1c0-be25f21b4191"
+            ]
+          },
+          {
+            "chunk_index": 0,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "7c6ea9771f040271bcc6"
+              ],
+              "block_ids": [
+                "3480a978db6d7f3a5623"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "04f2027afb79523ce8cd",
+              "external_parent_chunk_id": "38b8e13b19a93d6f883e",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Source image on page 1; no OCR transcription available.\n\nAdvisory Circular\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Chemical Oxygen Generator Security Standards\n\nDate: 03/11/14 Initiated by: ANM-100\n\nAC No. 25.795-9\n\n1. Purpose. This advisory circular (AC) provides guidance for an acceptable means of showing compliance with the requirements of Title 14, Code of Federal Regulations (14 CFR) 25.795(d), Chemical oxygen generators. Section 25.795(d) requires each chemical oxygen generator (COG) or its installation to be designed so it meets one of several criteria. The means of compliance described in this document provides guidance to supplement the engineering and operational judgment that must form the basis of any compliance findings relative to a COG installed on an airplane.\n\n2. Applicability.\n\na. This AC provides guidance directed to design approval holders, such as airplane manufacturers and modifiers, civil aviation authorities, and Federal Aviation Administration (FAA) airplane type certification engineers, their designees, and inspectors.\n\nb. This material is neither mandatory nor regulatory in nature and does not constitute a regulation. It describes an acceptable means, but not the only means, for demonstrating compliance with the applicable regulations. The FAA will consider other means of demonstrating compliance that an applicant may elect to present. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the pertinent regulations. On the other hand, if we become aware of circumstances that convince us that following the guidance in this AC would not result in compliance with the applicable regulations, we will not be bound to the terms of this AC and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This material does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Definition of Terms. For this AC, the following definitions should be used.\n\na. Access - The ability to manipulate the COG with the intent of making alterations for a purpose for which the COG was not originally designed. This includes gaining access to the area surrounding the COG.\n\nb. Activation - Release of the firing mechanism of the COG for the purpose of initiating the chemical reaction inside.\n\nc. Alteration - A change in the configuration of the COG once access has been gained for the purpose of using the COG for other than its intended function.\n\nd. Chemical Oxygen Generator (COG) - A device that releases oxygen that is created from a chemical reaction.\n\ne. Immediately Obvious - Where an attempt to gain access to the COG would be readily recognized as suspicious (prior to gaining access). This would only be in locations with unrestricted access that are observable.\n\nf. Intervention - The actions crew members must take to prevent damage to the airplane once an alert is activated indicating that the COG is being tampered with. The time it takes to intervene with someone in the lavatory has not been determined; however, we assume that it will take several minutes to resolve the issue.\n\ng. Observable - A crew member is able to see if a person attempts to gain access to a COG installation during the course of the crew member’s normal duties.\n\nh. Tamper-Evident Feature - A unique feature that provides an active and obvious contemporaneous alert to crew members that someone is trying to gain access to the COG and immediate crew intervention is necessary.\n\ni. Tamper Resistance - The level of deterrence for gaining access to the COG.\n\nj. Unrestricted access - An area of the cabin passengers can enter without overcoming locks or other mechanical closure means.\n\n4. Related Documents.\n\na. Regulations. You can download an electronic copy of 14 CFR from the Internet at http://www.fdsys.gov. You can order a paper copy by sending a request to the U.S. Superintendent of Documents, U.S. Government Printing Office, Washington, D.C. 20402­ 0001, or by calling telephone number (202) 512-1800; or by sending a request by facsimile to (202) 512-2250.\n\n(1) § 25.1301, Equipment - Function and installation.\n\n(2) § 25.1309, Equipment, systems, and installations.\n\n(3) § 25.1322, Flightcrew alerting.\n\n(4) § 25.1450, Chemical oxygen generators.\n\n(5) § 25.1443, Minimum mass flow of supplemental oxygen.\n\nb. AC. You can download an electronic copy of the latest version of AC 25-22, Certification of Transport Airplane Mechanical Systems, from the Internet at http://rgl.faa.gov.\n\n5. Requirements of § 25.795(d).\n\na. Applicability. Section 25.795(d) is applicable to part 25 airplanes equipped with COGs.\n\nb. Requirements of § 25.795(d). The following text is quoted from § 25.795(d): “Each chemical oxygen generator or its installation must be designed to be secure from deliberate manipulation by one of the following:\n\n(1) “By providing effective resistance to tampering,\n\n(2) “By providing an effective combination of resistance to tampering and active tamper-evident features,\n\n(3) “By installation in a location or manner so any attempt to access the generator would be immediately obvious, or\n\n(4) “By a combination of approaches specified in paragraphs (1), (2), or (3) of this section that the Administrator finds provides a secure installation.”\n\nc. Requirements of Airworthiness Directive (AD) 2012-11-09. AD 2012-11-09 requires that after September 10, 2015, no person may operate a transport category airplane in passengercarrying operations …. unless each lavatory is equipped with a supplemental oxygen supply in accordance with §§ 25.1443 and 25.1447. COG installations must meet the requirements specified in § 25.795(d) in effect on May 12, 2014, or FAA Policy Statement PS-ANM-25-04, Chemical Oxygen Generator Installations, dated 12/21/2011.\n\n6. Compliance with § 25.795(d).\n\na. Acceptable Means of Determining if a COG or its Installation is Designed to be Secure. Several criteria may be used for determining if a COG installation is secure or has a security vulnerability. COG installations with a security vulnerability must include design features to prevent potential misuse of the COG. Figure 1, Criteria for Assessing an Installation, includes assessment criteria that can be used for determining if a COG installation has a security vulnerability. Table 1 includes guidance to assist in answering the questions in Figure 1. For installations identified as having security vulnerabilities, such as those for which the answers to the assessment statements in Figure 1 result in the answer to question number 4 being yes, the design should be changed. Alternatively, the COG can be replaced with an acceptable oxygen source that is not a security threat.\n\n[Cross-page references; curve values not transcribed]\nRelated figure: Figure 1: Criteria for Assessing an Installation; source page 4.\n\nFigure 1: Criteria for Assessing an Installation\n\n[Cross-page references; curve values not transcribed]\nReferenced from page 3, Document preamble:\na. Acceptable Means of Determining if a COG or its Installation is Designed to be Secure. Several criteria may be used for determining if a COG installation is secure or has a security vulnerability. COG installations with a security vulnerability must include design features to prevent potential misuse of the COG. Figure 1, Criteria for Assessing an Installation, includes assessment criteria that can be used for determining if a COG installation has a security vulnerability. Table 1 includes guidance to assist in answering the questions in Figure 1. For installations identified as having security vulnerabilities, such as those for which the answers to the assessment statements in Figure 1 result in the answer to question number 4 being yes, the design should be changed. Alternatively, the COG can be replaced with an acceptable oxygen source that is not a security threat.\n\nTable 1: Assessment Statement Analysis\nQuestion Number=1.; Notes and Questions to Assist with Assessment Statement Analysis=Review the instructions for continued airworthiness.Review the drawing system.Inspect the airplane's configuration.\nQuestion Number=2.; Notes and Questions to Assist with Assessment Statement Analysis=Can crew members observe the COG installation?Check the area where the COG is installed. Isolated areas, such as galleys, lavatories, crew rests, enclosed occupied compartments, and lower lobe lavatory complexes are potential areas of concern and require further evaluation.Are crew members close to the COG installation during their normal duties?Are there physical barriers between the crew member and the area being evaluated?Is there significant distance between the crew member and the area being observed?How accessible is the COG?Is the COG installation surrounded by curtains? Curtained areas are also considered potential areas of concern and may require further evaluation.\nQuestion Number=3.; Notes and Questions to Assist with Assessment Statement Analysis=Are there locks on doors/access panels to prevent access?Are there tamper-resistant fasteners on panels?Are alarms or some other active alerting tamper indication method part of the installation's design?\nQuestion Number=4.; Notes and Questions to Assist with Assessment Statement Analysis=Check if the COG can be compromised in place.Assess the vulnerability of the adjacent materials to contain the compromised device.Assess the ability of the compartment to contain the event.Check if the COG can be removed.\n\n完整表格：\n<table><tr><td>Question Number</td><td>Notes and Questions to Assist with Assessment Statement Analysis</td></tr><tr><td>1.</td><td>Review the instructions for continued airworthiness.Review the drawing system.Inspect the airplane&#x27;s configuration.</td></tr><tr><td>2.</td><td>Can crew members observe the COG installation?Check the area where the COG is installed. Isolated areas, such as galleys, lavatories, crew rests, enclosed occupied compartments, and lower lobe lavatory complexes are potential areas of concern and require further evaluation.Are crew members close to the COG installation during their normal duties?Are there physical barriers between the crew member and the area being evaluated?Is there significant distance between the crew member and the area being observed?How accessible is the COG?Is the COG installation surrounded by curtains? Curtained areas are also considered potential areas of concern and may require further evaluation.</td></tr><tr><td>3.</td><td>Are there locks on doors/access panels to prevent access?Are there tamper-resistant fasteners on panels?Are alarms or some other active alerting tamper indication method part of the installation&#x27;s design?</td></tr><tr><td>4.</td><td>Check if the COG can be compromised in place.Assess the vulnerability of the adjacent materials to contain the compromised device.Assess the ability of the compartment to contain the event.Check if the COG can be removed.</td></tr></table>\n\nb. Installation of Tamper-Resistant Features. Tamper-resistant design features can be used, in whole or in part, to make a COG installation secure. There are different types of tamper-resistant design features, and their functionality largely depends on the installation. The principal benefit of tamper resistance is to delay exploitation of the COG as a weapon. However, it is not likely that an existing COG installation that can be accessed from within the lavatory could be modified with tamper-resistant design features sufficient to prevent a successful attack. This is because typical measures of tamper resistance, such as special tools and fasteners, could likely be overcome given enough time. These measures are normally used as one of several\n\nlayers of security. Thus, the reliance on such measures is only one element of the security system.\n\n(1) A tamper-resistant installation employs multiple elements, which may include:\n\n(a) the COG’s location,\n\n(b) the method of mounting,\n\n(c) physical protection (through shielding or mechanical isolation of key components), and\n\n(d) internal design.\n\n(2) Eliminating access to the COG is the most straightforward way to make the COG tamper-resistant. Typically, this can be done by placing the COG in a location where significant disassembly of the cabin interior would be required to gain access. For example, the COG for a lavatory could be located so the entire lavatory module would have to be removed to access the COG. However, the installer should also consider the ramifications on maintenance when this approach is used.\n\nc. Installation of Tamper-Evident Features.\n\n(1) For COGs that can be accessed from isolated compartments, such as lavatories, some form of active tamper evidence (for example, an alarm), would be needed in addition to the installation of tamper-resistant features. This is necessary so the time to intervene and stop the attack is less than the time required to carry out the attack. In this case, passive tamper-evident features, such as a tamper-evident seal, are not effective because they provide an after-the-fact notification of tampering. The effectiveness of a tamper-evident system depends on intervention; it cannot be assumed that the alarm by itself would inhibit the attack.\n\n(2) Once an alert is activated indicating the COG is being tampered with, actions by crew members and other available authorized responders are necessary to prevent catastrophic damage to the airplane. Therefore, there is a critical relationship between the tamper-evidence system and the training and capability of the crew to respond. To be most effective, crew training should be accomplished prior to the alarm feature being deployed into the fleet. The time needed to successfully respond to the alarm may be several minutes and depends on several factors. The time available to respond to a threat and intervention times are functions of not only the design features but also many complex and human factors-dependent variables that are difficult to define. These variables include, but are not limited to, the individual capabilities and numbers of flight attendants/authorized responders relative to the terrorists/accomplices, as well as the extensiveness of the training received.\n\n(3) In order to be effective, the alerting system must itself be resistant to tampering. Otherwise, the entire concept of using the early notification to crew could be nullified and the COG accessed without impediment.\n\nd. System Safety Considerations. The applicant should consult the current version of AC 25.1309-1 for guidance on compliance with § 25.1309\n\ne. Hazard classification. Failure of tamper-resistant or tamper-evident features should be considered major.\n\nf. System Performance When Installed.\n\n(1) A tamper-evidence system installed for compliance with § 25.795(d) is intended to notify crew members that someone is trying to gain access to a COG. The system should provide aural and visual warnings to immediately notify crew members so they can provide direct response in a timely fashion. For example, visual indication should be provided so the crew can identity which COG location is being tampered with while performing their normal duties. Aural alerts should be distinct from other alerts and clearly audible to the crew members expected to respond to the alert If an alert is provided to theflightcrew, the alert should be presented in accordance with § 25.1322\n\n(2) The oxygen system installed to meet § 25.795(d) must comply with other regulations applicable to oxygen systems. If the oxygen system does not comply with any of these other regulations, the applicant needs to petition for an exemption in accordance with existing processes. There have been developments in oxygen system technologies that measure actual oxygen saturation levels in the blood. Using this approach can reduce the total quantity of oxygen required, which in turn can reduce the size of the supply source. A smaller supply source may allow room in existing space provisions for installing design features to address the security concern. This approach would require an equivalent level of safety finding to § 25.1443(c).\n\n7. Areas that are Immediately Obvious. For COG installations located where any attempt at access would be immediately obvious, additional safety measures are not required. Immediately obvious areas include the main passenger cabin and other areas where occupants are always present. While some measure of tamper resistance is encouraged for these locations, none is required to meet § 25.795(d). Private compartments (such as a lavatory) or visually divided sections of larger cabin areas are assessed independently. The immediately obvious criterion applies to the specific location of each COG installation, not simply the general area in which it is located. In addition, the installation must be evaluated under all conditions that may exist during a flight. So, for example, if tampering would be immediately obvious except when a curtain is pulled to provide privacy, the installation must be evaluated based on the curtain being arranged in a way that most conceals the installation. As with tamper-evident designs, crews should be made aware that tampering with any COG is a safety risk, and any necessary information incorporated into training programs.\n\nr\\*\n\nJeffrey E. Duven\n\nManager. Transport Airplane Directorate\n\nAircraft Certification Service\n\nAdvisory Circular Feedback\n\nIf you find an error in this AC, have recommendations for improving it, or have suggestions for new items/subjects to be added, you may let us know by (1) emailing this form to 9-AWA-AVS-AIR500-Coord@faa.gov or (2) faxing it to the attention of the Aircraft Certification Service Directives Management Officer at (202) 267-3983.\n\nSubject: (insert AC title/number here)\n\nDate: Click here to enter text.\n\nPlease check all appropriate line items:\n\n☐\t An error (procedural or typographical) has been noted in paragraph Click here to enter text. on page Click here to enter text..\n\n☐\t Recommend paragraph Click here to enter text. on page Click here to enter text. be changed as follows:\n\nClick here to enter text.\n\n☐\t In a future change to this AC, please cover the following subject: (Briefly describe what you want added.)\n\nClick here to enter text.\n\n☐\t Other comments:\n\nClick here to enter text.\n\n☐\t I would like to discuss the above. Please contact me.\n\nSubmitted by:\n\nDate:\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/7c6ea9771f040271bcc6)",
+            "end_at": 175,
+            "id": "b6c844d5-a3ab-474b-bf14-533beb5f0f25",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.795-9.pdf",
+            "knowledge_id": "d143e795-72fe-4c37-94df-99a6315d2c11",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.795-9.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.795-9.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/7c6ea9771f040271bcc6)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "6c3dc355004fc96d06347eed9a70d2326f3b2212aac4aecf186340b2bc25a888",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "f9f1e0a830b980f069f3",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\5e\\5e4881df2b8aea0e2fcf3af54134e163cd782207e30fe6fdcba762f3d060b9c6\\source.pdf",
+              "internal_rag_source_sha256": "5e4881df2b8aea0e2fcf3af54134e163cd782207e30fe6fdcba762f3d060b9c6",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "c2a20293-c468-4363-a3f6-2d9660f3a41b",
+            "related_images": [
+              {
+                "caption": "Table 1 — page 5",
+                "chunk_id": "71a90641-70f0-4a44-b25a-79b37a6c043a",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/a0d14fcf7cdee3687e9f"
+              },
+              {
+                "caption": "Figure 1: Criteria for Assessing an Installation",
+                "chunk_id": "75898267-0172-4ef5-8f64-7d175c701b71",
+                "url": "http://localhost:8080/api/v1/ingestion/jobs/2565295cecb24344bdf5e52a81a4c10e/assets/a0b239a7e1c2bfe23afb"
+              }
+            ],
+            "score": 0.6887096774193547,
+            "seq": 0,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "b6c844d5-a3ab-474b-bf14-533beb5f0f25"
+            ]
+          },
+          {
+            "chunk_index": 1,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "a8aa0f61f7d063c768a6"
+              ],
+              "block_ids": [
+                "7bc89a1ff20cdda9ef95"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "db936dff64d66dd167e7",
+              "external_parent_chunk_id": "0f069de4425b5fd5cc2c",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\nSource image on page 1; no OCR transcription available.\n\nU.S. Department of Transportation Federal Aviation Administration\n\nSubject: Installation of Physical Secondary Barriers for Transport Category Airplanes\n\nDate:\n\nInitiated By: AIR-600\n\nAC No: 25.795-10\n\nThis advisory circular provides an acceptable means of showing compliance with the requirements of paragraph (a)(4) of title 14, Code of Federal Regulations (14 CFR) 25.795, Security Considerations, at amendment 25-150. Section 25.795(a)(4) requires installation of a physical secondary barrier that protects the flightdeck in certain transport category airplanes.\n\nIf you have suggestions for improving this AC, you may use the Advisory Circular Feedback Form at the end of this AC.\n\nDANIEL J. Ditay signed y DANIEL J\n\nELGAS Date: 2023.06.2 15:40:5\n\nVictor Wicklund Acting Director, Policy & Standards Division Aircraft Certification Service\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/fdf9310f77b9496eb1665e7181808fb5/assets/a8aa0f61f7d063c768a6)",
+            "end_at": 175,
+            "id": "3c36634a-fc23-4315-951a-0fa063fe9e89",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.795-10.pdf",
+            "knowledge_id": "fed59260-1164-494c-b3fe-f949150906a1",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.795-10.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.795-10.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/fdf9310f77b9496eb1665e7181808fb5/assets/a8aa0f61f7d063c768a6)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "321d57fb493b106f9618fa6ed879fb9c39d73c036aaed3086ec91cf1937e4f23",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "22278a090690aad6f66c",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\38\\38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5\\source.pdf",
+              "internal_rag_source_sha256": "38c032c329289f9395bbec73316552388e0ea9865f5c2da1309f4459c03c9ba5",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "f4c13980-9929-4cb9-8d8b-e86abbe6171c",
+            "score": 0.6777777777777777,
+            "seq": 1,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "3c36634a-fc23-4315-951a-0fa063fe9e89"
+            ]
+          },
+          {
+            "chunk_index": 1,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [
+                "bb33d0189ea8b073ffa7"
+              ],
+              "block_ids": [
+                "bdcda7d10bd319066a1f"
+              ],
+              "content_type": "figure",
+              "external_chunk_id": "fdc977481a3995651f16",
+              "external_parent_chunk_id": "716a2141d76853a2bb34",
+              "formula_latex": [],
+              "keywords": [],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "Advisory Circular\n\nU.S. Department of Transportation\n\nFederal Aviation Administration\n\nSubject: Transport Airplane Landing Gear Retracting Mechanism\n\nDate: 12/28/2011\n\nInitiated by: ANM-110\n\nAC No. 25.729-1\n\nThis advisory circular (AC) describes an acceptable means for showing compliance with the requirements of Title 14 of the Code of Federal Regulations (14 CFR) 25.729 regarding the landing gear retracting mechanism requirements. It will be incorporated into AC 25-21, “Certification of Transport Airplane Structure” and 25-22, “Certification of Transport Airplane Mechanical Systems” at a later date.\n\nSource image on page 1; no OCR transcription available.\n\nAli Bah amiAli Bahrami Manager, Transport Airplane DirectorateManager, Transport Airplane Directorate Aircraft Certification ServiceAircraft Certification Service\n\n1. Purpose. This AC provides guidance concerning compliance with the landing gear retracting mechanism requirements for transport category airplanes.\n\n2. Applicability.\n\na. The guidance provided in this document is directed to airplane manufacturers, modifiers, foreign regulatory authorities, and Federal Aviation Administration (FAA) transport airplane type certification engineers and their designees.\n\nb. This material is neither mandatory nor regulatory in nature and does not constitute a regulation. It describes acceptable means, but not the only means, for demonstrating compliance with the applicable regulations. The FAA will consider other methods of demonstrating compliance that an applicant may elect to present. You may follow alternate FAA approved design recommendations. Mandatory words such as “must” apply only to those who seek to show compliance to a specific rule by use of a method prescribed in this AC without deviation. While these guidelines are not mandatory, they are derived from extensive FAA and industry experience in determining compliance with the relevant regulations. As of the issuance date, the guidance provided in this AC is harmonized with that of the European Aviation Safety Agency (EASA). It provides a method of compliance that both the FAA and EASA have found acceptable. On the other hand, if we become aware of circumstances that convince us that following this AC would not result in compliance with the applicable regulations, we will not be bound by the terms of this AC, and we may require additional substantiation or design changes as a basis for finding compliance.\n\nc. This AC does not change, create any additional, authorize changes in, or permit deviations from, regulatory requirements.\n\n3. Related Documents.\n\na. Related Federal Aviation Regulations. Section 25.729 of 14 CFR and other sections relating to landing gear retracting mechanism installations. Sections that prescribe requirements for the design, substantiation, and certification of landing gear retracting mechanisms include:\n\nSection 25.111 Takeoff path.\n\nSection 25.301 Loads.\n\nSection 25.303 Factor of safety.\n\nSection 25.305 Strength and deformation.\n\nSection 25.307 Proof of structure.\n\nSection 25.333 Flight maneuvering envelope.\n\nSection 25.335 Design airspeeds.\n\nSection 25.471 General [Ground loads].\n\nSection 25.561 General [Emergency Landing Cond.]. Section 25.601 General [Design and Construction]. Section 25.603 Materials. Section 25.605 Fabrication methods. Section 25.607 Fasteners. Section 25.609 Protection of structure. Section 25.613 Material strength properties and material design values. Section 25.619 Special factors. Section 25.621 Casting factors. Section 25.623 Bearing factors. Section 25.625 Fitting factors. Section 25.731 Wheels. Section 25.733 Tires. Section 25.735 Brakes and Braking Systems. Section 25.777 Cockpit controls. Section 25.863 Flammable fluid fire protection. Section 25.869 Fire protection: systems. Section 25.899 Electrical bonding and protection against static electricity. Section 25.1301 Function and installation. Section 25.1309 Equipment, systems and installations. Section 25.1322 Warning, caution, and advisory lights. Section 25.1435 Hydraulic systems. Section 25.1515 Landing gear speeds. Section 25.1555 Control markings. Section 25.1583 Operating limitations. Section 25.1585 Operating procedures.\n\nb. FAA Advisory Circulars.\n\nAC 20-34D Prevention of Retractable Landing Gear Failures\n\nAC 21-16F RTCA Document DO-160 versions D, E, F, and G, “Environmental Conditions and Test Procedures for Airborne Equipment”\n\nAC 23-17B Systems and Equipment Guide for Certification of Part 23 Airplanes and Airships\n\nAC 25-7B Chg. 1 Flight Test Guide for Certification of Transport Category Airplanes\n\nAC 25-21 Certification of Transport Airplane Structure\n\nAC 25-22 Certification of Transport Airplane Mechanical Systems\n\nAC 25.1309-1A System Design and Analysis\n\nAC 25.1322-1 Flightcrew Alerting\n\nAC 43.13-2B Chg. 1 Acceptable Methods, Techniques, and Practices – Aircraft Inspection and Repair\n\nc. FAA Orders.\n\nOrder 8110.4C Type Certification Process (Change 4 incorporated)\n\nNOTE: FAA ACs and orders can be obtained electronically from; Federal eRulemaking Portal; http://rgl.faa.gov/, or from the FAA websites; http://www.faa.gov or http://www.faa.gov/regulations\\_policies/orders\\_notices/.\n\nd. Society of Automotive Engineers (SAE) Documents.\n\nSAE AIR-4566-A Crashworthiness Landing Gear Design\n\nSAE ARP-1311C Landing Gear Structures and Mechanisms – Aircraft\n\nISO 7137 : 1995 Environmental Conditions and Test Procedures for Airborne Equipment (not an SAE document but is available from the SAE)\n\nNOTE: These documents can be obtained by mail from the Society of Automotive Engineers, Inc., 400 Commonwealth Drive, Warrendale, Pennsylvania, 15096; or electronically from the SAE International website, http://www.sae.org/.\n\ne. RTCA Documents.\n\nRTCA/DO-160G Environmental Conditions and Test Procedures for Airborne equipment, Issued December 6, 2007\n\nRTCA/DO-178B Software Considerations in Airborne Systems and Equipment Certification, Issued December 1, 1992\n\nNOTE: Copies of RTCA documents may be purchased by mail from the RTCA Inc., 1150 18th Street NW, Suite 910, Washington, DC 20036; by fax, after completing the Document Order Form and faxing to 202-833-9434; or electronically from the RTCA online store at: http://www.rtca.org/onlinecart/.\n\nf.\t Military Documents.\n\nMIL-STD-810F Environmental Test Methods and Engineering Guidelines\n\nNOTE: This document can be obtained by mail from the Department of Defense, DODSSP, Standardization Document Order Desk, 700 Robbins Avenue, Building 4D, Philadelphia, PA 19111-5094; or electronically from the DODSSP website at: http://dodssp.daps.dla.mil/.\n\ng. European Aviation Safety Agency Documents.\n\nEASA Certification Specifications (CS) and Acceptable Means of Compliance (AMC) for CSs are available on the EASA website, http://easa.europa.eu/agencymeasures/certification-specifications.php.\n\n4. Definitions. For definitions of V<sub>SR</sub>, V<sub>SR1</sub>, and V<sub>C</sub>, see 14 CFR part 1 §1.2, Abbreviations and symbols.\n\n5. Background. Amendment 25-136 revised § 25.729(a) through (f) to harmonize part 25 with CS 25.729. The amendment adopted the more stringent of the two requirements.\n\n6. Discussion and Demonstration of Compliance.\n\na. Intent of Rule. (Ref. § 25.729, Retracting mechanism). This rule provides minimum design and certification requirements for landing gear actuation systems to address:\n\n(1) Structural integrity for the nose and main landing gear, retracting mechanism(s), doors, and gear supporting structure for loads imposed during flight, (Ref. § 25.729(a)(1)(ii)(iii)),\n\n(2) Positive locking of the kinematic mechanisms, (Ref. § 25.729(b)),\n\n(3) Redundant means of extending the landing gear, (Ref. § 25.729(c)),\n\n(4) Demonstration of proper operation by test, (Ref § 25.729(d)),\n\n(5) Gear up-and-locked and down-and-locked position indications and aural warning, (Ref. § 25.729(e)(2)(5)),\n\n(6) Equipment damage from tire burst, loose tread, and wheel brake temperatures, (Ref. §§ 25.729(f)(1)(2), 25.731(d), and 25.735(j)).\n\nb. Demonstration of Retracting Mechanism Proper Functioning (Ref. § 25.729(d), Operation test). Guidance addressing flight testing used to demonstrate compliance with this section may be found in AC 25-7B Change 1 “Flight Test Guide for Certification of Transport Category Airplanes,” chapter 4, section 4, paragraph 52, issued December 7, 2011.\n\nc. Retracting Mechanism Indication (Ref. § 25.729(e), Position indicator and warning device).\n\n(1) When light indicators are used, they should be arranged so that:\n\n(a) A green light for each unit is illuminated only when the unit is secured in the correct landing position.\n\n(b) An alert consistent with § 25.1322 is illuminated at all times, except when the landing gear and its doors are secured in the landing or retracted position.\n\n(2) The alert required by § 25.729(e)(2) should be consistent with § 25.1322 and operate regardless of the position of wing leading-or trailing-edge devices, or the number of engines operating.\n\n(3) The design should be such that nuisance activation of the alert required by § 25.729(e)(2) is minimized, for example:\n\n(a) When the landing gear is retracted after a take-off following an engine failure, or during a take-off when a common flap setting is used for take-off and landing;\n\n(b) When the throttles are closed in a normal descent; or\n\n(c) When flying at low altitude in clean or low speed configuration (special operation).\n\n(4) Inhibition of the alert required by § 25.729(e)(2) above a safe altitude out of final approach phase either automatically or by some other means to prevent these situations is acceptable, but it should automatically reset for a further approach.\n\n(5) Means to de-activate the alert required by § 25.729(e)(2) may be installed for use in abnormal or emergency conditions provided that it is not readily available to the flight crew, that is, the control device is protected against inadvertent actuation by the flight crew and its deactivated state is obvious to the flight crew.\n\nd. Protection of Equipment on Landing Gear and in Wheel Wells (Acceptable Means of Compliance) (Ref. § 25.729(f), Protection of equipment in wheel wells).\n\n(1) The use of fusible plugs in the wheels is not a complete safeguard against damage due to a bursting tire.\n\n(2) Where brake overheating could be damaging to the equipment in the wheel wells, an indication of brake temperature should be provided to warn the pilot.\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/a854c234382046ceaf6299dce6760139/assets/bb33d0189ea8b073ffa7)",
+            "end_at": 175,
+            "id": "befbfc29-8f31-43ae-b5ec-25ca0fcbcda6",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "AC_25.729-1.pdf",
+            "knowledge_id": "8c537df5-37c5-46dd-9d8a-c410068acc28",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "AC_25.729-1.pdf",
+            "match_type": 0,
+            "matched_content": "AC_25.729-1.pdf\nSource image on page 1\n\nSource image on page 1; no OCR transcription available.\n\n![figure p1](http://localhost:8080/api/v1/ingestion/jobs/a854c234382046ceaf6299dce6760139/assets/bb33d0189ea8b073ffa7)",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "e51ff24379145b3221e6b2afce5838e9659282fe9ce4f31f2028840f0acaca68",
+              "internal_rag_parser_name": "mineru-cloud-pdf",
+              "internal_rag_parser_version": "1",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "2647fd2c3421b2cb323b",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\3c\\3c8dfcb7f1bb6e1b65489ca07f8399ee0b7bc520032c30871290fb933d1b2d80\\source.pdf",
+              "internal_rag_source_sha256": "3c8dfcb7f1bb6e1b65489ca07f8399ee0b7bc520032c30871290fb933d1b2d80",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "f2696add-7cd3-4fb0-a33c-d1237ebb413b",
+            "score": 0.6671874999999999,
+            "seq": 1,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "befbfc29-8f31-43ae-b5ec-25ca0fcbcda6"
+            ]
+          },
+          {
+            "chunk_index": 2,
+            "chunk_metadata": {
+              "article_aliases": [],
+              "article_id_normalized": "",
+              "article_id_raw": "",
+              "article_parent_id": "",
+              "asset_ids": [],
+              "block_ids": [
+                "b30ed403f996fcbc8b85"
+              ],
+              "content_type": "text",
+              "external_chunk_id": "27042ab19dad99e41ac8",
+              "external_parent_chunk_id": "6160697fa378bc2f2d05",
+              "formula_latex": [],
+              "keywords": [
+                "生效日期",
+                "EFFECTIVE",
+                "DATE"
+              ],
+              "page_end": 1,
+              "page_start": 1,
+              "question_aliases": [],
+              "related_chunks": [],
+              "section_path": [
+                "EFFECTIVE DATE:"
+              ],
+              "table_html": [],
+              "table_rows": []
+            },
+            "chunk_type": "text",
+            "content": "EFFECTIVE DATE:\n1977-05-02",
+            "end_at": 26,
+            "id": "451a17e2-7b72-4954-835f-c042f8fb6e10",
+            "image_info": "",
+            "knowledge_base_id": "acdf013d-971b-42c3-b6ca-cf09157c9215",
+            "knowledge_channel": "api",
+            "knowledge_filename": "23-18-final-14606-14324.pdf",
+            "knowledge_id": "830c17fd-fe89-48f0-89b0-414f1b05b6db",
+            "knowledge_source": "internal-rag",
+            "knowledge_title": "23-18-final-14606-14324.pdf",
+            "match_type": 0,
+            "matched_content": "23-18-final-14606-14324.pdf\nEFFECTIVE DATE:\n\nEFFECTIVE DATE:\n1977-05-02",
+            "metadata": {
+              "internal_rag_normalized_text_sha256": "3b6d50215a57870dd0037b640c25434869b06a6cb2f3d8f27b61f1251fd28ec8",
+              "internal_rag_parser_name": "native-pdf",
+              "internal_rag_parser_version": "6.14.2",
+              "internal_rag_schema_version": "document-ir/0.2",
+              "internal_rag_source_document_id": "2a786427325b5d168d41",
+              "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\5d\\5de033b295c2655a79f184f1bb2caa5568d5e6c218bef485ce1895038bec30ef\\source.pdf",
+              "internal_rag_source_sha256": "5de033b295c2655a79f184f1bb2caa5568d5e6c218bef485ce1895038bec30ef",
+              "source_system": "internal-rag"
+            },
+            "parent_chunk_id": "05ead06f-0517-4909-bc8b-69bd47b007de",
+            "score": 0.6569230769230768,
+            "seq": 2,
+            "start_at": 0,
+            "sub_chunk_id": [
+              "451a17e2-7b72-4954-835f-c042f8fb6e10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "用户",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "问",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "773",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "检索",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "内容",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "显示",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " Date",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": ":",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "8",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "93",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "即",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "199",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "3",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "8",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "引用",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": " c",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "。\n\n",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "无需",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "图片",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "简洁",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "回答",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "thinking",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167807,
+        "duration_ms": 420,
+        "event_id": "a034921f-thinking"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "AC",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "25",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": ".",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "773",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "《",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "P",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "ilot",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " Comp",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "artment",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " View",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " Design",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " Considerations",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "》",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "的",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "签发",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "日期",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " **",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "8",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "/",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "93",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "**",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "即",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "199",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "3",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "年",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "1",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "月",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "8",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "日",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "该",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " AC",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "由",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " AN",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "M",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "-",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "110",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": " ",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "发起",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "其",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "内容",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "为",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "提供",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "一种",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "证明",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "运输",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "类",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "飞机",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "驾驶员",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "舱",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "视野",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "适",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "航",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "标准",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "符合",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "性的",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "方法",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "；",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "并",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "明确指出",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "它",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "并非",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "强制性",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "要求",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "也不",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "构成",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "规章",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "，",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "仅供",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "指导",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "使用",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "。",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "<kb doc=\"AC_25.773-1.pdf\" chunk_id=\"dc5b0222-1022-4f67-852e-2adc0a1999d1\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+      "done": false,
+      "data": {
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "answer",
+      "content": "",
+      "done": true,
+      "data": {
+        "completed_at": 1793167808,
+        "duration_ms": 604,
+        "event_id": "a0697b7f-answer"
+      }
+    },
+    {
+      "id": "5dd2aba8-44b9-46f9-b00a-82134fe86399",
+      "response_type": "complete",
+      "content": "",
+      "done": true,
+      "data": {
+        "final_content": "AC 25.773-1《Pilot Compartment View Design Considerations》的签发日期为 **1/8/93**，即 1993 年 1 月 8 日。该 AC 由 ANM-110 发起，其内容为提供一种证明运输类飞机驾驶员舱视野适航标准符合性的方法；并明确指出它并非强制性要求，也不构成规章，仅供指导使用。<kb doc=\"AC_25.773-1.pdf\" chunk_id=\"dc5b0222-1022-4f67-852e-2adc0a1999d1\" kb_id=\"acdf013d-971b-42c3-b6ca-cf09157c9215\" />",
+        "total_duration_ms": 0,
+        "total_steps": 0
+      }
+    }
+  ],
+  "seconds": 13.34
+}

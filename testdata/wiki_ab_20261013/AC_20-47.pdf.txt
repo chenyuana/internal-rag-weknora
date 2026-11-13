@@ -1,0 +1,85 @@
+[chunk 630ad80e-d91b-4bd3-a00f-54be2b2e470c]
+1. PURPOSE. This circular sets forth an acceptable means but not the only means of complying with the requirement for a two-inch colored band outlining exits required to be openable from the outside on transport airplanes.
+
+2. REFERENCE REGULATIONS. FAR 25.811(h) and FAR 121.310(g) effective July 1, 1966.
+
+3. BACKGROUND. Questions have been raised regarding means of complying with the new requirement for a two-inch colored band around the periphery of exits required to be openable from the outside, (FAR 25.811(h) and 121.310(g)). Other questions have been asked regarding continuity of the stripe, the methods for measurements of reflectance and the 3 to 1 factor required between the reflectance of the colored band and the background color.
+
+The objective of the requirement is to mark the exit to thus assist rescue personnel in finding and opening exits from outside the airplane. The exterior paint marking of some operators which placed lettering and decorative features (such as stripes) uninterrupted across exits, have tended to obscure the location of such exits.
+
+[chunk 1a4570ac-54a0-448a-8561-4ce1e609d56f]
+1. PURPOSE. This circular sets forth an acceptable means but not the only means of complying with the requirement for a two-inch colored band outlining exits required to be openable from the outside on transport airplanes.
+
+2. REFERENCE REGULATIONS. FAR 25.811(h) and FAR 121.310(g) effective July 1, 1966.
+
+3. BACKGROUND. Questions have been raised regarding means of complying with the new requirement for a two-inch colored band around the periphery of exits required to be openable from the outside, (FAR 25.811(h) and 121.310(g)). Other questions have been asked regarding continuity of the stripe, the methods for measurements of reflectance and the 3 to 1 factor required between the reflectance of the colored band and the background color.
+
+The objective of the requirement is to mark the exit to thus assist rescue personnel in finding and opening exits from outside the airplane. The exterior paint marking of some operators which placed lettering and decorative features (such as stripes) uninterrupted across exits, have tended to obscure the location of such exits.
+
+[chunk 61251cc4-57c5-4186-95b6-b40ad677d091]
+4. ACCEPTABLE MEANS OF COMPLIANCE.
+
+a. It has been proposed that the colored band might stop where letters or decorative markings intersect, and continue where the band would reappear; however, the regulation requires that the exit be outlined continuously. The two-inch colored band is considered to comply with applicable regulations when it is continuous around the exit opening, and not covered by lettering or decorative features. As far as practicable, it is preferable to use a continuous color; however, conspicuity may at times be enhanced by varying the color to increase contrast with the adjacent background.
+
+b. Questions have been raised as to whether the colored band must be on the fuselage structure surrounding the opening or whether it can be on the exit adjacent to the edge. A two-inch colored band outlining the exit is considered to comply with applicable regulations whether the band is on the edge of the exit itself, on the fuselage surrounding the exit, or partially on both.
+
+c. Acceptable methods of determining the required 3 to 1 reflectance factor have been requested. The reflectance value of the colored band and the adjacent background should be ascertained. Two methods by which this may be accomplished are:
+
+[chunk 6f15c298-1d37-47dd-acb2-6e1c80c19cd3]
+4. ACCEPTABLE MEANS OF COMPLIANCE.
+
+a. It has been proposed that the colored band might stop where letters or decorative markings intersect, and continue where the band would reappear; however, the regulation requires that the exit be outlined continuously. The two-inch colored band is considered to comply with applicable regulations when it is continuous around the exit opening, and not covered by lettering or decorative features. As far as practicable, it is preferable to use a continuous color; however, conspicuity may at times be enhanced by varying the color to increase contrast with the adjacent background.
+
+b. Questions have been raised as to whether the colored band must be on the fuselage structure surrounding the opening or whether it can be on the exit adjacent to the edge. A two-inch colored band outlining the exit is considered to comply with applicable regulations whether the band is on the edge of the exit itself, on the fuselage surrounding the exit, or partially on both.
+
+c. Acceptable methods of determining the required 3 to 1 reflectance factor have been requested. The reflectance value of the colored band and the adjacent background should be ascertained. Two methods by which this may be accomplished are:
+
+(1) Method No. 4251, Color Specification from Spectro-Photometric Data contained in Federal Test Method Standard No. 141 is acceptable. This specification may be obtained from the General Services Administration's Business Service Center at \$3.00. This method involves special laboratory equipment and depends upon measurements with calibrated instruments.
+
+(2) Direct visual comparisons through the use of commercially available specimens such as Munsell Value Scales for Judging Reflectance are acceptable. These Munsell Scales include about 20 2" x 9" pages containing a number of color samples ranging from light to dark hues with the reflectance of each indicated, available from Munsell Color Company, 2441 North Calvert Street, Baltimore, Maryland 21218, at approximately \$15.00.
+
+d. Questions have also been asked regarding the measurement of reflectance of metallic surfaces such as unpainted aluminum, and gold or silver paint. The apparent color of a metallic glossy surface will be a function of the relative angles of viewing and of the reflected light source or background. The apparent color is also a function of the color of the light source or background. It is considered impractical to take measurements
+
+or visual comparisons with color samples under all possible conditions. Compliance with the reflectance ratio factor of three may be shown by assuming a reflectance of 75 percent for a metallic glossy surface.
+
+5. SUGGESTIONS FOR ATTAINING ADDITIONAL CONSPICUITY. Additional conspicuity may be attained (beyond that prescribed by the referenced regulations) by following these guidelines:
+
+a. Add a two-inch stripe (white or black, whichever gives maximum contrast), on each side of the continuous colored band, through that portion of any adjacent decorative marking that has relatively little contrast.
+
+b. Stop lettering or decorative marking about two inches (a band width) from the colored band around the exit.
+
+c. If the darker of two contrasting colors has a reflectance of 15 percent or less, make the reflectance of the lighter at least 45 percent.
+
+d. Use chromatic contrast where possible.
+
+Note: Chromatic variations can result from differences in the color of ambient light falling on the colored band. Some colors which have adequate chromatic contrast in daylight fail to have adequate contrast when observed in artificial light high in the blue spectrum (arc lights or mercury vapor, for example) and other colors may be inadequately contrasting when observed in light which is high in the red end of the spectrum (incandescent light). Natural light may also vary from moonlight blue to red sunsets.
+
+Director
+
+Flight Standards Service
+
+[chunk a53aeeb6-0b9d-485e-b8c9-ac89ef7a02d3]
+(1) Method No. 4251, Color Specification from Spectro-Photometric Data contained in Federal Test Method Standard No. 141 is acceptable. This specification may be obtained from the General Services Administration's Business Service Center at \$3.00. This method involves special laboratory equipment and depends upon measurements with calibrated instruments.
+
+(2) Direct visual comparisons through the use of commercially available specimens such as Munsell Value Scales for Judging Reflectance are acceptable. These Munsell Scales include about 20 2" x 9" pages containing a number of color samples ranging from light to dark hues with the reflectance of each indicated, available from Munsell Color Company, 2441 North Calvert Street, Baltimore, Maryland 21218, at approximately \$15.00.
+
+d. Questions have also been asked regarding the measurement of reflectance of metallic surfaces such as unpainted aluminum, and gold or silver paint. The apparent color of a metallic glossy surface will be a function of the relative angles of viewing and of the reflected light source or background. The apparent color is also a function of the color of the light source or background. It is considered impractical to take measurements
+
+or visual comparisons with color samples under all possible conditions. Compliance with the reflectance ratio factor of three may be shown by assuming a reflectance of 75 percent for a metallic glossy surface.
+
+[chunk 8a8772dd-e810-48cb-aa84-112108f9d86b]
+5. SUGGESTIONS FOR ATTAINING ADDITIONAL CONSPICUITY. Additional conspicuity may be attained (beyond that prescribed by the referenced regulations) by following these guidelines:
+
+a. Add a two-inch stripe (white or black, whichever gives maximum contrast), on each side of the continuous colored band, through that portion of any adjacent decorative marking that has relatively little contrast.
+
+b. Stop lettering or decorative marking about two inches (a band width) from the colored band around the exit.
+
+c. If the darker of two contrasting colors has a reflectance of 15 percent or less, make the reflectance of the lighter at least 45 percent.
+
+d. Use chromatic contrast where possible.
+
+Note: Chromatic variations can result from differences in the color of ambient light falling on the colored band. Some colors which have adequate chromatic contrast in daylight fail to have adequate contrast when observed in artificial light high in the blue spectrum (arc lights or mercury vapor, for example) and other colors may be inadequately contrasting when observed in light which is high in the red end of the spectrum (incandescent light). Natural light may also vary from moonlight blue to red sunsets.
+
+Director
+
+Flight Standards Service

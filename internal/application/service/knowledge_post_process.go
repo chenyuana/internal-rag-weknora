@@ -205,12 +205,17 @@ func (s *KnowledgePostProcessService) Handle(ctx context.Context, task *asynq.Ta
 	//    until wiki generation actually finishes instead of flipping to
 	//    completed while wiki runs minutes later. A wiki op that never
 	//    drains is bounded by the housekeeping finalizing sweep.
-	willSpawnSummary := len(textChunks) > 0
+	willSpawnSummary := len(textChunks) > 0 && !payload.EnrichmentOnly
 	willSpawnQuestion := willSpawnSummary && kb.NeedsEmbeddingModel() &&
 		eff.QuestionGenerationConfig.Enabled
 	willSpawnWiki := kb.IndexingStrategy.WikiEnabled && len(textChunks) > 0
 	willSpawnAutoTag := kb.Type == types.KnowledgeBaseTypeDocument &&
 		kb.AutoTagConfig != nil && kb.AutoTagConfig.Enabled && len(textChunks) > 0
+	if payload.EnrichmentOnly {
+		willSpawnWiki = willSpawnWiki && payload.EnrichWiki
+		eff.GraphEnabled = eff.GraphEnabled && payload.EnrichGraph
+		willSpawnAutoTag = false
+	}
 	enqueuedAutoTag := false
 
 	// Question generation now fans out one subtask per plain text chunk
@@ -299,7 +304,7 @@ func (s *KnowledgePostProcessService) Handle(ctx context.Context, task *asynq.Ta
 			"parse_status": types.ParseStatusCompleted,
 			"updated_at":   time.Now(),
 		}
-		if len(textChunks) > 0 {
+		if len(textChunks) > 0 && !payload.EnrichmentOnly {
 			updates["summary_status"] = types.SummaryStatusNone
 		}
 		if err := s.knowledgeRepo.UpdateKnowledgeColumns(ctx, payload.KnowledgeID, updates); err != nil {
@@ -347,10 +352,12 @@ func (s *KnowledgePostProcessService) Handle(ctx context.Context, task *asynq.Ta
 			if willSpawnSummary {
 				summaryStatus = types.SummaryStatusPending
 			}
-			if err := s.knowledgeRepo.UpdateKnowledgeColumn(ctx,
-				payload.KnowledgeID, "summary_status", summaryStatus); err != nil {
-				logger.Warnf(ctx, "[KnowledgePostProcess] Failed to update summary_status for %s: %v",
-					payload.KnowledgeID, err)
+			if !payload.EnrichmentOnly {
+				if err := s.knowledgeRepo.UpdateKnowledgeColumn(ctx,
+					payload.KnowledgeID, "summary_status", summaryStatus); err != nil {
+					logger.Warnf(ctx, "[KnowledgePostProcess] Failed to update summary_status for %s: %v",
+						payload.KnowledgeID, err)
+				}
 			}
 			logger.Infof(ctx,
 				"[KnowledgePostProcess] Knowledge %s entered finalizing (pending_subtasks=%d).",

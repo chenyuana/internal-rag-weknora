@@ -1,0 +1,616 @@
+[
+  {
+    "id": "3224db4e-8efb-438c-ab1e-b9c546421cb2",
+    "request_id": "424b0887-7f0a-47a1-b863-89d7feb14957",
+    "session_id": "fe9be12f-1904-4088-97de-b54e8709a696",
+    "role": "user",
+    "content": "原客舱板无批准燃烧数据，也没有备件。团队称“只能每换一种饰面就从飞机切一次板，而且一次燃烧试验就是烧一个试样”。请给出替代路径、减少切板的办法和试样数要求。若能以合理价格购买原板备件，结论如何变化？",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:38:38.696721+00:00",
+    "updated_at": "2026-10-22T06:38:38.699287+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "a40c91ee-318a-4f9e-8df1-62f0ede5e6c5",
+    "request_id": "424b0887-7f0a-47a1-b863-89d7feb14957",
+    "session_id": "fe9be12f-1904-4088-97de-b54e8709a696",
+    "role": "assistant",
+    "content": "## 先纠正团队说法中的两个前提\n\n1. **并不是每换一种饰面，就必须从飞机上切一次板。** AC 20-178 在“既无原始燃烧数据、又无备件”的情形下，明确给出了三条路径，其中两条可以避免反复切板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **“一次燃烧试验只烧一个试样”也不对。** AC 20-178 表3的 Q5 专门澄清了这个问题：**三个**。无论试样来自飞机上的面板、备件板还是替代板，试验都必须按适用法规进行；14 CFR part 25 Appendix F 要求**至少燃烧三个试样并取平均值**，以确定60秒垂直燃烧速率。<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n原文里的“single burn test”指的是**一次试验活动、一个试验条件**，不是“一个试样”。这是把“一次试验”误读成了“一件试样”。\n\n---\n\n## 一、无原始数据、无备件时的三条替代路径\n\n| 路径 | 做法 | 切板量 | 适用性 |\n|---|---|---|---|\n| **Option 2** | 每次燃烧试验都从待改装飞机的原面板上切取试样 | 每种饰面、每次试验都要切 | 最直接，但最费板，只适合作为最后手段<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **Option 4** | 直接用不带新饰面、燃烧长度**不小于5.5英寸**的替代板，避免从飞机上切板 | **零切板** | 完全绕开切板，但替代板门槛最高、开发或寻找难度最大<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **Option 5** | 先从飞机上切一次板，生成原板的新燃烧数据；再按 Option 3 确定替代板的最低燃烧长度，之后用替代板验证多种饰面 | **只需一次切板活动** | 在“减少切板”和“替代板可行性”之间最平衡，通常是最优解<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n\n**Option 5 的关键逻辑**：用飞机上切下的板材只做**一次**60秒垂直燃烧试验，建立原板的燃烧长度；此后同一架飞机、或其他具有相同原面板的飞机，其多种饰面都可以用替代板验证。这样可显著减少必须从飞机上切取的试样数量。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> 而且，按新数据对应的 Option 3 门槛去开发替代板，可能比直接默认采用 Option 4 的5.5英寸替代板更容易。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n如果后续能拿到原板批准数据，Option 3 的门槛是：\n\n| 原板批准燃烧长度 | 替代板（不带新饰面）最低燃烧长度 |\n|---|---|\n| ≤1 in | ≥1.5 in |\n| >1 且 ≤2 in | ≥2.5 in |\n| >2 且 ≤3 in | ≥3.5 in |\n| >3 且 ≤4 in | ≥4.5 in |\n| >4 且 ≤6 in | ≥5.5 in |\n\n<kb doc=\"AC_20-178.pdf\" chunk_id=\"35bbfb08-73e7-4a17-92d5-2de562aadf03\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n---\n\n## 二、减少切板的具体办法\n\n1. **优先走 Option 5，而不是 Option 2。** 把“每种饰面切一次”改成“为原板数据切一次”，之后用替代板覆盖多种饰面、多架相同原板的飞机。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **一次切取、集中取样。** 既然每个试验条件最少要3件试样，就在同一次切板中按试验计划切足试样，避免为凑试样反复开口；切取位置选**曲率最小**的可用区域。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n3. **替代板必须代表原板构型**：芯材类型、树脂与胶粘剂类型、预浸料或非预浸料铺层的厚度/数量/类型，以及施加新饰面前不会去除的旧饰面。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6aa4e424-b077-45fd-8063-d08fbb15e0c3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"7623ba7d-9023-473f-bdfd-c22dc4093e76\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> 无法确认具体品牌时，允许使用“同类型”材料近似，例如同厚度樱桃木饰面、同类蜂窝芯与蒙皮/树脂体系。<kb doc=\"AC_20-178.pdf\" chunk_id=\"9dd72cd7-0d15-4c6d-b146-0e821db91d6d\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n4. **先测裸替代板，再测带新饰面的替代板。** 裸替代板的60秒垂直燃烧长度必须比原板**更长（更差）**，以建立保守试验基础；否则替代板方法不成立。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6aa4e424-b077-45fd-8063-d08fbb15e0c3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n5. **锁定临界工艺。** 胶粘剂或漆层厚度、清洁残留、面板修理引入的新材料或额外质量，都可能显著影响结果；可能影响可燃性的施工差异应测试到临界情况。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n6. **Option 4 可作为零切板备选**，但要有能力做出燃烧长度≥5.5英寸的替代板；否则会陷入“替代板做不出来、又不想切板”的僵局。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n7. **提前与审定方对齐试验计划。** 替代板是否代表实际面板，国内项目由辖区 ACO 确定，国外项目由相应法规主管部门的标准人员确定；重大修理/改装数据可由 DER 或 ODA 按 FAA Form 8110-3 / 8100-9 批准。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"4bb276ee-4584-4ab1-a041-7a1b8bab3cad\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n---\n\n## 三、试样数量要求\n\n- **每个试验条件：最少3件，取平均值。** 这是 14 CFR part 25 Appendix F 的要求，适用于从飞机面板、备件面板和替代板生成的新数据。<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n- **Option 5 的“一次试验”仍是3件**，不是1件；Q5 就是针对“既然只需一次试验，那是烧一个还是三个”这一误解作出的回答。<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n- 按此推算，走 Option 5 的典型试样构成为：\n  - 原板（飞机切取）建立燃烧长度：**3件**；\n  - 裸替代板建立保守基础：**3件/替代板构型**；\n  - 每种新饰面在替代板上验证：**3件/饰面**。\n- 若采用 Option 2，则每种饰面、每次试验都要重新切取并烧**3件**，切板量随饰面种类线性增加。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n> 注意：以上是“每个试验条件至少3件”的法规底线；实际试验计划还应考虑复验、临界工艺和替代板批次差异，不能把3件理解为“只切3小块就够”。\n\n---\n\n## 四、若能以合理价格买到原板备件，结论怎么变\n\n**结论会发生实质性翻转：替代板路线基本被关闭，改为直接用原板备件。**\n\nAC 20-178 第6.f条明确：**当有可用的原板备件时（且无需对装机件做破坏性试验），不得使用替代板来证明符合可燃性要求。** 在使用 Option 3、4、5 之前，应作出合理努力获取原板；**“合理努力”以能否以公平价格购得面板来判断**。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n因此：\n\n1. **首选 Option 1**：使用与装机件**相同件号**、并具有可燃性批准证据的相同平板备件。<kb doc=\"AC_20-178.pdf\" chunk_id=\"35bbfb08-73e7-4a17-92d5-2de562aadf03\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **不再需要从飞机上切板**，Option 2、4、5 都不再是首选；备件成为试样来源，消耗的是备件而不是装机面板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"70cb1098-9ac6-456f-846a-0a826add3857\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n3. **每种饰面仍在备件板上按适用法规试验，每个条件至少3件并取平均。**<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n4. **如果买到的备件没有可燃性批准数据**，严格说 Option 1 的字面条件（“具有可燃性批准证据”）不完全满足；但第6.f条“有原板备件即不得用替代板”仍然适用。此时应直接用备件板做“备件板+新饰面”的试验，并按 DER/ODA/ACO 路径批准数据，而不是退回 Option 3/4/5。这个边界建议在试验计划中与主管审定方书面确认。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"4bb276ee-4584-4ab1-a041-7a1b8bab3cad\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n5. **备件试验失败时**：备件板或在用板试样未通过燃烧试验的，只有在后续带新饰面的试验证明其不超过最大允许60秒垂直燃烧长度（不超过6英寸）时才可使用；在用板失败还可能提示需要进一步调查面板状态。<kb doc=\"AC_20-178.pdf\" chunk_id=\"7a7ab8cf-04e4-49e2-ab37-8b78fa474fac\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"b93d8c2f-6413-483b-b631-1152d47ad2c1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n6. **“合理价格”的举证责任在申请人**：应保留询价、报价、交期、可购数量等记录；若价格明显不合理或无法购得，才能据此说明已尽合理努力，转而使用替代板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n---\n\n## 五、建议的落地顺序\n\n1. **先做备件询价与可得性调查**：能否以公平价格买到相同件号原板备件。若能，走 Option 1，问题从“切板”转为“备件消耗与数据批准”。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **若买不到**：优先走 **Option 5**——切一次板、烧3件建立原板数据，再按 Option 3 做替代板，之后多种饰面复用替代板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n3. **若连一次切板都不愿做**：评估 **Option 4** 的≥5.5英寸替代板是否可开发；同时接受其更高的替代板开发难度。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n4. **无论走哪条路**：尽早把替代板构型、试样数量（每条件≥3件）、切取位置和临界工艺写进试验计划，提交 ACO/DER/ODA 确认，避免做完试验再争论代表性问题。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"4bb276ee-4584-4ab1-a041-7a1b8bab3cad\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n**一句话总结**：团队说的“每换一种饰面切一次板、一次试验烧一个试样”是把最保守的 Option 2 和“一次试验”误当成了唯一规则；正确做法是优先买备件走 Option 1，买不到则用 Option 5“切一次、烧3件、替代板复用多饰面”，实在不想切板才用 Option 4 的≥5.5英寸替代板。",
+    "knowledge_references": [],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:38:42.730475+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_w3Kbi5QEE9HZQpv9V2Sg2072",
+            "args": {
+              "query": "客舱板|燃烧试验|试样|饰面"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/ac-20-178": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/14-cfr-part-25-appendix-f": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/test-specimen-configuration": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/flammability-test-data-approval": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/self-extinguishing-flammability": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/surrogate-panel-testing-options": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/17750888-7f2d-42a5-9896-36e1e835687b": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/60-second-vertical-bunsen-burner-test": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/flammability-test-result-influencing-factors": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-cabin-interior-panel-flammability-testing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"客舱板|燃烧试验|试样|饰面\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/test-specimen-configuration|测试样本构型]]</link>\n<type>concept</type>\n<aliases>试样构型, 测试样本配置</aliases>\n<summary>本页依据 AC 20-178（2012年6月4日）说明客舱内饰板可燃性试验的测试样本构型，包括按安装状态切取或模拟切段、切取位置与样本数量要求。</summary>\n<match_snippet>... # 测试样本构型 AC 20-178（AC No: 20-178，2012年6月4日）表1“Current Publicatio ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/60-second-vertical-bunsen-burner-test|60秒垂直本生灯试验]]</link>\n<type>concept</type>\n<aliases>60秒垂直燃烧试验, 垂直本生灯试验</aliases>\n<summary>本页说明60秒垂直本生灯试验的定义、样本数量与取平均值要求，以及在AC 20-178中用于测定客舱内饰板新饰面燃烧长度、替代板最低燃烧长度和6英寸最大允许值的方式。</summary>\n<match_snippet>... nd vertical Bunsen burner test）是测量材料垂直燃烧长度的标准试验，用于评估客舱内饰板及其新饰面的自熄性是否达标。本页内容基于 AC 20-178 咨询通告（2012年6月4日）。 ## 替代板试验中的用途 在测 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/surrogate-panel-testing-options|替代板测试方法与五种测试选项]]</link>\n<type>concept</type>\n<aliases>替代板方法, 五种测试选项</aliases>\n<summary>本页依据AC 20-178整理替代板（surrogate panel）测试方法：表2五种测试新饰面60秒垂直燃烧长度的选项、表3问答，以及替代板构型、试验逻辑与影响因素要求。</summary>\n<match_snippet>... # 替代板测试方法与五种测试选项 AC 20-178表2给出的五种测试新饰面60秒垂直燃烧长度的方法，核心是利用替代板或飞机切取面板。 ## 背景 国际航空材料防火测试工作组（The Inte ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]]</link>\n<type>concept</type>\n<aliases>客舱内饰板可燃性测试, 内饰板可燃性试验</aliases>\n<summary>本页依据 AC 20-178（2012年6月4日）整理飞机客舱内饰板施加新饰面后的自熄性可燃性测试方法，包括替代板测试的五种选项、审批要求与常见问题解答。</summary>\n<match_snippet>... # 飞机客舱内饰板可燃性测试 针对现役飞机客舱内饰板使用新饰面后的[[concept/self-extinguishing-flammability|自熄性可燃性]]验证，适用于补充 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/flammability-test-result-influencing-factors|影响可燃性测试结果的因素]]</link>\n<type>concept</type>\n<aliases>可燃性试验影响因素, flammability testing factors</aliases>\n<summary>汇总AC 20-178中关于改装过程中可能显著影响可燃性测试结果的各类因素，包括施工差异、清洁残留、面板修理引入的新材料或额外质量，以及试样切割区域的选择。</summary>\n<match_snippet>... 定临界情况。 (2) 清洁过程留下的任何残留物。 (3) 对面板的修理，可能引入了新材料或额外质量。 (4) 测试试样的切割位置选择应基于曲率最小的可用区域。 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/14-cfr-part-25-appendix-f|14 CFR第25部附录F]]</link>\n<type>entity</type>\n<aliases>14 CFR part 25 Appendix F, 第25部附录F</aliases>\n<summary>本页介绍14 CFR第25部附录F关于材料可燃性试验至少燃烧三个试样并平均结果以确定60秒垂直燃烧速率的要求。</summary>\n<match_snippet>... # 14 CFR第25部附录F 14 CFR第25部附录F要求至少燃烧三个试样，并对结果取平均值，以确定被测材料的60秒垂直燃烧速率。 AC 20-178表3问答Q5在讨论从飞机上切下的面板材料所 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/17750888-7f2d-42a5-9896-36e1e835687b|AC_20-178.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本咨询通告[[entity/ac-20-178|AC 20-178]]（2012年6月4日）说明现有客舱内饰板使用新饰面时可接受的[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]]与[[concept/surrogate-panel-testing-options|替代板测试方法与五种测试选项]]，并列出相关法规和常见问题。</summary>\n<match_snippet>... 法规 | | 页码 | 抽取内容未提供页码信息 | ## 目的与适用范围 本咨询通告描述在现有飞机客舱内饰板上使用新饰面时，对客舱内饰材料进行测试的可接受方法。此类测试通常用于补充型号合格证（STC）或重大改装。文件明确指出，其适用范围限于 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/self-extinguishing-flammability|自熄性可燃性]]</link>\n<type>concept</type>\n<aliases>自熄性材料可燃性</aliases>\n<summary>本页说明自熄性可燃性的定义、AC 20-178 的适用范围及相关法规测试依据，并记录自熄性要求下60秒垂直燃烧长度不超过6英寸的上限。</summary>\n<match_snippet>... 6月4日，AIR-120）中，这是该咨询通告唯一适用的测试范畴。 AC 20-178 描述在现有飞机客舱内饰板上使用新饰面时测试客舱内饰材料的可接受方法，通常用于补充型号合格证（STC）或重大改装。该 AC 适用于自熄性可燃性材料，不适用于必 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/ac-20-178|AC 20-178咨询通告]]</link>\n<type>entity</type>\n<aliases>AC 20-178, Advisory Circular 20-178</aliases>\n<summary>本页汇总FAA AC 20-178咨询通告（2012年6月4日）关于飞机客舱内饰板更改后自熄性可燃性测试的适用目的、替代板定义与判定条件、表2五种测试选项、表3问答及偏离与相关出版物。</summary>\n<match_snippet>... terations | ## 1. Purpose（目的） a. 本咨询通告（AC）描述当现有飞机客舱内饰板上使用新饰面时，测试飞机客舱内饰材料的可接受方法，此类测试通常在补充型号合格证（STC）或重大改装中执行。本AC仅适用于自熄性可燃性 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/flammability-test-data-approval|可燃性测试数据审批]]</link>\n<type>concept</type>\n<aliases>可燃性试验数据批准, flammability test data approval</aliases>\n<summary>本页依据 AC 20-178 说明重大修理与重大改装中可燃性测试数据的审批机制，包括审批主体、影响测试结果的因素，以及 DER 与 ODA 单位使用的指定表格。</summary>\n<match_snippet>... ，以确定临界情况。 (2) 清洁过程残留的任何残余物。 (3) 面板的修理可能引入了新材料或额外质量。 (4) 测试样本的取样位置选择应基于曲率最小的可用区域。 ## 可燃性测试数据的批准方法 批准可燃性测试数据有不同方法。重大修理和 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 28
+          },
+          {
+            "id": "call_01_WA3i6F8FyGiB99EfOYyp3147",
+            "args": {
+              "query": "AC.?20-18[34]|燃烧|flammab|fire"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aml-stc": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/ac-20-178": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/ac-20-183": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/sa01157la": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-347": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-180": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/baseline-data": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/teshu-tiaojian": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/14-cfr-part-25-appendix-f": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/test-specimen-configuration": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidianchi-teshu-tiaojian-7-8-9": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/flammability-test-data-approval": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/self-extinguishing-flammability": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-gou-xing-kong-zhi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-lei-bie-yu-chan-pin-wei-hai": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/17750888-7f2d-42a5-9896-36e1e835687b": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/68d911e2-3d18-46f0-bcdd-8bf3eb7b5758": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/a55aa2ce-d249-4213-a67d-5b8ae36edfb1": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/60-second-vertical-bunsen-burner-test": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidianzi-dianchi-anzhuang-ceshi-yaoqiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-aircraft-materials-fire-test-handbook": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidianzi-dianchi-anquan-weihai-yu-rekongzhi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/flammability-test-result-influencing-factors": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/chixu-shiang-shuoming-yu-dianchi-weihu-yunxing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-cabin-interior-panel-flammability-testing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/hangkongqi-kechongdian-lidianchi-anzhuang-shiang-fuhexing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"AC.?20-18[34]|燃烧|flammab|fire\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本顾问通告说明机载非必需不可见光谱激光设备取得FAA适航批准的一种可接受方法，并列出激光危害分级及第7节安装要求适用性示例。</summary>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]</link>\n<type>entity</type>\n<aliases>AC 20-184, 咨询通告20-184</aliases>\n<summary>本页整理FAA咨询通告AC 20-184（2015年10月15日，AIR-133）的内容，涵盖航空器可充电锂电池与电池系统安装的可接受符合性方法、测试要求、系统安全评估、持续适航文件及维护与运行考虑。</summary>\n<match_snippet>... # FAA咨询通告AC 20-184 ## 文档信息 - 文件类型：Advisory Circular（咨询通告） - 文件编号：AC No. 20-1 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/a55aa2ce-d249-4213-a67d-5b8ae36edfb1|AC_20-184.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本文件是FAA于2015年10月15日发布的咨询通告，提供航空器可充电锂电池及电池系统安装、运行、维护和适航符合性的可接受方法。</summary>\n<match_snippet>... ## 文档信息 - 文件类型：Advisory Circular（咨询通告） - 文件编号：[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]] - 发布日期：10/15/15（2015-10-15） - 发起单位：AIR-1 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/self-extinguishing-flammability|自熄性可燃性]]</link>\n<type>concept</type>\n<aliases>自熄性材料可燃性</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 2207acea899955a2c40a) 在 AC 20-178 表3的问答中，自熄性要求下的最大允许 60 秒垂直燃烧长度由飞机类型适用的可燃性要求决定，与原批准面板的燃烧长度无关。对于 part 23 飞机、运输类飞机和旋翼机，最大允许 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]]</link>\n<type>concept</type>\n<aliases>客舱内饰板可燃性测试, 内饰板可燃性试验</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 机客舱内饰板可燃性测试 针对现役飞机客舱内饰板使用新饰面后的[[concept/self-extinguishing-flammability|自熄性可燃性]]验证，适用于补充型号合格证（STC）或重大改装场景。 | 项目 | 内容 | |---|- ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/flammability-test-result-influencing-factors|影响可燃性测试结果的因素]]</link>\n<type>concept</type>\n<aliases>可燃性试验影响因素, flammability testing factors</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/flammability-test-data-approval|可燃性测试数据审批]]</link>\n<type>concept</type>\n<aliases>可燃性试验数据批准, flammability test data approval</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 定工程代表（DER）或组织指定授权（ODA）可批准与该 STC 项目相关的可燃性测试数据。 ## [[concept/flammability-test-result-influencing-factors|影响可燃性测试结果的因素]] 有若干因素会 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/faa-aircraft-materials-fire-test-handbook|FAA飞机材料防火测试手册]]</link>\n<type>entity</type>\n<aliases>DOT/FAA/AR-00/12, FAA Aircraft Materials Fire Test Handbook</aliases>\n<summary>本页介绍FAA飞机材料防火测试手册（DOT/FAA/AR-00/12），说明其作为14 CFR part 25 Appendix F可接受符合性方法的定位，以及在AC 20-184中对隔热隔音材料防火测试的引用。</summary>\n<match_snippet>... # FAA飞机材料防火测试手册 FAA飞机材料防火测试手册（FAA Aircraft Materials Fire Test Handbook），文件编号 DOT/FAA/AR-00/12，描述符合 14 CFR part 25 Ap ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/ac-20-183|咨询通告20-183]]</link>\n<type>entity</type>\n<aliases>激光适航安装指南</aliases>\n<summary>本页介绍美国联邦航空管理局2014年12月15日发布的咨询通告AC 20-183，说明其目的、适用范围、限制及适用对象。</summary>\n<match_snippet>... 通告20-183 ## 文件信息 - 文件类型：咨询通告（Advisory Circular, AC） - 文件号：AC 20-183 - 日期：12/15/14（2014年12月15日） - 发起部门：AIR-134 - 主题：Laser Airwor ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/configuration-control|构型控制]]</link>\n<type>concept</type>\n<aliases>配置控制, Configuration Control</aliases>\n<summary>本页说明构型控制概念，涵盖AC 20-180的AML构型控制与表格记录方法，并补充AC 20-183表2将第7.3.6节构型控制判定为适用。</summary>\n<match_snippet>... 加信息、限制或条件。 - 初始批准日期：填写每个型号的初始批准日期；若申请人按后续顺序增加型号，该日期可能不同。 在 AC 20-183 的表2“第7节适用段落”中，第7.3.6节“Configuration Control（构型控制）”被判定为适用（Ye ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 31
+          }
+        ],
+        "reasoning_content": "The user asks about cabin panels (原客舱板) with no approved burn data and no spares. Team claims \"只能每换一种饰面就从飞机切一次板，而且一次燃烧试验就是烧一个试样\". Need alternative paths, ways to reduce cutting panels, and specimen count requirements. And how conclusion changes if original panel spares can be purchased at reasonable price.\n\nThis sounds like aviation airworthiness (CAAC AC 20-184? \"AC_20-184.pdf\"). Let's search the wiki.\n\nAC 20-184 is likely CAAC advisory circular about flammability? Let me search.\n\nLet me do wiki_search for relevant pages."
+      },
+      {
+        "thought": "",
+        "iteration": 1,
+        "timestamp": "2026-10-22T14:38:46.3963278+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_KWN6MXuD4oN5Qc3oSver7274",
+            "args": {
+              "slugs": [
+                "concept/surrogate-panel-testing-options",
+                "concept/test-specimen-configuration",
+                "concept/60-second-vertical-bunsen-burner-test",
+                "concept/aircraft-cabin-interior-panel-flammability-testing"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/ac-20-178": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/test-specimen-configuration": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/self-extinguishing-flammability": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/surrogate-panel-testing-options": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/17750888-7f2d-42a5-9896-36e1e835687b": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/60-second-vertical-bunsen-burner-test": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-cabin-interior-panel-flammability-testing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {
+                  "concept/60-second-vertical-bunsen-burner-test": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aircraft-cabin-interior-panel-flammability-testing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/surrogate-panel-testing-options|替代板测试方法与五种测试选项]]</link>\n<type>concept</type>\n<aliases>替代板方法, 五种测试选项</aliases>\n</metadata>\n<relationships>\n<links_to>[[concept/60-second-vertical-bunsen-burner-test]] (本页说明60秒垂直本生灯试验的定义、样本数量与取平均值要求，以及在AC 20-178中用于测定客舱内饰板新饰面燃烧长度、替代板最低燃烧长度和6英寸最大允许值的方式。)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"17750888-7f2d-42a5-9896-36e1e835687b\"/>\n</sources>\n<summary>\n本页依据AC 20-178整理替代板（surrogate panel）测试方法：表2五种测试新饰面60秒垂直燃烧长度的选项、表3问答，以及替代板构型、试验逻辑与影响因素要求。\n</summary>\n<content>\n# 替代板测试方法与五种测试选项\n\nAC 20-178表2给出的五种测试新饰面60秒垂直燃烧长度的方法，核心是利用替代板或飞机切取面板。\n\n## 背景\n\n国际航空材料防火测试工作组（The International Aircraft Materials Fire Test Working Group）与FAA技术中心研究了是否可用类似但非同一的面板——称为替代板（surrogate panel）——代替原底板复合材料组合，用于翻新飞机内饰的可燃性测试。该研究报告为 DOT/FAA/AR-TN01/112《Heat Release and Flammability Testing of Surrogate Panels》，日期为2001年12月，记录了由三家不同制造商按同一标准构造的面板所测得的放热率和60秒垂直燃烧长度，也记录了理论上相同的面板在燃烧时的复杂行为。基于该测试的部分结果，本AC提供了改装内饰板可燃性测试的另一种方法。\n\n尽管FAA技术中心人员证明了为可燃性测试制作与原材完全相同的替代材料存在困难，他们仍开发出一种方法，用以考虑生产相同材料时的变异性。该方法允许申请人在旧板上测试新饰面，并在合适的替代板上测试新饰面后，对适用的适航标准作出符合性判定。旧板是此前用旧饰面测试过、并在飞机型号设计下获得批准的面板。申请人负责确定当前构型取证所依据的适用法规。\n\n## 试验逻辑\n\n在用新饰面测试替代板之前，先测试不带新饰面的替代板，以表明相对于旧板它提供了保守的试验基础。例如，当飞机内饰板要求自熄性时，不带新饰面的替代板必须表现出比旧板更长（即更差）的60秒垂直燃烧长度。随后可用带新饰面的替代板测试，以确定60秒垂直燃烧长度。这样可确保旧板与替代板之间燃烧特性的不确定性和变异性，在鉴定新复合材料组合（旧板加新饰面）的试验中得到补偿。\n\n## 替代板构型要求\n\n所有替代板应（shall）代表旧板的构型，包括：\n\n1. 芯材类型；\n2. 树脂与胶粘剂类型；\n3. 预浸料或非预浸料铺层的厚度、数量与类型；\n4. 在施加新饰面前不会被去除的所有旧饰面。\n\n申请人应确定原板的基本构造（例如蜂窝芯还是闭孔泡沫芯、板层数、铺层数、各层厚度、木饰面还是贴膜）。这有助于制作构造相似的替代板。并非在所有情况下都能确定原板所用每种材料的准确身份（如芯材品牌、树脂品牌、饰面或贴膜品牌），因此使用近似原材料的同一材料“类型”是可接受的；此处的“类型”由面板构造中所用材料界定。例如，若原板采用樱桃木饰面并将再次使用（打磨和翻新后），则用相同厚度的樱桃木饰面制作替代板是合理且可接受的。使用替代饰面时，需要以类似面板本身的方式对替代材料进行验证。同样，若原板为简单蜂窝“夹层”构造，通常使用Nomex蜂窝芯夹在前后蒙皮铺层之间，蒙皮铺层一般由玻璃纤维或碳纤维制成，并浸渍环氧或酚醛基树脂；此时需复制蜂窝的厚度与形式、蒙皮铺层的厚度与类型，以及正确的浸渍树脂类型。\n\n## 备用原板可用时的限制\n\n当有可用的原板备件时（无需对装机部件做破坏性测试），不得使用替代板来证明符合可燃性要求。在按表2中的Option 3、Option 4和Option 5使用替代板之前，应做出合理努力获取原板。合理努力以能否以公平价格购得面板来判断。\n\n表2的方法允许申请人使用某些替代板来确定飞机内饰修理和改装的可符合性。表2 Option 3依据原批准面板的数值，规定了替代板（不带新饰面）必须表现出的60秒垂直燃烧长度。表2也提供了原批准面板数据不可用时的替代选项。\n\n带新饰面的替代板必须至少符合原型号合格审定基础或其经适当更改后的后续审定基础中的可燃性要求。\n\n## 表2. Methods for Testing 60-Second Vertical Burn Length of New Finishes on Old Panels\n\n| 选项 | 适用条件/说明 | 替代板最低燃烧长度 |\n|---|---|---|\n| Option 1 | 使用相同件号、具有可燃性批准证据的相同平板备件；或 | — |\n| Option 2 | 使用从待改装飞机上切下的面板；或 | — |\n| Option 3 | 若待改装组件（无新饰面）的原批准数据表明其[[concept/60-second-vertical-bunsen-burner-test|60秒垂直本生灯试验]]燃烧长度小于或等于1英寸 | 制作并使用燃烧长度不得小于1.5英寸的替代板 |\n| Option 3 | 若原批准数据中的燃烧长度为大于1英寸且小于或等于2英寸 | 不得小于2.5英寸 |\n| Option 3 | 若原批准数据中的燃烧长度为大于2英寸且小于或等于3英寸 | 不得小于3.5英寸 |\n| Option 3 | 若原批准数据中的燃烧长度为大于3英寸且小于或等于4英寸 | 不得小于4.5英寸 |\n| Option 3 | 若原批准数据中的燃烧长度为大于4英寸且小于或等于6英寸 | 不得小于5.5英寸 |\n| Option 4 | 若不存在60秒垂直本生灯试验的原始数据，使用燃烧长度不得小于5.5英寸的替代板；或 | 5.5英寸（最低值） |\n| Option 5 | 若不存在60秒垂直本生灯试验的原始数据，从飞机上切下的面板开发新数据。使用按Option 3规定的替代板燃烧长度。其意图是使用替代板方法，同时尽可能保留更多原面板安装在飞机上。 | 按Option 3确定 |\n\n![Table 2. Methods for Testing 60-Second Vertical Burn Length of New Finishes on Old Panels](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/e7e731801f6ebb8936a8)\n\n## 代表性与批准\n\n对于STC项目，替代板是否代表实际面板的问题，国内项目由所在地区的航空器审定办公室（ACO）确定，国外项目由负责申请人寻求批准所依据的14 CFR部别的局标准人员（standards staff of the directorate）确定。对于重大修理和重大改装，由具备适当资格的ACO工程师、委任工程代表（DER）或组织委任授权（ODA）批准与STC项目相关的可燃性测试数据。\n\n关于可燃性测试数据的批准，原文提到存在不同的批准方法，并说明重大修理和改装的数据必须获得所列方法之一的批准；但抽取文本在该句后直接进入表3，未包含所列批准方法的具体条目，故此处不作推测。\n\n## 表3. Frequently Asked Questions and Answers\n\n| Question | Answer |\n|---|---|\n| Q1. 若现有面板的批准数据显示60秒垂直燃烧长度小于1.0英寸，为什么还要使用燃烧长度不低于1.5英寸的替代板？ | A1. 使用具有最低燃烧长度的替代板，可为鉴定新饰面建立保守基础。原面板批准数据燃烧长度与替代板燃烧长度（此处至少1.5英寸）之间的差值，建立了可接受裕度，以考虑使用替代板的不确定性。 |\n| Q2. 替代板的60秒垂直燃烧长度是否可以超过本AC表2中的标准？ | A2. 可以；但无论是否超过，替代板带新饰面燃烧时，必须满足CFR中适用试验方法规定的所有最低要求。 |\n| Q3. 若批准数据显示原面板及饰面的燃烧长度为2.3英寸，替代板加新饰面必须证明的60秒垂直燃烧长度是多少？ | A3. 最大允许的60秒垂直燃烧长度由飞机类型适用的可燃性要求决定，与原批准面板的燃烧长度无关。对于part 23飞机、运输类飞机和旋翼机的自熄性要求，最大允许60秒垂直燃烧长度不得超过6英寸。 |\n| Q4. 如果无法获得原始燃烧数据且无法取得备用面板，可以怎么做？ | A4. 可以采取以下三种做法之一： |\n| Q4（续1） | 1. 按表2 Option 2，为每次燃烧试验从飞机上的原面板切取试样；或 |\n| Q4（续2） | 2. 按表2 Option 4，使用燃烧长度至少5.5英寸的替代板，以避免从飞机上切割面板；或 |\n| Q4（续3） | 3. 按表2 Option 5，用从飞机上切下的面板生成数据。生成新数据后，可用Option 3确定替代板的要求。（其意图是使用替代板方法，同时尽可能保留更多原面板安装在飞机上。）Option 5的益处是，只需用从飞机上切下的板材做一次60秒垂直燃烧试验即可确定燃烧长度；随后可用替代板为同一飞机或其他具有相同原面板的飞机验证多种饰面。这将减少必须从飞机上切取的试样数量。与新生成数据（按Option 3）相匹配的最低燃烧长度替代板，也可能比默认采用Option 4规定的5.5英寸替代板燃烧长度更容易开发或找到。 |\n| Q5. 既然从飞机切下的板材只需一次燃烧试验即可确定燃烧长度，需要燃烧几个试样：一个还是三个？ | A5. 三个。当从飞机上的面板、备用面板生成新数据以及针对替代板时，试验必须按适用法规进行。14 CFR part 25 Appendix F要求最少燃烧三个试样并对结果取平均，以确定受试材料的60秒垂直燃烧速率。但一旦用从飞机切取的试样生成数据，即可按A4.3所述使用该批准数据为其他饰面取证。 |\n| Q6. 若申请人或审查其试验计划的ACO或DER对替代板是否代表需批准的面板存有疑问，最终由谁回答？ | A6. 替代板是否代表实际面板，国内项目由所在地区ACO确定，国外项目由负责申请人寻求批准所依据的14 CFR部别的局标准人员确定。 |\n\n![Table 3. Frequently Asked Questions and Answers](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/d46764c9ec2caf39f59b)\n\n## 影响测试结果的因素\n\n若干因素会对可燃性测试结果产生显著影响。为加以防止，改装过程需在考虑这些及其他可能因素的情况下加以控制：\n\n1. 施加工艺的变化（例如胶粘剂或漆层厚度）。注：可能影响可燃性的施加工艺变化应进行测试，以确定临界情况。\n2. 清洁过程留下的任何残留物。\n3. 面板的修理，可能引入了新材料或额外质量。\n4. 试样切取位置的选择应基于曲率最小的可用区域。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/test-specimen-configuration|测试样本构型]]</link>\n<type>concept</type>\n<aliases>试样构型, 测试样本配置</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>[[concept/self-extinguishing-flammability]] (本页说明自熄性可燃性的定义、AC 20-178 的适用范围及相关法规测试依据，并记录自熄性要求下60秒垂直燃烧长度不超过6英寸的上限。)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"17750888-7f2d-42a5-9896-36e1e835687b\"/>\n</sources>\n<summary>\n本页依据 AC 20-178（2012年6月4日）说明客舱内饰板可燃性试验的测试样本构型，包括按安装状态切取或模拟切段、切取位置与样本数量要求。\n</summary>\n<content>\n# 测试样本构型\n\nAC 20-178（AC No: 20-178，2012年6月4日）表1“Current Publications”将测试样本构型列为以下法规附录所覆盖的内容：\n\n| 法规 | 测试样本构型要求（原文引文及中文对照；原文使用 must） |\n|---|---|\n| 14 CFR part 23, Appendix F (b), Amdt. 23-62, Jan. 31, 2012 | “...materials must be tested either as a section cut from a fabricated part as installed in the aircraft or as a specimen simulating a cut section...”<br>即：材料必须作为从按飞机安装状态制造的部件上切下的切段进行测试，或作为模拟切段的试样进行测试。 |\n| 14 CFR part 25, Appendix F, part I (b)(2), Amdt. 25-111, Sept. 2, 2003 | “...materials must be tested either as section cut from a fabricated part as installed in the airplane or as a specimen simulating a cut section...”<br>即：材料必须作为从按飞机安装状态制造的部件上切下的切段进行测试，或作为模拟切段的试样进行测试。 |\n\n两条引文分别使用“aircraft”与“airplane”，并在“section cut”前分别有“a”和无“a”；此处按 AC 20-178 表1原文保留，未作统一。\n\n![Table 1. Current Publications](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/2207acea899955a2c40a)\n\nAC 20-178 第5节“Testing – Importance and Problems”指出，可燃性合格审定规则要求将面板与饰面作为一个整体样本一起测试，以考虑面板各组件暴露于火时可能产生的协同效应。该节还指出，多数非原始设备制造商（OEM）申请人发现原始面板复合材料铺层的测试样本难以获得：他们要么无法从飞机制造商处取得生产该面板复合材料铺层所需的规范，要么相关材料已不再生产。因此，申请人会牺牲可用面板作为样本，或使用替代复合材料铺层来证明等效安全水平。\n\n该节 h(4) 对切取位置给出选择指引（原文使用 should）：“Cutout selection of test specimens should be based on available areas where curvature is at a minimum.” 即测试样本的切取位置选择应基于曲率最小的可用区域。\n\nAC 20-178 表3的 Q5/A5 涉及测试样本数量：Q5 询问，既然从飞机切下的面板材料确定燃烧长度只需一次燃烧试验，那么需要燃烧一个还是三个测试样本；A5 回答为三个。A5 还指出，当从飞机上的面板、备件面板和替代板生成新数据时，试验必须按适用法规进行；14 CFR part 25 Appendix F 要求至少燃烧三个样本并对结果取平均，以确定被测材料的60秒垂直燃烧速率。一旦从飞机切取的样本生成数据，可使用该批准数据按 A4.3 认证其他饰面。\n\n![Table 3. Frequently Asked Questions and Answers](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/d46764c9ec2caf39f59b)\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/60-second-vertical-bunsen-burner-test|60秒垂直本生灯试验]]</link>\n<type>concept</type>\n<aliases>60秒垂直燃烧试验, 垂直本生灯试验</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>[[summary/17750888-7f2d-42a5-9896-36e1e835687b]] (本咨询通告[[entity/ac-20-178|AC 20-178]]（2012年6月4日）说明现有客舱内饰板使用新饰面时可接受的[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]]与[[concept...), [[concept/aircraft-cabin-interior-panel-flammability-testing]] (本页依据 AC 20-178（2012年6月4日）整理飞机客舱内饰板施加新饰面后的自熄性可燃性测试方法，包括替代板测试的五种选项、审批要求与常见问题解答。), [[entity/ac-20-178]] (本页汇总FAA AC 20-178咨询通告（2012年6月4日）关于飞机客舱内饰板更改后自熄性可燃性测试的适用目的、替代板定义与判定条件、表2五种测试选项、表3问答及偏离与相关出版物。), [[concept/surrogate-panel-testing-options]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"17750888-7f2d-42a5-9896-36e1e835687b\"/>\n</sources>\n<summary>\n本页说明60秒垂直本生灯试验的定义、样本数量与取平均值要求，以及在AC 20-178中用于测定客舱内饰板新饰面燃烧长度、替代板最低燃烧长度和6英寸最大允许值的方式。\n</summary>\n<content>\n# 60秒垂直本生灯试验\n\n60秒垂直本生灯试验（60-second vertical Bunsen burner test）是测量材料垂直燃烧长度的标准试验，用于评估客舱内饰板及其新饰面的自熄性是否达标。本页内容基于 AC 20-178 咨询通告（2012年6月4日）。\n\n## 替代板试验中的用途\n\n在测试带新饰面的替代板之前，先测试不带新饰面的替代板，以表明其相对于旧面板提供了保守的试验基础。例如，当飞机内饰板要求自熄性时，不带新饰面的替代板必须显示出比旧面板更长（即更差）的60秒垂直燃烧长度。随后再测试带新饰面的替代板以确定60秒垂直燃烧长度。这样可在鉴定新复合构成（旧面板加新饰面）的试验中，补偿旧面板与替代板之间燃烧特性的不确定性与变异性。\n\n替代板在使用前，其不带新饰面的60秒垂直燃烧长度须按表2确定最低值。\n\n表2. 测试旧面板上新饰面60秒垂直燃烧长度的方法（Methods for Testing 60-Second Vertical Burn Length of New Finishes on Old Panels）\n\n| 选项 | 条件/说明 | 替代板燃烧长度最低值 |\n|---|---|---|\n| Option 1 | 使用相同的平板备件（即与飞机安装件件号相同并具有可燃性批准证据）；或 | — |\n| Option 2 | 使用从待改装飞机上切下的面板；或 | — |\n| Option 3 | 若待改装组件（不带新饰面）的原批准数据显示其60秒垂直本生灯试验燃烧长度为小于或等于1英寸 | 不得小于1.5英寸 |\n| Option 3 | 若原批准数据为大于1英寸且小于或等于2英寸 | 不得小于2.5英寸 |\n| Option 3 | 若原批准数据为大于2英寸且小于或等于3英寸 | 不得小于3.5英寸 |\n| Option 3 | 若原批准数据为大于3英寸且小于或等于4英寸 | 不得小于4.5英寸 |\n| Option 3 | 若原批准数据为大于4英寸且小于或等于6英寸 | 不得小于5.5英寸 |\n| Option 4 | 若不存在60秒垂直本生灯试验的原始数据，使用燃烧长度不得小于5.5英寸的替代板；或 | 不得小于5.5英寸 |\n| Option 5 | 若不存在60秒垂直本生灯试验的原始数据，从飞机上切下的面板开发新数据，并按Option 3规定使用替代板。（其意图是使用替代方法试验，同时尽可能保留更多原面板安装在飞机上。） | 按Option 3确定 |\n\n![Table 2. Methods for Testing 60-Second Vertical Burn Length of New Finishes on Old Panels](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/e7e731801f6ebb8936a8)\n\n当可获得原装备件面板（且不通过对已安装部件进行破坏性试验）时，不得使用替代板来证明符合可燃性要求；在使用表2的Option 3、4、5之前，应作出合理努力获取原面板，合理努力以能否以公平价格购得面板来判断。\n\n## 样本数量与结果取值\n\n在从飞机上的面板、备件面板以及替代板生成新数据时，试验必须按适用法规进行。14 CFR part 25 Appendix F 要求至少燃烧三个试样并对结果取平均值，以确定被测材料的60秒垂直燃烧率。一旦从飞机上切取的试样生成数据，即可用该批准数据鉴定其他饰面。\n\n## 最大允许燃烧长度\n\n最大允许60秒垂直燃烧长度由飞机类型适用的可燃性要求决定，与原批准面板的燃烧长度无关。对于part 23飞机、运输类飞机和旋翼机的自熄性要求，最大允许60秒垂直燃烧长度不得超过6英寸。\n\n替代板的60秒垂直燃烧长度可以超过表2的标准；但无论是否超过，替代板带新饰面燃烧时必须满足CFR适用试验方法规定的所有最低要求。\n\n若备件面板或取自使用中面板的试样未通过燃烧试验，只有在随后带新饰面的试验证明其不超过最大允许60秒垂直燃烧长度（不超过6英寸）时才可使用；使用中面板燃烧试验失败可能表明有必要进一步调查这些面板的状态。\n\n## 常见问题（表3摘录）\n\n| 问题 | 回答 |\n|---|---|\n| Q1. 若现有面板的批准数据显示60秒垂直燃烧长度小于1.0英寸，为何使用燃烧长度不低于1.5英寸的替代板？ | 使用具有最低燃烧长度的替代板，为鉴定新饰面建立保守基础。原面板批准数据燃烧长度与替代板燃烧长度（此处至少1.5英寸）之间的差值，建立了可接受裕度，以考虑使用替代板的不确定性。 |\n| Q3. 若批准数据显示原面板及饰面燃烧长度为2.3英寸，替代板加新饰面必须证明的60秒垂直燃烧长度是多少？ | 最大允许60秒垂直燃烧长度由飞机类型适用的可燃性要求决定，与原批准面板的燃烧长度无关。对于part 23飞机、运输类飞机和旋翼机的自熄性要求，最大允许60秒垂直燃烧长度不得超过6英寸。 |\n| Q5. 由于只需一次燃烧试验即可确定从飞机切取面板材料的燃烧长度，需要燃烧一个还是三个试样？ | 三个。从飞机上的面板、备件面板以及替代板生成新数据时，试验必须按适用法规进行；14 CFR part 25 Appendix F 要求至少燃烧三个试样并对结果取平均值。 |\n\n![Table 3. Frequently Asked Questions and Answers](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/d46764c9ec2caf39f59b)\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]]</link>\n<type>concept</type>\n<aliases>客舱内饰板可燃性测试, 内饰板可燃性试验</aliases>\n</metadata>\n<relationships>\n<links_to>[[concept/self-extinguishing-flammability]] (summary omitted, already seen), [[concept/60-second-vertical-bunsen-burner-test]] (summary omitted, already seen)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"17750888-7f2d-42a5-9896-36e1e835687b\"/>\n</sources>\n<summary>\n本页依据 AC 20-178（2012年6月4日）整理飞机客舱内饰板施加新饰面后的自熄性可燃性测试方法，包括替代板测试的五种选项、审批要求与常见问题解答。\n</summary>\n<content>\n# 飞机客舱内饰板可燃性测试\n\n针对现役飞机客舱内饰板使用新饰面后的[[concept/self-extinguishing-flammability|自熄性可燃性]]验证，适用于补充型号合格证（STC）或重大改装场景。\n\n| 项目 | 内容 |\n|---|---|\n| AC No | 20-178 |\n| Date | June 4, 2012 |\n| Initiated by | AIR-120 |\n| Subject | Flammability Testing of Aircraft Cabin Interior Panels After Alterations |\n\n## 1. Purpose（目的）\n\na. 本咨询通告（AC）描述当现有飞机客舱内饰板上使用新饰面时，测试飞机客舱内饰材料的可接受方法，此类测试通常用于补充型号合格证（STC）或重大改装。本AC仅适用于自熄性可燃性材料。本AC不适用于必须满足《联邦法规》第14篇（14 CFR）part 25, Amendment 25-61 与 14 CFR part 121, Amendment 121-289 所设热释放或烟雾排放标准的材料。FAA（美国联邦航空管理局）为申请人编写本AC，提供多种证明符合性的方法，这些方法可能比现行方法更具成本效益且耗时更少。\n\nb. 本AC不是强制要求，也不构成法规。它描述一种可接受的方式，但不是唯一方式，用于测试经改装的内饰板复合结构。但是，若使用本AC描述的方式，则必须完整遵循这些方式。\n\n## 2. Definitions（定义）\n\n原文第2节载明：“The following definitions apply to this AC only:”（下列定义仅适用于本AC）。所提供的原文内容中该标题后未给出具体定义条目，因此不在此推断缺失的定义内容。\n\n## 3. Problems with Panel Testing（面板测试存在的问题）\n\n翻新现有飞机的客舱内饰通常包括更换现有面板上的饰面，形成新的复合结构，必须对其进行测试以确定其可燃性特性。新的复合结构（例如改装后的面板）必须经过测试并通过本AC表1所列的可燃性要求。当没有可用于可燃性测试的、可施加新饰面的备件面板，且该面板已不再生产时，面板的唯一来源就是飞机本身。这要求从飞机上切下面板的部分区域用于测试，可能造成困难。\n\n## 4. Current Regulations and What They Cover（现行法规及其覆盖范围）\n\n第4节说明表1（Table 1）提供现行出版物清单及各自覆盖的内容。所提供的原文内容未包含表1的具体条目，故不在此列出其法规编号与覆盖范围。\n\n## 5. Testing – Importance and Problems（测试——重要性与问题）\n\nFAA火灾试验表明，大表面积面板的可燃性特性对客舱防火安全有显著影响。\n\na. 可燃性合格审定规则规定，应将面板与饰面作为一个整体试样一起测试，以考虑面板各组分在暴露于火时可能存在的协同效应。大多数非原始设备制造商（OEM）申请人发现原始面板复合结构的测试试样难以获得：他们要么无法从飞机制造商处获得生产该面板复合结构所需的规范，要么材料已不再生产。结果，申请人牺牲可用面板作为试样，或使用替代复合结构以证明等效安全水平。\n\nb. 由于未测试的材料组合的可燃性行为未知，使用替代复合结构可能存在显著问题。\n\nc. 一些申请人主张，在旧面板上使用新型耐烧覆盖替换材料进行可燃性测试是适得其反的，因为新材料的可燃性特性优于旧材料或原始材料。他们认为新复合结构满足燃烧试验要求的概率高于旧复合结构。这可能有效，但在试样可获得性问题解决之前，确保所有应用安全的主要手段是：测试经批准的备件面板加新饰面，或测试取自飞机的使用过的面板加新饰面。\n\n## 6. Using Surrogate Panels for Flammability Testing（使用替代板进行可燃性测试）\n\na. 国际飞机材料防火测试工作组与FAA技术中心调查了是否可使用类似但非完全相同的面板（称为替代板，surrogate panel）代替原始基础面板复合结构，用于翻新飞机内饰的可燃性测试。调查报告 DOT/FAA/AR-TN01/112《Heat Release and Flammability Testing of Surrogate Panels》（2001年12月）记录了由三家不同制造商按同一标准制造的面板所产生的实测热释放速率与60秒垂直燃烧长度。该报告还记录了理论上相同的面板在燃烧时的复杂行为。（报告见 www.fire.tc.faa.gov/reports/reports.asp。）部分基于该测试结果，本AC为改装内饰板的可燃性测试提供了一种替代方法。\n\nb. 尽管FAA技术中心人员证明了生产与原始材料完全相同的替代材料存在困难，但他们确实开发出一种方法，用以考虑生产相同材料过程中的变异性。该方法允许申请人在旧面板上测试新饰面，并在合适的替代板上测试新饰面后，对适用适航标准作出符合性判定。旧面板是指此前使用旧饰面测试并依据飞机型号设计获得批准的面板。申请人负责确定当前构型据以取得合格证所适用的法规。\n\nc. 在测试带新饰面的替代板之前，应先测试不带新饰面的替代板，以表明其相较于旧面板提供了保守的测试基准。例如，当飞机内饰板被要求自熄性时，需测试不带新饰面的替代板，其60秒垂直燃烧长度必须比旧面板更长（即更差）。随后可测试带新饰面的替代板以确定60秒垂直燃烧长度。这确保旧面板与替代板之间燃烧特性的不确定性与变异性在鉴定新复合结构（旧面板及其新饰面）的测试中得到补偿。\n\nd. 所有替代板应代表旧面板的构型，包括：\n\n(1) 芯材类型；\n\n(2) 树脂与胶粘剂类型。\n\n注：所提供的原文内容自 d 项直接跳至 f 项，未包含 e 项内容，故不在此补充。\n\nf. 当存在可用的原始备件面板时（无需对已安装部件进行破坏性测试），不得使用替代板来证明符合可燃性要求。在按表2中的选项3、4和5使用替代板之前，应作出合理努力以获取原始面板。合理努力应以面板能否以公平价格购得作为判断标准。\n\n(1) 表2中的测试方法允许申请人对某些替代板用于确定飞机内饰修理与改装的符合性。表2选项3规定了替代板（不带新饰面）基于原批准面板数值必须显示的60秒垂直燃烧长度。表2还在无法获得原批准面板数据时提供了替代选项。\n\n(2) 带新饰面的替代板必须至少符合原始型号合格审定基础或其经适当更改后的后续审定基础中的可燃性要求。\n\nTable 2. Methods for Testing 60-Second Vertical Burn Length of New Finishes on Old Panels\n\n| 选项 | 条件 | 要求 |\n|---|---|---|\n| Option 1 | 使用相同的平板备件（即与飞机上安装件件号相同，并具有可燃性批准证据） | — |\n| Option 2 | 使用从待改装飞机上切下的面板 | — |\n| Option 3 | 若待改装部件（不带新饰面）的原批准数据表明其[[concept/60-second-vertical-bunsen-burner-test|60秒垂直本生灯试验]]燃烧长度为：小于或等于1英寸 | 制造并使用燃烧长度不小于1.5英寸的替代板 |\n| Option 3 | 大于1英寸且小于或等于2英寸 | 制造并使用燃烧长度不小于2.5英寸的替代板 |\n| Option 3 | 大于2英寸且小于或等于3英寸 | 制造并使用燃烧长度不小于3.5英寸的替代板 |\n| Option 3 | 大于3英寸且小于或等于4英寸 | 制造并使用燃烧长度不小于4.5英寸的替代板 |\n| Option 3 | 大于4英寸且小于或等于6英寸 | 制造并使用燃烧长度不小于5.5英寸的替代板 |\n| Option 4 | 若60秒垂直本生灯试验不存在原始数据 | 使用燃烧长度不小于5.5英寸的替代板 |\n| Option 5 | 若60秒垂直本生灯试验不存在原始数据 | 从取自飞机的面板开发新数据；使用按Option 3规定的燃烧长度的替代板。其意图是采用替代板测试方法，同时尽可能保留更多原面板安装在飞机上。 |\n\n![Table 2. Methods for Testing 60-Second Vertical Burn Length of New Finishes on Old Panels](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/e7e731801f6ebb8936a8)\n\ng. 对于STC项目，关于替代板是否代表实际面板的问题，国内项目由地理辖区飞机合格审定办公室（ACO）确定，国外项目由负责申请人寻求批准的相应14 CFR篇目主管部门的标准人员确定。对于重大修理和重大改装，具备适当资格的ACO工程师、委任工程代表（DER）或组织委任授权（ODA）可批准与STC项目相关的可燃性测试数据。\n\nh. 有几个因素会对可燃性测试结果产生显著影响。为防止此情况，改装过程需在考虑这些及其他可能因素的情况下加以控制：\n\n(1) 施加工艺的差异（例如胶粘剂或涂料厚度）。\n\n注：可能影响可燃性的施加工艺差异应经过测试以确定临界情况。\n\n(2) 清洁过程残留的任何残留物。\n\n(3) 面板的修理可能引入了新材料或额外质量。\n\n(4) 测试试样的截取位置选择应基于曲率最小的可用区域。\n\ni. 可燃性测试数据的批准采用不同方法。重大修理与改装的数据必须由下列之一批准：\n\n(1) DER 使用 FAA Form 8110-3《Statement of Compliance with Airworthiness Standards》，仅用于批准与特定审定项目（设计批准）、重大修理和重大改装相关的可燃性测试数据。该表格不用于质量保证或材料认证。\n\n(2) 经适当授权的 ODA 单位使用 FAA Form 8100-9《Statement of Compliance with Airworthiness Standards》，仅针对特定产品（按制造厂、型号和序列号）批准重大修理或重大改装的框架内可燃性测试数据；或者，STC ODA 单位若认定已满足 14 CFR 21.20、21.113 与 21.115 中关于签发STC的要求，可签发STC。\n\n注：批准可燃性测试数据的ACO工程师必须具备相应的背景。\n\n## 7. Frequently Asked Questions（常见问题）\n\nTable 3. Frequently Asked Questions and Answers\n\n| Question | Answer |\n|---|---|\n| Q1. 如果我有现有面板的批准数据显示60秒垂直燃烧长度小于1.0英寸，为什么要使用燃烧长度不小于1.5英寸的替代板？ | A1. 使用具有最低燃烧长度的替代板，可为鉴定新饰面建立保守基础。原面板批准数据燃烧长度与替代板燃烧长度（此处至少1.5英寸）之间的差值，建立了可接受裕度，以考虑使用替代板的不确定性。 |\n| Q2. 替代板的60秒垂直燃烧长度是否可以超过本AC表2中的标准？ | A2. 可以；但无论是否超过，替代板带新饰面燃烧时，必须满足CFR规定适用试验方法所建立的所有最低要求。 |\n| Q3. 如果我有批准数据显示原面板及饰面的燃烧长度为2.3英寸，替代板加新饰面必须证明的60秒垂直燃烧长度是多少？ | A3. 最大允许的60秒垂直燃烧长度由飞机类型适用的可燃性要求决定，与原批准面板的燃烧长度无关。对于part 23飞机、运输类飞机和旋翼机的自熄性要求，最大允许60秒垂直燃烧长度不得超过6英寸。 |\n| Q4. 如果我无法获得原始燃烧数据，也无法获得备件面板，可以怎么做？ | A4. 可以采取以下三种做法之一：1. 按表2选项2，从飞机上的原面板切取试样用于每次燃烧试验；或 2. 按表2选项4，使用燃烧长度至少为5.5英寸的替代板，以避免从飞机上切割面板；或 3. 按表2选项5，从取自飞机的面板生成数据。生成新数据后，可使用选项3确定对替代板的要求（其意图是采用替代板方法进行测试，同时尽可能保留更多原面板安装在飞机上）。选项5的益处是：仅需用从飞机上切取的面板材料进行一次60秒垂直燃烧试验即可确定燃烧长度。之后可使用替代板为同一飞机或具有相同原面板的其他飞机验证多种饰面，从而减少需从飞机上切取的试样数量。此外，开发或找到最低燃烧长度高于新生成数据（按选项3）的替代板，可能比默认采用选项4规定的5.5英寸替代板燃烧长度更容易。 |\n| Q5. 由于只需一次燃烧试验即可确定从飞机切取的面板材料的燃烧长度，我需要燃烧几个试验试样：一个还是三个？ | A5. 三个。当从飞机上的面板、备件面板以及替代板生成新数据时，试验必须按适用法规进行。14 CFR part 25 Appendix F 要求至少燃烧三个试样并对结果取平均，以确定被测材料的60秒垂直燃烧速率。但一旦从飞机切取的试样生成了数据，即可按A4.3所述使用该批准数据为其他饰面取证。 |\n| Q6. 如果申请人或审查申请人测试计划的ACO或DER对替代板是否代表需批准的面板存有疑问，最终由谁回答这些问题？ | A6. 关于替代板是否代表实际面板的答复，国内项目由地理辖区ACO确定，国外项目由负责申请人寻求批准的相应14 CFR篇目主管部门的标准人员确定。 |\n| Q7. 本AC未说明如果备件面板（选项1）或从待改装飞机切取的面板（选项2与选项5）未通过燃烧试验的情形应如何处理。 | A7. 如果备件面板或从在用面板切取的试样未通过燃烧试验，只有当后续带新饰面的测试证明其不超过最大允许60秒垂直燃烧长度（不超过6英寸）时，才可使用。在用面板的燃烧试验失败可能表明有必要进一步调查这些面板的状态。 |\n\n![Table 3. Frequently Asked Questions and Answers](http://localhost:8080/api/v1/ingestion/jobs/cde64ab481e148e9ba33c985193d6b89/assets/d46764c9ec2caf39f59b)\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 12
+          }
+        ],
+        "reasoning_content": "The relevant knowledge is AC 20-178. Read key pages: surrogate-panel-testing-options, test-specimen-configuration, 60-second-vertical-bunsen-burner-test, aircraft-cabin-interior-panel-flammability-testing."
+      },
+      {
+        "thought": "",
+        "iteration": 2,
+        "timestamp": "2026-10-22T14:38:54.4580519+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_JucbyxDAs0IiVwhmch6l6570",
+            "args": {
+              "id": "17750888-7f2d-42a5-9896-36e1e835687b",
+              "query": "Option 5 three specimens fair price spare panels"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "Option 5 three specimens fair price spare panels",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-178.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\81\\81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715\\source.pdf",
+                    "internal_rag_source_sha256": "81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "9d0ace0b91efbe3bac89",
+                    "internal_rag_normalized_text_sha256": "a7be3756d8868b0652ca657cd90940844f3e82e1197e1c9cfb15f10cdc1da4f9"
+                  },
+                  "file_name": "AC_20-178.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 20,
+                  "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [],
+                "truncated": false,
+                "match_count": 0,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                "total_chunks": 20,
+                "fetched_chunks": 0,
+                "knowledge_title": "AC_20-178.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 0/20 chunks from AC_20-178.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 5
+          }
+        ],
+        "reasoning_content": "We have enough. Let me check the original document d7 for exact quotes maybe. The user's team claim: \"只能每换一种饰面就从飞机切一次板，而且一次燃烧试验就是烧一个试样\". We should correct this: AC 20-178 Q4/Q5 gives alternatives; three specimens per test, not one.\n\nKey points:\n1. Alternatives (no approved burn data, no spares): three paths per A4 — Option 2 (cut specimen from airplane for each burn test), Option 4 (surrogate panel with ≥5.5 in burn length, avoiding cutting panels), Option 5 (generate new data from a panel cut from airplane once, then use Option 3 surrogate panels for subsequent finishes; only one 60-sec vertical burn test needed on aircraft-cut material to establish burn length).\n2. Reducing cutting: Option 4 entirely avoids; Option 5 minimizes — one new-data campaign (one test condition, 3 specimens) then multiple finishes validated on surrogate panels for same aircraft or other aircraft with same original panels.\n3. Specimen count: three minimum per test per 14 CFR part 25 Appendix F, average — regardless of whether the \"one burn test\" concept; so 3 specimens per test, not 1. Also surrogate panels: before applying new finish test bare surrogate (3 specimens), then with new finish (3 specimens). Need to be careful: the AC says test must be conducted per applicable regulations when generating new data from airplane panels, spare panels, and surrogate panels. The 3-specimen requirement is at least three specimens and average. Note if the surrogate minimum burn length must be established, that's a test too — 3 specimens.\n4. If original panel spares available at fair price: must use Option 1 (same part number flat spare with flammability approval evidence); shall not use surrogate panels to show compliance. The \"reasonable effort\" test is whether obtainable at a fair price. So Option 3/4/5 cannot be used. However, note: Option 1 requires same part number spare with flammability approval evidence. If the purchased spares lack approved burn data? Hmm — \"使用相同件号、具有可燃性批准证据的相同平板备件\". The user says 原客舱板无批准燃烧数据. If spares purchasable at reasonable price but no approved burn data, then Option 1 may not fully apply (requires flammability approval evidence). But if spares are same part number and can be tested — AC 20-178 §6f says when available original spare panels (no destructive testing of installed parts), surrogate panels must not be used; reasonable effort judged by fair price. Then you test spare panel + new finish. With spares, you don't cut from aircraft. Also Q5: test spare panels requires 3 specimens per applicable regs. And Q7: if spare panel fails burn test, can only use if subsequent test with new finish ≤6 in.\n\nImportant nuance: Option 1 is \"same part number flat spare with flammability approval evidence\" — but if no approved burn data exists, using spares to generate new data (like Option 5 but from spares) is basically the same idea; the AC's §6f says spares available → cannot use surrogate. So conclusion flips: no need to cut panels from aircraft; purchase spares, test spares (3 specimens per condition), and each finish change consumes spare material rather than aircraft panels. If original data can be generated from spare panels, then Option 3 surrogate route becomes available for subsequent finishes — providing data is approved.\n\nLet me check the doc d7 to confirm exact wording of 6f, Q4, Q5 and whether \"fair price\" phrasing. The wiki page has it. The source handle d7 — read_document with query maybe. But wiki already cites d7. Citation handles: citations need cN handles backed by tool results. We have no cN handles yet — wiki pages don't give cN. Hmm. The protocol: cite cN chunks backed by tool results. Our tool results are wiki pages, no cN. Should we read the source document to get cN handles? read_document returns chunks likely with handles cN. Let's read d7 with query to obtain chunk handles and exact quotes. That helps citation.\n\nLet's search d7 for \"Option 5\" or \"fair price\" or \"three specimens\"."
+      },
+      {
+        "thought": "",
+        "iteration": 3,
+        "timestamp": "2026-10-22T14:38:56.3766174+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_asu26NdPwdw3daidQBqX6898",
+            "args": {
+              "id": "17750888-7f2d-42a5-9896-36e1e835687b",
+              "query": "specimens"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "specimens",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-178.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\81\\81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715\\source.pdf",
+                    "internal_rag_source_sha256": "81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "9d0ace0b91efbe3bac89",
+                    "internal_rag_normalized_text_sha256": "a7be3756d8868b0652ca657cd90940844f3e82e1197e1c9cfb15f10cdc1da4f9"
+                  },
+                  "file_name": "AC_20-178.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 20,
+                  "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "691f603f-2a9f-4572-9947-3165dc7e16b4",
+                  "4ece5aaf-038a-475d-a5b9-abc072c6ef0e",
+                  "70cb1098-9ac6-456f-846a-0a826add3857",
+                  "35bbfb08-73e7-4a17-92d5-2de562aadf03",
+                  "d555a6a4-3181-482c-aa71-6426b621b241",
+                  "4bb276ee-4584-4ab1-a041-7a1b8bab3cad",
+                  "6efb357d-8dc7-4db7-a291-65eac5b7eec3",
+                  "58af9b18-ad4c-42ab-8432-f1649b10ecf1",
+                  "8af27272-1da7-45c2-b52e-f2be7bb61a47",
+                  "7a7ab8cf-04e4-49e2-ab37-8b78fa474fac"
+                ],
+                "truncated": false,
+                "match_count": 5,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                "total_chunks": 20,
+                "fetched_chunks": 10,
+                "knowledge_title": "AC_20-178.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 10/20 chunks from AC_20-178.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 17
+          },
+          {
+            "id": "call_01_INUuJsRhP3zC1iaLeC905646",
+            "args": {
+              "id": "17750888-7f2d-42a5-9896-36e1e835687b",
+              "query": "fair price"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "fair price",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-178.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\81\\81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715\\source.pdf",
+                    "internal_rag_source_sha256": "81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "9d0ace0b91efbe3bac89",
+                    "internal_rag_normalized_text_sha256": "a7be3756d8868b0652ca657cd90940844f3e82e1197e1c9cfb15f10cdc1da4f9"
+                  },
+                  "file_name": "AC_20-178.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 20,
+                  "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "9dd72cd7-0d15-4c6d-b146-0e821db91d6d",
+                  "aad796e2-1569-4d4e-aafa-6bb3f56314ea",
+                  "35bbfb08-73e7-4a17-92d5-2de562aadf03"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                "total_chunks": 20,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-178.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 3/20 chunks from AC_20-178.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 16
+          }
+        ],
+        "reasoning_content": "Query matching requires all words, plus document may be Chinese/English. Try query \"Option 5\" alone or \"specimens\"."
+      },
+      {
+        "thought": "",
+        "iteration": 4,
+        "timestamp": "2026-10-22T14:39:08.7325924+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_MXGUpH6RehguNAlwTqoo4073",
+            "args": {
+              "id": "17750888-7f2d-42a5-9896-36e1e835687b",
+              "query": "conservative"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "conservative",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-178.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\81\\81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715\\source.pdf",
+                    "internal_rag_source_sha256": "81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "9d0ace0b91efbe3bac89",
+                    "internal_rag_normalized_text_sha256": "a7be3756d8868b0652ca657cd90940844f3e82e1197e1c9cfb15f10cdc1da4f9"
+                  },
+                  "file_name": "AC_20-178.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 20,
+                  "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "5e99eac8-6b22-42b6-95c4-5b2aa4d0bdba",
+                  "6aa4e424-b077-45fd-8063-d08fbb15e0c3",
+                  "7623ba7d-9023-473f-bdfd-c22dc4093e76",
+                  "4bb276ee-4584-4ab1-a041-7a1b8bab3cad",
+                  "b93d8c2f-6413-483b-b631-1152d47ad2c1",
+                  "6efb357d-8dc7-4db7-a291-65eac5b7eec3"
+                ],
+                "truncated": false,
+                "match_count": 2,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "17750888-7f2d-42a5-9896-36e1e835687b",
+                "total_chunks": 20,
+                "fetched_chunks": 6,
+                "knowledge_title": "AC_20-178.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 6/20 chunks from AC_20-178.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 21
+          }
+        ],
+        "reasoning_content": "We have c7, c8, c9, c11, c12, c4, c10. Good citations.\n\nNow formulate answer in Chinese. Address:\n\n1. 结论先行：团队说法两处不准确 — ①并非只能每次切板；AC 20-178 Q4给三条路；②\"一次试验烧一个试样\"不对 — 每个试验至少3个试样取平均（14 CFR part 25 App F；Q5）。\n\n2. 替代路径（无原始数据、无备件）:\n- Option 2: 每次试验从飞机切试样（最费板，不推荐）\n- Option 4: 使用不带新饰面燃烧长度≥5.5 in的替代板，完全不切板；但门槛高，替代板开发/寻找难\n- Option 5: 从飞机切一次板只做一次60秒垂直燃烧试验，建立原板燃烧长度（3个试样），再按Option 3确定替代板最低燃烧长度；之后同一飞机或其他相同原板的飞机上的多种饰面均用替代板验证。只需一次切板活动。\nAlso note Option 3 mapping table.\n\n3. 减少切板的具体做法:\n- 首选 Option 5；一次切板可覆盖多个饰面、多架飞机（相同原板）\n- 替代板构型须代表原板：芯材类型、树脂/胶粘剂类型、铺层厚度/数量/类型、保留不除去的旧饰面；允许同\"类型\"近似材料\n- 先测裸替代板（无新饰面）证明比原板更差（更长燃烧长度），再测带新饰面\n- 切取位置选曲率最小区域（这影响试样尺寸）\n- 控制施工差异、清洁残留、修理引入材料/质量\n- Option 4 可零切板\n- 备件采购（见第5点）\n\n4. 试样数: 至少3个/试验，取平均；source: 飞机上切板、备件板、替代板生成新数据均须按适用法规；14 CFR 25 App F; Q5. Note: 这里的\"一次燃烧试验\"指一个试验条件，不是烧一个试样；3个试样是同一试验条件下的最少试样数。Option 5 的\"single 60-second vertical burn test\"意味着一次试验活动（3个试样），不是1个试样。替代板是否还要分别测裸板和带新饰面？是的，各是一个试验，各3个试样（按法规进行；合理推断，但AC明确说从替代板生成新数据也须按法规）。也要注意每个新饰面配替代板测试需3个试样。所以 N 种饰面：1次原板试验（3件）+ 每种饰面替代板带饰面试验（3件/种），加裸替代板试验（3件，通常每种替代板构型一次）。Careful: 不应过度精确推断替代板裸板试验的数量，可以说每个试验条件至少3件。\n\n5. 若可合理价格购得原板备件:\n- AC 6f: 当有可用原板备件（无需对装机件破坏性试验）时，不得使用替代板证明符合性；用替代板前应作合理努力获取原板，\"fair price\"为判据。\n- 因此首选 Option 1：相同件号、具可燃性批准证据的平板备件。注意\"fair price\"是可购得的判据。\n- 结论翻转：Option 3/4/5 不再可用；不需要切装机板；备件成为试样来源，每次饰面/试验消耗备件而非飞机板。若备件本身缺乏批准燃烧数据，则不能直接作为Option 1的\"批准证据\"，但可用备件生成新数据（3件/试验），再按Option 3用于替代板？Hmm — careful. If spares available, surrogate cannot be used. But if spares have no approved burn data, can you test spares to generate data then use surrogate? AC 6f says when spare original panels are available, you cannot use a surrogate panel to demonstrate compliance. So even with generated data, surrogate route would be blocked while spares remain available at fair price. So conclusion: must test spare panels with new finish directly; no surrogate. That's the strict reading. However Q4.3 says once data generated from aircraft-cut specimens, use approved data to certify other finishes — but Q4 scenario presupposes no spares. If spares available, 6f takes precedence: test spare panel + new finish. Hmm, but is that inconsistent? 6f says surrogate panels cannot be used when spares available (because no need to destructively test installed components). So with spares, each finish is tested on spare panels directly. That consumes spares but no aircraft cutting.\n\nBut could you use a spare panel to generate original burn data, then use Option 3 surrogate? 6f seems to prohibit. The AC's intent: if you can buy original panels, use them (Option 1), not surrogates. So state that. But nuance: Option 1 requires \"same part number + evidence of flammability approval\" — if no approved data, the spare is still an original panel and can be tested with new finish per applicable regs (three specimens), and per 6f surrogate route is not allowed. I should flag this nuance accurately: \"严格按6f，只要原板备件能以公平价格购得，就不得用替代板；即便原板没有批准燃烧数据，也应直接在备件板上做带新饰面的试验（每条件至少3件），而不是走Option 3/4/5。\" That is a reasonable reading. Also could note: if the spares acquired are not identical part number / not flat panel / no approval evidence, Option 1 may not strictly apply; but 6f's \"spare original panels\" still triggers. To be safe: \"需与审定方确认\".\n\nAlso approved data path: DER Form 8110-3 or ODA Form 8100-9 for major repair/alteration; STC ACO/DER/ODA. And surrogate representativeness determined by ACO/standards staff. Mention if useful.\n\nAlso the \"一次燃烧试验就是烧一个试样\" — correct firmly with Q5 and c9.\n\nAlso note the failure scenario Q7: if spare/in-service specimen fails, can only be used if subsequent new-finish test ≤6 in. Maybe include as caveat.\n\nAlso 6-inch max.\n\nLet me consider whether the user perhaps expects a \"consulting answer\" with decision tree. Provide structured answer with headings, table.\n\nCitations: use <kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> etc. Keep inline. c7 covers Option 2/4; c8 covers Option 5; c9 covers 3 specimens; c12 covers spare/fair price and no surrogate; c4 covers Option 3/4/5 table; c10 covers Q7; c5 maybe cutout curvature; c6 approval forms. c11 surrogate config.\n\nNeed cite claims adjacent. Let me draft in Chinese.\n\nStructure:\n- 先纠正两个前提（简短）\n- 一、替代路径（三条 + 推荐）\n- 二、减少切板的具体办法（Option 5 的关键、替代板合规要点、零切板 Option 4）\n- 三、试样数要求（3件/试验条件，取平均；各情形）\n- 四、若能合理价格买到原板备件的结论变化\n- 五、落地建议/待确认\n\nInclude links: [[concept/surrogate-panel-testing-options|替代板测试方法与五种测试选项]], [[concept/60-second-vertical-bunsen-burner-test|60秒垂直本生灯试验]], [[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]], [[concept/test-specimen-configuration|测试样本构型]].\n\nLet's ensure no overclaim: \"Option 2 每次燃烧试验都切\" — A4.1: cut coupons from original panels in aircraft for each burn test, per option 2. Yes.\n\n\"Option 5 只做一次60秒垂直燃烧试验\" — c8. But note 3 specimens for that test. Yes c9.\n\n\"同一飞机或其他具有相同原板的飞机验证多种饰面\" — c8.\n\n\"Option 4 零切板\" — c7 \"Avoid cutting panels from the aircraft by using a surrogate panel with a burn length of at least 5.5 inches\".\n\n\"替代板裸板须比原板更长\" — from wiki page (6c). c? c4 doesn't contain. Maybe c11? no. The page text exists but citation needs cN. We didn't retrieve that chunk. Could read document for \"longer\". Let's query \"conservative\" maybe. Not critical; can cite wiki page link without ref? Facts should be supported. Could retrieve. Let's do query \"longer\" or \"conservative\". Also Q1 margin. But we can avoid uncited claims or use the wiki page link. Better retrieve chunk for 6c. Query \"burn length longer\"."
+      },
+      {
+        "thought": "## 先纠正团队说法中的两个前提\n\n1. **并不是每换一种饰面，就必须从飞机上切一次板。** AC 20-178 在“既无原始燃烧数据、又无备件”的情形下，明确给出了三条路径，其中两条可以避免反复切板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **“一次燃烧试验只烧一个试样”也不对。** AC 20-178 表3的 Q5 专门澄清了这个问题：**三个**。无论试样来自飞机上的面板、备件板还是替代板，试验都必须按适用法规进行；14 CFR part 25 Appendix F 要求**至少燃烧三个试样并取平均值**，以确定60秒垂直燃烧速率。<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n原文里的“single burn test”指的是**一次试验活动、一个试验条件**，不是“一个试样”。这是把“一次试验”误读成了“一件试样”。\n\n---\n\n## 一、无原始数据、无备件时的三条替代路径\n\n| 路径 | 做法 | 切板量 | 适用性 |\n|---|---|---|---|\n| **Option 2** | 每次燃烧试验都从待改装飞机的原面板上切取试样 | 每种饰面、每次试验都要切 | 最直接，但最费板，只适合作为最后手段<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **Option 4** | 直接用不带新饰面、燃烧长度**不小于5.5英寸**的替代板，避免从飞机上切板 | **零切板** | 完全绕开切板，但替代板门槛最高、开发或寻找难度最大<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **Option 5** | 先从飞机上切一次板，生成原板的新燃烧数据；再按 Option 3 确定替代板的最低燃烧长度，之后用替代板验证多种饰面 | **只需一次切板活动** | 在“减少切板”和“替代板可行性”之间最平衡，通常是最优解<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n\n**Option 5 的关键逻辑**：用飞机上切下的板材只做**一次**60秒垂直燃烧试验，建立原板的燃烧长度；此后同一架飞机、或其他具有相同原面板的飞机，其多种饰面都可以用替代板验证。这样可显著减少必须从飞机上切取的试样数量。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> 而且，按新数据对应的 Option 3 门槛去开发替代板，可能比直接默认采用 Option 4 的5.5英寸替代板更容易。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n如果后续能拿到原板批准数据，Option 3 的门槛是：\n\n| 原板批准燃烧长度 | 替代板（不带新饰面）最低燃烧长度 |\n|---|---|\n| ≤1 in | ≥1.5 in |\n| >1 且 ≤2 in | ≥2.5 in |\n| >2 且 ≤3 in | ≥3.5 in |\n| >3 且 ≤4 in | ≥4.5 in |\n| >4 且 ≤6 in | ≥5.5 in |\n\n<kb doc=\"AC_20-178.pdf\" chunk_id=\"35bbfb08-73e7-4a17-92d5-2de562aadf03\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n---\n\n## 二、减少切板的具体办法\n\n1. **优先走 Option 5，而不是 Option 2。** 把“每种饰面切一次”改成“为原板数据切一次”，之后用替代板覆盖多种饰面、多架相同原板的飞机。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **一次切取、集中取样。** 既然每个试验条件最少要3件试样，就在同一次切板中按试验计划切足试样，避免为凑试样反复开口；切取位置选**曲率最小**的可用区域。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n3. **替代板必须代表原板构型**：芯材类型、树脂与胶粘剂类型、预浸料或非预浸料铺层的厚度/数量/类型，以及施加新饰面前不会去除的旧饰面。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6aa4e424-b077-45fd-8063-d08fbb15e0c3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"7623ba7d-9023-473f-bdfd-c22dc4093e76\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> 无法确认具体品牌时，允许使用“同类型”材料近似，例如同厚度樱桃木饰面、同类蜂窝芯与蒙皮/树脂体系。<kb doc=\"AC_20-178.pdf\" chunk_id=\"9dd72cd7-0d15-4c6d-b146-0e821db91d6d\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n4. **先测裸替代板，再测带新饰面的替代板。** 裸替代板的60秒垂直燃烧长度必须比原板**更长（更差）**，以建立保守试验基础；否则替代板方法不成立。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6aa4e424-b077-45fd-8063-d08fbb15e0c3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n5. **锁定临界工艺。** 胶粘剂或漆层厚度、清洁残留、面板修理引入的新材料或额外质量，都可能显著影响结果；可能影响可燃性的施工差异应测试到临界情况。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n6. **Option 4 可作为零切板备选**，但要有能力做出燃烧长度≥5.5英寸的替代板；否则会陷入“替代板做不出来、又不想切板”的僵局。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n7. **提前与审定方对齐试验计划。** 替代板是否代表实际面板，国内项目由辖区 ACO 确定，国外项目由相应法规主管部门的标准人员确定；重大修理/改装数据可由 DER 或 ODA 按 FAA Form 8110-3 / 8100-9 批准。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"4bb276ee-4584-4ab1-a041-7a1b8bab3cad\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n---\n\n## 三、试样数量要求\n\n- **每个试验条件：最少3件，取平均值。** 这是 14 CFR part 25 Appendix F 的要求，适用于从飞机面板、备件面板和替代板生成的新数据。<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n- **Option 5 的“一次试验”仍是3件**，不是1件；Q5 就是针对“既然只需一次试验，那是烧一个还是三个”这一误解作出的回答。<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n- 按此推算，走 Option 5 的典型试样构成为：\n  - 原板（飞机切取）建立燃烧长度：**3件**；\n  - 裸替代板建立保守基础：**3件/替代板构型**；\n  - 每种新饰面在替代板上验证：**3件/饰面**。\n- 若采用 Option 2，则每种饰面、每次试验都要重新切取并烧**3件**，切板量随饰面种类线性增加。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n> 注意：以上是“每个试验条件至少3件”的法规底线；实际试验计划还应考虑复验、临界工艺和替代板批次差异，不能把3件理解为“只切3小块就够”。\n\n---\n\n## 四、若能以合理价格买到原板备件，结论怎么变\n\n**结论会发生实质性翻转：替代板路线基本被关闭，改为直接用原板备件。**\n\nAC 20-178 第6.f条明确：**当有可用的原板备件时（且无需对装机件做破坏性试验），不得使用替代板来证明符合可燃性要求。** 在使用 Option 3、4、5 之前，应作出合理努力获取原板；**“合理努力”以能否以公平价格购得面板来判断**。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n因此：\n\n1. **首选 Option 1**：使用与装机件**相同件号**、并具有可燃性批准证据的相同平板备件。<kb doc=\"AC_20-178.pdf\" chunk_id=\"35bbfb08-73e7-4a17-92d5-2de562aadf03\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **不再需要从飞机上切板**，Option 2、4、5 都不再是首选；备件成为试样来源，消耗的是备件而不是装机面板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"70cb1098-9ac6-456f-846a-0a826add3857\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n3. **每种饰面仍在备件板上按适用法规试验，每个条件至少3件并取平均。**<kb doc=\"AC_20-178.pdf\" chunk_id=\"8af27272-1da7-45c2-b52e-f2be7bb61a47\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n4. **如果买到的备件没有可燃性批准数据**，严格说 Option 1 的字面条件（“具有可燃性批准证据”）不完全满足；但第6.f条“有原板备件即不得用替代板”仍然适用。此时应直接用备件板做“备件板+新饰面”的试验，并按 DER/ODA/ACO 路径批准数据，而不是退回 Option 3/4/5。这个边界建议在试验计划中与主管审定方书面确认。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"4bb276ee-4584-4ab1-a041-7a1b8bab3cad\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n5. **备件试验失败时**：备件板或在用板试样未通过燃烧试验的，只有在后续带新饰面的试验证明其不超过最大允许60秒垂直燃烧长度（不超过6英寸）时才可使用；在用板失败还可能提示需要进一步调查面板状态。<kb doc=\"AC_20-178.pdf\" chunk_id=\"7a7ab8cf-04e4-49e2-ab37-8b78fa474fac\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"b93d8c2f-6413-483b-b631-1152d47ad2c1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n6. **“合理价格”的举证责任在申请人**：应保留询价、报价、交期、可购数量等记录；若价格明显不合理或无法购得，才能据此说明已尽合理努力，转而使用替代板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n---\n\n## 五、建议的落地顺序\n\n1. **先做备件询价与可得性调查**：能否以公平价格买到相同件号原板备件。若能，走 Option 1，问题从“切板”转为“备件消耗与数据批准”。<kb doc=\"AC_20-178.pdf\" chunk_id=\"aad796e2-1569-4d4e-aafa-6bb3f56314ea\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n2. **若买不到**：优先走 **Option 5**——切一次板、烧3件建立原板数据，再按 Option 3 做替代板，之后多种饰面复用替代板。<kb doc=\"AC_20-178.pdf\" chunk_id=\"58af9b18-ad4c-42ab-8432-f1649b10ecf1\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n3. **若连一次切板都不愿做**：评估 **Option 4** 的≥5.5英寸替代板是否可开发；同时接受其更高的替代板开发难度。<kb doc=\"AC_20-178.pdf\" chunk_id=\"6efb357d-8dc7-4db7-a291-65eac5b7eec3\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n4. **无论走哪条路**：尽早把替代板构型、试样数量（每条件≥3件）、切取位置和临界工艺写进试验计划，提交 ACO/DER/ODA 确认，避免做完试验再争论代表性问题。<kb doc=\"AC_20-178.pdf\" chunk_id=\"d555a6a4-3181-482c-aa71-6426b621b241\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /><kb doc=\"AC_20-178.pdf\" chunk_id=\"4bb276ee-4584-4ab1-a041-7a1b8bab3cad\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />\n\n**一句话总结**：团队说的“每换一种饰面切一次板、一次试验烧一个试样”是把最保守的 Option 2 和“一次试验”误当成了唯一规则；正确做法是优先买备件走 Option 1，买不到则用 Option 5“切一次、烧3件、替代板复用多饰面”，实在不想切板才用 Option 4 的≥5.5英寸替代板。",
+        "iteration": 5,
+        "timestamp": "2026-10-22T14:39:32.835076+08:00",
+        "tool_calls": [],
+        "reasoning_content": "Now draft. Need be precise on \"one burn test = 3 specimens\". Also mention \"一次试验只烧一个试样\" is a misunderstanding of \"single burn test\" wording — \"single burn test\" denotes one test campaign/condition, not one specimen.\n\nAlso the user asks \"给出替代路径、减少切板的办法和试样数要求\" — we should directly answer. And \"若能以合理价格购买原板备件，结论如何变化？\"\n\nLet's produce a well-structured answer, maybe with a decision table.\n\nDetails:\n- Option 1: identical flat panel spares (same part number, evidence of flammability approval).\n- Option 2: panel cut from aircraft.\n- Option 3: original approved data + surrogate (burn length thresholds).\n- Option 4: no original data + surrogate ≥5.5 in (avoid cutting).\n- Option 5: no original data + develop data from aircraft panel; then Option 3 surrogate; retains maximum panels.\n\nOption 3 thresholds table maybe include compactly:\n原板数据 ≤1 → surrogate ≥1.5; 1–2 → 2.5; 2–3 → 3.5; 3–4 → 4.5; 4–6 → 5.5.\n\nReducing cutting:\n- Option 5: one cut campaign, one 60-s vertical burn test (3 specimens) → data; then unlimited finishes on surrogate panels for same or other aircraft; \"once data approved, certify other finishes per A4.3\".\n- Prefer generating data from a removable panel / area with minimum curvature; non-destructive removal? AC says cut; but \"retain as many original panels installed\" — could use a removed panel? The AC Option 5 says panel cut from aircraft. We can suggest using a panel already removed for other reasons? Careful. Maybe mention \"尽量选曲率最小、便于恢复的区域\" per h(4). Could also note multiple coupon samples from a single cut panel rather than multiple cut locations — this is logic: need 3 specimens per test; cut them from one panel section. That's reasonable inference, not explicit. Phrase as practice: \"同一次切取中一并切出足够数量的试样（每个试验条件至少3件）\". That's derived from requirement 3 specimens, and Option 5's single cut.\n- Option 4 zero cut but surrogate development burden and ≥5.5 in threshold may be hard; can still reduce.\n- Surrogate configuration replication and pre-test bare surrogate to show longer burn length.\n- Control application variables; worst-case finish/adhesive thickness test; cleaning residue; repairs; cut at low curvature.\n- Approval of data: DER/ODA/ACO; surrogate representativeness decided by ACO/standards staff. Early alignment on test plan.\n\nSpecimen counts:\n- at least 3 per test, average (14 CFR 25 App F; Q5); applies to aircraft panels, spare panels, surrogate panels.\n- Option 5's \"single burn test\" = 3 specimens for that one condition.\n- Each new finish on surrogate = 3 specimens (with finish) + bare surrogate test 3 specimens to establish conservative basis.\n- So N finishes: one original panel test (3), one bare surrogate test (3; per surrogate config), N finish tests (3 each). This is a helpful estimate but note \"按适用法规/试验计划，每条件至少3件\".\n\nSpares at fair price:\n- 6f: cannot use surrogate; reasonable effort judged by fair price. So Option 3/4/5 excluded; go Option 1 or test spare panels with new finish.\n- No aircraft cutting; spare panels consumed. Each finish still 3 specimens.\n- \"fair price\" is the gate; document procurement attempts/quotes to justify if not fair.\n- If spares available but only limited quantity, use them for the highest-value tests; no surrogate allowed while available. Actually if spares are available (can be purchased), then each finish test on spares. If only one spare panel, cut multiple specimens from it (3 per condition).\n- If spares lack approved burn data: Option 1 wording requires evidence of flammability approval; but 6f still says no surrogate. So test spares with new finish directly. Confirm with ACO/DER. This nuance important because user's premise is no approved burn data. I'll state: \"若买到的备件没有可燃性批准证据，严格说Option 1的字面条件不满足；但6f的'有原板备件即不得用替代板'仍然适用，实际应直接用备件板做带新饰面试验（每条件3件），并把数据按DER/ODA/ACO路径批准。此点建议在试验计划中与主管审定方确认。\"\n\nIs that too assertive? The AC distinguishes \"spare original panels available\" from Option 1 \"identical flat panel spares ... evidence of flammability approval\". 6f says when spare original panels are available, cannot use surrogate. Yes.\n\nAlso Q7: if spare panels fail bare burn test, can still use if with new finish ≤6 in; failure may warrant investigation.\n\nAlso approval: for STC, ACO/DER/ODA; data forms 8110-3 / 8100-9.\n\nAlso maybe note AC 20-178 applies only to self-extinguishing flammability, not heat release/smoke (part 25 Amdt 25-61 / part 121 Amdt 121-289). Could mention scope caveat. Not necessary but useful: \"本路径仅适用于自熄性可燃性，不适用于热释放/烟密度\". Cite aircraft cabin page summary? c? We can cite wiki page link; but no cN. We have c1 table but not scope. Could skip or state with link. It's fine to mention as a caveat with page link, no ref.\n\nLet's write with citations. Ensure citations only cN backed.\n\nDraft:\n\n**先纠正两个前提**\n- \"只能每换一种饰面就切一次板\"不成立。AC 20-178 Q4 给出三条路径... \n- \"一次燃烧试验=烧一个试样\"不成立。Q5明确：三个。\n\n**一、替代路径（无原始数据、无备件）**\nTable with 路径 / 做法 / 切板量 / 适用性.\nOption 2, 4, 5.\nOption 5 recommended.\nOption 3 mapping.\n\n**二、减少切板的办法**\n1. 走Option 5...\n2. 一次切取、多点取样...\n3. 替代板构型...\n4. 先裸板后带饰面...\n5. 控制变量，锁定临界情况...\n6. 切取位置曲率最小...\n7. 若监管接受，Option 4 zero cut.\n8. 備件采购 (link to section 4).\n\n**三、试样数**\n- 3 per test, average.\n- applies to all.\n- Option 5: \"single test\" = one condition, 3 specimens, not 1.\n- 成本估算: 原板1组×3 + 裸替代板1组×3 + 每种饰面1组×3.\n- Maybe note if multiple surrogate batches/configs, each condition 3.\n\n**四、若可合理价格买原板备件**\n- 结论翻转: 6f mandatory no surrogate; Option 3/4/5 out; Option 1.\n- no aircraft cutting.\n- spare consumption.\n- no approved data nuance.\n- failure case Q7.\n- documentation of fair price efforts.\n\n**五、建议落地顺序**\n1. 先询价/搜备件 — 若有 fair price → Option 1.\n2. 若无 → Option 5 (one cut, 3 specimens) then surrogate for finishes.\n3. Option 4 as fallback zero-cut.\n4. Early ACO/DER/ODA alignment; approval forms.\n\nKeep answer moderate length. Use Chinese.\n\nCheck citation claims:\n- c7: Option 2/4. \"one of three things\" — c7 includes 1 and 2, c8 includes 3. Good.\n- c8: Option 5 benefits, single test, multiple finishes, other aircraft, 5.5 default.\n- c9: three specimens, applies to aircraft panels/spare/surrogate, 14 CFR 25 App F.\n- c12: spare available → cannot use surrogate; reasonable effort fair price.\n- c4: Option 1-5 table incl. Option 3 thresholds.\n- c14: bare surrogate longer/worse; config (core, resin/adhesive); c15 continues plies and old finishes.\n- c13: surrogate definition/report (not necessary).\n- c16: 6-inch max; Q1 margin; Q2.\n- c10: Q7 failure.\n- c6: approval forms.\n- c5: curvature min.\n- c3: primary means testing approved spare panel + new finish or used panel — could cite for spares conclusion.\n\nOne nuance: Option 5 says \"only a single 60-second vertical burn test is necessary with panel material cut from the aircraft to establish the burn length\". Combined with Q5 three specimens. So state \"一次试验活动（同一条试验条件）需3件试样\". Good.\n\n\"每种饰面替代板测试3件\" — Q5 says when generating new data ... for surrogate panels, tests must be done per applicable regs, 3 specimens. A new finish on surrogate is a test, so 3. Fine.\n\n\"裸替代板测试3件\" — same reasoning; also required to show conservative basis. State \"同样按试验条件计，至少3件\".\n\nWhat about \"一次燃烧试验就是烧一个试样\" maybe team conflates \"single burn test\". Explain explicitly: \"AC原文的 single burn test 指的是'一次试验'，不是一个试样；Q5就是专门澄清这个问题.\" Good.\n\nNeed mention \"原板无批准燃烧数据\" means Option 3 not available initially; Option 4/5 are alternatives. Yes.\n\nAlso \"没有备件\" — Option 1 unavailable.\n\nLet's write final. Ensure no mention of d7 or b1. Use natural references to \"AC 20-178\".\n\nAlso maybe include \"合理价格\" judgment and documentation. Good.\n\nLet's formulate polished answer."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:38:38.707682+00:00",
+    "updated_at": "2026-10-22T06:39:32.84123+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 53992,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "369910ed507d333d49233fa2822f7941013fc479cc4593352f27a6f0c6b4fc47",
+      "knowledge_base_ids": [
+        "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": {
+      "cache_status": "hit",
+      "total_tokens": 111242,
+      "cached_tokens": 78592,
+      "prompt_tokens": 103271,
+      "cache_reported": true,
+      "cache_miss_tokens": 24679,
+      "cache_read_tokens": 78592,
+      "completion_tokens": 7971,
+      "context_token_scale": 0.7973472177782949
+    },
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

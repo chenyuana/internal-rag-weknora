@@ -1,0 +1,985 @@
+[
+  {
+    "id": "68d911e2-3d18-46f0-bcdd-8bf3eb7b5758",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-180.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-180.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "ca8bcae503c9babb88510ad703ba875aa2fd9c04388345f51c46bb1f77e607d0",
+    "storage_size": 124932,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\ca\\ca8bcae503c9babb88510ad703ba875aa2fd9c04388345f51c46bb1f77e607d0\\source.pdf",
+      "internal_rag_source_sha256": "ca8bcae503c9babb88510ad703ba875aa2fd9c04388345f51c46bb1f77e607d0",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "a6e9bbe44f61e90bd3f1",
+      "internal_rag_normalized_text_sha256": "5bfd5bce48ba4d6619362c64a2de3a18efa32f779c83c03256444e9456dfbf2f"
+    },
+    "created_at": "2026-10-21T01:02:07.398696+00:00",
+    "updated_at": "2026-10-21T01:10:30.074262+00:00",
+    "processed_at": "2026-10-21T01:10:30.074262+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "c5cf4dee-88c4-4a77-983a-35b9963588d8",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-182A.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-182A.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+    "storage_size": 219616,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\92\\92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488\\source.pdf",
+      "internal_rag_source_sha256": "92993b87c10590263c3bb48fdebe97245ff6ae06caaa27ee4a3f60b22414c488",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "c3dc0334399b1ca5a2e3",
+      "internal_rag_normalized_text_sha256": "dbfcce916739fe2763bd90ee20fe629d4e9a9ec4d8974b87c5300181e8da5219"
+    },
+    "created_at": "2026-10-21T01:02:11.619472+00:00",
+    "updated_at": "2026-10-21T01:10:30.082208+00:00",
+    "processed_at": "2026-10-21T01:10:30.082208+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "a26c5a50-b9ab-45ca-bb63-ade22f5939f2",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-181.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-181.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "a166bf1adbfa0e65b188e2f4f8a96c24e00018e4e9c3e34cc75eb4396ab18755",
+    "storage_size": 202686,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a1\\a166bf1adbfa0e65b188e2f4f8a96c24e00018e4e9c3e34cc75eb4396ab18755\\source.pdf",
+      "internal_rag_source_sha256": "a166bf1adbfa0e65b188e2f4f8a96c24e00018e4e9c3e34cc75eb4396ab18755",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "4a9b13be809a0b4a70f5",
+      "internal_rag_normalized_text_sha256": "9227475e8f144542399dbc0be8a43095786444913a790a6e56b989276585c29d"
+    },
+    "created_at": "2026-10-21T01:02:09.163338+00:00",
+    "updated_at": "2026-10-21T01:10:30.057837+00:00",
+    "processed_at": "2026-10-21T01:10:30.057837+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "f185e13d-08a9-4ca4-90ea-270b37335cf2",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-179.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-179.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "1f00d6cc729eaab48f70e170862a7ff187aa49df5c57667010852431946a565a",
+    "storage_size": 103143,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\1f\\1f00d6cc729eaab48f70e170862a7ff187aa49df5c57667010852431946a565a\\source.pdf",
+      "internal_rag_source_sha256": "1f00d6cc729eaab48f70e170862a7ff187aa49df5c57667010852431946a565a",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "9940cf45173cc952408c",
+      "internal_rag_normalized_text_sha256": "ee84003fe92e7b98a33597d0a2ac4805ad1322edd1b0c6e87336b02aebe40913"
+    },
+    "created_at": "2026-10-21T01:02:06.091899+00:00",
+    "updated_at": "2026-10-21T01:10:30.049325+00:00",
+    "processed_at": "2026-10-21T01:10:30.049325+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-183.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-183.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+    "storage_size": 334842,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+      "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "03750c2e7078f79f7136",
+      "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+    },
+    "created_at": "2026-10-21T01:02:14.030501+00:00",
+    "updated_at": "2026-10-21T01:10:19.987641+00:00",
+    "processed_at": "2026-10-21T01:10:19.987641+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "a55aa2ce-d249-4213-a67d-5b8ae36edfb1",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-184.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-184.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "52850499b4392fc735147f94398518286ee49d9df27bdd04eeda4cd0d0cd9227",
+    "storage_size": 495415,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\52\\52850499b4392fc735147f94398518286ee49d9df27bdd04eeda4cd0d0cd9227\\source.pdf",
+      "internal_rag_source_sha256": "52850499b4392fc735147f94398518286ee49d9df27bdd04eeda4cd0d0cd9227",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "8a4e87d0ac73d7331f65",
+      "internal_rag_normalized_text_sha256": "3a34a9a50e70eb33abfe76a6e6f94d71fc9ec85bd64cdd487df7d528eae12352"
+    },
+    "created_at": "2026-10-21T01:02:17.405658+00:00",
+    "updated_at": "2026-10-21T01:10:19.978927+00:00",
+    "processed_at": "2026-10-21T01:10:19.978927+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "17750888-7f2d-42a5-9896-36e1e835687b",
+    "tenant_id": 10000,
+    "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+    "type": "internal_rag",
+    "title": "AC_20-178.pdf",
+    "description": "",
+    "source": "internal-rag",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-178.pdf",
+    "file_type": "internal_rag",
+    "file_size": 0,
+    "file_path": "",
+    "file_hash": "81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715",
+    "storage_size": 158643,
+    "metadata": {
+      "source_system": "internal-rag",
+      "internal_rag_parser_name": "mineru-cloud-pdf",
+      "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\81\\81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715\\source.pdf",
+      "internal_rag_source_sha256": "81f9a196188f0b3b975475bdf73422de24d8f0d798df8a35edfe25f4c5bc1715",
+      "internal_rag_parser_version": "1",
+      "internal_rag_schema_version": "document-ir/0.2",
+      "internal_rag_source_document_id": "9d0ace0b91efbe3bac89",
+      "internal_rag_normalized_text_sha256": "a7be3756d8868b0652ca657cd90940844f3e82e1197e1c9cfb15f10cdc1da4f9"
+    },
+    "created_at": "2026-10-21T01:02:00.1701+00:00",
+    "updated_at": "2026-10-21T01:10:30.066007+00:00",
+    "processed_at": "2026-10-21T01:10:30.066007+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "none",
+    "last_faq_import_result": null,
+    "channel": "api",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "0df79630-0d38-44b5-bea6-aa92db0088eb",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-178.pdf",
+    "description": "",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-178.pdf",
+    "file_type": "pdf",
+    "file_size": 1761882,
+    "file_path": "resource://ksII-sL3ZIJOV6Y383-9Dg",
+    "file_hash": "7703c5e95612ba85da640234c508f5db",
+    "storage_size": 13252,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.235492+00:00",
+    "updated_at": "2026-10-21T01:40:52.354741+00:00",
+    "processed_at": "2026-10-21T01:40:52.354741+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "failed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": null
+  },
+  {
+    "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-184.pdf",
+    "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-184.pdf",
+    "file_type": "pdf",
+    "file_size": 308932,
+    "file_path": "resource://EbJKWDbBNChla-O7wO6KMg",
+    "file_hash": "ee242642a1cb109da50e263c3f73b422",
+    "storage_size": 1936791,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.343982+00:00",
+    "updated_at": "2026-10-21T01:53:31.209266+00:00",
+    "processed_at": "2026-10-21T01:53:31.209266+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "completed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": {
+      "gist": "FAA咨询通告，规定飞机可充电锂电池及电池系统的试验、安装、维护与适航符合性方法。",
+      "topics": [
+        "可充电锂电池安装",
+        "适航符合性方法",
+        "持续适航说明（ICA）",
+        "RTCA DO-311",
+        "电池维护与存储"
+      ],
+      "doc_type": "咨询通告",
+      "typical_question": "如何按FAA AC 20-184为飞机安装可充电锂电池并证明其符合适航要求？"
+    }
+  },
+  {
+    "id": "bc1af029-f306-42bf-b3d1-b28235258d73",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-182A.pdf",
+    "description": "该咨询通告为满足最新版 TSO-C63 的航空器天气雷达系统提供初始及后续适航批准指导，涵盖天气探测与地面测绘、前视风切变探测、前视湍流探测和大气威胁感知能力，适用于 14 CFR 第 23、25、27、29 部航空器。文件说明该通告非强制性，是可接受的符合性方法之一，并面向通过型号合格证、补充型号合格证等申请适航批准的申请人。通告还给出显示告警、颜色使用、系统接口及湍流与大气威胁显示等方面的通用要求，并取消 2014 年发布的 AC 20-182。",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-182A.pdf",
+    "file_type": "pdf",
+    "file_size": 520598,
+    "file_path": "resource://hMX9TBSgDoVhZlLZOMA6SQ",
+    "file_hash": "aef647d38904abece9ec5122d32b00f6",
+    "storage_size": 685471,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.299005+00:00",
+    "updated_at": "2026-10-21T01:48:46.381043+00:00",
+    "processed_at": "2026-10-21T01:48:46.381043+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "completed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": {
+      "gist": "FAA AC 20-182A 指导航空器天气雷达系统的适航批准，涵盖 TSO-C63、前视风切变与湍流探测及显示告警要求。",
+      "topics": [
+        "航空器天气雷达",
+        "适航批准",
+        "TSO-C63",
+        "前视风切变探测",
+        "前视湍流探测"
+      ],
+      "doc_type": "咨询通告",
+      "typical_question": "FAA AC 20-182A 对航空器天气雷达系统的适航批准提供了哪些指导？"
+    }
+  },
+  {
+    "id": "06f57281-bf57-4f41-899d-1faa63603018",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-179.pdf",
+    "description": "该咨询通告介绍国内设计批准申请人和设计批准持有人与FAA签订认证数据保留协议时应遵循的程序，并界定构成政府记录的认证数据类型。文件说明协议可纳入PSP或单独MoA，列出可代FAA保留的型号设计、符合性记录、手册和服务通告等永久记录，并规定电子存储、数据可读性、专有数据保护及协议格式。该通告不具强制性，但采用其中方式须完整遵循，且不适用于ODA持有人。",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-179.pdf",
+    "file_type": "pdf",
+    "file_size": 187411,
+    "file_path": "resource://_CqbNZ-Jc7b2Rei4CJa80A",
+    "file_hash": "6870d7c504096afd71acb8db46ed8810",
+    "storage_size": 307247,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.204075+00:00",
+    "updated_at": "2026-10-21T01:48:43.136086+00:00",
+    "processed_at": "2026-10-21T01:48:43.136086+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "completed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": {
+      "gist": "FAA AC 20-179说明认证数据保留协议程序、政府记录范围、数据保留要求及协议格式。",
+      "topics": [
+        "认证数据保留协议",
+        "政府记录",
+        "型号设计数据",
+        "专有数据保护",
+        "协议格式"
+      ],
+      "doc_type": "咨询通告",
+      "typical_question": "与FAA签订认证数据保留协议时需要遵循哪些程序，哪些认证数据属于政府记录？"
+    }
+  },
+  {
+    "id": "813acfd3-492b-45fb-8705-d46a0ccbf984",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-183.pdf",
+    "description": "该咨询通告（AC 20-183）为在23、25、27和29部飞机上安装机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）提供一种获取FAA适航批准的建议方法。文件明确其非强制性，仅针对激光设备相关的适航要求，并讨论激光监视设备、LIDAR、眼部危害、STC限制、FDA豁免及公共用途等事项。其结论是申请人可完整遵循本AC所述方法，以获得不可见激光设备安装的适航批准。",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-183.pdf",
+    "file_type": "pdf",
+    "file_size": 149452,
+    "file_path": "resource://Q51b65Hyhh6eppd-PECHeQ",
+    "file_hash": "775a1f9a4fb0e18402f45b394356aa5d",
+    "storage_size": 1119724,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.293966+00:00",
+    "updated_at": "2026-10-21T01:51:01.254326+00:00",
+    "processed_at": "2026-10-21T01:51:01.254326+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "completed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": {
+      "gist": "FAA关于机载不可见光谱激光设备（含红外监视激光与LIDAR）安装适航批准的建议指南。",
+      "topics": [
+        "FAA咨询通告",
+        "激光适航安装",
+        "不可见光谱激光",
+        "LIDAR安装",
+        "STC批准"
+      ],
+      "doc_type": "咨询通告",
+      "typical_question": "FAA AC 20-183建议如何为机载不可见光谱激光设备取得适航安装批准？"
+    }
+  },
+  {
+    "id": "aa7ee8a1-1112-4931-a85f-564ca8a49850",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-180.pdf",
+    "description": "该咨询通告由美国联邦航空管理局发布，说明申请获批型号清单补充型号合格证（AML-STC）的可接受方法，并强调其非强制性、不构成法规。文件界定适用范围与参考文件，解释以基线数据覆盖多个机型、同一类别限制，以及每个机型需符合14 CFR part 21第21.20条并提交型号设计、证实数据和飞行手册补充。文件还说明不得仅引用第三方TC/STC编号作为合规依据，并概述型号设计更改及附录中机型清单各栏目的填写要求。",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-180.pdf",
+    "file_type": "pdf",
+    "file_size": 117591,
+    "file_path": "resource://go_3ToSSYIvezbXXe6odfQ",
+    "file_hash": "bf8aed503a0ca988f295eb1aa5fbd716",
+    "storage_size": 448200,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.204122+00:00",
+    "updated_at": "2026-10-21T01:48:43.116735+00:00",
+    "processed_at": "2026-10-21T01:48:43.116735+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "completed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": {
+      "gist": "FAA咨询通告AC 20-180说明申请AML-STC的指南、合规要求与机型清单填写方法。",
+      "topics": [
+        "AML-STC",
+        "基线数据",
+        "补充型号合格证",
+        "型号设计更改",
+        "第三方STC"
+      ],
+      "doc_type": "咨询通告",
+      "typical_question": "根据FAA AC 20-180，申请获批型号清单补充型号合格证（AML-STC）需要满足哪些要求和合规数据？"
+    }
+  },
+  {
+    "id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+    "tenant_id": 10000,
+    "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+    "type": "file",
+    "title": "AC_20-181.pdf",
+    "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+    "source": "",
+    "parse_status": "completed",
+    "enable_status": "enabled",
+    "embedding_model_id": "cafe0214-cd51-4472-ad3b-f1f69a489a01",
+    "file_name": "AC_20-181.pdf",
+    "file_type": "pdf",
+    "file_size": 126073,
+    "file_path": "resource://p4rFlUMeT0pHl69rFr1GhQ",
+    "file_hash": "3017b0c1eea1c02a3ab07a935e1b84ed",
+    "storage_size": 762650,
+    "metadata": {
+      "process_overrides": {
+        "asr_config": {
+          "enabled": false,
+          "language": "",
+          "model_id": ""
+        },
+        "vlm_config": {
+          "api_key": "",
+          "enabled": false,
+          "base_url": "",
+          "model_id": "",
+          "model_name": "",
+          "interface_type": ""
+        },
+        "graph_enabled": false,
+        "image_actions": {
+          "ocr": {
+            "on": [
+              {
+                "is": "block",
+                "prop": "contain.text"
+              },
+              {
+                "is": "true",
+                "prop": "contain.data_visual"
+              }
+            ],
+            "on_unobserved": true
+          }
+        },
+        "extract_config": {
+          "enabled": false
+        },
+        "chunking_config": {
+          "strategy": "auto",
+          "chunk_size": 512,
+          "separators": [
+            "\n\n",
+            "\n",
+            "。",
+            "！",
+            "？",
+            ";",
+            "；"
+          ],
+          "chunk_overlap": 80,
+          "child_chunk_size": 384,
+          "parent_chunk_size": 4096,
+          "enable_parent_child": true
+        },
+        "summary_enabled": true,
+        "enable_multimodel": false,
+        "image_attrs_enabled": false,
+        "image_vector_enabled": false,
+        "question_generation_config": {
+          "enabled": true,
+          "question_count": 3
+        }
+      }
+    },
+    "created_at": "2026-10-21T01:40:08.285522+00:00",
+    "updated_at": "2026-10-21T01:48:43.128599+00:00",
+    "processed_at": "2026-10-21T01:48:43.128599+00:00",
+    "error_message": "",
+    "deleted_at": null,
+    "summary_status": "completed",
+    "last_faq_import_result": null,
+    "channel": "web",
+    "pending_subtasks_count": 0,
+    "custom_metadata": {},
+    "folder_path": "",
+    "profile": {
+      "gist": "FAA AC 20-181为TSO-C201 AHRS设备的安装适航批准提供补充指导，涵盖辅助源、降级模式与运行考虑。",
+      "topics": [
+        "AHRS设备",
+        "TSO-C201",
+        "适航批准",
+        "降级模式",
+        "辅助源"
+      ],
+      "doc_type": "咨询通告",
+      "typical_question": "TSO-C201规定的AHRS设备在安装时，FAA适航批准需要评估哪些辅助源、降级模式和运行限制？"
+    }
+  }
+]

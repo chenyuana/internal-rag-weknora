@@ -2551,6 +2551,8 @@ export default {
     placeholderAgent: 'Ask {name}',
     agentMode: 'Smart Reasoning',
     normalMode: 'Quick Answer',
+    crossLanguageSearch: 'Cross-language search',
+    crossLanguageSearchHint: 'Search in another language for this question',
     normalModeDesc: 'Knowledge base RAG Q&A',
     agentModeDesc: 'Multi-step thinking, deep analysis',
     agentMissingAllowedTools: 'Allowed tools',

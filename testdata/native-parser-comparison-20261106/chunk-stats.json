@@ -1,0 +1,16 @@
+[
+  {
+    "chunk_type": "parent_text",
+    "count": 4,
+    "min_chars": 4018,
+    "max_chars": 4091,
+    "mean_chars": 4060
+  },
+  {
+    "chunk_type": "text",
+    "count": 52,
+    "min_chars": 81,
+    "max_chars": 332,
+    "mean_chars": 312
+  }
+]

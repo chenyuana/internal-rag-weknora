@@ -1,0 +1,40 @@
+[
+  {
+    "question": "Q09",
+    "file": "AC_20-182A.pdf",
+    "query": "radome ground crew transponder",
+    "native": [],
+    "clean": [
+      "f0cdd104-5906-4bf2-905e-be003c5df91b"
+    ]
+  },
+  {
+    "question": "Q09",
+    "file": "AC_20-183.pdf",
+    "query": "key control off position",
+    "native": [
+      "3d70a359-13fa-44bb-a3f1-664c66c8d7c1"
+    ],
+    "clean": [
+      "5c673968-7461-4dab-aca1-fa05a92eddbc"
+    ]
+  },
+  {
+    "question": "Q21",
+    "file": "AC_20-183.pdf",
+    "query": "NOHD MPE 10 seconds divergence power",
+    "native": [],
+    "clean": [
+      "79659251-4c1d-4f55-ac16-2ff68b33293e"
+    ]
+  },
+  {
+    "question": "Q06",
+    "file": "AC_20-184.pdf",
+    "query": "TSO MOPS criticality location",
+    "native": [],
+    "clean": [
+      "d7f7c708-0328-49f1-9042-f15acfd79288"
+    ]
+  }
+]

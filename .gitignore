@@ -63,3 +63,10 @@ miniprogram/project.private.config.json
 
 # Locally built BrowserSkill runtime and extension bundles
 /artifacts/browserskill/
+
+# 本地大体积数据：评测备份、镜像存档、临时页面。单文件常超过 GitHub 100 MB 限制
+backups/
+notes/
+_tmp_page58/
+knowledge-base/**/*.pdf
+

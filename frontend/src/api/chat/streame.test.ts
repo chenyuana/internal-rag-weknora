@@ -63,3 +63,18 @@ for (const selected of [true, false, undefined]) {
     } finally { stream.stopStream() }
   })
 }
+
+for (const enabled of [true, false, undefined]) {
+  test(`SSE knowledge chat sends cross-language search only when enabled (${enabled})`, async () => {
+    let stream!: ReturnType<typeof useStream>
+    await renderToString(createSSRApp({ setup() { stream = useStream(); return () => null } }))
+    try {
+      await stream.startStream({
+        session_id: 'new-session', query: '机身布局', method: 'POST', url: '/api/v1/knowledge-chat',
+        cross_language_search: enabled,
+      })
+      const body = JSON.parse(transport.requests.at(-1)!.options.body)
+      assert.equal(body.cross_language_search, enabled ? true : undefined)
+    } finally { stream.stopStream() }
+  })
+}

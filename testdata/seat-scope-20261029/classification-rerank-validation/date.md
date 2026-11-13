@@ -1,0 +1,5 @@
+AC 25.853-1《FLAMMABILITY REQUIREMENTS FOR AIRCRAFT SEAT CUSHIONS》（飞机座椅垫可燃性要求）的签发日期为 **1986年9月17日**（文件标注为 "9/17/86"），发起单位为 ANM-110<kb doc="AC_25.853-1.pdf" chunk_id="bccda8cd-5b87-4352-b4f1-10f783ebf7da" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。
+
+![AC 25.853-1 首页，页眉标注 Date: 9/17/86](http://localhost:8080/api/v1/ingestion/jobs/ac6c3b1d2b174dd9bc79c59cca421a56/assets/eab81d60471e0c32fba3)<kb doc="AC_25.853-1.pdf" chunk_id="bccda8cd-5b87-4352-b4f1-10f783ebf7da" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />
+
+说明：该日期来自通告首页页眉的 "Date" 栏，属签发/发布日期；文件中另提到的 1984年10月23日、1984年11月26日和1987年11月26日分别是相关修正案（25-59、29-23、121-184）的发布、生效与合规期限，并非本 AC 的签发日期<kb doc="AC_25.853-1.pdf" chunk_id="bccda8cd-5b87-4352-b4f1-10f783ebf7da" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" /><kb doc="AC_25.853-1.pdf" chunk_id="f6d3d80a-1f43-4219-8dcf-ad33db62e5c4" kb_id="acdf013d-971b-42c3-b6ca-cf09157c9215" />。

@@ -41,6 +41,39 @@ type internalRAGImporter interface {
 	ImportInternalRAG(context.Context, string, *types.InternalRAGImportRequest) (*types.InternalRAGImportResult, error)
 }
 
+type existingChunksEnricher interface {
+	EnrichExistingChunks(context.Context, string, *types.ExistingChunksEnrichRequest) ([]types.ExistingChunksEnrichResult, error)
+}
+
+// EnrichExistingChunks schedules only Wiki/graph generation from saved chunks.
+func (h *KnowledgeHandler) EnrichExistingChunks(c *gin.Context) {
+	_, kbID, tenantID, permission, err := h.validateKnowledgeBaseAccess(c)
+	if err != nil {
+		c.Error(err)
+		return
+	}
+	if permission != types.OrgRoleAdmin && permission != types.OrgRoleEditor {
+		c.Error(errors.NewForbiddenError("No permission to enrich knowledge"))
+		return
+	}
+	var req types.ExistingChunksEnrichRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.Error(errors.NewBadRequestError(err.Error()))
+		return
+	}
+	enricher, ok := h.kgService.(existingChunksEnricher)
+	if !ok {
+		c.Error(errors.NewInternalServerError("existing chunk enrichment unavailable"))
+		return
+	}
+	result, err := enricher.EnrichExistingChunks(types.WithExecutionTenant(c.Request.Context(), tenantID), kbID, &req)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"success": false, "error": err.Error(), "data": result})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"success": true, "data": result})
+}
+
 // NewKnowledgeHandler creates a new knowledge handler instance
 func NewKnowledgeHandler(
 	cfg *config.Config,

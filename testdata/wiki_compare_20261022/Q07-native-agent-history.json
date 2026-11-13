@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "23c08878-606d-48da-bdf0-b043fe0195ab",
+    "request_id": "5cc61aa0-97a6-4e0d-8f6e-73516205a1fa",
+    "session_id": "b64664db-fa31-41fb-b3d5-3b3aefe36552",
+    "role": "user",
+    "content": "客舱翻新同时涉及旧内饰板加新涂层，以及安装可充电锂电池。项目经理准备采用“所有部件只做一次 60 秒垂直燃烧”作为整项改装的防火证明。依据所给文件，这个统一方案缺少什么边界？",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:35:45.731994+00:00",
+    "updated_at": "2026-10-22T06:35:45.735851+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "1254360f-6ed1-43f9-9ca4-4eba49caf83f",
+    "request_id": "5cc61aa0-97a6-4e0d-8f6e-73516205a1fa",
+    "session_id": "b64664db-fa31-41fb-b3d5-3b3aefe36552",
+    "role": "assistant",
+    "content": "## 结论\n\n按所给文件（只有 AC 20-184 涉及本题；AC 20-182A 是机载气象雷达，与客舱防火无关），这个“所有部件一次 60 秒垂直燃烧”的方案的真正问题在于缺少**四条边界**，并非少做了一项试验；它把“材料级的一个试验”当成了“整项改装的系统级证明”。\n\n---\n\n## 1. 对象边界：内饰板和锂电池不是同一个东西，不能共用一套证明\n\n**内饰板与加涂层**：AC 20-184 只是把舱内可燃性列为适用条款（§§23/25/27/29.853“Compartment Interiors (Flammability)”），并要求“对材料进行试验”<kb doc=\"AC_20-184.pdf\" chunk_id=\"76b55f3a-ae90-47f5-a9a9-2fd39067a0f0\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。它给出的可接受符合性方法是：通过 DOT/FAA/AR-00/12《飞机材料防火测试手册》来表明符合 14 CFR part 25 附录 F<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。也就是说，这是**按材料或部位适用附录 F 的相应部分**做的材料级验证，并非只做一次垂直燃烧。附录 F 体系包含多个部分，AC 20-184 自己就单独点到了“第 VI 部分”（热、声绝缘材料暴露时的 §25.856(a)、修正案 25-111 及以后）<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"0e7ac612-945c-43a3-a260-731641925b67\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。用 60 秒垂直燃烧一项去覆盖“所有部件”，等于抹掉了这个“按材料、按部位、按附录 F 分部”的适用性判断。\n\n**锂电池**：它在文件里不是“内饰材料”类对象。AC 20-184 要求电池满足 §§23/25/27/29.853、.863 和 §25.869<citation> 之外<kb doc=\"AC_20-184.pdf\" chunk_id=\"76b55f3a-ae90-47f5-a9a9-2fd39067a0f0\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />，还要求电池与电池系统的**内外材料**满足 §.863(a)–(d)<kb doc=\"AC_20-184.pdf\" chunk_id=\"b1f450a0-02c5-47e0-8803-9bcf0b9215ff\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；其符合性路径是 DO-347/DO-311 的一组试验，包括flammability 设计章节、热失控包容试验、过充（有/无保护）、短路（有/无保护）、绝缘电阻、深度放电、电池排放等<kb doc=\"AC_20-184.pdf\" chunk_id=\"fec87123-99a7-4407-bf55-6bc6cc5fbe89\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"82784282-5e75-466f-b994-497abb730d5e\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。60 秒垂直燃烧对这些条目一项都不覆盖。\n\n> 需要指出的一个事实：AC 20-184 全文并没有出现“60 秒垂直燃烧”这个具体试验名目，它只以“14 CFR part 25 附录 F”的整包形式出现<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。所以方案的第一步就缺一个“引用依据与适用分部”的边界。\n\n## 2. 条款边界：防火不等于材料烧不烧\n\n表 1 把与锂电池安装相关的防火类条款分开列出：§§23/25/27/29.831（通风——烟与毒性）、§§.853（舱内可燃性）、§§.863（可燃液体防火）、§25.869（防火系统）<kb doc=\"AC_20-184.pdf\" chunk_id=\"84ecee50-6513-4ed3-9342-6d1377746298\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"aeb95788-2638-4295-a658-42370cc67cf9\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。锂电池还有一整套特殊条件（防爆、防止自持温压升高、爆炸性/毒性气体不得危险积聚、短路最大热量、充电速率控制、荷电状态告警等），这些都不是材料燃烧试验能证明的。仅用 60 秒垂直燃烧去覆盖，会漏掉烟与毒性、可燃液体、防火系统以及特殊条件这一整层。\n\n## 3. 尺寸与 MOC 路径边界：电池按 Wh 分档，路径不同\n\nAC 20-184 附录 A 表 A-1 按瓦时划分档位（单电芯与多电芯阈值不同：很小 <2 Wh；小/中 2–60 Wh 和 2–300 Wh；大 ≥60 Wh 和 ≥300 Wh），并按档指定路径：很小电池若已满足 UL 1642、UL 2054 或 IEC 62133 则**无需进一步试验**；小/中走附录 E（DO-347 MOPs）；大走附录 F（DO-311 + DO-347 选定章节）。附录 E 与附录 F 都要求向 ACO 提交表明符合各项特殊条件的设计特征清单和按标准编号、修订版、发布日期、试验编号列出的分析与试验清单<kb doc=\"AC_20-184.pdf\" chunk_id=\"fec87123-99a7-4407-bf55-6bc6cc5fbe89\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"82784282-5e75-466f-b994-497abb730d5e\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。一套统一试验把“按容量分档、按档选路径”这个边界完全抹掉了：既可能对很小电池做了多余试验，也可能对大型电池漏掉了必需的路径。\n\n## 4. 基线与增量边界：这是“旧板加新涂层”最要命的一条\n\n文件对“沿用既有数据”只给了一种严格受限的逻辑：设备若有 TSO，TSO MOPS 下的试验可用于表明符合适航要求（须提供试验报告）；**只有当 TSO 试验与装机要求之间存在差异（delta）时**，才按关键性和机上位置，仅做必要的增量试验<kb doc=\"AC_20-184.pdf\" chunk_id=\"0ec9bdda-82bd-4103-949f-c3f631ae9c9b\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"6058d83e-b78c-4607-8832-1e077efeb32c\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n反过来读：涂层加在旧板上，改变的是**成品材料状态**，因此必须先确定基线，再判定“哪些特性构成了差异、哪些原鉴定结论仍然成立”。这属于要逐项界定的增量评估，不能靠一次试验统一代表全部；而且文件里没有任何条款允许用一次材料试验替代全部部件的符合性说明。\n\n## 5. 效力边界：AC 不是规章，方案本身也不能当作批准\n\nAC 20-184 明确“not mandatory and does not constitute a regulation”，只是指导并给出一种符合性方法<kb doc=\"AC_20-184.pdf\" chunk_id=\"0288b983-df13-44b5-b33f-b98320fb9585\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；强制要求来自适用的 14 CFR 条款和主管当局针对具体产品施加的特殊条件。相应地，认证计划、试验计划与结果都要尽早与负责的 ACO 协调，地面试验未覆盖的条件还可能需要飞行试验。把“一次 60 秒垂直燃烧”写成“整项改装的防火证明”，在效力上就站不住。\n\n---\n\n## 建议怎么拆\n\n| 符合性包 | 依据 | 关键动作 |\n|---|---|---|\n| 内饰板（含新涂层） | §.853、part 25 附录 F（DOT/FAA/AR-00/12 为可接受方法）<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> | 明确材料/部位对应的附录 F 分部；对“涂覆后成品状态”验证；按 delta 逻辑界定原鉴定是否仍成立<kb doc=\"AC_20-184.pdf\" chunk_id=\"6058d83e-b78c-4607-8832-1e077efeb32c\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| 锂电池系统 | §.853、.863、25.869<kb doc=\"AC_20-184.pdf\" chunk_id=\"76b55f3a-ae90-47f5-a9a9-2fd39067a0f0\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；特殊条件第4项<kb doc=\"AC_20-184.pdf\" chunk_id=\"b1f450a0-02c5-47e0-8803-9bcf0b9215ff\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；按 Wh 档走附录 E/F<kb doc=\"AC_20-184.pdf\" chunk_id=\"82784282-5e75-466f-b994-497abb730d5e\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> | DO-160G 环境鉴定、DO-347/DO-311 试验（含热失控包容、过充、短路、排放）、系统安全评估、ICA |\n| 整机层面 | §.831 烟与毒性、§.863、§25.869<kb doc=\"AC_20-184.pdf\" chunk_id=\"84ecee50-6513-4ed3-9342-6d1377746298\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"aeb95788-2638-4295-a658-42370cc67cf9\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> | 说明火灾/烟雾对结构与关键系统的保护，而非单件材料自证 |\n\n一句话回答：缺的是**“对象（材料与电池系统）、条款（.831、.853、.863、.869 加特殊条件）、规模（Wh 分档与附录 E、F）、基线（delta 与增量试验）”这四重边界**；60 秒垂直燃烧在其中只占“内饰材料、附录 F 某一分部”这一小格。\n\n相关页面：[[entity/faa-ac-20-184|FAA 咨询通告 AC 20-184]]、[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]]、[[concept/lithium-battery-size-categories-watt-hours|锂电池瓦时容量分类与尺寸类别]]、[[concept/lithium-battery-environmental-qualification-testing|锂电池环境鉴定与测试要求]]。",
+    "knowledge_references": [],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:35:47.6183449+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_FBQsZjV1XI9ReLACjeAq1557",
+            "args": {
+              "query": "60 秒垂直燃烧|vertical burn|lithium battery|锂电池|内饰板"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/rtca-do-311": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-347": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-160g": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/gouwang-kongzhi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/aeh-sheji-baozheng": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-health-monitoring": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/f778243a-0889-4443-b715-cc6cd84d9cdc": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-system-safety-assessment": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-size-categories-watt-hours": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/aircraft-rechargeable-lithium-battery-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-thermal-runaway-failure-hazards": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-environmental-qualification-testing": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/instructions-for-continued-airworthiness-lithium-battery": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-maintenance-replacement-storage-handling": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/aircraft-rechargeable-lithium-battery-installation-certification": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"60 秒垂直燃烧|vertical burn|lithium battery|锂电池|内饰板\">\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]]</link>\n<type>entity</type>\n<aliases>RTCA DO-311, DO-311</aliases>\n<summary>本页整理 RTCA DO-311《可充电锂电池系统最低运行性能标准》的发布信息、2008年3月13日版本，以及 FAA AC 20-184 在环境鉴定与附录F大型锂电池符合性方法中引用该标准的具体章节。</summary>\n<match_snippet>... # RTCA DO-311《可充电锂电池系统最低运行性能标准》 RTCA DO-311《可充电锂电池系统最低运行性能标准》（Minimum Operation ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]]</link>\n<type>entity</type>\n<aliases>RTCA DO-347, DO-347</aliases>\n<summary>RTCA DO-347是2013年12月18日发布的小型和中型可充电锂电池及电池系统认证测试指南，FAA AC 20-184将其设计与测试章节列为可接受符合性方法。</summary>\n<match_snippet>... # RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》 RTCA DO-347 的英文标题为 *Certification Test Guidanc ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]]</link>\n<type>entity</type>\n<aliases>机载锂电池, 可充电锂电池及电池系统</aliases>\n<summary>本页依据FAA AC 20-184，汇总机载可充电锂电池系统的定义、用途、热失控危害、安装认证、环境鉴定、系统安全评估与维护运行要求。</summary>\n<match_snippet>... # 机载可充电锂电池系统 FAA 咨询通告 AC 20-184（2015-10-15）将安装在飞机上的可充电锂电池及电池系统简称为“锂电池 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/aircraft-rechargeable-lithium-battery-installation-certification|机载可充电锂电池安装认证与符合性方法]]</link>\n<type>concept</type>\n<aliases>锂电池安装MOC, 锂电池安装认证</aliases>\n<summary>本页依据FAA AC 20-184（2015-10-15）梳理机载可充电锂电池安装的认证流程、符合性检查单、特殊条件及小型/中型与大型电池的MOC路径与提交内容。</summary>\n<match_snippet>... # 机载可充电锂电池安装认证与符合性方法 本页内容依据美国联邦航空管理局咨询通告 AC No: 20-184《Guidance on Te ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-health-monitoring|锂电池健康监控]]</link>\n<type>concept</type>\n<aliases>健康监控, 电池健康监测, 充电/监控系统可靠性</aliases>\n<summary>依据FAA AC 20-184第2.7节与第3.1.6节，说明机载锂电池在储存、测试和认证中的健康监控考虑，以及充电/监控系统维护检查应遵循制造商建议。</summary>\n<match_snippet>... # 锂电池健康监控 [[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]（AC No: 20-18 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-environmental-qualification-testing|锂电池环境鉴定与测试要求]]</link>\n<type>concept</type>\n<aliases>环境试验, 环境鉴定试验</aliases>\n<summary>本页依据FAA AC 20-184，说明机载可充电锂电池环境鉴定与测试的适用标准、试验范围、地面与飞行试验，以及按电池尺寸划分的符合性测试路径。</summary>\n<match_snippet>... # 锂电池环境鉴定与测试要求 [[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]（AC No: ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-size-categories-watt-hours|锂电池瓦时容量分类与尺寸类别]]</link>\n<type>concept</type>\n<aliases>锂电池尺寸类别, 瓦时容量分类</aliases>\n<summary>本页依据FAA AC 20-184附录A表A-1，说明以瓦时（Wh）划分的非常小、小/中、大三类机载可充电锂电池尺寸类别及其对应的可接受符合性方法。</summary>\n<match_snippet>... # 锂电池瓦时容量分类与尺寸类别 FAA AC 20-184（2015-10-15）附录A标题为“以瓦时（Wh）定义锂电池及电池 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-maintenance-replacement-storage-handling|锂电池维护、更换、存储与操作]]</link>\n<type>concept</type>\n<aliases>锂电池维护, 电池存储与操作</aliases>\n<summary>本页汇总FAA AC 20-184第3章关于锂电池维护、更换、存储与操作的指导，包括维护考虑因素、检查项目、更换要求、储存搬运注意事项及持续适航文件中的维护要求。</summary>\n<match_snippet>... # 锂电池维护、更换、存储与操作 AC 20-184（AC No: 20-184，2015-10-15）第3章给出飞机锂电池系统 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-system-safety-assessment|锂电池系统安全评估]]</link>\n<type>concept</type>\n<aliases>系统安全评估, SSA</aliases>\n<summary>本页依据FAA AC 20-184（2015-10-15）第2.4节，整理机载可充电锂电池系统安全评估的目的、须覆盖的八项内容、与FAA协调及与其他安全分析（FHA、FTA、FMEA）的关系。</summary>\n<match_snippet>... # 锂电池系统安全评估 ## 依据与性质 本页内容来自[[entity/faa-ac-20-184|FAA咨询通告AC 20- ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-thermal-runaway-failure-hazards|锂电池热失控与失效危害]]</link>\n<type>concept</type>\n<aliases>热失控, 锂电池失效危害</aliases>\n<summary>本页依据 FAA AC 20-184（2015-10-15），说明锂电池热失控的定义、过充过放等失效模式及其火灾、爆炸和有毒气体后果，并列出相关特殊条件防护要求。</summary>\n<match_snippet>... # 锂电池热失控与失效危害 FAA AC 20-184（2015-10-15）指出，锂电池具有高能量含量和潜在热不稳定性；若设计 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 45
+          },
+          {
+            "id": "call_01_dmGhVTSp8R6AsghCmMbS3939",
+            "args": {
+              "query": "AC 20-184|AC 20-182"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/rtca-do-311": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-347": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-160g": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/gouwang-kongzhi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/aeh-sheji-baozheng": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/jiguang-shihang-anzhuang": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-health-monitoring": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/813acfd3-492b-45fb-8705-d46a0ccbf984": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/f778243a-0889-4443-b715-cc6cd84d9cdc": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-system-safety-assessment": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-size-categories-watt-hours": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/aircraft-rechargeable-lithium-battery-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-environmental-qualification-testing": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/instructions-for-continued-airworthiness-lithium-battery": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-maintenance-replacement-storage-handling": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/aircraft-rechargeable-lithium-battery-installation-certification": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"AC 20-184|AC 20-182\">\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]</link>\n<type>entity</type>\n<aliases>AC 20-184, AC 20-184咨询通告</aliases>\n<summary>本页整理FAA咨询通告AC 20-184（2015-10-15）关于机载可充电锂电池及电池系统测试与安装的可接受符合性方法、认证范围、Wh分级、维护与定义，并标注附录截断与解析疑点。</summary>\n<match_snippet>... # FAA咨询通告AC 20-184 FAA咨询通告AC 20-184（Advisory Circular，AC No: 20-184）的主题为 “Gui ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/instructions-for-continued-airworthiness-lithium-battery|持续适航文件]]</link>\n<type>concept</type>\n<aliases>ICA, 持续适航说明</aliases>\n<summary>本页依据 FAA AC 20-184（2015-10-15）第2.9节及相关附录，整理机载锂电池持续适航文件（ICA）的认证基础、必须与建议包含的内容、适航限制部分以及特殊条件第9项的可接受符合性方法。</summary>\n<match_snippet>... # 持续适航文件 FAA AC 20-184（AC No: 20-184，2015-10-15）第2.9节规定，在锂电池认证过程中，应按产品认证基础适用的下列文件完 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]]</link>\n<type>entity</type>\n<aliases>RTCA DO-311, DO-311</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... rgeable Lithium Battery Systems）由 RTCA 发布，规定可充电锂电池系统的最低运行性能。AC 20-184 引用的版本为 2008 年 3 月 13 日版或最新修订版（AC 20-184 §2.3.1.1.3，第 2-4 页） ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]]</link>\n<type>entity</type>\n<aliases>RTCA DO-347, DO-347</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 2，第2-4页）。该文件由 RTCA 发布，针对小型和中型可充电锂电池及电池系统提供认证测试指南。 ## 在 FAA AC 20-184 中的引用 AC 20-184 提供表明装机可充电锂电池及电池系统符合适航要求的可接受方法，所依据的标准来自 RTCA ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-160g|RTCA/DO-160G《机载设备环境条件和试验程序》]]</link>\n<type>entity</type>\n<aliases>RTCA/DO-160G, DO-160G</aliases>\n<summary>本页说明RTCA/DO-160G《机载设备环境条件和试验程序》是由RTCA发布的机载设备环境条件与试验程序标准，2010年12月8日版，并被FAA AC 20-184列为机载锂电池系统应满足的环境鉴定标准之一。</summary>\n<match_snippet>... for Airborne Equipment）是由RTCA发布、用于机载设备环境条件与试验程序的标准。 ## 版本 AC 20-184（AC No: 20-184，2015-10-15）引用该标准的版本日期为2010年12月8日（December 8, ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]]</link>\n<type>entity</type>\n<aliases>机载锂电池, 可充电锂电池及电池系统</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 机载可充电锂电池系统 FAA 咨询通告 AC 20-184（2015-10-15）将安装在飞机上的可充电锂电池及电池系统简称为“锂电池”（§1.1.3，第1-1页）。该通告提供可 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/aircraft-rechargeable-lithium-battery-installation-certification|机载可充电锂电池安装认证与符合性方法]]</link>\n<type>concept</type>\n<aliases>锂电池安装MOC, 锂电池安装认证</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-health-monitoring|锂电池健康监控]]</link>\n<type>concept</type>\n<aliases>健康监控, 电池健康监测, 充电/监控系统可靠性</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 锂电池健康监控 [[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]（AC No: 20-184，2015-10-15）在第2.7节中给出机载锂电池健康监控的相关内容，并在第3.1.6 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-environmental-qualification-testing|锂电池环境鉴定与测试要求]]</link>\n<type>concept</type>\n<aliases>环境试验, 环境鉴定试验</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 锂电池环境鉴定与测试要求 [[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]（AC No: 20-184，2015-10-15）提供机载可充电锂电池及电池系统安装的可接受符合性方法。该咨询通告 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-size-categories-watt-hours|锂电池瓦时容量分类与尺寸类别]]</link>\n<type>concept</type>\n<aliases>锂电池尺寸类别, 瓦时容量分类</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 锂电池瓦时容量分类与尺寸类别 FAA AC 20-184（2015-10-15）附录A标题为“以瓦时（Wh）定义锂电池及电池系统尺寸”，其表A-1列出“装机非常小、小、中和大尺 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 48
+          }
+        ],
+        "reasoning_content": "The user asks about aircraft cabin refurbishment: retrofitting interior panels with new coatings, and installing rechargeable lithium batteries. They want to know what boundaries the \"single 60-second vertical burn test for all parts\" approach lacks, based on the provided documents (AC 20-184.pdf and AC 20-182A.pdf).\n\nLet me search the wiki."
+      },
+      {
+        "thought": "",
+        "iteration": 1,
+        "timestamp": "2026-10-22T14:35:50.9665417+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_bx4IJIXxEQFmTPhHMRnU6262",
+            "args": {
+              "query": "内饰|涂层|阻燃|flammability|25\\.853|燃烧试验"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/rtca-do-347": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/jiguang-leibie": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/gouwang-kongzhi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/fda-chayi-pizhun": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/nohd-yu-mpe-jisuan": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/xitong-anquan-fenxi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/anzhuang-xinghao-sheji": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/jiguang-shihang-anzhuang": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/jinyong-jiguang-gongneng": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/feiji-jiekou-anquan-liansuo": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/feiji-feixing-shouce-buchong": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/bukejian-guangpu-jiguang-shebei": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/813acfd3-492b-45fb-8705-d46a0ccbf984": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/f778243a-0889-4443-b715-cc6cd84d9cdc": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-size-categories-watt-hours": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/aircraft-rechargeable-lithium-battery-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/instructions-for-continued-airworthiness-lithium-battery": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"3\" query=\"内饰|涂层|阻燃|flammability|25\\.853|燃烧试验\">\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]]</link>\n<type>entity</type>\n<aliases>RTCA DO-347, DO-347</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... n of Cell Failure Effects - 1.5.4 Battery Emissions - 1.5.5 Flammability - 1.5.6 Instructions for Continued Airworthiness - 1.5.7 En ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/jiguang-shihang-anzhuang|激光适航安装]]</link>\n<type>concept</type>\n<aliases>Laser Airworthiness Installation</aliases>\n<summary>本页依据FAA咨询通告AC 20-183（2014-12-15）梳理机载非必需不可见光谱激光设备的适航安装方法，涵盖审批步骤、系统安全分析、NOHD/MPE计算、AFMS与ICA要求及公共用途禁用配置。</summary>\n<match_snippet>... ） 除本专门的激光安装指导外，安装还必须满足所有其他适用适航要求，例如涉及电气系统容量、电路保护、闪电直接效应、防冰、阻燃性、环境鉴定（如辐射发射、坠撞安全、振动和温度）、飞行与操纵特性变化（如阻力、失速、最大和最小空速、配平）、振动、结构、 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[summary/813acfd3-492b-45fb-8705-d46a0ccbf984|AC_20-183.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本页面总结FAA AC 20-183（2014-12-15），概述不可见光谱激光设备在航空器上的适航安装、FDA差异批准、系统安全分析与运行限制。</summary>\n<match_snippet>... 适航批准的方法。它仅涉及激光设备方面的适航安装要求，不是机载激光设备安装的全面指南；电气负载、电路保护、雷击、结冰防护、阻燃、环境鉴定、飞行特性、结构、静压/皮托系统及EWIS等其他适用要求仍须满足（§1.2、§7）。 适用对象包括飞机制造商 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 54
+          },
+          {
+            "id": "call_01_Elno48VdoAsxXE0bDUyC2694",
+            "args": {
+              "slugs": [
+                "entity/faa-ac-20-184",
+                "concept/lithium-battery-size-categories-watt-hours"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/rtca-do-311": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-347": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-160g": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/gouwang-kongzhi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-health-monitoring": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/f778243a-0889-4443-b715-cc6cd84d9cdc": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-system-safety-assessment": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-size-categories-watt-hours": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lithium-battery-environmental-qualification-testing": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/instructions-for-continued-airworthiness-lithium-battery": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]</link>\n<type>entity</type>\n<aliases>AC 20-184, AC 20-184咨询通告</aliases>\n</metadata>\n<relationships>\n<links_to>[[concept/instructions-for-continued-airworthiness-lithium-battery]] (本页依据 FAA AC 20-184（2015-10-15）第2.9节及相关附录，整理机载锂电池持续适航文件（ICA）的认证基础、必须与建议包含的内容、适航限制部分以及特殊条件第9项的可接受符合性方法。), [[entity/rtca-do-160g]] (本页说明RTCA/DO-160G《机载设备环境条件和试验程序》是由RTCA发布的机载设备环境条件与试验程序标准，2010年12月8日版，并被FAA AC 20-184列为机载锂电池系统应满足的环境鉴定标准之一。), [[entity/rtca-do-347]] (RTCA DO-347是2013年12月18日发布的小型和中型可充电锂电池及电池系统认证测试指南，FAA AC 20-184将其设计与测试章节列为可接受符合性方法。), [[entity/rtca-do-311]] (本页整理 RTCA DO-311《可充电锂电池系统最低运行性能标准》的发布信息、2008年3月13日版本，以及 FAA AC 20-184 在环境鉴定与附录F大型锂电池符合性方法中引用该标准的具体章节。), [[concept/gouwang-kongzhi]] (构型控制是AC 20-183（2014-12-15）§7.3.6对激光设备及其安装提出的构型管理要求，涵盖防止未经批准更改、全寿命周期构型保持计划以及设备被修改后的重新认证。)</links_to>\n<linked_from>[[summary/f778243a-0889-4443-b715-cc6cd84d9cdc]] (本咨询通告AC 20-184（2015-10-15）为飞机上安装可充电锂电池及电池系统提供可接受的符合性方法，涵盖认证、测试、系统安全、持续适航和维护操作指导。), [[concept/lithium-battery-system-safety-assessment]] (本页依据FAA AC 20-184（2015-10-15）第2.4节，整理机载可充电锂电池系统安全评估的目的、须覆盖的八项内容、与FAA协调及与其他安全分析（FHA、FTA、FMEA）的关系。), [[entity/rtca-do-160g]] (summary omitted, already seen), [[concept/lithium-battery-environmental-qualification-testing]] (本页依据FAA AC 20-184，说明机载可充电锂电池环境鉴定与测试的适用标准、试验范围、地面与飞行试验，以及按电池尺寸划分的符合性测试路径。), [[concept/lithium-battery-health-monitoring]] (依据FAA AC 20-184第2.7节与第3.1.6节，说明机载锂电池在储存、测试和认证中的健康监控考虑，以及充电/监控系统维护检查应遵循制造商建议。)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"f778243a-0889-4443-b715-cc6cd84d9cdc\"/>\n</sources>\n<summary>\n本页整理FAA咨询通告AC 20-184（2015-10-15）关于机载可充电锂电池及电池系统测试与安装的可接受符合性方法、认证范围、Wh分级、维护与定义，并标注附录截断与解析疑点。\n</summary>\n<content>\n# FAA咨询通告AC 20-184\n\nFAA咨询通告AC 20-184（Advisory Circular，AC No: 20-184）的主题为 “Guidance on Testing and Installation of Rechargeable Lithium Battery and Battery Systems on Aircraft”，日期为 10/15/15（2015-10-15），发起单位为 AIR-133，由设计、制造与适航分部代理经理 Susan J.M. Cabler 签署。原文表述：该咨询通告 “provides manufacturers and installers with an acceptable means of compliance to meet the installation, operation, maintenance and airworthiness requirements for installation of lithium batteries on aircraft (14 CFR part 21, 23, 25, 27 and 29)”。\n\n## 性质与适用对象\n\n- §1.1.1：该 AC 提供一种可接受的方法，用以表明机上安装的可充电锂电池及电池系统符合适航要求，所依据的标准为 RTCA DO-347 与 RTCA DO-311；并给出获得机上安装批准（installation approval）的指导（第1-1页）。\n- §1.1.2：指导对象为制造商（manufacturers）、安装者（installers）、维修人员（maintenance personnel）以及机上安装的可充电锂电池及电池系统的用户。原文明确 “As with all advisory material, this AC is not mandatory and does not constitute a regulation”，即该文件非强制、不构成规章，仅用于指导目的并列出对适用适航要求的符合性方法（第1-1页）。\n- §1.1.3：在本 AC 中，“installed rechargeable lithium batteries and battery systems” 简称 “lithium batteries”（第1-1页）。\n\n## 范围与文档结构\n\n§1.2.1：第2章适用于按14 CFR parts 23、25、27、29 批准的产品上安装的锂电池的认证，涵盖型号合格证（TC）、修订型号合格证（ATC）、补充型号合格证（STC）、修订补充型号合格证（ASTC）和零部件制造人批准（PMA）；并注明该指导 “can be used for any FAA process to approve the installation of lithium batteries”（第1-1页）。\n\n§1.2.2：第3章给出机上锂电池的维护与运行考虑；附录A 以瓦时定义电池尺寸；附录B 列出相关法规与文件；附录C 给出定义；附录D 讨论特殊条件；附录E 和F 讨论特殊条件的符合性方法（MOC）；附录G 提供锂电池符合性认证流程流程图；附录H 为 AC 反馈表（第1-1页）。\n\n| 部分 | 内容 | 页码 |\n|---|---|---|\n| 第1章 | 引言、目的、范围 | 1-1 |\n| 第2章 | 飞机上锂电池安装认证与符合性 | 2-1 |\n| 第3章 | 维护与运行考虑 | 3-1 |\n| 附录A | 以瓦时（Wh）定义锂电池及电池系统尺寸 | A-1 |\n| 附录B | 相关法规与文件 | B-1 |\n| 附录C | 术语和定义 | C-1 |\n| 附录D | 典型特殊条件及意图 | D-1 |\n| 附录E | 小型和中型锂电池的可接受符合性方法（使用RTCA DO-347 MOPs） | E-1 |\n| 附录F | 大型锂电池及电池系统的可接受符合性方法（使用RTCA DO-311及部分DO-347 MOPs测试） | F-1 |\n| 附录G | 锂电池符合性认证流程流程图 | G-1 |\n| 附录H | 咨询通告反馈信息 | H-1 |\n\n## 背景与主要危害\n\n该 AC 指出，机上可充电锂电池系统具有重量节省、单位重量与单位体积能量密度高、放电时电压相对稳定、低温性能较好和货架寿命较长等优点（§1.3.1，第1-2页）；用途包括应急照明、驾驶舱语音记录器/飞行数据记录器及其独立电源、主/备用或应急电源、APU或主起动电池，以及特殊功能电池（§1.3.1.1—§1.3.1.5，第1-2页）。\n\n文件同时强调，锂电池的高能量含量和潜在热不稳定性会带来危险；失效常导致自持性温压升高，即热失控，并可能因排出的可燃气体被高温点燃而形成火灾，未燃烧的排出气体也可能有毒（§1.3.1，第1-2页）。列出的主要失效模式包括（§1.4.2.1—§1.4.2.5，第1-3页）：\n\n- 过充：导致电池组分不稳定，电解液可能点燃，容量越大严重性越高。\n- 过放：可能造成电极腐蚀、不可逆容量损失，并可能形成枝晶，在充电时引发内部短路。\n- 可燃电解液：某些锂电池使用可燃液体电解液，可成为火源或外部火灾燃料。\n- 内部缺陷：可能在服役很久后才显现，并导致内部短路。\n- 极端温度：可能造成重大危险，必须保持在制造商推荐范围内。\n\n文件还说明，当时指导未充分覆盖锂电池的失效、运行和维护特性；装机可充电锂电池技术的在役经验有限，而过充、过放、内部电芯缺陷和电芯组分可燃性等已知安全问题已在相关行业出现（§1.4.1—§1.4.2，第1-2页）。\n\n## 安装认证与符合性方法\n\n### 认证计划与法规基线\n\n认证项目应与负责的 FAA 飞机认证办公室及主管部门协调，依据 FAA Order 8110.4（型号认证）或 FAA Order 8110.42（PMA程序）开展（§2.1，第2-1页）。认证计划应尽早提交，至少包括：项目描述与进度、系统描述及飞机接口/改装、系统安全评估计划、认证基础与符合性方法（含对适用特殊条件的逐项符合性方法）、测试计划沟通协调、符合性计划、[[concept/instructions-for-continued-airworthiness-lithium-battery|持续适航文件]]计划、符合性与验证文件（§2.2.1.1—§2.2.1.8，第2-1页）。\n\n表1（第2-2至2-3页）按“最低适用”列出法规，涉及：\n\n- 型号设计与检查：§21.31、§21.33、§21.50(b)。\n- 结构与载荷：§§23/25/27/29.301、.303、.305、.307。\n- 闪电与静电/HIRF保护：如§25.581、§§27/29.610、§§25/27/29.1316、§§25/27/29.1317。\n- 座椅、行李舱、通风（烟与毒性）、舱内可燃性、可燃液体防火：§§23/25/27/29.785、.787(b)、.831、.853、.863，以及§25.869。\n- 设备、系统与电气安装：§§23/25/27/29.1301、.1309、.1351、§§25/29.1353、§§25/29.1355、§§23/25/27/29.1357等。\n- 持续适航、标记标牌、飞行手册与运行限制/程序：§§23/25/27/29.1529、.1541、.1581、.1583、.1585等。\n\n文件特别指出：14 CFR 23/25/27/29.1353 未充分涵盖锂电池安装，因此相关主管部门将针对具体产品强制施加特殊条件，以满足等效适航要求；附录D 给出典型特殊条件及意图，附录E 和F 给出典型可接受符合性方法，各主管部门应按风险核实适用性（§2.2.2.2，第2-3页）。因此强制要求来自适用法规及特殊条件，而非该咨询通告本身。\n\n### 测试与环境鉴定\n\n机上锂电池系统应满足（§2.3.1.1，第2-3至2-4页）：\n\n- [[entity/rtca-do-160g|RTCA/DO-160G《机载设备环境条件和试验程序》]]，2010年12月8日版或最新修订版；\n- [[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]]，2013年12月18日版；\n- [[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]]，2008年3月13日版或最新修订版。\n\n确定环境测试范围和类型时，应考虑设备构型、在役平台安装特定环境、暴露持续时间、地理位置，以及环境事件单独或组合发生的频率（§2.3.1.2，第2-4页）。小型和中型电池按附录E、大型电池按附录F，表明对适航法规和主管部门施加的特殊条件的符合性（§2.3.2，第2-4页）。应进行地面试验证明装机后可安全运行，地面试验未覆盖的条件可能需要进行飞行试验（§2.3.2，第2-4页）。\n\n### 系统安全、软件与复杂电子硬件\n\n应开展系统安全评估，以表明符合§§23/25/27/29.1309 及适用特殊条件。评估应覆盖安装和使用锂电池相关的危险等级、设计保证水平、故障不干扰其他设备、系统隔离与区域分析、对机组和撤离程序的影响、防火/防烟/防电击保护、其他安全分析，以及每项要求和缓解设计特征的符合性声明（§2.4.1，第2-4至2-5页）。评估应与负责的 FAA 飞机认证办公室协调，以确定所需分析深度；协调内容应包括系统描述、系统在飞机上的安装方式描述，以及功能与关键性清单，更多指导见附录B（§2.4.2，第2-5页）。评估应覆盖电池系统、飞机接口及电池系统供电的飞机功能负载（§2.4.3，第2-5页）。\n\n软件方面，AC 20-115C《机载软件保证》给出可接受的软件符合性方法（§2.5，第2-5页）。含复杂电子硬件的锂电池硬件应遵守最新版 RTCA/DO-254 及 AC 20-152（§2.6，第2-5页）。\n\n### 健康监测与可燃性\n\n电池应按制造商建议的荷电状态和温度储存，并考虑监测电路在储存期间可能耗电；单个电芯过充可能导致热失控，因此在测试和认证中需考虑健康监测，确保维持适当荷电状态（§2.7，第2-5页）。\n\n可燃性方面，飞机电池必须满足§§23/25/27/29.853、§§23/25/27/29.863 和§25.869 的适用要求，并测试材料以证明符合性。FAA《飞机材料防火测试手册》DOT/FAA/AR-00/12 描述了符合 14 CFR part 25 Appendix F 的可接受方法；若热/声绝缘材料作为电池设备的一部分并暴露，则需满足§25.856(a)、Appendix F 第VI部分、修正案25-111 或之后版本，并参考 AC 25.856-1 的测试方法（§2.8，第2-6页）。\n\n### 持续适航文件\n\n持续适航文件应按适用认证基础完成，包括 14 CFR §21.50(b)、§§23/25/27/29.1529、§§25.1709 和 25.1729、part 23 Appendix G、part 25 Appendix H、parts 27/29 Appendix A，以及 FAA Order 8110.54（§2.9.1，第2-6页）。该文件应与飞机其他维修说明兼容；必要时包含 FAA 批准的“适航限制”部分（§2.9.2—§2.9.4，第2-6页）。\n\n持续适航文件至少应包含：锂电池安装细节和部件号、电气接线图/原理图、维护说明、测试、勤务、维修计划、检查、故障排除、拆换、修理、专用工具和设备、部件手册、[[concept/gouwang-kongzhi|构型控制]]和储存说明（§2.9.5，第2-6至2-7页）。还必须包含制造商建议的维护和检查要求，以确保安全运行所需电池持续执行预定功能，包括运行说明和设备限制、安装程序与限制、按适当间隔测量电池容量、按制造商建议更换电池的计划勤务信息，以及目视检查电池和/或充电器退化的维护要求（§2.9.6，第2-7页）。此外，应包含备件储存维护程序、按OEM维护手册更换电池的说明；单个电芯更换须经电池OEM和FAA批准，除非OEM提出并经FAA批准替代方法，否则不得在同一电池内混用不同制造商电芯（§2.9.7—§2.9.9，第2-7页）。\n\n## 维护、更换、存储与操作\n\n第3章给出维护与运行考虑。最低要求是遵循电池OEM说明，因为维护和检查要求随化学技术和物理构造而变化（§3.1，第3-1页）。影响性能的因素包括（§3.1.1—§3.1.9，第3-1至3-2页）：\n\n- 电池化学：电解液和正极材料可能高反应性，须按OEM维护手册维护。\n- 年龄：记录制造/安装日期，并在维修记录中记录电池年龄；不得超过制造商建议的使用期限。\n- 荷电状态：应确保飞机不会在电池电量不足以完成预定功能时起飞。\n- 健康状态：考虑服役时间、环境因素（过热或过冷）、观察到的故障（如负载下低电压）及制造商规定的容量、电压、内阻等性能测量。\n- 机械完整性：正确安装和连接，无物理损伤；通过电池和电池舱通风系统避免爆炸性气体积聚，并定期检查通风系统连接和方向。\n- 充电/监测系统可靠性：按制造商建议检查。\n- 车间级维护：遵循制造商建议。\n- 电池检查：检查端子及连接处腐蚀、点蚀、电弧和烧伤；检查安装不当、安装座、物理损伤及热损伤/变色。\n- 旋转库存：按制造商建议间隔进行功能检查，防止因长期储存导致电荷保持能力下降、颗粒沉降或其他损伤。\n\n更换电池时，应确保替换电池适航，参考电池制造商维护手册和飞机维护程序；持续适航文件应包含强制更换计划和定期维护建议；更换时检查电池接口腐蚀和潮气，检查电池壳体短路（如绝缘电阻测试），记录所有更换和电池到期日期，并使用该飞机应用批准的电池；深度放电可能造成不安全状况，应按制造商建议更换（§3.2.1—§3.2.8，第3-2至3-3页）。\n\n储存和操作应遵循制造商程序：记录充电日期，按建议间隔维护；保持“随时可用”电池的完整性；按尺寸和构型采取搬运和防静电措施；按制造商程序包装运输；使用前检查泄漏或变形，若有泄漏或变形不得使用；注意振动和接触氧化导致连接不良。操作注意事项包括：不得与危险或可燃材料一起储存；不得加热或焚烧；不得按普通废物处置，除非适用法规允许；不得打开、刺穿、挤压、拆解或使电池遭受物理滥用；电池可能造成致命电击，必须清晰标记；遵循所有制造商安全预防措施；运输时随附材料安全数据表（MSDS）（§3.3.1—§3.3.12，第3-3至3-4页）。\n\n## 电池尺寸（Wh）分级与对应符合性方法\n\n附录A 以瓦时（Wh）定义锂电池及电池系统尺寸，并按尺寸给出可接受符合性方法：\n\n| 能量（Wh） | 可接受符合性方法 |\n|---|---|\n| 极小型（Very Small），Wh < 2 | 极小型电池包括大多数纽扣电池。若已满足 UL 1642、UL 2054 或 IEC 62133 的要求，则无需进一步测试；否则应按下一行“小型电池”的要求进行测试（参见本AC附录E）。 |\n| 小型/中型（Small/Medium），2 ≤ Wh < 60（另一处为 2 ≤ Wh < 300） | RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》为每项特殊条件要求提供可接受符合性方法指导（参见本AC附录E）。 |\n| 大型（Large） | 参见本AC附录F；无论电池及电池系统的安装位置和预期功能如何均适用，且除附录F的测试外，还须符合所有其他适用适航要求。 |\n\n解析疑点：上述表格在摘录中“小型/中型”行同时出现 “2 ≤ Wh < 60” 与 “2 ≤ Wh < 300” 两个数值，属摘录/解析歧义，本页不推测何者为最终分级上限，使用时须核对 AC 20-184 附录A 原表。\n\n关于替代符合性方法，原文注明：当 RTCA 批准并发布 DO-311A《可充电锂电池系统最低运行性能标准》后，也可用以替代本 AC 附录E 和F 来表明对特殊条件的符合性；若希望采用该替代方法，应与主管 ACO 和主管部门协调。\n\n此外，若仅需就关键性和飞机上位置相关的增量要求进行验证，则只需进行必要的增量测试（delta tests，如有），以符合适航法规。\n\n![AC_20-184_p40_img1.jpg](resource://iQqhqg4EXl51O_0Zg9mpGg)\n\n## 附录C 术语和定义（摘录）\n\n- Airworthiness（适航）：电池或其部件符合监管当局为在空中环境中安全运行和性能所要求的全部条件和法规（附录C，第C-1页）。\n- 已完全按制造商说明或按设计文件规定准备并维护的电池（附录C，第C-1页）。\n- Service Life（使用寿命）：未放电电芯或电池的货架寿命与装机寿命之和的最大值，由设备制造商规定（附录C，第C-2页）。\n\n## 附录H 反馈信息\n\n附录H 为“Advisory Circular Feedback Information”，用于收集对本咨询通告的改进意见或建议（第H-1页）；正文亦提示可使用该 AC 末尾提供的模板提交改进或变更建议。\n\n## 截断与解析说明\n\n- 附录A 的具体Wh分级表在摘录中存在数值歧义（见上表解析疑点），本页不猜测其分级阈值。\n- 附录D—H 正文摘录未完整展开；其中附录D 涉及典型特殊条件及意图，附录E/F 分别给出小型/中型和大型锂电池的可接受符合性方法，附录G 为认证流程流程图，附录H 为反馈表。\n- 上示图片链接按原文保留，供读者对照原文图表。\n\n## 要点\n\n- AC 20-184 是 FAA 于 2015 年 10 月 15 日发布的咨询通告，提供机载可充电锂电池及电池系统测试与安装的可接受符合性方法，本身非强制、不构成规章。\n- 适用认证范围覆盖 14 CFR parts 21、23、25、27、29 下的 TC、ATC、STC、ASTC 和 PMA，并可用于任何 FAA 批准锂电池安装的流程。\n- 环境鉴定依据 RTCA DO-160G、DO-347 和 DO-311；小型/中型与大型电池分别采用附录E 和附录F 的符合性路径。\n- 14 CFR 23/25/27/29.1353 未充分涵盖锂电池安装，强制要求来自适用法规及主管部门施加的特殊条件。\n- 维护、更换、储存和操作应严格遵循电池 OEM 说明，重点关注容量/健康检查、通风、机械完整性、更换记录和安全操作。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lithium-battery-size-categories-watt-hours|锂电池瓦时容量分类与尺寸类别]]</link>\n<type>concept</type>\n<aliases>锂电池尺寸类别, 瓦时容量分类</aliases>\n</metadata>\n<relationships>\n<links_to>[[entity/rtca-do-347]] (summary omitted, already seen), [[entity/rtca-do-311]] (summary omitted, already seen)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"f778243a-0889-4443-b715-cc6cd84d9cdc\"/>\n</sources>\n<summary>\n本页依据FAA AC 20-184附录A表A-1，说明以瓦时（Wh）划分的非常小、小/中、大三类机载可充电锂电池尺寸类别及其对应的可接受符合性方法。\n</summary>\n<content>\n# 锂电池瓦时容量分类与尺寸类别\n\nFAA AC 20-184（2015-10-15）附录A标题为“以瓦时（Wh）定义锂电池及电池系统尺寸”，其表A-1列出“装机非常小、小、中和大尺寸可充电锂电池及电池系统类别符合性方法”。（附录A，表A-1，第A-1页）\n\n## 尺寸类别与电能阈值\n\n表A-1按单电芯电池与多电芯电池分别给出电能阈值：\n\n| 电池尺寸 | 单电芯电池电能（Wh）* | 多电芯电池电能（Wh）* |\n|---|---|---|\n| 非常小（Very Small） | Wh < 2 | Wh < 2 |\n| 小/中（Small/Medium） | 2 ≤ Wh < 60 | 2 ≤ Wh < 300 |\n| 大（Large） | Wh ≥ 60 | Wh ≥ 300 |\n\n*瓦时（Wh）定义为额定容量（安时，Ah）乘以电池标称电压。（表A-1，第A-1页）\n\n## 各类别的可接受符合性方法\n\n**非常小。** 非常小电池包括大多数纽扣电池。若其已满足 UL 1642、UL 2054 或 IEC 62133 的要求，则无需进一步测试；否则应按下一行“小电池”的要求进行测试（参见本咨询通告附录E）。（表A-1，第A-1页）\n\n**小/中。** [[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]]为每项特殊条件要求提供了可接受符合性方法的指导（参见本咨询通告附录E）。除附录E的测试外，还需符合所有其他适用的适航要求。需要提交符合性测试计划和结果。应按 14 CFR 23/25/27/29.1309 和 25.1709 完成适用的功能危害评估、系统安全评估、故障树分析和/或失效模式与影响分析。应尽早与航空器认证办公室协调该评估。（表A-1，第A-1页）\n\n**大。** [[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]]以及RTCA DO-347的选定章节，为每项特殊条件要求提供了可接受符合性方法的指导（参见本咨询通告附录F），无论电池及电池系统的安装位置和预定功能如何。除附录F的测试外，还需符合所有其他适用的适航要求。应按 14 CFR 23/25/27/29.1309 和 25.1709 完成系统安全评估。应尽早与航空器认证办公室协调该评估。（表A-1，第A-1页）\n\n## 替代符合性方法说明\n\n表A-1附注指出：当RTCA批准并发布DO-311A《可充电锂电池系统最低运行性能标准》后，也可使用DO-311A来表明对特殊条件的符合性，以替代本咨询通告的附录E和附录F。若希望采用该替代符合性方法，应与主管航空器认证办公室（ACO）及主管部门协调。（表A-1附注，第A-1页）\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 50
+          }
+        ],
+        "reasoning_content": "I need pages about interior panel coatings / flammability — AC 20-182A is \"Airworthiness Approval of Airborne Systems Containing High Intensity Radiated Fields\"? No, AC 20-182A is \"Airworthiness Approval of Airborne Systems Containing High Intensity Radiated Fields (HIRF)\". Hmm. Actually AC 20-182A = \"Airworthiness Approval of Airborne Systems Containing High Intensity Radiated Fields (HIRF)\". Hmm, but the document set likely covers \"flame retardant\" ... Let me search for 内饰板 / coating / 25.853 / 阻燃."
+      },
+      {
+        "thought": "",
+        "iteration": 2,
+        "timestamp": "2026-10-22T14:35:53.9175553+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_4JihDlezvRQg8n2TOIzQ5127",
+            "args": {
+              "slugs": [
+                "index"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "index": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[index|Index]]</link>\n<type>index</type>\n<aliases></aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n\n</sources>\n<summary>\n# Wiki Index\n\n本索引汇总维基当前收录的页面，并随页面新增自动更新。近期新增内容涵盖美国联邦航空管理局（FAA）多份咨询通告，涉及 AML-STC 基线数据复用与构型控制、TSO-C201 姿态航向基准系统适航批准、认证数据保留协议、机载气象雷达系统适航批准与持续适航要求，以及不可见光谱激光设备的适航安装与 FDA 差异批准、可充电锂电池及电池系统安装的可接受符合性方法、认证测试、系统安全与维护指导。\n</summary>\n<content>\n# Wiki Index\n\n本索引汇总维基当前收录的页面，并随页面新增自动更新。近期新增内容涵盖美国联邦航空管理局（FAA）多份咨询通告，涉及 AML-STC 基线数据复用与构型控制、TSO-C201 姿态航向基准系统适航批准、认证数据保留协议、机载气象雷达系统适航批准与持续适航要求，以及不可见光谱激光设备的适航安装与 FDA 差异批准、可充电锂电池及电池系统安装的可接受符合性方法、认证测试、系统安全与维护指导。\n\n## Summary (6)\n\n[[summary/06f57281-bf57-4f41-899d-1faa63603018|AC_20-179.pdf - Summary]] — 本咨询通告AC 20-179（2013-06-10）说明美国国内设计批准申请人和持有人与FAA签订认证数据保留协议的程序，界定政府记录，并规定数据范围、电子可读性、专有数据保护及协议生命周期要求。\n[[summary/aa7ee8a1-1112-4931-a85f-564ca8a49850|AC_20-180.pdf - Summary]] — 本页汇总美国联邦航空管理局2013年8月16日发布的AC 20-180咨询通告，说明通过AML-STC实现多型号基线数据复用、安装说明与ICA、EMC/闪电/HIRF评估及构型控制的方法与检查要求。\n[[summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5|AC_20-181.pdf - Summary]] — 本页汇总FAA于2014年4月7日发布的[[entity/ac-20-181|AC 20-181 咨询通告]]，介绍TSO-C201[[entity/attitude-heading-reference-system|姿态航向基准系统]]设备的适航批准补充指导、辅助源、降级模式、类别编码与运行评估。\n[[summary/bc1af029-f306-42bf-b3d1-b28235258d73|AC_20-182A.pdf - Summary]] — 本页概括FAA AC 20-182A（2016-10-01）关于[[concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun|机载气象雷达系统适航批准]]的咨询通告，涵盖风切变与湍流探测、告警显示、测试评估及持续适航要求。\n[[summary/813acfd3-492b-45fb-8705-d46a0ccbf984|AC_20-183.pdf - Summary]] — 本页面总结FAA AC 20-183（2014-12-15），概述不可见光谱激光设备在航空器上的适航安装、FDA差异批准、系统安全分析与运行限制。\n[[summary/f778243a-0889-4443-b715-cc6cd84d9cdc|AC_20-184.pdf - Summary]] — 本咨询通告AC 20-184（2015-10-15）为飞机上安装可充电锂电池及电池系统提供可接受的符合性方法，涵盖认证、测试、系统安全、持续适航和维护操作指导。\n\n## Entity (15)\n\n[[entity/ac-20-180|AC 20-180 咨询通告]] — 本页介绍 FAA 咨询通告 AC 20-180（2013年8月16日），说明 AML-STC 的目的、非强制性质、适用范围及附录 A 构型控制表格模板。\n[[entity/ac-20-181|AC 20-181 咨询通告]] — 本页汇总 FAA 咨询通告 AC 20-181（2014年4月7日）的目的、适用对象、四类补充指导领域、不涉及的 TSO-C129a 接口，以及附录 A、B、C 的构成与获取方式。\n[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]] — 本页整理FAA咨询通告AC 20-184（2015-10-15）关于机载可充电锂电池及电池系统测试与安装的可接受符合性方法、认证范围、Wh分级、维护与定义，并标注附录截断与解析疑点。\n[[entity/ac-20-179|咨询通告20-179]] — 本页整理美国联邦航空管理局咨询通告 AC 20-179（2013-06-10）的文件信息、目的、适用性、数据保留协议格式与文件获取方式，并说明其非强制性质。\n[[entity/ac-21-48|咨询通告21-48]] — 咨询通告21-48（AC 21-48）是美国联邦航空管理局关于使用电子建模系统作为主要型号设计数据的咨询通告，描述在设计、制造、安装和检查中的可接受方法，以及电子型号设计数据的访问与呈现要求。\n[[entity/tso-c201|TSO-C201技术标准规定]] — TSO-C201 是美国联邦航空管理局发布的技术标准规定，规定非万向架式姿态、航向及转弯侧滑系统（AHRS）的最低性能与适航批准要求，并涉及类别编码、降级模式与辅助源评估。\n[[entity/tso-c63e|TSO-C63e 机载气象雷达设备技术标准规定]] — TSO-C63e 是美国联邦航空管理局发布的机载气象雷达设备技术标准规定的最新版本，涵盖前视风切变探测与湍流探测等功能，并取代先前版本的相关要求。\n[[entity/rtca-do-160g|RTCA/DO-160G《机载设备环境条件和试验程序》]] — 本页说明RTCA/DO-160G《机载设备环境条件和试验程序》是由RTCA发布的机载设备环境条件与试验程序标准，2010年12月8日版，并被FAA AC 20-184列为机载锂电池系统应满足的环境鉴定标准之一。\n[[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]] — 本页整理 RTCA DO-311《可充电锂电池系统最低运行性能标准》的发布信息、2008年3月13日版本，以及 FAA AC 20-184 在环境鉴定与附录F大型锂电池符合性方法中引用该标准的具体章节。\n[[entity/rtca-do-334|RTCA DO-334]] — RTCA DO-334 是 RTCA 发布的 AHRS 最低运行性能标准，说明降级模式可支持的飞行阶段，并在第 2.2 节描述姿态、航向及转弯侧滑类别。\n[[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]] — RTCA DO-347是2013年12月18日发布的小型和中型可充电锂电池及电池系统认证测试指南，FAA AC 20-184将其设计与测试章节列为可接受符合性方法。\n[[entity/attitude-heading-reference-system|姿态航向基准系统]] — 姿态航向基准系统（AHRS）是提供姿态、航向及转弯侧滑信息的非框架式航空电子系统，本页依据 AC 20-181（2014-04-07）整理其适航批准与安装评估要点。\n[[entity/fan-ying-shi-feng-qie-bian-xi-tong|反应式风切变系统]] — 本页依据 AC 20-182A（2016年10月1日）第6.4.2节，说明反应式风切变系统与前视风切变系统并存安装时注意告警与警告告警的处理要求。\n[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]] — 本页依据FAA AC 20-184，汇总机载可充电锂电池系统的定义、用途、热失控危害、安装认证、环境鉴定、系统安全评估与维护运行要求。\n[[entity/type-certificate-data-sheet|型号合格证数据表]] — 型号合格证数据表（TCDS）是记录航空器型号合格证信息的官方数据表；本页说明其在 AC 20-180 附录 A 审定型号清单（AML）表格中的引用方式与填写要求。\n\n## Concept (56 total, showing top 20)\n\n[[concept/nohd-yu-mpe-jisuan|NOHD与MPE计算]] — 本页依据AC 20-183（2014-12-15）整理NOHD与MPE的定义、§7.3.2报告内容要求、暴露时间取值、可接受计算方法，以及AFMS与STC资料中涉及NOHD的条款。\n[[concept/eye-hazard|眼睛危害]] — 本页依据 AC 20-183（2014年12月15日）第3.3节，说明机载 FLIR 与 LIDAR 激光对飞行机组、乘客及公众的眼睛危害，包括不可见光束缺乏眨眼反射、视网膜危害波段与角膜/晶状体损伤波段及损伤程度取决于暴露剂量。\n[[concept/feiji-jiekou-anquan-liansuo|飞机接口安全联锁]] — 飞机接口安全联锁是FDA差异批准可能要求的安全联锁，通过与飞机系统接口在特定条件下禁用激光，并须纳入安装型号设计及AFMS。\n[[concept/lithium-battery-thermal-runaway-failure-hazards|锂电池热失控与失效危害]] — 本页依据 FAA AC 20-184（2015-10-15），说明锂电池热失控的定义、过充过放等失效模式及其火灾、爆炸和有毒气体后果，并列出相关特殊条件防护要求。\n[[concept/tso-c201-category-coding-and-applications|TSO-C201类别编码与应用]] — 本页依据 AC 20-181（2014-04-07）第4节整理 TSO-C201 六位类别字符串的构成，以及姿态 A1–A5、航向 H1–H11、转弯侧滑 T1–T7 各分类的含义与应用匹配要求。\n[[concept/gonggong-yongtu-hangkongqi|公共用途航空器]] — 本页说明AC 20-183（2014-12-15）第8段对公共用途航空器的界定、其不要求满足FAA适航要求的地位，以及运营人若选择保持FAA合规时的两条路径与禁用激光的相关要求。\n[[concept/fda-chayi-pizhun|FDA差异批准]] — 本页说明AC 20-183中FDA差异批准的适用情形、申请与审批角色、行政和技术控制，以及与型号设计、STC限制和构型控制的关系。\n[[concept/accessible-emission-limit|可及发射限值]] — 本页依据 AC 20-183（2014-12-15）§5.1 定义“可及发射限值”（AEL），即 FDA 在特定激光危害等级内允许的最大可及发射水平。\n[[concept/jiguang-leibie|激光类别]] — 依据 AC 20-183（2014-12-15）第6节表1，本页说明 FDA 与 IEC 激光危害类别、各类别产品危害及 AEL 定义。\n[[concept/far-23-25-27-29-863-flammable-fluid|23/25/27/29.863 可燃液体防火要求]] — 本页说明23/25/27/29.863可燃液体防火要求，以及AC 20-184中要求锂电池申请人表明符合该条款、并可用RTCA DO-347设计与测试章节作为可接受符合性方法示例的内容。\n[[concept/ahrs-aiding-sources|AHRS辅助源]] — 本页依据 AC 20-181 第2节梳理 AHRS 辅助源的定义、内部与外部安装评估，以及 GNSS、ADC、空速管和磁传感器等辅助源的设计与符合性要点。\n[[concept/operational-environment-suitability-evaluation|运行环境适应性评估]] — 本页依据 AC 20-181（2014-04-07）第 5 节，整理极区、高磁干扰、低功率设置、风速与旋翼机振动等运行环境下 AHRS 性能与限制的评估要求与可接受符合性方法。\n[[concept/degraded-mode|降级模式]] — 本页依据 AC 20-181（2014-04-07）第3章整理 TSO-C201 降级模式的定义、适用性判断、试验要求、与其他系统接口及操作说明要求。\n[[concept/qian-shi-tuan-liu-tan-ce|前视湍流探测]] — 前视湍流探测是依据飞机翼载类别与TSO-C63e对前方湍流进行检测并可分级显示的机载气象雷达功能，本页汇总 AC 20-182A（2016年10月1日）的相关背景、适用机型、显示区分与测试评估要求。\n[[concept/qian-shi-feng-qie-bian-tan-ce|前视风切变探测]] — 前视风切变探测是利用机载多普勒气象雷达在起飞、进近等阶段预测风切变，并向飞行机组提供咨询、警戒或警告的机载功能；本页依据AC 20-182A整理其激活、告警、抑制、显示与测试评估要求。\n[[concept/da-qi-wei-xie-gan-zhi|大气威胁感知]] — 本页汇总FAA AC 20-182A（2016年10月1日）第8、9.3、10.1节关于机载大气威胁感知功能的符号与显示、告警、测试评估及AFM/S记录要求。\n[[concept/lei-da-gao-jing-yu-xian-shi-yao-qiu|雷达告警与显示要求]] — 本页汇总AC 20-182A（2016年10月1日）中关于机载气象雷达告警与显示的要求，涵盖显示清晰性、颜色、告警优先级、前视风切变告警与抑制、图标显示及附录A告警等级表。\n[[concept/lei-da-tian-xian-zhao-wei-hu|雷达天线罩维护]] — 本页依据AC 20-182A（2016年10月1日）第11.2节，说明机载气象雷达天线罩维修与更换的持续适航要求：任何修理均须使天线罩恢复到雷达系统运行所需的最低性能，并引用AC 43-14与RTCA/DO-213A。\n[[concept/lei-da-xi-tong-ce-shi-yu-ping-gu|雷达系统测试与评估]] — 本页依据AC 20-182A（2016年10月1日）第9节，汇总机载气象雷达系统测试与评估的指导，包括气象雷达飞行测试、前视风切变穿透飞行与杂波抑制测试、湍流探测或大气威胁感知性能评估。\n[[concept/lei-da-fu-she-an-quan|雷达辐射安全]] — 雷达辐射安全页面依据 AC 20-182A 第5.6节，说明需记录雷达发射可能危害人员或野生动物的区域，并列出用于安全运行和最小安全距离确定的三项可接受指南。\n\n_To explore more pages under any category, use wiki_search with a query, or read a specific slug directly._\n\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 66
+          },
+          {
+            "id": "call_01_cRvfhb5FaldW0DvkfHLo4542",
+            "args": {
+              "query": "182A|182"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/tso-c63e": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/da-qi-wei-xie-gan-zhi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lei-da-fu-she-an-quan": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/qian-shi-tuan-liu-tan-ce": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lei-da-tian-xian-zhao-wei-hu": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/qian-shi-feng-qie-bian-tan-ce": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lei-da-xi-tong-ce-shi-yu-ping-gu": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/fan-ying-shi-feng-qie-bian-xi-tong": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lei-da-gao-jing-yu-xian-shi-yao-qiu": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/bc1af029-f306-42bf-b3d1-b28235258d73": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"182A|182\">\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[summary/bc1af029-f306-42bf-b3d1-b28235258d73|AC_20-182A.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本页概括FAA AC 20-182A（2016-10-01）关于[[concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun|机载气象雷达系统适航批准]]的咨询通告，涵盖风切变与湍流探测、告警显示、测试评估及持续适航要求。</summary>\n<match_snippet>... ## 文档信息 - **文件号**：AC 20-182A - **版本日期**：2016年10月1日 - **发起部门**：AIR–130 - **主题**：Airworthi ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/da-qi-wei-xie-gan-zhi|大气威胁感知]]</link>\n<type>concept</type>\n<aliases>大气威胁感知功能, 大气威胁意识</aliases>\n<summary>本页汇总FAA AC 20-182A（2016年10月1日）第8、9.3、10.1节关于机载大气威胁感知功能的符号与显示、告警、测试评估及AFM/S记录要求。</summary>\n<match_snippet>... 胁感知 大气威胁感知：通过雷达符号或显示提示冰雹、闪电等潜在大气威胁，同时不得干扰其他气象显示的机载功能（AC 20-182A，2016年10月1日，第8节、第9.3节）。 原文相应条款使用“should”表述，属该咨询通告给出的可接受符合性指 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/qian-shi-feng-qie-bian-tan-ce|前视风切变探测]]</link>\n<type>concept</type>\n<aliases>前视风切变检测</aliases>\n<summary>前视风切变探测是利用机载多普勒气象雷达在起飞、进近等阶段预测风切变，并向飞行机组提供咨询、警戒或警告的机载功能；本页依据AC 20-182A整理其激活、告警、抑制、显示与测试评估要求。</summary>\n<match_snippet>... 行机组提供咨询（Advisory）、警戒（Caution）或警告（Warning）的机载功能。以下内容依据 AC 20-182A（2016年10月1日）整理。 ## 适用范围与背景 - 该AC的指导适用于14 CFR第23、25、27、29部飞 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lei-da-xi-tong-ce-shi-yu-ping-gu|雷达系统测试与评估]]</link>\n<type>concept</type>\n<aliases>雷达测试与评估</aliases>\n<summary>本页依据AC 20-182A（2016年10月1日）第9节，汇总机载气象雷达系统测试与评估的指导，包括气象雷达飞行测试、前视风切变穿透飞行与杂波抑制测试、湍流探测或大气威胁感知性能评估。</summary>\n<match_snippet>... # 雷达系统测试与评估 本页内容来自 AC 20-182A《Airworthiness Approval for Aircraft Weather Radar Systems》（ ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/fan-ying-shi-feng-qie-bian-xi-tong|反应式风切变系统]]</link>\n<type>entity</type>\n<aliases>反应式风切变告警系统, 反应式风切变检测系统</aliases>\n<summary>本页依据 AC 20-182A（2016年10月1日）第6.4.2节，说明反应式风切变系统与前视风切变系统并存安装时注意告警与警告告警的处理要求。</summary>\n<match_snippet>... 机载前视风切变系统并存安装的反应式风切变告警/检测系统。 ## 与前视风切变系统并存时的告警要求 依据 AC 20-182A（2016年10月1日）第6.4.2节： - 若在已安装反应式风切变系统的飞机上安装前视风切变系统，应确保反应式风切变 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lei-da-gao-jing-yu-xian-shi-yao-qiu|雷达告警与显示要求]]</link>\n<type>concept</type>\n<aliases>气象雷达显示与告警, 雷达显示与告警要求</aliases>\n<summary>本页汇总AC 20-182A（2016年10月1日）中关于机载气象雷达告警与显示的要求，涵盖显示清晰性、颜色、告警优先级、前视风切变告警与抑制、图标显示及附录A告警等级表。</summary>\n<match_snippet>... # 雷达告警与显示要求 本页内容对应 FAA 咨询通告 AC 20-182A《Airworthiness Approval for Aircraft Weather Radar Systems》（ ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/qian-shi-tuan-liu-tan-ce|前视湍流探测]]</link>\n<type>concept</type>\n<aliases>前视湍流检测, 前方湍流探测</aliases>\n<summary>前视湍流探测是依据飞机翼载类别与TSO-C63e对前方湍流进行检测并可分级显示的机载气象雷达功能，本页汇总 AC 20-182A（2016年10月1日）的相关背景、适用机型、显示区分与测试评估要求。</summary>\n<match_snippet>... 前视湍流探测是依据飞机翼载类别和 TSO-C63e 对前方湍流进行检测，并可分级显示的机载气象雷达功能（AC 20-182A，2016年10月1日）。 ## 背景 - 2012年2月之前，FAA 使用 Airborne Turbulence ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun|机载气象雷达系统适航批准]]</link>\n<type>concept</type>\n<aliases>机载气象雷达适航批准, 气象雷达系统适航认证</aliases>\n<summary>本页依据 FAA 咨询通告 AC 20-182A（2016年10月1日）说明机载气象雷达系统初始及后续适航批准的目的、适用范围、批准途径、测试与评估、AFM/S 与持续适航说明要求。</summary>\n<match_snippet>... # 机载气象雷达系统适航批准 ## 文件信息 - 文件号：AC 20-182A - 版本日期：2016年10月1日（Date: 10/1/16） - 发起部门：AIR–130 - 主题：Airwor ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lei-da-tian-xian-zhao-wei-hu|雷达天线罩维护]]</link>\n<type>concept</type>\n<aliases>气象雷达天线罩维修, 雷达罩修复, 天线罩更换</aliases>\n<summary>本页依据AC 20-182A（2016年10月1日）第11.2节，说明机载气象雷达天线罩维修与更换的持续适航要求：任何修理均须使天线罩恢复到雷达系统运行所需的最低性能，并引用AC 43-14与RTCA/DO-213A。</summary>\n<match_snippet>... # 雷达天线罩维护 本文内容对应 AC 20-182A（版本日期 2016年10月1日）第11.2节，属于持续适航说明（ICA）中关于机载气象雷达天线罩维修与更换的部分。 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lei-da-fu-she-an-quan|雷达辐射安全]]</link>\n<type>concept</type>\n<aliases>气象雷达辐射安全, 机载气象雷达辐射安全</aliases>\n<summary>雷达辐射安全页面依据 AC 20-182A 第5.6节，说明需记录雷达发射可能危害人员或野生动物的区域，并列出用于安全运行和最小安全距离确定的三项可接受指南。</summary>\n<match_snippet>... 全 雷达辐射安全涉及记录雷达发射可能对人员或野生动物造成危害的区域，并确定安全雷达运行及最小安全距离。 AC 20-182A 第5.6节指出，应记录任何雷达发射可能危害人员或野生动物的区域。以下三项标准提供了安全雷达运行和确定最小安全距离的可接 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 60
+          }
+        ],
+        "reasoning_content": "Now I need the interior panel / coating part. AC 20-182A — what is it? Let me check the wiki for it. Search returned nothing for AC 20-182A page. Let me search \"182A\" or check the summary pages res://. Also the second document d2 = AC_20-182A.pdf. Let's read the index page."
+      },
+      {
+        "thought": "",
+        "iteration": 3,
+        "timestamp": "2026-10-22T14:36:04.3370029+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_aHSK64rd1mjkj5EIFDzj5249",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "flammability 25.853 vertical burn"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "flammability 25.853 vertical burn",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [],
+                "truncated": false,
+                "match_count": 0,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 0,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 0/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 89
+          },
+          {
+            "id": "call_01_22UladpKa2qGPdRCj4Ie9757",
+            "args": {
+              "slugs": [
+                "concept/far-23-25-27-29-863-flammable-fluid",
+                "entity/aircraft-rechargeable-lithium-battery-system"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/rtca-do-311": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-347": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-160g": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/aeh-sheji-baozheng": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/far-23-25-27-29-863-flammable-fluid": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/f778243a-0889-4443-b715-cc6cd84d9cdc": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/aircraft-rechargeable-lithium-battery-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/instructions-for-continued-airworthiness-lithium-battery": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/far-23-25-27-29-863-flammable-fluid|23/25/27/29.863 可燃液体防火要求]]</link>\n<type>concept</type>\n<aliases>23/25/27/29.863, 863条款</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"f778243a-0889-4443-b715-cc6cd84d9cdc\"/>\n</sources>\n<summary>\n本页说明23/25/27/29.863可燃液体防火要求，以及AC 20-184中要求锂电池申请人表明符合该条款、并可用RTCA DO-347设计与测试章节作为可接受符合性方法示例的内容。\n</summary>\n<content>\n# 23/25/27/29.863 可燃液体防火要求\n\n23/25/27/29.863 是美国联邦航空法规中关于可燃液体排放与防火的适航要求，用于评估锂电池高能量可能作为可燃流体源的风险。\n\n## 锂电池安装中的适用性\n\nAC 20-184 指出，由于锂电池和电池系统含有高能量，可能成为可燃流体的来源，因此申请人必须表明符合 23/25/27/29.863（\"applicants must show compliance with 23/25/27/29.863\"）。\n\n## 可接受符合性方法\n\n作为锂电池和电池系统的可接受符合性方法示例，包括但不限于 RTCA DO-347 文件中的以下设计与测试章节。该示例的记录中应包含显示符合第4项要求的编号、修订版、发布日期和试验编号。\n\n上述 DO-347 章节仅为可接受符合性方法示例；强制要求来自适用的 23/25/27/29.863 条款本身及针对具体产品施加的特殊条件。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]]</link>\n<type>entity</type>\n<aliases>机载锂电池, 可充电锂电池及电池系统</aliases>\n</metadata>\n<relationships>\n<links_to>[[entity/rtca-do-160g]] (summary omitted, already seen), [[entity/rtca-do-347]] (summary omitted, already seen), [[entity/rtca-do-311]] (summary omitted, already seen), [[concept/aeh-sheji-baozheng]] (本页说明机载电子硬件（AEH）设计保证要求：当激光设备含定制AEH并可能导致第7.3.1段所述失效时，应按RTCA/DO-254开发，设计保证等级与功能失效状态分类相称。), [[concept/instructions-for-continued-airworthiness-lithium-battery]] (summary omitted, already seen)</links_to>\n<linked_from>[[summary/f778243a-0889-4443-b715-cc6cd84d9cdc]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"f778243a-0889-4443-b715-cc6cd84d9cdc\"/>\n</sources>\n<summary>\n本页依据FAA AC 20-184，汇总机载可充电锂电池系统的定义、用途、热失控危害、安装认证、环境鉴定、系统安全评估与维护运行要求。\n</summary>\n<content>\n# 机载可充电锂电池系统\n\nFAA 咨询通告 AC 20-184（2015-10-15）将安装在飞机上的可充电锂电池及电池系统简称为“锂电池”（§1.1.3，第1-1页）。该通告提供可接受的符合性方法，用于表明机载安装的可充电锂电池及电池系统满足适航要求，所依据的标准为 RTCA DO-347 和 RTCA DO-311，并给出获得安装批准的指导（§1.1.1，第1-1页）。第2章适用于按 14 CFR parts 23、25、27、29 批准的飞机上安装锂电池的认证，包括型号合格证（TC）等批准（§1.2.1）。\n\n## 定义\n\n- **电池（Battery）**：一个或多个电气连接的电池单元，组装在具有正、负端子的单一容器中；电池可包括单元间连接器以及保护和其他装置（§C.1.4）。\n- **电池系统（Battery System）**：一个或多个电气连接的电池，为设备提供电力；电池系统可包括充电器、控制电路以及监测电池温度、电池状态和电流的装置，以及系统测试和相关功能（§C.1.5）。\n- **一次（不可充电）与二次（可充电）电池**：使用后即丢弃的称为一次或不可充电电池；可重复使用的称为二次或可充电电池（§C.1.9）。\n\n## 用途与技术特点\n\n锂电池安装于各种飞机类型并服务于各种用途；其尺寸、化学体系、制造工艺和复杂程度各不相同（§1.3.1，第1-2页）。锂电池的优点包括减轻重量、单位重量和单位体积能量密度高、放电期间电压相对稳定、低温性能良好以及搁置寿命长（§1.3.1，第1-2页）。\n\n飞机上锂电池的用途包括但不限于（§1.3.1.1—§1.3.1.5，第1-2页）：\n\n- 应急照明；\n- 驾驶舱语音记录器、飞行数据记录器及记录器独立电源；\n- 用作备用或应急电源的主电池；\n- 辅助动力装置（APU）或主起动电池；\n- 特殊功能电池（如安装的可充电手电筒、电子设备、安全设备、航空电子设备和通信设备）。\n\n锂电池在失效与运行特性以及维护要求方面与镍镉和铅酸可充电电池有显著差异；将锂电池引入飞机应用，产生了额外的设计、安装、维护和监测要求（§1.3.2，第1-2页）。\n\n## 危害与失效特性\n\n锂电池若设计、试验、使用和/或储存不当，会带来危险；其失效常常导致热失控，即自持、不受控的压力和温度升高。热失控常因从电池排出的可燃气体被高温点燃而形成火灾；此外，未燃烧的排出电池气体可能有毒（§1.3.1，第1-2页）。\n\n目前对飞机上安装的可充电锂电池技术的在役经验有限；然而从飞机运营人到个人计算机用户、无线电话制造商和电动汽车行业的使用者均已注意到锂电池的安全问题。这些已知的潜在安全问题可能源于过充、过放、内部电池单元缺陷以及电池单元组分的可燃性；总体而言，锂电池比现有镍镉或铅酸电池明显更易发生可导致温度和压力自持升高的内部电池单元失效（即热失控）（§1.4.2，第1-2至1-3页）。FAA 的评审表明，现有指导未充分涵盖可能影响飞机锂电池安装安全性和可靠性的失效、运行和维护特性（§1.4.1，第1-2页）。\n\n## 安装认证\n\n**认证协调。** 应与负责的FAA飞机认证办公室（ACO）及主管部门协调认证项目，按 FAA Order 8110.4《型号认证》或 FAA Order 8110.42《部件制造商批准程序》开展（§2.1，第2-1页）。\n\n**法规基线。** 锂电池安装必须满足产品的所有适用适航规章以及主管部门施加的任何适用特殊条件；这些安装还应至少满足本章指导及表1中的适航规章（§2.2.2.1，第2-2页）。表1标题为“与锂电池安装有关的法规”（第2-2页）。14 CFR 23/25/27/29.1353 未充分涵盖锂电池安装，因此具体主管部门将强制施加特殊条件，以满足 14 CFR parts 23、25、27、29 的等效适航要求（§2.2.2.2，第2-2页）。\n\n**环境鉴定。** 飞机上的锂电池系统必须满足以下环境鉴定标准（§2.3.1.1，第2-3至2-4页）：\n\n- [[entity/rtca-do-160g|RTCA/DO-160G《机载设备环境条件和试验程序》]]，2010年12月8日版或最新修订版；\n- [[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]]，2013年12月18日版；\n- [[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]]，2008年3月13日版或最新修订版。\n\n这些环境试验应代表电池系统在其寿命周期内可能遇到的条件；确定环境试验的范围和类型时，应考虑设备构型、在用平台上遇到的安装特定环境以及暴露持续时间（§2.3.1.2，第2-4页）。\n\n**试验与验证。** 小型和中型锂电池应遵循附录E，大型锂电池应遵循附录F，以表明符合适航规章的要求及主管部门施加的任何特殊条件。应进行地面试验，证明安装在飞机上的锂电池将按预期安全运行；地面试验中未证明的条件可能需要飞行试验（§2.3.2，第2-4页）。\n\n**系统安全评估。** 应进行系统安全评估，以表明符合 §§23/25/27/29.1309 及任何适用特殊条件。该评估应关注与锂电池及电池系统安装有关的问题、对人员直接（或间接）伤害的可能性、对机组功能的任何不利影响、对其他设备和系统的任何不利影响；这些影响可能来自正常运行或锂电池失效（§2.4.1，第2-4至2-5页）。评估应考虑但不限于（§2.4.1.1—§2.4.1.7，第2-4至2-5页）：\n\n- 与锂电池安装和使用有关的危害等级；\n- 基于位置和预期功能、针对性能和安全要求说明锂电池安装设计保证水平的理由；\n- 确保锂电池的任何失效不造成干扰；\n- 系统隔离与区域分析；\n- 对飞行机组和撤离程序的影响；\n- 对火灾、烟雾和电击危害的防护；\n- 适合所安装系统的其他安全分析。\n\n锂电池安装的安全评估应针对电池系统、飞机接口以及电池系统供电的飞机功能负载（§2.4.3，第2-5页）。\n\n**软件。** AC 20-115C《机载软件保证》定义了表明机载系统和设备认证中软件方面符合适用适航要求的可接受方法（§2.5，第2-5页）。**复杂电子硬件。** 任何含复杂电子硬件的锂电池硬件应遵守最新版 RTCA/DO-254《[[concept/aeh-sheji-baozheng|机载电子硬件设计保证]]指南》及 AC 20-152（§2.6，第2-5页）。\n\n**健康监测。** 锂电池应按制造商关于荷电状态和温度的建议储存；应考虑储存期间可能消耗电池的监测电路。此外，单个电池单元过充可能导致热失控；在试验和认证中需考虑锂电池的健康监测，以确保能够维持适当的荷电状态（§2.7，第2-5页）。\n\n**可燃性。** 飞机电池必须满足 §§23/25/27/29.853、23/25/27/29.863 和 25.869 的适用可燃性要求，以确保对结构和关键系统的保护；应对材料进行试验以确认满足这些要求（§2.8，第2-6页）。FAA《飞机材料防火测试手册》DOT/FAA/AR-00/12 描述了符合 14 CFR part 25 附录F的可接受方法。若热和声绝缘材料作为电池设备的一部分并暴露在外，则需满足 §25.856(a)、附录F第VI部分、修正案25-111（或之后版本）的要求（§2.8，第2-6页）。\n\n**[[concept/instructions-for-continued-airworthiness-lithium-battery|持续适航文件]]（ICA）。** 在锂电池认证过程中，应按产品认证基础完成 ICA，依据包括 14 CFR part 21.50(b)、14 CFR part 23/25/27/29.1529、14 CFR parts 25.1709 和 25.1729、14 CFR part 23 附录G（§2.9.1）。ICA 应与飞机的其他维修说明兼容（§2.9.2）。ICA 应包括但不限于锂电池安装的具体信息，包括各部件号及其他独特安装要求（§2.9.5.1），并包括：\n\n- 安装维修手册中的运行说明和设备限制（§2.9.6.1）；\n- 足以确保电池单元或电池按安装程序安装后仍满足飞机适航要求的安装程序和限制；限制必须标明安装的任何独特方面（§2.9.6.2）；\n- 按适当间隔测量电池容量的维护要求，以确保安全运行所需电池在装机期间持续满足其预定功能（§2.9.6.3）；\n- 按制造商建议更换电池的计划勤务信息（§2.9.6.4）；\n- 目视检查电池和/或充电器退化的维护和检查要求（§2.9.6.5）。\n\nICA 还应包含备件储存中锂电池的维护程序，以防止将电池更换为因长期储存而电荷保持能力下降或其他损坏的电池（§2.9.7）。ICA 必须包含基于锂电池原始设备制造商（OEM）维护手册更换电池的说明（§2.9.8）。锂电池内单个电池单元的更换必须经锂电池 OEM 和 FAA 批准；除非存在由锂电池 OEM 提出并经 FAA 批准的替代方法，否则不得在同一锂电池内混用不同制造商的电池单元（§2.9.9）。\n\n## 维护与运行考虑\n\n至少应遵循电池 OEM 的说明，因为飞机锂电池的维护和检查要求随化学技术类型和物理构造而变化（§3.1，第3-1页）。影响给定安装中锂电池性能的因素包括：\n\n- **化学体系**：锂电池使用的电解液和正极材料可能是高反应性物质，必须按 OEM 维护手册进行维护（§3.1.1，第3-1页）。\n- **年龄**：记录电池的制造和/或安装日期；在正常电池维护中，将电池年龄记录在飞机维修记录或车间维修记录中；不得使电池在使用中的时间超过锂电池制造商建议的期限（§3.1.2，第3-1页）。\n- **荷电状态**：由充放电的累积效应决定；必须实施保障措施，确保飞机不会在电池电量不足以完成锂电池预定功能时开始飞行（§3.1.3，第3-1页）。\n- **健康状态**：遵循 OEM 说明，可考虑电池在用时间、环境因素（如过热或过冷）、观察到的失效（如负载下低电压）以及制造商规定的适当电池性能测量（如容量、电压、内阻等）（§3.1.4，第3-1至3-2页）。\n- **机械完整性**：电池必须正确安装和连接，且无任何物理损伤；可通过设置电池和电池舱通风系统避免爆炸性气体聚集；应定期检查，确保通风系统按维护手册安装程序牢固连接并正确取向；遵循经批准的特定飞机和电池系统程序，以确保电池系统能够提供规定性能；通风系统应考虑飞机和电池制造商的特定安装要求（§3.1.5，第3-2页）。\n- **充电/监测系统可靠性**：按制造商建议对电池充电和监测系统进行维护检查（§3.1.6，第3-2页）。\n- **车间级维护程序**：车间程序必须遵循锂电池制造商的建议（§3.1.7，第3-2页）。\n- **电池检查**：电池失效的证据有时可通过目视检查发现；制造商建议的检查应包括但不限于：检查电池端子及所有其他连接处是否有腐蚀、点蚀、电弧和烧伤，并按需清洁；检查电池安装不当（端子螺钉、端子连接片或连接器松动）；检查电池安装座；检查物理损伤的迹象，包括热损伤/变色（§3.1.8，第3-2页）。\n- **旋转库存中的电池**：必须按制造商建议的检查间隔进行功能检查；某些失效模式可能包括电荷保持能力下降、颗粒沉降或因长期储存造成的其他损坏；旋转库存中的电池还可能要求按制造商说明进行定期勤务（§3.1.9，第3-2页）。\n\n应遵循所有制造商建议的安全预防措施和程序（§3.3.11）；运输时必须随附锂电池的材料安全数据表（MSDS）（§3.3.12）。\n\n## 按瓦时（Wh）划分的尺寸类别（附录A）\n\n表A-1给出已安装的很小、小、中、大型可充电锂电池及电池系统类别的可接受符合性方法（附录A，第A-1页）：\n\n| 电池尺寸 | 单电池电能（Wh）* | 多电池电能（Wh）* | 可接受符合性方法 |\n|---|---|---|---|\n| 很小（Very Small） | Wh < 2 | Wh < 2 | 很小电池包括多数纽扣电池。若已满足 UL 1642、UL 2054 或 IEC 62133 的要求，则无需进一步试验；否则应按下一行小型电池的要求进行试验（参见本咨询通告附录E）。 |\n| 小型/中型（Small/Medium） | 2 ≤ Wh < 60 | 2 ≤ Wh < 300 | RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》为每项特殊条件要求提供可接受符合性方法指导（参见本咨询通告附录E）。除附录E的试验外，还需符合所有其他适用适航要求。需要符合性试验计划和结果。应按 14 CFR 23/25/27/29.1309 和 25.1709 完成功能危害评估、系统安全评估、故障树分析和/或失效模式与影响分析（视适用）。应尽早与飞机认证办公室协调该评估。 |\n| 大型（Large） | Wh ≥ 60 | Wh ≥ 300 | RTCA DO-311《可充电锂电池系统最低运行性能标准》及 RTCA DO-347 的选定章节，为每项特殊条件要求提供可接受符合性方法指导（参见本咨询通告附录F），无论电池及电池系统的安装位置和预期功能如何。除附录F的试验外，还需符合所有其他适用适航要求。应按 14 CFR 23/25/27/29.1309 和 25.1709 完成系统安全评估。应尽早与飞机认证办公室协调该评估。 |\n\n*瓦时（Wh）定义为额定容量（安培小时，Ah）乘以电池标称电压。\n\n注：当 RTCA 批准并发布 DO-311A《可充电锂电池系统最低运行性能标准》后，也可用于表明符合特殊条件，以替代本咨询通告的附录E和F。如需使用该替代符合性方法，应与主管ACO和主管部门协调。\n\n## 典型特殊条件（附录D）\n\n附录D给出 parts 23、25、27、29 的典型特殊条件及其意图（附录D，第D-1至D-4页）：\n\n1. **安全温度与压力**：在任何可预见的充电或放电条件下，以及充电或电池监测系统的任何未被证明为极不可能的失效期间，必须保持安全的电池单元温度和压力；在这些失效情况下，可充电锂电池安装必须防止爆炸。意图是电池单元设计应尽量减少可预见充放电条件下自持、不受控的单元温度或压力升高的影响；该事件概率必须证明为极不可能（每1000万飞行小时1次，1×10⁻⁷）；任何失效情况下必须防止爆炸。\n2. **防止自持温压升高**：可充电锂电池的设计必须防止发生自持、不受控的温度或压力升高。意图是电池系统设计应尽量减少电池内任何失效导致的自持、不受控温度或压力升高的影响；该影响的概率必须为极不可能（每10亿飞行小时1次，1×10⁻⁹）。\n3. **爆炸性/毒性气体**：正常运行中，或电池充电系统、监测系统或电池安装的任何未被证明为极不可能的失效所排放的任何爆炸性或毒性气体，不得在飞机内以危险量积聚。意图是除通过设计的通气措施外，电池系统在正常运行期间不得排放任何爆炸性或毒性气体、烟雾或液体；电池系统应能容纳或安全释放最坏失效条件下可能发生的最大压力升高，若不能容纳最大压力，则应包含适当措施安全释放压力；排放只能通过设计的压力释放措施逸出；危险排放物在特定浓度下可能易燃、易爆、腐蚀性或毒性，安装者应与制造商合作量化并缓解其影响，并确保飞机安装与电池或电池系统在任何失效条件下可能产生的排放物和温度相容。该失效概率必须证明为极不可能（1×10⁻⁷）。\n4. **材料可燃性**：parts 23、25、27、29 的可充电锂电池安装必须满足 14 CFR 23/25/27/29.863(a) 至 (d)。意图是锂电池及电池系统的内部和外部材料应满足安装的适用认证可燃性要求，即 §§23/25/27/29.863(a) 至 (d)。\n5. **腐蚀性液体或气体**：对 Part 23，任何可充电锂电池可能逸出的腐蚀性液体或气体，不得以使飞机周围结构或任何相邻系统、设备或电气布线发生重大或更严重失效状态的方式造成损坏，依据 §23.1309(c) 及适用法规指导；对 Part 25，依据 §25.1309(b)；对 Part 27，依据 §27.1309(b) 和 (c)；对 Part 29，依据 §29.1309(b)。意图是不得因电池排放的液体或气体损坏周围结构或任何相邻系统、设备或电气布线，设计保证水平（DAL）必须满足相应 §23/25/27/29.1309 条款及任何其他适用适航规章。\n6. **短路最大热量**：每个可充电锂电池安装必须具有措施，防止电池或其单个电池单元短路期间电池可能产生的最大热量对结构或关键系统造成任何危险影响。意图是电池系统设计应尽量减少电池单元失效（例如内部电池单元短路）或电池短路导致的自持、不受控温度或压力升高的影响，并应防止该失效期间对相邻或附近结构或关键系统造成任何危险影响。\n7. **充电速率控制**：锂电池系统必须具备自动控制电池充电速率的能力，以防止电池过热或过充，并且具备以下之一：(i) 带在超温条件下自动断开电池与充电电源连接手段的电池温度感知和超温警告系统；或 (ii) 带在电池失效时自动断开电池与充电电源连接手段的电池失效感知和警告系统。意图是可充电锂电池或电池系统应具有保护功能，防止运行期间的不安全状况；监测和保护系统应自动控制电池充电速率以防止任何过充或过热，包括在该特定故障发生时自动断开充电。\n8. **荷电状态警告**：任何对飞机安全运行所必需的可充电锂电池安装，必须包含监测和警告功能，在电池荷电状态降至被认为适合飞机签派的水平以下时，向相应飞行机组成员提供指示。意图是任何使用其功能为安全运行所必需的锂电池或电池系统的飞机，都要求纳入监测和警告功能，在电池荷电状态降至被认为适合飞机签派的水平以下时向相应飞行机组成员提供准确指示。\n9. **持续适航文件中的维护要求**：§§23/25/27/29.1529 要求的持续适航文件必须包含维护要求，以确保电池按电池制造商和设备制造商规定的适当间隔充电足够，从而使锂电池及锂电池系统不会降至低于为预定应用提供飞机系统电力所需的指定安培小时水平；ICA 还必须包含备件储存中电池的维护程序，以防止将电池更换为因低荷电状态长期储存而电荷保持能力下降或其他损坏的电池；更换电池必须与 FAA 批准的制造商和件号相同；ICA 维护说明中应包含预防措施，防止误处理锂电池和锂电池系统，以免因跌落或其他破坏性方式导致短路或其他无意冲击损坏，从而造成人身伤害或财产损失。意图是 ICA 应包含维护要求以确保可充电锂电池和电池系统的正确维护和运行，必须处理上述所有要求，包括 ICA 适航限制部分中列出的任何强制性要求（如适用），并以 Order 8110.54 作为该要求符合性的指导。\n\n附录F还注明：§25.1729 要求的电气线路互连系统（EWIS）维护和检查任务，必须确保与电池和电池系统相关的 EWIS 部件足以检测为支持特殊条件第1至8项符合性而设计和安装的任何 EWIS 部件的退化。此外，“充电足够”指电池将保留足够的电荷（以安培小时表示），以确保电池单元不会受损；电池单元可能因电荷降至某一水平以下而受损，此时电池充电和保持满充的能力出现下降，且该下降大于正常运行退化可能造成的下降。\n\n## 符合性方法附录与认证流程\n\n附录E（第E-1页）为小型和中型锂电池的符合性方法，使用 RTCA DO-347 MOPs；附录F（第F-1页起）为大型锂电池及电池系统的符合性方法，使用 RTCA DO-311 及 RTCA DO-347 的部分试验。两份附录均要求向适用飞机认证办公室提供符合性数据，包括表明符合各项特殊条件要求的设计特征清单以及分析和试验清单（含标准文件编号、修订版、发布日期和试验编号），并以所列 DO-347 和/或 DO-311 设计和试验章节作为可接受符合性方法示例。\n\n附录G（第G-1页）为锂电池符合性方法认证流程的流程图，其说明包括：\n\n- I. 顶层单元是否已由 FAA 符合性检查（见 FAA Form 8120-10 和 Order 8110-4 附录4），并按 DO-311、DO-347、DO-160、DO-178 和 DO-254 等适当标准（或等效标准）成功试验？顶层单元是否已完成任何法规符合性？\n- II. 电池是否成功完成任何 TSO MPS 试验？是否具有 FAA TSO，例如 TSO-C179a？\n- III. 电池是否已由 FAA 符合性检查，并按 DO-311、DO-347、DO-160、DO-178 和 DO-254 等适当标准成功试验？电池是否已完成任何法规符合性？\n- IV. 是否完成功能危害评估、系统安全评估和/或失效模式与影响分析？若是，危害评估是否为灾难性？\n- V. 电池尺寸由 RTCA DO-347 第3页表1-1定义；行业标准见 RTCA DO-347 第2.8节第33页。\n\n## 相关文件（附录B）\n\n附录B列出的相关文件包括（第B-3页）：DOT/FAA/AR-04/26《运输类飞机内散装包装不可充电锂原电池的可燃性评估》（2004年6月）；TSO-C179a《永久安装的可充电锂电池单元、电池及电池系统》；以及 RTCA DO-254、RTCA DO-311、RTCA DO-347、RTCA DO-160G 等行业文件。\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 44
+          }
+        ],
+        "reasoning_content": "The knowledge base has 7 documents but wiki covers a subset. The question is about interior panels with new coatings (flammability of interior materials — 14 CFR 25.853, heat release, smoke density) and lithium batteries. The \"60-second vertical burn\" is Appendix F Part I (60-second vertical burn for interior materials). The coverage apparently includes AC 20-184 which mandates §25.853 compliance for battery, and AC 20-183 which mentions 阻燃 requirements but not details.\n\nBut the question mentions \"旧内饰板加新涂层\" — this suggests the documents may include something about \"AC 20-182A\"? No, that's weather radar. Hmm. Maybe the intended answer relates to AC 20-184 §2.8: battery must meet §§23/25/27/29.853, .863, §25.869; heat/acoustic insulation must meet §25.856(a), Appendix F Part VI; and Appendix F Part I 60-second vertical burn is only one of several tests (12-second vertical burn, 60-second vertical, horizontal, heat release rate 25.853(d)/Appendix F Part IV, smoke density Part V). Also, the coating on existing panels — AC 20-184 表1 lists 舱内可燃性 §25.853.\n\nHmm, but is there a document about \"AC 20-... \" on interior installations? The KB has 7 docs: 20-179, 20-180, 20-181, 20-182A, 20-183, 20-184, and AC 21-48? That's 7.\n\nThe question seems designed as a \"boundary/gap\" question: what does the uniform \"all parts one 60-second vertical burn\" scheme lack?\n\nKey boundaries from AC 20-184:\n1. Battery (lithium battery system) is not an interior material — its flammability compliance requires §§.853, .863, §25.869, and thermal/acoustic insulation §25.856(a) Part VI; plus the battery must meet environmental qualification (DO-160G), DO-347/DO-311 test suites, thermal runaway containment, special conditions — a 60-second vertical burn doesn't demonstrate any of that (thermal runaway, venting, etc.).\n2. For interior panel with new coating: the applicable requirement depends on material/part function — §25.853(a) 60-second vertical burn for interiors; but large-area panels may need heat release (OSU, Part IV) and smoke density (Part V) per §25.853(d) (interior ceiling/wall panels, partitions...). Also §25.856 for insulation. And \"delta\" testing / \"new coating on old panel\" — a coating change might require reevaluation of the qualified system, not just a burn test on the coated panel? Hmm, but do we have evidence?\n3. The 60-second vertical burn is only one of several Appendix F test methods — it doesn't cover heat release, smoke, toxicity (§25.831(b) smoke & toxicity), and it doesn't address the aircraft-level requirements (e.g., §25.869, evacuation, fire detection/suppression).\n4. Also applicability thresholds: Wh size categories (very small <2 Wh, small/medium, large) determine different MOC paths; the \"one-size-fits-all\" approach ignores the Wh-based size boundary and whether the battery is single-cell vs multi-cell.\n5. Also the AC itself is non-mandatory and only provides one acceptable MOC; mandatory requirements come from applicable regulations and special conditions. So a single test cannot substitute for the certification basis / special conditions, system safety assessment, ICA.\n\nSo the answer: lacks several boundaries:\n- 对象边界 (material vs. battery system): 60-second vertical burn is a material-level test for interior materials under §25.853(a)/Appendix F Part I; it doesn't apply to battery system certification, which needs DO-160G env qual, DO-347/DO-311, thermal runaway containment, SSA, ICA.\n- 测试方法/指标边界: Appendix F has multiple parts; 60s vertical burn only covers one; missing 12s vertical, horizontal, heat release rate (Part IV, OSU), smoke density (Part V), and §25.856 Part VI for insulation.\n- 法规条款边界: §25.853 + §25.863 (flammable fluid) + §25.869; §25.831 ventilation/smoke; special conditions since .1353 doesn't cover lithium batteries.\n- 尺寸/规模边界: Wh categories with different MOC paths (very small / small-medium / large; single-cell 60Wh vs multi-cell 300Wh).\n- 安装/系统级边界: 地面与飞行试验, delta tests if only incremental changes, system safety assessment, ICA/maintenance.\n- 也缺\"谁批准\"的边界: AC非强制，必须依赖适用法规与特殊条件；且需与ACO协调，测试计划提交。\n\nLet me verify specifics in the source documents. I should read AC 20-184 chunks about §2.8 flammability and 25.853, and the size table, and check whether there's language about \"delta tests\" and \"only necessary incremental tests.\"\n\nThe wiki page already provides: §2.8: battery must meet §§23/25/27/29.853, .863 and §25.869; DOT/FAA/AR-00/12 for Part 25 Appendix F; insulation §25.856(a) Part VI, amendment 25-111, AC 25.856-1. And \"若仅需就关键性和飞机上位置相关的增量要求进行验证，则只需进行必要的增量测试（delta tests）\".\n\nLet me read the actual document d1 for the flammability section to get exact quotes and the flame test details, and also check for a section on \"interior\" coatings. Also read AC 20-184's Appendix? Let's query d1.\n\nAlso should check whether the wiki has a page about 25.853 flame test or \"可燃性\". Search gave concept/far-23-25-27-29-863. Let's read that and query d1."
+      },
+      {
+        "thought": "",
+        "iteration": 4,
+        "timestamp": "2026-10-22T14:36:14.7624007+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_M4hRxWOSvB9egcxvbeGV8904",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "flammability",
+              "context": 1
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "flammability",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "b537c45d-9cd6-4ccf-8bd7-ce9002570534",
+                  "ccb76858-6a17-4ad9-8aa5-3ba13f9a15cd",
+                  "c7e066df-ced4-46d0-b4b0-d6878a8b481d",
+                  "0a23ac4e-1f89-4456-abe1-84247c2c02fc",
+                  "c043daa4-ae2d-4bd4-b1ac-212a805efe58",
+                  "ebaa24d8-4245-4969-8584-554e65a99cd9",
+                  "f9470771-db54-429a-97aa-ea28fae8b469",
+                  "559139bd-abc5-4042-989d-7c7a334b8d8a",
+                  "d89871ff-93cc-4318-a09b-616d02e7b958",
+                  "60f9c50a-cadb-4767-83eb-1f6213d41861",
+                  "81469547-b36f-493b-8a0e-13f66e7ed937",
+                  "84ecee50-6513-4ed3-9342-6d1377746298",
+                  "aeb95788-2638-4295-a658-42370cc67cf9",
+                  "875bb148-62ba-4da4-bbed-659699e6fe73",
+                  "198acba1-7fec-4ec7-8ef8-f9b7a02ef21c",
+                  "76b55f3a-ae90-47f5-a9a9-2fd39067a0f0",
+                  "1104e8d4-e65e-48ba-b3a5-83039e6db2d1",
+                  "b4cce399-0793-493d-a15a-ce720ddc6a21",
+                  "dfbabdc0-c4b2-4abe-90d1-14d8e85af903",
+                  "450c73a9-34fd-42c2-9671-ffda0c8f223a",
+                  "a7615ab4-508a-4c97-98d8-54834005674b",
+                  "b1f450a0-02c5-47e0-8803-9bcf0b9215ff",
+                  "493c21e0-ded5-48b4-8c18-226f877449c4",
+                  "d0249484-e755-4e2e-ac88-450a70eeb360",
+                  "fec87123-99a7-4407-bf55-6bc6cc5fbe89",
+                  "b8d2c726-f33f-43d5-b36c-10aef1a0eafa",
+                  "d5e88fb9-aca5-4037-b4ec-70ad290a8b00",
+                  "3468af6c-41b5-4b34-8efd-e46be137877f",
+                  "46a49796-5cdc-4213-aafe-abc939880cbe",
+                  "60e360af-dea9-4ddd-9994-c18649657809",
+                  "da8a06f2-9e63-4cbc-bf2f-7779c34dbcc9",
+                  "3c6b4cd9-6d3f-4365-b69e-a763e4c33309",
+                  "998950a3-019e-4dee-b46f-b8d5925692c3",
+                  "7d5fc4bd-2431-49fd-8c00-8429b209e235",
+                  "fd385538-9b74-4f6b-a83a-978033651590",
+                  "df023d97-9e49-41c5-a7a5-a6f3c6ebf9bf",
+                  "27ab375f-8d19-4248-ae95-9bfee9294359",
+                  "160e5081-c525-458f-8971-8dd11ad7ef9e",
+                  "33773eb3-eacb-4c71-aff4-e8b5d8fcc53f",
+                  "82784282-5e75-466f-b994-497abb730d5e",
+                  "4008506c-fabd-4971-b108-7f6eea878353",
+                  "30885b58-4392-4a3d-98b8-fa481900cae6",
+                  "408e4b52-c403-417f-9261-3d319f0188b9",
+                  "587c79c6-f868-4a10-9e03-0e8164723673",
+                  "5b0d45f7-531c-4c17-a0dd-43357d0606a8",
+                  "ec8d0b52-742c-4cd3-98e9-f1c9f0dce793",
+                  "8c9beb43-9d69-490d-9f5c-ec1e5aa8b280"
+                ],
+                "truncated": true,
+                "match_count": 18,
+                "next_offset": 256,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 47,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "b537c45d-9cd6-4ccf-8bd7-ce9002570534",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 47/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 50
+          },
+          {
+            "id": "call_01_HkGx06NAIWgrUuM9FbyZ7902",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "delta",
+              "context": 1
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "delta",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "9d38133c-f966-4602-837b-049043b6dab7",
+                  "0ec9bdda-82bd-4103-949f-c3f631ae9c9b",
+                  "6058d83e-b78c-4607-8832-1e077efeb32c",
+                  "180e02fc-4c95-485b-9343-9e64cb673ffc"
+                ],
+                "truncated": false,
+                "match_count": 2,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 4,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "9d38133c-f966-4602-837b-049043b6dab7",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 4/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 50
+          }
+        ],
+        "reasoning_content": "Now, the question's premise: \"所有部件只做一次 60 秒垂直燃烧\" as 整项改装的防火证明. What boundaries are missing?\n\nKey point: The knowledge base's AC 20-184 §2.8: 飞机电池必须满足 §§23/25/27/29.853、.863 和 §25.869；且 25.856(a) Part VI for insulation. Appendix D special condition item 4: 锂电池内外材料须满足 §.863(a)-(d).\n\nAlso key: 60-second vertical burn (Appendix F Part I) is a material-level interior test, only applicable to certain interior materials under §25.853(a); it's not a comprehensive fire proof:\n- 材料级 vs 系统级: doesn't cover thermal runaway containment, venting of explosive/toxic gas, explosion prevention, short-circuit heat, charging rate control — the lithium battery special conditions (AC 20-184 附录D items 1,2,3,6,7).\n- 60秒垂直燃烧只是附录 F 的一个部分; also need 12-second vertical / horizontal / 45-degree, heat release rate (Part IV), smoke density (Part V), and for insulation Part VI (§25.856(a)); and §25.863 flammable fluid fire protection; §25.869.\n- 尺寸/容量边界: battery size classification (single cell vs multi-cell thresholds) determines MOC path; also \"very small\" batteries may need no test if UL/IEC qualified.\n- 适用性边界: AC非强制, mandatory requirements come from regulations and special conditions; 一旦改装属于\"安装\"变更需按 TC/STC/ATC/ASTC/PMA 流程并做系统安全评估（§2.4）、地面/飞行试验（§2.3.2）、ICA（§2.9）。\n- 增量测试边界: 若只是增量改动，\"只需进行必要的增量测试（delta tests）\"—so what's needed depends on whether the change is a new installation vs delta, and criticality/location.\n- 试验环境/构型边界: environmental qualification per DO-160G; battery test conditions per DO-347/DO-311, not a material burn test.\n- 内饰板涂层: the coating is a material change on an existing panel — the flammability of the finished article/interior panel, and its location/function (ceiling/wall panels may need heat release/smoke), plus the coating's own qualification and thickness. Do we have specific evidence about coatings? The wiki doesn't mention coatings. Hmm. The question mentions \"旧内饰板加新涂层\" — perhaps a \"delta\" scenario: existing panel already qualified, adding a new coating. The AC 20-184 mentions delta tests. That's a relevant hook: for a coating added to an existing qualified panel, you'd need to assess whether it's a delta test only for affected characteristics, but that's not \"one 60-second vertical burn for all.\"\n\nBut careful: the question is about what \"boundaries\" the unified approach lacks \"依据所给文件\" (based on the given files). So the answer should be structured around boundaries drawn by AC 20-184 (and possibly AC 20-182A is irrelevant — weather radar; the file set includes 20-182A but it's not relevant to cabin refurbishment. The user said \"所给文件\" — the two recent documents pinned? Actually the runtime context lists recent_documents d1 (20-184) and d2 (20-182A). Hmm, \"所给文件\" may refer to the KB. AC 20-182A is about weather radar — irrelevant to cabin fire protection, so it's a distractor. I should note that AC 20-182A (meteorological radar) doesn't cover interior/battery fireproofing at all, so it provides no support; only AC 20-184 does.\n\nLet me verify the actual AC 20-184 §2.8 text and Appendix D item 4, plus the delta-test sentence. Let me read chunks. Query in Chinese/English with fewer words. The document is in English presumably (translated?). The wiki quotes suggest English original with Chinese summary. Let me query \"flammability\" alone, and \"delta\"."
+      },
+      {
+        "thought": "",
+        "iteration": 5,
+        "timestamp": "2026-10-22T14:36:25.0366324+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_X2gv8tVivlGrNkUtMcKu3977",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "vertical burn 60-second"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "vertical burn 60-second",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [],
+                "truncated": false,
+                "match_count": 0,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 0,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 0/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 97
+          },
+          {
+            "id": "call_01_DDng3tqo6ewNwHi6HTuL3125",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "Appendix F part VI 25.856",
+              "context": 1
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "Appendix F part VI 25.856",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "76b55f3a-ae90-47f5-a9a9-2fd39067a0f0",
+                  "1104e8d4-e65e-48ba-b3a5-83039e6db2d1",
+                  "0e7ac612-945c-43a3-a260-731641925b67"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 3/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 102
+          }
+        ],
+        "reasoning_content": "Good. We have solid evidence:\n\n- §2.8 Flammability: aircraft batteries must meet §§23/25/27/29.853, .863, and 25.869; test materials; DOT/FAA/AR-00/12 provides acceptable MOC with Part 25 Appendix F; if thermal/acoustic insulation is part of battery equipment and exposed → §25.856(a), Appendix F Part VI, amendment 25-111 or later (c16, c17).\n- Table 1 lists §.853 Compartment Interiors (Flammability), §.863 Flammable Fluid Fire Protection, §25.869 Fire Protection: Systems, §.831 Ventilation (Smoke and Toxicity) (c12, c13).\n- Appendix D SC #4: internal and external materials of the battery/battery system must meet applicable certification flammability requirements, §§23/25/27/29.863(a)-(d) (c22).\n- Appendix E/F MOC lists DO-347 §1.5.5 Flammability plus thermal runaway containment test, overcharge tests, short-circuit, emissions, venting, environmental qualification (c25, c26, c44, c45, c33).\n- Delta test: when TSO tests exist and there's a delta between TSO test and installation requirement based on criticality and location, only delta tests need be tested (c49, c50).\n\nNow, the 60-second vertical burn: the AC mentions Appendix F but not the specific 60-second test. Is there any mention of \"60-second\" in d1? Let me check. Also check whether the documents mention 12-second. The claim \"60秒垂直燃烧\" is the standard §25.853(a)/Appendix F Part I test. I should be careful: does the provided file set actually specify the 60-second vertical burn? The user's scheme says \"60秒垂直燃烧\". AC 20-184 does not detail it (only cites Appendix F and the Fire Test Handbook). I should note that AC 20-184 only points to Part 25 Appendix F generically and doesn't establish that a 60-second vertical burn is the applicable test for either item; the applicable test/part depends on the material and location.\n\nSo key boundaries missing:\n1. 适用对象/条款边界: 改装是\"安装\"（内装饰+电池系统），必须按 TC/STC/ATC/ASTC/PMA 流程、按认证基础逐条表明符合性；防火证明不止材料可燃性一条 — 还涉及 §.853（舱内）、§.863（可燃液体）、§25.869（防火系统）、§.831（通风/烟与毒性），以及锂电池的特殊条件（防爆、防自持温压升高、气体排放、短路最大热量、充电速率控制等）。一次材料燃烧试验不能替代这些系统级要求。\n2. 材料级试验方法边界: 60秒垂直燃烧只是 Part 25 Appendix F 中的一个试验；不同材料/部位适用不同部分（12秒垂直燃烧、水平、45度、热释放速率 OSU Part IV、烟密度 Part V、绝缘层 Part VI/§25.856(a)）。对\"旧板+新涂层\"，需要针对成品状态（涂层后）而非基材；热/声绝缘如果暴露还要按 Part VI。\n3. 电池尺寸/容量边界: 单电芯 <2Wh、2–60Wh，多电芯 2–300Wh 分级；≤2Wh 已符合 UL 1642/2054/IEC 62133 可免进一步试验；小/中按附录 E（DO-347），大按附录 F（DO-311 + 部分 DO-347）。一套统一的60秒试验无法覆盖 battery system 的 DO-347 §1.5.5 flammability + 热失控包容、过充/短路、泄放、环境鉴定等。\n4. 环境与安装条件边界: 需 environmental qualification (DO-160G), 地面试验 + 必要时飞行试验；试验条件要代表寿命周期环境。\n5. 增量/基线边界: 若沿用已有 TSO/既有鉴定数据，只有与安装要求存在 delta 的部分才需做 delta test，且取决于 criticality 和位置 —— 所以\"一次试验覆盖所有部件\"既超出了该边界，也不能说明哪些部件可以豁免（例如非常小电池已有 UL/IEC 认证）。\n6. 文件效力边界: AC 非强制、只是可接受符合性方法；强制要求来自适用规章和特殊条件；且需与 ACO 协调、提交试验计划与结果。所以\"一次60秒垂直燃烧\"既不是法规要求的最低集合，也不能作为整项改装的\"证明\"。\n\nAlso: AC 20-182A (weather radar) doesn't address this at all — it provides no basis for interior/battery fire compliance. Should I mention? The user says \"所给文件\" — the KB contains 7 docs, of which only 20-184 is relevant. Mentioning that the other recent document (AC 20-182A, weather radar airworthiness) offers no coverage might be useful but could be noise. I'd briefly note it as a scope note: 只有 AC 20-184 涉及，20-182A 是机载气象雷达，不提供依据.\n\nLet me check whether \"60\" appears in d1 to be safe, and also check for the word \"vertical\" / \"12-second\"."
+      },
+      {
+        "thought": "",
+        "iteration": 6,
+        "timestamp": "2026-10-22T14:36:32.3013992+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_OgKusyekwjqYfN9uZNzF6839",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "Very Small 300 Wh",
+              "context": 1
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "Very Small 300 Wh",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [],
+                "truncated": false,
+                "match_count": 0,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 0,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 0/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 89
+          },
+          {
+            "id": "call_01_4A5JfrjRmc3Uk5957ShG4746",
+            "args": {
+              "id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+              "query": "not mandatory advisory",
+              "context": 1
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "not mandatory advisory",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-184.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-184.pdf",
+                  "file_size": "301.7 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 291,
+                  "description": "本文件是美国联邦航空局（FAA）于2015年10月15日发布的咨询通告AC 20-184，为飞机制造商和安装方提供可充电锂电池及电池系统装机时满足14 CFR第21、23、25、27和29部安装、运行、维护与适航要求的可接受符合性方法。文件分为三章：引言、飞机锂电池安装（含认证流程、符合性方法MOC、试验要求、系统安全评估、软件与复杂电子硬件、健康监测、易燃性、持续适航说明ICA）以及维护与运行考虑（电池维护、更换、存储与搬运）。附录涵盖瓦时容量定义、相关法规与文件、术语定义、各部件典型专用条件、小型中型及大型锂电池的MOC、符合性认证流程图和反馈表，结论是借助RTCA DO-311、DO-347等标准试验即可证明符合性。",
+                  "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "00899a10-96da-4518-844b-7f03a8a1dae3",
+                  "0288b983-df13-44b5-b33f-b98320fb9585",
+                  "8d405d07-de11-4cb0-8fc3-2f2a8e22d5a4"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "f778243a-0889-4443-b715-cc6cd84d9cdc",
+                "total_chunks": 291,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-184.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 3/291 chunks from AC_20-184.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 89
+          }
+        ],
+        "reasoning_content": "Confirmed: no \"60-second vertical burn\" in the AC. So the AC doesn't itself prescribe the 60-second vertical burn; it refers to Part 25 Appendix F via DOT/FAA/AR-00/12, which contains multiple test methods/parts.\n\nNow: is there a risk the user expects the answer about \"delta tests\" and \"different MOC by size\"? I'll structure the answer around 5-6 missing boundaries, grounded in AC 20-184, and note where the files are silent (e.g., AC 20-184 doesn't address interior panel coating specifically; the only relevant clause is §.853/Appendix F via Part 25; and AC 20-182A is unrelated).\n\nAlso note the \"旧内饰板加新涂层\" aspect: AC 20-184 only requires testing of materials to meet the applicable requirements; there's no provision that an existing qualification of the substrate covers a new coating; and Appendix G VI delta-test logic (TSO based) — actually the delta language is about TSO'd equipment, not materials. I should present it as a principle: 只有与已鉴定状态存在差异、且按关键性和装机位置判定需要的增量试验才做，反过来说，若涂层改变了成品材料的可燃性，就属于需要重新评估的差异，不能靠一次统一试验覆盖，也不能默认原鉴定仍然有效。\n\nLet me also check if there's any wiki page for 25.853 flammability test concept; search \"25.853\" gave nothing except .863 page. So no dedicated page. I could mention the wiki lacks a page on Part 25 Appendix F test parts — not needed.\n\nShould I cite? Yes, citations with cN handles from tool results. The evidence chunks: c16, c17, c52 (2.8 flammability), c12/c13 (Table 1 regs), c22 (SC #4), c25/c26 (DO-347 test list), c44/c45, c49/c50 (delta tests). And the size table: from wiki page content (no chunk). I can cite the wiki page? Citations only cN/wN. The size categories info came from wiki page, whose source is d1. I don't have a chunk for the table. Hmm, I could cite c48 (battery size defined by DO-347 Table 1-1) but that's about flowchart. Better: I can state size-category facts without citation, or find chunk. Let me quickly query \"Wh 300\" or \"Very Small\". Actually maybe not necessary to detail exact thresholds; but it strengthens the \"size boundary\" point. Let me do one query \"Very Small\" to get a chunk.\n\nAlso I want to verify whether the AC says AC is non-mandatory — yes on the wiki page §1.1.2, no chunk. Could query \"not mandatory\". Let me batch two queries: \"Very Small\" and \"advisory\"."
+      },
+      {
+        "thought": "## 结论\n\n按所给文件（只有 AC 20-184 涉及本题；AC 20-182A 是机载气象雷达，与客舱防火无关），这个“所有部件一次 60 秒垂直燃烧”的方案的真正问题在于缺少**四条边界**，并非少做了一项试验；它把“材料级的一个试验”当成了“整项改装的系统级证明”。\n\n---\n\n## 1. 对象边界：内饰板和锂电池不是同一个东西，不能共用一套证明\n\n**内饰板与加涂层**：AC 20-184 只是把舱内可燃性列为适用条款（§§23/25/27/29.853“Compartment Interiors (Flammability)”），并要求“对材料进行试验”<kb doc=\"AC_20-184.pdf\" chunk_id=\"76b55f3a-ae90-47f5-a9a9-2fd39067a0f0\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。它给出的可接受符合性方法是：通过 DOT/FAA/AR-00/12《飞机材料防火测试手册》来表明符合 14 CFR part 25 附录 F<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。也就是说，这是**按材料或部位适用附录 F 的相应部分**做的材料级验证，并非只做一次垂直燃烧。附录 F 体系包含多个部分，AC 20-184 自己就单独点到了“第 VI 部分”（热、声绝缘材料暴露时的 §25.856(a)、修正案 25-111 及以后）<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"0e7ac612-945c-43a3-a260-731641925b67\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。用 60 秒垂直燃烧一项去覆盖“所有部件”，等于抹掉了这个“按材料、按部位、按附录 F 分部”的适用性判断。\n\n**锂电池**：它在文件里不是“内饰材料”类对象。AC 20-184 要求电池满足 §§23/25/27/29.853、.863 和 §25.869<citation> 之外<kb doc=\"AC_20-184.pdf\" chunk_id=\"76b55f3a-ae90-47f5-a9a9-2fd39067a0f0\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />，还要求电池与电池系统的**内外材料**满足 §.863(a)–(d)<kb doc=\"AC_20-184.pdf\" chunk_id=\"b1f450a0-02c5-47e0-8803-9bcf0b9215ff\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；其符合性路径是 DO-347/DO-311 的一组试验，包括flammability 设计章节、热失控包容试验、过充（有/无保护）、短路（有/无保护）、绝缘电阻、深度放电、电池排放等<kb doc=\"AC_20-184.pdf\" chunk_id=\"fec87123-99a7-4407-bf55-6bc6cc5fbe89\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"82784282-5e75-466f-b994-497abb730d5e\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。60 秒垂直燃烧对这些条目一项都不覆盖。\n\n> 需要指出的一个事实：AC 20-184 全文并没有出现“60 秒垂直燃烧”这个具体试验名目，它只以“14 CFR part 25 附录 F”的整包形式出现<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。所以方案的第一步就缺一个“引用依据与适用分部”的边界。\n\n## 2. 条款边界：防火不等于材料烧不烧\n\n表 1 把与锂电池安装相关的防火类条款分开列出：§§23/25/27/29.831（通风——烟与毒性）、§§.853（舱内可燃性）、§§.863（可燃液体防火）、§25.869（防火系统）<kb doc=\"AC_20-184.pdf\" chunk_id=\"84ecee50-6513-4ed3-9342-6d1377746298\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"aeb95788-2638-4295-a658-42370cc67cf9\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。锂电池还有一整套特殊条件（防爆、防止自持温压升高、爆炸性/毒性气体不得危险积聚、短路最大热量、充电速率控制、荷电状态告警等），这些都不是材料燃烧试验能证明的。仅用 60 秒垂直燃烧去覆盖，会漏掉烟与毒性、可燃液体、防火系统以及特殊条件这一整层。\n\n## 3. 尺寸与 MOC 路径边界：电池按 Wh 分档，路径不同\n\nAC 20-184 附录 A 表 A-1 按瓦时划分档位（单电芯与多电芯阈值不同：很小 <2 Wh；小/中 2–60 Wh 和 2–300 Wh；大 ≥60 Wh 和 ≥300 Wh），并按档指定路径：很小电池若已满足 UL 1642、UL 2054 或 IEC 62133 则**无需进一步试验**；小/中走附录 E（DO-347 MOPs）；大走附录 F（DO-311 + DO-347 选定章节）。附录 E 与附录 F 都要求向 ACO 提交表明符合各项特殊条件的设计特征清单和按标准编号、修订版、发布日期、试验编号列出的分析与试验清单<kb doc=\"AC_20-184.pdf\" chunk_id=\"fec87123-99a7-4407-bf55-6bc6cc5fbe89\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"82784282-5e75-466f-b994-497abb730d5e\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。一套统一试验把“按容量分档、按档选路径”这个边界完全抹掉了：既可能对很小电池做了多余试验，也可能对大型电池漏掉了必需的路径。\n\n## 4. 基线与增量边界：这是“旧板加新涂层”最要命的一条\n\n文件对“沿用既有数据”只给了一种严格受限的逻辑：设备若有 TSO，TSO MOPS 下的试验可用于表明符合适航要求（须提供试验报告）；**只有当 TSO 试验与装机要求之间存在差异（delta）时**，才按关键性和机上位置，仅做必要的增量试验<kb doc=\"AC_20-184.pdf\" chunk_id=\"0ec9bdda-82bd-4103-949f-c3f631ae9c9b\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"6058d83e-b78c-4607-8832-1e077efeb32c\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n反过来读：涂层加在旧板上，改变的是**成品材料状态**，因此必须先确定基线，再判定“哪些特性构成了差异、哪些原鉴定结论仍然成立”。这属于要逐项界定的增量评估，不能靠一次试验统一代表全部；而且文件里没有任何条款允许用一次材料试验替代全部部件的符合性说明。\n\n## 5. 效力边界：AC 不是规章，方案本身也不能当作批准\n\nAC 20-184 明确“not mandatory and does not constitute a regulation”，只是指导并给出一种符合性方法<kb doc=\"AC_20-184.pdf\" chunk_id=\"0288b983-df13-44b5-b33f-b98320fb9585\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；强制要求来自适用的 14 CFR 条款和主管当局针对具体产品施加的特殊条件。相应地，认证计划、试验计划与结果都要尽早与负责的 ACO 协调，地面试验未覆盖的条件还可能需要飞行试验。把“一次 60 秒垂直燃烧”写成“整项改装的防火证明”，在效力上就站不住。\n\n---\n\n## 建议怎么拆\n\n| 符合性包 | 依据 | 关键动作 |\n|---|---|---|\n| 内饰板（含新涂层） | §.853、part 25 附录 F（DOT/FAA/AR-00/12 为可接受方法）<kb doc=\"AC_20-184.pdf\" chunk_id=\"1104e8d4-e65e-48ba-b3a5-83039e6db2d1\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> | 明确材料/部位对应的附录 F 分部；对“涂覆后成品状态”验证；按 delta 逻辑界定原鉴定是否仍成立<kb doc=\"AC_20-184.pdf\" chunk_id=\"6058d83e-b78c-4607-8832-1e077efeb32c\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| 锂电池系统 | §.853、.863、25.869<kb doc=\"AC_20-184.pdf\" chunk_id=\"76b55f3a-ae90-47f5-a9a9-2fd39067a0f0\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；特殊条件第4项<kb doc=\"AC_20-184.pdf\" chunk_id=\"b1f450a0-02c5-47e0-8803-9bcf0b9215ff\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；按 Wh 档走附录 E/F<kb doc=\"AC_20-184.pdf\" chunk_id=\"82784282-5e75-466f-b994-497abb730d5e\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> | DO-160G 环境鉴定、DO-347/DO-311 试验（含热失控包容、过充、短路、排放）、系统安全评估、ICA |\n| 整机层面 | §.831 烟与毒性、§.863、§25.869<kb doc=\"AC_20-184.pdf\" chunk_id=\"84ecee50-6513-4ed3-9342-6d1377746298\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-184.pdf\" chunk_id=\"aeb95788-2638-4295-a658-42370cc67cf9\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> | 说明火灾/烟雾对结构与关键系统的保护，而非单件材料自证 |\n\n一句话回答：缺的是**“对象（材料与电池系统）、条款（.831、.853、.863、.869 加特殊条件）、规模（Wh 分档与附录 E、F）、基线（delta 与增量试验）”这四重边界**；60 秒垂直燃烧在其中只占“内饰材料、附录 F 某一分部”这一小格。\n\n相关页面：[[entity/faa-ac-20-184|FAA 咨询通告 AC 20-184]]、[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]]、[[concept/lithium-battery-size-categories-watt-hours|锂电池瓦时容量分类与尺寸类别]]、[[concept/lithium-battery-environmental-qualification-testing|锂电池环境鉴定与测试要求]]。",
+        "iteration": 7,
+        "timestamp": "2026-10-22T14:36:51.1889419+08:00",
+        "tool_calls": [],
+        "reasoning_content": "Good. I have c54 for non-mandatory.\n\nFor the size table, the wiki page (source d1) gives thresholds. I can cite nothing for that or use c48 (battery size defined by DO-347 Table 1-1). I'll phrase the size-category point generally: 电池按 Wh 分档（很小/小中/大），不同档对应不同 MOC（附录E用DO-347，附录F用DO-311+部分DO-347），并注明阈值来自 AC 20-184 附录A表A-1（wiki page). Citation not strictly required for every sentence; but claims should be supported. I'll cite c33/c25 for DO-347/DO-311 test sections, and can mention thresholds without citation since they come from wiki page backed by d1 — but rules: citations only when a cN backs the adjacent claim. The wiki page content isn't a cN. I can present thresholds as from 附录A表A-1 without . That's fine (uncited but grounded). Better to minimize risk: mention \"按 Wh 分档（单电芯/多电芯阈值不同）\" without exact numbers, or give numbers and note 附录A表A-1. I'll give numbers, they're in wiki page.\n\nActually, let me try one more query to get a chunk of the table: query \"2.08\"? The table likely uses \"Wh < 2\" text. Query \"battery size\" maybe. Not worth more calls. The wiki page is authoritative enough for the numbers, and it's generated from d1. I'll include them with a note \"AC 20-184 附录A表A-1\".\n\nNow compose the answer in Chinese. Structure:\n\n先给结论：这个\"统一方案\"缺的不是一项试验细节，而是四类边界。\n\n1. 对象/危害边界 — 内饰板与锂电池是两个性质不同的对象，防火证明层次不同。\n   - 内饰板/涂层：材料级 §.853（舱内可燃性），通过 Part 25 附录F 的方法（DOT/FAA/AR-00/12 是 AC 20-184 认可的可接受方法）<c16><c17>。但附录F有多个部分，按材料/部位适用不同试验；60秒垂直燃烧只是其中一种，不能覆盖热释放/烟密度等（这里需小心：AC 20-184没有列出 Part IV/V；它只说\"符合附录F\"。说\"Appendix F 包含多个部分，AC只点到第VI部分\"是有据的：c17 提到 part VI。热释放/烟密度是通用知识，我应该标注为背景知识而非文件明示。可写成\"按 14 CFR part 25 附录 F 的体系，60 秒垂直燃烧只是其中一部分（另有热释放、烟密度等部分）；AC 20-184 本身只逐条点到与绝缘材料相关的第 VI 部分\"<c17>。)\n   - 锂电池：不是\"内饰材料\"，AC 20-184 要求电池满足 §§.853/.863/25.869<c16>，且特殊条件第4项要求电池内外材料满足 .863(a)–(d)<c22>；同时整套 DO-347/DO-311 试验（热失控包容、过充/短路、泄放）<c25><c33>。60秒垂直燃烧对这些一项都不覆盖。\n\n2. 条款/系统级边界 — 防火不只是\"材料烧不烧\"。表1把 §.831（通风、烟与毒性）、§.863（可燃液体防火）、§25.869（防火系统）单列<c12><c13>；锂电池还有防爆、防自持温压升高、爆炸性/毒性气体、短路最大热量、充电速率控制等特殊条件（wiki 附录D）。统一材料试验无法证明系统级。\n\n3. 尺寸/容量与 MOC 路径边界 — 电池按 Wh 分档（单电芯/多电芯不同阈值），很小电池若已有 UL 1642/2054/IEC 62133 可免进一步试验；小/中走附录E（DO-347），大走附录F（DO-311 + 部分 DO-347）。\"所有部件一套试验\"抹掉了这个分档。<c33>\n\n4. 环境与安装条件边界 — 需 DO-160G 环境鉴定，地面试验，必要时飞行试验；试验范围取决于构型、装机环境、暴露时长（wiki §2.3.1.2）。60秒火焰试验不能替代。\n\n5. 增量/基线边界（对\"旧板加新涂层\"最直接）— 文件只承认\"差异测试\"逻辑：已有 TSO 试验结果可用，只有当 TSO 试验与装机要求之间存在差异时，才按关键性和机上位置做必要的增量试验<c49><c50>。反过来：涂层改变成品材料状态，必须重新界定基线并判定哪些特性是需要重新验证的差异；不能反过来用一次统一试验去\"证明全部\"，也没有任何条款允许用一个试验代表全部部件。\n\n6. 效力边界 — AC 本身非强制、只是可接受符合性方法<c54>，强制要求来自适用规章与主管当局的特殊条件（wiki §2.2.2.2）；且需与 ACO 协调、提交试验计划与结果（附录E/F）。所以\"一次60秒垂直燃烧\"既不是最低要求集合，也不构成批准依据。\n\nThen 一句实操建议：把改装拆成两个符合性包：内饰（按 §.853/附录F 的适用部分对\"涂覆后成品\"验证，必要时按 delta 逻辑）+ 电池系统（按 Wh 分档走 E/F，含 DO-160G、热失控包容、SSA、ICA），并在认证计划中逐条对应条款与特殊条件。\n\nAlso note the file-scope caveat: AC 20-182A 是机载气象雷达，与客舱防火无关；AC 20-184 是唯一相关文件，且它并未规定\"60秒垂直燃烧\"，只指向 Part 25 附录F 体系。That's a strong, honest point。\n\nLength: medium, with table maybe. Use headings and bullets. Add [[slug|...]] links where helpful.\n\nCite: c16, c17, c22, c25, c33, c12, c13, c49, c50, c54, c52.\n\nCareful with c12/c13: c12 contains §.831 and §.853; c13 contains .853/.863/25.869. Good.\n\nAlso note \"60-second vertical burn\" isn't in the AC at all — I searched. I can say 在 AC 20-184 全文中并未出现\"60 秒垂直燃烧\"这一具体试验名目，它只以\"14 CFR part 25 附录 F\"整体出现。That's a verified observation (zero matches for the query). I'll phrase: \"AC 20-184 正文并没有规定'60 秒垂直燃烧'这一项具体试验\". Justified.\n\nWrite answer."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:35:45.744341+00:00",
+    "updated_at": "2026-10-22T06:36:51.307496+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 65280,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "6bb0db7439c4c8605897c25b5f1fa32fd9a6ccf0fa13e2769126ca965bca0243",
+      "knowledge_base_ids": [
+        "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": {
+      "cache_status": "hit",
+      "total_tokens": 201311,
+      "cached_tokens": 157696,
+      "prompt_tokens": 193026,
+      "cache_reported": true,
+      "cache_miss_tokens": 35330,
+      "cache_read_tokens": 157696,
+      "completion_tokens": 8285,
+      "context_token_scale": 0.7685144302171557
+    },
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

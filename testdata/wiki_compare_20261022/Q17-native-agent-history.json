@@ -1,0 +1,961 @@
+[
+  {
+    "id": "14428988-247e-46d6-9c07-b8c12d4fbfec",
+    "request_id": "16bdb21b-206a-495c-a19a-630a559e4a05",
+    "session_id": "056faed4-3971-4a5e-ab01-d9119864e8e6",
+    "role": "user",
+    "content": "AHRS 使用有 TSO 授权的 GNSS 速度数据。GNSS 在报无效后仍输出数值，开发方继续用于姿态修正，理由是“有 TSO 就已验证速度精度”。请逐项判断，并说明文件对 TSO-C129a 接口说到了哪一步。",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:42:18.890186+00:00",
+    "updated_at": "2026-10-22T06:42:18.900011+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "75da54f5-5103-4106-bbd0-9380e97068e2",
+    "request_id": "16bdb21b-206a-495c-a19a-630a559e4a05",
+    "session_id": "056faed4-3971-4a5e-ab01-d9119864e8e6",
+    "role": "assistant",
+    "content": "## 结论\n\n开发方的三点推理均不成立：AC 20-181 一方面允许用 GNSS 速度辅助姿态，另一方面**明确否定了“取得 TSO 授权就等于速度精度已经验证”**，并且要求 AHRS 在检测到已告警的 GNSS 故障后停止使用错误数据。如果该 GNSS 是 TSO-C129a 设备，该接口根本不在本咨询通告的指导范围内。\n\n## 逐项判断\n\n| 判断项 | 结论 | 文件依据 |\n|---|---|---|\n| ① AHRS 用 GNSS 速度数据修正姿态 | **原则允许，但有条件** | §2.3：GNSS 速度数据可用于计算纵向加速度，“以帮助消除误差”，但须满足 §2.3.1 的鉴定要求与 §2.3.2 的速度精度要求 <kb doc=\"AC_20-181.pdf\" chunk_id=\"157e5534-95c6-4ce9-a22a-93273a959d27\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ② “有 TSO 授权就已验证速度精度” | **不成立（核心错误）** | §2.3.2 原文：GNSS 位置源**不要求通过速度精度试验即可取得 TSO 授权** <kb doc=\"AC_20-181.pdf\" chunk_id=\"f86f0674-5189-45ac-99b3-5453e3910751\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"2e551b84-d937-4220-a987-3043856ce2ea\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ③ 报无效后仍输出数值，继续用于姿态修正 | **不符合** | §2.3.3：某些 GNSS 设备在数据被标记为无效后仍会输出错误的位置与速度数据；若 AHRS 检测到已告警的 GNSS 故障，**应停止使用错误的 GNSS 数据** <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ④ 以“分析”作为继续使用的理由 | **误用条款** | §2.3.3 的“分析可作为符合性方法”，是用于证明“该情形不会发生”或“已停止使用”，而不是用于论证可以继续使用已告警的数据 <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ⑤ 若该 GNSS 是 TSO-C129a 设备 | **本 AC 不予覆盖** | §2.3.1.2 明确不涉及该接口；§2.3.1.1 的可接受标准清单只有 TSO-C145d、C146d、C196b <kb doc=\"AC_20-181.pdf\" chunk_id=\"28ecf06c-03a9-47db-85fc-a9e615996bd8\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"1da0f60e-d9d8-4cac-826b-d97686eacb09\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"8eeece07-dcfc-4339-8500-b02acdd52826\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ⑥ 告警与机组/手册影响 | **须另行评估并记录** | §2.2.2 要求确定辅助源失效及告警如何影响 AHRS 性能，并试验告警与飞行员动作；若失去辅助源触发降级模式，还适用 §3.3、§3.4 <kb doc=\"AC_20-181.pdf\" chunk_id=\"88a20b46-eef5-49fa-8de2-b1e53d7dc090\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"19c4fc4d-cf52-4c82-9368-1aee0ad5505b\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n\n### ② 为什么“TSO 授权”不能证明速度精度\n\n§2.3.2 的完整规定是：若使用 GNSS 位置源的速度精度，应确保 GNSS 源数据满足**AHRS 安装所规定的最低速度精度要求**；而“GNSS 位置源取得 TSO 授权并不要求通过速度精度试验”。验证该性能的一种方法是确认 GNSS 源通过了 AC 20-138D 规定的速度精度试验，这类试验通常由 GNSS 设备制造商完成 <kb doc=\"AC_20-181.pdf\" chunk_id=\"f86f0674-5189-45ac-99b3-5453e3910751\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"2e551b84-d937-4220-a987-3043856ce2ea\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"3dd19dfe-e748-4171-b54a-35ef177bf684\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。也就是说，TSO 授权解答的是“设备是否获准安装使用”，并不回答“速度精度是多少”。此外，TSO-C201 本身对速度等“其他数据”不规定性能要求，须由申请人自行确认其适用于预期应用 <kb doc=\"AC_20-181.pdf\" chunk_id=\"bad319e4-ec15-4638-b0ec-c733a6354575\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n### ③ 为什么“报无效后继续用”不能接受\n\n§2.3.3 的设计前提正是开发方遇到的情形：数据被标记无效后仍可能继续输出错误数值。因此 AC 给出的动作是两条：先**审查 GNSS 规范**确认是否可能发生该情况；一旦 AHRS 检测到已告警的故障，就**停止使用**这些数据 <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。这与 §2.3.1 要求外部 GNSS 提供“适当的精度、完整性、可用性”一脉相承 <kb doc=\"AC_20-181.pdf\" chunk_id=\"40330931-98a2-461f-91aa-b2600fe31f8c\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n需要精确区分的是：条款的触发条件写的是“AHRS 检测到已告警的 GNSS 故障”。如果该安装根本没有把无效标志传给 AHRS，或者 AHRS 不响应，这本身就是接口完整性与告警设计缺陷，应按 §2.2.1（辅助源性能）和 §2.2.2（失效与告警影响、地面/飞行试验、告警须清晰及时且仅在故障存在时显示）处理 <kb doc=\"AC_20-181.pdf\" chunk_id=\"d2f8c2ca-12fa-424b-be4d-1a5faadbd7ed\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"88a20b46-eef5-49fa-8de2-b1e53d7dc090\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。换言之，“分析”只能用来证明“该 GNSS 不会在无效后输出错误数据”或“AHRS 确实停止使用”，不能用来把“已知无效仍继续使用”合理化。\n\n## 文件对 TSO-C129a 接口说到了哪一步\n\n只说到**“范围排除与关切提示”**这一步，仅 §2.3.1.2 一句：\n\n> This AC does not address AHRS interface to TSO-C129a … since this TSO design standard may not provide sufficient availability in high interference environments. <kb doc=\"AC_20-181.pdf\" chunk_id=\"28ecf06c-03a9-47db-85fc-a9e615996bd8\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />\n\n具体边界是：\n\n- **它做了什么**：明确把“AHRS 与 TSO-C129a 的接口”排除在本 AC 指导范围之外，并给出理由——该 TSO 设计标准在高干扰环境下可能无法提供足够的**可用性**。\n- **它没做什么**：没有给出该接口的数据内容、格式、性能指标或符合性方法；没有判定该接口“可接受”或“不可接受”（“不涉及”不等于“禁止”）；也没有对 TSO-C129a 的速度精度作任何评价——排除理由是**可用性**，不是速度精度。\n- **与可接受清单的关系**：§2.3.1.1 列出的合格 GNSS 标准为 TSO-C145d、TSO-C146d、TSO-C196b 任一修订版 <kb doc=\"AC_20-181.pdf\" chunk_id=\"1da0f60e-d9d8-4cac-826b-d97686eacb09\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"8eeece07-dcfc-4339-8500-b02acdd52826\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />，TSO-C129a 不在其中。因此若本项目的 GNSS 确为 TSO-C129a 设备，既不能引用本 AC 作为该接口的批准依据，也不能把它的 TSO 授权当作速度精度的证明。\n\n## 若要维持该设计，需要补齐的工作\n\n1. **速度精度**：按 AHRS 安装规定的最低速度精度要求取证，采用 AC 20-138D 的速度精度试验或等效分析 <kb doc=\"AC_20-181.pdf\" chunk_id=\"2e551b84-d937-4220-a987-3043856ce2ea\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n2. **无效标志处理**：修改接口或逻辑，使 AHRS 在检测到已告警故障时停止使用 GNSS 速度，并以分析或试验证明 <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n3. **告警与机组动作**：完成 §2.2.2 要求的地面/飞行试验或分析，确认告警清晰、及时、仅在故障存在时显示 <kb doc=\"AC_20-181.pdf\" chunk_id=\"88a20b46-eef5-49fa-8de2-b1e53d7dc090\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n4. **降级模式与手册**：若失去 GNSS 辅助会进入降级模式，按 §3.1–§3.4 评估其适用性、试验方式与其他系统接口，并在 A/RFMS 中写明性能、限制、告警及将丢失的应用 <kb doc=\"AC_20-181.pdf\" chunk_id=\"19c4fc4d-cf52-4c82-9368-1aee0ad5505b\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；相关概念见 [[concept/degraded-mode|降级模式]] 与 [[concept/ahrs-aiding-sources|AHRS辅助源]]。\n5. **审定基础**：AC 20-181 属咨询通告，条文用“should”；偏离时应以 14 CFR 23/25/27/29.1301、1309 等条款为最终符合性目标，提供等效安全水平说明。\n\n如需，我可以把上述判断整理成一份“条款—现状—差距—符合性方法”的逐条核对表。",
+    "knowledge_references": [],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:42:22.9058648+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_xl7lsWBJMbiuEtRJRJHu4272",
+            "args": {
+              "query": "AHRS|TSO-C129a|velocity|速度"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/tso-c201": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/tso-c63e": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/ac-20-181": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-334": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/degraded-mode": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/ahrs-aiding-sources": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/da-qi-wei-xie-gan-zhi": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/qian-shi-tuan-liu-tan-ce": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/flight-manual-supplement-fms": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/qian-shi-feng-qie-bian-tan-ce": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lei-da-xi-tong-ce-shi-yu-ping-gu": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/fan-ying-shi-feng-qie-bian-xi-tong": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/lei-da-gao-jing-yu-xian-shi-yao-qiu": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/bc1af029-f306-42bf-b3d1-b28235258d73": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/tso-c201-category-coding-and-applications": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/operational-environment-suitability-evaluation": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"10\" query=\"AHRS|TSO-C129a|velocity|速度\">\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/ahrs-aiding-sources|AHRS辅助源]]</link>\n<type>concept</type>\n<aliases>辅助源, Aiding Sources</aliases>\n<summary>本页依据 AC 20-181 第2节梳理 AHRS 辅助源的定义、内部与外部安装评估，以及 GNSS、ADC、空速管和磁传感器等辅助源的设计与符合性要点。</summary>\n<match_snippet>... # AHRS辅助源 AHRS辅助源是为AHRS核心捷联姿态航向功能提供额外传感器信息的内部或外部系统。GNSS和ADC辅助源常用于 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/rtca-do-334|RTCA DO-334]]</link>\n<type>entity</type>\n<aliases>DO-334, RTCA DO-334 MOPS</aliases>\n<summary>RTCA DO-334 是 RTCA 发布的 AHRS 最低运行性能标准，说明降级模式可支持的飞行阶段，并在第 2.2 节描述姿态、航向及转弯侧滑类别。</summary>\n<match_snippet>... 的固态框架式[[entity/attitude-heading-reference-system|姿态航向基准系统]]（AHRS）最低运行性能标准（MOPS），英文名称为 *Minimum Operational Performance Stand ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/attitude-heading-reference-system|姿态航向基准系统]]</link>\n<type>entity</type>\n<aliases>AHRS</aliases>\n<summary>姿态航向基准系统（AHRS）是提供姿态、航向及转弯侧滑信息的非框架式航空电子系统，本页依据 AC 20-181（2014-04-07）整理其适航批准与安装评估要点。</summary>\n<match_snippet>... # 姿态航向基准系统 姿态航向基准系统（Attitude Heading Reference System，AHRS）是提供姿态、航向及转弯侧滑信息的非框架式（non-gimbaled）航空电子系统。本页内容依据 AC 20-181《A ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/ac-20-181|AC 20-181 咨询通告]]</link>\n<type>entity</type>\n<aliases>AC 20-181, 咨询通告20-181</aliases>\n<summary>本页汇总 FAA 咨询通告 AC 20-181（2014年4月7日）的目的、适用对象、四类补充指导领域、不涉及的 TSO-C129a 接口，以及附录 A、B、C 的构成与获取方式。</summary>\n<match_snippet>... irworthiness Approval of Attitude Heading Reference System (AHRS) Equipment”（[[entity/attitude-heading-reference-system|姿态航向 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/operational-environment-suitability-evaluation|运行环境适应性评估]]</link>\n<type>concept</type>\n<aliases>运行考虑, Operational Considerations</aliases>\n<summary>本页依据 AC 20-181（2014-04-07）第 5 节，整理极区、高磁干扰、低功率设置、风速与旋翼机振动等运行环境下 AHRS 性能与限制的评估要求与可接受符合性方法。</summary>\n<match_snippet>... # 运行环境适应性评估 针对极区、高磁扰、低功率、强风及旋翼机振动等运行环境，评估 AHRS 性能与限制的工程活动。以下内容依据 AC 20-181（日期 2014-04-07）第 5 节（§5.1–§5.5）整 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/tso-c201|TSO-C201技术标准规定]]</link>\n<type>entity</type>\n<aliases>TSO-C201, 技术标准规定C201</aliases>\n<summary>TSO-C201 是美国联邦航空管理局发布的技术标准规定，规定非万向架式姿态、航向及转弯侧滑系统（AHRS）的最低性能与适航批准要求，并涉及类别编码、降级模式与辅助源评估。</summary>\n<match_snippet>... 准规定，规定[[entity/attitude-heading-reference-system|姿态航向基准系统]]（AHRS）设备的最低性能与适航批准要求。TSO-C201 包含非万向架式姿态、航向及转弯和侧滑系统的性能标准；本页内容依据 AC ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/degraded-mode|降级模式]]</link>\n<type>concept</type>\n<aliases>Degraded Mode</aliases>\n<summary>本页依据 AC 20-181（2014-04-07）第3章整理 TSO-C201 降级模式的定义、适用性判断、试验要求、与其他系统接口及操作说明要求。</summary>\n<match_snippet>... # 降级模式 AC 20-181（2014-04-07）§3 说明：TSO-C201 允许一种可选的降级模式，在 AHRS 发生部分失效或失去辅助源时提供基本姿态性能。该模式旨在使运营人即使在仪表气象条件（IMC）下也能保持对航空器的正控制。 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/qian-shi-feng-qie-bian-tan-ce|前视风切变探测]]</link>\n<type>concept</type>\n<aliases>前视风切变检测</aliases>\n<summary>前视风切变探测是利用机载多普勒气象雷达在起飞、进近等阶段预测风切变，并向飞行机组提供咨询、警戒或警告的机载功能；本页依据AC 20-182A整理其激活、告警、抑制、显示与测试评估要求。</summary>\n<match_snippet>... 驾驶舱内机组正常座位位置上易于看到。 ## 告警抑制（第6.3节） 6.3.1 起飞期间，系统应在旋转前某一指定飞机速度抑制所有新的听觉和视觉告警，并在离地后重新启用告警能力。应按安装手册说明设定起飞告警设置，并确保抑制条件与机型特定起飞告 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/lei-da-gao-jing-yu-xian-shi-yao-qiu|雷达告警与显示要求]]</link>\n<type>concept</type>\n<aliases>气象雷达显示与告警, 雷达显示与告警要求</aliases>\n<summary>本页汇总AC 20-182A（2016年10月1日）中关于机载气象雷达告警与显示的要求，涵盖显示清晰性、颜色、告警优先级、前视风切变告警与抑制、图标显示及附录A告警等级表。</summary>\n<match_snippet>... 正常座位位置易于看到。 ## 前视风切变告警抑制（第6.3节） - 6.3.1 起飞期间，系统应在旋转前某一指定飞机速度抑制所有新的听觉和视觉告警，并在离地后重新启用告警能力。起飞告警设置应按安装手册说明设定，并确保抑制条件与机型特定的起飞 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[summary/bc1af029-f306-42bf-b3d1-b28235258d73|AC_20-182A.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本页概括FAA AC 20-182A（2016-10-01）关于[[concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun|机载气象雷达系统适航批准]]的咨询通告，涵盖风切变与湍流探测、告警显示、测试评估及持续适航要求。</summary>\n<match_snippet>... 切变探测能力失效的通告应使机组从其正常座位位置易于看到。 ### 告警抑制 - 起飞期间，系统应在旋转前某一指定飞机速度抑制所有新的听觉和视觉告警，并在离地后重新启用告警能力。起飞告警设置应按安装手册说明设定，并确保抑制条件与机型特定起飞告 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 154
+          },
+          {
+            "id": "call_01_oDYi1Q3AYAmHRf06yQNd4511",
+            "args": {
+              "slugs": [
+                "index"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "index": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[index|Index]]</link>\n<type>index</type>\n<aliases></aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n\n</sources>\n<summary>\n# Wiki Index\n\n本索引汇总维基当前收录的页面，并随页面新增自动更新。近期新增内容涵盖美国联邦航空管理局（FAA）多份咨询通告，涉及 AML-STC 基线数据复用与构型控制、TSO-C201 姿态航向基准系统适航批准、认证数据保留协议、机载气象雷达系统适航批准与持续适航要求，以及不可见光谱激光设备的适航安装与 FDA 差异批准、可充电锂电池及电池系统安装的可接受符合性方法、认证测试、系统安全与维护指导。\n</summary>\n<content>\n# Wiki Index\n\n本索引汇总维基当前收录的页面，并随页面新增自动更新。近期新增内容涵盖美国联邦航空管理局（FAA）多份咨询通告，涉及 AML-STC 基线数据复用与构型控制、TSO-C201 姿态航向基准系统适航批准、认证数据保留协议、机载气象雷达系统适航批准与持续适航要求，以及不可见光谱激光设备的适航安装与 FDA 差异批准、可充电锂电池及电池系统安装的可接受符合性方法、认证测试、系统安全与维护指导。\n\n## Summary (6)\n\n[[summary/06f57281-bf57-4f41-899d-1faa63603018|AC_20-179.pdf - Summary]] — 本咨询通告AC 20-179（2013-06-10）说明美国国内设计批准申请人和持有人与FAA签订认证数据保留协议的程序，界定政府记录，并规定数据范围、电子可读性、专有数据保护及协议生命周期要求。\n[[summary/aa7ee8a1-1112-4931-a85f-564ca8a49850|AC_20-180.pdf - Summary]] — 本页汇总美国联邦航空管理局2013年8月16日发布的AC 20-180咨询通告，说明通过AML-STC实现多型号基线数据复用、安装说明与ICA、EMC/闪电/HIRF评估及构型控制的方法与检查要求。\n[[summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5|AC_20-181.pdf - Summary]] — 本页汇总FAA于2014年4月7日发布的[[entity/ac-20-181|AC 20-181 咨询通告]]，介绍TSO-C201[[entity/attitude-heading-reference-system|姿态航向基准系统]]设备的适航批准补充指导、辅助源、降级模式、类别编码与运行评估。\n[[summary/bc1af029-f306-42bf-b3d1-b28235258d73|AC_20-182A.pdf - Summary]] — 本页概括FAA AC 20-182A（2016-10-01）关于[[concept/ji-zai-qi-xiang-lei-da-xi-tong-shi-hang-pi-zhun|机载气象雷达系统适航批准]]的咨询通告，涵盖风切变与湍流探测、告警显示、测试评估及持续适航要求。\n[[summary/813acfd3-492b-45fb-8705-d46a0ccbf984|AC_20-183.pdf - Summary]] — 本页面总结FAA AC 20-183（2014-12-15），概述不可见光谱激光设备在航空器上的适航安装、FDA差异批准、系统安全分析与运行限制。\n[[summary/f778243a-0889-4443-b715-cc6cd84d9cdc|AC_20-184.pdf - Summary]] — 本咨询通告AC 20-184（2015-10-15）为飞机上安装可充电锂电池及电池系统提供可接受的符合性方法，涵盖认证、测试、系统安全、持续适航和维护操作指导。\n\n## Entity (15)\n\n[[entity/ac-20-180|AC 20-180 咨询通告]] — 本页介绍 FAA 咨询通告 AC 20-180（2013年8月16日），说明 AML-STC 的目的、非强制性质、适用范围及附录 A 构型控制表格模板。\n[[entity/ac-20-181|AC 20-181 咨询通告]] — 本页汇总 FAA 咨询通告 AC 20-181（2014年4月7日）的目的、适用对象、四类补充指导领域、不涉及的 TSO-C129a 接口，以及附录 A、B、C 的构成与获取方式。\n[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]] — 本页整理FAA咨询通告AC 20-184（2015-10-15）关于机载可充电锂电池及电池系统测试与安装的可接受符合性方法、认证范围、Wh分级、维护与定义，并标注附录截断与解析疑点。\n[[entity/ac-20-179|咨询通告20-179]] — 本页整理美国联邦航空管理局咨询通告 AC 20-179（2013-06-10）的文件信息、目的、适用性、数据保留协议格式与文件获取方式，并说明其非强制性质。\n[[entity/ac-21-48|咨询通告21-48]] — 咨询通告21-48（AC 21-48）是美国联邦航空管理局关于使用电子建模系统作为主要型号设计数据的咨询通告，描述在设计、制造、安装和检查中的可接受方法，以及电子型号设计数据的访问与呈现要求。\n[[entity/tso-c201|TSO-C201技术标准规定]] — TSO-C201 是美国联邦航空管理局发布的技术标准规定，规定非万向架式姿态、航向及转弯侧滑系统（AHRS）的最低性能与适航批准要求，并涉及类别编码、降级模式与辅助源评估。\n[[entity/tso-c63e|TSO-C63e 机载气象雷达设备技术标准规定]] — TSO-C63e 是美国联邦航空管理局发布的机载气象雷达设备技术标准规定的最新版本，涵盖前视风切变探测与湍流探测等功能，并取代先前版本的相关要求。\n[[entity/rtca-do-160g|RTCA/DO-160G《机载设备环境条件和试验程序》]] — 本页说明RTCA/DO-160G《机载设备环境条件和试验程序》是由RTCA发布的机载设备环境条件与试验程序标准，2010年12月8日版，并被FAA AC 20-184列为机载锂电池系统应满足的环境鉴定标准之一。\n[[entity/rtca-do-311|RTCA DO-311《可充电锂电池系统最低运行性能标准》]] — 本页整理 RTCA DO-311《可充电锂电池系统最低运行性能标准》的发布信息、2008年3月13日版本，以及 FAA AC 20-184 在环境鉴定与附录F大型锂电池符合性方法中引用该标准的具体章节。\n[[entity/rtca-do-334|RTCA DO-334]] — RTCA DO-334 是 RTCA 发布的 AHRS 最低运行性能标准，说明降级模式可支持的飞行阶段，并在第 2.2 节描述姿态、航向及转弯侧滑类别。\n[[entity/rtca-do-347|RTCA DO-347《小型和中型可充电锂电池及电池系统认证测试指南》]] — RTCA DO-347是2013年12月18日发布的小型和中型可充电锂电池及电池系统认证测试指南，FAA AC 20-184将其设计与测试章节列为可接受符合性方法。\n[[entity/attitude-heading-reference-system|姿态航向基准系统]] — 姿态航向基准系统（AHRS）是提供姿态、航向及转弯侧滑信息的非框架式航空电子系统，本页依据 AC 20-181（2014-04-07）整理其适航批准与安装评估要点。\n[[entity/fan-ying-shi-feng-qie-bian-xi-tong|反应式风切变系统]] — 本页依据 AC 20-182A（2016年10月1日）第6.4.2节，说明反应式风切变系统与前视风切变系统并存安装时注意告警与警告告警的处理要求。\n[[entity/aircraft-rechargeable-lithium-battery-system|机载可充电锂电池系统]] — 本页依据FAA AC 20-184，汇总机载可充电锂电池系统的定义、用途、热失控危害、安装认证、环境鉴定、系统安全评估与维护运行要求。\n[[entity/type-certificate-data-sheet|型号合格证数据表]] — 型号合格证数据表（TCDS）是记录航空器型号合格证信息的官方数据表；本页说明其在 AC 20-180 附录 A 审定型号清单（AML）表格中的引用方式与填写要求。\n\n## Concept (56 total, showing top 20)\n\n[[concept/nohd-yu-mpe-jisuan|NOHD与MPE计算]] — 本页依据AC 20-183（2014-12-15）整理NOHD与MPE的定义、§7.3.2报告内容要求、暴露时间取值、可接受计算方法，以及AFMS与STC资料中涉及NOHD的条款。\n[[concept/eye-hazard|眼睛危害]] — 本页依据 AC 20-183（2014年12月15日）第3.3节，说明机载 FLIR 与 LIDAR 激光对飞行机组、乘客及公众的眼睛危害，包括不可见光束缺乏眨眼反射、视网膜危害波段与角膜/晶状体损伤波段及损伤程度取决于暴露剂量。\n[[concept/feiji-jiekou-anquan-liansuo|飞机接口安全联锁]] — 飞机接口安全联锁是FDA差异批准可能要求的安全联锁，通过与飞机系统接口在特定条件下禁用激光，并须纳入安装型号设计及AFMS。\n[[concept/lithium-battery-thermal-runaway-failure-hazards|锂电池热失控与失效危害]] — 本页依据 FAA AC 20-184（2015-10-15），说明锂电池热失控的定义、过充过放等失效模式及其火灾、爆炸和有毒气体后果，并列出相关特殊条件防护要求。\n[[concept/tso-c201-category-coding-and-applications|TSO-C201类别编码与应用]] — 本页依据 AC 20-181（2014-04-07）第4节整理 TSO-C201 六位类别字符串的构成，以及姿态 A1–A5、航向 H1–H11、转弯侧滑 T1–T7 各分类的含义与应用匹配要求。\n[[concept/gonggong-yongtu-hangkongqi|公共用途航空器]] — 本页说明AC 20-183（2014-12-15）第8段对公共用途航空器的界定、其不要求满足FAA适航要求的地位，以及运营人若选择保持FAA合规时的两条路径与禁用激光的相关要求。\n[[concept/fda-chayi-pizhun|FDA差异批准]] — 本页说明AC 20-183中FDA差异批准的适用情形、申请与审批角色、行政和技术控制，以及与型号设计、STC限制和构型控制的关系。\n[[concept/accessible-emission-limit|可及发射限值]] — 本页依据 AC 20-183（2014-12-15）§5.1 定义“可及发射限值”（AEL），即 FDA 在特定激光危害等级内允许的最大可及发射水平。\n[[concept/jiguang-leibie|激光类别]] — 依据 AC 20-183（2014-12-15）第6节表1，本页说明 FDA 与 IEC 激光危害类别、各类别产品危害及 AEL 定义。\n[[concept/far-23-25-27-29-863-flammable-fluid|23/25/27/29.863 可燃液体防火要求]] — 本页说明23/25/27/29.863可燃液体防火要求，以及AC 20-184中要求锂电池申请人表明符合该条款、并可用RTCA DO-347设计与测试章节作为可接受符合性方法示例的内容。\n[[concept/ahrs-aiding-sources|AHRS辅助源]] — 本页依据 AC 20-181 第2节梳理 AHRS 辅助源的定义、内部与外部安装评估，以及 GNSS、ADC、空速管和磁传感器等辅助源的设计与符合性要点。\n[[concept/operational-environment-suitability-evaluation|运行环境适应性评估]] — 本页依据 AC 20-181（2014-04-07）第 5 节，整理极区、高磁干扰、低功率设置、风速与旋翼机振动等运行环境下 AHRS 性能与限制的评估要求与可接受符合性方法。\n[[concept/degraded-mode|降级模式]] — 本页依据 AC 20-181（2014-04-07）第3章整理 TSO-C201 降级模式的定义、适用性判断、试验要求、与其他系统接口及操作说明要求。\n[[concept/qian-shi-tuan-liu-tan-ce|前视湍流探测]] — 前视湍流探测是依据飞机翼载类别与TSO-C63e对前方湍流进行检测并可分级显示的机载气象雷达功能，本页汇总 AC 20-182A（2016年10月1日）的相关背景、适用机型、显示区分与测试评估要求。\n[[concept/qian-shi-feng-qie-bian-tan-ce|前视风切变探测]] — 前视风切变探测是利用机载多普勒气象雷达在起飞、进近等阶段预测风切变，并向飞行机组提供咨询、警戒或警告的机载功能；本页依据AC 20-182A整理其激活、告警、抑制、显示与测试评估要求。\n[[concept/da-qi-wei-xie-gan-zhi|大气威胁感知]] — 本页汇总FAA AC 20-182A（2016年10月1日）第8、9.3、10.1节关于机载大气威胁感知功能的符号与显示、告警、测试评估及AFM/S记录要求。\n[[concept/lei-da-gao-jing-yu-xian-shi-yao-qiu|雷达告警与显示要求]] — 本页汇总AC 20-182A（2016年10月1日）中关于机载气象雷达告警与显示的要求，涵盖显示清晰性、颜色、告警优先级、前视风切变告警与抑制、图标显示及附录A告警等级表。\n[[concept/lei-da-tian-xian-zhao-wei-hu|雷达天线罩维护]] — 本页依据AC 20-182A（2016年10月1日）第11.2节，说明机载气象雷达天线罩维修与更换的持续适航要求：任何修理均须使天线罩恢复到雷达系统运行所需的最低性能，并引用AC 43-14与RTCA/DO-213A。\n[[concept/lei-da-xi-tong-ce-shi-yu-ping-gu|雷达系统测试与评估]] — 本页依据AC 20-182A（2016年10月1日）第9节，汇总机载气象雷达系统测试与评估的指导，包括气象雷达飞行测试、前视风切变穿透飞行与杂波抑制测试、湍流探测或大气威胁感知性能评估。\n[[concept/lei-da-fu-she-an-quan|雷达辐射安全]] — 雷达辐射安全页面依据 AC 20-182A 第5.6节，说明需记录雷达发射可能危害人员或野生动物的区域，并列出用于安全运行和最小安全距离确定的三项可接受指南。\n\n_To explore more pages under any category, use wiki_search with a query, or read a specific slug directly._\n\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 154
+          }
+        ],
+        "reasoning_content": "The user asks about AHRS using TSO-authorized GNSS velocity data, GNSS continues outputting values after flagging invalid, and the developer continues using it for attitude correction, reasoning \"TSO means velocity accuracy verified\". They ask to judge item by item, and explain what the document says about TSO-C129a interface.\n\nThis is about AC 20-184 (Installation, Performance, and Acceptance Tests for Attitude and Heading Reference Systems?) Actually AC 20-184 is \"Guidance for Testing and Installation of Attitude and Heading Reference Systems (AHRS)\". Let me search the wiki and documents.\n\nI need to find evidence: likely AC 20-184 discusses AHRS integration with TSO-C129a GPS, and whether velocity validity flag must be used. Let me search."
+      },
+      {
+        "thought": "",
+        "iteration": 1,
+        "timestamp": "2026-10-22T14:42:26.0560239+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_drhQXaEMOSaksKEr9Aun9190",
+            "args": {
+              "slugs": [
+                "entity/ac-20-181",
+                "concept/ahrs-aiding-sources",
+                "concept/degraded-mode",
+                "entity/attitude-heading-reference-system"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/tso-c201": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/ac-20-181": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/rtca-do-334": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/degraded-mode": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/ahrs-aiding-sources": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "concept/flight-manual-supplement-fms": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {
+                  "concept/degraded-mode": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e",
+                    "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+                  ]
+                },
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/ac-20-181|AC 20-181 咨询通告]]</link>\n<type>entity</type>\n<aliases>AC 20-181, 咨询通告20-181</aliases>\n</metadata>\n<relationships>\n<links_to>[[entity/attitude-heading-reference-system]] (姿态航向基准系统（AHRS）是提供姿态、航向及转弯侧滑信息的非框架式航空电子系统，本页依据 AC 20-181（2014-04-07）整理其适航批准与安装评估要点。), [[concept/degraded-mode]] (本页依据 AC 20-181（2014-04-07）第3章整理 TSO-C201 降级模式的定义、适用性判断、试验要求、与其他系统接口及操作说明要求。)</links_to>\n<linked_from>[[summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5]] (本页汇总FAA于2014年4月7日发布的[[entity/ac-20-181|AC 20-181 咨询通告]]，介绍TSO-C201[[entity/attitude-heading-reference-system|姿态航向基准系统]]设备的适航批准补充指导、辅助源、降级模式、类别编码与运行评估。)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e5fb2824-1499-4764-8d7a-47fcef0bbcf5\"/>\n</sources>\n<summary>\n本页汇总 FAA 咨询通告 AC 20-181（2014年4月7日）的目的、适用对象、四类补充指导领域、不涉及的 TSO-C129a 接口，以及附录 A、B、C 的构成与获取方式。\n</summary>\n<content>\n# AC 20-181 咨询通告\n\nAC 20-181 是美国运输部联邦航空管理局（FAA）发布的咨询通告，日期为 2014 年 4 月 7 日（4/7/14），发起办公室为 AIR-130，主题为“Airworthiness Approval of Attitude Heading Reference System (AHRS) Equipment”（[[entity/attitude-heading-reference-system|姿态航向基准系统]]设备的适航批准）。该文件以指导（guidance）形式提供补充说明。\n\n## 目的与适用对象\n\n§1.1 目的：本咨询通告补充现有的适航批准指导，适用于按技术标准规定 TSO-C201《Attitude Heading Reference System》或其后续修订版批准的 AHRS 件（articles）。\n\n§1.3 适用对象：为飞机制造商、航电制造商、安装单位，或依据型号合格证（TC）、型号合格证修订（ATC）、补充型号合格证（STC）、补充型号合格证修订（ASTC）为 TSO-C201 AHRS 设备申请适航批准的其他申请人提供指导。\n\n## 补充指导涵盖的四类内容\n\n既有政策虽较为全面，但未涉及 TSO-C201 中包含的、需要在安装时评估的某些特征。本咨询通告的补充指导针对以下四个特定领域：\n\n- Aiding Sources（辅助源）；\n- Degraded Mode（[[concept/degraded-mode|降级模式]]）；\n- TSO-C201 Categorizations and Applications（TSO-C201 分类与应用）；\n- Operational Considerations（运行考虑）。\n\n文件中相关段落还要求：确保由此产生的任何限制在 A/RFMS 或 POH 中予以说明；若相关因素影响姿态解（attitude solution）的可靠性或完整性，则可能适用运行限制。\n\n## 不涉及的内容\n\n§2.3.1.2：本咨询通告不涉及 AHRS 与 TSO-C129a《Airborne Supplemental Navigation Equipment Using the Global Positioning System (GPS)》的接口，因为该 TSO 设计标准在高干扰环境下可能无法提供足够的可用性。\n\n## 附录\n\n- 附录 A（A 页）：缩略语表，列出 AC（Advisory Circular）、ADC（Air Data Computer）、A/RFMS（Airplane/Rotorcraft Flight Manual Supplement）、AHRS（Attitude Heading Reference System）等。\n- 附录 B（B-1 页）：资料获取方式，包括在 GPO“Online Bookstore”中选择“Aviation”，再选择“Code of Federal Regulations”；最新的 TSO 与 AC 清单可在 FAA 法规与指南库（http://rgl.faa.gov/）查询，TSO Index of Articles 亦可在同一网站找到。\n- 附录 C（C-1 页）：咨询通告反馈信息表，用于提出改进意见、新增条目或主题建议，以及指出发现的错误。\n\n![AC 20-181 第8页图像](resource://AXohMGvwHHNXlMFjbMHtQQ)\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/ahrs-aiding-sources|AHRS辅助源]]</link>\n<type>concept</type>\n<aliases>辅助源, Aiding Sources</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>[[summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e5fb2824-1499-4764-8d7a-47fcef0bbcf5\"/>\n</sources>\n<summary>\n本页依据 AC 20-181 第2节梳理 AHRS 辅助源的定义、内部与外部安装评估，以及 GNSS、ADC、空速管和磁传感器等辅助源的设计与符合性要点。\n</summary>\n<content>\n# AHRS辅助源\n\nAHRS辅助源是为AHRS核心捷联姿态航向功能提供额外传感器信息的内部或外部系统。GNSS和ADC辅助源常用于识别航空器加速度，以减少姿态功能误差；磁通阀和磁强计为航向功能提供磁基准，另有许多来源可用于性能监视。有些辅助设计仅补充AHRS功能，辅助源丢失可能仅对AHRS性能产生有限影响；在其他设计中，辅助可能提供组成部分信息，辅助源丢失可能导致AHRS功能丧失。\n\n以下要点依据 AC 20-181 第2节，涉及辅助源安装、鉴定与接口评估。\n\n## 内部辅助源安装\n\n内部辅助源应作为整体项目预期功能评估的一部分进行评价，并应作为TSO-C201设计批准过程的一部分进行鉴定。需确保辅助源以适当的精度、完整性、可用性、软件等级和电子硬件设计保证，为其预期用途提供所需输入。例如，若系统为通用航空航空器开发，但将安装在通勤类航空器上，则内部辅助源可能需要重新评估，以确保与航空器设计架构及其使用方式相兼容。\n\n## 外部辅助源安装\n\n本条适用于未作为TSO-C201项目设计批准的一部分进行鉴定的外部辅助源。\n\n当AHRS需要外部辅助源时，需确保安装在航空器上的辅助源提供适当的精度、完整性、可用性、软件等级和电子硬件设计保证。\n\n申请人应确定外部辅助源失效和告警如何影响AHRS性能。必要时进行地面和飞行试验，以确保告警和飞行员动作适当。任何告警应与操作相关，以尽量减少飞行机组工作负荷；应清晰、无歧义且及时；应仅在该状态存在时显示；应一致地位于电子显示器的特定区域；当需要飞行机组立即感知时，应位于飞行机组主视场。若无法试验，应提供分析，以确保外部辅助源降级或失效时发生适当动作。例如，若AHRS在辅助源失效时禁用姿态输出或切换模式，作为§§23.1309、25.1309、27.1309或29.1309安全分析的一部分，需确保辅助源被有意禁用时AHRS按设计动作。\n\n## GNSS 辅助\n\nGNSS指各类提供自主地理空间定位的定位卫星。常见GNSS系统包括但不限于美国导航信号定时与测距（NAVSTAR）全球定位系统（GPS）、俄罗斯GLONASS和欧洲Galileo。GNSS速度数据可用于计算纵向加速度，以帮助消除误差。\n\n当AHRS与外部GNSS接口时，需确保外部GNSS以适当的精度、完整性、可用性以及软件和硬件设计保证提供所需输入。\n\n外部GNSS应符合以下任何修订版标准：\n- TSO-C145d《Airborne Navigation Sensors Using the Global Positioning System Augmented by the Satellite Based Augmentation System》；\n- TSO-C146d《Stand-Alone Airborne Navigation Equipment Using the Global Positioning System Augmented by the Satellite Based Augmentation System》；或\n- TSO-C196b《Airborne Supplemental Navigation Sensors for Global Positioning System Equipment using Aircraft-Based Augmentation》。\n\n本AC不涉及AHRS与TSO-C129a《Airborne Supplemental Navigation Equipment Using the Global Positioning System (GPS)》的接口，因为该TSO设计标准在高干扰环境下可能无法提供足够可用性。\n\n若使用GNSS位置源的速度精度，应确保GNSS源数据满足AHRS安装规定的最低速度精度要求。GNSS位置源取得TSO授权不要求通过速度精度测试。验证该性能的一种方法是确保GNSS源通过AC 20-138D《Airworthiness Approval of Positioning and Navigation Systems》或后续修订版规定的速度精度测试；这些GNSS测试通常由GNSS源设备制造商完成。\n\n某些GNSS项目可能在数据被标记为无效后仍输出错误的位置和速度数据。应审查GNSS规范以确定是否可能发生该情况；若AHRS检测到已告警的GNSS故障，AHRS应停止使用错误的GNSS数据。分析可作为符合性方法。\n\n## ADC 辅助\n\nADC信息有助于修正姿态俯仰角和坡度角误差。需确保AHRS与外部ADC的接口经过鉴定，例如符合TSO-C106《Air Data Computer》任何修订版，并以适当的精度、完整性、可用性以及软件和硬件设计保证提供所需输入。\n\n## 空速管辅助\n\n空速管数据有助于修正航空器加速度引起的姿态俯仰角和坡度角误差。空速管数据可直接与AHRS接口，通常用于低速和非复杂速度剖面的航空器。当与AHRS接口时，需确保信息来自已认证的航空器来源（例如TSO-C16《Electrically Heated Pitot and Pitot Static Tubes》），并以适当的精度、完整性、可用性以及软件和硬件设计保证提供所需输入。对于更复杂的速度，可能需要与ADC接口。另见§5.5旋翼机考虑。\n\n## 磁辅助\n\n当与磁传感器接口时，需确保传感器安装位置选择得当，以避免航空器结构和系统的干扰。对于与已知航空器磁异常相关的干扰，可能需要补偿器，以确保准确的磁航向信息。需确保所有航向仪表在所有可预见运行条件下连续工作。\n\n## 旋翼机考虑\n\n旋翼机运行机动与固定翼航空器在性能上不同，因为其涉及滚转、俯仰和偏航角速率，并伴随向稳定悬停的各方向平移。对于旋翼机应用，若使用空速管系统，需确保其以适当的精度、完整性和可用性提供所需输入；必要时演示或评估空速管系统性能，尤其是在低速下。\n\n采用MEMS技术并使用TSO-C16空速管/静压修正的AHRS，可能不足以满足旋翼机AHRS应用。另一种方法依赖使用GNSS和矢量数据“稳定和修正”姿态解；还有一种方法依赖空速管静压信息帮助修正和稳定由加速度计推导的姿态解。\n\n来源：AC 20-181（2014-04-07），第2节及§5.5。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[concept/degraded-mode|降级模式]]</link>\n<type>concept</type>\n<aliases>Degraded Mode</aliases>\n</metadata>\n<relationships>\n<links_to>[[entity/rtca-do-334]] (RTCA DO-334 是 RTCA 发布的 AHRS 最低运行性能标准，说明降级模式可支持的飞行阶段，并在第 2.2 节描述姿态、航向及转弯侧滑类别。), [[entity/attitude-heading-reference-system]] (summary omitted, already seen), [[concept/flight-manual-supplement-fms]] (飞行手册补充（FMS）是按具体航空器型号提供的飞行手册补充文件，记录适用操作说明和限制，并在 AML 表格中登记修订水平和批准日期。)</links_to>\n<linked_from>[[entity/tso-c201]] (TSO-C201 是美国联邦航空管理局发布的技术标准规定，规定非万向架式姿态、航向及转弯侧滑系统（AHRS）的最低性能与适航批准要求，并涉及类别编码、降级模式与辅助源评估。), [[summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5]] (summary omitted, already seen), [[entity/rtca-do-334]] (summary omitted, already seen), [[entity/ac-20-181]] (summary omitted, already seen), [[entity/attitude-heading-reference-system]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e5fb2824-1499-4764-8d7a-47fcef0bbcf5\"/>\n</sources>\n<summary>\n本页依据 AC 20-181（2014-04-07）第3章整理 TSO-C201 降级模式的定义、适用性判断、试验要求、与其他系统接口及操作说明要求。\n</summary>\n<content>\n# 降级模式\n\nAC 20-181（2014-04-07）§3 说明：TSO-C201 允许一种可选的降级模式，在 AHRS 发生部分失效或失去辅助源时提供基本姿态性能。该模式旨在使运营人即使在仪表气象条件（IMC）下也能保持对航空器的正控制。[[entity/rtca-do-334|RTCA DO-334]]《固态捷联[[entity/attitude-heading-reference-system|姿态航向基准系统]]（AHRS）最低运行性能标准（MOPS）》指出，降级模式可支持巡航飞行、爬升、下降、等待和仪表进近；但降级模式可能不适用于自动驾驶运行或某些飞行程序。应在适航认证过程中评估降级模式，以确保设计与运行的适用性。有关 AHRS 工作模式和设备性能的具体信息，参见 AHRS 制造商安装手册。\n\n## 降级模式适用性（§3.1）\n\n应按照 §§ 23.1301、25.1301、27.1301 或 29.1301 判断降级模式性能对于预期航空器和运行模式是否可接受。降级模式可用于任何航空器类型的主用和备用姿态源；但 TSO-C201 降级模式面向较小、较低性能的航空器，例如 part 23 和“non-appendix B”part 27 航空器，这类航空器通常按单飞行员合格审定，因而未安装两套主姿态系统。对于只有一套主姿态系统的航空器，降级模式提供了主姿态完全丢失时的替代手段。\n\n对于按两飞行员运行合格审定的航空器，当第一套主姿态系统失效或降级时，优先使用第二套主姿态系统。不得以降级模式为依据减少航空器所需姿态仪表的数量。若 AHRS 安装手册对降级模式规定飞行包线或时间限制，应确保这些限制纳入飞行手册。降级模式用于非正常状态，不应在地面启用，包括初始系统起动期间或发动机起动之后。\n\n## 降级模式试验（§3.2）\n\nAHRS 设备中有两类降级模式触发方式：一类可在飞行中评估，另一类不能。\n\n- §3.2.1：对于初始 AHRS 安装，若降级模式可在飞行中禁用（例如拔断路器），则应通过飞行试验进行评估。\n- §3.2.2：对于初始 AHRS 安装，若降级模式无法在飞行中评估（例如加速度计退化），申请人可使用分析或模拟。试验应包括飞行员工作负荷，以及在正常仪表飞行规则（IFR）机动（包括爬升、下降、标准转弯率转弯和仪表进近）中降级模式的可接受性；试验还应评估对飞行机组在飞行中控制航空器能力的任何影响。\n- §3.2.3：后续安装应针对独特的航空器飞行包线或运行条件证明降级模式性能。使用分析来符合 §§23.1309、25.1309、27.1309、29.1309 以及 25.1523 和 part 25 附录 D 的申请人，应确保降级模式能安全执行其预期功能，且不会显著影响飞行员工作负荷或航空器运行；该分析还应考虑对飞行机组在飞行中控制航空器能力的任何影响。无论采用哪种方式，飞机/旋翼机[[concept/flight-manual-supplement-fms|飞行手册补充]]（A/RFMS）均应包含降级模式的性能特性和限制。\n\n## 其他系统接口（§3.3）\n\n降级模式性能是为支持主姿态、航向、转弯率和侧滑-滑移指示而定义的。应评估降级模式性能对其他应用的适用性，因为对于更高性能的应用（如自动驾驶、平视显示器（HUD）或合成视觉系统（SVS）显示），降级模式可能不够充分。若分析表明降级模式对航空器其他应用不够充分，应确保降级模式不驱动这些特定的航空器应用。\n\n## 操作说明（§3.4）\n\n应确保相应的 A/RFMS 或适用的操作说明得到更新，内容包括降级模式的说明、降级模式下提供的告警，以及航空器操作指令。操作说明还应指明哪些系统应用将丢失（例如自动驾驶），以及在降级模式下可执行的机动或运行类型的限制。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>ec1ebcc3-6d50-46d6-8a64-5444dce0962e</knowledge_base_id>\n<link>[[entity/attitude-heading-reference-system|姿态航向基准系统]]</link>\n<type>entity</type>\n<aliases>AHRS</aliases>\n</metadata>\n<relationships>\n<links_to>[[concept/degraded-mode]] (summary omitted, already seen), [[entity/rtca-do-334]] (summary omitted, already seen)</links_to>\n<linked_from>[[concept/degraded-mode]] (summary omitted, already seen), [[entity/tso-c201]] (summary omitted, already seen), [[summary/e5fb2824-1499-4764-8d7a-47fcef0bbcf5]] (summary omitted, already seen), [[entity/rtca-do-334]] (summary omitted, already seen), [[entity/ac-20-181]] (summary omitted, already seen)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e5fb2824-1499-4764-8d7a-47fcef0bbcf5\"/>\n</sources>\n<summary>\n姿态航向基准系统（AHRS）是提供姿态、航向及转弯侧滑信息的非框架式航空电子系统，本页依据 AC 20-181（2014-04-07）整理其适航批准与安装评估要点。\n</summary>\n<content>\n# 姿态航向基准系统\n\n姿态航向基准系统（Attitude Heading Reference System，AHRS）是提供姿态、航向及转弯侧滑信息的非框架式（non-gimbaled）航空电子系统。本页内容依据 AC 20-181《Airworthiness Approval of Attitude Heading Reference System (AHRS) Equipment》（文件号 AC 20-181，日期 4/7/14，Initiated By: AIR-130）整理。\n\n## 目的与适用范围\n\n- 该咨询通告补充 TSO-C201《Attitude Heading Reference System》或后续修订版下已批准 AHRS 设备的现有适航批准指导。\n- TSO-C201 包含非万向架式姿态、航向及转弯侧滑系统的性能标准。\n- 附录 A 包含缩略语表；附录 B 说明参考文件的获取方式。\n- 适用对象：飞机制造商、航电制造商、安装车间，或按型号合格证（TC）、修订型号合格证（ATC）、补充型号合格证（STC）、修订补充型号合格证（ASTC）为 TSO-C201 AHRS 设备申请适航批准的其他申请人。\n\n## 背景\n\n姿态（俯仰和滚转）、航向、转弯和侧滑仪表制造商自 1958 年起使用 TSO-C3、TSO-C4、TSO-C5 和 TSO-C6 标准。较近期，基于微机电系统（MEMS）、环形激光陀螺（RLG）、光纤陀螺（FOG）及其他技术的 AHRS 正在替代传统姿态和航向仪表，以提高数据性能可靠性和精度。AHRS 提供的姿态和航向测量在静态和动态精度上与传统的万向架系统相当。TSO-C201 不取消较早的 TSO，而是为非万向架式姿态和航向系统编写的。\n\n## AHRS 辅助源\n\nAHRS 辅助源是向核心捷联（strap down）姿态航向基准功能提供额外传感器信息的内部或外部系统。GNSS 和大气数据计算机（ADC）辅助源常用于识别航空器加速度，以减少姿态功能中的误差。磁通阀和磁强计为航向功能提供磁参考，许多源可用于性能监控。有些辅助设计仅补充 AHRS 功能，辅助源丢失对 AHRS 性能可能只有有限影响；另一些设计中辅助提供整体信息，辅助源丢失可能导致 AHRS 功能丧失。\n\n### 外部辅助源\n\n- **性能**：当 AHRS 需要外部辅助源时，确保装机辅助源提供适当的精度、完整性、可用性以及软件等级和电子硬件设计保证。\n- **告警**：申请人应确定外部辅助源失效和告警如何影响 AHRS 性能；必要时进行地面和飞行试验，以确保告警和飞行员动作的适当性。告警应清晰、无歧义、及时。若无法测试，提供分析以确保外部辅助源降级或失效时发生适当动作。例如，若 AHRS 在辅助源失效时禁用姿态输出或切换模式，作为 §§23.1309、25.1309、27.1309 或 29.1309 安全分析的一部分，确保辅助源被有意禁用时 AHRS 按设计动作。\n\n### GNSS\n\n- **鉴定**：将 AHRS 与外部 GNSS 接口时，确保外部 GNSS 以适当的精度、完整性、可用性以及软件和硬件设计保证提供所需输入。\n- **接口范围**：本文件不涉及 AHRS 与 TSO-C129a《Airborne Supplemental Navigation Equipment Using the Global Positioning System (GPS)》的接口，因为该 TSO 设计标准在高干扰环境下可能不能提供足够的可用性。\n- **速度精度**：若使用 GNSS 位置源的速度精度，应确保 GNSS 源数据满足 AHRS 安装规定的最低速度精度要求。\n- **故障**：某些 GNSS 设备可能在数据被标记为无效后仍输出错误的定位和速度数据。审查 GNSS 规范以确定是否可能发生此情况；若 AHRS 检测到已告警的 GNSS 故障，AHRS 应停止使用错误的 GNSS 数据。分析可作为符合性方法。\n\n### ADC 与空速管\n\n- ADC 信息有助于修正姿态俯仰和坡度角误差。确保 AHRS 与外部 ADC 的接口经过鉴定（如 TSO-C106《Air Data Computer》的任何修订版），并以适当的精度、完整性、可用性以及软件和硬件设计保证提供所需输入。\n- 空速管数据有助于修正由航空器加速度引入的姿态俯仰和坡度角误差，可直接与 AHRS 接口，通常用于低速和非复杂速度剖面的航空器。接口时应确保信息来自已认证的航空器源（例如 TSO-C16《Electrically Heated Pitot and Pitot Static Tubes》），并以适当的精度、完整性、可用性以及软件和硬件设计保证提供所需输入。\n\n## [[concept/degraded-mode|降级模式]]\n\nTSO-C201 允许可选降级模式，在 AHRS 部分失效或失去辅助源时提供基本姿态性能。该模式意在使操作者即使在仪表气象条件（IMC）下也能保持航空器的正控制。[[entity/rtca-do-334|RTCA DO-334]]《Minimum Operational Performance Standards (MOPS) for Solid-State Strapdown Attitude and Heading Reference Systems (AHRS)》指出，降级模式可支持巡航飞行、爬升、下降、等待和仪表进近；但降级模式可能不适用于自动驾驶运行或某些飞行程序。应在适航认证期间评估降级模式，以确保设计和运行的适用性。有关 AHRS 运行模式和设备性能的具体信息，参考 AHRS 制造商的安装手册。\n\n- 不得以降级模式作为减少航空器所需姿态仪表数量的依据。\n- 若 AHRS 安装手册对降级模式规定了飞行包线或时间限制，应确保这些限制得到遵守。\n\n### 降级模式试验\n\n降级模式触发有两类：一类可在飞行中评估，另一类不能。\n\n- 对于初始 AHRS 安装，若降级模式可在飞行中禁用（如拔断路器），应通过飞行试验评估降级模式。\n- 对于初始 AHRS 安装，若降级模式不能在飞行中评估（如加速度计退化），申请人可使用分析或模拟。\n- 测试应包括飞行员工作负荷、降级模式在正常仪表飞行规则（IFR）下的可接受性。\n\n## TSO-C201 类别与应用\n\nAHRS 最低限度向飞行员和/或航空器提供姿态信息，也可提供航向、转弯和侧滑信息，以及其他信息，包括加速度、垂直速度、角速率、侧向速度、航迹数据和位置。TSO-C201 AHRS 设备通常用六位类别字符串标识，且同一 AHRS 可能对不同运行模式具有不同的类别字符串。类别描述参见 RTCA DO-334 第 2.2 节。\n\n- **姿态类别（A1–A5）**：主要涉及 AHRS 姿态输出的精度。所有五个类别都适合驱动基本姿态指示器。某些应用，如 HUD 和自动驾驶集成，可能需要更高精度类别；参考接口系统的姿态性能和适航要求，确保 AHRS 安装满足这些要求。\n- **航向类别**：在存在磁异常的情况下，某些应用如增强飞行视景系统（EFVS）和飞行管理系统（FMS）集成可能需要更高精度类别；参考接口系统的航向性能和适航要求，确保 AHRS 安装满足这些要求。\n- **转弯与侧滑类别**：涉及转弯、坡度角、侧滑和滑移的性能与适航要求，确保安装满足这些要求。\n- **其他信息**：加速度、垂直速度、角速率、磁风向、地速、磁航迹角和速度等。TSO-C201 未对这些数据规定性能要求，应确保 AHRS 数据适用于预期应用。\n\n## 运行环境考虑\n\n### 极区运行\n\n- 若 AHRS 设备安装在预期于极区运行的航空器上，申请人应进行飞行试验演示，以表明新 AHRS 设备工作正常，或表明在类似或相似安装的航空器上先前有过成功的飞行试验演示。\n- 若 AHRS 设备在组合 TSO-STC 过程中试飞，申请人应确保航空器符合 TSO 设备安装限制和 STC。\n- 仿真测试和/或分析是后续安装可接受的符合性方法。\n- 若 AHRS 性能在极区下降，应向飞行机组提供视觉指示；视具体系统设计和整体驾驶舱理念，也可提供听觉告警。告警应清晰、无歧义、及时。\n- 若 AHRS 未取得极区飞行资格，确保 A/RFMS 包含适当限制。\n\n### 高磁干扰区域\n\n高磁干扰区域可能由航空母舰、电力线、高架直升机降落平台、埋地混凝土钢筋、靠近航空器的地面设备或众多其他条件引起。\n\n当 AHRS 安装包含磁通阀或磁强计，评估安装中若包含的以下用于补偿磁干扰的功能：\n\na) 临时停用磁通阀或磁强计的 DG 模式；\nb) 允许飞行员手动对准受影响系统的手动对准模式。\n\n### 低功率设置\n\n评估低功率发动机设置及可能伴随的低电压条件，以确定其是否影响 AHRS 性能。该评估有必要，因为 FAA 已识别出低功率设置导致波动和错误方向的关切。\n\n### 风速\n\n一些 AHRS 使用风计算来修正航向信息。取决于磁差和算法，有些比其他更易受风速和风向变化影响。对于使用这些修正并在热带地区或 18,000 ft 至 40,000 ft MSL 之间的极地急流附近飞行的航空器，应关注安全问题并在 A/RFMS 中提供任何限制。若 AHRS 与风切变系统集成，验证运行能力和限制。\n\n### 旋翼机\n\n一些 AHRS 难以区分旋翼机运动与其所安装平台的正常振动频谱，涉及加速度计导出的姿态解。采用 MEMS 技术、使用 TSO-C16 空速管/静压修正设计的 AHRS 可能不足以满足旋翼机 AHRS 应用。运行中的旋翼机机动性能与固定翼不同，因为其涉及滚转、俯仰和偏航速率，耦合各方向的平动。\n\n---\n\n注：本页依据的文本片段在若干处存在断句，相关表述以 AC 20-181 原文为准。\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 26
+          }
+        ],
+        "reasoning_content": "Key pages: entity/ac-20-181 (mentions 不涉及的 TSO-C129a 接口), concept/ahrs-aiding-sources, concept/degraded-mode, entity/attitude-heading-reference-system. Read them."
+      },
+      {
+        "thought": "",
+        "iteration": 2,
+        "timestamp": "2026-10-22T14:42:28.5422978+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_BbXcUWy3btDyuEF4w4HF5669",
+            "args": {
+              "id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+              "query": "TSO-C129a velocity accuracy invalid"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "TSO-C129a velocity accuracy invalid",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-181.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-181.pdf",
+                  "file_size": "123.1 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 115,
+                  "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+                  "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [],
+                "truncated": false,
+                "match_count": 0,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                "total_chunks": 115,
+                "fetched_chunks": 0,
+                "knowledge_title": "AC_20-181.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 0/115 chunks from AC_20-181.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 99
+          }
+        ],
+        "reasoning_content": "Now I should check the original document AC 20-181 (d4) §2.3.1.2 and GNSS text to quote exactly, particularly the sentence about TSO authorization not requiring velocity accuracy testing, and invalid data. Let me query d4."
+      },
+      {
+        "thought": "",
+        "iteration": 3,
+        "timestamp": "2026-10-22T14:42:31.9706616+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_nDV3yUspT8qRpOM9ksUJ6836",
+            "args": {
+              "id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+              "query": "TSO-C129a"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "TSO-C129a",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-181.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-181.pdf",
+                  "file_size": "123.1 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 115,
+                  "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+                  "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "8eeece07-dcfc-4339-8500-b02acdd52826",
+                  "28ecf06c-03a9-47db-85fc-a9e615996bd8",
+                  "f86f0674-5189-45ac-99b3-5453e3910751"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                "total_chunks": 115,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-181.pdf",
+                "source_chunk_id": "8eeece07-dcfc-4339-8500-b02acdd52826",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 3/115 chunks from AC_20-181.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 89
+          },
+          {
+            "id": "call_01_1rnlxlN8eGKoDvFWb9UV0358",
+            "args": {
+              "id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+              "query": "velocity"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "velocity",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-181.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-181.pdf",
+                  "file_size": "123.1 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 115,
+                  "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+                  "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "a44445fe-befa-46b4-bf14-ba02407e6bc1",
+                  "157e5534-95c6-4ce9-a22a-93273a959d27",
+                  "40330931-98a2-461f-91aa-b2600fe31f8c",
+                  "28ecf06c-03a9-47db-85fc-a9e615996bd8",
+                  "f86f0674-5189-45ac-99b3-5453e3910751",
+                  "2e551b84-d937-4220-a987-3043856ce2ea",
+                  "3dd19dfe-e748-4171-b54a-35ef177bf684",
+                  "e376826f-35d5-4eb8-8ef0-4135d41c6acd",
+                  "9a0623d9-8ae4-4046-90b6-211874b46a9c",
+                  "b55f4b7a-c143-4a8e-8574-404f828473ea",
+                  "8f5762fc-0216-4be7-b61e-b9e87636eff1",
+                  "fde02d4a-20cf-4447-b868-a8bcf7017f40",
+                  "8d242710-28c6-4e1f-97d8-21d7bb62040e",
+                  "151d1293-c05b-4f75-abf3-9f3718925d83",
+                  "666c5493-0974-4eab-bc7b-9af91391e209",
+                  "bad319e4-ec15-4638-b0ec-c733a6354575",
+                  "a9fae183-473d-4af9-9fe5-2ca649ea71c2"
+                ],
+                "truncated": false,
+                "match_count": 7,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                "total_chunks": 115,
+                "fetched_chunks": 17,
+                "knowledge_title": "AC_20-181.pdf",
+                "source_chunk_id": "a44445fe-befa-46b4-bf14-ba02407e6bc1",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 17/115 chunks from AC_20-181.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 89
+          }
+        ],
+        "reasoning_content": "Try one word \"TSO-C129a\"."
+      },
+      {
+        "thought": "",
+        "iteration": 4,
+        "timestamp": "2026-10-22T14:42:35.5974091+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_pbVbZin8xEoL49XfrrID7737",
+            "args": {
+              "id": "f86f0674-5189-45ac-99b3-5453e3910751",
+              "context": 4
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-181.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-181.pdf",
+                  "file_size": "123.1 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 115,
+                  "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+                  "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "ccf0f5b8-a1da-406e-adba-f1a08545f559",
+                  "1da0f60e-d9d8-4cac-826b-d97686eacb09",
+                  "8eeece07-dcfc-4339-8500-b02acdd52826",
+                  "28ecf06c-03a9-47db-85fc-a9e615996bd8",
+                  "f86f0674-5189-45ac-99b3-5453e3910751",
+                  "2e551b84-d937-4220-a987-3043856ce2ea",
+                  "3dd19dfe-e748-4171-b54a-35ef177bf684",
+                  "e376826f-35d5-4eb8-8ef0-4135d41c6acd",
+                  "9a0623d9-8ae4-4046-90b6-211874b46a9c"
+                ],
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                "single_chunk": false,
+                "total_chunks": 115,
+                "fetched_chunks": 9,
+                "focus_chunk_id": "f86f0674-5189-45ac-99b3-5453e3910751",
+                "knowledge_title": "AC_20-181.pdf",
+                "source_chunk_id": "ccf0f5b8-a1da-406e-adba-f1a08545f559",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 9/115 chunks from AC_20-181.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 870
+          }
+        ],
+        "reasoning_content": "I need context for §2.3.2 full text and §2.3.3. Also §2.3.1 maybe mentions TSO-C145d etc. Let me read chunk c3 with context, and c7/c9. Also maybe the paragraph on \"TSO-C129a\" appears in context of accepted GNSS TSOs. Let me read around index 29-36."
+      },
+      {
+        "thought": "",
+        "iteration": 5,
+        "timestamp": "2026-10-22T14:42:43.0325202+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_QDVMzXrvt87SlBQ1XNXv1018",
+            "args": {
+              "id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+              "query": "annunciated"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "annunciated",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-181.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-181.pdf",
+                  "file_size": "123.1 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 115,
+                  "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+                  "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "3dd19dfe-e748-4171-b54a-35ef177bf684",
+                  "e376826f-35d5-4eb8-8ef0-4135d41c6acd",
+                  "9a0623d9-8ae4-4046-90b6-211874b46a9c"
+                ],
+                "truncated": false,
+                "match_count": 1,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                "total_chunks": 115,
+                "fetched_chunks": 3,
+                "knowledge_title": "AC_20-181.pdf",
+                "source_chunk_id": "3dd19dfe-e748-4171-b54a-35ef177bf684",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 3/115 chunks from AC_20-181.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 179
+          },
+          {
+            "id": "call_01_MugCLJCXAXdA5olSbqV38067",
+            "args": {
+              "id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+              "query": "external aiding source"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "external aiding source",
+                "document": {
+                  "type": "file",
+                  "title": "AC_20-181.pdf",
+                  "source": "File Upload",
+                  "metadata": {
+                    "process_overrides": {
+                      "asr_config": {
+                        "enabled": false,
+                        "language": "",
+                        "model_id": ""
+                      },
+                      "vlm_config": {
+                        "api_key": "",
+                        "enabled": false,
+                        "base_url": "",
+                        "model_id": "",
+                        "model_name": "",
+                        "interface_type": ""
+                      },
+                      "graph_enabled": false,
+                      "image_actions": {
+                        "ocr": {
+                          "on": [
+                            {
+                              "is": "block",
+                              "prop": "contain.text"
+                            },
+                            {
+                              "is": "true",
+                              "prop": "contain.data_visual"
+                            }
+                          ],
+                          "on_unobserved": true
+                        }
+                      },
+                      "extract_config": {
+                        "enabled": false
+                      },
+                      "chunking_config": {
+                        "strategy": "auto",
+                        "chunk_size": 512,
+                        "separators": [
+                          "\n\n",
+                          "\n",
+                          "。",
+                          "！",
+                          "？",
+                          ";",
+                          "；"
+                        ],
+                        "chunk_overlap": 80,
+                        "child_chunk_size": 384,
+                        "parent_chunk_size": 4096,
+                        "enable_parent_child": true
+                      },
+                      "summary_enabled": true,
+                      "enable_multimodel": false,
+                      "image_attrs_enabled": false,
+                      "image_vector_enabled": false,
+                      "question_generation_config": {
+                        "enabled": true,
+                        "question_count": 3
+                      }
+                    }
+                  },
+                  "file_name": "AC_20-181.pdf",
+                  "file_size": "123.1 KB",
+                  "file_type": "pdf",
+                  "chunk_count": 115,
+                  "description": "该文件是美国联邦航空管理局2014年发布的第20-181号咨询通告，针对按TSO-C201或后续修订批准的态度航向基准系统（AHRS）设备，补充其适航批准指导。文件列出相关咨询通告与14 CFR条款，说明适用对象与背景，并重点讨论辅助源、降级模式、TSO-C201分类与应用及运行考虑；还涉及系统接口、飞行手册补充和运行说明的更新。附录提供缩略语、参考文件获取方式和反馈表。",
+                  "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "f87b6ad3-3001-4a5e-976a-47a3b0ec6622",
+                  "87110db9-a51b-4342-a224-4a958ac0cea7",
+                  "3cd68033-b396-4799-af1b-8865f7ced88e",
+                  "7ea3b132-7c8e-4c9e-9c9a-9787814c88cd",
+                  "f7c46d2a-9060-4f54-82f1-e6ced05df5ee",
+                  "d2f8c2ca-12fa-424b-be4d-1a5faadbd7ed",
+                  "88a20b46-eef5-49fa-8de2-b1e53d7dc090",
+                  "ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5",
+                  "19c4fc4d-cf52-4c82-9368-1aee0ad5505b",
+                  "6497d606-18eb-4fab-b815-8c154c29e990"
+                ],
+                "truncated": false,
+                "match_count": 5,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e5fb2824-1499-4764-8d7a-47fcef0bbcf5",
+                "total_chunks": 115,
+                "fetched_chunks": 10,
+                "knowledge_title": "AC_20-181.pdf",
+                "source_chunk_id": "f87b6ad3-3001-4a5e-976a-47a3b0ec6622",
+                "knowledge_base_id": "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+              },
+              "output": "Listed 10/115 chunks from AC_20-181.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 181
+          }
+        ],
+        "reasoning_content": "Now let me also check §2.2 external aiding source alert requirements (para exact text) to support \"告警应与操作相关...\" Maybe useful for item-by-item judgement. Let me search \"annunciat\" and \"external aiding\" in d4.\n\nAlso the question: \"AHRS 使用有 TSO 授权的 GNSS 速度数据。GNSS 在报无效后仍输出数值，开发方继续用于姿态修正，理由是'有 TSO 就已验证速度精度'。请逐项判断，并说明文件对 TSO-C129a 接口说到了哪一步。\"\n\nThey want an itemized judgment of claims:\n1. GNSS velocity data can be used for AHRS attitude correction — acceptable in principle (GNSS velocity data can compute longitudinal acceleration to help eliminate errors), but subject to conditions.\n2. TSO authorization verifies velocity accuracy — false: GNSS position sources are not required to pass velocity accuracy tests to receive TSO authorization; need to verify against AHRS installation minimum velocity accuracy requirement, e.g., AC 20-138D tests.\n3. After GNSS flags data invalid but still outputs values, continuing to use them — non-compliant: §2.3.3 says possible for GNSS articles to output erroneous position and velocity after flagged invalid; review GNSS specs; if AHRS detects annunciated GNSS fault, AHRS should cease using erroneous GNSS data; analysis may be means of compliance.\n4. Use of TSO-C129a GPS as the source — the AC does not address AHRS interface to TSO-C129a, because that TSO design standard may not provide sufficient availability in high interference environments. So even if TSO-authorized, TSO-C129a isn't within the accepted GNSS qualification list (TSO-C145d/C146d/C196b). The document says \"does not address\" not \"prohibits\" — it doesn't approve nor provide guidance; applicant needs other basis. That's \"说到了哪一步\" — the boundary.\n\nAlso item: \"有 TSO 就已验证速度精度\" — TSO authorization is not velocity accuracy verification. Correct statement: TSO-C201 §4.4 says TSO-C201 doesn't provide performance requirements for other data incl. velocity, so ensure AHRS data appropriate for intended application. Could mention.\n\nAlso the \"invalid\" flag: there's a subtlety — §2.3.3 says \"if the AHRS detects the annunciated GNSS fault, the AHRS should cease using erroneous GNSS data.\" The developer's scenario: GNSS flags invalid but continues outputting values, developer continues using them for attitude correction. That directly conflicts. However one nuance: the guidance presumes AHRS \"detects the annunciated GNSS fault\". If the installation doesn't receive/annunciate the fault, that's an interface integrity problem; §2.3.1 requires appropriate integrity/availability. And §2.2 (external aiding source) requires determining how failures and alerts affect AHRS performance, testing alerts and pilot actions, and analysis where testing is impossible; if AHRS disables attitude output or switches mode upon aiding failure, that must be consistent with safety analysis.\n\nLet me get exact text of §2.2 (external aiding source) for accurate citation. Search \"external aiding\" or \"annunciation\"."
+      },
+      {
+        "thought": "## 结论\n\n开发方的三点推理均不成立：AC 20-181 一方面允许用 GNSS 速度辅助姿态，另一方面**明确否定了“取得 TSO 授权就等于速度精度已经验证”**，并且要求 AHRS 在检测到已告警的 GNSS 故障后停止使用错误数据。如果该 GNSS 是 TSO-C129a 设备，该接口根本不在本咨询通告的指导范围内。\n\n## 逐项判断\n\n| 判断项 | 结论 | 文件依据 |\n|---|---|---|\n| ① AHRS 用 GNSS 速度数据修正姿态 | **原则允许，但有条件** | §2.3：GNSS 速度数据可用于计算纵向加速度，“以帮助消除误差”，但须满足 §2.3.1 的鉴定要求与 §2.3.2 的速度精度要求 <kb doc=\"AC_20-181.pdf\" chunk_id=\"157e5534-95c6-4ce9-a22a-93273a959d27\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ② “有 TSO 授权就已验证速度精度” | **不成立（核心错误）** | §2.3.2 原文：GNSS 位置源**不要求通过速度精度试验即可取得 TSO 授权** <kb doc=\"AC_20-181.pdf\" chunk_id=\"f86f0674-5189-45ac-99b3-5453e3910751\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"2e551b84-d937-4220-a987-3043856ce2ea\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ③ 报无效后仍输出数值，继续用于姿态修正 | **不符合** | §2.3.3：某些 GNSS 设备在数据被标记为无效后仍会输出错误的位置与速度数据；若 AHRS 检测到已告警的 GNSS 故障，**应停止使用错误的 GNSS 数据** <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ④ 以“分析”作为继续使用的理由 | **误用条款** | §2.3.3 的“分析可作为符合性方法”，是用于证明“该情形不会发生”或“已停止使用”，而不是用于论证可以继续使用已告警的数据 <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ⑤ 若该 GNSS 是 TSO-C129a 设备 | **本 AC 不予覆盖** | §2.3.1.2 明确不涉及该接口；§2.3.1.1 的可接受标准清单只有 TSO-C145d、C146d、C196b <kb doc=\"AC_20-181.pdf\" chunk_id=\"28ecf06c-03a9-47db-85fc-a9e615996bd8\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"1da0f60e-d9d8-4cac-826b-d97686eacb09\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"8eeece07-dcfc-4339-8500-b02acdd52826\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n| ⑥ 告警与机组/手册影响 | **须另行评估并记录** | §2.2.2 要求确定辅助源失效及告警如何影响 AHRS 性能，并试验告警与飞行员动作；若失去辅助源触发降级模式，还适用 §3.3、§3.4 <kb doc=\"AC_20-181.pdf\" chunk_id=\"88a20b46-eef5-49fa-8de2-b1e53d7dc090\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"19c4fc4d-cf52-4c82-9368-1aee0ad5505b\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /> |\n\n### ② 为什么“TSO 授权”不能证明速度精度\n\n§2.3.2 的完整规定是：若使用 GNSS 位置源的速度精度，应确保 GNSS 源数据满足**AHRS 安装所规定的最低速度精度要求**；而“GNSS 位置源取得 TSO 授权并不要求通过速度精度试验”。验证该性能的一种方法是确认 GNSS 源通过了 AC 20-138D 规定的速度精度试验，这类试验通常由 GNSS 设备制造商完成 <kb doc=\"AC_20-181.pdf\" chunk_id=\"f86f0674-5189-45ac-99b3-5453e3910751\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"2e551b84-d937-4220-a987-3043856ce2ea\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"3dd19dfe-e748-4171-b54a-35ef177bf684\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。也就是说，TSO 授权解答的是“设备是否获准安装使用”，并不回答“速度精度是多少”。此外，TSO-C201 本身对速度等“其他数据”不规定性能要求，须由申请人自行确认其适用于预期应用 <kb doc=\"AC_20-181.pdf\" chunk_id=\"bad319e4-ec15-4638-b0ec-c733a6354575\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n### ③ 为什么“报无效后继续用”不能接受\n\n§2.3.3 的设计前提正是开发方遇到的情形：数据被标记无效后仍可能继续输出错误数值。因此 AC 给出的动作是两条：先**审查 GNSS 规范**确认是否可能发生该情况；一旦 AHRS 检测到已告警的故障，就**停止使用**这些数据 <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。这与 §2.3.1 要求外部 GNSS 提供“适当的精度、完整性、可用性”一脉相承 <kb doc=\"AC_20-181.pdf\" chunk_id=\"40330931-98a2-461f-91aa-b2600fe31f8c\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n\n需要精确区分的是：条款的触发条件写的是“AHRS 检测到已告警的 GNSS 故障”。如果该安装根本没有把无效标志传给 AHRS，或者 AHRS 不响应，这本身就是接口完整性与告警设计缺陷，应按 §2.2.1（辅助源性能）和 §2.2.2（失效与告警影响、地面/飞行试验、告警须清晰及时且仅在故障存在时显示）处理 <kb doc=\"AC_20-181.pdf\" chunk_id=\"d2f8c2ca-12fa-424b-be4d-1a5faadbd7ed\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"88a20b46-eef5-49fa-8de2-b1e53d7dc090\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。换言之，“分析”只能用来证明“该 GNSS 不会在无效后输出错误数据”或“AHRS 确实停止使用”，不能用来把“已知无效仍继续使用”合理化。\n\n## 文件对 TSO-C129a 接口说到了哪一步\n\n只说到**“范围排除与关切提示”**这一步，仅 §2.3.1.2 一句：\n\n> This AC does not address AHRS interface to TSO-C129a … since this TSO design standard may not provide sufficient availability in high interference environments. <kb doc=\"AC_20-181.pdf\" chunk_id=\"28ecf06c-03a9-47db-85fc-a9e615996bd8\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />\n\n具体边界是：\n\n- **它做了什么**：明确把“AHRS 与 TSO-C129a 的接口”排除在本 AC 指导范围之外，并给出理由——该 TSO 设计标准在高干扰环境下可能无法提供足够的**可用性**。\n- **它没做什么**：没有给出该接口的数据内容、格式、性能指标或符合性方法；没有判定该接口“可接受”或“不可接受”（“不涉及”不等于“禁止”）；也没有对 TSO-C129a 的速度精度作任何评价——排除理由是**可用性**，不是速度精度。\n- **与可接受清单的关系**：§2.3.1.1 列出的合格 GNSS 标准为 TSO-C145d、TSO-C146d、TSO-C196b 任一修订版 <kb doc=\"AC_20-181.pdf\" chunk_id=\"1da0f60e-d9d8-4cac-826b-d97686eacb09\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"8eeece07-dcfc-4339-8500-b02acdd52826\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />，TSO-C129a 不在其中。因此若本项目的 GNSS 确为 TSO-C129a 设备，既不能引用本 AC 作为该接口的批准依据，也不能把它的 TSO 授权当作速度精度的证明。\n\n## 若要维持该设计，需要补齐的工作\n\n1. **速度精度**：按 AHRS 安装规定的最低速度精度要求取证，采用 AC 20-138D 的速度精度试验或等效分析 <kb doc=\"AC_20-181.pdf\" chunk_id=\"2e551b84-d937-4220-a987-3043856ce2ea\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n2. **无效标志处理**：修改接口或逻辑，使 AHRS 在检测到已告警故障时停止使用 GNSS 速度，并以分析或试验证明 <kb doc=\"AC_20-181.pdf\" chunk_id=\"e376826f-35d5-4eb8-8ef0-4135d41c6acd\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n3. **告警与机组动作**：完成 §2.2.2 要求的地面/飞行试验或分析，确认告警清晰、及时、仅在故障存在时显示 <kb doc=\"AC_20-181.pdf\" chunk_id=\"88a20b46-eef5-49fa-8de2-b1e53d7dc090\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" /><kb doc=\"AC_20-181.pdf\" chunk_id=\"ab0559ee-da94-4fd7-bd76-f2dc4a2f41f5\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />。\n4. **降级模式与手册**：若失去 GNSS 辅助会进入降级模式，按 §3.1–§3.4 评估其适用性、试验方式与其他系统接口，并在 A/RFMS 中写明性能、限制、告警及将丢失的应用 <kb doc=\"AC_20-181.pdf\" chunk_id=\"19c4fc4d-cf52-4c82-9368-1aee0ad5505b\" kb_id=\"ec1ebcc3-6d50-46d6-8a64-5444dce0962e\" />；相关概念见 [[concept/degraded-mode|降级模式]] 与 [[concept/ahrs-aiding-sources|AHRS辅助源]]。\n5. **审定基础**：AC 20-181 属咨询通告，条文用“should”；偏离时应以 14 CFR 23/25/27/29.1301、1309 等条款为最终符合性目标，提供等效安全水平说明。\n\n如需，我可以把上述判断整理成一份“条款—现状—差距—符合性方法”的逐条核对表。",
+        "iteration": 6,
+        "timestamp": "2026-10-22T14:43:09.7162077+08:00",
+        "tool_calls": [],
+        "reasoning_content": "Now I have enough. Also maybe check §2.1 internal aiding source and the TSO-C201 categorizations regarding \"other data including velocity — TSO-C201 does not provide performance requirements\". Already got c17.\n\nAlso check whether the document mentions \"TSO-C129a\" elsewhere (only once, count=1). Good: \"文件对 TSO-C129a 接口说到了哪一步\" — only §2.3.1.2 one sentence: explicitly out of scope, rationale = insufficient availability in high interference environments. It does not provide technical interface requirements, nor prohibit; it's a scope exclusion. And the accepted GNSS standards list is C145d/C146d/C196b. So TSO-C129a equipment falls outside the AC's guidance; the AC neither approves nor analyzes that interface, and the availability concern is stated, not elaborated.\n\nNow the answer should be in Chinese, itemized. Let me structure:\n\n一、结论概述\n二、逐项判断\n1. 前提：GNSS速度可用于姿态修正 — 有条件成立。§2.3: GNSS velocity data can be used to compute longitudinal accelerations to help eliminate errors. But must meet §2.3.1 qualification and §2.3.2 velocity accuracy.\n2. \"有TSO授权即已验证速度精度\" — 不成立。Quote §2.3.2: \"GNSS position sources are not required to pass velocity accuracy tests to receive TSO authorization.\" Must ensure source data meets AHRS installation minimum velocity accuracy; one means = AC 20-138D velocity accuracy tests; typically done by GNSS manufacturer. TSO-C201 itself also doesn't set performance requirements for velocity (c17 §4.4) — so velocity must be assessed for intended application.\n3. \"GNSS报无效后仍输出数值，继续使用\" — 不符合。Quote §2.3.3. Requirements: review GNSS specs to determine whether condition can occur; if AHRS detects annunciated fault, cease using erroneous data; analysis may be means of compliance. Also §2.2.2 annunciation requirements: determine how aiding failure and annunciation affects AHRS performance; ground/flight test; alerts clear etc.; if AHRS disables attitude output or switches mode, safety analysis. So continuing to use flagged-invalid data is contrary to \"cease using erroneous GNSS data\" and undermines integrity/availability requirement in §2.3.1.\n4. Whether \"TSO授权\" of GNSS as such is enough — also the applicable TSOs: §2.3.1.1 lists C145d/C146d/C196b. If the unit is TSO-C129a, §2.3.1.2 exclusion applies.\n5. 分析可作为符合性方法 — careful: \"Analysis may be used as a means of compliance\" applies to §2.3.3's compliance demonstration (e.g., showing the AHRS ceases using data / the condition can't occur / specs review), not to justify continuing to use flagged-invalid velocity. So the developer can't use analysis to override \"cease using\".\n\n三、文件对 TSO-C129a 接口说到了哪一步\n- Only §2.3.1.2: scope exclusion, one sentence; states AC does not address AHRS interface to TSO-C129a; reason: may not provide sufficient availability in high interference environments. It does not: define interface data/format, not set performance/accuracy requirements, not approve or reject installations, not provide alternative compliance method. Thus it's an out-of-scope boundary + availability concern flag, not a technical assessment of TSO-C129a velocity data. Also TSO-C129a is a supplemental navigation equipment standard; if source is TSO-C129a, its \"TSO authorization\" cannot be used as evidence of velocity accuracy either (same §2.3.2 logic). And the accepted list excludes it.\n- Note asymmetry: \"does not address\" ≠ \"prohibits\"; installations may still need to find another basis, but this AC gives no guidance.\n\n四、建议/整改方向 (maybe helpful): If it's TSO-C129a: interface out of scope; need to establish availability/integrity in high interference, and velocity accuracy per AC 20-138D; stop using after fault flag; document with analysis/test and A/RFMS limitation if applicable. Also degraded mode consideration: if loss of GNSS aiding leads to degraded mode, §3 applies — evaluate, A/RFMS must include limitations, alerts.\n\nCitations: use cN handles. c5 (GNSS velocity data), c6 (§2.3.1 qualification), c20 (§2.3.1.1 list), c2 (§2.3.1.2 TSO-C129a), c3/c7 (§2.3.2), c9 (§2.3.3), c14/c17 (§4.4), c27-c30 (§2.2.2). Wiki links for pages.\n\nNeed to be careful: c3 contains start of §2.3.2 through \"not required to pass velocity accuracy tests to\"; c7 has \"receive TSO authorization...\" so cite both c3 and c7 for the quote. I'll cite c3 for \"GNSS position sources are not required to pass velocity accuracy tests to\" — better cite c3 and c7 together for the full sentence.\n\nAlso for §2.3.1 list, c20 gives a) TSO-C145d and b) TSO-C146d, c1 gives c) TSO-C196b. Cite c20 and c1.\n\nNow, item-by-item judgment: I should mark 成立/部分成立/不成立 clearly.\n\nItem list:\n① AHRS 用 GNSS 速度数据修正姿态 — 原则允许，有条件。\n② \"有 TSO 授权 = 速度精度已验证\" — 不成立。\n③ GNSS 报无效后仍输出数值，开发方继续用 — 不成立/不符合。\n④ 以\"分析\"替代 — 可用分析作为符合性方法，但分析必须证明停止使用/不会发生，不能证明继续使用正确。\n⑤ TSO-C129a 作为 GNSS 源 — 本 AC 未覆盖；且不在可接受 TSO 清单。\n⑥ 告警与飞行手册 — §2.2.2 要求确定失效与告警对 AHRS 的影响、试验告警与飞行员动作；§3.4/§3.3 降级模式相关要求（若失去辅助源导致降级模式，需评估并在 A/RFMS 说明）。\n\nAlso maybe mention: \"TSO-C201 does not provide performance requirements for this data\" applies to AHRS output velocity, not GNSS input. Still relevant to distinguish: TSO authorization for GNSS ≠ velocity performance. Good.\n\nAlso note: \"报无效\" (flagged invalid) vs \"已告警的GNSS故障\" (annunciated GNSS fault) — the AC's trigger is AHRS detecting the annunciated fault. If GNSS flags invalid internally but doesn't annunciate to AHRS, that's exactly what §2.3.3 asks to review in the GNSS spec. Important nuance: the requirement is conditional on AHRS detecting annunciated fault; but continuing to use the data while knowing it's flagged invalid conflicts with the intent and §2.3.1 integrity requirement. Should state this nuance honestly: the AC's literal trigger is \"if the AHRS detects the annunciated GNSS fault\"; a design that never passes/uses the flag has an interface integrity problem and should be reviewed against §2.3.1 and §2.2.2, and the developer's stated rationale isn't supported.\n\nAlso possibly note that the AC is guidance (\"should\"), not regulation; compliance basis is 14 CFR 23/25/27/29.1301/1309 etc. The AC uses \"should\". The judgment should reflect that it's an acceptable means of compliance, not law. Mention that \"should\" language means AC guidance; but as a compliance document, deviation requires an equivalent level of safety justification.\n\nLet me also check if there's an \"AC 20-181 §2.3.2\" nuance: \"GNSS position sources are not required to pass velocity accuracy tests to receive TSO authorization\" — this is the crux, exactly refuting the developer's rationale.\n\nNow write the answer in Chinese. Moderate length, structured with headings and a table maybe. Table for item-by-item judgment works well. Then detailed explanation with quotes. Then TSO-C129a section.\n\nCitations must be inline same line as claim. Use .\n\nLet me draft.\n\nTitle: 结论：开发方的理由不成立，且\"报无效后继续用\"直接违反 AC 20-181 §2.3.3。\n\nTable:\n\n| 判断项 | 结论 | 依据 |\n1. GNSS速度可用于AHRS姿态修正 | 原则成立，但附条件 | §2.3 允许用GNSS速度计算纵向加速度以消除误差；前提是满足§2.3.1鉴定与§2.3.2速度精度\n2. \"有TSO授权就已验证速度精度\" | 不成立 | §2.3.2 明确：GNSS位置源取得TSO授权不要求通过速度精度测试\n3. 报无效后仍输出数值可继续使用 | 不成立（不符合） | §2.3.3：检测到已告警GNSS故障后应停止使用错误数据\n4. 用\"分析\"支持继续使用 | 误用 | 分析是§2.3.3的符合性方法，用于证明停止使用/该情形不会发生，不是继续使用的理由\n5. TSO-C129a作为源 | 本AC不覆盖 | §2.3.1.2 范围排除；且不在§2.3.1.1的C145d/C146d/C196b清单\n6. 告警/飞行手册 | 需评估并记录 | §2.2.2；§3.3/§3.4（若导致降级模式）\n\nThen details. Then \"文件对TSO-C129a说到了哪一步\" with bullets: 仅一句、范围排除、理由是高干扰环境可用性、没有给出接口/性能/符合性方法、不是禁止、也不是批准。Conclude: 只能作为\"该接口不在本AC指导范围、且存在高干扰可用性关切\"的证据；不能反过来当作TSO-C129a可用或不可用的技术结论，更不能支持\"TSO即验证速度精度\"。\n\nThen practical implications: 若要继续该设计，需要 (a) 换用清单内GNSS或另找审定基础；(b) 按AC 20-138D验证速度精度；(c) 实现并验证无效标志处理，停止使用；(d) 分析/试验证明告警与飞行员动作、降级模式与A/RFMS限制。\n\nAlso note \"should\" language / AC is guidance, not mandatory regulation; but as an acceptable means of compliance, departing requires equivalent safety justification. Should I include? Yes briefly.\n\nCitation for \"guidance\" nature: AC 20-181 §1.1 from wiki page — but wiki page isn't citable as cN. I could cite c? The document chunk about \"This AC provides guidance...\" Let me not over-cite; I can cite the document chunk if I find. Maybe search \"guidance\" quickly? Not necessary; I can state based on wiki page without citation? Better to avoid uncited factual claim or cite via retrieved chunk. Let me do a quick read for \"guidance\" to get a chunk. Actually it's minor; I can phrase \"作为咨询通告（AC），其用语为‘should’\" — this is visible in quotes I cite (c3 uses \"should\"). That's fine.\n\nAlso the wiki page entity/ac-20-181 says §1.1 purpose supplements existing guidance. Not needed.\n\nLinks: [[concept/ahrs-aiding-sources|AHRS辅助源]], [[entity/ac-20-181|AC 20-181]], [[concept/degraded-mode|降级模式]].\n\nLength: maybe 700-900 Chinese characters plus table. The user asked detailed item-by-item. Let's write thoroughly but concise.\n\nOne more check: does §2.3.3 say \"AHRS should cease using erroneous GNSS data\" — yes. Note \"erroneous ... data after the data is flagged invalid\". So the data flagged invalid may be erroneous; the AC says review specs; if AHRS detects annunciated fault, cease using erroneous data. Strictly, it says cease using erroneous data, not \"cease using all data flagged invalid\". But the developer continuing to use values after invalid flag — unless they can show those particular values are not erroneous (analysis), the guidance's direction is stop. I should present precisely: the AC presumes that post-invalid data may be erroneous, and requires stopping use once the annunciated fault is detected; using it requires evidence the data is not erroneous — but even then the integrity/annunciation requirement in §2.2.1/§2.3.1 applies. Good nuance, shows rigor.\n\nAlso TSO-C129a: \"since this TSO design standard may not provide sufficient availability in high interference environments\" — note this is about availability, not velocity accuracy. So even the TSO-C129a exclusion rationale is not about velocity accuracy; the developer conflates two things.\n\nWrite final answer."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:42:18.907398+00:00",
+    "updated_at": "2026-10-22T06:43:09.817597+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 50488,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "6bb0db7439c4c8605897c25b5f1fa32fd9a6ccf0fa13e2769126ca965bca0243",
+      "knowledge_base_ids": [
+        "ec1ebcc3-6d50-46d6-8a64-5444dce0962e"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": {
+      "cache_status": "hit",
+      "total_tokens": 117784,
+      "cached_tokens": 91520,
+      "prompt_tokens": 111642,
+      "cache_reported": true,
+      "cache_miss_tokens": 20122,
+      "cache_read_tokens": 91520,
+      "completion_tokens": 6142,
+      "context_token_scale": 0.7846781504986401
+    },
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

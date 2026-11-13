@@ -4618,6 +4618,8 @@ export default {
     placeholderAgent: '向 {name} 提问',
     agentMode: '智能推理',
     normalMode: '快速问答',
+    crossLanguageSearch: '跨语言检索',
+    crossLanguageSearchHint: '为本次提问增加另一种语言的检索',
     normalModeDesc: '基于知识库的 RAG 问答',
     agentModeDesc: '多步思考，深度分析',
     agentMissingAllowedTools: '允许的工具',

@@ -1,0 +1,915 @@
+[
+  {
+    "id": "42ae1895-8058-40aa-8e22-258ccc0d2f3e",
+    "request_id": "41a115f6-fc02-4c34-83c6-a40c62f590cc",
+    "session_id": "43eca597-f89c-4ca0-9082-8d8992cbfa73",
+    "role": "user",
+    "content": "依据这七份文件，为一台1550nm不可见激光给出精确 NOHD 数值。已知它不扫描，单次任务预计最长照射3秒。若无法算出，仍须指出能确定的计算时长下限和需要的证据，不能只回答“资料不足”。",
+    "knowledge_references": [],
+    "agent_steps": [],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:39:34.287124+00:00",
+    "updated_at": "2026-10-22T06:39:34.28978+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 0,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "",
+    "agent_tenant_id": 0,
+    "model_id": "",
+    "execution_context": {
+      "web_search_enabled": false
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": null,
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  },
+  {
+    "id": "cc3353c1-edc4-408b-9078-b04f1185b7a8",
+    "request_id": "41a115f6-fc02-4c34-83c6-a40c62f590cc",
+    "session_id": "43eca597-f89c-4ca0-9082-8d8992cbfa73",
+    "role": "assistant",
+    "content": "## 直接结论\n\n**依据这七份文件，无法给出一个精确的 NOHD 米数；给出这个数字就等于凭空编造。** 在这七份文件中，只有 AC 20-183（激光适航安装指南）涉及本题：其余五份分别关于客舱内饰板可燃性、认证数据保留、AML-STC、姿态航向参考系统、机载气象雷达和锂电池，索引与检索都没有显示它们含有激光 MPE 或 NOHD 数据。\n\nAC 20-183 只规定了“如何计算、按多长时间计算、报告要写哪些内容”，**没有给出 MPE 数值表、NOHD 公式，也没有给出你这台设备的功率、发散角或孔径**。它能提供的全部 MPE 和 NOHD 计算方法，都指向外部标准 AC 70-1 与 ANSI Z136.1<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n**唯一能确定下来的数字是计算时长：10 秒。** 原文对非扫描激光明确规定：“For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds.”<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> 你的预期最长照射为 3 s，低于 10 s，因此必须按 **10 s** 计算。又因为第 1.1 段规定，一旦采用本 AC 作为符合性路径，就必须完整遵循它，所以这个 10 s 不是可选项<kb doc=\"AC_20-183.pdf\" chunk_id=\"674c568a-0e0a-43ed-a9d6-8926d7b46c10\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n## 一、文件中可以确定的技术结论\n\n| 事项 | 可确定的结论 | 依据 |\n|---|---|---|\n| 适用对象 | 不可见光谱激光，包括非扫描的照射器、指示器、测距仪 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"19644753-a08a-467f-9933-5954a4dab230\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 计算时长 | max（预期最长照射时间，10 s）= **10 s** | <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 是否必须计算 | 非 1 类激光必须计算 NOHD 与 MPE，并写入报告 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 3R 类是否豁免 | **不豁免计算**：示例中 3R 类 LIDAR 只是不需要 FDA variance，7.3.2 仍判为“适用” | <kb doc=\"AC_20-183.pdf\" chunk_id=\"4b1fc6a1-3dcd-41f5-bd1c-39cee51181db\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 1550 nm 的危害部位 | 1,400–10,600 nm 属远红外，损伤**角膜、晶状体或两者**；不在 400–1,400 nm 视网膜危害区 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"d4cb2e67-7445-4055-8dcf-ac172704458b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 不可见光束的特殊性 | 无眨眼反射，眼暴露最初可能未被察觉 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"d4cb2e67-7445-4055-8dcf-ac172704458b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 报告的必填参数 | 公式、公式参考文献、表号、波长/发散角/曝光时间/功率、射入飞机窗户的直射与反射路径尺寸、曝光时长理由 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| NOHD 的用途 | 距离小于 NOHD 时不得照射人员；NOHD 须写入 AFMS 或标牌；可作为测距仪截止等技术的控制量 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"5c673968-7461-4dab-aca1-fa05a92eddbc\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"b33fa162-afba-4ec2-9074-766cbc224fab\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 参数定义 | 发散角定义在**峰值辐照度 37%**处（即 1/e，不是常见的 1/e²）；MPE 单位为 mW/cm² 或 mJ/cm² | <kb doc=\"AC_20-183.pdf\" chunk_id=\"24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n\n由此可以看出一条容易被忽略的边界：**“1550 nm 眼安全”只说明它不落在视网膜危害区，并不意味着 NOHD 很小**。角膜和晶状体的损伤阈值同样会给出可观的 NOHD，而且因为没有眨眼反射，实际暴露时间会完整计入。\n\n## 二、计算精确数值所缺少的证据\n\n| 必需参数 | 为什么必需 |\n|---|---|\n| **输出功率 P**（连续波，W）；若为脉冲，则要单脉冲能量、脉宽、重频 | 7.3.2 把“power”列为公式参数；脉冲还要另算单脉冲与重复脉冲两种 MPE<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **发散角 θ**（mrad），并注明是 37% 峰值定义还是 1/e² 定义、全角还是半角 | 定义基准不同，θ 可差约 1.7 倍，NOHD 同比例变化<kb doc=\"AC_20-183.pdf\" chunk_id=\"24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **出射光束直径或孔径 D** | NOHD 公式中与 θ·r 相加，决定近场光斑 |\n| **MPE 数值及其出处**（ANSI Z136.1 的表号与版本年份，或 AC 70-1 相应条款） | 文件只指定标准，不含数值；没有这一项就无法定出阈值 |\n| **激光类别或 AEL 与标签**（FDA Class I/IIIa/IIIb/IV 或 IEC 1/2/3R/3B/4） | 决定 7.3.2 是否适用、是否需要 FDA variance、是否按 1 类“无危害”处理<kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"4b1fc6a1-3dcd-41f5-bd1c-39cee51181db\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **连续还是脉冲工作** | 3 s 对连续波只是一个时长；对脉冲还要按脉宽与重频判据计算 |\n| **光路几何**：有无扩束镜或窗口、是否裸眼、射入驾驶舱与客舱窗户的直射与镜面反射路径尺寸 | 7.3.2 明确要求报告这些尺寸；反射面按镜面反射处理<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 若用本 AC 走适航 | 还需设备 FDA 认证标签、variance 中的技术控制（如飞机接口联锁）等<kb doc=\"AC_20-183.pdf\" chunk_id=\"d21e67c3-edfc-4a4c-96f0-ecde36264851\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"b33fa162-afba-4ec2-9074-766cbc224fab\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n\n## 三、拿到上述四项核心参数后可以直接计算\n\n文件没有给出公式，只要求把公式及其参考文献写进报告<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。工程上通用的几何关系如下（属于标准做法，不是这七份文件的内容，最终应以 ANSI Z136.1 或 AC 70-1 的条款为准）：\n\n- 距离 r 处的辐照度（均匀光斑近似）：E(r) = P / [(π/4)(D + θr)²]\n- 令 E(r) = MPE，则：**NOHD = [√(4P/(π·MPE)) − D] / θ**，其中 P 用 W、MPE 用 W/cm²，D 与 NOHD 用 cm，θ 用弧度（全角）。\n\n两点必须注意：① 高斯光束与 7 mm 限制孔径会引入系数，必须以标准中的公式为准；② NOHD ∝ √P/θ，所以功率翻倍只使距离增加约 41%，而发散角减半会使距离翻倍，这也是为什么缺少 θ 就无法给出可信数值。\n\n## 四、现在可以确定的结论\n\n1. **计算时长下限为 10 s**：即使实际只照射 3 s，AFMS 或标牌上的 NOHD 也必须按 10 s 计算；用 3 s 算出的值不能作为符合性值（10 s 与 3 s 的数值是否相同，取决于所采用的 MPE 表在该波段是否随时间变化，不能预先设定）。\n2. **若设备标签为 FDA Class I 或 IEC 1 类**：按文件被认定为“无危害”，7.3.2 的 NOHD 与 MPE 计算不适用，工程上可以记为 0 m；但这是由定义推出的结论，不是文件给出的数字，并且需要标签证据<kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n3. **若为 3R、3B、4 类**：必须计算 NOHD。其中 3R 类只是免于 FDA variance，不豁免 NOHD 与 MPE 计算<kb doc=\"AC_20-183.pdf\" chunk_id=\"4b1fc6a1-3dcd-41f5-bd1c-39cee51181db\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。现实中 1550 nm 的机载监视激光多为 3B 或 4 类，NOHD 通常远大于 0。\n4. **在拿到 P、θ、D 和 MPE 出处之前，任何具体的米数都不成立**；把这四项交齐后，用上一节的公式一步就能得出数值，并按 7.3.2 补齐报告要素<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。",
+    "knowledge_references": [],
+    "agent_steps": [
+      {
+        "thought": "",
+        "iteration": 0,
+        "timestamp": "2026-10-22T14:39:37.1707423+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_8Wo4OE5fjFaheE9FHFWV1851",
+            "args": {
+              "limit": 50,
+              "query": "NOHD|1550|激光|laser"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "index": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aml-stc": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/ac-20-183": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/sa01157la": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-254": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-334": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-variance": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-180": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/baseline-data": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-yu-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/laser-safety-definitions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-ji-guang-cha-yi-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/high-magnetic-disturbance-areas": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-gou-xing-kong-zhi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-lei-bie-yu-chan-pin-wei-hai": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/68d911e2-3d18-46f0-bcdd-8bf3eb7b5758": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/a26c5a50-b9ab-45ca-bb63-ade22f5939f2": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/tso-c201-attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/chixu-shiang-shuoming-yu-dianchi-weihu-yunxing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/hangkongqi-kechongdian-lidianchi-anzhuang-shiang-fuhexing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"31\" query=\"NOHD|1550|激光|laser\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-an-quan-ji-hua|激光安全计划]]</link>\n<type>concept</type>\n<aliases>激光安全程序</aliases>\n<summary>本页依据 AC 20-183 第7.3.8节，说明建议航空器运营人按 ANSI Z136.1 第1.3段建立激光安全计划，并列出该段在原文表2适用性判断中的结论。</summary>\n<match_snippet>... # 激光安全计划 AC 20-183 第7.3.8节（Laser Safety Program）以建议方式提出：航空器运营人应 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>本页依据AC_20-183.pdf第7节及附录B，整理激光设备安装的适航要求、系统安全分析、AFMS/ICA要求及3R类LIDAR示例。</summary>\n<match_snippet>... # 激光设备安装适航要求 来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e0 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing|激光设备认证标准符合性]]</link>\n<type>concept</type>\n<aliases>激光设备认证, FDA 21 CFR与IEC 60825-1符合性</aliases>\n<summary>本页说明激光设备认证标准符合性，包括FDA 21 CFR要求、制造商自我认证、差异许可，以及IEC 60825-1与FDA激光通告第50号的替代关系。</summary>\n<match_snippet>... # 激光设备认证标准符合性 来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-lei-bie-yu-chan-pin-wei-hai|激光类别与产品危害]]</link>\n<type>concept</type>\n<aliases>激光类别与危害分级, FDA/IEC激光类别</aliases>\n<summary>依据 AC 20-183 表1，对照 FDA 与 IEC 激光类别，说明各等级激光产品在直视、光学助视及反射条件下对眼、皮肤及引起火灾的危害。</summary>\n<match_snippet>... # 激光类别与产品危害 FDA 认可四大激光危害类别（I 至 IV），其中包括三个子类（IIa、IIIa、IIIb），如下表所 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>本页依据AC 20-183整理机载非必需不可见光谱激光设备（如红外监视激光与LIDAR）取得FAA适航批准的一种可接受方法，涵盖目的与适用范围、职责分工、第7节安装指导、公共用途条款及附录B的LIDAR示例。</summary>\n<match_snippet>... # 机载不可见光谱激光设备安装适航批准 来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e0 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu|公共用途航空器激光设备禁用要求]]</link>\n<type>concept</type>\n<aliases>公共用途激光禁用, 禁用激光功能要求</aliases>\n<summary>本页汇总AC_20-183.pdf第8节公共用途航空器激光设备禁用要求，涵盖型号设计、维修、ICA、适航限制、飞行手册与标牌等合规条件。</summary>\n<match_snippet>... # 公共用途航空器激光设备禁用要求 多数监视激光器是为公共用途运行而研制，未采用FAA认可的软件保证、系统保证、机载电子硬件保证及安全分析过 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-ji-guang-cha-yi-yao-qiu|FDA激光差异要求]]</link>\n<type>concept</type>\n<aliases>FDA variance, FDA差异</aliases>\n<summary>本页依据AC 20-183说明LIDAR安装批准中FDA激光差异（variance）要求的适用情形，包括表2第7.3.10段判定、后续构型改装条件及型号数据批准建议。</summary>\n<match_snippet>... # FDA激光差异要求 本页记录 AC 20-183 中就 LIDAR 激光设备安装批准所涉及的 FDA 差异（variance）要 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/lidar|激光雷达]]</link>\n<type>entity</type>\n<aliases>光探测与测距设备</aliases>\n<summary>本页依据 AC 20-183 说明激光雷达（LIDAR）的定义、测距原理与用途、激光类别与外部发射等级，以及其不可见光束造成的眼危害与在机载适航安装中的定位。</summary>\n<match_snippet>... # 激光雷达 激光雷达（LIDAR，light detection and ranging）在 AC 20-183 第3.2段 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi|激光设备AFMS限制与用户信息]]</link>\n<type>concept</type>\n<aliases>AFMS Limitations and User Information, 飞机飞行手册补充限制与用户信息</aliases>\n<summary>本页说明激光设备安装所需经批准AFMS中的使用限制与用户信息，并列出原文第7.3.7.1和7.3.7.2段的具体条目。</summary>\n<match_snippet>... # 激光设备AFMS限制与用户信息 原文表2将第7.3.7段“Aircraft Flight Manual Supplemen ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-gou-xing-kong-zhi|激光设备构型控制]]</link>\n<type>concept</type>\n<aliases>构型控制, 配置控制</aliases>\n<summary>本页依据顾问通告第7.3.6段，说明激光设备及其安装的构型控制要求，包括禁止未经批准更改、全生命周期构型维护计划，以及改装后按 § 1040.10(i) 重新认证。</summary>\n<match_snippet>... # 激光设备[[concept/configuration-control|构型控制]] 激光设备构型控制指防止对激光设备或安 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/laser-safety-definitions|激光安全术语与定义]]</link>\n<type>concept</type>\n<aliases>激光安全定义</aliases>\n<summary>本页汇总顾问通告第5节给出的激光安全术语与定义，包括可及发射限值、发散度、辐照度、最大允许照射量、标称眼危害距离与镜面反射六项参数。</summary>\n<match_snippet>... # 激光安全术语与定义 咨询通告第5节给出的激光安全术语与定义，用于说明激光安装评估中的关键参数。 ## 5 定义（DEFI ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-yu-mpe-ji-suan|NOHD与MPE计算]]</link>\n<type>concept</type>\n<aliases>NOHD and MPE Calculations, 标称危险距离与最大允许照射量计算</aliases>\n<summary>本页依据AC 20-183表2，说明NOHD与MPE计算的适用性判定：非1类激光应计算NOHD与MPE，并在报告中记录结果。</summary>\n<match_snippet>... # NOHD与MPE计算 在AC 20-183的“Table 2. Applicable Section 7 Paragraphs ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-mpe-ji-suan|标称眼危害距离与最大允许照射量计算]]</link>\n<type>concept</type>\n<aliases>NOHD/MPE计算, NOHD与MPE计算</aliases>\n<summary>本页说明NOHD与MPE计算的报告要求、暴露时间取值及可接受方法，并整理NOHD在AFMS和FDA差异技术控制中的使用。</summary>\n<match_snippet>... 原文未提供AC编号及版本日期。以下按原文段落号引用。 ## 计算报告要求 原文建议（should）提供一份报告，记录NOHD和MPE是如何计算的。报告应包括： - 所有公式及其参考文献； - 表格引用； - 公式参数，如波长、发散角、暴露时间 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/afms|飞机飞行手册补充]]</link>\n<type>concept</type>\n<aliases>AFMS, 飞行手册补充</aliases>\n<summary>本页说明激光设备安装所需经批准飞机飞行手册补充的适用条件、必须包含的限制及用户信息要求。</summary>\n<match_snippet>... # 飞机飞行手册补充 当激光设备安装改变航空器限制、操作程序或基本航空器的飞行特性时，需要经批准的飞机飞行手册补充（AFMS）。AFMS 应包含激光 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/xi-tong-an-quan-fen-xi|系统安全分析]]</link>\n<type>concept</type>\n<aliases>系统安全分析要求</aliases>\n<summary>本页说明AC 20-183第7.3.1节对机载激光设备安装的系统安全分析要求，包括所引用的14 CFR 1309条与相关AC、需评估的失效条件，以及LIDAR（3R类）示例的适用性判断。</summary>\n<match_snippet>... # 系统安全分析 系统安全分析是 AC 20-183 第 7.3.1 节针对激光设备安装提出的适航验证要求：必须开展系统安全分析，评估所安装的激光设备是否满足 14 CFR 23.1309、25.13 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fei-ji-jie-kou-an-quan-lian-suo|飞机接口安全联锁]]</link>\n<type>concept</type>\n<aliases>航空器接口安全联锁</aliases>\n<summary>飞机接口安全联锁是FDA差异可能要求的激光安全联锁，用于特定飞机状态或高度条件下禁用激光。</summary>\n<match_snippet>... # 飞机接口安全联锁 飞机接口安全联锁是与飞机系统接口的激光安全联锁，用于在特定飞机状态或高度条件下禁用激光。根据AC 20-183（顾问通告），[[concept/fda-cha ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/an-zhuang-xing-hao-she-ji|安装型号设计]]</link>\n<type>concept</type>\n<aliases>安装型号设计要求</aliases>\n<summary>本页说明激光设备安装型号设计须纳入适用的21 CFR 1040要求，以及FDA差异中影响飞机安装的技术控制，并给出第7.3.3段的适用性判断。</summary>\n<match_snippet>... 制（例如[[concept/fei-ji-jie-kou-an-quan-lian-suo|飞机接口安全联锁]]）。 激光设备安装者必须按照制造商经其向FDA认证的规范安装设备。在安装激光设备之前，安装者必须符合所有适用的FDA 21 CFR ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-cha-yi|FDA差异]]</link>\n<type>concept</type>\n<aliases>FDA Variance</aliases>\n<summary>本页依据 AC_20-183.pdf 表2说明“FDA差异（FDA Variance）”的含义：在3R类LIDAR示例中该段被判定为不适用，因为3R类激光不需要差异许可。</summary>\n<match_snippet>... phs”（第7节适用段落）中，第7.2段的标题为“FDA Variance”（FDA差异）。 该表以LIDAR（3R类激光）为示例，对7.2段的适用性判定为“否”：由于LIDAR为3R类激光，不需要差异（variance）。 | 段落 | ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf - Summary]]</link>\n<type>summary</type>\n<summary>本顾问通告说明机载非必需不可见光谱激光设备取得FAA适航批准的一种可接受方法，并列出激光危害分级及第7节安装要求适用性示例。</summary>\n<match_snippet>... 号与版本日期：原文未提供AC编号及版本日期，仅标注来源页1图像且该页无OCR转录。 - 主题：为机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）的安装提供FAA适航批准的一种可接受方法。 ![来源页1图片](http://loc ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-variance|美国食品药品监督管理局差异（豁免）]]</link>\n<type>concept</type>\n<aliases>FDA差异, FDA豁免</aliases>\n<summary>说明依据21 CFR §1010.4取得的FDA差异（豁免）的适用条件、行政与技术控制，以及在机载激光设备安装型号设计、AFMS与构型控制中的体现。</summary>\n<match_snippet>... # 美国食品药品监督管理局差异（豁免） 美国食品药品监督管理局差异（豁免）指：针对超过适用FDA激光类别AEL的机载激光设备，依据21 CFR §1010.4取得的[[concept/fda-cha-yi|FDA差异]] ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-ruan-jian-bao-zheng|机载软件保证]]</link>\n<type>concept</type>\n<aliases>激光设备软件保证</aliases>\n<summary>本页说明AC 20-183第7.3.1.5段对机载激光设备软件的保证要求：按AC 20-115C开发，软件等级与功能失效条件分类相称，并列出相关考虑因素与标准。</summary>\n<match_snippet>... AC 20-183 第7.3.1.5段（Other Functional Failure Condition）规定：若激光设备包含可能促成第7.3.1段所述故障的软件，应使用 AC 20-115C《Airborne Software Assu ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/flir|前视红外设备]]</link>\n<type>entity</type>\n<aliases>前视红外</aliases>\n<summary>本页介绍前视红外设备（FLIR）的定义、执法夜间隐蔽监视用途、其配备的激光照射器与测距仪所带来的眼部危害，以及相关波长与损伤机理。</summary>\n<match_snippet>... -46eb-b323-0225fc5c9e02|AC_20-183.pdf]] 第3节（BACKGROUND）。 配备激光照射器、指示器或测距仪的前视红外（FLIR）设备，被地方、州和联邦执法机构用于夜间隐蔽监视。 ## 3.1 激光监视设 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[index|Index]]</link>\n<type>index</type>\n<summary># Wiki Index\n\n本索引页汇总FAA咨询通告及相关适航批准资料，内容覆盖可充电锂电池、机载激光设备、认证数据保留、姿态航向参考系统、客舱内饰板可燃性测试、AML STC多型号批准和机载气象雷达等主题。页面将随文档新增自动更新。</summary>\n<match_snippet>... # Wiki Index 本索引页汇总FAA咨询通告及相关适航批准资料，内容覆盖可充电锂电池、机载激光设备、认证数据保留、姿态航向参考系统、客舱内饰板可燃性测试、AML STC多型号批准和机载气象雷达等主题。页面将随文档新 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/attitude-heading-reference-system|姿态航向参考系统]]</link>\n<type>entity</type>\n<aliases>AHRS, 姿态航向参考系统设备, AHRS设备</aliases>\n<summary>本页依据 AC 20-181（日期 4/7/14）整理姿态航向参考系统（AHRS）的适航批准要点，涵盖 TSO-C201 辅助源、降级模式、分类应用与极地运行等考虑。</summary>\n<match_snippet>... 8 年以来使用 TSO-C3、TSO-C4、TSO-C5 和 TSO-C6 标准。较新的基于微机电系统（MEMS）、环形激光陀螺（RLG）、光纤陀螺（FOG）及其他技术的 AHRS 正在取代传统姿态和航向仪表，以提高数据性能可靠性和精度。AHR ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/configuration-control|构型控制]]</link>\n<type>concept</type>\n<aliases>配置控制, Configuration Control</aliases>\n<summary>本页说明构型控制概念，涵盖AC 20-180的AML构型控制与表格记录方法，并补充AC 20-183表2将第7.3.6节构型控制判定为适用。</summary>\n<match_snippet>... 用段落”中，第7.3.6节“Configuration Control（构型控制）”被判定为适用（Yes）；其说明为：对激光设备的更改可能影响激光设备安装的适航性和激光设备认证。 ![Table 2. Applicable Section 7 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/tso-c201-attitude-heading-reference-system|TSO-C201《姿态航向参考系统》技术标准规定]]</link>\n<type>entity</type>\n<aliases>TSO-C201, 技术标准规定C201</aliases>\n<summary>本页根据 AC 20-181（4/7/14）整理 TSO-C201《姿态航向参考系统》技术标准规定的适用范围、与旧 TSO 的关系、六位分类字符串、降级模式许可及辅助源要求。</summary>\n<match_snippet>... 3、TSO-C4、TSO-C5 和 TSO-C6 标准，可追溯至 1958 年。较近期，基于微机电系统（MEMS）、环形激光陀螺（RLG）、光纤陀螺（FOG）及其他技术的 AHRS 正在取代常规姿态和航向仪表，以提高数据性能的可靠性和精度。AH ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidar-she-bei-an-zhuang|LIDAR设备安装]]</link>\n<type>concept</type>\n<aliases>激光雷达设备安装</aliases>\n<summary>本页整理AC 20-183中与机载LIDAR设备安装相关的适航内容，包括第7.3.9至7.3.11节的要求及附录B的Class 3R LIDAR安装示例与相关判定准则。</summary>\n<match_snippet>... in type design）或小改装（minor alteration）的准则。 ## 第7.3.9节 ICA中的激光服务信息 除适航规章所要求的内容外，ICA应包含以下激光服务信息： - 7.3.9.1 使用适当警告与预防措施、以避 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aeh-she-ji-bao-zheng|机载电子硬件设计保证]]</link>\n<type>concept</type>\n<aliases>AEH设计保证, 机载电子硬件保证</aliases>\n<summary>本页说明机载电子硬件设计保证：定制AEH若可能促成第7.3.1节所述故障，应按RTCA/DO-254开发，并达到与功能失效条件分类相称的设计保证等级。</summary>\n<match_snippet>... # 机载电子硬件设计保证 按来源文件第7.3.5节（AEH）所述方法，若激光设备包含定制AEH（如专用集成电路、现场可编程逻辑器件或可编程逻辑器件），且该AEH可能促成第7.3.1节所述故障，则应 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju|多LIDAR构型初始批准与描述性数据]]</link>\n<type>concept</type>\n<aliases>multiple LIDAR configurations initial approval, 初始批准描述性数据</aliases>\n<summary>本页依据AC 20-183，说明多LIDAR构型初始批准时应在STC或重大改装数据批准中包含的描述性数据，以及AFMS与ICA需载明的各构型数据。</summary>\n<match_snippet>... g-hao-she-ji|安装型号设计]]或重大改装的初始数据批准包含描述以下内容的描述性数据： - B.5.1.1 激光类别。 - B.5.1.2 安装于飞机上的设备的允许重量范围、重心范围和最大包络。 - B.5.1.3 LIDAR设备的 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze|LIDAR次要更改与次要改装判定准则]]</link>\n<type>concept</type>\n<aliases>LIDAR minor change/minor alteration criteria, B.4次要更改准则</aliases>\n<summary>本页汇编AC 20-183第B.4节关于将新LIDAR设备构型作为型号设计次要更改批准、或将改装归类为次要改装时需满足的判定准则，逐条保留原文编号与适用条件。</summary>\n<match_snippet>... -zhuang|LIDAR设备安装]]已依据TC、STC、ATC、ASTC或重大改装的数据批准获得批准，并包含LIDAR激光设备。先前的批准不仅限于预留（如安装和电源）。 - **B.4.1.2** 新的LIDAR设备安装的激光辐射不存在进入驾 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/ac-20-183|咨询通告20-183]]</link>\n<type>entity</type>\n<aliases>激光适航安装指南</aliases>\n<summary>本页介绍美国联邦航空管理局2014年12月15日发布的咨询通告AC 20-183，说明其目的、适用范围、限制及适用对象。</summary>\n<match_snippet>... 件号：AC 20-183 - 日期：12/15/14（2014年12月15日） - 发起部门：AIR-134 - 主题：Laser Airworthiness Installation Guidance（激光适航安装指南） - 发布机构：U.S. D ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 19
+          },
+          {
+            "id": "call_01_3oerj2DM5Gq8cO4FCvFA9949",
+            "args": {
+              "slugs": [
+                "index"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "index": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[index|Index]]</link>\n<type>index</type>\n<aliases></aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n\n</sources>\n<summary>\n# Wiki Index\n\n本索引页汇总FAA咨询通告及相关适航批准资料，内容覆盖可充电锂电池、机载激光设备、认证数据保留、姿态航向参考系统、客舱内饰板可燃性测试、AML STC多型号批准和机载气象雷达等主题。页面将随文档新增自动更新。\n</summary>\n<content>\n# Wiki Index\n\n本索引页汇总FAA咨询通告及相关适航批准资料，内容覆盖可充电锂电池、机载激光设备、认证数据保留、姿态航向参考系统、客舱内饰板可燃性测试、AML STC多型号批准和机载气象雷达等主题。页面将随文档新增自动更新。\n\n## Summary (7)\n\n[[summary/17750888-7f2d-42a5-9896-36e1e835687b|AC_20-178.pdf - Summary]] — 本咨询通告[[entity/ac-20-178|AC 20-178]]（2012年6月4日）说明现有客舱内饰板使用新饰面时可接受的[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]]与[[concept/surrogate-panel-testing-options|替代板测试方法与五种测试选项]]，并列出相关法规和常见问题。\n[[summary/f185e13d-08a9-4ca4-90ea-270b37335cf2|AC_20-179.pdf - Summary]] — 本页总结FAA 2013年[[entity/ac-20-179|AC 20-179 咨询通告]]，涵盖认证数据保留协议、政府记录、适用范围与数据提交要求。\n[[summary/68d911e2-3d18-46f0-bcdd-8bf3eb7b5758|AC_20-180.pdf - Summary]] — 本文件为FAA于2013年8月16日发布的[[entity/faa-ac-20-180|AC 20-180]]，说明通过[[concept/aml-stc|批准型号清单补充型号合格证]]进行多型号批准的可接受方法，并附[[entity/sa01157la|SA01157LA]]示例清单。\n[[summary/a26c5a50-b9ab-45ca-bb63-ade22f5939f2|AC_20-181.pdf - Summary]] — 本文件为美国联邦航空管理局2014年发布的AC 20-181咨询通告，说明按[[entity/tso-c201-attitude-heading-reference-system|TSO-C201《姿态航向参考系统》技术标准规定]]批准的[[entity/attitude-heading-reference-system|姿态航向参考系统]]设备的适航批准补充指导及极地运行考虑。\n[[summary/c5cf4dee-88c4-4a77-983a-35b9963588d8|AC_20-182A.pdf - Summary]] — 本咨询通告提供机载气象雷达系统初始及后续适航批准指导，涵盖气象/地面测绘、前视风切变与湍流探测，并规定测试评估要求。\n[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf - Summary]] — 本顾问通告说明机载非必需不可见光谱激光设备取得FAA适航批准的一种可接受方法，并列出激光危害分级及第7节安装要求适用性示例。\n[[summary/a55aa2ce-d249-4213-a67d-5b8ae36edfb1|AC_20-184.pdf - Summary]] — 本文件是FAA于2015年10月15日发布的咨询通告，提供航空器可充电锂电池及电池系统安装、运行、维护和适航符合性的可接受方法。\n\n## Entity (20)\n\n[[entity/flir|前视红外设备]] — 本页介绍前视红外设备（FLIR）的定义、执法夜间隐蔽监视用途、其配备的激光照射器与测距仪所带来的眼部危害，以及相关波长与损伤机理。\n[[entity/lidar|激光雷达]] — 本页依据 AC 20-183 说明激光雷达（LIDAR）的定义、测距原理与用途、激光类别与外部发射等级，以及其不可见光束造成的眼危害与在机载适航安装中的定位。\n[[entity/attitude-heading-reference-system|姿态航向参考系统]] — 本页依据 AC 20-181（日期 4/7/14）整理姿态航向参考系统（AHRS）的适航批准要点，涵盖 TSO-C201 辅助源、降级模式、分类应用与极地运行等考虑。\n[[entity/reactive-windshear-system|反应式风切变系统]] — 本页依据 AC 20-182A 第 6.4.2 节，说明反应式风切变系统在与机载前视风切变系统共存时的告警配置要求，包括提示告警禁用条件与警告告警保持启用。\n[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]] — 本页整理FAA咨询通告AC 20-184（2015年10月15日，AIR-133）的内容，涵盖航空器可充电锂电池与电池系统安装的可接受符合性方法、测试要求、系统安全评估、持续适航文件及维护与运行考虑。\n[[entity/ac-20-183|咨询通告20-183]] — 本页介绍美国联邦航空管理局2014年12月15日发布的咨询通告AC 20-183，说明其目的、适用范围、限制及适用对象。\n[[entity/faa-aircraft-materials-fire-test-handbook|FAA飞机材料防火测试手册]] — 本页介绍FAA飞机材料防火测试手册（DOT/FAA/AR-00/12），说明其作为14 CFR part 25 Appendix F可接受符合性方法的定位，以及在AC 20-184中对隔热隔音材料防火测试的引用。\n[[entity/rtca-do-254|RTCA/DO-254机载电子硬件设计保证指南]] — RTCA/DO-254《机载电子硬件设计保证指南》用于复杂电子硬件的设计保证与适航符合性；FAA AC 20-184第2.6节要求含复杂电子硬件的锂电池硬件符合其最新修订版及AC 20-152。\n[[entity/rtca-do-311|RTCA DO-311标准]] — 概述RTCA DO-311标准在FAA AC 20-184中作为大型锂电池可接受符合性方法的定位、适用条件及附录F引用章节。\n[[entity/rtca-do-347|RTCA DO-347标准]] — RTCA DO-347是RTCA发布的《Certification Test Guidance for Small and Medium Sized Rechargeable Lithium Batteries and Battery Systems》，FAA AC 20-184（2015-10-15）将其列为小型和中型可充电锂电池及电池系统的可接受符合性方法标准。\n[[entity/ac-20-178|AC 20-178咨询通告]] — 本页汇总FAA AC 20-178咨询通告（2012年6月4日）关于飞机客舱内饰板更改后自熄性可燃性测试的适用目的、替代板定义与判定条件、表2五种测试选项、表3问答及偏离与相关出版物。\n[[entity/ac-20-179|AC 20-179 咨询通告]] — AC 20-179咨询通告规定认证数据保留协议程序与政府记录范围，并说明适用范围、数据提交及协议文件内容。\n[[entity/ac-20-182a|AC 20-182A 咨询通告]] — 本页整理 FAA 咨询通告 AC 20-182A（2016年10月1日），说明其适用范围、批准途径、所取消的旧版 AC 及前视风切变与湍流探测的背景依据。\n[[entity/ac-21-48|AC 21-48 咨询通告]] — AC 21-48 咨询通告为美国联邦航空管理局发布的咨询通告，说明将电子建模系统作为主要型号设计数据的可接受使用方法，包括三维建模系统的定义、电子型号设计数据的使用准则以及数据访问与呈现要求。\n[[entity/faa-ac-20-180|FAA咨询通告AC 20-180]] — 本页介绍FAA咨询通告AC 20-180（2013年8月16日）关于批准型号清单补充型号合格证（AML-STC）的可接受方法、适用性、构型控制、符合性、检查单及附录A示例。\n[[entity/tso-c201-attitude-heading-reference-system|TSO-C201《姿态航向参考系统》技术标准规定]] — 本页根据 AC 20-181（4/7/14）整理 TSO-C201《姿态航向参考系统》技术标准规定的适用范围、与旧 TSO 的关系、六位分类字符串、降级模式许可及辅助源要求。\n[[entity/tso-c63|TSO-C63 机载气象雷达设备技术标准指令]] — 本页汇总 TSO-C63 机载气象雷达设备技术标准指令的基本定位、TSO-C63d（2012年2月）与 TSO-C63e 的修订内容，以及 AC 20-182A 对该标准指令适用性与效力的说明。\n[[entity/14-cfr-part-25-appendix-f|14 CFR第25部附录F]] — 本页介绍14 CFR第25部附录F关于材料可燃性试验至少燃烧三个试样并平均结果以确定60秒垂直燃烧速率的要求。\n[[entity/rtca-do-334|RTCA DO-334《固态捷联姿态航向参考系统最低运行性能标准》]] — 本页介绍RTCA DO-334《固态捷联姿态航向参考系统最低运行性能标准》，并依据AC 20-181说明该MOPS对AHRS降级模式可支持飞行阶段的界定及其适航审定评估要求。\n[[entity/sa01157la|SA01157LA 批准型号清单补充型号合格证]] — 本页整理 AC 20-180 附录A中 SA01157LA 的 FAA 批准型号清单示例，包括六个机型条目、图例、通用注记、填写说明及日期缺失情况。\n\n## Concept (72 total, showing top 20)\n\n[[concept/60-second-vertical-bunsen-burner-test|60秒垂直本生灯试验]] — 本页说明60秒垂直本生灯试验的定义、样本数量与取平均值要求，以及在AC 20-178中用于测定客舱内饰板新饰面燃烧长度、替代板最低燃烧长度和6英寸最大允许值的方式。\n[[concept/flammability-test-data-approval|可燃性测试数据审批]] — 本页依据 AC 20-178 说明重大修理与重大改装中可燃性测试数据的审批机制，包括审批主体、影响测试结果的因素，以及 DER 与 ODA 单位使用的指定表格。\n[[concept/flammability-test-result-influencing-factors|影响可燃性测试结果的因素]] — 汇总AC 20-178中关于改装过程中可能显著影响可燃性测试结果的各类因素，包括施工差异、清洁残留、面板修理引入的新材料或额外质量，以及试样切割区域的选择。\n[[concept/surrogate-panel-testing-options|替代板测试方法与五种测试选项]] — 本页依据AC 20-178整理替代板（surrogate panel）测试方法：表2五种测试新饰面60秒垂直燃烧长度的选项、表3问答，以及替代板构型、试验逻辑与影响因素要求。\n[[concept/test-specimen-configuration|测试样本构型]] — 本页依据 AC 20-178（2012年6月4日）说明客舱内饰板可燃性试验的测试样本构型，包括按安装状态切取或模拟切段、切取位置与样本数量要求。\n[[concept/self-extinguishing-flammability|自熄性可燃性]] — 本页说明自熄性可燃性的定义、AC 20-178 的适用范围及相关法规测试依据，并记录自熄性要求下60秒垂直燃烧长度不超过6英寸的上限。\n[[concept/aircraft-cabin-interior-panel-flammability-testing|飞机客舱内饰板可燃性测试]] — 本页依据 AC 20-178（2012年6月4日）整理飞机客舱内饰板施加新饰面后的自熄性可燃性测试方法，包括替代板测试的五种选项、审批要求与常见问题解答。\n[[concept/fda-cha-yi|FDA差异]] — 本页依据 AC_20-183.pdf 表2说明“FDA差异（FDA Variance）”的含义：在3R类LIDAR示例中该段被判定为不适用，因为3R类激光不需要差异许可。\n[[concept/fda-ji-guang-cha-yi-yao-qiu|FDA激光差异要求]] — 本页依据AC 20-183说明LIDAR安装批准中FDA激光差异（variance）要求的适用情形，包括表2第7.3.10段判定、后续构型改装条件及型号数据批准建议。\n[[concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing|激光设备认证标准符合性]] — 本页说明激光设备认证标准符合性，包括FDA 21 CFR要求、制造商自我认证、差异许可，以及IEC 60825-1与FDA激光通告第50号的替代关系。\n[[concept/fda-variance|美国食品药品监督管理局差异（豁免）]] — 说明依据21 CFR §1010.4取得的FDA差异（豁免）的适用条件、行政与技术控制，以及在机载激光设备安装型号设计、AFMS与构型控制中的体现。\n[[concept/nohd-yu-mpe-ji-suan|NOHD与MPE计算]] — 本页依据AC 20-183表2，说明NOHD与MPE计算的适用性判定：非1类激光应计算NOHD与MPE，并在报告中记录结果。\n[[concept/nohd-mpe-ji-suan|标称眼危害距离与最大允许照射量计算]] — 本页说明NOHD与MPE计算的报告要求、暴露时间取值及可接受方法，并整理NOHD在AFMS和FDA差异技术控制中的使用。\n[[concept/laser-safety-definitions|激光安全术语与定义]] — 本页汇总顾问通告第5节给出的激光安全术语与定义，包括可及发射限值、发散度、辐照度、最大允许照射量、标称眼危害距离与镜面反射六项参数。\n[[concept/ji-guang-an-quan-ji-hua|激光安全计划]] — 本页依据 AC 20-183 第7.3.8节，说明建议航空器运营人按 ANSI Z136.1 第1.3段建立激光安全计划，并列出该段在原文表2适用性判断中的结论。\n[[concept/ji-guang-lei-bie-yu-chan-pin-wei-hai|激光类别与产品危害]] — 依据 AC 20-183 表1，对照 FDA 与 IEC 激光类别，说明各等级激光产品在直视、光学助视及反射条件下对眼、皮肤及引起火灾的危害。\n[[concept/xi-tong-an-quan-fen-xi|系统安全分析]] — 本页说明AC 20-183第7.3.1节对机载激光设备安装的系统安全分析要求，包括所引用的14 CFR 1309条与相关AC、需评估的失效条件，以及LIDAR（3R类）示例的适用性判断。\n[[concept/fei-ji-jie-kou-an-quan-lian-suo|飞机接口安全联锁]] — 飞机接口安全联锁是FDA差异可能要求的激光安全联锁，用于特定飞机状态或高度条件下禁用激光。\n[[concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze|LIDAR次要更改与次要改装判定准则]] — 本页汇编AC 20-183第B.4节关于将新LIDAR设备构型作为型号设计次要更改批准、或将改装归类为次要改装时需满足的判定准则，逐条保留原文编号与适用条件。\n[[concept/ji-guang-she-bei-gou-xing-kong-zhi|激光设备构型控制]] — 本页依据顾问通告第7.3.6段，说明激光设备及其安装的构型控制要求，包括禁止未经批准更改、全生命周期构型维护计划，以及改装后按 § 1040.10(i) 重新认证。\n\n_To explore more pages under any category, use wiki_search with a query, or read a specific slug directly._\n\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 29
+          }
+        ],
+        "reasoning_content": "The user asks: based on these seven documents, give a precise NOHD value for a 1550nm invisible laser. Known: no scanning, single task max exposure 3 seconds. If cannot compute, must still state determinable lower bound of exposure duration and needed evidence, not just \"insufficient data\".\n\nI need to explore the knowledge base. Let me search the wiki."
+      },
+      {
+        "thought": "",
+        "iteration": 1,
+        "timestamp": "2026-10-22T14:39:40.5632998+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_pPi0T9pOsTSbkDlY25bh2780",
+            "args": {
+              "slugs": [
+                "concept/nohd-mpe-ji-suan",
+                "concept/laser-safety-definitions",
+                "concept/nohd-yu-mpe-ji-suan"
+              ]
+            },
+            "name": "wiki_read_page",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-yu-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/laser-safety-definitions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                },
+                "omitted_slugs": null,
+                "ambiguous_slugs": {},
+                "truncated_slugs": null
+              },
+              "output": "<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-mpe-ji-suan|标称眼危害距离与最大允许照射量计算]]</link>\n<type>concept</type>\n<aliases>NOHD/MPE计算, NOHD与MPE计算</aliases>\n</metadata>\n<relationships>\n<links_to>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02]] (本顾问通告说明机载非必需不可见光谱激光设备取得FAA适航批准的一种可接受方法，并列出激光危害分级及第7节安装要求适用性示例。), [[concept/fda-cha-yi]] (本页依据 AC_20-183.pdf 表2说明“FDA差异（FDA Variance）”的含义：在3R类LIDAR示例中该段被判定为不适用，因为3R类激光不需要差异许可。), [[concept/afms]] (本页说明激光设备安装所需经批准飞机飞行手册补充的适用条件、必须包含的限制及用户信息要求。)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页说明NOHD与MPE计算的报告要求、暴露时间取值及可接受方法，并整理NOHD在AFMS和FDA差异技术控制中的使用。\n</summary>\n<content>\n# 标称眼危害距离与最大允许照射量计算\n\n来源文件：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf]]；原文未提供AC编号及版本日期。以下按原文段落号引用。\n\n## 计算报告要求\n\n原文建议（should）提供一份报告，记录NOHD和MPE是如何计算的。报告应包括：\n\n- 所有公式及其参考文献；\n- 表格引用；\n- 公式参数，如波长、发散角、暴露时间和功率；\n- 射入飞机窗户的反射辐射路径和直接辐射路径的尺寸；\n- 暴露持续时间的理由。\n\n## 暴露时间\n\n对于激光照射器、光斑指示器、测距仪和其他非扫描激光，NOHD暴露持续时间应基于预期最大暴露持续时间，但不得少于10秒。\n\n## 可接受的计算方法\n\nAC 70-1《Outdoor Laser Operations》和ANSI Z136.1《American National Standard for Safe Use of Lasers》提供计算MPE和NOHD的可接受方法。\n\n## NOHD的使用\n\n[[concept/fda-cha-yi|FDA差异]]许可（variance）可能要求技术控制，例如测距仪截止：当激光孔径与被照射物体之间的距离小于NOHD时，禁用激光。\n\n按7.3.7.1.3，当激光与人员之间的距离小于NOHD时，不得使用激光照射人员。NOHD应在AFMS（Aircraft Flight Manual Supplement，[[concept/afms|飞机飞行手册补充]]）或标牌上标明。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/laser-safety-definitions|激光安全术语与定义]]</link>\n<type>concept</type>\n<aliases>激光安全定义</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页汇总顾问通告第5节给出的激光安全术语与定义，包括可及发射限值、发散度、辐照度、最大允许照射量、标称眼危害距离与镜面反射六项参数。\n</summary>\n<content>\n# 激光安全术语与定义\n\n咨询通告第5节给出的激光安全术语与定义，用于说明激光安装评估中的关键参数。\n\n## 5 定义（DEFINITIONS）\n\n- **5.1 可及发射限值（Accessible Emission Limit, AEL）**：FDA在某一特定激光危害等级内允许的最大可及发射水平，如§ 1040.10(c)、(d)和(e)所述。\n- **5.2 发散度（Divergence）**：激光束直径随距出口孔径距离增加而增大的现象。发散度是光束扩散的角度量，以毫弧度（mrad）表示，定义在辐照度为峰值辐照度37%的位置。\n- **5.3 辐照度（Irradiance）**：表示单位面积光束功率的方式，以瓦特每平方厘米（W/cm²）表示。\n- **5.4 最大允许照射量（Maximum Permissible Exposure, MPE）**：无防护人员可被暴露而不致眼睛或皮肤产生有害效应或不良生物学变化的激光辐射水平，通常以毫瓦每平方厘米（mW/cm²）或毫焦每平方厘米（mJ/cm²）表示。\n- **5.5 标称眼危害距离（Nominal Ocular Hazard Distance, NOHD）**：距激光器超过该距离后，激光辐射不超过MPE。\n- **5.6 镜面反射（Specular Reflection）**：辐射（光）入射到表面后发生的镜面式偏折。\n</content>\n</wiki_page>\n\n<wiki_page>\n<metadata>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-yu-mpe-ji-suan|NOHD与MPE计算]]</link>\n<type>concept</type>\n<aliases>NOHD and MPE Calculations, 标称危险距离与最大允许照射量计算</aliases>\n</metadata>\n<relationships>\n<links_to>(none)</links_to>\n<linked_from>(none)</linked_from>\n</relationships>\n<sources>\n<source knowledge_id=\"e0166761-78fe-46eb-b323-0225fc5c9e02\"/>\n</sources>\n<summary>\n本页依据AC 20-183表2，说明NOHD与MPE计算的适用性判定：非1类激光应计算NOHD与MPE，并在报告中记录结果。\n</summary>\n<content>\n# NOHD与MPE计算\n\n在AC 20-183的“Table 2. Applicable Section 7 Paragraphs”中，第7.3.2段标题为“NOHD and MPE Calculations”，该段在表2所列安装示例中的适用性判定为“是”（Yes）。\n\n判定说明为：由于该设备不是1类（Class I）激光，应计算NOHD和MPE，并在报告中记录（Since this is not a class I laser, the NOHD and MPE should be calculated and documented in a report）。\n\n| 段落 | 标题 | 是否适用 | 说明 |\n|---|---|---|---|\n| 7.3.2 | NOHD and MPE Calculations | 是 | 由于该设备不是1类激光，应计算NOHD和MPE，并在报告中记录。 |\n\n![表2 第7节适用段落](http://localhost:8080/api/v1/ingestion/jobs/7fca8b7e95b34b4d90f4ca02fc686402/assets/33eead8f59d4459e88be)\n</content>\n</wiki_page>",
+              "success": true
+            },
+            "duration": 8
+          }
+        ],
+        "reasoning_content": "The key pages: concept/nohd-mpe-ji-suan, concept/laser-safety-definitions, concept/nohd-yu-mpe-ji-suan. Let me read them.\n\nNote the user asks about 1550nm invisible laser, 3 s exposure, no scanning. AC 20-183 probably gives policy but does it provide NOHD formulas or MPE values? Probably not — AC likely doesn't give numerical MPE tables. Let's check. Also maybe the 7 documents include AC 20-184 (battery) etc. — irrelevant. So likely answer: cannot compute precise NOHD because docs lack laser output power/aperture/divergence and MPE criteria; but AC does specify exposure time selection rules (e.g., use 10 s or 0.25 s? Actually ANSI Z136.1 for 1550 nm eye-safe... 1550nm is \"eye-safe\" retinal but corneal hazard; MPE for 1.5 µm at 3 s...).\n\nLet me read the pages and then the source document AC 20-183 sections 5 (definitions) and 7.3.x on NOHD/MPE."
+      },
+      {
+        "thought": "",
+        "iteration": 2,
+        "timestamp": "2026-10-22T14:39:43.574288+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_ValZZQSRPvyDL4bJAlW36075",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "NOHD MPE 10 seconds 1550"
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "NOHD MPE 10 seconds 1550",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [],
+                "truncated": false,
+                "match_count": 0,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 0,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 0/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 59
+          },
+          {
+            "id": "call_01_2HqDIoZx0JFaK9mq0qCc1010",
+            "args": {
+              "limit": 50,
+              "query": "MPE|毫瓦|辐照度|10秒|发散角|功率"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aml-stc": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/sa01157la": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-334": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-347": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-180": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/baseline-data": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/teshu-tiaojian": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-yu-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aml-approval-checklist": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/installation-conformity": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/laser-safety-definitions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/model-splitting-restriction": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/high-magnetic-disturbance-areas": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-lei-bie-yu-chan-pin-wei-hai": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/68d911e2-3d18-46f0-bcdd-8bf3eb7b5758": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/a55aa2ce-d249-4213-a67d-5b8ae36edfb1": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidianzi-dianchi-anzhuang-ceshi-yaoqiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/tso-c201-attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"16\" query=\"MPE|毫瓦|辐照度|10秒|发散角|功率\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-yu-mpe-ji-suan|NOHD与MPE计算]]</link>\n<type>concept</type>\n<aliases>NOHD and MPE Calculations, 标称危险距离与最大允许照射量计算</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # NOHD与MPE计算 在AC 20-183的“Table 2. Applicable Section 7 Paragraphs”中，第 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-mpe-ji-suan|标称眼危害距离与最大允许照射量计算]]</link>\n<type>concept</type>\n<aliases>NOHD/MPE计算, NOHD与MPE计算</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... AC编号及版本日期。以下按原文段落号引用。 ## 计算报告要求 原文建议（should）提供一份报告，记录NOHD和MPE是如何计算的。报告应包括： - 所有公式及其参考文献； - 表格引用； - 公式参数，如波长、发散角、暴露时间和功率； ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/laser-safety-definitions|激光安全术语与定义]]</link>\n<type>concept</type>\n<aliases>激光安全定义</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... gence）**：激光束直径随距出口孔径距离增加而增大的现象。发散度是光束扩散的角度量，以毫弧度（mrad）表示，定义在辐照度为峰值辐照度37%的位置。 - **5.3 辐照度（Irradiance）**：表示单位面积光束功率的方式，以瓦特每平方 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/attitude-heading-reference-system|姿态航向参考系统]]</link>\n<type>entity</type>\n<aliases>AHRS, 姿态航向参考系统设备, AHRS设备</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 的说明添加到飞行手册或飞行员操作手册（POH）。适用时，确保将识别磁干扰可能性的说明添加到飞行手册或 POH。 **低功率设置。** 评估低功率发动机设置和可能相关的低电压条件，以确定它们是否影响 AHRS 性能。此评估必要，因为 FAA 已 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aml-stc|批准型号清单补充型号合格证]]</link>\n<type>concept</type>\n<aliases>AML-STC, Approved Model List Supplemental Type Certificate, 认证型号清单补充型号合格证</aliases>\n<summary>本页依据FAA咨询通告AC 20-180（2013年8月16日）说明批准型号清单补充型号合格证（AML-STC）的多型号批准方法、基线数据适用性、类别限制、设计更改、型号拆分禁止、构型控制与附录A示例表。</summary>\n<match_snippet>... gulations policies/faa regulations/ 查看FAA法规。 签署：David W. Hempe，Manager, Aircraft Engineering Division, Aircraft Certificat ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/aml-approval-checklist|AML-STC 审批检查单]]</link>\n<type>concept</type>\n<aliases>AML-STC审批清单</aliases>\n<summary>本页列出 AC 20-180 中的 AML-STC 审批检查单要求，涵盖各取证类别符合性、共享基线数据、安装相似性、飞行手册补充、安装说明、运行与机型等级影响、机组工作负荷与人为因素以及 ICA 的适用性。</summary>\n<match_snippet>... .gov/regulations policies/faa regulations/ 。 签署：David W. Hempe，Manager, Aircraft Engineering Division，Aircraft Certificati ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/xi-tong-an-quan-fen-xi|系统安全分析]]</link>\n<type>concept</type>\n<aliases>系统安全分析要求</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 障（Laser Equipment Malfunction）。** 激光设备故障导致飞机机组或乘客的眼或皮肤暴露于超过 MPE 的不可见激光辐射，被视为不低于危险（hazardous）功能失效条件；若因激光对飞行员眼或皮肤的损伤严重程度而无法继续 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf - Summary]]</link>\n<type>summary</type>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... | 2, 2M | 长时间直接观看时危害增加；使用光学辅助器具观看时危害增加。 | | IIIa | 3R | 取决于功率和光束面积，直接观看或用裸眼直视光束时可能瞬间造成危险；使用光学辅助器具时受伤风险增加。 | | IIIb | 3B | ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 估]]应涉及以下内容： **7.3.1.1 激光设备故障。** 激光设备故障导致飞机机组人员或乘客的眼或皮肤暴露于超过MPE的不可见激光辐射，被视为不低于危险（hazardous）功能失效条件；如果由于激光对飞行员眼或皮肤的损伤严重程度导致无法 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-lei-bie-yu-chan-pin-wei-hai|激光类别与产品危害]]</link>\n<type>concept</type>\n<aliases>激光类别与危害分级, FDA/IEC激光类别</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... | 2, 2M | 长时间直接观看时危害增加；使用光学辅助器具观看时危害增加。 | | IIIa | 3R | 取决于功率和光束面积，直接观看或用裸眼直视光束时可能瞬间造成危险；使用光学辅助器具时受伤风险增加。 | | IIIb | 3B | ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... u|系统安全评估]]应涉及以下内容： 7.3.1.1 激光设备故障。激光设备故障导致机组人员或乘客的眼或皮肤暴露于超过MPE的不可见激光辐射，被视为不低于危险的功能失效状态；如果由于激光对飞行员眼或皮肤损伤的严重程度导致无法继续安全飞行，则可能 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidianzi-dianchi-anzhuang-ceshi-yaoqiu|锂离子电池安装测试要求]]</link>\n<type>concept</type>\n<aliases>测试要求</aliases>\n<summary>本页依据AC 20-184整理锂离子电池安装测试要求，涵盖环境鉴定标准、按电池尺寸分级的符合性方法、附录E/F引用的RTCA DO-347与DO-311设计与试验章节，以及可燃性测试与符合性核查要点。</summary>\n<match_snippet>... 脚注：*A Watt hour (Wh) is defined as the rated capacity (in ampere-hours, Ah) times the nominal battery voltage. 注：当 RTCA 批 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-ruan-jian-bao-zheng|机载软件保证]]</link>\n<type>concept</type>\n<aliases>激光设备软件保证</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 射方向的机械、软件或机载电子硬件（AEH）限位装置的使用；激光器解除保险与发射电路；以及其他失效可能促成意外暴露或超过 MPE 的暴露（例如用于降低 AEL 的内部激光漫射器失效）的设计特征。若激光器的转向限位由软件或 AEH 实现，其保证等级应 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju|多LIDAR构型初始批准与描述性数据]]</link>\n<type>concept</type>\n<aliases>multiple LIDAR configurations initial approval, 初始批准描述性数据</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 5.1.3 LIDAR设备的安装连接点与安装方法。 - B.5.1.4 LIDAR设备断路器和供电线可支持的该设备最大电功率。 - B.5.1.5 LIDAR设备的RTCA/DO-160试验与类别。 - B.5.1.6 适用的[[concept ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/rtca-do-347|RTCA DO-347标准]]</link>\n<type>entity</type>\n<aliases>DO-347, RTCA DO-347</aliases>\n<summary>RTCA DO-347是RTCA发布的《Certification Test Guidance for Small and Medium Sized Rechargeable Lithium Batteries and Battery Systems》，FAA AC 20-184（2015-10-15）将其列为小型和中型可充电锂电池及电池系统的可接受符合性方法标准。</summary>\n<match_snippet>... | \\*A Watt hour (Wh) is defined as the rated capacity (in ampere-hours, Ah) times the nominal battery voltage. 表A-1中“Very ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze|LIDAR次要更改与次要改装判定准则]]</link>\n<type>concept</type>\n<aliases>LIDAR minor change/minor alteration criteria, B.4次要更改准则</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... LIDAR设备的安装连接点和安装方法必须在初始安装批准时已获批准。 - **B.4.1.11** 所有LIDAR设备的电功率不得大于初始批准中规定的最大功率。新激光设备应使用激光设备制造商建议安培额定值的断路器或保险丝进行保护。 - **B.4 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 39
+          }
+        ],
+        "reasoning_content": "Key evidence: For non-scanning lasers, NOHD exposure duration should be based on expected maximum exposure duration but not less than 10 seconds. So with 3 s expected max exposure, calculation duration must be at least 10 s. That's the \"computable lower bound of calculation duration\" — 10 seconds.\n\nNow precise NOHD value: need laser output power, divergence, aperture diameter, wavelength (1550 nm given), MPE for 1550 nm at 10 s per ANSI Z136.1 / AC 70-1, and any optical configuration (beam diameter at exit). AC 20-183 does not tabulate MPE values or NOHD formulas. Let me verify by reading the source document AC_20-183.pdf around section 7.3.2 and see if there are formulas or MPE tables. Also check whether any of the seven documents give numeric MPE. Let me search the document for \"1550\", \"MPE\", \"NOHD\"."
+      },
+      {
+        "thought": "",
+        "iteration": 3,
+        "timestamp": "2026-10-22T14:39:47.711957+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_nkiJ8n8AXrjRHyE0ZsB10719",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "NOHD",
+              "regex": true
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "NOHD",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "82d5572c-87d8-41ab-9b14-55d4683474f3",
+                  "24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8",
+                  "3b982180-afa7-4b1f-ac0c-41e9f0cc877d",
+                  "d21e67c3-edfc-4a4c-96f0-ecde36264851",
+                  "b33fa162-afba-4ec2-9074-766cbc224fab",
+                  "e4652dac-e9c2-44d2-a6ef-e7bd227b7e96",
+                  "7361e2fd-4593-4bcf-8045-6e0397e83049",
+                  "79659251-4c1d-4f55-ac16-2ff68b33293e",
+                  "194bad1b-f471-473c-95b1-9c1aee704c45",
+                  "705d1c3e-e4f6-498f-8ad2-378b8db71905",
+                  "5c673968-7461-4dab-aca1-fa05a92eddbc",
+                  "c4517bc0-14ed-4c18-8bd3-962817f02337",
+                  "4b1fc6a1-3dcd-41f5-bd1c-39cee51181db",
+                  "23af9b86-6b8b-4f19-b8f1-310648c51e0b"
+                ],
+                "truncated": true,
+                "match_count": 5,
+                "next_offset": 35,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 14,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 14/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 50
+          }
+        ],
+        "reasoning_content": "Now let me read the actual document AC_20-183.pdf sections around 7.3.2 to verify exact wording, and check if any MPE numeric tables exist in the document. Search with regex for \"10 seconds\" etc."
+      },
+      {
+        "thought": "",
+        "iteration": 4,
+        "timestamp": "2026-10-22T14:39:57.8045806+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_RJ9fpULccLNMec2YDMCH6051",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "1550|nm|nanometer|mrad|milliradian|watts|power|Appendix B",
+              "regex": true
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "1550|nm|nanometer|mrad|milliradian|watts|power|Appendix B",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "0db1869a-2397-4459-a253-963d0e11494f",
+                  "d4cb2e67-7445-4055-8dcf-ac172704458b",
+                  "82d5572c-87d8-41ab-9b14-55d4683474f3",
+                  "24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8",
+                  "3b982180-afa7-4b1f-ac0c-41e9f0cc877d",
+                  "08657f9a-b642-4cbc-a329-04b79dc862d0",
+                  "d400fba3-1a01-48b0-bf6d-3b9f6f78a3a5",
+                  "d21e67c3-edfc-4a4c-96f0-ecde36264851",
+                  "b33fa162-afba-4ec2-9074-766cbc224fab",
+                  "e4652dac-e9c2-44d2-a6ef-e7bd227b7e96",
+                  "7361e2fd-4593-4bcf-8045-6e0397e83049",
+                  "79659251-4c1d-4f55-ac16-2ff68b33293e",
+                  "194bad1b-f471-473c-95b1-9c1aee704c45",
+                  "705d1c3e-e4f6-498f-8ad2-378b8db71905",
+                  "5c673968-7461-4dab-aca1-fa05a92eddbc"
+                ],
+                "truncated": true,
+                "match_count": 7,
+                "next_offset": 22,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 15,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 15/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 117
+          },
+          {
+            "id": "call_01_32kbuglME1KpZi8ZDnAI5077",
+            "args": {
+              "limit": 30,
+              "query": "红外|波长|视网膜|角膜|损伤|nohd"
+            },
+            "name": "wiki_search",
+            "result": {
+              "data": {
+                "found_kbs": {
+                  "entity/flir": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/afms": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/lidar": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/ac-20-183": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-cha-yi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/rtca-do-347": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fda-variance": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/faa-ac-20-184": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/teshu-tiaojian": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/nohd-yu-mpe-ji-suan": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/aeh-she-ji-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xitong-anquan-pinggu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/configuration-control": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/xi-tong-an-quan-fen-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-an-quan-ji-hua": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-she-bei-an-zhuang": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/laser-safety-definitions": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/14-cfr-part-25-appendix-f": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/an-zhuang-xing-hao-she-ji": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-ruan-jian-bao-zheng": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/fei-ji-jie-kou-an-quan-lian-suo": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "entity/attitude-heading-reference-system": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-lei-bie-yu-chan-pin-wei-hai": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/a55aa2ce-d249-4213-a67d-5b8ae36edfb1": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "summary/e0166761-78fe-46eb-b323-0225fc5c9e02": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidianzi-dianchi-anquan-weihai-yu-rekongzhi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/chixu-shiang-shuoming-yu-dianchi-weihu-yunxing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08",
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/hangkongqi-kechongdian-lidianchi-anzhuang-shiang-fuhexing": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/duo-lidar-gou-xing-chu-shi-pi-zhun-yu-miao-shu-xing-shu-ju": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/gong-gong-yong-tu-hang-kong-qi-ji-guang-she-bei-jin-yong-yao-qiu": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ],
+                  "concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun": [
+                    "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+                  ]
+                }
+              },
+              "output": "<search_results count=\"20\" query=\"红外|波长|视网膜|角膜|损伤|nohd\">\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/flir|前视红外设备]]</link>\n<type>entity</type>\n<aliases>前视红外</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # 前视红外设备 来源：[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20- ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-yu-mpe-ji-suan|NOHD与MPE计算]]</link>\n<type>concept</type>\n<aliases>NOHD and MPE Calculations, 标称危险距离与最大允许照射量计算</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... # NOHD与MPE计算 在AC 20-183的“Table 2. Applicable Section 7 Paragraphs ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/nohd-mpe-ji-suan|标称眼危害距离与最大允许照射量计算]]</link>\n<type>concept</type>\n<aliases>NOHD/MPE计算, NOHD与MPE计算</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 原文未提供AC编号及版本日期。以下按原文段落号引用。 ## 计算报告要求 原文建议（should）提供一份报告，记录NOHD和MPE是如何计算的。报告应包括： - 所有公式及其参考文献； - 表格引用； - 公式参数，如波长、发散角、暴露时间 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-zai-bu-ke-jian-guang-pu-ji-guang-she-bei-an-zhuang-shi-hang-pi-zhun|机载不可见光谱激光设备安装适航批准]]</link>\n<type>concept</type>\n<aliases>激光设备安装适航批准</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 号及表格编号均按原文保留。 ## 1 目的 1.1 本咨询通告（AC）推荐一种为机载、非必需、不可见光谱激光设备（如红外监视激光和[[entity/lidar|激光雷达]]（LIDAR）设备）安装取得联邦航空管理局（FAA）适航批准的方法。 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/chixu-shiang-shuoming-yu-dianchi-weihu-yunxing|持续适航说明与电池维护运行]]</link>\n<type>concept</type>\n<aliases>ICA, 持续适航文件</aliases>\n<summary>本页依据2015年10月15日FAA AC 20-184第2.9节与第3章，整理锂电池持续适航说明（ICA）的编制内容与依据，以及电池维护、更换、存储和操作搬运要求，并记录相关特殊条件的可接受符合性方法。</summary>\n<match_snippet>... 件存储、更换与混用电芯 - ICA 还应包含备件存储中锂电池的维护程序，以防止用因长期存储而出现电荷保持能力下降或其他损伤的电池进行更换。 - ICA 必须包含依据锂电池原始设备制造商（OEM）维护手册更换电池的说明。 - 在锂电池内更换单个 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/afms|飞机飞行手册补充]]</link>\n<type>concept</type>\n<aliases>AFMS, 飞行手册补充</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... IEC 3B 和 4 类激光，在地面及滑行、起飞、着陆期间，钥匙控制必须处于关闭位置。 - 当激光与人员之间的距离小于 NOHD 时，不得使用激光照射人员。AFMS 中或标牌上应规定 NOHD。 - 不得使用激光的大气条件（如雨或雪）。 - 不得使 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/xi-tong-an-quan-fen-xi|系统安全分析]]</link>\n<type>concept</type>\n<aliases>系统安全分析要求</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 皮肤暴露于超过 MPE 的不可见激光辐射，被视为不低于危险（hazardous）功能失效条件；若因激光对飞行员眼或皮肤的损伤严重程度而无法继续安全飞行，则可能为灾难性（catastrophic）。在系统安全评估中，应记录将其归类为危险功能失效条 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[summary/e0166761-78fe-46eb-b323-0225fc5c9e02|AC_20-183.pdf - Summary]]</link>\n<type>summary</type>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... ：原文未提供AC编号及版本日期，仅标注来源页1图像且该页无OCR转录。 - 主题：为机载、非必需、不可见光谱激光设备（如红外监视激光和LIDAR）的安装提供FAA适航批准的一种可接受方法。 ![来源页1图片](http://localhost ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-an-zhuang-shi-hang-yao-qiu|激光设备安装适航要求]]</link>\n<type>concept</type>\n<aliases>激光设备安装要求, 第7节激光设备安装</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... ]；版本日期：原文未提供。 ## 性质与适用范围 本顾问通告（AC）推荐一种为机载、非必需、不可见光谱激光设备（例如红外监视激光和光探测与测距（LIDAR）设备）安装获取FAA适航批准的方法。本AC不是强制要求，也不构成法规；它描述一种可接 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-ren-zheng-biao-zhun-fu-he-xing|激光设备认证标准符合性]]</link>\n<type>concept</type>\n<aliases>激光设备认证, FDA 21 CFR与IEC 60825-1符合性</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 所述“surveying, leveling, and alignment laser products”，对不可见激光波长限于class I AEL。 - 多数机载监视激光器和部分LIDAR超过不可见波长允许的class I AEL，因此需要 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/fda-variance|美国食品药品监督管理局差异（豁免）]]</link>\n<type>concept</type>\n<aliases>FDA差异, FDA豁免</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... ser products”（测量、水准和准直激光产品），属于§ 1040.11(b)所述的特定用途激光产品，对不可见激光波长限于class I AEL。然而，大多数机载监视激光和部分LIDAR超过不可见波长允许的class I AEL，因此需要 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-lei-bie-yu-chan-pin-wei-hai|激光类别与产品危害]]</link>\n<type>concept</type>\n<aliases>激光类别与危害分级, FDA/IEC激光类别</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... leveling, and alignment laser products”（测量、水准和准直激光产品），对不可见激光波长限于 class I AEL。对于按 IEC 分类体系标注的产品，1类、2类和3R类是不可见发射可接受的类别限值。 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/lidar|激光雷达]]</link>\n<type>entity</type>\n<aliases>光探测与测距设备</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 束不可见，且没有眨眼反射反应保护眼睛，因此眼暴露最初可能未被察觉。 - 暴露于 750 至 1,400 纳米（nm）近红外光谱范围内工作的激光可造成视网膜眼损伤；400 至 1,400 nm 波段被称为视网膜危害区。 - 在 315 至 40 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidianzi-dianchi-anquan-weihai-yu-rekongzhi|锂离子电池安全危害与热失控]]</link>\n<type>concept</type>\n<aliases>热失控, 锂电池安全危害</aliases>\n<summary>本页依据FAA咨询通告AC 20-184（2015-10-15）整理锂离子电池安全危害与热失控的定义、诱因（过充、过放、电芯组件可燃性、内部缺陷、极端温度），以及相关典型特殊条件与健康监测、存储和处理注意事项。</summary>\n<match_snippet>... 保能够保持适当的荷电状态。 ## 维护、存储与处理中的相关考虑 - 机械完整性：必须正确安装和连接电池，且不得有物理损伤；通过纳入电池和电池舱通气系统，可以避免爆炸性气体的积聚。应定期检查，确保通气系统按维护手册的安装程序牢固连接并正确取向 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/hangkongqi-kechongdian-lidianchi-anzhuang-shiang-fuhexing|航空器可充电锂电池安装适航符合性]]</link>\n<type>concept</type>\n<aliases>锂电池安装符合性, 安装适航要求</aliases>\n<summary>本页依据FAA咨询通告AC 20-184（2015-10-15）整理航空器可充电锂电池安装的可接受符合性方法，涵盖认证计划、表1法规清单、特殊条件、测试、系统安全评估、持续适航文件与维护运行考虑。</summary>\n<match_snippet>... 器劣化的维修与检查要求。 ICA 还应包含备件存储中锂电池的维修程序，以防止用因长时间存储而出现电荷保持能力下降或其他损伤的电池进行更换。ICA 必须包含依据锂电池原始设备制造商（OEM）维修手册更换电池的说明。锂电池内部单体电芯的更换必须经 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/faa-ac-20-184|FAA咨询通告AC 20-184]]</link>\n<type>entity</type>\n<aliases>AC 20-184, 咨询通告20-184</aliases>\n<summary>本页整理FAA咨询通告AC 20-184（2015年10月15日，AIR-133）的内容，涵盖航空器可充电锂电池与电池系统安装的可接受符合性方法、测试要求、系统安全评估、持续适航文件及维护与运行考虑。</summary>\n<match_snippet>... 2.9.7 ICA还应包含备用（spares）存储中锂电池的维修程序，以防止用因长期存储而出现电荷保持能力下降或其他损伤的电池进行更换。 2.9.8 ICA必须包含依据锂电池原始设备制造商（OEM）维修手册更换电池的说明。 2.9.9 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/lidar-ci-yao-geng-gai-yu-ci-yao-gai-zhuang-pan-ding-zhun-ze|LIDAR次要更改与次要改装判定准则]]</link>\n<type>concept</type>\n<aliases>LIDAR minor change/minor alteration criteria, B.4次要更改准则</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... DAR设备AFMS限制和使用者信息，必须无需更改地适用于新的LIDAR设备构型。可使用驾驶舱标牌标识新的LIDAR型号和NOHD，以替代对AFMS的修订。 - **B.4.1.10** 对于安装在客舱内或飞机外部防护壳体内的LIDAR设备，新设备的 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/ji-guang-she-bei-afms-xian-zhi-yu-yong-hu-xin-xi|激光设备AFMS限制与用户信息]]</link>\n<type>concept</type>\n<aliases>AFMS Limitations and User Information, 飞机飞行手册补充限制与用户信息</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... - 7.3.7.1.2 不得在地面或滑行、起飞、着陆期间使用激光。 - 7.3.7.1.3 当激光与人员之间的距离小于NOHD时，不得使用激光照射人员。应规定NOHD。 - 7.3.7.1.4 不得使用激光的大气条件。 - 7.3.7.1.5 不 ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[concept/laser-safety-definitions|激光安全术语与定义]]</link>\n<type>concept</type>\n<aliases>激光安全定义</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... （mJ/cm²）表示。 - **5.5 标称眼危害距离（Nominal Ocular Hazard Distance, NOHD）**：距激光器超过该距离后，激光辐射不超过MPE。 - **5.6 镜面反射（Specular Reflection） ...</match_snippet>\n</page>\n<page>\n<knowledge_base_id>17a4fb08-2f1e-4107-b1e6-c203657a3e08</knowledge_base_id>\n<link>[[entity/ac-20-183|咨询通告20-183]]</link>\n<type>entity</type>\n<aliases>激光适航安装指南</aliases>\n<summary>(summary omitted, already seen in previous search)</summary>\n<match_snippet>... 美国交通部联邦航空管理局） ## 1 目的 1.1 本咨询通告（AC）推荐一种为机载、非必需、不可见光谱激光设备（如红外监视激光和光探测与测距（LIDAR）设备）安装取得美国联邦航空管理局（FAA）适航批准的方法。本AC不是强制要求，也不构 ...</match_snippet>\n</page>\n</search_results>",
+              "success": true
+            },
+            "duration": 101
+          }
+        ],
+        "reasoning_content": "Confirmed exact wording. Now, does AC 20-183 provide any MPE values? Let's check whether there is appendix B with LIDAR example including power/divergence/MPE. Search document for \"watt\", \"mrad\", \"nanometer\", \"nm\".\n\nAlso the question is about a 1550 nm invisible laser with 3s exposure. AC 20-183's exposure duration rule: \"should be based on the maximum exposure duration expected, but not less than 10 seconds.\" So the calculable lower bound for calculation duration = 10 s (not 3 s). Precise NOHD cannot be derived since documents lack laser power, divergence, exit aperture diameter, MPE criterion values, and whether eye exposure is aided (7 mm pupil) etc.\n\nBut wait — could one compute NOHD if MPE is known from ANSI Z136.1? For 1550 nm, MPE for 10 s exposure: At 1.5 µm, MPE for eye is corneal. ANSI Z136.1 Table 5a for 1.4–1.8 µm? For 10 s, MPE ~ 0.1 W/cm²? Hmm. Actually for 1550 nm, the MPE (ANSI) for exposure durations 10^-3 to 10 s is 0.1 W/cm² (for 1.4–1.5 µm?) Let me recall: For 1.5 µm region, MPE for eye: 10 s duration limit 0.1 W/cm²? For 1550 nm, the cornea limit for 10 s: 0.1 W/cm²? Actually ANSI Z136.1 Table 5a: 1.4–1.8 µm, MPE = 0.1 W/cm² for t = 1e-3 to 10 s? I think for 1.5–1.8 µm, MPE = 0.1 W/cm². Hmm, but not in documents. The user asks \"依据这七份文件\" — based on these seven documents. So we should not import external MPE values as if from documents. We can explain what's needed, and note that AC 20-183 points to ANSI Z136.1 and AC 70-1 for MPE and NOHD formulas — which are not among the seven files. This is important: the normative values live outside the corpus. So precise NOHD is not computable from the seven docs.\n\nHowever, the user demands: \"若无法算出，仍须指出能确定的计算时长下限和需要的证据，不能只回答'资料不足'\". So answer: calculation duration lower bound = 10 s, even though expected max exposure is 3 s, per 7.3.2 \"not less than 10 seconds.\" And list needed evidence: laser output power (W), beam divergence (mrad, 1/e or 37% definition per 5.2), exit aperture/beam diameter, wavelength confirmed 1550 nm, operating mode (CW vs pulsed — critical: peak power & pulse duration, PRF), MPE value from ANSI Z136.1/AC 70-1 for 1550 nm at 10 s, whether unaided eye 7 mm pupil, and the NOHD equation used; also direct/reflected path dimensions into windows per report requirement.\n\nAlso, if pulsed, MPE depends on pulse duration/repetition rate. 3s max exposure — but calculation at 10 s, so the MPE to use is for 10 s, which for 1550 nm CW would be... Hmm. Should I include a worked symbolic formula? We could give the standard NOHD formula: NOHD = (1/θ) * [sqrt(4P/(π MPE)) - D] or for Gaussian beam: NOHD = (1/θ)[sqrt((4P)/(π·MPE)) − D] with θ in radians, P in W, D exit beam diameter in cm, MPE W/cm². That's a general formula from laser safety practice, not from the documents. The docs only say \"all equations, references...\" and point to AC 70-1/ANSI Z136.1. I could present the formula as an external general relation clearly labeled as not supplied by the seven documents, useful for plugging data. But the user asked for precise NOHD based on the seven files. Adding an external standard formula might be helpful but risks implying authority. I can present it as \"通用形式（需以 ANSI Z136.1/AC 70-1 的条款确认）\" clearly marked as outside the corpus. Hmm, guidance says distinguish unverified background knowledge from supported claims. I can note it.\n\nBetter: show why no number is possible with an illustrative sensitivity statement? Careful not to invent. We could do a parametric formula so the user sees what's missing. Let's formulate:\n\nFor a Gaussian TEM00 beam, NOHD (cm) = (1/θ) [ (4P/(π·MPE))^{1/2} − D ], θ in rad, P in W, MPE W/cm², D exit 1/e² diameter cm. Equivalent NOHD = (1/θ)[sqrt(4P/(π MPE)) − D]. If D negligible, NOHD ≈ sqrt(4P/(π MPE))/θ.\n\nThis is standard. I'll clearly mark it as the conventional formula not contained in the seven documents, and that AC requires documenting equations and references.\n\nCould we give a numeric example with hypothetical power? No — that could mislead. Maybe give the scaling: NOHD ∝ sqrt(P)/θ. If user provides P and θ, compute. But they want precise value. Answer must be honest: no precise value from corpus.\n\nWait — maybe one of the seven documents (AC 20-183) appendix B gives a Class 3R LIDAR example with specific NOHD value? Let's check for numbers like \"meter\" or \"mrad\" or \"nm\" in d2. Search \"3R\" and \"appendix\". Also check whether 1550 nm appears at all in any of seven documents. Let's search."
+      },
+      {
+        "thought": "",
+        "iteration": 5,
+        "timestamp": "2026-10-22T14:40:01.1933629+08:00",
+        "tool_calls": [
+          {
+            "id": "call_00_aMRQzMtaUjIHhCyvrHC56233",
+            "args": {
+              "id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+              "query": "mW|W/cm|joule|J/cm|Appendix|example|Class 3R",
+              "regex": true
+            },
+            "name": "read_document",
+            "result": {
+              "data": {
+                "query": "mW|W/cm|joule|J/cm|Appendix|example|Class 3R",
+                "document": {
+                  "type": "internal_rag",
+                  "title": "AC_20-183.pdf",
+                  "source": "internal_rag",
+                  "metadata": {
+                    "source_system": "internal-rag",
+                    "internal_rag_parser_name": "mineru-cloud-pdf",
+                    "internal_rag_source_path": "D:\\internal-rag\\data\\ingestion\\originals\\a8\\a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468\\source.pdf",
+                    "internal_rag_source_sha256": "a8ecd0465c29b7d19239480db76f08093908e2f220b0a7af5001339d7007b468",
+                    "internal_rag_parser_version": "1",
+                    "internal_rag_schema_version": "document-ir/0.2",
+                    "internal_rag_source_document_id": "03750c2e7078f79f7136",
+                    "internal_rag_normalized_text_sha256": "35244e3a38acfa1019ad127ed1acd1c31a32445c9aaa4e2a2117eca2e19b53aa"
+                  },
+                  "file_name": "AC_20-183.pdf",
+                  "file_size": "Unknown",
+                  "file_type": "internal_rag",
+                  "chunk_count": 44,
+                  "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                  "parse_status": "completed"
+                },
+                "chunk_ids": [
+                  "70dc3297-8f8d-407f-a9dc-7fd41cae9c69",
+                  "674c568a-0e0a-43ed-a9d6-8926d7b46c10",
+                  "19644753-a08a-467f-9933-5954a4dab230",
+                  "0db1869a-2397-4459-a253-963d0e11494f",
+                  "d4cb2e67-7445-4055-8dcf-ac172704458b",
+                  "82d5572c-87d8-41ab-9b14-55d4683474f3",
+                  "24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8",
+                  "3b982180-afa7-4b1f-ac0c-41e9f0cc877d",
+                  "d21e67c3-edfc-4a4c-96f0-ecde36264851",
+                  "b33fa162-afba-4ec2-9074-766cbc224fab",
+                  "e4652dac-e9c2-44d2-a6ef-e7bd227b7e96",
+                  "194bad1b-f471-473c-95b1-9c1aee704c45",
+                  "705d1c3e-e4f6-498f-8ad2-378b8db71905",
+                  "5c673968-7461-4dab-aca1-fa05a92eddbc",
+                  "c4517bc0-14ed-4c18-8bd3-962817f02337",
+                  "057681af-43c8-42cf-90b3-66fc72b8592c",
+                  "3330ba50-ed65-4a2f-84c2-d9b96ae84133"
+                ],
+                "truncated": true,
+                "match_count": 7,
+                "next_offset": 25,
+                "display_type": "knowledge_chunks_list",
+                "knowledge_id": "e0166761-78fe-46eb-b323-0225fc5c9e02",
+                "total_chunks": 44,
+                "fetched_chunks": 17,
+                "knowledge_title": "AC_20-183.pdf",
+                "source_chunk_id": "",
+                "knowledge_base_id": "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+              },
+              "output": "Listed 17/44 chunks from AC_20-183.pdf (content omitted from history)",
+              "success": true
+            },
+            "duration": 9
+          }
+        ],
+        "reasoning_content": "Important: the document's 3.3 says 1,400–10,600 nm far infrared can damage cornea/lens; \"Most FLIR and LIDAR lasers operate with a wavelength of 800 to 1570 nm.\" So 1550 nm falls outside retinal hazard region (400–1400 nm), in corneal hazard region (1400–10600 nm). This is a key factual anchor from the docs: at 1550 nm, hazard is corneal/lens rather than retinal, and the blink reflex doesn't help (invisible).\n\nNow, no MPE values in the docs. Let's confirm there's no numeric MPE table anywhere. The document is 44 chunks; search for \"MPE\" occurrences. But the wiki page and chunks show only qualitative. Let's search \"mW\" or \"J/cm\" regex.\n\nAlso check Appendix B maybe gives a sample NOHD value with parameters. Search \"class 3R\" region, appendix B. Let's query \"Appendix\" or read last chunks. Let me search regex \"3R|NOHD\" in the later part with offset. Actually earlier matches: c13, c14 show table 2. Let me look at appendix B chunks (index ~ 30-44). Query \"LIDAR\" maybe. Let's do targeted query \"mW|W/cm|joule|Appendix\"."
+      },
+      {
+        "thought": "## 直接结论\n\n**依据这七份文件，无法给出一个精确的 NOHD 米数；给出这个数字就等于凭空编造。** 在这七份文件中，只有 AC 20-183（激光适航安装指南）涉及本题：其余五份分别关于客舱内饰板可燃性、认证数据保留、AML-STC、姿态航向参考系统、机载气象雷达和锂电池，索引与检索都没有显示它们含有激光 MPE 或 NOHD 数据。\n\nAC 20-183 只规定了“如何计算、按多长时间计算、报告要写哪些内容”，**没有给出 MPE 数值表、NOHD 公式，也没有给出你这台设备的功率、发散角或孔径**。它能提供的全部 MPE 和 NOHD 计算方法，都指向外部标准 AC 70-1 与 ANSI Z136.1<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n**唯一能确定下来的数字是计算时长：10 秒。** 原文对非扫描激光明确规定：“For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds.”<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> 你的预期最长照射为 3 s，低于 10 s，因此必须按 **10 s** 计算。又因为第 1.1 段规定，一旦采用本 AC 作为符合性路径，就必须完整遵循它，所以这个 10 s 不是可选项<kb doc=\"AC_20-183.pdf\" chunk_id=\"674c568a-0e0a-43ed-a9d6-8926d7b46c10\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n\n## 一、文件中可以确定的技术结论\n\n| 事项 | 可确定的结论 | 依据 |\n|---|---|---|\n| 适用对象 | 不可见光谱激光，包括非扫描的照射器、指示器、测距仪 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"19644753-a08a-467f-9933-5954a4dab230\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 计算时长 | max（预期最长照射时间，10 s）= **10 s** | <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 是否必须计算 | 非 1 类激光必须计算 NOHD 与 MPE，并写入报告 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 3R 类是否豁免 | **不豁免计算**：示例中 3R 类 LIDAR 只是不需要 FDA variance，7.3.2 仍判为“适用” | <kb doc=\"AC_20-183.pdf\" chunk_id=\"4b1fc6a1-3dcd-41f5-bd1c-39cee51181db\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 1550 nm 的危害部位 | 1,400–10,600 nm 属远红外，损伤**角膜、晶状体或两者**；不在 400–1,400 nm 视网膜危害区 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"d4cb2e67-7445-4055-8dcf-ac172704458b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 不可见光束的特殊性 | 无眨眼反射，眼暴露最初可能未被察觉 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"d4cb2e67-7445-4055-8dcf-ac172704458b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 报告的必填参数 | 公式、公式参考文献、表号、波长/发散角/曝光时间/功率、射入飞机窗户的直射与反射路径尺寸、曝光时长理由 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| NOHD 的用途 | 距离小于 NOHD 时不得照射人员；NOHD 须写入 AFMS 或标牌；可作为测距仪截止等技术的控制量 | <kb doc=\"AC_20-183.pdf\" chunk_id=\"5c673968-7461-4dab-aca1-fa05a92eddbc\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"b33fa162-afba-4ec2-9074-766cbc224fab\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 参数定义 | 发散角定义在**峰值辐照度 37%**处（即 1/e，不是常见的 1/e²）；MPE 单位为 mW/cm² 或 mJ/cm² | <kb doc=\"AC_20-183.pdf\" chunk_id=\"24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n\n由此可以看出一条容易被忽略的边界：**“1550 nm 眼安全”只说明它不落在视网膜危害区，并不意味着 NOHD 很小**。角膜和晶状体的损伤阈值同样会给出可观的 NOHD，而且因为没有眨眼反射，实际暴露时间会完整计入。\n\n## 二、计算精确数值所缺少的证据\n\n| 必需参数 | 为什么必需 |\n|---|---|\n| **输出功率 P**（连续波，W）；若为脉冲，则要单脉冲能量、脉宽、重频 | 7.3.2 把“power”列为公式参数；脉冲还要另算单脉冲与重复脉冲两种 MPE<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **发散角 θ**（mrad），并注明是 37% 峰值定义还是 1/e² 定义、全角还是半角 | 定义基准不同，θ 可差约 1.7 倍，NOHD 同比例变化<kb doc=\"AC_20-183.pdf\" chunk_id=\"24cef2e1-8b08-4d98-8773-a3ecfcf4bbc8\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **出射光束直径或孔径 D** | NOHD 公式中与 θ·r 相加，决定近场光斑 |\n| **MPE 数值及其出处**（ANSI Z136.1 的表号与版本年份，或 AC 70-1 相应条款） | 文件只指定标准，不含数值；没有这一项就无法定出阈值 |\n| **激光类别或 AEL 与标签**（FDA Class I/IIIa/IIIb/IV 或 IEC 1/2/3R/3B/4） | 决定 7.3.2 是否适用、是否需要 FDA variance、是否按 1 类“无危害”处理<kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"4b1fc6a1-3dcd-41f5-bd1c-39cee51181db\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| **连续还是脉冲工作** | 3 s 对连续波只是一个时长；对脉冲还要按脉宽与重频判据计算 |\n| **光路几何**：有无扩束镜或窗口、是否裸眼、射入驾驶舱与客舱窗户的直射与镜面反射路径尺寸 | 7.3.2 明确要求报告这些尺寸；反射面按镜面反射处理<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n| 若用本 AC 走适航 | 还需设备 FDA 认证标签、variance 中的技术控制（如飞机接口联锁）等<kb doc=\"AC_20-183.pdf\" chunk_id=\"d21e67c3-edfc-4a4c-96f0-ecde36264851\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"b33fa162-afba-4ec2-9074-766cbc224fab\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> |\n\n## 三、拿到上述四项核心参数后可以直接计算\n\n文件没有给出公式，只要求把公式及其参考文献写进报告<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。工程上通用的几何关系如下（属于标准做法，不是这七份文件的内容，最终应以 ANSI Z136.1 或 AC 70-1 的条款为准）：\n\n- 距离 r 处的辐照度（均匀光斑近似）：E(r) = P / [(π/4)(D + θr)²]\n- 令 E(r) = MPE，则：**NOHD = [√(4P/(π·MPE)) − D] / θ**，其中 P 用 W、MPE 用 W/cm²，D 与 NOHD 用 cm，θ 用弧度（全角）。\n\n两点必须注意：① 高斯光束与 7 mm 限制孔径会引入系数，必须以标准中的公式为准；② NOHD ∝ √P/θ，所以功率翻倍只使距离增加约 41%，而发散角减半会使距离翻倍，这也是为什么缺少 θ 就无法给出可信数值。\n\n## 四、现在可以确定的结论\n\n1. **计算时长下限为 10 s**：即使实际只照射 3 s，AFMS 或标牌上的 NOHD 也必须按 10 s 计算；用 3 s 算出的值不能作为符合性值（10 s 与 3 s 的数值是否相同，取决于所采用的 MPE 表在该波段是否随时间变化，不能预先设定）。\n2. **若设备标签为 FDA Class I 或 IEC 1 类**：按文件被认定为“无危害”，7.3.2 的 NOHD 与 MPE 计算不适用，工程上可以记为 0 m；但这是由定义推出的结论，不是文件给出的数字，并且需要标签证据<kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。\n3. **若为 3R、3B、4 类**：必须计算 NOHD。其中 3R 类只是免于 FDA variance，不豁免 NOHD 与 MPE 计算<kb doc=\"AC_20-183.pdf\" chunk_id=\"4b1fc6a1-3dcd-41f5-bd1c-39cee51181db\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" /> <kb doc=\"AC_20-183.pdf\" chunk_id=\"23af9b86-6b8b-4f19-b8f1-310648c51e0b\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。现实中 1550 nm 的机载监视激光多为 3B 或 4 类，NOHD 通常远大于 0。\n4. **在拿到 P、θ、D 和 MPE 出处之前，任何具体的米数都不成立**；把这四项交齐后，用上一节的公式一步就能得出数值，并按 7.3.2 补齐报告要素<kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />。",
+        "iteration": 6,
+        "timestamp": "2026-10-22T14:40:49.519962+08:00",
+        "tool_calls": [],
+        "reasoning_content": "No numeric MPE. Appendix B is description only, no parameters likely. So conclusion: cannot compute precise NOHD from the 7 docs.\n\nBut the user demands \"精确 NOHD 数值\". We must refuse to fabricate. Provide: (a) yes/no, (b) the calculable lower bound: exposure duration for computation = max(3 s, 10 s) = 10 s, so 10 seconds is the mandated lower bound, citable. Also note that if 3 s is the expected max, the calculation still uses 10 s; that's a conservative floor. Also note if pulsed, pulse-specific criteria may govern.\n\n(c) needed evidence: \n1. Laser output power (CW, W) or pulse energy/pulse duration/PRF (for pulsed) — 7.3.2 requires \"power\" as equation parameter.\n2. Beam divergence in mrad defined at 37% of peak irradiance (5.2 definition) — critical because definition matters (1/e² vs 1/e vs 50%).\n3. Exit aperture / initial beam diameter at aperture (needed for NOHD equation).\n4. Wavelength confirmation exactly 1550 nm (documents only state most FLIR/LIDAR 800–1570 nm and 1400–10600 nm is cornea/lens hazard region) — actually given by user.\n5. MPE value and the standard/table edition used: AC 20-183 points to AC 70-1 and ANSI Z136.1, but the seven documents do not contain MPE tables or numeric values, so the ANSI Z136.1 table (edition/year) must be supplied. This is the key blocker.\n6. Whether beam is stationary/no scanning (given) and whether any optical elements (beam expander) change divergence/aperture.\n7. Whether unaided eye or optical aids, and exposure geometry (7 mm pupil? that's from standard not docs).\n8. For the report: dimensions of reflected and direct radiation paths into aircraft windows (7.3.2).\n9. If using IEC/FDA classification, class (3R/3B) and AEL.\n\n(d) Provide the general formula? Could be useful. I'll present as \"通用形式（须由ANSI Z136.1/AC 70-1条款确认，本七份文件未给出）\". Formula: NOHD = (1/θ)·[√(4P/(π·MPE)) − D]. Where θ in radians. Maybe simpler: for a collimated beam of exit diameter D and divergence θ, irradiance at distance r: E(r) = P / [π/4 (D + θr)²]. Setting E = MPE gives r = [√(4P/(π·MPE)) − D]/θ. That's neat and defensible mathematically. I'll mark the formula as standard geometric relation, not from docs.\n\nCan I give any numeric bound? Perhaps a conditional statement: NOHD is zero if the laser is Class 1 / IEC 1 (no MPE exceedance at any distance). Actually for Class 1, NOHD is effectively 0 by definition. The docs: Class I considered nonhazardous. But we don't know class. We could say: if the device is certified Class 1 (FDA) or IEC 1/2/3R, no variance required; but NOHD/MPE calc applies for non-Class-I (Table 2). Hmm, the table's example is Class 3R and still requires NOHD calc (\"Since this is not a class I laser\"). Interesting: IEC 3R needs NOHD calc but not variance.\n\nCould we offer a \"conditional bound\": NOHD ≥ 0 trivially, not helpful.\n\nMaybe we can give a numerical example scaled: e.g., at P = 1 W, θ = 1 mrad, MPE = 0.1 W/cm², D = 1 cm: r = [√(4/(π·0.1)) − 1]/0.001 = [√12.73 − 1]/0.001 = (3.568−1)/0.001 = 2568 cm ≈ 25.7 m. But that's based on an external MPE assumption (0.1 W/cm²) not in docs. Risky. Could present as \"示例仅演示数量级敏感性，MPE 0.1 W/cm² 并非本七份文件给出的值\". Hmm. The user wants precision; giving a hypothetical example might be misused. But it also demonstrates why data is needed. I think I can include a clearly-labeled illustrative calculation with explicit assumptions, or better, omit numbers and give the formula. I'll include formula and maybe a scaling rule NOHD ∝ √P/θ, which is mathematically from the formula.\n\nActually let me double check the 1550 nm MPE issue: for 1550 nm, the eye is \"eye-safe\" relative to retinal but corneal MPE at 10 s is fairly high. For ANSI Z136.1, 1.4–1.8 µm: MPE = 0.1 W/cm² for t = 1e-3 to 10 s? Actually I recall for 1.5 µm, MPE for 10 s is 0.1 W/cm² (cornea). For 1550 nm the AEL for Class 1 is... Class 1 AEL at 1550 nm for 10 s might be ~ 8 W? Hmm, not needed.\n\nLet's also check section 3.3 detail: \"1,400 to 10,600 nm far infrared ... can damage the cornea, lens, or both.\" Good citable evidence that 1550 nm is corneal hazard, not retinal, which affects which MPE table (corneal) applies and that no blink reflex.\n\nAlso maybe the docs' note that \"This AC is only intended for invisible lasers\" (1.5) applies.\n\nNow, is there any chance the request is a trap about \"the seven files\" — six are irrelevant (batteries, AHRS, radar, interior panels, data retention, AML-STC). Only AC 20-183 is relevant. We should say that explicitly: only one of the seven (AC 20-183) addresses laser NOHD; the other six don't supply laser parameters. That's a useful finding.\n\nLet me confirm the six others' topics: AC 20-178 cabin interior panel flammability, AC 20-179 certification data retention, AC 20-180 AML-STC, AC 20-181 AHRS, AC 20-182A weather radar, AC 20-184 lithium battery. Yes from index.\n\nAlso should I flag a wiki issue? The two pages concept/nohd-yu-mpe-ji-suan and concept/nohd-mpe-ji-suan are duplicate/overlapping pages describing the same AC section. That's arguably a wiki defect (duplicate pages) but not \"mixed entities/contradictory/outdated\". The tool categories don't fit well (\"other\" possible). Hmm, not necessary. The task is a computation. I might skip flagging; but duplicate pages are a real defect. The instructions say report supported defect when relevant. It's not central. I'll skip to avoid noise, or maybe flag as \"other\" duplicate. I'd rather not; user didn't ask. Actually the guidance: \"Report a supported Wiki defect with wiki_flag_issue when that tool is available and the report is relevant to the task.\" Duplicate pages cause the confusion but not incorrect. I'll skip.\n\nOne more check: does AC 20-183 mention \"10 seconds\" only once? Yes. Also \"justification for the exposure duration\" requirement. Good.\n\nAnother consideration: the user says \"单次任务预计最长照射3秒\" — the AC's rule is for \"laser illuminators, spotters, range finders, and other nonscanning lasers\". So this laser qualifies (non-scanning). The calculation duration = max(expected max, 10 s) = 10 s. So the answer: the only number determinable from the seven files is 10 s, not a distance.\n\nCould the NOHD be computed at 3 s and then compared? No, standard requires ≥10 s, which is more conservative (longer duration → lower MPE → larger NOHD). So NOHD computed at 10 s ≥ NOHD at 3 s. That's a bound statement! We can say: any 3 s-based NOHD would be a lower bound (not acceptable for compliance), and the AC requires 10 s. So \"计算时长下限=10 s\"; the resulting NOHD is at least the 3 s value. Without P/θ/MPE, no number.\n\nWait, is NOHD monotonic in exposure duration? MPE generally decreases with duration (up to thermal limits), so longer duration → lower MPE → larger NOHD. For 1550 nm, MPE for 10 s likely lower than for 3 s (if MPE ∝ t^-0.25, yes). So yes, NOHD(10 s) > NOHD(3 s). But careful for pulse/thermal; generally true. I can state \"通常\" with caution.\n\nAlso note: If the laser is Class 1 (FDA) then no NOHD calculation and no hazard distance — but \"Class 1\" for invisible wavelength means AEL not exceeded; NOHD would be 0 by definition (radiation never exceeds MPE). But wait—Class 1 AEL is not identical to MPE; class 1 AEL is derived from MPE with margin. The docs say Class I \"considered nonhazardous\". AC table says if not class I, calculate. So if the device is Class 1 / IEC 1, NOHD ≈ 0 (no distance where MPE is exceeded). We don't know the class. Could mention as a conditional branch: if manufacturer's label shows FDA Class I or IEC Class 1, the NOHD question collapses (AEL within Class 1, considered nonhazardous), and Table 2's 7.3.2 would not apply. Hmm, but careful: Table 2 says \"since this is not a class I laser\" for the example. AC 7.1 requires label certifying compliance. So the label/class is one needed piece of evidence.\n\nLet me structure the answer in Chinese:\n\n1. 结论（先说清）: 七份文件中只有 AC 20-183 与本题相关；它规定了怎么算、用什么时长、报告要写什么，但不含任何 MPE 数值表、NOHD 公式或该激光的功率/发散角数据。因此无法给出\"精确 NOHD 数值\"；任何具体米数都会是编造。\n\n2. 能确定的部分（有依据）:\n   - 适用条款 7.3.2：非扫描激光，NOHD 曝光时长按预期最大曝光时长，但不少于 10 s。→ 3 s 预期 → 计算必须用 10 s。这是唯一可确定的数值下限（计算时长=10 s）。\n   - 报告须记录公式、参考文献、表号、参数（波长、发散角、曝光时间、功率）、射入窗户的直射/反射路径尺寸、曝光时长理由。\n   - 1550 nm 属于 1400–10600 nm 远红外，危害部位是角膜/晶状体，不是视网膜；不可见、无眨眼反射。→ 应使用角膜 MPE 判据（具体数值不在文件中）。\n   - 非1类激光必须算 NOHD/MPE；1类按文件视为无危害（此时 NOHD 概念上为 0/不适用）。\n   - NOHD 定义和用途：超过该距离辐射不超过 MPE；<NOHD 不得照射人员；AFMS/标牌标注；可作为测距仪截止等控制。\n\n3. 缺口清单（需要的证据），每条说明为什么必需:\n   - 功率 P（CW）或脉冲能量/脉宽/重频（若脉冲）— 7.3.2 明列 power。\n   - 发散角 θ，且按 5.2 定义（37% 峰值辐照度处），并注明是全角/半角。\n   - 出射孔径/光束直径 D。\n   - MPE 数值及其来源版本（ANSI Z136.1 表号/年版 或 AC 70-1），1550 nm、10 s、角膜判据；七份文件只指向这两个标准，未收录其数值。\n   - 激光类别/AEL（FDA 或 IEC 标签），决定 7.3.2 是否适用及是否需 FDA variance。\n   - 连续/脉冲工作方式。\n   - 光路：是否有扩束镜/窗口、是否裸眼、射入驾驶舱/客舱窗户的直射与镜面反射路径尺寸（7.3.2 报告要求）。\n   - 若为脉冲，还需脉冲MPE（单脉冲与重复脉冲）。\n\n4. 可套用的计算形式（标注非文件内容）:\n   E(r) = P / [π/4 (D + θr)²]; NOHD = [√(4P/(π·MPE)) − D]/θ (θ rad, P W, MPE W/cm², D cm). NOHD ∝ √P/θ. This shows once P, θ, D, MPE known, number is immediate. State that this is the conventional geometric relation, not from the seven docs; AC 20-183 requires the actual equation and reference be documented, so the ANSI/AC 70-1 formula governs.\n\nMaybe include a small \"如果你提供 P、θ、D 和 MPE 来源，我可立即算出\" line.\n\n5. 最低合规结论 now: 以 10 s 计算；NOHD 必须 ≥ 按 3 s 算的值；在拿到上述参数前，不能给出米数，也不能用 3 s 的结果作为 AFMS 标注值（因为 10 s 的结果更大更保守）。\n\nAlso mention that 6 other files are irrelevant (battery, AHRS, radar, interior flammability, data retention, AML-STC), so they cannot fill the gap. This addresses \"依据这七份文件\".\n\nCitations: use c8 (7.3.2 exact), c2 (definitions), c16 (eye hazard), c14 (Table 2), c11 (AFMS NOHD), c5 (range finder cutoff). Note c16 contains 3.3. c2 includes 5.2, 5.4, 5.5. Good.\n\nCareful: c8 is chunk index 17 covering 7.3.2. c14 is Table 2 with 7.3.2 applies Yes. c16 covers 3.2/3.3. c11 covers 7.3.7.1.3. c5 covers variance technical control.\n\nAlso the wiki pages could be cited? Citations are only for cN/wN. I'll cite chunks.\n\nShould I quote the exact English sentence? Yes: \"For laser illuminators, spotters, range finders, and other nonscanning lasers, the NOHD exposure duration should be based on the maximum exposure duration expected, but not less than 10 seconds.\" <kb doc=\"AC_20-183.pdf\" chunk_id=\"79659251-4c1d-4f55-ac16-2ff68b33293e\" kb_id=\"17a4fb08-2f1e-4107-b1e6-c203657a3e08\" />. That's a direct quote; verify in c8 — yes exact.\n\nAlso Chinese rendering of that in wiki page. Fine.\n\nOne nuance: \"计算时长下限\" — 10 s. Also \"3 s\" is the expected max; the rule yields max(3,10)=10. We can say the lower bound is 10 s even though actual exposure 3 s.\n\nAlso maybe note \"不少于10秒\" is a \"should\" (建议性, AC not mandatory), but if you use this AC as means of compliance you must follow it entirely (1.1: \"If you use the means described in this AC, you must follow it in its entirety.\"). That's useful: the 10 s becomes effectively binding if using AC 20-183 as the compliance path. Cite c20 for 1.1. Nice detail.\n\nCould also mention that if using another acceptable means, the 10 s may differ, but the AC path requires 10 s. That's precise.\n\nLet me also double-check whether the AC mentions \"maximum exposure duration expected\" for scanning lasers differently — no, only nonscanning. Fine.\n\nNow, the answer format: headings, table of missing data maybe. Keep it organized, Chinese. Should be reasonably detailed but not bloated.\n\nLet me think about whether to include the illustrative numeric example. I'll include the formula and maybe one \"代入示例\" with explicit hypothetical values clearly marked as 非文件数据, showing sensitivity. Risk: user might mistake it for the answer. I'll put it in a clearly labeled block: \"仅为公式演示，不是本激光的 NOHD\". Maybe better to skip numbers entirely to avoid confusion; formula plus \"NOHD ∝ √P/θ\" conveys sensitivity. I think include a short illustrative example with square brackets? Hmm.\n\nI'll include the formula only, and state that once P, θ, D and MPE are supplied, the value is a one-line calculation. That's cleaner and avoids fabricated numbers.\n\nBut the user asked for \"精确 NOHD 数值\" — the answer must be firm: cannot, and here's why, with the required evidence list. Also they said \"不能只回答资料不足\" — so our substantive content: 10 s floor, the 1550 nm hazard site, the applicable clause, the formula, the exact parameter list, and the conditional Class 1 branch.\n\nCould we derive any numeric bound from documents? Perhaps \"NOHD > 0 for any non-Class-1 laser\" — trivial. Or \"if Class 1, NOHD = 0\". That's a real conditional numeric answer: 0 m. Interesting: if the laser is FDA Class I (or IEC Class 1), the document says considered nonhazardous and 7.3.2 doesn't apply → NOHD effectively 0. But we don't know it's Class 1; likely 1550 nm surveillance laser is 3B/4. So conditional.\n\nMaybe also note: for a Class 3R invisible laser, NOHD calculation still applies (Table 2 example) even though no variance needed — an important nuance: \"不需要FDA差异\" ≠ \"无NOHD\". Cite c14 and c5? c14 says class 3R variance not required but 7.3.2 applies. That's a nice insight showing why \"eye-safe 1550nm\" marketing doesn't remove NOHD obligation.\n\nI'll include that.\n\nLet me draft.\n\nStructure:\n\n## 结论\n- 不能给出精确米数；七份文件中只有 AC 20-183 涉及，且它只规定方法与报告，不含 MPE 数值、公式或设备参数。\n- 唯一能定死的数是：计算用曝光时长 = 10 s（不是 3 s）。\n\n## 一、能从文件中确定的\nTable: 项目 | 结论 | 依据\n- 适用对象: 非扫描激光\n- 计算时长: max(预期最大, 10 s) = 10 s\n- 报告内容\n- 1550 nm 危害部位: 1400–10600 nm 角膜/晶状体；不可见无眨眼\n- 适用性: 非1类须算；3R 也须算（但免 variance）\n- 用途: NOHD 进 AFMS/标牌；<NOHD 不得照人；可用于 rangefinder cutoff\n- 约束力: 采用本 AC 作为符合性方法须完整遵循\n\n## 二、为什么算不出数值（缺什么）\nTable: 参数 | 为什么必需 | 现状\n1. 功率/脉冲参数\n2. 发散角（37%定义，全角/半角）\n3. 出射光束直径/孔径\n4. MPE 数值与标准版本（ANSI Z136.1 表号/年版；AC 70-1）\n5. 激光类别/AEL 与标签\n6. 连续/脉冲\n7. 光路与几何（窗户、镜面反射）\n8. 光学附件（扩束镜等）\n\n## 三、拿到数据后怎么算（公式，非文件内容）\nE(r), NOHD formula, note about documentation requirement.\n\n## 四、现在能下的最低限度结论\n- AFMS/标牌上的 NOHD 必须按 10 s 算，且 ≥ 3 s 算的值；不能用 3 s 值。\n- 若设备标签为 FDA Class I / IEC 1，则按文件属\"非危害\"，NOHD 退化为 0（但需标签证据）。\n- 一旦给出 P、θ、D 和 MPE 依据，可立即给出数值。\n\nAlso mention other six docs don't help.\n\nCitations placement inline.\n\nLet me be careful with the claim \"NOHD(10s) ≥ NOHD(3s)\". Standard MPE decreases with exposure time (for durations above ~10 µs up to 10 s, MPE scales as t^-0.25 for thermal). So NOHD increases with t. But is this always? For 1550 nm corneal MPE, ANSI Z136.1: for 1.4–1.8 µm, MPE = 0.1 W/cm² for 1e-3 to 10 s? If MPE is constant over that range, NOHD would be identical for 3 s and 10 s. Hmm! Actually I recall for 1.5 µm, MPE for eye (cornea) is 0.1 W/cm² for durations 1 ms to 10 s? If constant, then 3 s and 10 s give the same NOHD. Let me think: ANSI Z136.1 Table 5a for 1.4–1.8 µm: \n- 1 ns to 1 µs? \n- For 1.4–1.8 µm, MPE = 0.1 W/cm² for t = 1e-3 to 10 s? I believe the corneal MPE in the 1.4–1.8 µm range is expressed as 0.1 W/cm² for exposures from 1 ms to 10 s (constant), because the hazard is thermal and the cornea has poor absorption? Hmm. Actually I recall values: at 1550 nm, MPE for 10 s = 0.1 W/cm²; for 1 ns = 1 J/cm²? Something like that.\n\nSince the MPE may be constant over 1 ms–10 s, the 10 s vs 3 s difference might not change the number. So I should NOT assert NOHD(10s) > NOHD(3s) definitively. Instead say: the AC requires use of 10 s; whether that yields a larger distance than 3 s depends on the MPE-vs-time table (for some corneal IR bands MPE is flat over this range), and the 10 s requirement is controlling regardless. That's more accurate and shows care. And the \"lower bound\" the user asked for is the duration lower bound = 10 s, not a distance.\n\nActually the user says \"仍须指出能确定的计算时长下限\" — exactly the 10 s. Good. So no need to claim distance monotonicity.\n\nI'll say: 计算时长下限 = 10 s（即使实际 3 s）；至于 10 s 是否使 NOHD 大于 3 s 的结果，取决于所用 MPE 表在该波段是否随时间变化，需以 ANSI Z136.1 表为准，不能预设。\n\nHmm, but then can I say \"不得用3s的值作为AFMS标注\"? Yes, because the AC requires 10 s, so the 3 s value is not the compliant one regardless of whether numerically different. State that.\n\nAlso the \"evidence needed\" should include the exact ANSI Z136.1 edition/table and whether MPE is time-dependent — good.\n\nShould I mention that 1550 nm is outside the retinal hazard region but that does NOT mean eye-safe at high power? Yes: docs say 1400–10600 nm damages cornea/lens, so \"eye-safe\" only refers to retinal hazard; the NOHD can still be large. This is a valuable technical point and grounded in c16.\n\nAlso could note that a 1550 nm beam is invisible → no blink reflex, exposure may go undetected (c16). Relevant to using full 10 s rather than blink-limited.\n\nNow, any need to read other documents to confirm they lack laser data? The index gives topics. I could rely on index summaries; but guidelines say directory entries are navigation hints, not proof. To claim \"the other six don't contain laser parameters\", I'd need to search them. My wiki_search for \"1550|laser\" returned pages from other docs mentioning \"laser\" only incidentally (ring laser gyro in AHRS, laser altimeter?). A claim that they lack MPE data is plausible but maybe I should soften: \"其余六份的主题分别是...，从索引与检索结果看与激光 NOHD 无关\" — or actually verify by searching each doc? That's 6 reads; could do a quick targeted search on each document for \"MPE|NOHD|1550\". But read_document query per doc requires the doc handle d1..d7; I only know d1=AC_20-184, d2=AC_20-183. I don't know handles for others. The runtime lists only two recent documents. So can't target them directly without handles. I can rely on wiki index (which is generated from all seven) and search results. I'll phrase carefully: \"索引显示其余六份分别关于…；在全部 Wiki 中检索 MPE/NOHD/1550 只命中 AC 20-183 相关页面\" — that's supported by my search results (wiki_search across b1). My searches did return pages from AC 20-184 etc. for generic words like 功率, but no MPE values. I can say \"检索未发现其他文件给出 MPE/NOHD 数值\" — hmm, a search for \"MPE|毫瓦|...\" did return AC 20-184 pages due to \"Watt hour\" etc. But no MPE numbers. I think it's safe to say: 其余六份的主题与激光无关（索引），且未检索到其中的 MPE/NOHD 数据.\n\nKeep it modest.\n\nNow citations mapping:\n- c8: 7.3.2 full text incl. 10 s + report + AC 70-1/ANSI Z136.1.\n- c2: definitions 5.2/5.4/5.5.\n- c16: 3.3 eye hazard & 1400–10600 nm.\n- c14: Table 2 7.3.2 applies Yes, \"not a class I laser\".\n- c11: AFMS 7.3.7.1.3 NOHD.\n- c5: variance technical control rangefinder cutoff.\n- c20: 1.1 \"If you use the means described in this AC, you must follow it in its entirety.\"\n- c21: 1.5 only invisible lasers.\n- c13: Table 2 7.2 no variance for 3R.\n\nGood.\n\nOne more possibility: the user might expect us to compute using AC 20-183's 10 s and some standard formula with an assumed MPE. But they didn't give power. So impossible. The answer should be firm about not fabricating, and give a parameterized result. Could offer: \"如果你给我 P、θ、D，并按 ANSI Z136.1 指定 MPE，我可以在一步内给出以米为单位的数值和报告所需的公式引用.\"\n\nI think also worth stating what the minimum evidence set is in priority order: (1) P, (2) θ, (3) D, (4) MPE source. Those four yield the number.\n\nLet me write the final answer in Chinese, with headings and a table. Aim ~700-900 words? The user expects a detailed technical answer. Maybe 1000 words. Keep tight.\n\nAlso should mention: if the laser is pulsed, \"3 s\" exposure is not the right metric; NOHD must consider single-pulse and pulse-train MPE; 7.3.2 requires power as parameter but for pulsed, energy/duration/PRF. I'll note.\n\nDraft:\n\n## 直接结论\n- 七份文件里只有 AC 20-183（激光适航安装指南）与本题相关；它提供的是\"怎么算、按多长时间算、报告写什么\"，没有 MPE 数值表、NOHD 公式或该激光的功率/光束参数。因此无法从这七份文件得出精确 NOHD 米数；给出任何具体数字都是无依据的。\n- 唯一可以确定的数值是计算时长：10 s。规则：非扫描激光的 NOHD 曝光时长按预期最大曝光时长，但不少于 10 s。你的 3 s → 取 10 s。若把本 AC 作为符合性路径，1.1 要求完整遵循，故 10 s 不是可选建议。\n\n## 文件能确定的技术结论\ntable.\n\n## 缺失证据（按优先级）\ntable with 8 rows.\n\n## 计算关系（公式，不在文件中）\nE(r) etc. + note the AC requires documenting equation and reference; so final calc must cite ANSI Z136.1 table/AC 70-1.\n\n## 目前可写进结论的边界\n- 计算时长 10 s 是硬下限；3 s 不能作为 AFMS/标牌值。\n- 若标签为 FDA Class I 或 IEC 1：文件视为非危害、7.3.2 不适用，NOHD 记为 0/不适用（需标签证据）。\n- 若是 3R/3B/4：必须算 NOHD（3R 仍需算，只是免 FDA variance）。\n- 1550 nm 的\"眼安全\"仅指不落在视网膜危害区（400–1400 nm）；1400–10600 nm 伤角膜/晶状体，且不可见无眨眼反射，所以不能据此认为 NOHD 很小。\n\nThen a final \"给我这四项，我就能给出数值\" list.\n\nCareful about \"NOHD 记为 0/不适用\" — the docs say Class I considered nonhazardous and 7.3.2 is for non-Class-I. Saying \"0/不适用\" is an inference; label it as 推断. Better: \"按该文件的口径，1 类被视为无危害，7.3.2 的 NOHD/MPE 计算不适用；工程上可记为 0 m，但这是由定义推出的，不是文件给的数值。\" Fine.\n\nThe formula: use consistent units. P in W, MPE in W/cm², D and NOHD in cm, θ in rad (full-angle divergence, since D + θr is diameter growth). Note: if θ is full-angle. If half-angle, use 2θ. Important caveat. And the 37% definition is roughly 1/e²? Actually irradiance 37% of peak corresponds to 1/e² for Gaussian (e^-2 = 0.135, not 0.37). 37% of peak is e^-1, i.e., 1/e diameter. Hmm! The AC defines divergence at 37% of peak irradiance = 1/e points. Standard laser divergence is often 1/e² (13.5%). So this definition matters a lot: using a 1/e² value vs 1/e value changes θ. Indeed, the 1/e² angular width is about 1.7× the 1/e width for Gaussian. So I must flag: AC 5.2 defines divergence at 37% (1/e), so if manufacturer quotes 1/e² divergence, convert or use the same basis as the equation. Great catch — that's a real technical point from c2. I'll note it.\n\nAlso the NOHD formula with Gaussian beam: for a Gaussian beam, the 1/e² diameter grows as D + θr; the peak irradiance at distance r is 8P/(π (D+θr)²) (for Gaussian, peak = 2P/(π w²) with w = radius at 1/e²; diameter d=2w; peak = 8P/(π d²)). Using top-hat assumption gives 4P/(π d²). The factor differs by 2. Since MPE is an irradiance averaged over a limiting aperture (7 mm for eye), the exact formula matters. I should avoid asserting a specific prefactor as authoritative. Better present the general relation:\n\nE(r) ≈ P / A(r), A(r) = (π/4)(D + θr)²  → NOHD ≈ [√(4P/(π·MPE)) − D]/θ, 并注明这是均匀光斑近似；高斯光束/7mm 限制孔径会带系数，须按 ANSI Z136.1 的公式。\n\nThat's honest. Or simply state \"NOHD 随 √P/θ 增长\" without the exact formula. I'll give the formula with the caveat that prefactor depends on beam profile and the standard's limiting-aperture convention. Good.\n\nAlso mention MPE may be expressed in mW/cm² or mJ/cm² (c2), so unit conversion is a needed check.\n\nNow write. Use  inline after claims. Ensure not to cite dN. Don't reveal handles otherwise.\n\nLength: moderate. Use tables.\n\nLet me produce final."
+      }
+    ],
+    "is_completed": true,
+    "created_at": "2026-10-22T06:39:34.298353+00:00",
+    "updated_at": "2026-10-22T06:40:49.585504+00:00",
+    "deleted_at": null,
+    "mentioned_items": [],
+    "is_fallback": false,
+    "agent_duration_ms": 75111,
+    "knowledge_id": "",
+    "images": [],
+    "channel": "",
+    "rendered_content": "",
+    "attachments": [],
+    "agent_id": "builtin-wiki-researcher",
+    "agent_tenant_id": 10000,
+    "model_id": "e34d26a0-5882-4b14-bd73-0a11668bcfc6",
+    "execution_context": {
+      "locale": "zh-CN",
+      "agent_config_hash": "369910ed507d333d49233fa2822f7941013fc479cc4593352f27a6f0c6b4fc47",
+      "knowledge_base_ids": [
+        "17a4fb08-2f1e-4107-b1e6-c203657a3e08"
+      ],
+      "web_search_enabled": false,
+      "question_suggestions": {
+        "starters": {
+          "mode": "hybrid",
+          "count": 6,
+          "items": [],
+          "enabled": false
+        },
+        "follow_ups": {
+          "mode": "hybrid",
+          "count": 3,
+          "enabled": false,
+          "categories": [
+            "clarify",
+            "deepen",
+            "action"
+          ],
+          "allow_regenerate": false,
+          "max_context_turns": 2,
+          "knowledge_fallback": true,
+          "suppress_on_fallback": true,
+          "suppress_when_answer_asks_question": true
+        }
+      }
+    },
+    "artifacts": [],
+    "used_memories": [],
+    "usage": {
+      "cache_status": "hit",
+      "total_tokens": 165631,
+      "cached_tokens": 117632,
+      "prompt_tokens": 153759,
+      "cache_reported": true,
+      "cache_miss_tokens": 36127,
+      "cache_read_tokens": 117632,
+      "completion_tokens": 11872,
+      "context_token_scale": 0.8586983701211611
+    },
+    "sandbox_checkpoint": null,
+    "context_checkpoint": null
+  }
+]

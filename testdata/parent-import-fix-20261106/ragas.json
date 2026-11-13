@@ -1,0 +1,9 @@
+{
+  "scores": {
+    "faithfulness": 0.8,
+    "llm_context_precision_without_reference": 0.99999999995
+  },
+  "errors": {},
+  "judge_model": "deepseek-flash",
+  "ragas_version": "0.2.15"
+}

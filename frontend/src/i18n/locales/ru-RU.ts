@@ -4616,6 +4616,8 @@ export default {
     placeholderAgent: 'Спросить {name}',
     agentMode: 'Умный анализ',
     normalMode: 'Быстрый ответ',
+    crossLanguageSearch: 'Поиск на другом языке',
+    crossLanguageSearchHint: 'Искать ответ на этот вопрос также на другом языке',
     normalModeDesc: 'RAG-вопросы и ответы по базе знаний',
     agentModeDesc: 'Многошаговое мышление, глубокий анализ',
     agentMissingAllowedTools: 'Разрешённые инструменты',

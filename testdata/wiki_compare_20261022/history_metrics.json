@@ -1,0 +1,522 @@
+[
+  {
+    "question": "Q01",
+    "group": "clean",
+    "message": "4d06ba11-778d-4e6f-84fe-ac9192151835",
+    "session": "bd80f22e-8fa5-4bfc-886a-2422c9e550e1",
+    "cross_kb_citations": 0,
+    "read_calls": 3,
+    "zero_match_calls": 1,
+    "characters": 3997
+  },
+  {
+    "question": "Q03",
+    "group": "native",
+    "message": "5c9f9af6-7873-4582-a767-58c7a7b709b5",
+    "session": "bd80f22e-8fa5-4bfc-886a-2422c9e550e1",
+    "cross_kb_citations": 0,
+    "read_calls": 6,
+    "zero_match_calls": 0,
+    "characters": 8258
+  },
+  {
+    "question": "Q03",
+    "group": "clean",
+    "message": "9f548467-b694-4901-b294-fa0caf6a650c",
+    "session": "bd80f22e-8fa5-4bfc-886a-2422c9e550e1",
+    "cross_kb_citations": 0,
+    "read_calls": 6,
+    "zero_match_calls": 3,
+    "characters": 8359
+  },
+  {
+    "question": "Q04",
+    "group": "clean",
+    "message": "6db2b955-ee9b-4ff5-ad3e-d574bc57b4c2",
+    "session": "bd80f22e-8fa5-4bfc-886a-2422c9e550e1",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 0,
+    "characters": 723
+  },
+  {
+    "question": "Q04",
+    "group": "clean",
+    "message": "f44b976d-a9df-447c-88d9-471124e90c1f",
+    "session": "a6f6fcea-07c8-4101-bc71-d7b9062ad398",
+    "cross_kb_citations": 0,
+    "read_calls": 9,
+    "zero_match_calls": 2,
+    "characters": 2145
+  },
+  {
+    "question": "Q04",
+    "group": "native",
+    "message": "38a43924-a277-4d4c-a6ce-34bc9336f900",
+    "session": "a6f6fcea-07c8-4101-bc71-d7b9062ad398",
+    "cross_kb_citations": 0,
+    "read_calls": 19,
+    "zero_match_calls": 2,
+    "characters": 541
+  },
+  {
+    "question": "Q04",
+    "group": "native",
+    "message": "a55eb1c3-f87c-4295-b700-bafa5ff2bdbd",
+    "session": "9ff548ad-dd75-451f-ac50-db81cf3f99bf",
+    "cross_kb_citations": 0,
+    "read_calls": 7,
+    "zero_match_calls": 2,
+    "characters": 891
+  },
+  {
+    "question": "Q04",
+    "group": "clean",
+    "message": "49a296d2-ba43-4567-bd79-275148fb8665",
+    "session": "9ff548ad-dd75-451f-ac50-db81cf3f99bf",
+    "cross_kb_citations": 0,
+    "read_calls": 5,
+    "zero_match_calls": 0,
+    "characters": 179
+  },
+  {
+    "question": "Q05",
+    "group": "clean",
+    "message": "95cdcac2-7a65-4bfd-8ac9-c17977e464ff",
+    "session": "9ff548ad-dd75-451f-ac50-db81cf3f99bf",
+    "cross_kb_citations": 0,
+    "read_calls": 3,
+    "zero_match_calls": 0,
+    "characters": 2090
+  },
+  {
+    "question": "Q04",
+    "group": "clean",
+    "message": "329ca54e-630b-454b-aea1-c663c57d1f5e",
+    "session": "add720b9-48ec-4091-a9c3-9ad7c367e01b",
+    "cross_kb_citations": 0,
+    "read_calls": 8,
+    "zero_match_calls": 4,
+    "characters": 6686
+  },
+  {
+    "question": "Q04",
+    "group": "native",
+    "message": "9aafe2a9-9134-4339-b9cc-86fc259980ef",
+    "session": "add720b9-48ec-4091-a9c3-9ad7c367e01b",
+    "cross_kb_citations": 0,
+    "read_calls": 5,
+    "zero_match_calls": 0,
+    "characters": 10553
+  },
+  {
+    "question": "Q05",
+    "group": "native",
+    "message": "10d4bf07-e658-41c6-952a-c8f5507b6e29",
+    "session": "add720b9-48ec-4091-a9c3-9ad7c367e01b",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 0,
+    "characters": 3545
+  },
+  {
+    "question": "Q05",
+    "group": "clean",
+    "message": "c0437bdc-e085-4682-8f70-49d7db0d429f",
+    "session": "add720b9-48ec-4091-a9c3-9ad7c367e01b",
+    "cross_kb_citations": 0,
+    "read_calls": 2,
+    "zero_match_calls": 0,
+    "characters": 2811
+  },
+  {
+    "question": "Q06",
+    "group": "clean",
+    "message": "f3242273-0693-470d-8dfa-c30c45444289",
+    "session": "add720b9-48ec-4091-a9c3-9ad7c367e01b",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 0,
+    "characters": 6239
+  },
+  {
+    "question": "Q06",
+    "group": "native",
+    "message": "230ab8b3-c9d0-43e3-8711-679e87eafa6d",
+    "session": "add720b9-48ec-4091-a9c3-9ad7c367e01b",
+    "cross_kb_citations": 0,
+    "read_calls": 7,
+    "zero_match_calls": 0,
+    "characters": 5495
+  },
+  {
+    "question": "Q07",
+    "group": "native",
+    "message": "435937a5-6b39-48ab-9c65-5b7aadd53229",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 6,
+    "zero_match_calls": 3,
+    "characters": 3979
+  },
+  {
+    "question": "Q07",
+    "group": "clean",
+    "message": "adff8a07-121d-4c48-9caa-c9266ea5e2d2",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 15,
+    "zero_match_calls": 4,
+    "characters": 8941
+  },
+  {
+    "question": "Q07",
+    "group": "clean",
+    "message": "48f1f80d-fc08-49a0-84d6-2b848970d880",
+    "session": "4186e283-198e-44d0-9cf8-8ebd4922af31",
+    "cross_kb_citations": 0,
+    "read_calls": 12,
+    "zero_match_calls": 2,
+    "characters": 1412
+  },
+  {
+    "question": "Q07",
+    "group": "native",
+    "message": "557b701f-b6c9-444f-a353-15dc41b00484",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 9,
+    "zero_match_calls": 3,
+    "characters": 6092
+  },
+  {
+    "question": "Q08",
+    "group": "native",
+    "message": "4dc0f379-2203-4385-b768-a001e53093d9",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 20,
+    "zero_match_calls": 6,
+    "characters": 10655
+  },
+  {
+    "question": "Q08",
+    "group": "clean",
+    "message": "eff50398-3b78-4de2-8fb2-c17c3a034d8b",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 8,
+    "zero_match_calls": 1,
+    "characters": 7896
+  },
+  {
+    "question": "Q09",
+    "group": "clean",
+    "message": "b9f0c46e-421b-46d5-bfcd-7d7104e66bfd",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 5,
+    "zero_match_calls": 0,
+    "characters": 7190
+  },
+  {
+    "question": "Q09",
+    "group": "native",
+    "message": "16c780bd-c895-47c1-915c-297a54e4379a",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 6,
+    "zero_match_calls": 0,
+    "characters": 9631
+  },
+  {
+    "question": "Q10",
+    "group": "native",
+    "message": "2ac35a73-ec66-42cb-aa43-35a6fe8a19d7",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 11,
+    "zero_match_calls": 4,
+    "characters": 8970
+  },
+  {
+    "question": "Q10",
+    "group": "clean",
+    "message": "3526c709-c270-489d-96e2-8ce4aba2e8d8",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 0,
+    "characters": 9129
+  },
+  {
+    "question": "Q11",
+    "group": "clean",
+    "message": "0f0b7495-bf30-4bc5-8f95-62a3890abfb7",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 0,
+    "characters": 5874
+  },
+  {
+    "question": "Q11",
+    "group": "native",
+    "message": "78d957a6-8729-4fc6-a823-dc3d3531d022",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 7,
+    "zero_match_calls": 1,
+    "characters": 8314
+  },
+  {
+    "question": "Q12",
+    "group": "native",
+    "message": "190f07af-b67a-42c6-b768-f8ae404ee052",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 16,
+    "zero_match_calls": 0,
+    "characters": 12584
+  },
+  {
+    "question": "Q12",
+    "group": "clean",
+    "message": "19f926eb-d24e-451f-b7d9-be7fd3121572",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 6,
+    "zero_match_calls": 0,
+    "characters": 11208
+  },
+  {
+    "question": "Q13",
+    "group": "clean",
+    "message": "b6456405-d8f1-427f-ab11-d80b7f0070ca",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 2,
+    "zero_match_calls": 0,
+    "characters": 4567
+  },
+  {
+    "question": "Q13",
+    "group": "native",
+    "message": "8cd79c66-1ed9-48a1-a4ac-19ff09529adf",
+    "session": "cd3b20dc-c9d4-404b-a9e7-df6e57da3f7b",
+    "cross_kb_citations": 0,
+    "read_calls": 5,
+    "zero_match_calls": 4,
+    "characters": 1823
+  },
+  {
+    "question": "Q13",
+    "group": "native",
+    "message": "5a32abb5-663d-49da-8aa8-fba648ec2aec",
+    "session": "33abfceb-3524-4b7e-a678-bea90380fded",
+    "cross_kb_citations": 0,
+    "read_calls": 1,
+    "zero_match_calls": 1,
+    "characters": 1361
+  },
+  {
+    "question": "Q14",
+    "group": "native",
+    "message": "6ccd3eb6-33fe-4d53-b1ba-45467a133a92",
+    "session": "33abfceb-3524-4b7e-a678-bea90380fded",
+    "cross_kb_citations": 0,
+    "read_calls": 0,
+    "zero_match_calls": 0,
+    "characters": 2720
+  },
+  {
+    "question": "Q14",
+    "group": "clean",
+    "message": "ad4a0faa-a64d-4170-850c-8b191c941d61",
+    "session": "33abfceb-3524-4b7e-a678-bea90380fded",
+    "cross_kb_citations": 0,
+    "read_calls": 9,
+    "zero_match_calls": 2,
+    "characters": 6454
+  },
+  {
+    "question": "Q15",
+    "group": "native",
+    "message": "cbe5ccea-740d-4425-9ac9-847967e78b20",
+    "session": "33abfceb-3524-4b7e-a678-bea90380fded",
+    "cross_kb_citations": 0,
+    "read_calls": 2,
+    "zero_match_calls": 1,
+    "characters": 3424
+  },
+  {
+    "question": "Q15",
+    "group": "clean",
+    "message": "eae679fa-a589-4518-b075-e0f236107278",
+    "session": "33abfceb-3524-4b7e-a678-bea90380fded",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 2,
+    "characters": 4529
+  },
+  {
+    "question": "Q16",
+    "group": "clean",
+    "message": "8f0fbb54-fa66-47cc-8f1e-b5c0d6a7bae2",
+    "session": "33abfceb-3524-4b7e-a678-bea90380fded",
+    "cross_kb_citations": 0,
+    "read_calls": 4,
+    "zero_match_calls": 1,
+    "characters": 5481
+  },
+  {
+    "question": "Q16",
+    "group": "native",
+    "message": "da33a7a5-d9e4-4276-8c2d-4c3125c87718",
+    "session": "f8654acf-7fd9-42c5-8cc1-4accbdc73fd6",
+    "cross_kb_citations": 0,
+    "read_calls": 12,
+    "zero_match_calls": 3,
+    "characters": 9314
+  },
+  {
+    "question": "Q17",
+    "group": "native",
+    "message": "34fbc9df-d1e4-40f3-9710-91184f4cf31b",
+    "session": "f8654acf-7fd9-42c5-8cc1-4accbdc73fd6",
+    "cross_kb_citations": 0,
+    "read_calls": 8,
+    "zero_match_calls": 1,
+    "characters": 8418
+  },
+  {
+    "question": "Q17",
+    "group": "native",
+    "message": "32b00b3b-96ef-438f-bf7a-e71f25a0de62",
+    "session": "ad5a6e14-cc3b-4e5d-9b36-313a9f9c9e64",
+    "cross_kb_citations": 0,
+    "read_calls": 5,
+    "zero_match_calls": 1,
+    "characters": 5695
+  },
+  {
+    "question": "Q17",
+    "group": "clean",
+    "message": "ad0a53cb-2fa0-434a-ad46-0d39c2bb1fb5",
+    "session": "ad5a6e14-cc3b-4e5d-9b36-313a9f9c9e64",
+    "cross_kb_citations": 0,
+    "read_calls": 2,
+    "zero_match_calls": 0,
+    "characters": 5267
+  },
+  {
+    "question": "Q18",
+    "group": "clean",
+    "message": "a3d47afe-ee84-4382-b894-74e503f661fa",
+    "session": "ad5a6e14-cc3b-4e5d-9b36-313a9f9c9e64",
+    "cross_kb_citations": 0,
+    "read_calls": 2,
+    "zero_match_calls": 0,
+    "characters": 5360
+  },
+  {
+    "question": "Q18",
+    "group": "native",
+    "message": "2100153f-238e-4462-85e0-ecdacfd371f3",
+    "session": "ad5a6e14-cc3b-4e5d-9b36-313a9f9c9e64",
+    "cross_kb_citations": 0,
+    "read_calls": 9,
+    "zero_match_calls": 3,
+    "characters": 7044
+  },
+  {
+    "question": "Q20",
+    "group": "clean",
+    "message": "31fd1d0f-2e68-4871-bd62-d4dd4e39754d",
+    "session": "e233b4e8-f737-4936-b54a-f4e360579b55",
+    "cross_kb_citations": 0,
+    "read_calls": 7,
+    "zero_match_calls": 1,
+    "characters": 9230
+  },
+  {
+    "question": "Q20",
+    "group": "native",
+    "message": "2a65098c-8db0-4363-8246-af3e86836c30",
+    "session": "e233b4e8-f737-4936-b54a-f4e360579b55",
+    "cross_kb_citations": 0,
+    "read_calls": 12,
+    "zero_match_calls": 5,
+    "characters": 10595
+  },
+  {
+    "question": "Q21",
+    "group": "native",
+    "message": "ce692292-6e8c-4653-b9b2-afbbbbec036a",
+    "session": "e233b4e8-f737-4936-b54a-f4e360579b55",
+    "cross_kb_citations": 0,
+    "read_calls": 7,
+    "zero_match_calls": 4,
+    "characters": 4454
+  },
+  {
+    "question": "Q21",
+    "group": "clean",
+    "message": "4e379a48-a857-4215-8f74-282f044f2135",
+    "session": "e233b4e8-f737-4936-b54a-f4e360579b55",
+    "cross_kb_citations": 0,
+    "read_calls": 3,
+    "zero_match_calls": 0,
+    "characters": 7214
+  },
+  {
+    "question": "Q21",
+    "group": "clean",
+    "message": "f3ea2495-7170-44d6-9f76-6213a5b153f9",
+    "session": "a20b45ba-eb0e-4bac-83d3-51c685b16f2e",
+    "cross_kb_citations": 0,
+    "read_calls": 9,
+    "zero_match_calls": 5,
+    "characters": 3889
+  },
+  {
+    "question": "Q21",
+    "group": "native",
+    "message": "3263ef7e-c53f-4564-971d-0249553b47e6",
+    "session": "d9ae77fc-cec6-45c2-9cff-9509ec854da1",
+    "cross_kb_citations": 0,
+    "read_calls": 14,
+    "zero_match_calls": 8,
+    "characters": 6091
+  },
+  {
+    "question": "Q22",
+    "group": "native",
+    "message": "564923b7-d724-43a8-8a00-3e156ad46b6f",
+    "session": "d9ae77fc-cec6-45c2-9cff-9509ec854da1",
+    "cross_kb_citations": 0,
+    "read_calls": 9,
+    "zero_match_calls": 4,
+    "characters": 1771
+  },
+  {
+    "question": "Q22",
+    "group": "clean",
+    "message": "afc6cefc-929c-4e29-89f0-189d16f71b33",
+    "session": "8e430998-69ac-4127-8c73-73034c298d21",
+    "cross_kb_citations": 0,
+    "read_calls": 10,
+    "zero_match_calls": 6,
+    "characters": 1393
+  },
+  {
+    "question": "Q24",
+    "group": "clean",
+    "message": "38d352b7-8060-4e75-905f-4f065c29514e",
+    "session": "8e430998-69ac-4127-8c73-73034c298d21",
+    "cross_kb_citations": 0,
+    "read_calls": 15,
+    "zero_match_calls": 5,
+    "characters": 5741
+  }
+]

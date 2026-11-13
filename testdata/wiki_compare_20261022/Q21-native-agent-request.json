@@ -1,0 +1,6 @@
+{
+  "session": "baf61dbf-afd4-4b50-b384-9cfda689691c",
+  "query": "依据这七份文件，为一台1550nm不可见激光给出精确 NOHD 数值。已知它不扫描，单次任务预计最长照射3秒。若无法算出，仍须指出能确定的计算时长下限和需要的证据，不能只回答“资料不足”。",
+  "group": "native",
+  "agent": "builtin-wiki-researcher"
+}
